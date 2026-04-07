@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utah Cancer Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="/" class="navbar-logo">
+        <img src="images/logo.png" alt="Utah Cancer Specialists">
+      </a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar-nav">
+        <a href="providers/index.html" class="nav-link">Providers</a>
+        <a href="#" class="nav-link">Locations</a>
+        <a href="specialties/index.html" class="nav-link">Specialties</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Patients</a>
+        <a href="#" class="nav-link">Trials</a>
+        <a href="#" class="nav-link">Events</a>
+        <a href="#" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">person</span>
+          Patient Portal
+        </a>
+        <a href="#" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">credit_card</span>
+          Quick Pay
+        </a>
+        <a href="#" class="nav-btn-location">
+          <span class="material-symbols-rounded">location_on</span>
+          Find a Location
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero-bg.jpg" alt="">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <h1 class="hero-heading">Compassionate Cancer Care.<br>Close to Home.</h1>
+      <div class="hero-actions">
+        <a href="providers/index.html" class="btn btn--white">
+          <span class="material-symbols-rounded">person</span>
+          Our Providers
+        </a>
+        <a href="#" class="btn btn--glass">
+          <span class="material-symbols-rounded">location_on</span>
+          Find A Location
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container team-inner">
+      <div class="team-text">
+        <h2 class="team-heading">You deserve a team that walks beside you every step of the way.</h2>
+      </div>
+      <div class="team-center">
+        <p class="team-description">At Utah Cancer Specialists, we provide advanced, evidence-based cancer treatment in a supportive environment focused on your whole well-being — physical, emotional, and financial. Our board-certified oncologists, radiation specialists, and care teams are here to guide you with expertise and compassion.</p>
+        <a href="#" class="btn btn--primary">
+          <span class="material-symbols-rounded">person</span>
+          Meet our Providers
+        </a>
+      </div>
+      <div class="team-photos">
+        <div class="team-photo team-photo--tl"><img src="images/provider-1.jpg" alt="Provider"></div>
+        <div class="team-photo team-photo--tr"><img src="images/provider-2.jpg" alt="Provider"></div>
+        <div class="team-photo team-photo--bl"><img src="images/provider-3.jpg" alt="Provider"></div>
+        <div class="team-photo team-photo--br"><img src="images/provider-4.jpg" alt="Provider"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section class="locations-section">
+    <div class="container locations-inner">
+      <span class="section-label">Clinics Near You</span>
+      <h2 class="locations-heading">Convenient Locations All Along The Wasatch Front</h2>
+      <a href="#" class="btn btn--primary btn--centered">
+        <span class="material-symbols-rounded">location_on</span>
+        View All Locations
+      </a>
+      <div class="locations-features">
+        <div class="feature">
+          <h3 class="feature-title">Thousands of Patients</h3>
+          <p class="feature-desc">Cared for with compassion and clinical excellence</p>
+        </div>
+        <div class="feature">
+          <h3 class="feature-title">Latest Equipment &amp; Technology</h3>
+          <p class="feature-desc">Experienced specialists using the latest equipment.</p>
+        </div>
+        <div class="feature">
+          <h3 class="feature-title">Comfortable Atmosphere</h3>
+          <p class="feature-desc">In both the exam rooms and treatment areas</p>
+        </div>
+      </div>
+      <div class="locations-image">
+        <img src="images/building.jpg" alt="Utah Cancer Specialists Building">
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Section -->
+  <section class="specialties-section">
+    <div class="container">
+      <div class="specialties-header">
+        <div class="specialties-header-left">
+          <h2 class="specialties-heading">Our Specialties</h2>
+          <p class="specialties-desc">Our cancer specialists provide advanced treatments tailored to your specific cancer type and stage.</p>
+        </div>
+        <div class="specialties-header-right">
+          <a href="specialties/index.html" class="btn btn--outline">See All Specialties</a>
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn--prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+            <button class="carousel-btn carousel-btn--next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="specialties-carousel">
+        <div class="carousel-track">
+          <div class="specialty-card">
+            <img src="images/specialty-breast-gen.jpg" alt="Breast Cancer Treatment" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Breast Cancer Treatment</h3>
+              <p class="specialty-card-desc">Personalized treatment plans combining advanced therapies and compassionate support for every stage of breast cancer.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-prostate-gen.jpg" alt="Prostate Cancer Care" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Prostate Cancer Care</h3>
+              <p class="specialty-card-desc">Expert, evidence-based prostate cancer treatment focused on preserving quality of life and long-term health.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-lung-gen.jpg" alt="Lung Cancer Treatment" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Lung Cancer Treatment</h3>
+              <p class="specialty-card-desc">Comprehensive lung cancer care using the latest diagnostic tools and targeted therapies for the best possible outcomes.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-colon-gen.jpg" alt="Colon Cancer Treatment" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Colon Cancer Treatment</h3>
+              <p class="specialty-card-desc">Advanced colon cancer care with individualized treatment plans including surgery, chemotherapy, and targeted therapies.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-lymphoma-gen.jpg" alt="Lymphomas" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Lymphomas</h3>
+              <p class="specialty-card-desc">Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas using the latest immunotherapy and targeted approaches.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-blood-gen.jpg" alt="Blood Cancers" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Blood Cancers</h3>
+              <p class="specialty-card-desc">Comprehensive care for leukemia, lymphoma, and other blood disorders with advanced treatment options and clinical trials.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-headneck-gen.jpg" alt="Head and Neck Cancers" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Head &amp; Neck Cancers</h3>
+              <p class="specialty-card-desc">Multidisciplinary treatment for cancers of the throat, mouth, sinuses, and other head and neck regions.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-kidney-gen.jpg" alt="Kidney Cancer" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Kidney Cancer</h3>
+              <p class="specialty-card-desc">Specialized kidney cancer treatment combining immunotherapy, targeted therapy, and surgical options for optimal results.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+          <div class="specialty-card">
+            <img src="images/specialty-liver-gen.jpg" alt="Liver Cancer" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Liver Cancer</h3>
+              <p class="specialty-card-desc">Expert liver cancer care featuring advanced interventional procedures, systemic therapies, and personalized treatment plans.</p>
+            </div>
+            <a href="#" class="specialty-card-btn">More details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundation CTA -->
+  <section class="foundation-section">
+    <div class="container foundation-inner">
+      <div class="foundation-content">
+        <span class="section-label section-label--light">Utah Cancer Foundation</span>
+        <h2 class="foundation-heading">Helping patients through our foundation</h2>
+      </div>
+      <a href="#" class="btn btn--white">
+        <span class="material-symbols-rounded">volunteer_activism</span>
+        Learn More
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <span class="section-label">Testimonials</span>
+      <div class="testimonials-stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <blockquote class="testimonial-quote">
+            &ldquo;I&rsquo;m truly grateful for you, Dr. Gregory Chipman. You have not only treated your patients but also restored hope and given life back to so many. Your dedication and compassion make all the difference.&rdquo;
+          </blockquote>
+          <cite class="testimonial-author">&mdash; Ana S.</cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote class="testimonial-quote">
+            &ldquo;Dr. Chipman is one that listens to your situation. He provides options and helps you achieve the goals set. He is straight to the point when you need it and helps you make the next steps happen. This is a team of professionals that cares about their patients and it shows.&rdquo;
+          </blockquote>
+          <cite class="testimonial-author">&mdash; Adam B.</cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote class="testimonial-quote">
+            &ldquo;Dr Chipman and staff are amazing! They really understand the anxiety that comes with cancer and go above and beyond to explain everything and put you at ease. Treatment recommendations are conservative and well informed. Couldn&rsquo;t be happier.&rdquo;
+          </blockquote>
+          <cite class="testimonial-author">&mdash; Adam Black</cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote class="testimonial-quote">
+            &ldquo;Great patient care. Treated with respect and Dr. Chipman listened to all my concerns. Highly recommend as a health care provider!&rdquo;
+          </blockquote>
+          <cite class="testimonial-author">&mdash; Lynda H.</cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote class="testimonial-quote">
+            &ldquo;Dr. Chipman and his staff treat each patient with the kindness and attention we need.&rdquo;
+          </blockquote>
+          <cite class="testimonial-author">&mdash; Pam M.</cite>
+        </div>
+        <div class="testimonial-slide">
+          <blockquote class="testimonial-quote">
+            &ldquo;These people are stellar in every way!!&rdquo;
+          </blockquote>
+          <cite class="testimonial-author">&mdash; Joanna R.</cite>
+        </div>
+      </div>
+      <div class="testimonial-footer">
+        <div class="testimonial-indicators" id="testimonial-indicators"></div>
+        <div class="testimonial-controls">
+          <button class="carousel-btn carousel-btn--prev" id="testimonial-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+          <button class="carousel-btn carousel-btn--next" id="testimonial-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact-section">
+    <div class="contact-bg">
+      <img src="images/contact-bg.jpg" alt="">
+      <div class="contact-overlay"></div>
+    </div>
+    <div class="container contact-inner">
+      <h2 class="contact-heading">Contact us for more information.</h2>
+      <a href="#" class="btn btn--white">
+        <span class="material-symbols-rounded">phone</span>
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span class="marquee-item">Better care and brighter futures start here</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Better care and brighter futures start here</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span>
+      <span class="marquee-dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="images/logo-dark.png" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4 class="footer-col-title">About Us</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#">Our Values</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Patient Care</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our Approach</a></li>
+              <li><a href="#">Telehealth</a></li>
+              <li><a href="#">Patient Stories</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Research</h4>
+            <ul class="footer-links">
+              <li><a href="#">Clinical trials</a></li>
+              <li><a href="#">Ways to Give</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info">
+            <p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p>
+            <p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; Utah Cancer Specialists. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (function() {
+      var hamburger = document.getElementById('navbar-hamburger');
+      var nav = document.querySelector('.navbar-nav');
+      var overlay = document.getElementById('mobile-menu-overlay');
+      var body = document.body;
+
+      function toggle() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('open');
+        overlay.classList.toggle('open');
+        body.classList.toggle('menu-open');
+      }
+
+      hamburger.addEventListener('click', toggle);
+      overlay.addEventListener('click', toggle);
+
+      // Close on nav link click
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (nav.classList.contains('open')) toggle();
+        });
+      });
+    })();
+
+    // Navbar scroll effect
+    (function() {
+      var navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    })();
+
+    // Specialty carousel (infinite loop)
+    (function() {
+      var track = document.querySelector('.specialties-carousel .carousel-track');
+      var cards = Array.from(track.querySelectorAll('.specialty-card'));
+      var prevBtn = document.querySelector('.specialties-section .carousel-btn--prev');
+      var nextBtn = document.querySelector('.specialties-section .carousel-btn--next');
+      var gap = 20;
+      var currentOffset = 0;
+      var isTransitioning = false;
+
+      // Clone all cards and append to create seamless loop
+      var totalOriginal = cards.length;
+      cards.forEach(function(card) {
+        var clone = card.cloneNode(true);
+        track.appendChild(clone);
+      });
+      // Also prepend clones for reverse scrolling
+      for (var i = totalOriginal - 1; i >= 0; i--) {
+        var clone = cards[i].cloneNode(true);
+        track.insertBefore(clone, track.firstChild);
+      }
+
+      function getCardWidth() {
+        return track.querySelector('.specialty-card').offsetWidth + gap;
+      }
+
+      // Start position: offset by the prepended clones
+      function init() {
+        var cardW = getCardWidth();
+        currentOffset = totalOriginal * cardW;
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(-' + currentOffset + 'px)';
+      }
+
+      init();
+      window.addEventListener('resize', init);
+
+      function slide(direction) {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        var cardW = getCardWidth();
+        currentOffset += direction * cardW;
+        track.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        track.style.transform = 'translateX(-' + currentOffset + 'px)';
+      }
+
+      track.addEventListener('transitionend', function() {
+        var cardW = getCardWidth();
+        var totalW = totalOriginal * cardW;
+        // If scrolled past the end clones, jump back
+        if (currentOffset >= totalW * 2) {
+          currentOffset -= totalW;
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(-' + currentOffset + 'px)';
+        }
+        // If scrolled before the start clones, jump forward
+        if (currentOffset <= 0) {
+          currentOffset += totalW;
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(-' + currentOffset + 'px)';
+        }
+        isTransitioning = false;
+      });
+
+      prevBtn.addEventListener('click', function() { slide(-1); });
+      nextBtn.addEventListener('click', function() { slide(1); });
+    })();
+
+    // Testimonial slider
+    (function() {
+      var slides = document.querySelectorAll('.testimonial-slide');
+      var prevBtn = document.getElementById('testimonial-prev');
+      var nextBtn = document.getElementById('testimonial-next');
+      var indicatorsContainer = document.getElementById('testimonial-indicators');
+      var current = 0;
+      var animating = false;
+
+      // Build indicators
+      slides.forEach(function(_, i) {
+        var dot = document.createElement('button');
+        dot.className = 'testimonial-indicator' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+        dot.addEventListener('click', function() {
+          if (i !== current && !animating) goTo(i, i > current ? 1 : -1);
+        });
+        indicatorsContainer.appendChild(dot);
+      });
+      var indicators = indicatorsContainer.querySelectorAll('.testimonial-indicator');
+
+      function goTo(index, direction) {
+        if (animating || index === current) return;
+        animating = true;
+
+        var outSlide = slides[current];
+        var inSlide = slides[index];
+
+        // Set entry position (opposite of direction)
+        inSlide.classList.remove('active', 'exit-left', 'exit-right', 'enter-left', 'enter-right');
+        inSlide.classList.add(direction > 0 ? 'enter-right' : 'enter-left');
+
+        // Force reflow
+        void inSlide.offsetWidth;
+
+        // Animate out
+        outSlide.classList.remove('active');
+        outSlide.classList.add(direction > 0 ? 'exit-left' : 'exit-right');
+
+        // Animate in
+        inSlide.classList.remove('enter-left', 'enter-right');
+        inSlide.classList.add('active');
+
+        // Update indicators
+        indicators[current].classList.remove('active');
+        indicators[index].classList.add('active');
+
+        current = index;
+
+        setTimeout(function() {
+          outSlide.classList.remove('exit-left', 'exit-right');
+          animating = false;
+        }, 500);
+      }
+
+      prevBtn.addEventListener('click', function() {
+        var next = (current - 1 + slides.length) % slides.length;
+        goTo(next, -1);
+      });
+      nextBtn.addEventListener('click', function() {
+        var next = (current + 1) % slides.length;
+        goTo(next, 1);
+      });
+    })();
+  </script>
+
+</body>
+</html>

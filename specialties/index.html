@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Specialties - Utah Cancer Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../provider.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../index.html" class="navbar-logo">
+        <img src="../images/logo.png" alt="Utah Cancer Specialists">
+      </a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar-nav">
+        <a href="../providers/index.html" class="nav-link">Providers</a>
+        <a href="#" class="nav-link">Locations</a>
+        <a href="index.html" class="nav-link">Specialties</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Patients</a>
+        <a href="#" class="nav-link">Trials</a>
+        <a href="#" class="nav-link">Events</a>
+        <a href="#" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">person</span>
+          Patient Portal
+        </a>
+        <a href="#" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">credit_card</span>
+          Quick Pay
+        </a>
+        <a href="#" class="nav-btn-location">
+          <span class="material-symbols-rounded">location_on</span>
+          Find a Location
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- Hero -->
+  <section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Our Specialties</h1>
+      <p class="providers-hero-desc">Comprehensive cancer care across a wide range of cancer types and blood disorders, delivered by board-certified specialists.</p>
+    </div>
+  </section>
+
+  <!-- Main Content with Sidebar -->
+  <section class="spec-layout">
+    <div class="container spec-layout-inner">
+
+      <!-- Left Sidebar -->
+      <aside class="spec-sidebar">
+        <div class="spec-sidebar-sticky">
+
+          <!-- Search -->
+          <div class="spec-search">
+            <span class="material-symbols-rounded spec-search-icon">search</span>
+            <input type="text" id="spec-search" class="spec-search-input" placeholder="Search specialties...">
+          </div>
+
+          <!-- Categories -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Categories</h3>
+            <ul class="spec-filter-list">
+              <li><button class="spec-filter-btn active" data-filter="all">All Specialties <span class="spec-filter-count">28</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="common">Common Cancers <span class="spec-filter-count">10</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="blood">Blood &amp; Bone Marrow <span class="spec-filter-count">7</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="gi">Gastrointestinal <span class="spec-filter-count">7</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="other">Other Conditions <span class="spec-filter-count">4</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Quick Links</h3>
+            <ul class="spec-filter-list spec-filter-list--links">
+              <li><a href="#common">Common Cancers</a></li>
+              <li><a href="#blood">Blood &amp; Bone Marrow</a></li>
+              <li><a href="#gi">Gastrointestinal</a></li>
+              <li><a href="#other">Other Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Help CTA -->
+          <div class="spec-sidebar-cta">
+            <span class="material-symbols-rounded">help</span>
+            <h4>Not sure where to start?</h4>
+            <p>Our team can help you find the right specialist for your needs.</p>
+            <a href="#" class="btn btn--primary btn--full btn--sm">
+              <span class="material-symbols-rounded">phone</span>
+              Call 801.269.0231
+            </a>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Right Content -->
+      <div class="spec-content">
+
+        <div class="spec-results-bar" id="spec-results-bar">
+          <span id="spec-results-count">Showing all 28 specialties</span>
+        </div>
+
+        <!-- Common Cancers -->
+        <div class="spec-category" data-category="common" id="common">
+          <h2 class="spec-category-title">Common Cancers</h2>
+          <div class="spec-grid">
+            <a href="#" class="spec-card" data-name="Breast Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">ribbon</span></div><div class="spec-card-text"><h3>Breast Cancer</h3><p>Personalized treatment plans combining advanced therapies and compassionate support for every stage.</p></div></a>
+            <a href="#" class="spec-card" data-name="Prostate Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">male</span></div><div class="spec-card-text"><h3>Prostate Cancer</h3><p>Expert, evidence-based treatment focused on preserving quality of life and long-term health.</p></div></a>
+            <a href="#" class="spec-card" data-name="Lung Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">pulmonology</span></div><div class="spec-card-text"><h3>Lung Cancer</h3><p>Comprehensive care using the latest diagnostic tools and targeted therapies for optimal outcomes.</p></div></a>
+            <a href="#" class="spec-card" data-name="Uterine Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">female</span></div><div class="spec-card-text"><h3>Uterine Cancer</h3><p>Specialized treatment with minimally invasive surgical options and targeted therapies.</p></div></a>
+            <a href="#" class="spec-card" data-name="Ovarian Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">gynecology</span></div><div class="spec-card-text"><h3>Ovarian Cancer</h3><p>Advanced treatment including surgery, chemotherapy, and emerging targeted approaches.</p></div></a>
+            <a href="#" class="spec-card" data-name="Head and Neck Cancers"><div class="spec-card-icon"><span class="material-symbols-rounded">face</span></div><div class="spec-card-text"><h3>Head &amp; Neck Cancers</h3><p>Multidisciplinary treatment for cancers of the throat, mouth, sinuses, and more.</p></div></a>
+            <a href="#" class="spec-card" data-name="Thyroid Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">endocrinology</span></div><div class="spec-card-text"><h3>Thyroid Cancer</h3><p>Expert care with specialized surgical, radioactive iodine, and targeted therapy options.</p></div></a>
+            <a href="#" class="spec-card" data-name="Bladder Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">nephrology</span></div><div class="spec-card-text"><h3>Bladder Cancer</h3><p>Comprehensive treatment including immunotherapy, chemotherapy, and surgical interventions.</p></div></a>
+            <a href="#" class="spec-card" data-name="Kidney Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">kidney</span></div><div class="spec-card-text"><h3>Kidney Cancer</h3><p>Specialized treatment combining immunotherapy, targeted therapy, and surgical options.</p></div></a>
+            <a href="#" class="spec-card" data-name="Brain Cancers"><div class="spec-card-icon"><span class="material-symbols-rounded">neurology</span></div><div class="spec-card-text"><h3>Brain Cancers</h3><p>Advanced treatment for primary and metastatic brain tumors using radiation and systemic therapies.</p></div></a>
+          </div>
+        </div>
+
+        <!-- Blood & Bone Marrow -->
+        <div class="spec-category" data-category="blood" id="blood">
+          <h2 class="spec-category-title">Blood &amp; Bone Marrow</h2>
+          <div class="spec-grid">
+            <a href="#" class="spec-card" data-name="Blood Cancers"><div class="spec-card-icon"><span class="material-symbols-rounded">bloodtype</span></div><div class="spec-card-text"><h3>Blood Cancers</h3><p>Comprehensive care for leukemia, lymphoma, and other blood disorders.</p></div></a>
+            <a href="#" class="spec-card" data-name="Lymphomas"><div class="spec-card-icon"><span class="material-symbols-rounded">immune</span></div><div class="spec-card-text"><h3>Lymphomas</h3><p>Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas.</p></div></a>
+            <a href="#" class="spec-card" data-name="Multiple Myeloma"><div class="spec-card-icon"><span class="material-symbols-rounded">skeleton</span></div><div class="spec-card-text"><h3>Multiple Myeloma</h3><p>Specialized treatment including novel immunotherapies and stem cell transplant support.</p></div></a>
+            <a href="#" class="spec-card" data-name="Myeloproliferative Disorders"><div class="spec-card-icon"><span class="material-symbols-rounded">labs</span></div><div class="spec-card-text"><h3>Myeloproliferative Disorders</h3><p>Diagnosis and management of conditions where bone marrow produces too many blood cells.</p></div></a>
+            <a href="#" class="spec-card" data-name="Chronic Leukemias"><div class="spec-card-icon"><span class="material-symbols-rounded">water_drop</span></div><div class="spec-card-text"><h3>Chronic Leukemias</h3><p>Long-term management of chronic lymphocytic and chronic myeloid leukemias.</p></div></a>
+            <a href="#" class="spec-card" data-name="Bone Marrow Failure Syndromes"><div class="spec-card-icon"><span class="material-symbols-rounded">hematology</span></div><div class="spec-card-text"><h3>Bone Marrow Failure Syndromes</h3><p>Expert care for aplastic anemia, MDS, and other bone marrow failure conditions.</p></div></a>
+            <a href="#" class="spec-card" data-name="Benign Hematology"><div class="spec-card-icon"><span class="material-symbols-rounded">ecg_heart</span></div><div class="spec-card-text"><h3>Benign Hematology</h3><p>Diagnosis and treatment of non-cancerous blood disorders including anemia and clotting disorders.</p></div></a>
+          </div>
+        </div>
+
+        <!-- Gastrointestinal Cancers -->
+        <div class="spec-category" data-category="gi" id="gi">
+          <h2 class="spec-category-title">Gastrointestinal Cancers</h2>
+          <div class="spec-grid">
+            <a href="#" class="spec-card" data-name="Colon Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">gastroenterology</span></div><div class="spec-card-text"><h3>Colon Cancer</h3><p>Advanced care with individualized treatment plans including surgery, chemo, and targeted therapies.</p></div></a>
+            <a href="#" class="spec-card" data-name="Rectal Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">gastroenterology</span></div><div class="spec-card-text"><h3>Rectal Cancer</h3><p>Specialized treatment with multimodal approaches including radiation, chemo, and surgery.</p></div></a>
+            <a href="#" class="spec-card" data-name="Stomach Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">restaurant</span></div><div class="spec-card-text"><h3>Stomach Cancer</h3><p>Comprehensive gastric cancer treatment including targeted therapy and immunotherapy.</p></div></a>
+            <a href="#" class="spec-card" data-name="Esophageal Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">emergency</span></div><div class="spec-card-text"><h3>Esophageal Cancer</h3><p>Expert care combining chemotherapy, radiation, and advanced surgical techniques.</p></div></a>
+            <a href="#" class="spec-card" data-name="Small Bowel Cancers"><div class="spec-card-icon"><span class="material-symbols-rounded">intestine</span></div><div class="spec-card-text"><h3>Small Bowel Cancers</h3><p>Specialized treatment for rare cancers of the small intestine.</p></div></a>
+            <a href="#" class="spec-card" data-name="Pancreatic Gallbladder Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">hepatology</span></div><div class="spec-card-text"><h3>Pancreatic/Gallbladder Cancer</h3><p>Advanced care with multidisciplinary treatment planning.</p></div></a>
+            <a href="#" class="spec-card" data-name="Liver Cancer"><div class="spec-card-icon"><span class="material-symbols-rounded">hepatology</span></div><div class="spec-card-text"><h3>Liver Cancer</h3><p>Expert care featuring advanced interventional procedures and systemic therapies.</p></div></a>
+          </div>
+        </div>
+
+        <!-- Other Cancers & Conditions -->
+        <div class="spec-category" data-category="other" id="other">
+          <h2 class="spec-category-title">Other Cancers &amp; Conditions</h2>
+          <div class="spec-grid">
+            <a href="#" class="spec-card" data-name="Endocrine Tumors"><div class="spec-card-icon"><span class="material-symbols-rounded">metabolism</span></div><div class="spec-card-text"><h3>Endocrine Tumors</h3><p>Specialized treatment for adrenal, pituitary, and neuroendocrine tumors.</p></div></a>
+            <a href="#" class="spec-card" data-name="Soft Tissue Cancers Sarcomas"><div class="spec-card-icon"><span class="material-symbols-rounded">fitness_center</span></div><div class="spec-card-text"><h3>Soft Tissue Cancers (Sarcomas)</h3><p>Expert sarcoma treatment for cancers in muscle, fat, nerves, and connective tissues.</p></div></a>
+            <a href="#" class="spec-card" data-name="Bone Cancers Osteosarcomas"><div class="spec-card-icon"><span class="material-symbols-rounded">bone</span></div><div class="spec-card-text"><h3>Bone Cancers (Osteosarcomas)</h3><p>Comprehensive bone cancer care combining chemotherapy, surgery, and emerging treatments.</p></div></a>
+            <a href="#" class="spec-card" data-name="Clinical Trials START Program"><div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div><div class="spec-card-text"><h3>Clinical Trials (START Program)</h3><p>Access to cutting-edge clinical trials and investigational treatments.</p></div></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact-section">
+    <div class="contact-bg">
+      <img src="../images/contact-bg.jpg" alt="">
+      <div class="contact-overlay"></div>
+    </div>
+    <div class="container contact-inner">
+      <h2 class="contact-heading">Contact us for more information.</h2>
+      <a href="#" class="btn btn--white">
+        <span class="material-symbols-rounded">phone</span>
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span class="marquee-item">Better care and brighter futures start here</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Better care and brighter futures start here</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span>
+      <span class="marquee-dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="../images/logo-dark.png" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4 class="footer-col-title">About Us</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#">Our Values</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Patient Care</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our Approach</a></li>
+              <li><a href="#">Telehealth</a></li>
+              <li><a href="#">Patient Stories</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Research</h4>
+            <ul class="footer-links">
+              <li><a href="#">Clinical trials</a></li>
+              <li><a href="#">Ways to Give</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info">
+            <p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p>
+            <p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; Utah Cancer Specialists. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (function() {
+      var hamburger = document.getElementById('navbar-hamburger');
+      var nav = document.querySelector('.navbar-nav');
+      var overlay = document.getElementById('mobile-menu-overlay');
+      var body = document.body;
+
+      function toggle() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('open');
+        overlay.classList.toggle('open');
+        body.classList.toggle('menu-open');
+      }
+
+      hamburger.addEventListener('click', toggle);
+      overlay.addEventListener('click', toggle);
+
+      // Close on nav link click
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (nav.classList.contains('open')) toggle();
+        });
+      });
+    })();
+
+    // Navbar scroll effect
+    (function() {
+      var navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    })();
+
+    // Specialties filtering & search
+    (function() {
+      var filterBtns = document.querySelectorAll('.spec-filter-btn');
+      var categories = document.querySelectorAll('.spec-category');
+      var cards = document.querySelectorAll('.spec-card');
+      var searchInput = document.getElementById('spec-search');
+      var resultsCount = document.getElementById('spec-results-count');
+      var currentFilter = 'all';
+
+      function updateCount() {
+        var visible = document.querySelectorAll('.spec-card:not([style*="display: none"])').length;
+        resultsCount.textContent = 'Showing ' + visible + ' of 28 specialties';
+      }
+
+      function applyFilters() {
+        var query = searchInput.value.toLowerCase().trim();
+        categories.forEach(function(cat) {
+          var catType = cat.getAttribute('data-category');
+          var catCards = cat.querySelectorAll('.spec-card');
+          var anyVisible = false;
+          catCards.forEach(function(card) {
+            var name = (card.getAttribute('data-name') || '').toLowerCase();
+            var matchesFilter = currentFilter === 'all' || catType === currentFilter;
+            var matchesSearch = !query || name.indexOf(query) !== -1;
+            if (matchesFilter && matchesSearch) {
+              card.style.display = '';
+              anyVisible = true;
+            } else {
+              card.style.display = 'none';
+            }
+          });
+          cat.style.display = anyVisible ? '' : 'none';
+        });
+        updateCount();
+      }
+
+      filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          applyFilters();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilters);
+    })();
+  </script>
+
+</body>
+</html>
