@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belisario A. Arango, MD - Utah Cancer Specialists</title>
+  <title>South Jordan Clinic - Utah Cancer Specialists</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
         <span></span>
       </button>
       <nav class="navbar-nav">
-        <a href="index.html" class="nav-link">Providers</a>
-        <a href="../locations/index.html" class="nav-link">Locations</a>
+        <a href="../providers/index.html" class="nav-link">Providers</a>
+        <a href="index.html" class="nav-link">Locations</a>
         <a href="../specialties/index.html" class="nav-link">Specialties</a>
         <a href="#" class="nav-link">About</a>
         <div class="nav-dropdown">
@@ -51,7 +51,7 @@
           <span class="material-symbols-rounded">credit_card</span>
           Quick Pay
         </a>
-        <a href="../locations/index.html" class="nav-btn-location">
+        <a href="index.html" class="nav-btn-location">
           <span class="material-symbols-rounded">location_on</span>
           Find a Location
         </a>
@@ -60,62 +60,57 @@
   </header>
   <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
-  <!-- Provider Hero -->
-  <section class="provider-hero">
-    <div class="container provider-hero-inner">
-      <div class="provider-hero-text">
-        <a href="index.html" class="provider-breadcrumb">
-          <span class="material-symbols-rounded">arrow_back</span>
-          All Providers
-        </a>
-        <h1 class="provider-name">Belisario A. Arango, MD</h1>
-        <p class="provider-specialty">Medical Oncology and Hematology</p>
-        <div class="provider-languages">
-          <span class="material-symbols-rounded">translate</span>
-          <span>English, Spanish</span>
-        </div>
-        <div class="provider-hero-actions">
-          <a href="#" class="btn btn--white">
-            <span class="material-symbols-rounded">calendar_today</span>
-            Request Appointment
-          </a>
-          <a href="#locations" class="btn btn--outline-dark">
-            <span class="material-symbols-rounded">location_on</span>
-            View Locations
-          </a>
-        </div>
+  <!-- Hero -->
+  <section class="loc-hero">
+    <div class="loc-hero-bg">
+      <img src="../images/building.jpg" alt="">
+      <div class="loc-hero-overlay"></div>
+    </div>
+    <div class="container loc-hero-inner">
+      <a href="index.html" class="provider-breadcrumb">
+        <span class="material-symbols-rounded">arrow_back</span>
+        All Locations
+      </a>
+      <span class="loc-hero-tag">Main Office</span>
+      <h1 class="loc-hero-title">South Jordan Clinic</h1>
+      <p class="loc-hero-sub">Riverfront Medical Campus</p>
+      <div class="loc-hero-meta">
+        <span class="loc-hero-meta-item">
+          <span class="material-symbols-rounded">location_on</span>
+          10808 South River Front Parkway, South Jordan, UT
+        </span>
+        <span class="loc-hero-meta-item">
+          <span class="material-symbols-rounded">phone</span>
+          801.269.0231
+        </span>
       </div>
-      <div class="provider-hero-photo">
-        <img src="../images/provider-arango.jpg" alt="Dr. Belisario A. Arango">
+      <div class="loc-hero-actions">
+        <a href="#" class="btn btn--white">
+          <span class="material-symbols-rounded">directions</span>
+          Get Directions
+        </a>
+        <a href="tel:8012690231" class="btn btn--outline-dark">
+          <span class="material-symbols-rounded">phone</span>
+          Call This Clinic
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Provider Tabs -->
-  <nav class="provider-tabs">
-    <div class="container provider-tabs-inner">
-      <a href="#about" class="provider-tab active">About</a>
-      <a href="#specialties" class="provider-tab">Specialties</a>
-      <a href="#education" class="provider-tab">Education</a>
-      <a href="#certifications" class="provider-tab">Certifications</a>
-      <a href="#locations" class="provider-tab">Locations</a>
-      <a href="#news" class="provider-tab">In the News</a>
-    </div>
-  </nav>
+  <!-- Main Content -->
+  <section class="loc-detail">
+    <div class="container loc-detail-inner">
 
-  <!-- Provider Details -->
-  <section class="provider-details">
-    <div class="container provider-details-inner">
+      <!-- Left: main content -->
+      <div class="loc-detail-main">
 
-      <div class="provider-main">
-
-        <div class="provider-section" id="about">
-          <h2 class="provider-section-title">About Dr. Arango</h2>
-          <p class="provider-bio">Dr. Arango is a board-certified medical oncologist and hematologist specializing in the diagnosis and treatment of cancer and blood disorders. They is committed to providing compassionate, evidence-based care tailored to each patient's individual needs — combining advanced therapies with a focus on the whole person.</p>
+        <div class="provider-section">
+          <h2 class="provider-section-title">About this clinic</h2>
+          <p class="provider-bio">Our South Jordan clinic is the main office and flagship location of Utah Cancer Specialists. Situated on the Riverfront Medical Campus, this full-service facility houses medical oncology, hematology, infusion therapy, on-site lab services, and clinical research in one connected space — so your entire care team is always steps away. Designed with patient comfort in mind, the clinic features private infusion suites, natural light throughout, and a dedicated support services team to help with scheduling, financial counseling, and every step of your care.</p>
         </div>
 
-        <div class="provider-section" id="specialties">
-          <h2 class="provider-section-title">Specialties</h2>
+        <div class="provider-section">
+          <h2 class="provider-section-title">Services at this location</h2>
           <div class="provider-specialties-grid">
             <div class="specialty-tag">
               <span class="material-symbols-rounded">biotech</span>
@@ -127,73 +122,123 @@
             </div>
             <div class="specialty-tag">
               <span class="material-symbols-rounded">medication</span>
-              Chemotherapy
+              Infusion Therapy
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">science</span>
+              On-site Laboratory
             </div>
             <div class="specialty-tag">
               <span class="material-symbols-rounded">vaccines</span>
-              Immunotherapy
+              Clinical Trials
             </div>
             <div class="specialty-tag">
               <span class="material-symbols-rounded">monitor_heart</span>
-              Cancer Screening
+              Genetic Counseling
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">self_improvement</span>
+              Supportive Care
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">payments</span>
+              Financial Counseling
             </div>
           </div>
         </div>
 
-        <div class="provider-section" id="education">
-          <h2 class="provider-section-title">Education &amp; Training</h2>
-          <div class="provider-credentials">
-            <div class="credential">
-              <div class="credential-icon">
-                <span class="material-symbols-rounded">school</span>
+        <div class="provider-section">
+          <h2 class="provider-section-title">Hours of operation</h2>
+          <ul class="loc-hours-list">
+            <li><span>Monday</span><span>8:00 AM – 5:00 PM</span></li>
+            <li><span>Tuesday</span><span>8:00 AM – 5:00 PM</span></li>
+            <li><span>Wednesday</span><span>8:00 AM – 5:00 PM</span></li>
+            <li><span>Thursday</span><span>8:00 AM – 5:00 PM</span></li>
+            <li><span>Friday</span><span>8:00 AM – 5:00 PM</span></li>
+            <li><span>Saturday</span><span class="loc-hours-closed">Closed</span></li>
+            <li><span>Sunday</span><span class="loc-hours-closed">Closed</span></li>
+          </ul>
+        </div>
+
+        <div class="provider-section">
+          <h2 class="provider-section-title">Providers at this location</h2>
+          <div class="loc-providers-grid">
+            <a href="../providers/belisario-arango.html" class="loc-provider-card">
+              <div class="loc-provider-photo">
+                <img src="../images/provider-arango.jpg" alt="Belisario A. Arango">
               </div>
-              <div class="credential-content">
-                <h3 class="credential-label">Medical School</h3>
-                <p>Accredited Medical Institution</p>
+              <div class="loc-provider-info">
+                <h3>Belisario A. Arango, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
               </div>
-            </div>
-            <div class="credential">
-              <div class="credential-icon">
-                <span class="material-symbols-rounded">local_hospital</span>
+            </a>
+            <a href="../providers/gregory-chipman.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Gregory C. Chipman, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
               </div>
-              <div class="credential-content">
-                <h3 class="credential-label">Residency</h3>
-                <p>Internal Medicine — Teaching Hospital</p>
+            </a>
+            <a href="../providers/xylina-gregg.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Xylina T. Gregg, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
               </div>
-            </div>
-            <div class="credential">
-              <div class="credential-icon">
-                <span class="material-symbols-rounded">biotech</span>
+            </a>
+            <a href="../providers/jose-pacheco.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Jose M. Pacheco, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
               </div>
-              <div class="credential-content">
-                <h3 class="credential-label">Fellowship</h3>
-                <p>Hematology-Oncology — University Cancer Center</p>
+            </a>
+            <a href="../providers/william-mckean.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>William B. McKean, PhD, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
               </div>
-            </div>
+            </a>
+            <a href="../providers/lindsay-hunter.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Lindsay A. Hunter, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
+              </div>
+            </a>
           </div>
+          <a href="../providers/index.html" class="loc-providers-more">
+            See all providers
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
         </div>
 
-        <div class="provider-section" id="certifications">
-          <h2 class="provider-section-title">Board Certifications</h2>
-          <ul class="provider-list">
-            <li>Internal Medicine</li>
-            <li>American Board of Medical Oncology</li>
-            <li>American Board of Hematology</li>
-          </ul>
-        </div>
-
-        <div class="provider-section" id="memberships">
-          <h2 class="provider-section-title">Professional Memberships</h2>
-          <ul class="provider-list">
-            <li>American Society of Clinical Oncology</li>
-            <li>American Society of Hematology</li>
-            <li>Society of Utah Medical Oncologists (SUMO)</li>
-          </ul>
+        <div class="provider-section">
+          <h2 class="provider-section-title">Parking &amp; directions</h2>
+          <p class="provider-bio">Free patient parking is available in the covered garage directly adjacent to our building. Accessible parking spaces are located near the main entrance on level 1. Take the elevator to Suite 400. If you're arriving via public transit, the UTA TRAX Red Line stops at the Daybreak Parkway station, roughly half a mile from the clinic.</p>
         </div>
 
       </div>
 
+      <!-- Right: sidebar -->
       <aside class="provider-sidebar">
+
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span class="material-symbols-rounded">location_on</span>
+            Address
+          </h3>
+          <p class="sidebar-contact-item">
+            10808 South River Front Parkway<br>
+            Suite 400<br>
+            South Jordan, UT 84095
+          </p>
+          <a href="#" class="btn btn--primary btn--full">
+            <span class="material-symbols-rounded">directions</span>
+            Get Directions
+          </a>
+        </div>
 
         <div class="sidebar-card">
           <h3 class="sidebar-card-title">
@@ -206,10 +251,9 @@
           <p class="sidebar-contact-item">
             <strong>Fax:</strong> 801.269.0298
           </p>
-          <a href="#" class="btn btn--primary btn--full">
-            <span class="material-symbols-rounded">mail</span>
-            Send a Message
-          </a>
+          <p class="sidebar-contact-item">
+            <strong>Email:</strong> <a href="mailto:info@utcancer.com">info@utcancer.com</a>
+          </p>
         </div>
 
         <div class="sidebar-card sidebar-card--dark">
@@ -217,7 +261,7 @@
             <span class="material-symbols-rounded">calendar_today</span>
             Schedule a Visit
           </h3>
-          <p class="sidebar-card-desc">New and existing patients can request an appointment online.</p>
+          <p class="sidebar-card-desc">New and existing patients can request an appointment at this clinic.</p>
           <a href="#" class="btn btn--white btn--full">Request Appointment</a>
         </div>
 
@@ -225,91 +269,11 @@
     </div>
   </section>
 
-  <!-- Locations Section -->
-  <section class="provider-locations" id="locations">
-    <div class="container">
-      <h2 class="provider-section-title">Locations</h2>
-      <div class="provider-locations-grid">
-        <div class="location-card">
-          <div class="location-card-icon">
-            <span class="material-symbols-rounded">location_on</span>
-          </div>
-          <div class="location-card-content">
-            <h3 class="location-card-name">South Jordan Clinic</h3>
-            <p class="location-card-sublabel">Main Office</p>
-            <p class="location-card-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
-            <div class="location-card-actions">
-              <a href="tel:8012690231" class="location-card-link">
-                <span class="material-symbols-rounded">phone</span>
-                801.269.0231
-              </a>
-              <a href="../locations/south-jordan.html" class="location-card-link">
-                <span class="material-symbols-rounded">directions</span>
-                Get Directions
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="location-card">
-          <div class="location-card-icon">
-            <span class="material-symbols-rounded">location_on</span>
-          </div>
-          <div class="location-card-content">
-            <h3 class="location-card-name">Bountiful Clinic</h3>
-            <p class="location-card-sublabel">Lakeview Hospital Campus</p>
-            <p class="location-card-address">520 East Medical Drive, Suite 100<br>Bountiful, UT 84010</p>
-            <div class="location-card-actions">
-              <a href="tel:8012690231" class="location-card-link">
-                <span class="material-symbols-rounded">phone</span>
-                801.269.0231
-              </a>
-              <a href="../locations/index.html" class="location-card-link">
-                <span class="material-symbols-rounded">directions</span>
-                Get Directions
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- In the News -->
-  <section class="provider-news" id="news">
-    <div class="container">
-      <h2 class="provider-section-title">In the News</h2>
-      <div class="provider-news-grid">
-        <a href="#" class="news-card">
-          <div class="news-card-video">
-            <span class="material-symbols-rounded">play_circle</span>
-          </div>
-          <div class="news-card-info">
-            <p class="news-card-source">KSL News</p>
-            <h3 class="news-card-title">New cancer treatment options available in Utah</h3>
-            <p class="news-card-date">Coming soon</p>
-          </div>
-        </a>
-        <a href="#" class="news-card">
-          <div class="news-card-video">
-            <span class="material-symbols-rounded">play_circle</span>
-          </div>
-          <div class="news-card-info">
-            <p class="news-card-source">Fox 13 Utah</p>
-            <h3 class="news-card-title">Advances in immunotherapy for cancer patients</h3>
-            <p class="news-card-date">Coming soon</p>
-          </div>
-        </a>
-        <a href="#" class="news-card">
-          <div class="news-card-video">
-            <span class="material-symbols-rounded">play_circle</span>
-          </div>
-          <div class="news-card-info">
-            <p class="news-card-source">KUTV</p>
-            <h3 class="news-card-title">Cancer screening guidelines and early detection</h3>
-            <p class="news-card-date">Coming soon</p>
-          </div>
-        </a>
-      </div>
+  <!-- Map placeholder -->
+  <section class="loc-map-section">
+    <div class="loc-map-placeholder">
+      <span class="material-symbols-rounded">map</span>
+      <p>Interactive map</p>
     </div>
   </section>
 
@@ -320,10 +284,10 @@
       <div class="contact-overlay"></div>
     </div>
     <div class="container contact-inner">
-      <h2 class="contact-heading">Contact us for more information.</h2>
-      <a href="#" class="btn btn--white">
+      <h2 class="contact-heading">Questions about your visit?</h2>
+      <a href="tel:8012690231" class="btn btn--white">
         <span class="material-symbols-rounded">phone</span>
-        Contact Us
+        Call 801.269.0231
       </a>
     </div>
   </section>
@@ -413,7 +377,6 @@
   </footer>
 
   <script>
-    // Mobile menu
     (function() {
       var hamburger = document.getElementById('navbar-hamburger');
       var nav = document.querySelector('.navbar-nav');
@@ -433,7 +396,6 @@
         });
       });
     })();
-
     (function() {
       var navbar = document.querySelector('.navbar');
       window.addEventListener('scroll', function() {
@@ -442,35 +404,6 @@
         } else {
           navbar.classList.remove('scrolled');
         }
-      });
-    })();
-
-    (function() {
-      var tabs = document.querySelectorAll('.provider-tab');
-      var sections = [];
-      tabs.forEach(function(tab) {
-        var id = tab.getAttribute('href').replace('#', '');
-        var el = document.getElementById(id);
-        if (el) sections.push({ id: id, el: el, tab: tab });
-      });
-      window.addEventListener('scroll', function() {
-        var scrollPos = window.scrollY + 200;
-        var active = sections[0];
-        sections.forEach(function(s) {
-          if (s.el.offsetTop <= scrollPos) active = s;
-        });
-        tabs.forEach(function(t) { t.classList.remove('active'); });
-        if (active) active.tab.classList.add('active');
-      });
-      tabs.forEach(function(tab) {
-        tab.addEventListener('click', function(e) {
-          e.preventDefault();
-          var id = tab.getAttribute('href').replace('#', '');
-          var el = document.getElementById(id);
-          if (el) {
-            window.scrollTo({ top: el.offsetTop - 180, behavior: 'smooth' });
-          }
-        });
       });
     })();
   </script>

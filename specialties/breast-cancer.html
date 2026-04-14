@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breast Cancer Treatment - Utah Cancer Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../provider.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../index.html" class="navbar-logo">
+        <img src="../images/logo.png" alt="Utah Cancer Specialists">
+      </a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar-nav">
+        <a href="../providers/index.html" class="nav-link">Providers</a>
+        <a href="../locations/index.html" class="nav-link">Locations</a>
+        <a href="index.html" class="nav-link">Specialties</a>
+        <a href="#" class="nav-link">About</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="#" class="nav-dropdown-item">Newly Diagnosed</a>
+            <a href="#" class="nav-dropdown-item">Treatments</a>
+            <a href="#" class="nav-dropdown-item">Patient Education</a>
+            <a href="#" class="nav-dropdown-item">Telehealth</a>
+            <a href="#" class="nav-dropdown-item">Clinical Trials</a>
+            <a href="#" class="nav-dropdown-item">Events</a>
+            <a href="#" class="nav-dropdown-item">Patient Advocacy</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">person</span>
+          Patient Portal
+        </a>
+        <a href="#" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">credit_card</span>
+          Quick Pay
+        </a>
+        <a href="../locations/index.html" class="nav-btn-location">
+          <span class="material-symbols-rounded">location_on</span>
+          Find a Location
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- Hero -->
+  <section class="sd-hero">
+    <div class="sd-hero-bg">
+      <img src="../images/specialty-breast.jpg" alt="">
+      <div class="sd-hero-overlay"></div>
+    </div>
+    <div class="container sd-hero-inner">
+      <a href="index.html" class="provider-breadcrumb">
+        <span class="material-symbols-rounded">arrow_back</span>
+        All Specialties
+      </a>
+      <span class="sd-hero-tag">Common Cancers</span>
+      <h1 class="sd-hero-title">Breast Cancer Treatment</h1>
+      <p class="sd-hero-sub">Personalized, multidisciplinary treatment plans combining advanced therapies and compassionate support for every stage of breast cancer.</p>
+      <div class="sd-hero-actions">
+        <a href="#" class="btn btn--white">
+          <span class="material-symbols-rounded">calendar_today</span>
+          Request an Appointment
+        </a>
+        <a href="#providers" class="btn btn--outline-dark">
+          <span class="material-symbols-rounded">group</span>
+          Meet the Team
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <nav class="provider-tabs">
+    <div class="container provider-tabs-inner">
+      <a href="#overview" class="provider-tab active">Overview</a>
+      <a href="#symptoms" class="provider-tab">Symptoms</a>
+      <a href="#diagnosis" class="provider-tab">Diagnosis</a>
+      <a href="#treatments" class="provider-tab">Treatments</a>
+      <a href="#providers" class="provider-tab">Providers</a>
+      <a href="#faq" class="provider-tab">FAQ</a>
+    </div>
+  </nav>
+
+  <!-- Details -->
+  <section class="provider-details">
+    <div class="container provider-details-inner">
+
+      <div class="provider-main">
+
+        <div class="provider-section" id="overview">
+          <h2 class="provider-section-title">Overview</h2>
+          <p class="provider-bio">Breast cancer is one of the most common cancers diagnosed in women, and with early detection and modern treatment, outcomes are better than ever. At Utah Cancer Specialists, our breast cancer program brings together medical oncologists, radiation oncologists, surgical partners, genetic counselors, and supportive-care specialists into a single coordinated team — so every patient receives a treatment plan built around her specific type, stage, and goals.</p>
+          <p class="provider-bio">Whether you've just been diagnosed or are seeking a second opinion, our team will walk you through every step, explain your options in clear language, and help you make confident, informed decisions about your care.</p>
+
+          <div class="sd-stats">
+            <div class="sd-stat">
+              <div class="sd-stat-num">1 in 8</div>
+              <div class="sd-stat-label">U.S. women diagnosed in their lifetime</div>
+            </div>
+            <div class="sd-stat">
+              <div class="sd-stat-num">99%</div>
+              <div class="sd-stat-label">5-year survival for localized disease</div>
+            </div>
+            <div class="sd-stat">
+              <div class="sd-stat-num">40+</div>
+              <div class="sd-stat-label">Clinical trials available</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="provider-section" id="symptoms">
+          <h2 class="provider-section-title">Symptoms &amp; Early Warning Signs</h2>
+          <p class="provider-bio">Many breast cancers are found through routine screening before symptoms appear. When symptoms do occur, they can include:</p>
+          <ul class="provider-list">
+            <li>A new lump or thickening in the breast or underarm</li>
+            <li>Changes in the size, shape, or contour of the breast</li>
+            <li>Skin changes such as dimpling, puckering, or redness</li>
+            <li>Nipple changes, including inversion, pain, or discharge</li>
+            <li>Unusual or persistent breast pain</li>
+            <li>Swelling or tenderness in the underarm lymph nodes</li>
+          </ul>
+          <p class="provider-bio">If you notice any of these changes, talk to your primary care provider or request a consultation directly with our team.</p>
+        </div>
+
+        <div class="provider-section" id="diagnosis">
+          <h2 class="provider-section-title">Diagnosis &amp; Staging</h2>
+          <p class="provider-bio">Accurate diagnosis and staging are the foundation of effective treatment. Our team uses a comprehensive workup that may include:</p>
+          <div class="provider-credentials">
+            <div class="credential">
+              <div class="credential-icon"><span class="material-symbols-rounded">radiology</span></div>
+              <div class="credential-content">
+                <h3 class="credential-label">Imaging</h3>
+                <p>Diagnostic mammography, breast ultrasound, and breast MRI</p>
+              </div>
+            </div>
+            <div class="credential">
+              <div class="credential-icon"><span class="material-symbols-rounded">biotech</span></div>
+              <div class="credential-content">
+                <h3 class="credential-label">Biopsy &amp; Pathology</h3>
+                <p>Core needle biopsy with receptor (ER/PR/HER2) and genomic testing</p>
+              </div>
+            </div>
+            <div class="credential">
+              <div class="credential-icon"><span class="material-symbols-rounded">family_history</span></div>
+              <div class="credential-content">
+                <h3 class="credential-label">Genetic Counseling</h3>
+                <p>BRCA1/2 and multigene panel testing when appropriate</p>
+              </div>
+            </div>
+            <div class="credential">
+              <div class="credential-icon"><span class="material-symbols-rounded">monitor_heart</span></div>
+              <div class="credential-content">
+                <h3 class="credential-label">Staging Workup</h3>
+                <p>PET/CT, bone scan, and lab studies to define stage and guide therapy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="provider-section" id="treatments">
+          <h2 class="provider-section-title">Treatment Options</h2>
+          <p class="provider-bio">Breast cancer treatment is highly individualized. Your plan may combine several of the following approaches, delivered in the right sequence for your specific cancer.</p>
+          <div class="provider-specialties-grid">
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">cut</span>
+              Surgical Care
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">radiology</span>
+              Radiation Therapy
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">medication</span>
+              Chemotherapy
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">vaccines</span>
+              Immunotherapy
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">target</span>
+              Targeted Therapy
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">balance</span>
+              Hormone Therapy
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">science</span>
+              Clinical Trials
+            </div>
+            <div class="specialty-tag">
+              <span class="material-symbols-rounded">self_improvement</span>
+              Supportive Care
+            </div>
+          </div>
+        </div>
+
+        <div class="provider-section" id="providers">
+          <h2 class="provider-section-title">Providers Who Treat Breast Cancer</h2>
+          <div class="loc-providers-grid">
+            <a href="../providers/belisario-arango.html" class="loc-provider-card">
+              <div class="loc-provider-photo">
+                <img src="../images/provider-arango.jpg" alt="Belisario A. Arango">
+              </div>
+              <div class="loc-provider-info">
+                <h3>Belisario A. Arango, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
+              </div>
+            </a>
+            <a href="../providers/lindsay-hunter.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Lindsay A. Hunter, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
+              </div>
+            </a>
+            <a href="../providers/xylina-gregg.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Xylina T. Gregg, MD</h3>
+                <p>Medical Oncology &amp; Hematology</p>
+              </div>
+            </a>
+            <a href="../providers/daniel-miller.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Daniel H. Miller, MD</h3>
+                <p>Radiation Oncology</p>
+              </div>
+            </a>
+            <a href="../providers/rachel-shenker.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Rachel F. Shenker, MD</h3>
+                <p>Radiation Oncology</p>
+              </div>
+            </a>
+            <a href="../providers/grant-hunter.html" class="loc-provider-card">
+              <div class="loc-provider-photo"><div class="loc-provider-photo-placeholder"><span class="material-symbols-rounded">person</span></div></div>
+              <div class="loc-provider-info">
+                <h3>Grant K. Hunter, MD</h3>
+                <p>Radiation Oncology</p>
+              </div>
+            </a>
+          </div>
+          <a href="../providers/index.html" class="loc-providers-more">
+            See all providers
+            <span class="material-symbols-rounded">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="provider-section" id="faq">
+          <h2 class="provider-section-title">Frequently Asked Questions</h2>
+          <div class="sd-faq">
+            <details class="sd-faq-item">
+              <summary>When should I start breast cancer screening?</summary>
+              <p>Most guidelines recommend annual screening mammograms starting at age 40, though women with family history or genetic risk factors may need to begin earlier. We're happy to help you build a screening plan that's right for your personal history.</p>
+            </details>
+            <details class="sd-faq-item">
+              <summary>Will I need chemotherapy?</summary>
+              <p>Not every patient needs chemotherapy. Modern genomic tests like Oncotype DX and MammaPrint help us determine which patients truly benefit — so many early-stage patients can safely avoid chemo and its side effects.</p>
+            </details>
+            <details class="sd-faq-item">
+              <summary>How do I get a second opinion?</summary>
+              <p>We welcome second-opinion visits. Simply call 801.269.0231 to schedule; our team will help gather your records and imaging so the visit is productive from day one.</p>
+            </details>
+            <details class="sd-faq-item">
+              <summary>Do you offer clinical trials for breast cancer?</summary>
+              <p>Yes. Through our START Program, patients have access to a growing portfolio of breast cancer clinical trials, including early-phase studies of novel targeted therapies and immunotherapy combinations.</p>
+            </details>
+            <details class="sd-faq-item">
+              <summary>Is genetic testing covered by insurance?</summary>
+              <p>Most insurance plans cover genetic testing when clinical criteria are met. Our genetic counselors will walk you through the process and help verify coverage before testing.</p>
+            </details>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="provider-sidebar">
+
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span class="material-symbols-rounded">quick_reference</span>
+            At a Glance
+          </h3>
+          <p class="sidebar-contact-item"><strong>Category:</strong> Common Cancers</p>
+          <p class="sidebar-contact-item"><strong>Care Team:</strong> Medical &amp; Radiation Oncology</p>
+          <p class="sidebar-contact-item"><strong>Specialists:</strong> 6+ providers</p>
+          <p class="sidebar-contact-item"><strong>Clinical Trials:</strong> Available</p>
+        </div>
+
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title">
+            <span class="material-symbols-rounded">phone</span>
+            Contact
+          </h3>
+          <p class="sidebar-contact-item">
+            <strong>Phone:</strong> <a href="tel:8012690231">801.269.0231</a>
+          </p>
+          <a href="#" class="btn btn--primary btn--full">
+            <span class="material-symbols-rounded">mail</span>
+            Message Us
+          </a>
+        </div>
+
+        <div class="sidebar-card sidebar-card--dark">
+          <h3 class="sidebar-card-title">
+            <span class="material-symbols-rounded">calendar_today</span>
+            Ready to Start?
+          </h3>
+          <p class="sidebar-card-desc">Request a consultation with a breast cancer specialist today.</p>
+          <a href="#" class="btn btn--white btn--full">Request Appointment</a>
+        </div>
+
+      </aside>
+    </div>
+  </section>
+
+  <!-- Related Specialties -->
+  <section class="sd-related">
+    <div class="container">
+      <h2 class="provider-section-title">Related Specialties</h2>
+      <div class="spec-grid">
+        <a href="#" class="spec-card">
+          <div class="spec-card-icon"><span class="material-symbols-rounded">female</span></div>
+          <div class="spec-card-text"><h3>Ovarian Cancer</h3><p>Advanced treatment including surgery, chemotherapy, and targeted approaches.</p></div>
+        </a>
+        <a href="#" class="spec-card">
+          <div class="spec-card-icon"><span class="material-symbols-rounded">female</span></div>
+          <div class="spec-card-text"><h3>Uterine Cancer</h3><p>Specialized treatment with minimally invasive surgical options and targeted therapies.</p></div>
+        </a>
+        <a href="#" class="spec-card">
+          <div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div>
+          <div class="spec-card-text"><h3>Clinical Trials (START Program)</h3><p>Access to cutting-edge clinical trials and investigational treatments.</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact-section">
+    <div class="contact-bg">
+      <img src="../images/contact-bg.jpg" alt="">
+      <div class="contact-overlay"></div>
+    </div>
+    <div class="container contact-inner">
+      <h2 class="contact-heading">Ready to talk with a specialist?</h2>
+      <a href="tel:8012690231" class="btn btn--white">
+        <span class="material-symbols-rounded">phone</span>
+        Call 801.269.0231
+      </a>
+    </div>
+  </section>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span class="marquee-item">Better care and brighter futures start here</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Better care and brighter futures start here</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span>
+      <span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span>
+      <span class="marquee-dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="../images/logo-dark.png" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4 class="footer-col-title">About Us</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Our Vision</a></li>
+              <li><a href="#">Our Values</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Patient Care</h4>
+            <ul class="footer-links">
+              <li><a href="#">Our Approach</a></li>
+              <li><a href="#">Telehealth</a></li>
+              <li><a href="#">Patient Stories</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-col-title">Research</h4>
+            <ul class="footer-links">
+              <li><a href="#">Clinical trials</a></li>
+              <li><a href="#">Ways to Give</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info">
+            <p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p>
+            <p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
+          </div>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; Utah Cancer Specialists. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var hamburger = document.getElementById('navbar-hamburger');
+      var nav = document.querySelector('.navbar-nav');
+      var overlay = document.getElementById('mobile-menu-overlay');
+      var body = document.body;
+      function toggle() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('open');
+        overlay.classList.toggle('open');
+        body.classList.toggle('menu-open');
+      }
+      hamburger.addEventListener('click', toggle);
+      overlay.addEventListener('click', toggle);
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (nav.classList.contains('open')) toggle();
+        });
+      });
+    })();
+    (function() {
+      var navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    })();
+    // Tab smooth scroll + active on scroll
+    (function() {
+      var tabs = document.querySelectorAll('.provider-tab');
+      var sections = [];
+      tabs.forEach(function(tab) {
+        var id = tab.getAttribute('href').replace('#', '');
+        var el = document.getElementById(id);
+        if (el) sections.push({ id: id, el: el, tab: tab });
+      });
+      window.addEventListener('scroll', function() {
+        var scrollPos = window.scrollY + 200;
+        var active = sections[0];
+        sections.forEach(function(s) {
+          if (s.el.offsetTop <= scrollPos) active = s;
+        });
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        if (active) active.tab.classList.add('active');
+      });
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function(e) {
+          e.preventDefault();
+          var id = tab.getAttribute('href').replace('#', '');
+          var el = document.getElementById(id);
+          if (el) {
+            window.scrollTo({ top: el.offsetTop - 180, behavior: 'smooth' });
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
