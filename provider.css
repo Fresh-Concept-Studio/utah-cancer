@@ -1350,6 +1350,22 @@
   opacity: 0.7;
 }
 
+.loc-region-title {
+  font-family: 'Bricolage Grotesque', serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -1px;
+  color: #003347;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #00577d;
+  display: inline-block;
+}
+
+.loc-grid + .loc-region-title {
+  margin-top: 60px;
+}
+
 .loc-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
