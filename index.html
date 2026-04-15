@@ -95,10 +95,22 @@
         </a>
       </div>
       <div class="team-photos">
-        <div class="team-photo team-photo--tl"><img src="images/provider-1.jpg" alt="Provider"></div>
-        <div class="team-photo team-photo--tr"><img src="images/provider-2.jpg" alt="Provider"></div>
-        <div class="team-photo team-photo--bl"><img src="images/provider-3.jpg" alt="Provider"></div>
-        <div class="team-photo team-photo--br"><img src="images/provider-4.jpg" alt="Provider"></div>
+        <div class="team-photo team-photo--tl" data-slot="0">
+          <img class="team-photo-front" src="images/provider-1.jpg" alt="Provider">
+          <img class="team-photo-back" src="images/provider-1.jpg" alt="Provider">
+        </div>
+        <div class="team-photo team-photo--tr" data-slot="1">
+          <img class="team-photo-front" src="images/provider-2.jpg" alt="Provider">
+          <img class="team-photo-back" src="images/provider-2.jpg" alt="Provider">
+        </div>
+        <div class="team-photo team-photo--bl" data-slot="2">
+          <img class="team-photo-front" src="images/provider-3.jpg" alt="Provider">
+          <img class="team-photo-back" src="images/provider-3.jpg" alt="Provider">
+        </div>
+        <div class="team-photo team-photo--br" data-slot="3">
+          <img class="team-photo-front" src="images/provider-4.jpg" alt="Provider">
+          <img class="team-photo-back" src="images/provider-4.jpg" alt="Provider">
+        </div>
       </div>
     </div>
   </section>
@@ -577,6 +589,98 @@
         var next = (current + 1) % slides.length;
         goTo(next, 1);
       });
+    })();
+
+    // Provider photo rotation — randomize on load, crossfade individually
+    (function() {
+      var allProviders = [
+        'provider-andrew-aloia.jpg','provider-anita-mcdonald.jpg','provider-anne-marceau.jpg',
+        'provider-belisario-arango.jpg','provider-benjamin-solomon.jpg','provider-bonnie-wallace.jpg',
+        'provider-brighton-loveday.jpg','provider-brittany-weed.jpg','provider-daniel-miller.jpg',
+        'provider-david-warner.jpg','provider-deborah-hatch.jpg','provider-disean-kendall.jpg',
+        'provider-douglas-holt.jpg','provider-dustin-boothe.jpg','provider-gary-garner.jpg',
+        'provider-grant-hunter.jpg','provider-greg-litton.jpg','provider-gregory-chipman.jpg',
+        'provider-hyatt-reed.jpg','provider-hyrum-prestwich.jpg','provider-james-clarke.jpg',
+        'provider-james-shortridge.jpg','provider-jared-scott.jpg','provider-jason-stinnett.jpg',
+        'provider-jeffrey-lee.jpg','provider-john-hayes.jpg','provider-jonathan-whisenant.jpg',
+        'provider-jose-pacheco.jpg','provider-julie-balk.jpg','provider-julie-luckart.jpg',
+        'provider-justin-call.jpg','provider-kimberly-mcfee.jpg','provider-kylee-maliwauki.jpg',
+        'provider-leland-rogers.jpg','provider-lindsay-hunter.jpg','provider-louise-tobey.jpg',
+        'provider-maja-lusk.jpg','provider-nancy-mortensen.jpg','provider-nathan-rich.jpg',
+        'provider-nitin-chandramouli.jpg','provider-rachel-shenker.jpg','provider-rik-hanson.jpg',
+        'provider-robert-harris.jpg','provider-robert-havard.jpg','provider-robert-isaak.jpg',
+        'provider-samantha-gaffney.jpg','provider-scott-samuelson.jpg','provider-shauna-olsen.jpg',
+        'provider-staci-gunter.jpg','provider-stephanie-ellis.jpg','provider-sunita-sigdel.jpg',
+        'provider-thomas-skidmore.jpg','provider-tylan-magnusson.jpg','provider-wayne-ormsby.jpg',
+        'provider-william-mckean.jpg','provider-william-nibley.jpg','provider-william-stephenson.jpg',
+        'provider-xylina-gregg.jpg'
+      ];
+
+      // Shuffle array
+      function shuffle(arr) {
+        for (var i = arr.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+        }
+        return arr;
+      }
+
+      var pool = shuffle(allProviders.slice());
+      var poolIndex = 0;
+      var slots = document.querySelectorAll('.team-photo[data-slot]');
+
+      function nextFromPool() {
+        if (poolIndex >= pool.length) {
+          pool = shuffle(allProviders.slice());
+          poolIndex = 0;
+        }
+        return 'images/' + pool[poolIndex++];
+      }
+
+      // Track which image is currently showing per slot
+      var showing = []; // 'front' or 'back'
+
+      // Randomize initial photos on load
+      slots.forEach(function(slot, i) {
+        var front = slot.querySelector('.team-photo-front');
+        var back = slot.querySelector('.team-photo-back');
+        var src = nextFromPool();
+        front.src = src;
+        back.src = src;
+        showing[i] = 'front';
+      });
+
+      // Crossfade one slot at a time
+      function crossfadeSlot(index) {
+        var slot = slots[index];
+        var front = slot.querySelector('.team-photo-front');
+        var back = slot.querySelector('.team-photo-back');
+        var newSrc = nextFromPool();
+
+        if (showing[index] === 'front') {
+          // Load new image into back, then fade to it
+          back.src = newSrc;
+          slot.classList.add('crossfading');
+          showing[index] = 'back';
+        } else {
+          // Load new image into front, then fade to it
+          front.src = newSrc;
+          slot.classList.remove('crossfading');
+          showing[index] = 'front';
+        }
+      }
+
+      // Stagger the transitions so each slot rotates independently
+      var rotateInterval = 4000; // ms between individual slot transitions
+      var slotIndex = 0;
+
+      // Start after initial delay
+      setTimeout(function() {
+        setInterval(function() {
+          crossfadeSlot(slotIndex);
+          slotIndex = (slotIndex + 1) % slots.length;
+        }, rotateInterval);
+      }, 3000);
     })();
   </script>
 
