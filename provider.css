@@ -1390,11 +1390,6 @@
   border-color: #00577d;
 }
 
-.loc-card--featured {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-
 .loc-card--featured .loc-card-image {
   height: 240px;
 }
@@ -1969,7 +1964,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .loc-card--featured {
-    grid-column: span 2;
+    grid-column: span 1;
   }
   .loc-detail-inner {
     grid-template-columns: 1fr;
