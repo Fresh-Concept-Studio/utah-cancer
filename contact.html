@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Utah Cancer Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="provider.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo"><img src="images/logo.png" alt="Utah Cancer Specialists"></a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav class="navbar-nav">
+        <a href="providers/index.html" class="nav-link">Providers</a>
+        <a href="locations/index.html" class="nav-link">Locations</a>
+        <a href="specialties/index.html" class="nav-link">Specialties</a>
+        <a href="about.html" class="nav-link">About</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="newly-diagnosed.html" class="nav-dropdown-item">Newly Diagnosed</a>
+            <a href="treatment-options.html" class="nav-dropdown-item">Treatments</a>
+            <a href="patient-education.html" class="nav-dropdown-item">Patient Education</a>
+            <a href="telehealth.html" class="nav-dropdown-item">Telehealth</a>
+            <a href="clinical-trials.html" class="nav-dropdown-item">Clinical Trials</a>
+            <a href="programs-and-services.html" class="nav-dropdown-item">Programs &amp; Services</a>
+            <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
+          </div></div>
+        </div>
+        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Contact Us</h1>
+      <p class="providers-hero-desc">We&rsquo;re here to help. Reach out to our team by phone, email, or the form below.</p>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;">
+        <div>
+          <h2 class="about-mission-title" style="margin-bottom:24px;">Send Us a Message</h2>
+          <form style="display:flex; flex-direction:column; gap:16px;">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <input type="text" placeholder="First Name" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family:Inter,sans-serif; font-size:14px; outline:none;">
+              <input type="text" placeholder="Last Name" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family:Inter,sans-serif; font-size:14px; outline:none;">
+            </div>
+            <input type="email" placeholder="Email Address" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family:Inter,sans-serif; font-size:14px; outline:none;">
+            <input type="tel" placeholder="Phone Number" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family:Inter,sans-serif; font-size:14px; outline:none;">
+            <input type="text" placeholder="Subject" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family:Inter,sans-serif; font-size:14px; outline:none;">
+            <textarea placeholder="Message" rows="5" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family:Inter,sans-serif; font-size:14px; outline:none; resize:vertical;"></textarea>
+            <button type="submit" class="btn btn--primary" style="align-self:flex-start;"><span class="material-symbols-rounded">send</span> Send Message</button>
+          </form>
+        </div>
+        <div>
+          <h2 class="about-mission-title" style="margin-bottom:24px;">Get in Touch</h2>
+          <div class="provider-credentials">
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">apartment</span></div><div class="credential-content"><h3 class="credential-label">Administrative Office</h3><p>10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">phone</span></div><div class="credential-content"><h3 class="credential-label">Phone</h3><p><a href="tel:8012629494" style="color:#00577d;">801.262.9494</a><br>Monday&ndash;Friday, 9:00 AM &ndash; 5:00 PM</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">mail</span></div><div class="credential-content"><h3 class="credential-label">Email</h3><p><a href="mailto:info@utcancer.com" style="color:#00577d;">info@utcancer.com</a></p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">payments</span></div><div class="credential-content"><h3 class="credential-label">Billing Questions</h3><p><a href="tel:8012660878" style="color:#00577d;">801.266.0878</a><br>Monday&ndash;Friday, 7:00 AM &ndash; 4:00 PM</p></div></div>
+          </div>
+          <div style="margin-top:32px; padding:24px; background:#f0f4f8; border-radius:16px; border:1px solid #e0e9ef;">
+            <h3 style="font-family:'Bricolage Grotesque',serif; font-size:17px; color:#003347; margin-bottom:8px;">Need urgent medical attention?</h3>
+            <p style="font-size:14px; color:#1a3d4e; opacity:0.8; line-height:22px;">If you need urgent care beyond regular office hours, please go directly to a hospital emergency room. A physician will be contacted upon your arrival. One of our physicians is always on call.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-banner"><div class="marquee-track">
+    <span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span><span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span><span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span>
+  </div></div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="images/logo-dark.png" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col"><h4 class="footer-col-title">About Us</h4><ul class="footer-links"><li><a href="about.html">Our Mission</a></li><li><a href="about.html">Our Vision</a></li><li><a href="about.html">Our Values</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Patient Care</h4><ul class="footer-links"><li><a href="newly-diagnosed.html">Newly Diagnosed</a></li><li><a href="telehealth.html">Telehealth</a></li><li><a href="patient-education.html">Patient Education</a></li><li><a href="patient-resources.html">Resources</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Research</h4><ul class="footer-links"><li><a href="clinical-trials.html">Clinical Trials</a></li><li><a href="programs-and-services.html">Programs</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info"><p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p><p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p></div>
+          <div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+  </footer>
+  <script>
+    (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();
+    (function(){ var nb=document.querySelector('.navbar');window.addEventListener('scroll',function(){ if(window.scrollY>50){ nb.classList.add('scrolled'); }else{ nb.classList.remove('scrolled'); } }); })();
+  </script>
+</body>
+</html>

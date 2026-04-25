@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinical Trials - Utah Cancer Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="provider.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo"><img src="images/logo.png" alt="Utah Cancer Specialists"></a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav class="navbar-nav">
+        <a href="providers/index.html" class="nav-link">Providers</a>
+        <a href="locations/index.html" class="nav-link">Locations</a>
+        <a href="specialties/index.html" class="nav-link">Specialties</a>
+        <a href="about.html" class="nav-link">About</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="newly-diagnosed.html" class="nav-dropdown-item">Newly Diagnosed</a>
+            <a href="treatment-options.html" class="nav-dropdown-item">Treatments</a>
+            <a href="patient-education.html" class="nav-dropdown-item">Patient Education</a>
+            <a href="telehealth.html" class="nav-dropdown-item">Telehealth</a>
+            <a href="clinical-trials.html" class="nav-dropdown-item">Clinical Trials</a>
+            <a href="programs-and-services.html" class="nav-dropdown-item">Programs &amp; Services</a>
+            <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
+          </div></div>
+        </div>
+        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <section class="sd-hero">
+    <div class="sd-hero-bg"><img src="images/specialty-prostate-gen.jpg" alt=""><div class="sd-hero-overlay"></div></div>
+    <div class="container sd-hero-inner">
+      <span class="sd-hero-tag">Research &amp; Innovation</span>
+      <h1 class="sd-hero-title">Clinical Trials</h1>
+      <p class="sd-hero-sub">For over 25 years, Utah Cancer Specialists has been advancing cancer care through clinical research &mdash; managing 50+ active trials and offering Utah&rsquo;s only community-based early-phase program.</p>
+      <div class="sd-hero-actions">
+        <a href="tel:8019074750" class="btn btn--white"><span class="material-symbols-rounded">phone</span> START: 801.907.4750</a>
+        <a href="tel:8012816864" class="btn btn--outline-dark"><span class="material-symbols-rounded">phone</span> UCS Trials: 801.281.6864</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; margin-bottom:60px;">
+        <div>
+          <span class="about-mission-label">START Mountain Region</span>
+          <h2 class="about-mission-title">Early-Phase Trials (Phase I)</h2>
+          <p class="provider-bio">Established in 2020, the START Mountain Region center is Utah&rsquo;s only dedicated community-based early-phase clinical trial site. Part of the world&rsquo;s largest Phase I medical oncology research program, the center is led by Dr. Justin Call and gives patients access to cutting-edge investigational therapies.</p>
+          <p class="provider-bio">The program expands options for patients who have exhausted standard treatments and wish to explore emerging approaches, right here in Utah.</p>
+          <p class="provider-bio"><strong>Contact:</strong> 801.907.4750 &nbsp;|&nbsp; <a href="mailto:research@utcancer.com" style="color:#00577d;">research@utcancer.com</a></p>
+        </div>
+        <div>
+          <span class="about-mission-label">UCS Clinical Research</span>
+          <h2 class="about-mission-title">Late-Phase Trials (Phase II&ndash;III)</h2>
+          <p class="provider-bio">Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West. These trials help establish new standard-of-care treatments.</p>
+          <p class="provider-bio">With trials spanning all cancer types, our research team can help determine whether a clinical trial might be right for you based on your diagnosis, treatment history, and molecular profile.</p>
+          <p class="provider-bio"><strong>Contact:</strong> 801.281.6864 &nbsp;|&nbsp; <a href="mailto:research@utcancer.com" style="color:#00577d;">research@utcancer.com</a></p>
+        </div>
+      </div>
+
+      <div style="background:#f0f4f8; border-radius:20px; padding:48px; border:1px solid #e0e9ef;">
+        <h2 class="provider-section-title" style="margin-bottom:24px;">Frequently Asked Questions</h2>
+        <div class="sd-faq">
+          <details class="sd-faq-item"><summary>What is a clinical trial?</summary><p>A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed and approved by an Institutional Review Board (IRB) to ensure patient safety, and participation is always voluntary.</p></details>
+          <details class="sd-faq-item"><summary>Will I receive a placebo?</summary><p>Most cancer clinical trials do not use placebos alone. When a control arm is included, participants always receive at least the current standard of care in addition to any investigational agent.</p></details>
+          <details class="sd-faq-item"><summary>Are there costs to participate?</summary><p>Investigational drugs and study-related tests are typically provided at no cost. Standard-of-care costs (like routine blood work) are generally billed to your insurance as they normally would be.</p></details>
+          <details class="sd-faq-item"><summary>How do I find out if I&rsquo;m eligible?</summary><p>Ask your oncologist about trial options at your next visit, or contact our research team directly. We&rsquo;ll review your diagnosis, treatment history, and molecular profile to identify suitable trials.</p></details>
+          <details class="sd-faq-item"><summary>Can I leave a trial if I change my mind?</summary><p>Yes. Participation is entirely voluntary. You may withdraw from a clinical trial at any time, for any reason, without affecting your ongoing care at Utah Cancer Specialists.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-bg"><img src="images/contact-bg.jpg" alt=""><div class="contact-overlay"></div></div>
+    <div class="container contact-inner">
+      <h2 class="contact-heading">Interested in a clinical trial?</h2>
+      <a href="tel:8012690231" class="btn btn--white"><span class="material-symbols-rounded">phone</span> Call 801.269.0231</a>
+    </div>
+  </section>
+  <div class="marquee-banner"><div class="marquee-track">
+    <span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span><span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span><span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span>
+  </div></div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="images/logo-dark.png" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col"><h4 class="footer-col-title">About Us</h4><ul class="footer-links"><li><a href="about.html">Our Mission</a></li><li><a href="about.html">Our Vision</a></li><li><a href="about.html">Our Values</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Patient Care</h4><ul class="footer-links"><li><a href="newly-diagnosed.html">Newly Diagnosed</a></li><li><a href="telehealth.html">Telehealth</a></li><li><a href="patient-education.html">Patient Education</a></li><li><a href="patient-resources.html">Resources</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Research</h4><ul class="footer-links"><li><a href="clinical-trials.html">Clinical Trials</a></li><li><a href="programs-and-services.html">Programs</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info"><p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p><p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p></div>
+          <div class="footer-social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+  </footer>
+  <script>
+    (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();
+    (function(){ var nb=document.querySelector('.navbar');window.addEventListener('scroll',function(){ if(window.scrollY>50){ nb.classList.add('scrolled'); }else{ nb.classList.remove('scrolled'); } }); })();
+  </script>
+</body>
+</html>
