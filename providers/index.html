@@ -68,25 +68,66 @@
     </div>
   </section>
 
-  <!-- Filters -->
-  <div class="providers-filters">
-    <div class="container">
-      <div class="filter-tabs">
-        <button class="filter-tab active" data-filter="all">All Providers</button>
-        <button class="filter-tab" data-filter="medical-oncology">Medical Oncology &amp; Hematology</button>
-        <button class="filter-tab" data-filter="radiation-oncology">Radiation Oncology</button>
-        <button class="filter-tab" data-filter="supportive-care">Supportive &amp; Rehabilitative Care</button>
-        <button class="filter-tab" data-filter="advanced-practitioners">Advanced Practitioners</button>
-      </div>
-    </div>
-  </div>
+  <!-- Main Content with Sidebar -->
+  <section class="spec-layout">
+    <div class="container spec-layout-inner">
 
-  <!-- Provider Grid -->
-  <section class="providers-grid-section">
-    <div class="container">
+      <!-- Left Sidebar -->
+      <aside class="spec-sidebar">
+        <div class="spec-sidebar-sticky">
+
+          <!-- Search -->
+          <div class="spec-search">
+            <span class="material-symbols-rounded spec-search-icon">search</span>
+            <input type="text" id="spec-search" class="spec-search-input" placeholder="Search providers...">
+          </div>
+
+          <!-- Categories -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Categories</h3>
+            <ul class="spec-filter-list">
+              <li><button class="spec-filter-btn active" data-filter="all">All Providers <span class="spec-filter-count">58</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="medical-oncology">Medical Oncology &amp; Hematology <span class="spec-filter-count">22</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="radiation-oncology">Radiation Oncology <span class="spec-filter-count">12</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="supportive-care">Supportive &amp; Rehabilitative Care <span class="spec-filter-count">1</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="advanced-practitioners">Advanced Practitioners <span class="spec-filter-count">23</span></button></li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Quick Links</h3>
+            <ul class="spec-filter-list spec-filter-list--links">
+              <li><a href="#medical-oncology">Medical Oncology &amp; Hematology</a></li>
+              <li><a href="#radiation-oncology">Radiation Oncology</a></li>
+              <li><a href="#supportive-care">Supportive &amp; Rehabilitative Care</a></li>
+              <li><a href="#advanced-practitioners">Advanced Practitioners</a></li>
+            </ul>
+          </div>
+
+          <!-- Help CTA -->
+          <div class="spec-sidebar-cta">
+            <span class="material-symbols-rounded">help</span>
+            <h4>Need help finding a provider?</h4>
+            <p>Our team can help match you with the right specialist for your needs.</p>
+            <a href="tel:8012690231" class="btn btn--primary btn--full btn--sm">
+              <span class="material-symbols-rounded">phone</span>
+              Call 801.269.0231
+            </a>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Right Content -->
+      <div class="spec-content">
+
+        <div class="spec-results-bar" id="spec-results-bar">
+          <span id="spec-results-count">Showing all 58 providers</span>
+        </div>
 
       <!-- Medical Oncology and Hematology -->
-      <div class="provider-category" data-category="medical-oncology">
+      <div class="provider-category" data-category="medical-oncology" id="medical-oncology">
         <h2 class="provider-category-title">Medical Oncology &amp; Hematology</h2>
         <div class="providers-grid">
 
@@ -272,7 +313,7 @@
       </div>
 
       <!-- Radiation Oncology -->
-      <div class="provider-category" data-category="radiation-oncology">
+      <div class="provider-category" data-category="radiation-oncology" id="radiation-oncology">
         <h2 class="provider-category-title">Radiation Oncology</h2>
         <div class="providers-grid">
 
@@ -376,7 +417,7 @@
       </div>
 
       <!-- Supportive and Rehabilitative Care -->
-      <div class="provider-category" data-category="supportive-care">
+      <div class="provider-category" data-category="supportive-care" id="supportive-care">
         <h2 class="provider-category-title">Supportive &amp; Rehabilitative Care</h2>
         <div class="providers-grid">
 
@@ -392,7 +433,7 @@
       </div>
 
       <!-- Advanced Practitioners -->
-      <div class="provider-category" data-category="advanced-practitioners">
+      <div class="provider-category" data-category="advanced-practitioners" id="advanced-practitioners">
         <h2 class="provider-category-title">Advanced Practitioners</h2>
         <div class="providers-grid">
 
@@ -583,6 +624,7 @@
         </div>
       </div>
 
+      </div><!-- /.spec-content -->
     </div>
   </section>
 
@@ -709,25 +751,54 @@
       });
     })();
 
-    // Category filter
+    // Providers filtering & search
     (function() {
-      var tabs = document.querySelectorAll('.filter-tab');
+      var filterBtns = document.querySelectorAll('.spec-filter-btn');
       var categories = document.querySelectorAll('.provider-category');
+      var cards = document.querySelectorAll('.provider-card');
+      var searchInput = document.getElementById('spec-search');
+      var resultsCount = document.getElementById('spec-results-count');
+      var totalProviders = cards.length;
+      var currentFilter = 'all';
 
-      tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-          tabs.forEach(function(t) { t.classList.remove('active'); });
-          tab.classList.add('active');
-          var filter = tab.getAttribute('data-filter');
-          categories.forEach(function(cat) {
-            if (filter === 'all' || cat.getAttribute('data-category') === filter) {
-              cat.style.display = '';
+      function updateCount() {
+        var visible = document.querySelectorAll('.provider-card:not([style*="display: none"])').length;
+        resultsCount.textContent = 'Showing ' + visible + ' of ' + totalProviders + ' providers';
+      }
+
+      function applyFilters() {
+        var query = searchInput.value.toLowerCase().trim();
+        categories.forEach(function(cat) {
+          var catType = cat.getAttribute('data-category');
+          var catCards = cat.querySelectorAll('.provider-card');
+          var anyVisible = false;
+          catCards.forEach(function(card) {
+            var nameEl = card.querySelector('.provider-card-name');
+            var name = nameEl ? nameEl.textContent.toLowerCase() : '';
+            var matchesFilter = currentFilter === 'all' || catType === currentFilter;
+            var matchesSearch = !query || name.indexOf(query) !== -1;
+            if (matchesFilter && matchesSearch) {
+              card.style.display = '';
+              anyVisible = true;
             } else {
-              cat.style.display = 'none';
+              card.style.display = 'none';
             }
           });
+          cat.style.display = anyVisible ? '' : 'none';
+        });
+        updateCount();
+      }
+
+      filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          applyFilters();
         });
       });
+
+      searchInput.addEventListener('input', applyFilters);
     })();
   </script>
 
