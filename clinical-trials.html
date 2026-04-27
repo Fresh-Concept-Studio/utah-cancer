@@ -11,6 +11,368 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    /* Stats band */
+    .ct-stats { padding: 70px 0 30px; }
+    .ct-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid #e8e4e0;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .ct-stat {
+      padding: 32px 28px;
+      border-right: 1px solid #e8e4e0;
+    }
+    .ct-stat:last-child { border-right: none; }
+    .ct-stat-num {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -2px;
+      color: #003347;
+      margin-bottom: 10px;
+    }
+    .ct-stat-label {
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      opacity: 0.7;
+    }
+
+    .ct-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      margin-bottom: 16px;
+    }
+
+    /* Programs section */
+    .ct-programs { padding: 90px 0 80px; }
+    .ct-programs-header {
+      max-width: 760px;
+      margin-bottom: 48px;
+    }
+    .ct-programs-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 1.05;
+      letter-spacing: -1.6px;
+      color: #003347;
+      margin-bottom: 14px;
+    }
+    .ct-programs-sub {
+      font-size: 16px;
+      line-height: 28px;
+      color: #1a3d4e;
+      opacity: 0.78;
+    }
+    .ct-programs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .ct-program {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 24px;
+      padding: 40px;
+      overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .ct-program:hover {
+      box-shadow: 0 24px 60px rgba(0, 51, 71, 0.1);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .ct-program::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #003347 0%, #00577d 100%);
+    }
+    .ct-program--late::before {
+      background: linear-gradient(90deg, #00577d 0%, #1a7caa 100%);
+    }
+    .ct-phase-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      align-self: flex-start;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      color: #fff;
+      padding: 7px 14px;
+      border-radius: 100px;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+    .ct-program--late .ct-phase-badge {
+      background: linear-gradient(135deg, #00577d 0%, #1a7caa 100%);
+    }
+    .ct-program-eyebrow {
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      opacity: 0.65;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .ct-program h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      color: #003347;
+      margin-bottom: 16px;
+    }
+    .ct-program p {
+      font-size: 15px;
+      line-height: 25px;
+      color: #1a3d4e;
+      opacity: 0.85;
+      margin-bottom: 14px;
+    }
+    .ct-program p:last-of-type { margin-bottom: 24px; }
+    .ct-program-facts {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 20px 0;
+      border-top: 1px solid #ebe8e4;
+      border-bottom: 1px solid #ebe8e4;
+      margin-bottom: 24px;
+    }
+    .ct-program-fact {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      line-height: 22px;
+      color: #1a3d4e;
+      letter-spacing: -0.2px;
+    }
+    .ct-program-fact .material-symbols-rounded {
+      font-size: 18px;
+      color: #00577d;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .ct-program-fact strong {
+      color: #003347;
+      font-weight: 600;
+    }
+    .ct-program-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      align-items: center;
+      margin-top: auto;
+    }
+    .ct-program-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #003347;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 100px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: -0.2px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ct-program-phone:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0, 51, 71, 0.22);
+    }
+    .ct-program-phone .material-symbols-rounded { font-size: 16px; }
+    .ct-program-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13.5px;
+      color: #00577d;
+      text-decoration: none;
+      letter-spacing: -0.2px;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+    .ct-program-email:hover { border-bottom-color: #00577d; }
+    .ct-program-email .material-symbols-rounded { font-size: 14px; }
+
+    /* Trial journey */
+    .ct-journey {
+      padding: 90px 0;
+      background: #f8f9fa;
+      border-top: 1px solid #e8e4e0;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .ct-journey-header {
+      max-width: 760px;
+      margin-bottom: 56px;
+    }
+    .ct-journey-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 1.05;
+      letter-spacing: -1.4px;
+      color: #003347;
+      margin-bottom: 12px;
+    }
+    .ct-journey-sub {
+      font-size: 15.5px;
+      line-height: 26px;
+      color: #1a3d4e;
+      opacity: 0.7;
+    }
+    .ct-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      position: relative;
+    }
+    .ct-steps::before {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 2px;
+      background-image: linear-gradient(to right, #c8d4dc 0, #c8d4dc 8px, transparent 8px, transparent 16px);
+      background-size: 16px 2px;
+      background-repeat: repeat-x;
+      z-index: 0;
+    }
+    .ct-step {
+      position: relative;
+      z-index: 1;
+      text-align: left;
+      padding: 0 4px;
+    }
+    .ct-step-num {
+      width: 56px;
+      height: 56px;
+      background: #fff;
+      border: 2px solid #00577d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 20px;
+      color: #003347;
+      margin-bottom: 22px;
+    }
+    .ct-step-label {
+      font-family: 'Almarai', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      opacity: 0.65;
+      margin-bottom: 6px;
+    }
+    .ct-step h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      color: #003347;
+      margin-bottom: 8px;
+    }
+    .ct-step p {
+      font-size: 14px;
+      line-height: 22px;
+      color: #1a3d4e;
+      opacity: 0.78;
+    }
+
+    /* FAQ */
+    .ct-faq { padding: 90px 0 100px; }
+    .ct-faq-header {
+      max-width: 760px;
+      margin-bottom: 36px;
+    }
+    .ct-faq-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 1.05;
+      letter-spacing: -1.4px;
+      color: #003347;
+      margin-bottom: 12px;
+    }
+    .ct-faq-sub {
+      font-size: 15.5px;
+      line-height: 26px;
+      color: #1a3d4e;
+      opacity: 0.7;
+    }
+    .ct-faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px 28px;
+    }
+
+    @media (max-width: 1024px) {
+      .ct-stats { padding: 56px 0 24px; }
+      .ct-stats-grid { grid-template-columns: 1fr 1fr; }
+      .ct-stat { padding: 24px 20px; }
+      .ct-stat:nth-child(odd) { border-right: 1px solid #e8e4e0; }
+      .ct-stat:nth-child(even) { border-right: none; }
+      .ct-stat:nth-child(-n+2) { border-bottom: 1px solid #e8e4e0; }
+      .ct-stat-num { font-size: 40px; }
+      .ct-programs { padding: 70px 0 56px; }
+      .ct-programs-title { font-size: 34px; }
+      .ct-programs-grid { grid-template-columns: 1fr; gap: 22px; }
+      .ct-program { padding: 32px 28px; border-radius: 20px; }
+      .ct-journey { padding: 70px 0; }
+      .ct-journey-title { font-size: 30px; }
+      .ct-steps { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
+      .ct-steps::before { display: none; }
+      .ct-faq { padding: 70px 0 80px; }
+      .ct-faq-title { font-size: 30px; }
+      .ct-faq-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .ct-stats { padding: 40px 0 16px; }
+      .ct-stats-grid { grid-template-columns: 1fr; }
+      .ct-stat { border-right: none !important; border-bottom: 1px solid #e8e4e0; padding: 20px 0; }
+      .ct-stat:last-child { border-bottom: none; }
+      .ct-stat-num { font-size: 36px; }
+      .ct-programs { padding: 56px 0 40px; }
+      .ct-programs-title { font-size: 28px; letter-spacing: -1.2px; }
+      .ct-program h3 { font-size: 24px; }
+      .ct-journey { padding: 56px 0; }
+      .ct-journey-title { font-size: 26px; }
+      .ct-steps { grid-template-columns: 1fr; gap: 28px; }
+      .ct-faq { padding: 56px 0 70px; }
+      .ct-faq-title { font-size: 26px; }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -55,31 +417,125 @@
     </div>
   </section>
 
-  <section style="padding:80px 0;">
+  <section class="ct-stats">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; margin-bottom:60px;">
-        <div>
-          <span class="about-mission-label">START Mountain Region</span>
-          <h2 class="about-mission-title">Early-Phase Trials (Phase I)</h2>
-          <p class="provider-bio">Established in 2020, the START Mountain Region center is Utah&rsquo;s only dedicated community-based early-phase clinical trial site. Part of the world&rsquo;s largest Phase I medical oncology research program, the center is led by Dr. Justin Call and gives patients access to cutting-edge investigational therapies.</p>
-          <p class="provider-bio">The program expands options for patients who have exhausted standard treatments and wish to explore emerging approaches, right here in Utah.</p>
-          <p class="provider-bio"><strong>Contact:</strong> 801.907.4750 &nbsp;|&nbsp; <a href="mailto:research@utcancer.com" style="color:#00577d;">research@utcancer.com</a></p>
+      <div class="ct-stats-grid">
+        <div class="ct-stat">
+          <div class="ct-stat-num">25+</div>
+          <div class="ct-stat-label">Years of research</div>
         </div>
-        <div>
-          <span class="about-mission-label">UCS Clinical Research</span>
-          <h2 class="about-mission-title">Late-Phase Trials (Phase II&ndash;III)</h2>
-          <p class="provider-bio">Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West. These trials help establish new standard-of-care treatments.</p>
-          <p class="provider-bio">With trials spanning all cancer types, our research team can help determine whether a clinical trial might be right for you based on your diagnosis, treatment history, and molecular profile.</p>
-          <p class="provider-bio"><strong>Contact:</strong> 801.281.6864 &nbsp;|&nbsp; <a href="mailto:research@utcancer.com" style="color:#00577d;">research@utcancer.com</a></p>
+        <div class="ct-stat">
+          <div class="ct-stat-num">50+</div>
+          <div class="ct-stat-label">Active trials</div>
+        </div>
+        <div class="ct-stat">
+          <div class="ct-stat-num">I&ndash;III</div>
+          <div class="ct-stat-label">Phase coverage</div>
+        </div>
+        <div class="ct-stat">
+          <div class="ct-stat-num">1 of 1</div>
+          <div class="ct-stat-label">Utah community-based Phase I</div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div style="background:#f0f4f8; border-radius:20px; padding:48px; border:1px solid #e0e9ef;">
-        <h2 class="provider-section-title" style="margin-bottom:24px;">Frequently Asked Questions</h2>
+  <section class="ct-programs">
+    <div class="container">
+      <div class="ct-programs-header">
+        <span class="ct-eyebrow">Two research programs</span>
+        <h2 class="ct-programs-title">Investigational therapies and standard-of-care advances, side by side.</h2>
+        <p class="ct-programs-sub">From cutting-edge first-in-human Phase I studies to large-scale Phase II and III trials, our research teams help you understand what&rsquo;s available and whether a trial fits your situation.</p>
+      </div>
+
+      <div class="ct-programs-grid">
+        <article class="ct-program">
+          <span class="ct-phase-badge"><span class="material-symbols-rounded">science</span> Phase I</span>
+          <span class="ct-program-eyebrow">START Mountain Region</span>
+          <h3>Early-Phase Trials</h3>
+          <p>Established in 2020, the START Mountain Region center is Utah&rsquo;s only dedicated community-based early-phase clinical trial site &mdash; part of the world&rsquo;s largest Phase I medical oncology research program.</p>
+          <p>Led by Dr. Justin Call, the program expands options for patients who have exhausted standard treatments and wish to explore emerging investigational therapies, right here in Utah.</p>
+          <div class="ct-program-facts">
+            <div class="ct-program-fact"><span class="material-symbols-rounded">flag</span><div>Established <strong>2020</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">person</span><div>Led by <strong>Dr. Justin Call</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">public</span><div>Part of the world&rsquo;s largest Phase I medical oncology research program</div></div>
+          </div>
+          <div class="ct-program-actions">
+            <a href="tel:8019074750" class="ct-program-phone"><span class="material-symbols-rounded">phone</span> 801.907.4750</a>
+            <a href="mailto:research@utcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utcancer.com</a>
+          </div>
+        </article>
+
+        <article class="ct-program ct-program--late">
+          <span class="ct-phase-badge"><span class="material-symbols-rounded">monitoring</span> Phase II&ndash;III</span>
+          <span class="ct-program-eyebrow">UCS Clinical Research</span>
+          <h3>Late-Phase Trials</h3>
+          <p>Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West &mdash; trials that help establish new standards of care.</p>
+          <p>With trials spanning all cancer types, our research team can help determine whether a clinical trial might be right for you based on your diagnosis, treatment history, and molecular profile.</p>
+          <div class="ct-program-facts">
+            <div class="ct-program-fact"><span class="material-symbols-rounded">category</span><div>Trials spanning <strong>all cancer types</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">map</span><div>Serving the <strong>Intermountain West</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">trending_up</span><div>Establishes new standard-of-care treatments</div></div>
+          </div>
+          <div class="ct-program-actions">
+            <a href="tel:8012816864" class="ct-program-phone"><span class="material-symbols-rounded">phone</span> 801.281.6864</a>
+            <a href="mailto:research@utcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utcancer.com</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-journey">
+    <div class="container">
+      <div class="ct-journey-header">
+        <span class="ct-eyebrow">Your trial journey</span>
+        <h2 class="ct-journey-title">What participation actually looks like.</h2>
+        <p class="ct-journey-sub">Trials are voluntary at every step &mdash; here&rsquo;s how a typical journey unfolds, from first conversation through follow-up care.</p>
+      </div>
+      <div class="ct-steps">
+        <div class="ct-step">
+          <div class="ct-step-num">1</div>
+          <div class="ct-step-label">Step 01</div>
+          <h3>Consultation</h3>
+          <p>Talk with your oncologist about whether a trial fits your diagnosis, treatment history, and goals.</p>
+        </div>
+        <div class="ct-step">
+          <div class="ct-step-num">2</div>
+          <div class="ct-step-label">Step 02</div>
+          <h3>Screening</h3>
+          <p>Eligibility review based on labs, imaging, and your molecular profile to match you with the right trial.</p>
+        </div>
+        <div class="ct-step">
+          <div class="ct-step-num">3</div>
+          <div class="ct-step-label">Step 03</div>
+          <h3>Enrollment</h3>
+          <p>Informed consent, baseline tests, and a clear study schedule before any treatment begins.</p>
+        </div>
+        <div class="ct-step">
+          <div class="ct-step-num">4</div>
+          <div class="ct-step-label">Step 04</div>
+          <h3>Treatment &amp; Follow-up</h3>
+          <p>Receive the trial therapy with close monitoring and continued support from your full care team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ct-faq">
+    <div class="container">
+      <div class="ct-faq-header">
+        <span class="ct-eyebrow">Common questions</span>
+        <h2 class="ct-faq-title">What patients ask most.</h2>
+        <p class="ct-faq-sub">If you don&rsquo;t see your question here, our research team is happy to answer it directly &mdash; reach out to either program above.</p>
+      </div>
+      <div class="ct-faq-grid">
         <div class="sd-faq">
           <details class="sd-faq-item"><summary>What is a clinical trial?</summary><p>A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed and approved by an Institutional Review Board (IRB) to ensure patient safety, and participation is always voluntary.</p></details>
           <details class="sd-faq-item"><summary>Will I receive a placebo?</summary><p>Most cancer clinical trials do not use placebos alone. When a control arm is included, participants always receive at least the current standard of care in addition to any investigational agent.</p></details>
           <details class="sd-faq-item"><summary>Are there costs to participate?</summary><p>Investigational drugs and study-related tests are typically provided at no cost. Standard-of-care costs (like routine blood work) are generally billed to your insurance as they normally would be.</p></details>
+        </div>
+        <div class="sd-faq">
           <details class="sd-faq-item"><summary>How do I find out if I&rsquo;m eligible?</summary><p>Ask your oncologist about trial options at your next visit, or contact our research team directly. We&rsquo;ll review your diagnosis, treatment history, and molecular profile to identify suitable trials.</p></details>
           <details class="sd-faq-item"><summary>Can I leave a trial if I change my mind?</summary><p>Yes. Participation is entirely voluntary. You may withdraw from a clinical trial at any time, for any reason, without affecting your ongoing care at Utah Cancer Specialists.</p></details>
         </div>
