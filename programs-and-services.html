@@ -11,6 +11,346 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    /* ============================================
+       PROGRAMS & SERVICES PAGE
+       ============================================ */
+    .providers-hero { padding-bottom: 70px; }
+    @media (max-width: 1024px) {
+      .providers-hero { padding-bottom: 56px; }
+    }
+    @media (max-width: 768px) {
+      .providers-hero { padding-bottom: 44px; }
+    }
+
+    .ps-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      margin-bottom: 16px;
+    }
+    .ps-eyebrow--light { color: rgba(255,255,255,0.55); }
+
+    /* Intro */
+    .ps-intro {
+      padding: 80px 0 90px;
+    }
+    .ps-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: start;
+    }
+    .ps-intro-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: #003347;
+      margin-bottom: 36px;
+    }
+    .ps-intro-image {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 51, 71, 0.18);
+      aspect-ratio: 4 / 3;
+      background: #f0f4f8;
+    }
+    .ps-intro-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .ps-intro-body {
+      font-size: 16.5px;
+      line-height: 28px;
+      color: #1a3d4e;
+      opacity: 0.85;
+      margin-bottom: 32px;
+    }
+
+    /* Pillar cards (stacked) */
+    .ps-pillar-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .ps-pillar-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 14px;
+      padding: 18px 22px;
+      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    }
+    .ps-pillar-card:hover {
+      box-shadow: 0 10px 24px rgba(0, 51, 71, 0.07);
+      transform: translateX(3px);
+      border-color: #d6dee4;
+    }
+    .ps-pillar-icon {
+      width: 44px;
+      height: 44px;
+      background: #f0f4f8;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ps-pillar-icon .material-symbols-rounded {
+      font-size: 22px;
+      color: #00577d;
+    }
+    .ps-pillar-num {
+      font-family: 'Almarai', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      opacity: 0.55;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .ps-pillar-name {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      color: #003347;
+    }
+
+    /* Section bands */
+    .ps-section {
+      padding: 90px 0;
+    }
+    .ps-section--gray {
+      background: #f8f9fa;
+      border-top: 1px solid #e8e4e0;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .ps-section-header {
+      max-width: 720px;
+      margin-bottom: 48px;
+    }
+    .ps-section-heading {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 38px;
+      letter-spacing: -1.5px;
+      line-height: 1.08;
+      color: #003347;
+      margin-bottom: 14px;
+    }
+    .ps-section-sub {
+      font-size: 15.5px;
+      line-height: 26px;
+      color: #1a3d4e;
+      opacity: 0.7;
+    }
+
+    /* Schedule cards (recurring programs) */
+    .ps-schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .ps-schedule-card {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 20px;
+      padding: 32px;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+    }
+    .ps-schedule-card:hover {
+      box-shadow: 0 16px 40px rgba(0, 51, 71, 0.08);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .ps-schedule-badge {
+      flex: 0 0 132px;
+      width: 132px;
+      height: 132px;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      border-radius: 16px;
+      padding: 18px 14px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 51, 71, 0.2);
+    }
+    .ps-schedule-badge--alt {
+      background: linear-gradient(135deg, #00577d 0%, #1a7caa 100%);
+    }
+    .ps-schedule-badge-cadence {
+      font-family: 'Almarai', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 4px;
+    }
+    .ps-schedule-badge-day {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 38px;
+      letter-spacing: -1.6px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .ps-schedule-badge-time {
+      font-size: 13px;
+      letter-spacing: -0.2px;
+      color: rgba(255,255,255,0.85);
+      border-top: 1px solid rgba(255,255,255,0.22);
+      padding-top: 10px;
+      width: 100%;
+    }
+    .ps-schedule-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .ps-schedule-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Almarai', sans-serif;
+      font-size: 10.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      background: #f0f4f8;
+      border: 1px solid #e0e9ef;
+      padding: 6px 12px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+    .ps-schedule-content h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: -0.7px;
+      color: #003347;
+      margin-bottom: 12px;
+    }
+    .ps-schedule-content p {
+      font-size: 14.5px;
+      line-height: 24px;
+      color: #1a3d4e;
+      opacity: 0.78;
+      margin-bottom: 18px;
+    }
+    .ps-schedule-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 18px;
+      border-top: 1px solid #ebe8e4;
+    }
+    .ps-schedule-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13.5px;
+      color: #1a3d4e;
+      opacity: 0.85;
+      letter-spacing: -0.2px;
+    }
+    .ps-schedule-meta-item .material-symbols-rounded {
+      font-size: 18px;
+      color: #00577d;
+      flex-shrink: 0;
+    }
+
+    /* Service cards (always available) */
+    .ps-services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .ps-service {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 20px;
+      padding: 36px 36px 32px;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .ps-service:hover {
+      box-shadow: 0 16px 40px rgba(0, 51, 71, 0.08);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .ps-service-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ps-service-icon .material-symbols-rounded {
+      font-size: 28px;
+      color: #fff;
+    }
+    .ps-service h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: -0.6px;
+      color: #003347;
+      margin-bottom: 10px;
+    }
+    .ps-service p {
+      font-size: 14.5px;
+      line-height: 24px;
+      color: #1a3d4e;
+      opacity: 0.78;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .ps-intro { padding: 60px 0 70px; }
+      .ps-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ps-intro-title { font-size: 38px; letter-spacing: -1.5px; margin-bottom: 28px; }
+      .ps-intro-image { aspect-ratio: 16 / 10; }
+      .ps-section { padding: 70px 0; }
+      .ps-section-heading { font-size: 30px; letter-spacing: -1.2px; }
+      .ps-schedule-grid { grid-template-columns: 1fr; }
+      .ps-services-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .ps-intro { padding: 48px 0 56px; }
+      .ps-intro-title { font-size: 32px; }
+      .ps-pillar-card { padding: 14px 16px; }
+      .ps-section { padding: 56px 0; }
+      .ps-section-heading { font-size: 26px; }
+      .ps-schedule-card { flex-direction: column; padding: 24px; gap: 20px; }
+      .ps-schedule-badge { flex: 0 0 auto; width: 108px; height: 108px; padding: 14px 10px; }
+      .ps-schedule-badge-day { font-size: 30px; }
+      .ps-service { grid-template-columns: 1fr; padding: 28px 24px; gap: 16px; }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -34,8 +374,8 @@
             <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
           </div></div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
         <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
       </nav>
     </div>
@@ -49,40 +389,138 @@
     </div>
   </section>
 
-  <section style="padding:80px 0;">
+  <!-- Intro + pillars -->
+  <section class="ps-intro">
     <div class="container">
-      <p class="provider-bio" style="max-width:800px; margin-bottom:48px;">Besides the physical effects of cancer and treatment, there are also the psychological and emotional effects that can be difficult to manage on your own. We offer a wide range of programs and services to our patients and their caregivers, and encourage you to incorporate stress reduction and community support into your daily self-care.</p>
+      <div class="ps-intro-grid">
+        <div>
+          <span class="ps-eyebrow">Beyond medicine</span>
+          <h2 class="ps-intro-title">Support that meets you where you are.</h2>
+          <div class="ps-intro-image">
+            <img src="images/generated/programs-services-hero.png" alt="A warm community wellness room with chairs gathered for a quiet group session">
+          </div>
+        </div>
+        <div>
+          <p class="ps-intro-body">Cancer treatment brings physical effects, but it also brings psychological and emotional ones &mdash; effects that can be difficult to manage on your own. Our programs and services support patients and caregivers through every part of that experience, and we encourage you to make stress reduction and community a part of your daily self-care.</p>
+          <div class="ps-pillar-cards">
+            <div class="ps-pillar-card">
+              <div class="ps-pillar-icon"><span class="material-symbols-rounded">favorite</span></div>
+              <div>
+                <span class="ps-pillar-num">Pillar 01</span>
+                <div class="ps-pillar-name">Emotional</div>
+              </div>
+            </div>
+            <div class="ps-pillar-card">
+              <div class="ps-pillar-icon"><span class="material-symbols-rounded">fitness_center</span></div>
+              <div>
+                <span class="ps-pillar-num">Pillar 02</span>
+                <div class="ps-pillar-name">Physical</div>
+              </div>
+            </div>
+            <div class="ps-pillar-card">
+              <div class="ps-pillar-icon"><span class="material-symbols-rounded">handshake</span></div>
+              <div>
+                <span class="ps-pillar-num">Pillar 03</span>
+                <div class="ps-pillar-name">Practical</div>
+              </div>
+            </div>
+            <div class="ps-pillar-card">
+              <div class="ps-pillar-icon"><span class="material-symbols-rounded">school</span></div>
+              <div>
+                <span class="ps-pillar-num">Pillar 04</span>
+                <div class="ps-pillar-name">Educational</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-bottom:48px;">
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">group</span></div>
-          <h3>Support Groups</h3>
-          <p>The Jordan Valley Cancer Center Support Group meets the first Wednesday of each month, 6&ndash;7 PM, facilitated by Dr. Gary Garner. Available online or in person at 3592 W. 9000 S., West Jordan.</p>
+  <!-- Recurring Programs -->
+  <section class="ps-section ps-section--gray">
+    <div class="container">
+      <div class="ps-section-header">
+        <span class="ps-eyebrow">Recurring sessions</span>
+        <h2 class="ps-section-heading">Join us on a regular schedule.</h2>
+        <p class="ps-section-sub">Two ongoing programs are open to any patient or caregiver &mdash; drop in when you need community or calm. Both are free and require no referral.</p>
+      </div>
+
+      <div class="ps-schedule-grid">
+        <div class="ps-schedule-card">
+          <div class="ps-schedule-badge">
+            <span class="ps-schedule-badge-cadence">1st</span>
+            <span class="ps-schedule-badge-day">WED</span>
+            <span class="ps-schedule-badge-time">6&ndash;7pm</span>
+          </div>
+          <div class="ps-schedule-content">
+            <span class="ps-schedule-tag">Monthly &middot; Online or in person</span>
+            <h3>Support Groups</h3>
+            <p>The Jordan Valley Cancer Center Support Group is a welcoming space to find connection, perspective, and shared experience with others walking a similar path.</p>
+            <div class="ps-schedule-meta">
+              <div class="ps-schedule-meta-item"><span class="material-symbols-rounded">person</span><span>Facilitated by Dr. Gary Garner</span></div>
+              <div class="ps-schedule-meta-item"><span class="material-symbols-rounded">location_on</span><span>3592 W. 9000 S., West Jordan</span></div>
+            </div>
+          </div>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">self_improvement</span></div>
-          <h3>SOMA Method Breathwork</h3>
-          <p>Rhythmic and mindful breathing classes designed for cancer patients, held the second Thursday of each month at 7 PM (virtual). Led by Marie Asay.</p>
+
+        <div class="ps-schedule-card">
+          <div class="ps-schedule-badge ps-schedule-badge--alt">
+            <span class="ps-schedule-badge-cadence">2nd</span>
+            <span class="ps-schedule-badge-day">THU</span>
+            <span class="ps-schedule-badge-time">7pm</span>
+          </div>
+          <div class="ps-schedule-content">
+            <span class="ps-schedule-tag">Monthly &middot; Virtual</span>
+            <h3>SOMA Method Breathwork</h3>
+            <p>Rhythmic and mindful breathing classes designed for cancer patients. A simple practice with measurable benefits for stress, sleep, and pain &mdash; no prior experience needed.</p>
+            <div class="ps-schedule-meta">
+              <div class="ps-schedule-meta-item"><span class="material-symbols-rounded">person</span><span>Led by Marie Asay</span></div>
+              <div class="ps-schedule-meta-item"><span class="material-symbols-rounded">videocam</span><span>Online &mdash; link sent on registration</span></div>
+            </div>
+          </div>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">volunteer_activism</span></div>
-          <h3>Patient Advocacy</h3>
-          <p>Dedicated advocates coordinate insurance, financial assistance, and emotional support from your very first visit through the completion of treatment.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Always-available services -->
+  <section class="ps-section">
+    <div class="container">
+      <div class="ps-section-header">
+        <span class="ps-eyebrow">Comprehensive support</span>
+        <h2 class="ps-section-heading">Care services available throughout your journey.</h2>
+        <p class="ps-section-sub">Built into your treatment from day one and adjusted as your needs change &mdash; ask your care team or patient advocate to connect you.</p>
+      </div>
+
+      <div class="ps-services-grid">
+        <div class="ps-service">
+          <div class="ps-service-icon"><span class="material-symbols-rounded">volunteer_activism</span></div>
+          <div>
+            <h3>Patient Advocacy</h3>
+            <p>Dedicated advocates coordinate insurance, financial assistance, and emotional support from your very first visit through the completion of treatment.</p>
+          </div>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">restaurant</span></div>
-          <h3>Nutrition Guidance</h3>
-          <p>Nutritional support and education to help optimize your health during treatment and aid in recovery afterward.</p>
+        <div class="ps-service">
+          <div class="ps-service-icon"><span class="material-symbols-rounded">restaurant</span></div>
+          <div>
+            <h3>Nutrition Guidance</h3>
+            <p>Nutritional support and education to help optimize your health during treatment and aid in your recovery afterward.</p>
+          </div>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">healing</span></div>
-          <h3>Supportive &amp; Palliative Care</h3>
-          <p>Symptom management, pain control, and quality-of-life support throughout your treatment journey, led by our supportive care physician Dr. Gary Garner.</p>
+        <div class="ps-service">
+          <div class="ps-service-icon"><span class="material-symbols-rounded">healing</span></div>
+          <div>
+            <h3>Supportive &amp; Palliative Care</h3>
+            <p>Symptom management, pain control, and quality-of-life support throughout your treatment journey, led by our supportive care physician Dr. Gary Garner.</p>
+          </div>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">school</span></div>
-          <h3>Educational Classes</h3>
-          <p>Group instruction covering topics including treatment expectations, managing side effects, caregiver support, and survivorship planning.</p>
+        <div class="ps-service">
+          <div class="ps-service-icon"><span class="material-symbols-rounded">school</span></div>
+          <div>
+            <h3>Educational Classes</h3>
+            <p>Group instruction covering treatment expectations, managing side effects, caregiver support, and survivorship planning.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -118,7 +556,7 @@
         </div>
       </div>
     </div>
-    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
   </footer>
   <script>
     (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();

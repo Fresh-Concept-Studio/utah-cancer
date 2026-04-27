@@ -11,6 +11,139 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    .spec-card-chevron {
+      flex: 0 0 auto;
+      margin-left: 12px;
+      color: #00577d;
+      opacity: 0.4;
+      font-size: 24px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .spec-card:hover .spec-card-chevron {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+
+    /* Extra bottom padding on hero so the paragraph clears the bridging image */
+    .providers-hero {
+      padding-bottom: 120px;
+    }
+
+    /* Hero-bridging landscape image */
+    .nd-hero-image {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-top: -120px;
+      margin-bottom: 44px;
+      background: #f0f4f8;
+      box-shadow: 0 24px 60px rgba(0, 51, 71, 0.28);
+      position: relative;
+      z-index: 2;
+    }
+    .nd-hero-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .nd-firstSteps-text {
+      max-width: 700px;
+    }
+    .nd-firstSteps-text > * + * {
+      margin-top: 16px;
+    }
+    @media (max-width: 1024px) {
+      .providers-hero { padding-bottom: 90px; }
+      .nd-hero-image { margin-top: -80px; }
+    }
+    @media (max-width: 768px) {
+      .providers-hero { padding-bottom: 70px; }
+      .nd-hero-image {
+        margin-top: -60px;
+        aspect-ratio: 16 / 10;
+        border-radius: 14px;
+      }
+    }
+
+    /* Sticky sidebar */
+    .provider-sidebar {
+      position: sticky;
+      top: 114px;
+      align-self: start;
+    }
+
+    /* What to Expect: vertical stack of cards */
+    .nd-expect-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .nd-expect-grid .credential {
+      background: #f8f9fa;
+      border: 1px solid #e8e4e0;
+      border-radius: 14px;
+      padding: 22px 20px;
+      transition: background 0.25s, border-color 0.25s, transform 0.2s, box-shadow 0.25s;
+    }
+    .nd-expect-grid .credential:hover {
+      background: #fff;
+      border-color: #d0dde5;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(0, 51, 71, 0.06);
+    }
+    .nd-expect-grid .credential-icon {
+      flex: 0 0 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      border-radius: 10px;
+    }
+    .nd-expect-grid .credential-icon .material-symbols-rounded {
+      color: #fff;
+      font-size: 20px;
+    }
+    .nd-expect-grid .credential-label {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      text-transform: none;
+      color: #003347;
+      margin-bottom: 6px;
+    }
+    .nd-expect-grid .credential-content p {
+      font-size: 14px;
+      line-height: 22px;
+      opacity: 0.78;
+    }
+
+    /* Resources for New Patients: 2x2 grid */
+    .nd-resources-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .nd-resources-grid .spec-card {
+      padding: 18px 20px;
+    }
+    .nd-resources-grid .spec-card:hover {
+      transform: translateY(-2px);
+    }
+    .nd-resources-grid .spec-card-text h3 {
+      font-size: 16px;
+    }
+
+    @media (max-width: 1024px) {
+      .provider-sidebar { position: static; }
+    }
+    @media (max-width: 768px) {
+      .nd-resources-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -34,8 +167,8 @@
             <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
           </div></div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
         <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
       </nav>
     </div>
@@ -53,15 +186,21 @@
     <div class="container loc-detail-inner">
       <div class="loc-detail-main">
 
+        <div class="nd-hero-image">
+          <img src="images/generated/firstSteps-hallway.png" alt="A patient walks alongside a care advocate down a sunlit clinic hallway">
+        </div>
+
         <div class="provider-section">
           <h2 class="provider-section-title">Your First Steps</h2>
-          <p class="provider-bio">If you&rsquo;ve just been diagnosed with cancer, you&rsquo;re likely going through a whirlwind of emotions. We understand that it can be a very difficult time to collect your thoughts and make decisions. As a new patient at Utah Cancer Specialists, we want you to feel comfortable, cared for, and informed.</p>
-          <p class="provider-bio">While patients and their families have many decisions to make in a short time, our physicians and support staff are with you every step of this journey &mdash; from diagnosis through treatment and into survivorship.</p>
+          <div class="nd-firstSteps-text">
+            <p class="provider-bio">If you&rsquo;ve just been diagnosed with cancer, you&rsquo;re likely going through a whirlwind of emotions. We understand that it can be a very difficult time to collect your thoughts and make decisions. As a new patient at Utah Cancer Specialists, we want you to feel comfortable, cared for, and informed.</p>
+            <p class="provider-bio">While patients and their families have many decisions to make in a short time, our physicians and support staff are with you every step of this journey &mdash; from diagnosis through treatment and into survivorship.</p>
+          </div>
         </div>
 
         <div class="provider-section">
           <h2 class="provider-section-title">What to Expect</h2>
-          <div class="provider-credentials">
+          <div class="provider-credentials nd-expect-grid">
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">person</span></div><div class="credential-content"><h3 class="credential-label">Meet Your Patient Advocate</h3><p>Your advocate is the first person you&rsquo;ll meet. They coordinate insurance, financial assistance, and emotional support so you can focus on treatment.</p></div></div>
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">stethoscope</span></div><div class="credential-content"><h3 class="credential-label">Physician Consultation</h3><p>Your oncologist will review your diagnosis, discuss treatment options, and answer your questions in a thorough initial consultation.</p></div></div>
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">description</span></div><div class="credential-content"><h3 class="credential-label">Personalized Treatment Plan</h3><p>Your care team develops a plan tailored to your specific cancer type, stage, and personal goals &mdash; drawing on the latest evidence and technology.</p></div></div>
@@ -71,11 +210,11 @@
 
         <div class="provider-section">
           <h2 class="provider-section-title">Resources for New Patients</h2>
-          <div class="spec-grid">
-            <a href="patient-resources.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">folder_open</span></div><div class="spec-card-text"><h3>Patient Resources</h3><p>Helpful resources including financial assistance, support organizations, and community programs.</p></div></a>
-            <a href="patient-education.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">school</span></div><div class="spec-card-text"><h3>Patient Education</h3><p>Learn more about your diagnosis, treatment options, and what to expect during your care.</p></div></a>
-            <a href="treatment-options.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Understand the therapies available to you, from chemotherapy and radiation to immunotherapy and clinical trials.</p></div></a>
-            <a href="telehealth.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">videocam</span></div><div class="spec-card-text"><h3>Telehealth</h3><p>Connect with your care team from home through virtual visits on your smartphone or tablet.</p></div></a>
+          <div class="spec-grid nd-resources-grid">
+            <a href="patient-resources.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">folder_open</span></div><div class="spec-card-text"><h3>Patient Resources</h3><p>Helpful resources including financial assistance, support organizations, and community programs.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href="patient-education.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">school</span></div><div class="spec-card-text"><h3>Patient Education</h3><p>Learn more about your diagnosis, treatment options, and what to expect during your care.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href="treatment-options.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Understand the therapies available to you, from chemotherapy and radiation to immunotherapy and clinical trials.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href="telehealth.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">videocam</span></div><div class="spec-card-text"><h3>Telehealth</h3><p>Connect with your care team from home through virtual visits on your smartphone or tablet.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
           </div>
         </div>
 
@@ -127,7 +266,7 @@
         </div>
       </div>
     </div>
-    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
   </footer>
   <script>
     (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();

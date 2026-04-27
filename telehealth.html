@@ -11,6 +11,196 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    .providers-hero { padding-bottom: 120px; }
+    .hero-bridge {
+      position: relative;
+      z-index: 2;
+      margin-top: -60px;
+      aspect-ratio: 21 / 9;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 51, 71, 0.28);
+      background: #f0f4f8;
+    }
+    .hero-bridge img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 1024px) {
+      .providers-hero { padding-bottom: 90px; }
+      .hero-bridge { margin-top: -50px; aspect-ratio: 16 / 9; }
+    }
+    @media (max-width: 768px) {
+      .providers-hero { padding-bottom: 70px; }
+      .hero-bridge { margin-top: -40px; aspect-ratio: 16 / 10; border-radius: 14px; }
+    }
+
+    /* Telehealth eyebrow */
+    .th-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      margin-bottom: 16px;
+    }
+
+    /* How it works section */
+    .th-how {
+      padding: 90px 0 70px;
+    }
+    .th-how-header {
+      max-width: 760px;
+      margin: 0 auto 64px;
+      text-align: center;
+    }
+    .th-how-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -1.6px;
+      color: #003347;
+      margin-bottom: 18px;
+    }
+    .th-how-intro {
+      font-size: 16.5px;
+      line-height: 28px;
+      color: #1a3d4e;
+      opacity: 0.8;
+    }
+
+    .th-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      position: relative;
+    }
+    .th-steps::before {
+      content: "";
+      position: absolute;
+      top: 64px;
+      left: 16.66%;
+      right: 16.66%;
+      height: 2px;
+      background-image: linear-gradient(to right, #c8d4dc 0, #c8d4dc 8px, transparent 8px, transparent 16px);
+      background-size: 16px 2px;
+      background-repeat: repeat-x;
+      z-index: 0;
+    }
+    .th-step {
+      position: relative;
+      z-index: 1;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 20px;
+      padding: 36px 30px 32px;
+      text-align: center;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+    }
+    .th-step:hover {
+      box-shadow: 0 16px 40px rgba(0, 51, 71, 0.08);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .th-step-icon {
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 22px;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 28px rgba(0, 51, 71, 0.22);
+      position: relative;
+    }
+    .th-step-icon .material-symbols-rounded {
+      font-size: 40px;
+      color: #fff;
+    }
+    .th-step-num {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 32px;
+      height: 32px;
+      background: #fff;
+      border: 2px solid #00577d;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Almarai', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #00577d;
+    }
+    .th-step-label {
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      opacity: 0.7;
+      margin-bottom: 8px;
+    }
+    .th-step-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: -0.6px;
+      color: #003347;
+      margin-bottom: 12px;
+    }
+    .th-step-desc {
+      font-size: 15px;
+      line-height: 24px;
+      color: #1a3d4e;
+      opacity: 0.85;
+    }
+
+    /* FAQ band */
+    .th-faq-section {
+      padding: 60px 0 100px;
+    }
+    .th-faq-wrap {
+      background: #f0f4f8;
+      border-radius: 24px;
+      padding: 56px 64px;
+      border: 1px solid #e0e9ef;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .th-faq-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 34px;
+      letter-spacing: -1.2px;
+      color: #003347;
+      margin-bottom: 28px;
+    }
+
+    @media (max-width: 1024px) {
+      .th-how { padding: 70px 0 50px; }
+      .th-how-title { font-size: 36px; }
+      .th-steps { gap: 22px; }
+      .th-steps::before { display: none; }
+      .th-step { padding: 32px 24px 28px; }
+      .th-faq-wrap { padding: 44px 36px; }
+    }
+    @media (max-width: 768px) {
+      .th-how { padding: 56px 0 30px; }
+      .th-how-header { margin-bottom: 44px; }
+      .th-how-title { font-size: 30px; letter-spacing: -1px; }
+      .th-steps { grid-template-columns: 1fr; gap: 20px; }
+      .th-step-icon { width: 72px; height: 72px; border-radius: 20px; margin-bottom: 18px; }
+      .th-step-icon .material-symbols-rounded { font-size: 34px; }
+      .th-step-title { font-size: 20px; }
+      .th-faq-section { padding: 40px 0 80px; }
+      .th-faq-wrap { padding: 36px 24px; border-radius: 18px; }
+      .th-faq-title { font-size: 26px; margin-bottom: 20px; }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -34,8 +224,8 @@
             <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
           </div></div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
         <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
       </nav>
     </div>
@@ -49,19 +239,56 @@
     </div>
   </section>
 
-  <section style="padding:80px 0;">
-    <div class="container" style="max-width:900px;">
-      <h2 class="about-mission-title" style="margin-bottom:20px;">How It Works</h2>
-      <p class="provider-bio">Telehealth allows you to communicate with and be assessed by your physician or advanced care practitioner through your smartphone, tablet, or computer. The process is simple &mdash; your clinic will send you a clickable link, and you&rsquo;re connected.</p>
+  <div class="container">
+    <div class="hero-bridge">
+      <img src="images/generated/telehealth-hero.png" alt="A laptop on a sunlit kitchen table set up for a virtual care visit at home">
+    </div>
+  </div>
 
-      <div class="provider-credentials" style="margin-top:40px; margin-bottom:48px;">
-        <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">smartphone</span></div><div class="credential-content"><h3 class="credential-label">Step 1: Receive Your Link</h3><p>Your clinic sends a clickable link to your smartphone, tablet, or email before your appointment.</p></div></div>
-        <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">videocam</span></div><div class="credential-content"><h3 class="credential-label">Step 2: Connect</h3><p>Click the link at your scheduled time. No downloads or special software required.</p></div></div>
-        <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">stethoscope</span></div><div class="credential-content"><h3 class="credential-label">Step 3: Your Visit</h3><p>Meet face-to-face with your provider, discuss your care, and ask questions from the comfort of home.</p></div></div>
+  <section class="th-how">
+    <div class="container">
+      <div class="th-how-header">
+        <span class="th-eyebrow">How it works</span>
+        <h2 class="th-how-title">Care that meets you at home, in three simple steps.</h2>
+        <p class="th-how-intro">Telehealth lets you connect with your physician or advanced care practitioner from your smartphone, tablet, or computer &mdash; no downloads, no special software, no disruption to your treatment.</p>
       </div>
 
-      <div style="background:#f0f4f8; border-radius:20px; padding:40px; border:1px solid #e0e9ef;">
-        <h2 class="provider-section-title" style="margin-bottom:24px;">Common Questions</h2>
+      <div class="th-steps">
+        <div class="th-step">
+          <div class="th-step-icon">
+            <span class="material-symbols-rounded">smartphone</span>
+            <span class="th-step-num">1</span>
+          </div>
+          <div class="th-step-label">Step 01</div>
+          <h3 class="th-step-title">Receive Your Link</h3>
+          <p class="th-step-desc">Your clinic sends a clickable link to your smartphone, tablet, or email before your appointment.</p>
+        </div>
+        <div class="th-step">
+          <div class="th-step-icon">
+            <span class="material-symbols-rounded">videocam</span>
+            <span class="th-step-num">2</span>
+          </div>
+          <div class="th-step-label">Step 02</div>
+          <h3 class="th-step-title">Connect</h3>
+          <p class="th-step-desc">Click the link at your scheduled time. No downloads or special software required &mdash; just one tap to join.</p>
+        </div>
+        <div class="th-step">
+          <div class="th-step-icon">
+            <span class="material-symbols-rounded">stethoscope</span>
+            <span class="th-step-num">3</span>
+          </div>
+          <div class="th-step-label">Step 03</div>
+          <h3 class="th-step-title">Your Visit</h3>
+          <p class="th-step-desc">Meet face-to-face with your provider, discuss your care, and ask questions from the comfort of home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="th-faq-section">
+    <div class="container">
+      <div class="th-faq-wrap">
+        <h2 class="th-faq-title">Common Questions</h2>
         <div class="sd-faq">
           <details class="sd-faq-item"><summary>What equipment do I need?</summary><p>A smartphone, tablet, or computer with a camera and microphone. Most modern devices have everything you need built in.</p></details>
           <details class="sd-faq-item"><summary>Is telehealth covered by insurance?</summary><p>Most insurance plans cover telehealth visits. Our patient advocates can verify your coverage before your appointment.</p></details>
@@ -102,7 +329,7 @@
         </div>
       </div>
     </div>
-    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
   </footer>
   <script>
     (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();

@@ -11,6 +11,405 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    /* Hero */
+    .providers-hero { padding-bottom: 80px; position: relative; overflow: hidden; }
+    .providers-hero::after {
+      content: "";
+      position: absolute;
+      right: -180px;
+      top: 60%;
+      transform: translateY(-50%);
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+      pointer-events: none;
+    }
+    .pr-hero-meta {
+      margin-top: 36px;
+      display: flex;
+      gap: 36px;
+      flex-wrap: wrap;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.16);
+      max-width: 720px;
+    }
+    .pr-hero-meta-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgba(255,255,255,0.78);
+      font-size: 14px;
+      letter-spacing: -0.2px;
+    }
+    .pr-hero-meta-item .material-symbols-rounded {
+      font-size: 18px;
+      color: rgba(255,255,255,0.55);
+    }
+
+    /* Bento section */
+    .pr-bento-section { padding: 90px 0 80px; }
+    .pr-bento-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: end;
+      margin-bottom: 44px;
+    }
+    .pr-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      margin-bottom: 16px;
+    }
+    .pr-eyebrow--light { color: rgba(255,255,255,0.55); }
+    .pr-section-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: -1.6px;
+      color: #003347;
+    }
+    .pr-section-sub {
+      font-size: 16px;
+      line-height: 28px;
+      color: #1a3d4e;
+      opacity: 0.78;
+    }
+
+    /* Bento grid */
+    .pr-bento {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 230px;
+      gap: 16px;
+    }
+    .pr-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+    }
+    .pr-card:hover {
+      box-shadow: 0 16px 40px rgba(0, 51, 71, 0.08);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .pr-card:hover .pr-card-arrow {
+      transform: translate(4px, -4px);
+      background: #003347;
+      color: #fff;
+    }
+    .pr-card-icon {
+      width: 48px;
+      height: 48px;
+      background: #f0f4f8;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+    .pr-card-icon .material-symbols-rounded { font-size: 24px; color: #00577d; }
+    .pr-card-num {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #00577d;
+      opacity: 0.45;
+    }
+    .pr-card h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      color: #003347;
+      margin-bottom: 8px;
+    }
+    .pr-card p {
+      font-size: 14px;
+      line-height: 22px;
+      color: #1a3d4e;
+      opacity: 0.78;
+      padding-right: 48px;
+    }
+    .pr-card--feature p { padding-right: 0; }
+    .pr-card-arrow {
+      position: absolute;
+      bottom: 24px;
+      right: 24px;
+      width: 36px;
+      height: 36px;
+      background: #f0f4f8;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #00577d;
+      transition: transform 0.25s, background 0.25s, color 0.25s;
+    }
+    .pr-card-arrow .material-symbols-rounded { font-size: 18px; }
+
+    /* Featured card (Patient Portal) */
+    .pr-card--feature {
+      grid-column: span 4;
+      grid-row: span 2;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      color: #fff;
+      border: none;
+      padding: 44px;
+      justify-content: space-between;
+    }
+    .pr-card--feature::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -120px;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 60%);
+      pointer-events: none;
+    }
+    .pr-card--feature:hover {
+      box-shadow: 0 24px 60px rgba(0, 51, 71, 0.32);
+      transform: translateY(-4px);
+    }
+    .pr-card--feature .pr-card-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 0;
+    }
+    .pr-card--feature .pr-card-icon .material-symbols-rounded { font-size: 32px; color: #fff; }
+    .pr-card--feature .pr-card-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 14px;
+    }
+    .pr-card--feature h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 38px;
+      line-height: 1.05;
+      letter-spacing: -1.2px;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+    .pr-card--feature p {
+      font-size: 15.5px;
+      line-height: 26px;
+      color: rgba(255,255,255,0.78);
+      max-width: 460px;
+      opacity: 1;
+      margin-bottom: 28px;
+    }
+    .pr-card-feature-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-bottom: auto;
+    }
+    .pr-card-feature-bottom {
+      position: relative;
+      z-index: 1;
+    }
+    .pr-feature-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: #003347;
+      padding: 14px 24px;
+      border-radius: 100px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: -0.2px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pr-feature-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    }
+    .pr-feature-cta .material-symbols-rounded { font-size: 18px; }
+
+    /* Bento positioning */
+    .pr-card--side { grid-column: span 2; }
+    .pr-card--bottom { grid-column: span 2; }
+
+    /* Stretched link pattern for cards with secondary actions */
+    .pr-card-link {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      border-radius: inherit;
+    }
+    .pr-card-secondary {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      align-self: flex-start;
+      margin-top: auto;
+      padding-top: 14px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 12.5px;
+      letter-spacing: -0.1px;
+      color: #00577d;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .pr-card-secondary:hover {
+      color: #003347;
+      border-bottom-color: rgba(0, 51, 71, 0.4);
+    }
+    .pr-card-secondary .material-symbols-rounded { font-size: 13px; }
+
+    /* Community Resources */
+    .pr-community-section { padding: 0 0 100px; }
+    .pr-community-wrap {
+      background: #f7f9fb;
+      border: 1px solid #e0e9ef;
+      border-radius: 24px;
+      padding: 56px;
+    }
+    .pr-community-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 36px;
+    }
+    .pr-community-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.05;
+      letter-spacing: -1.2px;
+      color: #003347;
+    }
+    .pr-community-note {
+      font-size: 14px;
+      line-height: 22px;
+      color: #1a3d4e;
+      opacity: 0.7;
+      letter-spacing: -0.2px;
+    }
+    .pr-community-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .pr-community-link {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 14px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .pr-community-link:hover {
+      border-color: #00577d;
+      box-shadow: 0 8px 20px rgba(0, 51, 71, 0.07);
+      transform: translateY(-2px);
+    }
+    .pr-community-link:hover .pr-community-link-ext {
+      color: #003347;
+      transform: translate(2px, -2px);
+    }
+    .pr-community-link-text { flex: 1; min-width: 0; }
+    .pr-community-link-text h4 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: -0.4px;
+      color: #003347;
+      margin-bottom: 4px;
+    }
+    .pr-community-link-text p {
+      font-size: 13.5px;
+      line-height: 20px;
+      color: #1a3d4e;
+      opacity: 0.72;
+    }
+    .pr-community-link-ext {
+      color: #00577d;
+      transition: transform 0.2s, color 0.2s;
+      flex-shrink: 0;
+    }
+    .pr-community-link-ext .material-symbols-rounded { font-size: 20px; }
+
+    @media (max-width: 1024px) {
+      .providers-hero { padding-bottom: 60px; }
+      .pr-bento-section { padding: 70px 0 56px; }
+      .pr-bento-header { grid-template-columns: 1fr; gap: 18px; }
+      .pr-section-title { font-size: 36px; }
+      .pr-bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; gap: 14px; }
+      .pr-card--feature {
+        grid-column: span 2;
+        grid-row: span 1;
+        padding: 40px;
+        min-height: 320px;
+      }
+      .pr-card--feature h3 { font-size: 32px; }
+      .pr-card--side, .pr-card--bottom { grid-column: span 1; }
+      .pr-community-wrap { padding: 40px 32px; }
+      .pr-community-head { grid-template-columns: 1fr; gap: 14px; align-items: start; margin-bottom: 28px; }
+      .pr-community-title { font-size: 28px; }
+      .pr-community-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .providers-hero { padding-bottom: 48px; }
+      .pr-hero-meta { gap: 16px 24px; margin-top: 28px; padding-top: 18px; }
+      .pr-bento-section { padding: 56px 0 40px; }
+      .pr-section-title { font-size: 30px; letter-spacing: -1px; }
+      .pr-bento { grid-template-columns: 1fr; grid-auto-rows: auto; }
+      .pr-card { padding: 24px; min-height: 180px; }
+      .pr-card--feature {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 28px;
+        min-height: auto;
+      }
+      .pr-card--feature h3 { font-size: 26px; }
+      .pr-card--side, .pr-card--bottom { grid-column: span 1; }
+      .pr-community-section { padding-bottom: 70px; }
+      .pr-community-wrap { padding: 28px 20px; border-radius: 18px; }
+      .pr-community-link { padding: 16px 18px; gap: 14px; }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -34,8 +433,8 @@
             <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
           </div></div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
         <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
       </nav>
     </div>
@@ -46,52 +445,123 @@
     <div class="container">
       <h1 class="providers-hero-title">Patient Resources</h1>
       <p class="providers-hero-desc">A collection of resources to support you through every stage of your cancer journey &mdash; from diagnosis through treatment and into survivorship.</p>
+      <div class="pr-hero-meta">
+        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">apps</span><span>Six core resources</span></div>
+        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">schedule</span><span>24/7 portal access</span></div>
+        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">support_agent</span><span>Patient advocates on call</span></div>
+      </div>
     </div>
   </section>
 
-  <section style="padding:80px 0;">
+  <section class="pr-bento-section">
     <div class="container">
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-bottom:60px;">
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">volunteer_activism</span></div>
-          <h3>Patient Advocacy</h3>
-          <p>Your personal liaison from day one. Advocates coordinate insurance, financial assistance, authorizations, and emotional support throughout treatment.</p>
+      <div class="pr-bento-header">
+        <div>
+          <span class="pr-eyebrow">Everything you need</span>
+          <h2 class="pr-section-title">A directory built around your care.</h2>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">payments</span></div>
-          <h3>Billing &amp; Quick Pay</h3>
-          <p>View statements, make secure payments, set up autopay, and enroll in eStatements through our online billing portal.</p>
-        </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">person</span></div>
-          <h3>Patient Portal</h3>
-          <p>Secure access to your health records, lab results, medications, and secure messaging with your care team.</p>
-        </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">videocam</span></div>
-          <h3>Telehealth</h3>
-          <p>Virtual visits with your physician from home. Simple, direct, and accessible on your smartphone or tablet.</p>
-        </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">school</span></div>
-          <h3>Education &amp; Videos</h3>
-          <p>Educational resources to help you understand your diagnosis, treatment options, and what to expect during care.</p>
-        </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">group</span></div>
-          <h3>Programs &amp; Support</h3>
-          <p>Support groups, breathwork classes, nutritional guidance, and community programs for patients and caregivers.</p>
-        </div>
+        <p class="pr-section-sub">Six tools to help you stay connected, informed, and supported &mdash; from secure messaging with your care team to community programs that go beyond the clinic.</p>
       </div>
 
-      <div style="background:#f0f4f8; border-radius:20px; padding:48px; border:1px solid #e0e9ef;">
-        <h2 class="provider-section-title" style="margin-bottom:24px;">Community Resources</h2>
-        <p class="provider-bio" style="margin-bottom:24px;">The following external resources may be helpful. Inclusion does not imply endorsement by Utah Cancer Specialists.</p>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-          <div class="spec-card" style="cursor:default;"><div class="spec-card-icon"><span class="material-symbols-rounded">health_and_safety</span></div><div class="spec-card-text"><h3>American Cancer Society</h3><p>Information, support, and resources for cancer patients and families.</p></div></div>
-          <div class="spec-card" style="cursor:default;"><div class="spec-card-icon"><span class="material-symbols-rounded">health_and_safety</span></div><div class="spec-card-text"><h3>National Cancer Institute</h3><p>Comprehensive cancer information from the U.S. government.</p></div></div>
-          <div class="spec-card" style="cursor:default;"><div class="spec-card-icon"><span class="material-symbols-rounded">health_and_safety</span></div><div class="spec-card-text"><h3>CancerCare</h3><p>Free professional support including counseling, support groups, and financial assistance.</p></div></div>
-          <div class="spec-card" style="cursor:default;"><div class="spec-card-icon"><span class="material-symbols-rounded">health_and_safety</span></div><div class="spec-card-text"><h3>Utah Cancer Foundation</h3><p>Local support programs and financial assistance for Utah cancer patients.</p></div></div>
+      <div class="pr-bento">
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="pr-card pr-card--feature">
+          <div class="pr-card-feature-top">
+            <div class="pr-card-icon"><span class="material-symbols-rounded">person</span></div>
+            <div>
+              <span class="pr-card-eyebrow">Most used &middot; 24/7 access</span>
+              <h3>Patient Portal</h3>
+              <p>Secure access to your health records, lab results, medications, and direct messaging with your care team &mdash; all in one place, any time.</p>
+            </div>
+          </div>
+          <div class="pr-card-feature-bottom">
+            <span class="pr-feature-cta">Log in to your portal <span class="material-symbols-rounded">arrow_forward</span></span>
+          </div>
+        </a>
+
+        <a href="#" class="pr-card pr-card--side">
+          <span class="pr-card-num">02</span>
+          <div class="pr-card-icon"><span class="material-symbols-rounded">volunteer_activism</span></div>
+          <h3>Patient Advocacy</h3>
+          <p>Your personal liaison &mdash; insurance, authorizations, and support throughout treatment.</p>
+          <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
+        </a>
+
+        <div class="pr-card pr-card--side">
+          <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="pr-card-link" aria-label="Billing and Quick Pay"></a>
+          <span class="pr-card-num">03</span>
+          <div class="pr-card-icon"><span class="material-symbols-rounded">payments</span></div>
+          <h3>Billing &amp; Quick Pay</h3>
+          <p>View statements, make secure payments, and set up autopay.</p>
+          <a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="pr-card-secondary">or enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a>
+          <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
+        </div>
+
+        <a href="telehealth.html" class="pr-card pr-card--bottom">
+          <span class="pr-card-num">04</span>
+          <div class="pr-card-icon"><span class="material-symbols-rounded">videocam</span></div>
+          <h3>Telehealth</h3>
+          <p>Virtual visits from home &mdash; simple, direct, on any smartphone or tablet.</p>
+          <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
+        </a>
+
+        <a href="patient-education.html" class="pr-card pr-card--bottom">
+          <span class="pr-card-num">05</span>
+          <div class="pr-card-icon"><span class="material-symbols-rounded">school</span></div>
+          <h3>Education &amp; Videos</h3>
+          <p>Resources to help you understand your diagnosis, treatment, and what to expect.</p>
+          <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
+        </a>
+
+        <a href="programs-and-services.html" class="pr-card pr-card--bottom">
+          <span class="pr-card-num">06</span>
+          <div class="pr-card-icon"><span class="material-symbols-rounded">group</span></div>
+          <h3>Programs &amp; Support</h3>
+          <p>Support groups, breathwork, nutrition, and community programs for patients and caregivers.</p>
+          <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pr-community-section">
+    <div class="container">
+      <div class="pr-community-wrap">
+        <div class="pr-community-head">
+          <div>
+            <span class="pr-eyebrow">Beyond Utah Cancer</span>
+            <h2 class="pr-community-title">Trusted external resources.</h2>
+          </div>
+          <p class="pr-community-note">The following external organizations may be helpful. Inclusion does not imply endorsement by Utah Cancer Specialists.</p>
+        </div>
+        <div class="pr-community-list">
+          <a href="#" class="pr-community-link" target="_blank" rel="noopener">
+            <div class="pr-community-link-text">
+              <h4>American Cancer Society</h4>
+              <p>Information, support, and resources for cancer patients and families.</p>
+            </div>
+            <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
+          </a>
+          <a href="#" class="pr-community-link" target="_blank" rel="noopener">
+            <div class="pr-community-link-text">
+              <h4>National Cancer Institute</h4>
+              <p>Comprehensive cancer information from the U.S. government.</p>
+            </div>
+            <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
+          </a>
+          <a href="#" class="pr-community-link" target="_blank" rel="noopener">
+            <div class="pr-community-link-text">
+              <h4>CancerCare</h4>
+              <p>Free professional support including counseling, support groups, and financial assistance.</p>
+            </div>
+            <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
+          </a>
+          <a href="#" class="pr-community-link" target="_blank" rel="noopener">
+            <div class="pr-community-link-text">
+              <h4>Utah Cancer Foundation</h4>
+              <p>Local support programs and financial assistance for Utah cancer patients.</p>
+            </div>
+            <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
+          </a>
         </div>
       </div>
     </div>
@@ -127,7 +597,7 @@
         </div>
       </div>
     </div>
-    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
   </footer>
   <script>
     (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();

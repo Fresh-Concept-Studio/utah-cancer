@@ -11,6 +11,72 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    /* Inline image in left column */
+    .pe-image {
+      margin: 28px 0 8px;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: #f0f4f8;
+      box-shadow: 0 16px 40px rgba(0, 51, 71, 0.12);
+    }
+    .pe-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Sticky Patient Portal card */
+    .pe-portal {
+      position: sticky;
+      top: 114px;
+      background: #f0f4f8;
+      border: 1px solid #e0e9ef;
+      border-radius: 20px;
+      padding: 36px 36px 32px;
+    }
+    .pe-portal h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    .pe-portal .provider-bio {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    .pe-portal .provider-list {
+      gap: 10px;
+    }
+    .pe-portal .provider-list li {
+      padding-left: 16px;
+      font-size: 14.5px;
+      line-height: 22px;
+    }
+    .pe-portal .provider-list li::before {
+      top: 9px;
+      width: 5px;
+      height: 5px;
+    }
+
+    @media (max-width: 1024px) {
+      .pe-portal { position: static; padding: 28px; }
+    }
+
+    .spec-card-chevron {
+      flex: 0 0 auto;
+      margin-left: 12px;
+      color: #00577d;
+      opacity: 0.4;
+      font-size: 24px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .spec-card:hover .spec-card-chevron {
+      opacity: 1;
+      transform: translateX(4px);
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -34,8 +100,8 @@
             <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
           </div></div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
         <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
       </nav>
     </div>
@@ -56,14 +122,17 @@
           <h2 class="about-mission-title">Learn About Your Cancer</h2>
           <p class="provider-bio">Our specialists have curated educational resources to help you and your loved ones understand your cancer type, available treatments, potential side effects, and what to expect at each stage of your care.</p>
           <p class="provider-bio">We believe informed patients are empowered patients. Whether you&rsquo;re researching a new diagnosis or preparing for a specific treatment, the resources below can help guide your understanding.</p>
+          <div class="pe-image">
+            <img src="images/generated/patient-education-hero.png" alt="Hands at a sunlit desk with a tablet, notebook, and study materials">
+          </div>
           <div class="spec-grid" style="margin-top:24px;">
-            <a href="specialties/index.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">biotech</span></div><div class="spec-card-text"><h3>Cancer Types We Treat</h3><p>Detailed information on 28+ cancer types and blood disorders.</p></div></a>
-            <a href="treatment-options.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Chemotherapy, radiation, immunotherapy, targeted therapy, and more.</p></div></a>
-            <a href="radiation-oncology.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">radiology</span></div><div class="spec-card-text"><h3>Radiation Oncology</h3><p>TrueBeam technology, PET/CT imaging, and treatment techniques.</p></div></a>
-            <a href="clinical-trials.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div><div class="spec-card-text"><h3>Clinical Trials</h3><p>How trials work, what to expect, and how to determine eligibility.</p></div></a>
+            <a href="specialties/index.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">biotech</span></div><div class="spec-card-text"><h3>Cancer Types We Treat</h3><p>Detailed information on 28+ cancer types and blood disorders.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href="treatment-options.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Chemotherapy, radiation, immunotherapy, targeted therapy, and more.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href="radiation-oncology.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">radiology</span></div><div class="spec-card-text"><h3>Radiation Oncology</h3><p>TrueBeam technology, PET/CT imaging, and treatment techniques.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href="clinical-trials.html" class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div><div class="spec-card-text"><h3>Clinical Trials</h3><p>How trials work, what to expect, and how to determine eligibility.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
           </div>
         </div>
-        <div>
+        <aside class="pe-portal">
           <h2 class="about-mission-title">Patient Portal</h2>
           <p class="provider-bio">Utah Cancer Specialists offers secure, instant access to your Personal Health Record (PHR) through our Patient Portal. Your portal includes:</p>
           <ul class="provider-list">
@@ -74,8 +143,8 @@
             <li>Online support and discussion groups</li>
             <li>Secure messaging with your care team</li>
           </ul>
-          <a href="#" class="btn btn--primary" style="margin-top:20px;"><span class="material-symbols-rounded">login</span> Log In to Patient Portal</a>
-        </div>
+          <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:24px;"><span class="material-symbols-rounded">login</span> Log In to Patient Portal</a>
+        </aside>
       </div>
     </div>
   </section>
@@ -110,7 +179,7 @@
         </div>
       </div>
     </div>
-    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
   </footer>
   <script>
     (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();

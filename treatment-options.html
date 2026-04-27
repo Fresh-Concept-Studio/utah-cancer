@@ -11,6 +11,386 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
+  <style>
+    /* ============================================
+       TREATMENT OPTIONS PAGE
+       ============================================ */
+    .providers-hero { padding-bottom: 120px; }
+    .hero-bridge {
+      position: relative;
+      z-index: 2;
+      margin-top: -60px;
+      aspect-ratio: 16 / 9;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 51, 71, 0.28);
+      background: #f0f4f8;
+    }
+    .hero-bridge img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 1024px) {
+      .providers-hero { padding-bottom: 90px; }
+      .hero-bridge { margin-top: -50px; }
+    }
+    @media (max-width: 768px) {
+      .providers-hero { padding-bottom: 70px; }
+      .hero-bridge { margin-top: -40px; aspect-ratio: 16 / 10; border-radius: 14px; }
+    }
+    .tx-intro {
+      padding: 70px 0 80px;
+    }
+    .tx-intro-inner {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .tx-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #00577d;
+      margin-bottom: 16px;
+    }
+    .tx-intro-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.05;
+      letter-spacing: -2px;
+      color: #003347;
+      margin-bottom: 24px;
+    }
+    .tx-intro-body {
+      font-size: 16.5px;
+      line-height: 28px;
+      color: #1a3d4e;
+      opacity: 0.85;
+      max-width: 540px;
+    }
+    .tx-intro-body + .tx-intro-body {
+      margin-top: 16px;
+    }
+
+    /* Stats cluster */
+    .tx-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .tx-stat {
+      padding: 32px 28px 30px;
+      border-radius: 16px;
+      background: #f0f4f8;
+      border: 1px solid #e0e9ef;
+      transition: background 0.25s, border-color 0.25s, transform 0.2s;
+    }
+    .tx-stat:hover {
+      background: #e7eef3;
+      border-color: #d0dde5;
+      transform: translateY(-2px);
+    }
+    .tx-stat-value {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 54px;
+      letter-spacing: -2.4px;
+      color: #00577d;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .tx-stat-label {
+      font-size: 13.5px;
+      line-height: 20px;
+      color: #1a3d4e;
+      opacity: 0.7;
+      letter-spacing: -0.2px;
+    }
+
+    /* Category bands */
+    .tx-cat {
+      padding: 90px 0;
+    }
+    .tx-cat--gray {
+      background: #f8f9fa;
+      border-top: 1px solid #e8e4e0;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .tx-cat-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .tx-cat-header-text {
+      max-width: 640px;
+    }
+    .tx-cat-heading {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: -1.4px;
+      line-height: 1.1;
+      color: #003347;
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+    .tx-cat-sub {
+      font-size: 15px;
+      line-height: 24px;
+      color: #1a3d4e;
+      opacity: 0.7;
+    }
+    .tx-cat-meta {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 13px;
+      color: #00577d;
+      letter-spacing: -0.2px;
+      white-space: nowrap;
+      padding-bottom: 6px;
+      opacity: 0.65;
+    }
+
+    /* Treatment grids */
+    .tx-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .tx-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .tx-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    /* Treatment card */
+    .tx-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 18px;
+      padding: 36px 30px 32px;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+    }
+    .tx-card:hover {
+      box-shadow: 0 16px 40px rgba(0, 51, 71, 0.08);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .tx-card-num {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      color: #00577d;
+      opacity: 0.4;
+    }
+    .tx-card-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 26px;
+    }
+    .tx-card-icon .material-symbols-rounded {
+      font-size: 26px;
+      color: #fff;
+    }
+    .tx-card h3 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 21px;
+      letter-spacing: -0.6px;
+      color: #003347;
+      margin-bottom: 12px;
+    }
+    .tx-card p {
+      font-size: 14.5px;
+      line-height: 23px;
+      color: #1a3d4e;
+      opacity: 0.75;
+    }
+
+    /* Featured (wide) card */
+    .tx-card--feat {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 32px;
+      padding: 40px;
+      align-items: flex-start;
+    }
+    .tx-card--feat .tx-card-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      margin-bottom: 0;
+    }
+    .tx-card--feat .tx-card-icon .material-symbols-rounded {
+      font-size: 32px;
+    }
+    .tx-card--feat h3 {
+      font-size: 26px;
+      letter-spacing: -0.8px;
+      margin-bottom: 14px;
+    }
+    .tx-card--feat p {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 6px;
+    }
+    .tx-feat-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .tx-feat-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      letter-spacing: -0.2px;
+      background: #f0f4f8;
+      color: #00577d;
+      padding: 7px 13px;
+      border-radius: 100px;
+      border: 1px solid #e0e9ef;
+      font-weight: 500;
+    }
+    .tx-feat-tag .material-symbols-rounded {
+      font-size: 15px;
+    }
+
+    /* Personalized plan band */
+    .tx-plan {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #003347 0%, #00577d 100%);
+      color: #fff;
+    }
+    .tx-plan-inner {
+      display: grid;
+      grid-template-columns: 0.95fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .tx-plan-eyebrow {
+      display: inline-block;
+      font-family: 'Almarai', sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 18px;
+    }
+    .tx-plan-title {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 400;
+      font-size: 42px;
+      letter-spacing: -1.7px;
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+    .tx-plan-desc {
+      font-size: 16px;
+      line-height: 28px;
+      color: rgba(255,255,255,0.75);
+    }
+    .tx-plan-steps {
+      display: grid;
+      gap: 14px;
+    }
+    .tx-plan-step {
+      display: flex;
+      gap: 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 22px 26px;
+      align-items: flex-start;
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .tx-plan-step:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .tx-plan-step-num {
+      flex: 0 0 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 14px;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+    .tx-plan-step-text h4 {
+      font-family: 'Bricolage Grotesque', serif;
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: -0.4px;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+    .tx-plan-step-text p {
+      font-size: 13.5px;
+      line-height: 21px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: -0.2px;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .tx-intro { padding: 70px 0 60px; }
+      .tx-intro-inner { grid-template-columns: 1fr; gap: 56px; }
+      .tx-intro-title { font-size: 38px; letter-spacing: -1.5px; }
+      .tx-cat { padding: 70px 0; }
+      .tx-cat-heading { font-size: 28px; letter-spacing: -1px; }
+      .tx-grid-4 { grid-template-columns: 1fr 1fr; }
+      .tx-grid-3 { grid-template-columns: 1fr 1fr; }
+      .tx-grid-2 { grid-template-columns: 1fr; }
+      .tx-card--feat { padding: 32px; gap: 24px; }
+      .tx-card--feat h3 { font-size: 22px; }
+      .tx-plan { padding: 70px 0; }
+      .tx-plan-inner { grid-template-columns: 1fr; gap: 48px; }
+      .tx-plan-title { font-size: 32px; letter-spacing: -1.2px; }
+    }
+    @media (max-width: 640px) {
+      .tx-intro { padding: 56px 0; }
+      .tx-intro-title { font-size: 32px; }
+      .tx-stats { gap: 12px; }
+      .tx-stat { padding: 24px 20px; }
+      .tx-stat-value { font-size: 40px; letter-spacing: -1.6px; }
+      .tx-cat { padding: 56px 0; }
+      .tx-cat-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+      .tx-cat-heading { font-size: 26px; }
+      .tx-grid-4, .tx-grid-3 { grid-template-columns: 1fr; }
+      .tx-card { padding: 28px 24px; }
+      .tx-card--feat {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+      }
+      .tx-card--feat h3 { font-size: 20px; }
+      .tx-plan { padding: 56px 0; }
+      .tx-plan-title { font-size: 28px; }
+      .tx-plan-step { padding: 18px 20px; gap: 16px; }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -34,8 +414,8 @@
             <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
           </div></div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
         <a href="locations/index.html" class="nav-btn-location"><span class="material-symbols-rounded">location_on</span> Find a Location</a>
       </nav>
     </div>
@@ -49,55 +429,201 @@
     </div>
   </section>
 
-  <section style="padding: 80px 0;">
-    <div class="container">
-      <p class="provider-bio" style="max-width:800px; margin-bottom:48px;">As a cancer patient, you are urged to take an active role in your care and make treatment decisions that are best for you and your loved ones. Our mission is to deliver compassionate, comprehensive, and patient-focused care using the latest treatment modalities.</p>
+  <div class="container">
+    <div class="hero-bridge">
+      <img src="images/generated/treatment-options-hero.png" alt="Two people review a treatment plan together at a sunlit clinic table">
+    </div>
+  </div>
 
-      <div class="values-grid" style="background:none;">
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">medication</span></div>
+  <!-- Intro split: mission text + stats -->
+  <section class="tx-intro">
+    <div class="container">
+      <div class="tx-intro-inner">
+        <div>
+          <span class="tx-eyebrow">Our approach</span>
+          <h2 class="tx-intro-title">Take an active role in your care.</h2>
+          <p class="tx-intro-body">As a cancer patient, you are urged to take an active role in your care and make treatment decisions that are best for you and your loved ones.</p>
+          <p class="tx-intro-body">Our mission is to deliver compassionate, comprehensive, and patient-focused care using the latest treatment modalities &mdash; with proactive symptom management built into every plan.</p>
+        </div>
+        <div class="tx-stats">
+          <div class="tx-stat">
+            <div class="tx-stat-value">9</div>
+            <div class="tx-stat-label">Treatment modalities under one practice</div>
+          </div>
+          <div class="tx-stat">
+            <div class="tx-stat-value">50+</div>
+            <div class="tx-stat-label">Active clinical trials in progress</div>
+          </div>
+          <div class="tx-stat">
+            <div class="tx-stat-value">25+</div>
+            <div class="tx-stat-label">Years of community-based research</div>
+          </div>
+          <div class="tx-stat">
+            <div class="tx-stat-value">100%</div>
+            <div class="tx-stat-label">Personalized, multidisciplinary plans</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category 1: Systemic Therapies -->
+  <section class="tx-cat tx-cat--gray">
+    <div class="container">
+      <div class="tx-cat-header">
+        <div class="tx-cat-header-text">
+          <span class="tx-eyebrow">Systemic therapies</span>
+          <h2 class="tx-cat-heading">Treating cancer throughout the body.</h2>
+          <p class="tx-cat-sub">Drug-based modalities that travel through the bloodstream to reach cancer cells wherever they exist.</p>
+        </div>
+        <div class="tx-cat-meta">04 modalities</div>
+      </div>
+
+      <div class="tx-grid-4">
+        <div class="tx-card">
+          <span class="tx-card-num">01</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">medication</span></div>
           <h3>Chemotherapy</h3>
           <p>Systemic drug therapy that targets rapidly dividing cancer cells. Modern regimens are more effective and better tolerated than ever, with proactive side-effect management built into every plan.</p>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">radiology</span></div>
-          <h3>Radiation Therapy</h3>
-          <p>Precise, image-guided radiation using the TrueBeam Linear Accelerator. Treatments include IMRT, SBRT, stereotactic radiosurgery, and brachytherapy &mdash; delivered with millimeter accuracy.</p>
-        </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">vaccines</span></div>
+        <div class="tx-card">
+          <span class="tx-card-num">02</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">vaccines</span></div>
           <h3>Immunotherapy</h3>
           <p>Therapies that harness your own immune system to recognize and attack cancer cells. Checkpoint inhibitors and other agents have transformed outcomes in many cancer types.</p>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">target</span></div>
+        <div class="tx-card">
+          <span class="tx-card-num">03</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">target</span></div>
           <h3>Targeted Therapy</h3>
           <p>Drugs designed to attack specific genetic mutations or proteins in cancer cells while sparing healthy tissue. Molecular profiling identifies which targets your cancer expresses.</p>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">balance</span></div>
+        <div class="tx-card">
+          <span class="tx-card-num">04</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">balance</span></div>
           <h3>Hormone Therapy</h3>
           <p>Treatment that blocks or lowers hormones that fuel certain cancers, commonly used in breast and prostate cancer to slow or stop tumor growth.</p>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">science</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category 2: Imaging & Radiation (featured wide cards) -->
+  <section class="tx-cat">
+    <div class="container">
+      <div class="tx-cat-header">
+        <div class="tx-cat-header-text">
+          <span class="tx-eyebrow">Imaging &amp; precision radiation</span>
+          <h2 class="tx-cat-heading">Pinpoint accuracy. Maximum precision.</h2>
+          <p class="tx-cat-sub">Image-guided technology that sees more, exposes less, and treats with millimeter accuracy.</p>
+        </div>
+        <div class="tx-cat-meta">02 platforms</div>
+      </div>
+
+      <div class="tx-grid-2">
+        <div class="tx-card tx-card--feat">
+          <div class="tx-card-icon"><span class="material-symbols-rounded">radiology</span></div>
+          <div>
+            <h3>Radiation Therapy</h3>
+            <p>Precise, image-guided radiation using the TrueBeam Linear Accelerator &mdash; delivered with millimeter accuracy and gated respiration synchronization for motion-sensitive tumors.</p>
+            <div class="tx-feat-tags">
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">blur_circular</span> IMRT</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">radar</span> SBRT &amp; SRS</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">target</span> IGRT</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> Brachytherapy</span>
+            </div>
+          </div>
+        </div>
+        <div class="tx-card tx-card--feat">
+          <div class="tx-card-icon"><span class="material-symbols-rounded">monitor_heart</span></div>
+          <div>
+            <h3>Diagnostic Imaging</h3>
+            <p>The Omni Legend Digital PET/CT scanner delivers AI-powered, low-dose imaging with industry-leading sensitivity for precise diagnosis, staging, and treatment monitoring.</p>
+            <div class="tx-feat-tags">
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> FDG</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> Ga68 PSMA</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> F18 PSMA</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> Axumin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category 3: Research & Comprehensive Care -->
+  <section class="tx-cat tx-cat--gray">
+    <div class="container">
+      <div class="tx-cat-header">
+        <div class="tx-cat-header-text">
+          <span class="tx-eyebrow">Research &amp; comprehensive care</span>
+          <h2 class="tx-cat-heading">Beyond the standard of care.</h2>
+          <p class="tx-cat-sub">Access to investigational therapies, expert hematology, and whole-person support throughout your journey.</p>
+        </div>
+        <div class="tx-cat-meta">03 programs</div>
+      </div>
+
+      <div class="tx-grid-3">
+        <div class="tx-card">
+          <span class="tx-card-num">07</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">science</span></div>
           <h3>Clinical Trials</h3>
           <p>Access to investigational treatments through 50+ active trials, including Utah&rsquo;s only community-based early-phase program (START Mountain Region).</p>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">monitor_heart</span></div>
-          <h3>Diagnostic Imaging</h3>
-          <p>The Omni Legend Digital PET/CT scanner delivers AI-powered, low-dose imaging for precise diagnosis, staging, and treatment monitoring.</p>
-        </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">self_improvement</span></div>
+        <div class="tx-card">
+          <span class="tx-card-num">08</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">self_improvement</span></div>
           <h3>Supportive Care</h3>
           <p>Symptom management, pain control, nutrition counseling, and rehabilitative care &mdash; addressing the physical and emotional side effects of treatment.</p>
         </div>
-        <div class="tech-card">
-          <div class="tech-card-icon"><span class="material-symbols-rounded">bloodtype</span></div>
+        <div class="tx-card">
+          <span class="tx-card-num">09</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">bloodtype</span></div>
           <h3>Hematology</h3>
           <p>Expert diagnosis and treatment of blood cancers and benign blood disorders including anemia, clotting disorders, and bone marrow conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personalized plan band -->
+  <section class="tx-plan">
+    <div class="container">
+      <div class="tx-plan-inner">
+        <div>
+          <span class="tx-plan-eyebrow">How we build your plan</span>
+          <h2 class="tx-plan-title">Your treatment is as unique as you are.</h2>
+          <p class="tx-plan-desc">No two cancers &mdash; or patients &mdash; are alike. Your plan is shaped by your diagnosis, biology, history, and personal goals, then continually refined as your care progresses.</p>
+        </div>
+        <div class="tx-plan-steps">
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">1</div>
+            <div class="tx-plan-step-text">
+              <h4>Confirm the diagnosis</h4>
+              <p>Pathology, imaging, and molecular profiling establish cancer type, stage, and the genetic markers that guide treatment.</p>
+            </div>
+          </div>
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">2</div>
+            <div class="tx-plan-step-text">
+              <h4>Multidisciplinary review</h4>
+              <p>Medical oncologists, radiation oncologists, and specialists discuss your case together to recommend the strongest options.</p>
+            </div>
+          </div>
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">3</div>
+            <div class="tx-plan-step-text">
+              <h4>Tailor the modalities</h4>
+              <p>The right combination &mdash; chemotherapy, radiation, immunotherapy, targeted drugs, or trial enrollment &mdash; chosen for you.</p>
+            </div>
+          </div>
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">4</div>
+            <div class="tx-plan-step-text">
+              <h4>Treat &amp; support</h4>
+              <p>Side-effect management, nutrition, and emotional support are built into your plan from day one and adjusted as you go.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -133,7 +659,7 @@
         </div>
       </div>
     </div>
-    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p></div></div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
   </footer>
   <script>
     (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();
