@@ -1543,6 +1543,8 @@
 .loc-hero-inner {
   position: relative;
   z-index: 1;
+}
+.loc-hero-inner > * {
   max-width: 780px;
 }
 
@@ -1806,6 +1808,8 @@
 .sd-hero-inner {
   position: relative;
   z-index: 1;
+}
+.sd-hero-inner > * {
   max-width: 820px;
 }
 
