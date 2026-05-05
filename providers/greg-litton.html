@@ -80,6 +80,7 @@
       <a href="#education" class="provider-tab">Education</a>
       <a href="#certifications" class="provider-tab">Certifications</a>
       <a href="#locations" class="provider-tab">Locations</a>
+      <a href="#media" class="provider-tab">Media</a>
     </div>
   </nav>
 
@@ -230,6 +231,79 @@
     </div>
   </section>
 
+  <!-- Media Section -->
+  <section class="provider-media" id="media">
+    <div class="container">
+      <h2 class="provider-section-title">In the Media</h2>
+      <p class="provider-media-intro">TV interviews and media appearances featuring our team.</p>
+      <div class="media-carousel">
+        <button class="media-carousel-btn media-carousel-btn--prev" type="button" aria-label="Previous">
+          <span class="material-symbols-rounded">chevron_left</span>
+        </button>
+        <div class="media-carousel-track">
+          <article class="media-card">
+            <div class="media-card-video">
+              <span class="media-card-badge">TV Interview</span>
+              <span class="material-symbols-rounded media-card-play">play_circle</span>
+            </div>
+            <div class="media-card-info">
+              <p class="media-card-source">KSL News</p>
+              <h3 class="media-card-title">Advances in Cancer Treatment</h3>
+              <p class="media-card-date">Coming soon</p>
+            </div>
+          </article>
+          <article class="media-card">
+            <div class="media-card-video">
+              <span class="media-card-badge">TV Interview</span>
+              <span class="material-symbols-rounded media-card-play">play_circle</span>
+            </div>
+            <div class="media-card-info">
+              <p class="media-card-source">FOX 13</p>
+              <h3 class="media-card-title">Personalized Cancer Care in Utah</h3>
+              <p class="media-card-date">Coming soon</p>
+            </div>
+          </article>
+          <article class="media-card">
+            <div class="media-card-video">
+              <span class="media-card-badge">TV Interview</span>
+              <span class="material-symbols-rounded media-card-play">play_circle</span>
+            </div>
+            <div class="media-card-info">
+              <p class="media-card-source">ABC 4</p>
+              <h3 class="media-card-title">Innovations in Clinical Trials</h3>
+              <p class="media-card-date">Coming soon</p>
+            </div>
+          </article>
+          <article class="media-card">
+            <div class="media-card-video">
+              <span class="media-card-badge">TV Interview</span>
+              <span class="material-symbols-rounded media-card-play">play_circle</span>
+            </div>
+            <div class="media-card-info">
+              <p class="media-card-source">Good Things Utah</p>
+              <h3 class="media-card-title">Supporting Patients Through Treatment</h3>
+              <p class="media-card-date">Coming soon</p>
+            </div>
+          </article>
+          <article class="media-card">
+            <div class="media-card-video">
+              <span class="media-card-badge">TV Interview</span>
+              <span class="material-symbols-rounded media-card-play">play_circle</span>
+            </div>
+            <div class="media-card-info">
+              <p class="media-card-source">KUTV 2</p>
+              <h3 class="media-card-title">Community Outreach &amp; Awareness</h3>
+              <p class="media-card-date">Coming soon</p>
+            </div>
+          </article>
+        </div>
+        <button class="media-carousel-btn media-carousel-btn--next" type="button" aria-label="Next">
+          <span class="material-symbols-rounded">chevron_right</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact CTA -->
   <section class="contact-section">
     <div class="contact-bg"><img src="../images/contact-bg.jpg" alt=""><div class="contact-overlay"></div></div>
@@ -315,6 +389,22 @@
         e.preventDefault(); var id = tab.getAttribute('href').replace('#', ''); var el = document.getElementById(id);
         if (el) { window.scrollTo({ top: el.offsetTop - 180, behavior: 'smooth' }); }
       }); });
+    })();
+    (function() {
+      var carousels = document.querySelectorAll('.media-carousel');
+      carousels.forEach(function(carousel) {
+        var track = carousel.querySelector('.media-carousel-track');
+        var prev = carousel.querySelector('.media-carousel-btn--prev');
+        var next = carousel.querySelector('.media-carousel-btn--next');
+        if (!track) return;
+        function step(dir) {
+          var card = track.querySelector('.media-card');
+          var amt = card ? card.getBoundingClientRect().width + 24 : 320;
+          track.scrollBy({ left: dir * amt, behavior: 'smooth' });
+        }
+        if (prev) prev.addEventListener('click', function() { step(-1); });
+        if (next) next.addEventListener('click', function() { step(1); });
+      });
     })();
   </script>
 </body>
