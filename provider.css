@@ -2066,15 +2066,11 @@
 
 .media-carousel {
   position: relative;
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .media-carousel-track {
   display: flex;
   gap: 24px;
-  flex: 1;
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -2084,6 +2080,18 @@
 
 .media-carousel-track::-webkit-scrollbar {
   display: none;
+}
+
+.media-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  right: 0;
+  width: 120px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fff 70%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .media-card {
@@ -2162,7 +2170,9 @@
 }
 
 .media-carousel-btn {
-  flex: 0 0 44px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -2174,6 +2184,15 @@
   justify-content: center;
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s, color 0.2s;
+  z-index: 2;
+}
+
+.media-carousel-btn--prev {
+  left: -56px;
+}
+
+.media-carousel-btn--next {
+  right: -56px;
 }
 
 .media-carousel-btn:hover {
@@ -2186,6 +2205,15 @@
   font-size: 24px;
 }
 
+@media (max-width: 1024px) {
+  .media-carousel-btn--prev {
+    left: -16px;
+  }
+  .media-carousel-btn--next {
+    right: -16px;
+  }
+}
+
 @media (max-width: 768px) {
   .media-card {
     flex: 0 0 280px;
@@ -2193,7 +2221,7 @@
   .media-carousel-btn {
     display: none;
   }
-  .media-carousel {
-    gap: 0;
+  .media-carousel::after {
+    display: none;
   }
 }
