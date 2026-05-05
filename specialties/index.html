@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Specialties - Utah Cancer Specialists</title>
+  <title>Cancer Types - Utah Cancer Specialists</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
       <nav class="navbar-nav">
         <a href="../providers/index.html" class="nav-link">Providers</a>
         <a href="../locations/index.html" class="nav-link">Locations</a>
-        <a href="index.html" class="nav-link">Specialties</a>
+        <a href="index.html" class="nav-link">Cancer Types</a>
         <a href="../about.html" class="nav-link">About</a>
         <div class="nav-dropdown">
           <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">event</span> Event Calendar</a>
+        <a href="#" class="nav-link nav-link--icon"><span class="material-symbols-rounded">event</span> Events</a>
         <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon">
           <span class="material-symbols-rounded">person</span>
           Patient Portal
@@ -64,7 +64,7 @@
   <!-- Hero -->
   <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Our Specialties</h1>
+      <h1 class="providers-hero-title">Cancer Types</h1>
       <p class="providers-hero-desc">Comprehensive cancer care across a wide range of cancer types and blood disorders, delivered by board-certified specialists.</p>
     </div>
   </section>
@@ -80,14 +80,14 @@
           <!-- Search -->
           <div class="spec-search">
             <span class="material-symbols-rounded spec-search-icon">search</span>
-            <input type="text" id="spec-search" class="spec-search-input" placeholder="Search specialties...">
+            <input type="text" id="spec-search" class="spec-search-input" placeholder="Search cancer types...">
           </div>
 
           <!-- Categories -->
           <div class="spec-filter-group">
             <h3 class="spec-filter-title">Categories</h3>
             <ul class="spec-filter-list">
-              <li><button class="spec-filter-btn active" data-filter="all">All Specialties <span class="spec-filter-count">28</span></button></li>
+              <li><button class="spec-filter-btn active" data-filter="all">All Cancer Types <span class="spec-filter-count">28</span></button></li>
               <li><button class="spec-filter-btn" data-filter="common">Common Cancers <span class="spec-filter-count">10</span></button></li>
               <li><button class="spec-filter-btn" data-filter="blood">Blood &amp; Bone Marrow <span class="spec-filter-count">7</span></button></li>
               <li><button class="spec-filter-btn" data-filter="gi">Gastrointestinal <span class="spec-filter-count">7</span></button></li>
@@ -124,7 +124,7 @@
       <div class="spec-content">
 
         <div class="spec-results-bar" id="spec-results-bar">
-          <span id="spec-results-count">Showing all 28 specialties</span>
+          <span id="spec-results-count">Showing all 28 cancer types</span>
         </div>
 
         <!-- Common Cancers -->
@@ -336,7 +336,7 @@
 
       function updateCount() {
         var visible = document.querySelectorAll('.spec-card:not([style*="display: none"])').length;
-        resultsCount.textContent = 'Showing ' + visible + ' of 28 specialties';
+        resultsCount.textContent = 'Showing ' + visible + ' of 28 cancer types';
       }
 
       function applyFilters() {
