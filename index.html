@@ -69,18 +69,40 @@
     </div>
     <div class="container hero-content">
       <h1 class="hero-heading">Advanced care with a human touch.</h1>
-      <div class="hero-actions">
-        <a href="providers/index.html" class="btn btn--white">
-          <span class="material-symbols-rounded">person</span>
-          Our Providers
+    </div>
+  </section>
+
+  <!-- Hero action cards (sits at the bottom of the hero, behind the team section) -->
+  <div class="hero-cards">
+    <div class="container">
+      <div class="hero-cards-panel">
+        <a href="providers/index.html" class="hero-card">
+          <span class="hero-card-icon material-symbols-rounded">groups</span>
+          <span class="hero-card-content">
+            <span class="hero-card-eyebrow">Meet the team</span>
+            <span class="hero-card-title">Our Providers</span>
+          </span>
+          <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
         </a>
-        <a href="locations/index.html" class="btn btn--glass">
-          <span class="material-symbols-rounded">location_on</span>
-          Find A Location
+        <a href="locations/index.html" class="hero-card">
+          <span class="hero-card-icon material-symbols-rounded">location_on</span>
+          <span class="hero-card-content">
+            <span class="hero-card-eyebrow">18 clinics nearby</span>
+            <span class="hero-card-title">Find a Location</span>
+          </span>
+          <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
+        </a>
+        <a href="specialties/index.html" class="hero-card">
+          <span class="hero-card-icon material-symbols-rounded">stethoscope</span>
+          <span class="hero-card-content">
+            <span class="hero-card-eyebrow">What we treat</span>
+            <span class="hero-card-title">Our Specialties</span>
+          </span>
+          <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
         </a>
       </div>
     </div>
-  </section>
+  </div>
 
   <!-- Team Section -->
   <section class="team-section">
@@ -124,8 +146,12 @@
         <span class="material-symbols-rounded">location_on</span>
         View All Locations
       </a>
-      <div class="locations-image">
-        <img src="images/building.jpg" alt="Utah Cancer Specialists Building">
+      <div class="locations-map-wrap">
+        <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
+        <div class="locations-map-fallback" id="locations-map-fallback" hidden>
+          <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>index.html</code> to display the interactive map.</p>
+          <a href="locations/index.html" class="btn btn--outline">Browse all locations</a>
+        </div>
       </div>
     </div>
   </section>
@@ -250,58 +276,79 @@
   <!-- Testimonials Section -->
   <section class="testimonials-section">
     <div class="container">
-      <span class="section-label">Testimonials</span>
-      <div class="testimonials-stars">
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
-        <span class="star">&#9733;</span>
+      <div class="testimonials-panel">
+      <div class="testimonials-header">
+        <h2 class="testimonials-heading">Patient Love</h2>
+        <div class="testimonials-rating">
+          <div class="testimonials-stars" aria-hidden="true">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          <span class="testimonials-average">4.7 Average</span>
+        </div>
       </div>
-      <div class="testimonial-slider">
-        <div class="testimonial-slide active">
-          <blockquote class="testimonial-quote">
-            &ldquo;I&rsquo;m truly grateful for you, Dr. Gregory Chipman. You have not only treated your patients but also restored hope and given life back to so many. Your dedication and compassion make all the difference.&rdquo;
-          </blockquote>
-          <cite class="testimonial-author">&mdash; Ana S.</cite>
-        </div>
-        <div class="testimonial-slide">
-          <blockquote class="testimonial-quote">
-            &ldquo;Dr. Chipman is one that listens to your situation. He provides options and helps you achieve the goals set. He is straight to the point when you need it and helps you make the next steps happen. This is a team of professionals that cares about their patients and it shows.&rdquo;
-          </blockquote>
-          <cite class="testimonial-author">&mdash; Adam B.</cite>
-        </div>
-        <div class="testimonial-slide">
-          <blockquote class="testimonial-quote">
-            &ldquo;Dr Chipman and staff are amazing! They really understand the anxiety that comes with cancer and go above and beyond to explain everything and put you at ease. Treatment recommendations are conservative and well informed. Couldn&rsquo;t be happier.&rdquo;
-          </blockquote>
-          <cite class="testimonial-author">&mdash; Adam Black</cite>
-        </div>
-        <div class="testimonial-slide">
-          <blockquote class="testimonial-quote">
-            &ldquo;Great patient care. Treated with respect and Dr. Chipman listened to all my concerns. Highly recommend as a health care provider!&rdquo;
-          </blockquote>
-          <cite class="testimonial-author">&mdash; Lynda H.</cite>
-        </div>
-        <div class="testimonial-slide">
-          <blockquote class="testimonial-quote">
-            &ldquo;Dr. Chipman and his staff treat each patient with the kindness and attention we need.&rdquo;
-          </blockquote>
-          <cite class="testimonial-author">&mdash; Pam M.</cite>
-        </div>
-        <div class="testimonial-slide">
-          <blockquote class="testimonial-quote">
-            &ldquo;These people are stellar in every way!!&rdquo;
-          </blockquote>
-          <cite class="testimonial-author">&mdash; Joanna R.</cite>
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="testimonial-card-name">Ana S.</span>
+            <h3 class="testimonial-card-title">Restored hope</h3>
+            <p class="testimonial-card-body">I&rsquo;m truly grateful for you, Dr. Gregory Chipman. You have not only treated your patients but also restored hope and given life back to so many. Your dedication and compassion make all the difference.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="testimonial-card-name">Adam B.</span>
+            <h3 class="testimonial-card-title">Listens and guides</h3>
+            <p class="testimonial-card-body">Dr. Chipman is one that listens to your situation. He provides options and helps you achieve the goals set. He is straight to the point when you need it and helps you make the next steps happen. This is a team of professionals that cares about their patients and it shows.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="testimonial-card-name">Adam Black</span>
+            <h3 class="testimonial-card-title">Eased my anxiety</h3>
+            <p class="testimonial-card-body">Dr Chipman and staff are amazing! They really understand the anxiety that comes with cancer and go above and beyond to explain everything and put you at ease. Treatment recommendations are conservative and well informed. Couldn&rsquo;t be happier.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="testimonial-card-name">Lynda H.</span>
+            <h3 class="testimonial-card-title">Respectful care</h3>
+            <p class="testimonial-card-body">Great patient care. Treated with respect and Dr. Chipman listened to all my concerns. Highly recommend as a health care provider!</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="testimonial-card-name">Pam M.</span>
+            <h3 class="testimonial-card-title">Kindness and attention</h3>
+            <p class="testimonial-card-body">Dr. Chipman and his staff treat each patient with the kindness and attention we need.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
+            <span class="testimonial-card-name">Joanna R.</span>
+            <h3 class="testimonial-card-title">Stellar in every way</h3>
+            <p class="testimonial-card-body">These people are stellar in every way!!</p>
+          </article>
         </div>
       </div>
       <div class="testimonial-footer">
         <div class="testimonial-indicators" id="testimonial-indicators"></div>
         <div class="testimonial-controls">
-          <button class="carousel-btn carousel-btn--prev" id="testimonial-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
-          <button class="carousel-btn carousel-btn--next" id="testimonial-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+          <button class="carousel-btn carousel-btn--prev carousel-btn--on-dark" id="testimonial-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+          <button class="carousel-btn carousel-btn--next carousel-btn--on-dark" id="testimonial-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -512,69 +559,97 @@
       nextBtn.addEventListener('click', function() { slide(1); });
     })();
 
-    // Testimonial slider
+    // Testimonial carousel
     (function() {
-      var slides = document.querySelectorAll('.testimonial-slide');
+      var track = document.getElementById('testimonials-track');
+      if (!track) return;
+      var cards = track.querySelectorAll('.testimonial-card');
       var prevBtn = document.getElementById('testimonial-prev');
       var nextBtn = document.getElementById('testimonial-next');
       var indicatorsContainer = document.getElementById('testimonial-indicators');
       var current = 0;
-      var animating = false;
 
-      // Build indicators
-      slides.forEach(function(_, i) {
-        var dot = document.createElement('button');
-        dot.className = 'testimonial-indicator' + (i === 0 ? ' active' : '');
-        dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
-        dot.addEventListener('click', function() {
-          if (i !== current && !animating) goTo(i, i > current ? 1 : -1);
-        });
-        indicatorsContainer.appendChild(dot);
-      });
-      var indicators = indicatorsContainer.querySelectorAll('.testimonial-indicator');
+      function getVisible() {
+        var w = window.innerWidth;
+        if (w <= 640) return 1;
+        if (w <= 1024) return 2;
+        return 3;
+      }
 
-      function goTo(index, direction) {
-        if (animating || index === current) return;
-        animating = true;
+      function pageCount() {
+        return Math.max(1, cards.length - getVisible() + 1);
+      }
 
-        var outSlide = slides[current];
-        var inSlide = slides[index];
+      function clampCurrent() {
+        var max = pageCount() - 1;
+        if (current > max) current = max;
+        if (current < 0) current = 0;
+      }
 
-        // Set entry position (opposite of direction)
-        inSlide.classList.remove('active', 'exit-left', 'exit-right', 'enter-left', 'enter-right');
-        inSlide.classList.add(direction > 0 ? 'enter-right' : 'enter-left');
+      function buildIndicators() {
+        indicatorsContainer.innerHTML = '';
+        var n = pageCount();
+        for (var i = 0; i < n; i++) {
+          (function(i) {
+            var dot = document.createElement('button');
+            dot.className = 'testimonial-indicator' + (i === current ? ' active' : '');
+            dot.setAttribute('aria-label', 'Go to page ' + (i + 1));
+            dot.addEventListener('click', function() { goTo(i); });
+            indicatorsContainer.appendChild(dot);
+          })(i);
+        }
+      }
 
-        // Force reflow
-        void inSlide.offsetWidth;
+      function updateIndicators() {
+        var dots = indicatorsContainer.querySelectorAll('.testimonial-indicator');
+        for (var i = 0; i < dots.length; i++) {
+          if (i === current) dots[i].classList.add('active');
+          else dots[i].classList.remove('active');
+        }
+      }
 
-        // Animate out
-        outSlide.classList.remove('active');
-        outSlide.classList.add(direction > 0 ? 'exit-left' : 'exit-right');
+      function applyTransform() {
+        if (!cards.length) return;
+        var first = cards[0];
+        var styles = window.getComputedStyle(track);
+        var gap = parseFloat(styles.columnGap || styles.gap || 0);
+        var step = first.getBoundingClientRect().width + gap;
+        track.style.transform = 'translateX(' + (-current * step) + 'px)';
+      }
 
-        // Animate in
-        inSlide.classList.remove('enter-left', 'enter-right');
-        inSlide.classList.add('active');
-
-        // Update indicators
-        indicators[current].classList.remove('active');
-        indicators[index].classList.add('active');
-
-        current = index;
-
-        setTimeout(function() {
-          outSlide.classList.remove('exit-left', 'exit-right');
-          animating = false;
-        }, 500);
+      function goTo(i) {
+        current = i;
+        clampCurrent();
+        applyTransform();
+        updateIndicators();
       }
 
       prevBtn.addEventListener('click', function() {
-        var next = (current - 1 + slides.length) % slides.length;
-        goTo(next, -1);
+        var n = pageCount();
+        current = (current - 1 + n) % n;
+        applyTransform();
+        updateIndicators();
       });
       nextBtn.addEventListener('click', function() {
-        var next = (current + 1) % slides.length;
-        goTo(next, 1);
+        var n = pageCount();
+        current = (current + 1) % n;
+        applyTransform();
+        updateIndicators();
       });
+
+      var resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+          buildIndicators();
+          clampCurrent();
+          applyTransform();
+          updateIndicators();
+        }, 100);
+      });
+
+      buildIndicators();
+      applyTransform();
     })();
 
     // Provider photo rotation — randomize on load, crossfade individually
@@ -667,6 +742,123 @@
           slotIndex = (slotIndex + 1) % slots.length;
         }, rotateInterval);
       }, 3000);
+    })();
+
+    // Locations map — Google Maps with branded SVG markers
+    // TODO: Replace with a real Google Maps JavaScript API key
+    window.UCS_GOOGLE_MAPS_KEY = window.UCS_GOOGLE_MAPS_KEY || 'AIzaSyD2zE7aUB6stEv4Jnu8wteS4FzF2MOQnEU';
+    (function() {
+      // Pre-geocoded once via OpenStreetMap (Nominatim/Photon) to avoid runtime
+      // Geocoding API costs (~$0.005/address × 16 × every page load).
+      var locations = [
+        { name: 'Jordan Valley Cancer Center', address: '3592 West 9000 South, Suite 200, West Jordan, UT 84088', url: 'locations/jordan-valley.html', lat: 40.5879, lng: -111.9768 },
+        { name: 'Ogden Medical Plaza', address: '425 East 5350 South, Suite 101, Ogden, UT 84405', url: 'locations/ogden.html', lat: 41.1661, lng: -111.9701 },
+        { name: 'Layton Clinic', address: '1492 Antelope Drive, Suite 125, Layton, UT 84041', url: 'locations/layton.html', lat: 41.0898, lng: -111.9947 },
+        { name: 'Bountiful Clinic', address: '520 East Medical Drive, Suite 100, Bountiful, UT 84010', url: 'locations/bountiful.html', lat: 40.8862, lng: -111.8707 },
+        { name: 'Salt Lake Clinic', address: '389 South 900 East, Suite 100, Salt Lake City, UT 84102', url: 'locations/salt-lake.html', lat: 40.7612, lng: -111.8649 },
+        { name: 'Cancer Center', address: '3838 South 700 East, Suite 100, Salt Lake City, UT 84106', url: 'locations/cancer-center.html', lat: 40.7051, lng: -111.8714 },
+        { name: "St. Mark's Hospital", address: '1250 East 3900 South, Suite B-10, Salt Lake City, UT 84124', url: 'locations/st-marks.html', lat: 40.6862, lng: -111.8568 },
+        { name: 'Granger Fairbourne Station', address: '2965 W. 3500 S., 4th Floor, West Valley City, UT 84119', url: 'locations/granger.html', lat: 40.6941, lng: -111.9623 },
+        { name: 'Intermountain Medical Center', address: '5131 S. Cottonwood St., Bldg 3, Level 2, Murray, UT 84107', url: 'locations/imc.html', lat: 40.6592, lng: -111.8941 },
+        { name: 'Pleasant Grove Clinic', address: '1076 N. County Blvd, Suite D, Pleasant Grove, UT 84062', url: 'locations/pleasant-grove.html', lat: 40.3748, lng: -111.7688 },
+        { name: 'Timpanogos Regional Hospital', address: '700 West 800 North, Suite 140, Orem, UT 84057', url: 'locations/timpanogos.html', lat: 40.3139, lng: -111.7137 },
+        { name: 'START Mountain Region', address: '2965 West 3500 South, 4th Floor East, West Valley City, UT 84119', url: 'locations/start.html', lat: 40.6944, lng: -111.9620 },
+        { name: 'Idaho Falls', address: '3245 Channing Way, Idaho Falls, ID 83404', url: 'locations/idaho-falls.html', lat: 43.4686, lng: -111.9900 },
+        { name: 'Madison Health', address: '450 East Main Street, Rexburg, ID 83440', url: 'locations/madison.html', lat: 43.8261, lng: -111.7710 },
+        { name: 'Teton Valley Health Care', address: '120 East Howard Avenue, Driggs, ID 83422', url: 'locations/teton.html', lat: 43.7265, lng: -111.1080 },
+        { name: "St. John's Health", address: '555 E. Broadway Ave., Jackson, WY 83001', url: 'locations/wyoming.html', lat: 43.4797, lng: -110.7544 }
+      ];
+
+      var BRAND = '#00577d';
+      var BRAND_DARK = '#003347';
+
+      // Branded SVG pin, encoded as a data URL for the marker icon
+      function pinIcon() {
+        var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" viewBox="0 0 34 44">'
+          + '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.25"/></filter></defs>'
+          + '<path filter="url(#s)" fill="' + BRAND + '" stroke="' + BRAND_DARK + '" stroke-width="1.5" d="M17 1.5C8.7 1.5 2 8.2 2 16.5c0 11.3 15 25.3 15 25.3s15-14 15-25.3C32 8.2 25.3 1.5 17 1.5z"/>'
+          + '<circle cx="17" cy="16.5" r="5.5" fill="#fff"/>'
+          + '</svg>';
+        return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+      }
+
+      var brandMapStyle = [
+        { elementType: 'geometry', stylers: [{ color: '#eaf1f5' }] },
+        { elementType: 'labels.text.fill', stylers: [{ color: '#3a5667' }] },
+        { elementType: 'labels.text.stroke', stylers: [{ color: '#ffffff' }] },
+        { featureType: 'administrative', elementType: 'geometry', stylers: [{ color: '#c8d6df' }] },
+        { featureType: 'administrative.land_parcel', stylers: [{ visibility: 'off' }] },
+        { featureType: 'poi', stylers: [{ visibility: 'off' }] },
+        { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
+        { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#6b7d88' }] },
+        { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#dde7ee' }] },
+        { featureType: 'transit', stylers: [{ visibility: 'off' }] },
+        { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#b7d3e2' }] },
+        { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#00577d' }] }
+      ];
+
+      window.initUCSMap = function initUCSMap() {
+        var el = document.getElementById('locations-map');
+        if (!el || !window.google || !window.google.maps) return;
+
+        var map = new google.maps.Map(el, {
+          center: { lat: 41.2, lng: -111.7 },
+          zoom: 7,
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false,
+          styles: brandMapStyle
+        });
+
+        var bounds = new google.maps.LatLngBounds();
+        var infoWindow = new google.maps.InfoWindow();
+        var iconSpec = { url: pinIcon(), scaledSize: new google.maps.Size(34, 44), anchor: new google.maps.Point(17, 42) };
+
+        locations.forEach(function(loc) {
+          var pos = { lat: loc.lat, lng: loc.lng };
+          var marker = new google.maps.Marker({
+            position: pos,
+            map: map,
+            title: loc.name,
+            icon: iconSpec
+          });
+          marker.addListener('click', function() {
+            infoWindow.setContent(
+              '<div style="font-family:Inter,sans-serif;color:#003347;max-width:220px">' +
+              '<strong style="font-family:\'Bricolage Grotesque\',serif;font-size:16px;display:block;margin-bottom:4px">' + loc.name + '</strong>' +
+              '<span style="font-size:13px;color:#5a6670;display:block;margin-bottom:8px">' + loc.address + '</span>' +
+              '<a href="' + loc.url + '" style="color:#00577d;font-size:13px;font-weight:600">View details &rarr;</a>' +
+              '</div>'
+            );
+            infoWindow.open(map, marker);
+          });
+          bounds.extend(pos);
+        });
+
+        if (!bounds.isEmpty()) {
+          map.fitBounds(bounds, 60);
+        }
+      };
+
+      function showFallback() {
+        var fb = document.getElementById('locations-map-fallback');
+        var map = document.getElementById('locations-map');
+        if (fb) fb.hidden = false;
+        if (map) map.style.display = 'none';
+      }
+
+      var key = window.UCS_GOOGLE_MAPS_KEY;
+      if (!key || key === 'YOUR_GOOGLE_' + 'MAPS_API_KEY') {
+        showFallback();
+        return;
+      }
+
+      var s = document.createElement('script');
+      s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key) + '&callback=initUCSMap&v=weekly&loading=async';
+      s.async = true;
+      s.defer = true;
+      s.onerror = showFallback;
+      document.head.appendChild(s);
     })();
   </script>
 

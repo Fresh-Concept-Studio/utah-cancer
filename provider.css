@@ -2231,6 +2231,9 @@
    ============================================ */
 .event-category {
   display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+  max-width: max-content;
   padding: 5px 12px;
   border-radius: 999px;
   font-family: 'Almarai', sans-serif;
@@ -2265,7 +2268,7 @@
    EVENTS INDEX - HERO
    ============================================ */
 .events-hero {
-  padding: 90px 0 70px;
+  padding: 140px 0 80px;
   background: linear-gradient(180deg, #003347 0%, #00577d 100%);
   color: #fff;
   position: relative;
@@ -3470,6 +3473,9 @@
    EVENTS RESPONSIVE
    ============================================ */
 @media (max-width: 1024px) {
+  .events-hero {
+    padding: 110px 0 60px;
+  }
   .events-hero-inner {
     grid-template-columns: 1fr;
   }
