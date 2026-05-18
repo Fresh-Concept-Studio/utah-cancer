@@ -62,31 +62,18 @@
   <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
   <!-- Hero -->
-  <section class="providers-hero">
+  <section class="providers-hero providers-hero--compact">
     <div class="container">
       <h1 class="providers-hero-title">Our Locations</h1>
-      <p class="providers-hero-desc">Convenient clinics all along the Wasatch Front — so world-class cancer care is always close to home.</p>
     </div>
   </section>
 
-  <!-- Stats Bar -->
-  <section class="loc-stats">
-    <div class="container loc-stats-inner">
-      <div class="loc-stat">
-        <div class="loc-stat-num">18</div>
-        <div class="loc-stat-label">Clinic Locations</div>
-      </div>
-      <div class="loc-stat">
-        <div class="loc-stat-num">60+</div>
-        <div class="loc-stat-label">Board-Certified Providers</div>
-      </div>
-      <div class="loc-stat">
-        <div class="loc-stat-num">40+</div>
-        <div class="loc-stat-label">Years of Care</div>
-      </div>
-      <div class="loc-stat">
-        <div class="loc-stat-num">100%</div>
-        <div class="loc-stat-label">Focused on You</div>
+  <!-- Map -->
+  <section class="loc-map-section">
+    <div class="loc-map-wrap">
+      <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
+      <div class="locations-map-fallback" id="locations-map-fallback" hidden>
+        <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>locations/index.html</code> to display the interactive map.</p>
       </div>
     </div>
   </section>
@@ -95,16 +82,36 @@
   <section class="loc-grid-section">
     <div class="container">
 
-      <div class="loc-section-header">
-        <h2 class="loc-section-title">Find a clinic near you</h2>
-        <p class="loc-section-desc">Every Utah Cancer Specialists clinic is staffed by board-certified oncologists and compassionate care teams, with the latest diagnostic and treatment technology on site.</p>
+      <div class="loc-filters" role="search">
+        <label class="loc-filter loc-filter--search">
+          <span class="material-symbols-rounded loc-filter-icon">search</span>
+          <input type="search" id="loc-search" class="loc-filter-input" placeholder="Search clinic name, city, or hospital" aria-label="Search locations">
+        </label>
+        <label class="loc-filter loc-filter--county">
+          <span class="material-symbols-rounded loc-filter-icon">filter_alt</span>
+          <select id="loc-county" class="loc-filter-input" aria-label="Filter by county">
+            <option value="">All counties</option>
+            <option value="bonneville">Bonneville County, ID</option>
+            <option value="davis">Davis County, UT</option>
+            <option value="madison">Madison County, ID</option>
+            <option value="salt-lake">Salt Lake County, UT</option>
+            <option value="teton-id">Teton County, ID</option>
+            <option value="teton-wy">Teton County, WY</option>
+            <option value="utah">Utah County, UT</option>
+            <option value="weber">Weber County, UT</option>
+          </select>
+          <span class="material-symbols-rounded loc-filter-caret">expand_more</span>
+        </label>
+        <span class="loc-filter-count" id="loc-filter-count" aria-live="polite"></span>
       </div>
+
+      <p class="loc-empty" id="loc-empty" hidden>No clinics match your search. Try a different keyword or county.</p>
 
       <!-- Utah Locations -->
       <h2 class="loc-region-title">Utah</h2>
       <div class="loc-grid">
 
-        <a href="jordan-valley.html" class="loc-card loc-card--featured">
+        <a href="jordan-valley.html" class="loc-card loc-card--featured" data-county="salt-lake">
           <div class="loc-card-image">
             <img src="../images/location-jordan-valley.jpg" alt="Jordan Valley Cancer Center">
             <span class="loc-card-badge">Main Office</span>
@@ -127,7 +134,7 @@
           </div>
         </a>
 
-        <a href="ogden.html" class="loc-card">
+        <a href="ogden.html" class="loc-card" data-county="weber">
           <div class="loc-card-image"><img src="../images/location-ogden.jpg" alt="Ogden Medical Plaza"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Ogden Medical Plaza</h3>
@@ -141,7 +148,7 @@
           </div>
         </a>
 
-        <a href="layton.html" class="loc-card">
+        <a href="layton.html" class="loc-card" data-county="davis">
           <div class="loc-card-image"><img src="../images/location-layton.jpg" alt="Layton Clinic"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Layton Clinic</h3>
@@ -155,7 +162,7 @@
           </div>
         </a>
 
-        <a href="bountiful.html" class="loc-card">
+        <a href="bountiful.html" class="loc-card" data-county="davis">
           <div class="loc-card-image"><img src="../images/location-bountiful.jpg" alt="Bountiful Clinic"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Bountiful Clinic</h3>
@@ -169,7 +176,7 @@
           </div>
         </a>
 
-        <a href="salt-lake.html" class="loc-card">
+        <a href="salt-lake.html" class="loc-card" data-county="salt-lake">
           <div class="loc-card-image"><img src="../images/location-salt-lake.jpg" alt="Salt Lake Clinic"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Salt Lake Clinic</h3>
@@ -183,7 +190,7 @@
           </div>
         </a>
 
-        <a href="cancer-center.html" class="loc-card">
+        <a href="cancer-center.html" class="loc-card" data-county="salt-lake">
           <div class="loc-card-image"><img src="../images/location-cancer-center.jpg" alt="Cancer Center"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Cancer Center</h3>
@@ -197,7 +204,7 @@
           </div>
         </a>
 
-        <a href="st-marks.html" class="loc-card">
+        <a href="st-marks.html" class="loc-card" data-county="salt-lake">
           <div class="loc-card-image"><img src="../images/location-st-marks.jpg" alt="St. Mark's Hospital"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">St. Mark&rsquo;s Hospital</h3>
@@ -211,7 +218,7 @@
           </div>
         </a>
 
-        <a href="granger.html" class="loc-card">
+        <a href="granger.html" class="loc-card" data-county="salt-lake">
           <div class="loc-card-image"><img src="../images/location-granger.jpg" alt="Granger Fairbourne Station"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Granger Fairbourne Station</h3>
@@ -225,7 +232,7 @@
           </div>
         </a>
 
-        <a href="imc.html" class="loc-card">
+        <a href="imc.html" class="loc-card" data-county="salt-lake">
           <div class="loc-card-image"><img src="../images/location-imc.jpg" alt="Intermountain Medical Center"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Intermountain Medical Center</h3>
@@ -239,7 +246,7 @@
           </div>
         </a>
 
-        <a href="pleasant-grove.html" class="loc-card">
+        <a href="pleasant-grove.html" class="loc-card" data-county="utah">
           <div class="loc-card-image"><img src="../images/location-pleasant-grove.jpg" alt="Pleasant Grove Clinic"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Pleasant Grove Clinic</h3>
@@ -253,7 +260,7 @@
           </div>
         </a>
 
-        <a href="timpanogos.html" class="loc-card">
+        <a href="timpanogos.html" class="loc-card" data-county="utah">
           <div class="loc-card-image"><img src="../images/location-timpanogos.jpg" alt="Timpanogos Regional Hospital"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Timpanogos Regional Hospital</h3>
@@ -267,7 +274,7 @@
           </div>
         </a>
 
-        <a href="start.html" class="loc-card">
+        <a href="start.html" class="loc-card" data-county="salt-lake">
           <div class="loc-card-image"><img src="../images/location-start.jpg" alt="START Mountain Region"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">START Mountain Region</h3>
@@ -287,7 +294,7 @@
       <h2 class="loc-region-title">Idaho &amp; Wyoming</h2>
       <div class="loc-grid">
 
-        <a href="idaho-falls.html" class="loc-card">
+        <a href="idaho-falls.html" class="loc-card" data-county="bonneville">
           <div class="loc-card-image"><img src="../images/location-idaho-falls.jpg" alt="Idaho Falls"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Idaho Falls</h3>
@@ -301,7 +308,7 @@
           </div>
         </a>
 
-        <a href="madison.html" class="loc-card">
+        <a href="madison.html" class="loc-card" data-county="madison">
           <div class="loc-card-image"><img src="../images/location-madison.jpg" alt="Madison Health"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Madison Health</h3>
@@ -315,7 +322,7 @@
           </div>
         </a>
 
-        <a href="teton.html" class="loc-card">
+        <a href="teton.html" class="loc-card" data-county="teton-id">
           <div class="loc-card-image"><img src="../images/location-teton.jpg" alt="Teton Valley Health Care"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">Teton Valley Health Care</h3>
@@ -329,7 +336,7 @@
           </div>
         </a>
 
-        <a href="wyoming.html" class="loc-card">
+        <a href="wyoming.html" class="loc-card" data-county="teton-wy">
           <div class="loc-card-image"><img src="../images/location-wyoming.jpg" alt="St. John's Health"></div>
           <div class="loc-card-body">
             <h3 class="loc-card-name">St. John&rsquo;s Health</h3>
@@ -476,6 +483,146 @@
           navbar.classList.remove('scrolled');
         }
       });
+    })();
+
+    // Search + county filter for location cards
+    (function() {
+      var search = document.getElementById('loc-search');
+      var county = document.getElementById('loc-county');
+      var countEl = document.getElementById('loc-filter-count');
+      var emptyEl = document.getElementById('loc-empty');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.loc-card'));
+      var regions = Array.prototype.slice.call(document.querySelectorAll('.loc-region-title'));
+      var total = cards.length;
+
+      // Pre-compute searchable haystack for each card
+      cards.forEach(function(c) {
+        c.dataset.haystack = (c.textContent || '').toLowerCase().replace(/\s+/g, ' ');
+      });
+
+      function update() {
+        var q = (search.value || '').trim().toLowerCase();
+        var cty = county.value;
+        var visible = 0;
+        cards.forEach(function(c) {
+          var matchCounty = !cty || c.dataset.county === cty;
+          var matchText = !q || c.dataset.haystack.indexOf(q) !== -1;
+          var show = matchCounty && matchText;
+          c.style.display = show ? '' : 'none';
+          if (show) visible += 1;
+        });
+
+        // Hide region heading if all its cards are hidden
+        regions.forEach(function(h) {
+          var grid = h.nextElementSibling;
+          if (!grid) return;
+          var anyVisible = Array.prototype.some.call(grid.querySelectorAll('.loc-card'), function(c) {
+            return c.style.display !== 'none';
+          });
+          h.style.display = anyVisible ? '' : 'none';
+        });
+
+        if (q || cty) {
+          countEl.textContent = visible + ' of ' + total + ' clinics';
+        } else {
+          countEl.textContent = '';
+        }
+        emptyEl.hidden = visible !== 0;
+      }
+
+      search.addEventListener('input', update);
+      county.addEventListener('change', update);
+      update();
+    })();
+
+    // Locations map — same data + styling as homepage
+    window.UCS_GOOGLE_MAPS_KEY = window.UCS_GOOGLE_MAPS_KEY || 'AIzaSyD2zE7aUB6stEv4Jnu8wteS4FzF2MOQnEU';
+    (function() {
+      var locations = [
+        { name: 'Jordan Valley Cancer Center', address: '3592 West 9000 South, Suite 200, West Jordan, UT 84088', url: 'jordan-valley.html', lat: 40.5879, lng: -111.9768 },
+        { name: 'Ogden Medical Plaza', address: '425 East 5350 South, Suite 101, Ogden, UT 84405', url: 'ogden.html', lat: 41.1661, lng: -111.9701 },
+        { name: 'Layton Clinic', address: '1492 Antelope Drive, Suite 125, Layton, UT 84041', url: 'layton.html', lat: 41.0898, lng: -111.9947 },
+        { name: 'Bountiful Clinic', address: '520 East Medical Drive, Suite 100, Bountiful, UT 84010', url: 'bountiful.html', lat: 40.8862, lng: -111.8707 },
+        { name: 'Salt Lake Clinic', address: '389 South 900 East, Suite 100, Salt Lake City, UT 84102', url: 'salt-lake.html', lat: 40.7612, lng: -111.8649 },
+        { name: 'Cancer Center', address: '3838 South 700 East, Suite 100, Salt Lake City, UT 84106', url: 'cancer-center.html', lat: 40.7051, lng: -111.8714 },
+        { name: "St. Mark's Hospital", address: '1250 East 3900 South, Suite B-10, Salt Lake City, UT 84124', url: 'st-marks.html', lat: 40.6862, lng: -111.8568 },
+        { name: 'Granger Fairbourne Station', address: '2965 W. 3500 S., 4th Floor, West Valley City, UT 84119', url: 'granger.html', lat: 40.6941, lng: -111.9623 },
+        { name: 'Intermountain Medical Center', address: '5131 S. Cottonwood St., Bldg 3, Level 2, Murray, UT 84107', url: 'imc.html', lat: 40.6592, lng: -111.8941 },
+        { name: 'Pleasant Grove Clinic', address: '1076 N. County Blvd, Suite D, Pleasant Grove, UT 84062', url: 'pleasant-grove.html', lat: 40.3748, lng: -111.7688 },
+        { name: 'Timpanogos Regional Hospital', address: '700 West 800 North, Suite 140, Orem, UT 84057', url: 'timpanogos.html', lat: 40.3139, lng: -111.7137 },
+        { name: 'START Mountain Region', address: '2965 West 3500 South, 4th Floor East, West Valley City, UT 84119', url: 'start.html', lat: 40.6944, lng: -111.9620 },
+        { name: 'Idaho Falls', address: '3245 Channing Way, Idaho Falls, ID 83404', url: 'idaho-falls.html', lat: 43.4686, lng: -111.9900 },
+        { name: 'Madison Health', address: '450 East Main Street, Rexburg, ID 83440', url: 'madison.html', lat: 43.8261, lng: -111.7710 },
+        { name: 'Teton Valley Health Care', address: '120 East Howard Avenue, Driggs, ID 83422', url: 'teton.html', lat: 43.7265, lng: -111.1080 },
+        { name: "St. John's Health", address: '555 E. Broadway Ave., Jackson, WY 83001', url: 'wyoming.html', lat: 43.4797, lng: -110.7544 }
+      ];
+
+      var BRAND = '#00577d';
+      var BRAND_DARK = '#003347';
+
+      function pinIcon() {
+        var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" viewBox="0 0 34 44">'
+          + '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.25"/></filter></defs>'
+          + '<path filter="url(#s)" fill="' + BRAND + '" stroke="' + BRAND_DARK + '" stroke-width="1.5" d="M17 1.5C8.7 1.5 2 8.2 2 16.5c0 11.3 15 25.3 15 25.3s15-14 15-25.3C32 8.2 25.3 1.5 17 1.5z"/>'
+          + '<circle cx="17" cy="16.5" r="5.5" fill="#fff"/>'
+          + '</svg>';
+        return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+      }
+
+      window.initUCSMap = function initUCSMap() {
+        var el = document.getElementById('locations-map');
+        if (!el || !window.google || !window.google.maps) return;
+
+        var map = new google.maps.Map(el, {
+          center: { lat: 41.2, lng: -111.7 },
+          zoom: 7,
+          mapTypeControl: false,
+          streetViewControl: false,
+          fullscreenControl: false
+        });
+
+        var bounds = new google.maps.LatLngBounds();
+        var infoWindow = new google.maps.InfoWindow();
+        var iconSpec = { url: pinIcon(), scaledSize: new google.maps.Size(34, 44), anchor: new google.maps.Point(17, 42) };
+
+        locations.forEach(function(loc) {
+          var pos = { lat: loc.lat, lng: loc.lng };
+          var marker = new google.maps.Marker({ position: pos, map: map, title: loc.name, icon: iconSpec });
+          marker.addListener('click', function() {
+            infoWindow.setContent(
+              '<div style="font-family:Inter,sans-serif;color:#003347;max-width:220px">' +
+              '<strong style="font-family:\'Bricolage Grotesque\',serif;font-size:16px;display:block;margin-bottom:4px">' + loc.name + '</strong>' +
+              '<span style="font-size:13px;color:#5a6670;display:block;margin-bottom:8px">' + loc.address + '</span>' +
+              '<a href="' + loc.url + '" style="color:#00577d;font-size:13px;font-weight:600">View details &rarr;</a>' +
+              '</div>'
+            );
+            infoWindow.open(map, marker);
+          });
+          bounds.extend(pos);
+        });
+
+        if (!bounds.isEmpty()) map.fitBounds(bounds, 60);
+      };
+
+      function showFallback() {
+        var fb = document.getElementById('locations-map-fallback');
+        var map = document.getElementById('locations-map');
+        if (fb) fb.hidden = false;
+        if (map) map.style.display = 'none';
+      }
+
+      var key = window.UCS_GOOGLE_MAPS_KEY;
+      if (!key || key === 'YOUR_GOOGLE_' + 'MAPS_API_KEY') {
+        showFallback();
+        return;
+      }
+
+      var s = document.createElement('script');
+      s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key) + '&callback=initUCSMap&v=weekly&loading=async';
+      s.async = true;
+      s.defer = true;
+      s.onerror = showFallback;
+      document.head.appendChild(s);
     })();
   </script>
 

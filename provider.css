@@ -1323,8 +1323,131 @@
   text-transform: uppercase;
 }
 
+.providers-hero--compact {
+  padding: 134px 0 40px;
+}
+
+.providers-hero--compact .providers-hero-title {
+  margin-bottom: 0;
+}
+
+.loc-map-section {
+  background: #003347;
+  padding: 0;
+}
+
+.loc-map-wrap {
+  position: relative;
+  background: #eaf1f5;
+}
+
+.loc-map-wrap .locations-map {
+  width: 100%;
+  height: 520px;
+  display: block;
+}
+
+.loc-map-wrap .locations-map-fallback {
+  padding: 60px 24px;
+  text-align: center;
+  color: #003347;
+  background: #eaf1f5;
+}
+
+.loc-map-wrap .locations-map-fallback code {
+  background: #fff;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #003347;
+}
+
+.loc-filters {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.loc-filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d6dee4;
+  border-radius: 999px;
+  padding: 0 18px;
+  height: 48px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.loc-filter:focus-within {
+  border-color: #00577d;
+  box-shadow: 0 0 0 3px rgba(0, 87, 125, 0.12);
+}
+
+.loc-filter--search {
+  flex: 1 1 320px;
+  max-width: 480px;
+}
+
+.loc-filter--county {
+  flex: 0 0 auto;
+}
+
+.loc-filter-icon {
+  font-size: 20px !important;
+  color: #00577d;
+  margin-right: 10px;
+}
+
+.loc-filter-caret {
+  font-size: 20px !important;
+  color: #003347;
+  margin-left: 6px;
+  pointer-events: none;
+}
+
+.loc-filter-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #003347;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.loc-filter-input::placeholder {
+  color: rgba(0, 51, 71, 0.5);
+}
+
+.loc-filter--county .loc-filter-input {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.loc-filter-count {
+  font-family: 'Almarai', sans-serif;
+  font-size: 13px;
+  color: rgba(0, 51, 71, 0.65);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.loc-empty {
+  text-align: center;
+  color: rgba(0, 51, 71, 0.7);
+  padding: 40px 16px;
+  font-size: 15px;
+}
+
 .loc-grid-section {
-  padding: 80px 0 100px;
+  padding: 64px 0 100px;
   background: #fafafa;
 }
 
@@ -1753,7 +1876,7 @@
 }
 
 .loc-map-section {
-  padding: 0 0 80px;
+  padding: 0;
 }
 
 .loc-map-placeholder {
