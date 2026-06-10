@@ -28,7 +28,17 @@
         <a href="providers/index.html" class="nav-link">Providers</a>
         <a href="locations/index.html" class="nav-link">Locations</a>
         <a href="specialties/index.html" class="nav-link">Cancer Types</a>
-        <a href="about.html" class="nav-link">About</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Company <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu">
+            <div class="nav-dropdown-menu-inner">
+            <a href="about.html" class="nav-dropdown-item">About</a>
+            <a href="about.html#leadership" class="nav-dropdown-item">Leadership</a>
+            <a href="events/index.html" class="nav-dropdown-item">Events</a>
+            <a href="about.html#foundation" class="nav-dropdown-item">Our Foundation</a>
+            </div>
+          </div>
+        </div>
         <div class="nav-dropdown">
           <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
           <div class="nav-dropdown-menu">
@@ -43,7 +53,6 @@
             </div>
           </div>
         </div>
-        <a href="events/index.html" class="nav-link nav-link--icon"><span class="material-symbols-rounded">event</span> Events</a>
         <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon">
           <span class="material-symbols-rounded">person</span>
           Patient Portal
@@ -52,9 +61,9 @@
           <span class="material-symbols-rounded">credit_card</span>
           Quick Pay
         </a>
-        <a href="locations/index.html" class="nav-btn-location">
-          <span class="material-symbols-rounded">location_on</span>
-          Find a Location
+        <a href="providers/index.html" class="nav-btn-cta">
+          <span class="material-symbols-rounded">groups</span>
+          Our Providers
         </a>
       </nav>
     </div>
@@ -96,7 +105,7 @@
           <span class="hero-card-icon material-symbols-rounded">stethoscope</span>
           <span class="hero-card-content">
             <span class="hero-card-eyebrow">What we treat</span>
-            <span class="hero-card-title">Our Specialties</span>
+            <span class="hero-card-title">Cancer Types</span>
           </span>
           <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
         </a>
@@ -116,42 +125,64 @@
         </a>
       </div>
       <div class="team-photos">
-        <div class="team-photo team-photo--tl" data-slot="0">
-          <img class="team-photo-front" src="images/provider-1.jpg" alt="Provider">
-          <img class="team-photo-back" src="images/provider-1.jpg" alt="Provider">
-        </div>
-        <div class="team-photo team-photo--tr" data-slot="1">
-          <img class="team-photo-front" src="images/provider-2.jpg" alt="Provider">
-          <img class="team-photo-back" src="images/provider-2.jpg" alt="Provider">
-        </div>
-        <div class="team-photo team-photo--bl" data-slot="2">
-          <img class="team-photo-front" src="images/provider-3.jpg" alt="Provider">
-          <img class="team-photo-back" src="images/provider-3.jpg" alt="Provider">
-        </div>
-        <div class="team-photo team-photo--br" data-slot="3">
-          <img class="team-photo-front" src="images/provider-4.jpg" alt="Provider">
-          <img class="team-photo-back" src="images/provider-4.jpg" alt="Provider">
+        <div class="team-photo team-photo--single">
+          <img src="images/team-group.jpg" alt="The Utah Cancer Specialists care team">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Locations Section -->
-  <section class="locations-section">
-    <div class="container locations-inner">
-      <span class="section-label">Locations</span>
-      <h2 class="locations-heading">Care Connected to Your Community</h2>
-      <p class="locations-intro">With 18 locations across Utah, Utah Cancer Specialists brings compassionate, high-quality cancer care to the communities we serve&mdash;so you can receive the care you need, close to home.</p>
-      <a href="locations/index.html" class="btn btn--primary btn--centered">
-        <span class="material-symbols-rounded">location_on</span>
-        View All Locations
-      </a>
-      <div class="locations-map-wrap">
-        <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
-        <div class="locations-map-fallback" id="locations-map-fallback" hidden>
-          <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>index.html</code> to display the interactive map.</p>
-          <a href="locations/index.html" class="btn btn--outline">Browse all locations</a>
+  <!-- Podcast Launch Section -->
+  <section class="podcast-section">
+    <div class="container podcast-inner">
+      <div class="podcast-content">
+        <span class="podcast-eyebrow"><span class="material-symbols-rounded">podcasts</span> The UCS Podcast</span>
+        <h2 class="podcast-heading">Here With You. Now in your headphones.</h2>
+        <p class="podcast-desc">Hosted by Scott Jeffrey Miller, the <em>Here With You</em> podcast brings honest conversations with our physicians, patients, and care teams&mdash;about diagnosis, treatment, and everything in between.</p>
+        <ul class="podcast-episodes">
+          <li class="podcast-episode">
+            <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
+            <span class="podcast-episode-info">
+              <span class="podcast-episode-title">What I wish every newly diagnosed patient knew</span>
+              <span class="podcast-episode-meta">Episode 1</span>
+            </span>
+          </li>
+          <li class="podcast-episode">
+            <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
+            <span class="podcast-episode-info">
+              <span class="podcast-episode-title">Clinical trials, demystified</span>
+              <span class="podcast-episode-meta">Episode 2</span>
+            </span>
+          </li>
+          <li class="podcast-episode">
+            <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
+            <span class="podcast-episode-info">
+              <span class="podcast-episode-title">Caring for the caregiver</span>
+              <span class="podcast-episode-meta">Episode 3</span>
+            </span>
+          </li>
+        </ul>
+        <div class="podcast-actions">
+          <a href="https://www.facebook.com/utahcancerspecialists" target="_blank" rel="noopener" class="btn btn--white">
+            <span class="material-symbols-rounded">notifications</span>
+            Notify Me at Launch
+          </a>
+          <a href="https://www.facebook.com/utahcancerspecialists" target="_blank" rel="noopener" class="podcast-announce-link">
+            See the announcement <span class="material-symbols-rounded">arrow_outward</span>
+          </a>
         </div>
+      </div>
+      <div class="podcast-art">
+        <div class="podcast-cover">
+          <img src="images/logo.png" alt="Utah Cancer Specialists" class="podcast-cover-logo">
+          <span class="podcast-cover-title">Here<br>With<br>You</span>
+          <span class="podcast-cover-badge">Podcast</span>
+          <span class="podcast-cover-host">Hosted by Scott Jeffrey Miller</span>
+          <div class="podcast-wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <span class="podcast-sticker"><strong>Sept 8</strong>first episode</span>
       </div>
     </div>
   </section>
@@ -174,89 +205,218 @@
       </div>
       <div class="specialties-carousel">
         <div class="carousel-track">
-          <div class="specialty-card">
+          <a href="specialties/breast-cancer.html" class="specialty-card">
             <img src="images/specialty-breast-gen.jpg" alt="Breast Cancer Treatment" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Breast Cancer Treatment</h3>
-              <p class="specialty-card-desc">Personalized treatment plans combining advanced therapies and compassionate support for every stage of breast cancer.</p>
             </div>
-            <a href="specialties/breast-cancer.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/prostate-cancer.html" class="specialty-card">
             <img src="images/specialty-prostate-gen.jpg" alt="Prostate Cancer Care" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Prostate Cancer Care</h3>
-              <p class="specialty-card-desc">Expert, evidence-based prostate cancer treatment focused on preserving quality of life and long-term health.</p>
             </div>
-            <a href="specialties/prostate-cancer.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/lung-cancer.html" class="specialty-card">
             <img src="images/specialty-lung-gen.jpg" alt="Lung Cancer Treatment" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Lung Cancer Treatment</h3>
-              <p class="specialty-card-desc">Comprehensive lung cancer care using the latest diagnostic tools and targeted therapies for the best possible outcomes.</p>
             </div>
-            <a href="specialties/lung-cancer.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/colon-cancer.html" class="specialty-card">
             <img src="images/specialty-colon-gen.jpg" alt="Colon Cancer Treatment" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Colon Cancer Treatment</h3>
-              <p class="specialty-card-desc">Advanced colon cancer care with individualized treatment plans including surgery, chemotherapy, and targeted therapies.</p>
             </div>
-            <a href="specialties/colon-cancer.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/lymphomas.html" class="specialty-card">
             <img src="images/specialty-lymphoma-gen.jpg" alt="Lymphomas" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Lymphomas</h3>
-              <p class="specialty-card-desc">Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas using the latest immunotherapy and targeted approaches.</p>
             </div>
-            <a href="specialties/lymphomas.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/blood-cancers.html" class="specialty-card">
             <img src="images/specialty-blood-gen.jpg" alt="Blood Cancers" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Blood Cancers</h3>
-              <p class="specialty-card-desc">Comprehensive care for leukemia, lymphoma, and other blood disorders with advanced treatment options and clinical trials.</p>
             </div>
-            <a href="specialties/blood-cancers.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/head-neck-cancers.html" class="specialty-card">
             <img src="images/specialty-headneck-gen.jpg" alt="Head and Neck Cancers" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Head &amp; Neck Cancers</h3>
-              <p class="specialty-card-desc">Multidisciplinary treatment for cancers of the throat, mouth, sinuses, and other head and neck regions.</p>
             </div>
-            <a href="specialties/head-neck-cancers.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/kidney-cancer.html" class="specialty-card">
             <img src="images/specialty-kidney-gen.jpg" alt="Kidney Cancer" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Kidney Cancer</h3>
-              <p class="specialty-card-desc">Specialized kidney cancer treatment combining immunotherapy, targeted therapy, and surgical options for optimal results.</p>
             </div>
-            <a href="specialties/kidney-cancer.html" class="specialty-card-btn">More details</a>
-          </div>
-          <div class="specialty-card">
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href="specialties/liver-cancer.html" class="specialty-card">
             <img src="images/specialty-liver-gen.jpg" alt="Liver Cancer" class="specialty-card-img">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Liver Cancer</h3>
-              <p class="specialty-card-desc">Expert liver cancer care featuring advanced interventional procedures, systemic therapies, and personalized treatment plans.</p>
             </div>
-            <a href="specialties/liver-cancer.html" class="specialty-card-btn">More details</a>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="home-events">
+    <div class="container">
+      <div class="home-events-header">
+        <div>
+          <span class="section-label">Events</span>
+          <h2 class="home-events-heading">Happening Soon</h2>
+        </div>
+        <a href="events/index.html" class="btn btn--primary btn--compact">
+          <span class="material-symbols-rounded">calendar_month</span>
+          See All Events
+        </a>
+      </div>
+      <div class="home-events-grid">
+        <a href="events/walk-for-hope.html" class="event-feature">
+          <span class="event-feature-media">
+            <img src="images/event-walk-for-hope.jpg" alt="Walkers in teal shirts at the Walk for Hope 5K" class="event-feature-img">
+            <span class="event-feature-chip">Featured &middot; Fundraiser</span>
+          </span>
+          <span class="event-feature-body">
+            <span class="event-feature-when">Saturday, June 15 &middot; 8:00 AM</span>
+            <span class="event-feature-title">Walk for Hope 5K</span>
+            <span class="event-feature-desc">Our annual community walk supporting cancer research, patient programs, and survivor celebrations.</span>
+            <span class="event-feature-meta"><span class="material-symbols-rounded">location_on</span> Sugar House Park, Salt Lake City</span>
+            <span class="event-feature-cta">Event details <span class="material-symbols-rounded">arrow_forward</span></span>
+          </span>
+        </a>
+        <div class="event-mini-list">
+          <a href="events/caregiver-workshop.html" class="event-mini">
+            <span class="event-mini-thumb"><img src="images/event-caregiver.jpg" alt=""></span>
+            <span class="event-mini-info">
+              <span class="event-mini-title">Caregiver Workshop: Caring for Someone You Love</span>
+              <span class="event-mini-meta">Jun 22 &middot; 10:00 AM &middot; Murray IMC Campus</span>
+            </span>
+            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+          </a>
+          <a href="events/patient-appreciation-dinner.html" class="event-mini">
+            <span class="event-mini-thumb"><img src="images/event-dinner.jpg" alt=""></span>
+            <span class="event-mini-info">
+              <span class="event-mini-title">Annual Patient Appreciation Dinner</span>
+              <span class="event-mini-meta">Jul 19 &middot; 6:00 PM &middot; South Jordan Clinic</span>
+            </span>
+            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+          </a>
+          <a href="events/nutrition-during-treatment.html" class="event-mini">
+            <span class="event-mini-thumb"><img src="images/event-nutrition.jpg" alt=""></span>
+            <span class="event-mini-info">
+              <span class="event-mini-title">Nutrition During Treatment</span>
+              <span class="event-mini-meta">Jul 28 &middot; 1:00 PM &middot; Virtual</span>
+            </span>
+            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Media breaker: spans into the foundation band below -->
+      <aside class="media-breaker">
+        <a href="#" class="media-breaker-video" aria-label="Watch our featured media segment">
+          <img src="images/media-interview.jpg" alt="A Utah Cancer Specialists physician interviewed on a TV news set">
+          <span class="media-breaker-play"><span class="material-symbols-rounded">play_arrow</span></span>
+          <span class="media-breaker-soon">Featured segment</span>
+        </a>
+        <span class="media-breaker-text">
+          <span class="media-breaker-title">Check us out in the media</span>
+          <span class="media-breaker-desc">Our physicians share the latest in cancer care on Utah&rsquo;s news networks.</span>
+          <a href="#" class="media-breaker-link">Browse all media <span class="material-symbols-rounded">arrow_forward</span></a>
+          <span class="media-breaker-outlets">
+            <span class="media-breaker-outlets-label">As seen on these outlets</span>
+            <span class="media-breaker-logos">
+              <span class="media-breaker-logo"><img src="images/logos/ksl.svg" alt="KSL News"></span>
+              <span class="media-breaker-logo"><img src="images/logos/fox13.svg" alt="FOX 13"></span>
+              <span class="media-breaker-logo"><img src="images/logos/abc4.png" alt="ABC4 Utah"></span>
+              <span class="media-breaker-logo media-breaker-logotype">Good Things <strong>Utah</strong></span>
+            </span>
+          </span>
+        </span>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Patient Stories Section -->
+  <section class="stories-section">
+    <div class="container">
+      <div class="stories-header">
+        <div>
+          <span class="section-label">Patient Stories</span>
+          <h2 class="stories-heading">Every journey deserves to be told.</h2>
+        </div>
+        <div class="stories-nav">
+          <a href="stories/index.html" class="stories-all">View all stories</a>
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn--prev" id="story-prev" aria-label="Previous story"><i class="fas fa-arrow-left"></i></button>
+            <button class="carousel-btn carousel-btn--next" id="story-next" aria-label="Next story"><i class="fas fa-arrow-right"></i></button>
           </div>
         </div>
       </div>
+      <div class="stories-carousel" id="stories-carousel">
+        <article class="story-slide active">
+          <a href="stories/maria.html" class="story-media">
+            <img src="images/story-maria.jpg" alt="Maria S., breast cancer survivor, in her garden">
+            <span class="story-play"><span class="material-symbols-rounded">play_arrow</span> Watch Maria&rsquo;s story</span>
+          </a>
+          <div class="story-text">
+            <span class="story-kicker">Breast Cancer &middot; In Remission</span>
+            <blockquote class="story-quote">I walked in terrified. I walked out with a team that never let go of my hand.</blockquote>
+            <span class="story-name">Maria S. &middot; Salt Lake City</span>
+            <a href="stories/maria.html" class="story-link">Read Maria&rsquo;s story <span class="material-symbols-rounded">arrow_forward</span></a>
+          </div>
+        </article>
+        <article class="story-slide">
+          <a href="stories/dale.html" class="story-media">
+            <img src="images/story-dale.jpg" alt="Dale R., lymphoma survivor, fly fishing at sunrise">
+            <span class="story-play"><span class="material-symbols-rounded">play_arrow</span> Watch Dale&rsquo;s story</span>
+          </a>
+          <div class="story-text">
+            <span class="story-kicker">Lymphoma &middot; Three Years Cancer-Free</span>
+            <blockquote class="story-quote">The river was waiting for me. So was the rest of my life.</blockquote>
+            <span class="story-name">Dale R. &middot; Ogden</span>
+            <a href="stories/dale.html" class="story-link">Read Dale&rsquo;s story <span class="material-symbols-rounded">arrow_forward</span></a>
+          </div>
+        </article>
+        <article class="story-slide">
+          <a href="stories/jasmine.html" class="story-media">
+            <img src="images/story-jasmine.jpg" alt="Jasmine K., Hodgkin lymphoma survivor, lacing up on the track">
+            <span class="story-play"><span class="material-symbols-rounded">play_arrow</span> Watch Jasmine&rsquo;s story</span>
+          </a>
+          <div class="story-text">
+            <span class="story-kicker">Hodgkin Lymphoma &middot; Survivor</span>
+            <blockquote class="story-quote">Treatment didn&rsquo;t put my life on pause. My team kept me running.</blockquote>
+            <span class="story-name">Jasmine K. &middot; Provo</span>
+            <a href="stories/jasmine.html" class="story-link">Read Jasmine&rsquo;s story <span class="material-symbols-rounded">arrow_forward</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="stories-dots" id="stories-dots"></div>
     </div>
   </section>
 
@@ -560,6 +720,34 @@
       nextBtn.addEventListener('click', function() { slide(1); });
     })();
 
+    // Patient stories carousel
+    (function() {
+      var slides = document.querySelectorAll('#stories-carousel .story-slide');
+      var dotsWrap = document.getElementById('stories-dots');
+      if (!slides.length || !dotsWrap) return;
+      var current = 0;
+
+      slides.forEach(function(_, i) {
+        var dot = document.createElement('button');
+        dot.className = 'stories-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to story ' + (i + 1));
+        dot.addEventListener('click', function() { goTo(i); });
+        dotsWrap.appendChild(dot);
+      });
+      var dots = dotsWrap.querySelectorAll('.stories-dot');
+
+      function goTo(i) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (i + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      document.getElementById('story-prev').addEventListener('click', function() { goTo(current - 1); });
+      document.getElementById('story-next').addEventListener('click', function() { goTo(current + 1); });
+    })();
+
     // Testimonial carousel
     (function() {
       var track = document.getElementById('testimonials-track');
@@ -653,214 +841,7 @@
       applyTransform();
     })();
 
-    // Provider photo rotation — randomize on load, crossfade individually
-    (function() {
-      var allProviders = [
-        'provider-andrew-aloia.jpg','provider-anita-mcdonald.jpg','provider-anne-marceau.jpg',
-        'provider-belisario-arango.jpg','provider-benjamin-solomon.jpg','provider-bonnie-wallace.jpg',
-        'provider-brighton-loveday.jpg','provider-brittany-weed.jpg','provider-daniel-miller.jpg',
-        'provider-david-warner.jpg','provider-deborah-hatch.jpg','provider-disean-kendall.jpg',
-        'provider-douglas-holt.jpg','provider-dustin-boothe.jpg','provider-gary-garner.jpg',
-        'provider-grant-hunter.jpg','provider-greg-litton.jpg','provider-gregory-chipman.jpg',
-        'provider-hyatt-reed.jpg','provider-hyrum-prestwich.jpg','provider-james-clarke.jpg',
-        'provider-james-shortridge.jpg','provider-jared-scott.jpg','provider-jason-stinnett.jpg',
-        'provider-jeffrey-lee.jpg','provider-john-hayes.jpg','provider-jonathan-whisenant.jpg',
-        'provider-jose-pacheco.jpg','provider-julie-balk.jpg','provider-julie-luckart.jpg',
-        'provider-justin-call.jpg','provider-kimberly-mcfee.jpg','provider-kylee-maliwauki.jpg',
-        'provider-leland-rogers.jpg','provider-lindsay-hunter.jpg','provider-louise-tobey.jpg',
-        'provider-maja-lusk.jpg','provider-nancy-mortensen.jpg','provider-nathan-rich.jpg',
-        'provider-nitin-chandramouli.jpg','provider-rachel-shenker.jpg','provider-rik-hanson.jpg',
-        'provider-robert-harris.jpg','provider-robert-havard.jpg','provider-robert-isaak.jpg',
-        'provider-samantha-gaffney.jpg','provider-scott-samuelson.jpg','provider-shauna-olsen.jpg',
-        'provider-staci-gunter.jpg','provider-stephanie-ellis.jpg','provider-sunita-sigdel.jpg',
-        'provider-thomas-skidmore.jpg','provider-tylan-magnusson.jpg','provider-wayne-ormsby.jpg',
-        'provider-william-mckean.jpg','provider-william-nibley.jpg','provider-william-stephenson.jpg',
-        'provider-xylina-gregg.jpg'
-      ];
 
-      // Shuffle array
-      function shuffle(arr) {
-        for (var i = arr.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
-        }
-        return arr;
-      }
-
-      var pool = shuffle(allProviders.slice());
-      var poolIndex = 0;
-      var slots = document.querySelectorAll('.team-photo[data-slot]');
-
-      function nextFromPool() {
-        if (poolIndex >= pool.length) {
-          pool = shuffle(allProviders.slice());
-          poolIndex = 0;
-        }
-        return 'images/' + pool[poolIndex++];
-      }
-
-      // Track which image is currently showing per slot
-      var showing = []; // 'front' or 'back'
-
-      // Randomize initial photos on load
-      slots.forEach(function(slot, i) {
-        var front = slot.querySelector('.team-photo-front');
-        var back = slot.querySelector('.team-photo-back');
-        var src = nextFromPool();
-        front.src = src;
-        back.src = src;
-        showing[i] = 'front';
-      });
-
-      // Crossfade one slot at a time
-      function crossfadeSlot(index) {
-        var slot = slots[index];
-        var front = slot.querySelector('.team-photo-front');
-        var back = slot.querySelector('.team-photo-back');
-        var newSrc = nextFromPool();
-
-        if (showing[index] === 'front') {
-          // Load new image into back, then fade to it
-          back.src = newSrc;
-          slot.classList.add('crossfading');
-          showing[index] = 'back';
-        } else {
-          // Load new image into front, then fade to it
-          front.src = newSrc;
-          slot.classList.remove('crossfading');
-          showing[index] = 'front';
-        }
-      }
-
-      // Stagger the transitions so each slot rotates independently
-      var rotateInterval = 2500; // ms between individual slot transitions
-      var slotIndex = 0;
-
-      // Start after initial delay
-      setTimeout(function() {
-        setInterval(function() {
-          crossfadeSlot(slotIndex);
-          slotIndex = (slotIndex + 1) % slots.length;
-        }, rotateInterval);
-      }, 3000);
-    })();
-
-    // Locations map — Google Maps with branded SVG markers
-    // TODO: Replace with a real Google Maps JavaScript API key
-    window.UCS_GOOGLE_MAPS_KEY = window.UCS_GOOGLE_MAPS_KEY || 'AIzaSyD2zE7aUB6stEv4Jnu8wteS4FzF2MOQnEU';
-    (function() {
-      // Pre-geocoded once via OpenStreetMap (Nominatim/Photon) to avoid runtime
-      // Geocoding API costs (~$0.005/address × 16 × every page load).
-      var locations = [
-        { name: 'Jordan Valley Cancer Center', address: '3592 West 9000 South, Suite 200, West Jordan, UT 84088', url: 'locations/jordan-valley.html', lat: 40.5879, lng: -111.9768 },
-        { name: 'Ogden Medical Plaza', address: '425 East 5350 South, Suite 101, Ogden, UT 84405', url: 'locations/ogden.html', lat: 41.1661, lng: -111.9701 },
-        { name: 'Layton Clinic', address: '1492 Antelope Drive, Suite 125, Layton, UT 84041', url: 'locations/layton.html', lat: 41.0898, lng: -111.9947 },
-        { name: 'Bountiful Clinic', address: '520 East Medical Drive, Suite 100, Bountiful, UT 84010', url: 'locations/bountiful.html', lat: 40.8862, lng: -111.8707 },
-        { name: 'Salt Lake Clinic', address: '389 South 900 East, Suite 100, Salt Lake City, UT 84102', url: 'locations/salt-lake.html', lat: 40.7612, lng: -111.8649 },
-        { name: 'Cancer Center', address: '3838 South 700 East, Suite 100, Salt Lake City, UT 84106', url: 'locations/cancer-center.html', lat: 40.7051, lng: -111.8714 },
-        { name: "St. Mark's Hospital", address: '1250 East 3900 South, Suite B-10, Salt Lake City, UT 84124', url: 'locations/st-marks.html', lat: 40.6862, lng: -111.8568 },
-        { name: 'Granger Fairbourne Station', address: '2965 W. 3500 S., 4th Floor, West Valley City, UT 84119', url: 'locations/granger.html', lat: 40.6941, lng: -111.9623 },
-        { name: 'Intermountain Medical Center', address: '5131 S. Cottonwood St., Bldg 3, Level 2, Murray, UT 84107', url: 'locations/imc.html', lat: 40.6592, lng: -111.8941 },
-        { name: 'Pleasant Grove Clinic', address: '1076 N. County Blvd, Suite D, Pleasant Grove, UT 84062', url: 'locations/pleasant-grove.html', lat: 40.3748, lng: -111.7688 },
-        { name: 'Timpanogos Regional Hospital', address: '700 West 800 North, Suite 140, Orem, UT 84057', url: 'locations/timpanogos.html', lat: 40.3139, lng: -111.7137 },
-        { name: 'START Mountain Region', address: '2965 West 3500 South, 4th Floor East, West Valley City, UT 84119', url: 'locations/start.html', lat: 40.6944, lng: -111.9620 },
-        { name: 'Idaho Falls', address: '3245 Channing Way, Idaho Falls, ID 83404', url: 'locations/idaho-falls.html', lat: 43.4686, lng: -111.9900 },
-        { name: 'Madison Health', address: '450 East Main Street, Rexburg, ID 83440', url: 'locations/madison.html', lat: 43.8261, lng: -111.7710 },
-        { name: 'Teton Valley Health Care', address: '120 East Howard Avenue, Driggs, ID 83422', url: 'locations/teton.html', lat: 43.7265, lng: -111.1080 },
-        { name: "St. John's Health", address: '555 E. Broadway Ave., Jackson, WY 83001', url: 'locations/wyoming.html', lat: 43.4797, lng: -110.7544 }
-      ];
-
-      var BRAND = '#00577d';
-      var BRAND_DARK = '#003347';
-
-      // Branded SVG pin, encoded as a data URL for the marker icon
-      function pinIcon() {
-        var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" viewBox="0 0 34 44">'
-          + '<defs><filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.25"/></filter></defs>'
-          + '<path filter="url(#s)" fill="' + BRAND + '" stroke="' + BRAND_DARK + '" stroke-width="1.5" d="M17 1.5C8.7 1.5 2 8.2 2 16.5c0 11.3 15 25.3 15 25.3s15-14 15-25.3C32 8.2 25.3 1.5 17 1.5z"/>'
-          + '<circle cx="17" cy="16.5" r="5.5" fill="#fff"/>'
-          + '</svg>';
-        return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
-      }
-
-      var brandMapStyle = [
-        { elementType: 'geometry', stylers: [{ color: '#eaf1f5' }] },
-        { elementType: 'labels.text.fill', stylers: [{ color: '#3a5667' }] },
-        { elementType: 'labels.text.stroke', stylers: [{ color: '#ffffff' }] },
-        { featureType: 'administrative', elementType: 'geometry', stylers: [{ color: '#c8d6df' }] },
-        { featureType: 'administrative.land_parcel', stylers: [{ visibility: 'off' }] },
-        { featureType: 'poi', stylers: [{ visibility: 'off' }] },
-        { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#ffffff' }] },
-        { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#6b7d88' }] },
-        { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#dde7ee' }] },
-        { featureType: 'transit', stylers: [{ visibility: 'off' }] },
-        { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#b7d3e2' }] },
-        { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#00577d' }] }
-      ];
-
-      window.initUCSMap = function initUCSMap() {
-        var el = document.getElementById('locations-map');
-        if (!el || !window.google || !window.google.maps) return;
-
-        var map = new google.maps.Map(el, {
-          center: { lat: 41.2, lng: -111.7 },
-          zoom: 7,
-          mapTypeControl: false,
-          streetViewControl: false,
-          fullscreenControl: false,
-          styles: brandMapStyle
-        });
-
-        var bounds = new google.maps.LatLngBounds();
-        var infoWindow = new google.maps.InfoWindow();
-        var iconSpec = { url: pinIcon(), scaledSize: new google.maps.Size(34, 44), anchor: new google.maps.Point(17, 42) };
-
-        locations.forEach(function(loc) {
-          var pos = { lat: loc.lat, lng: loc.lng };
-          var marker = new google.maps.Marker({
-            position: pos,
-            map: map,
-            title: loc.name,
-            icon: iconSpec
-          });
-          marker.addListener('click', function() {
-            infoWindow.setContent(
-              '<div style="font-family:Inter,sans-serif;color:#003347;max-width:220px">' +
-              '<strong style="font-family:\'Bricolage Grotesque\',serif;font-size:16px;display:block;margin-bottom:4px">' + loc.name + '</strong>' +
-              '<span style="font-size:13px;color:#5a6670;display:block;margin-bottom:8px">' + loc.address + '</span>' +
-              '<a href="' + loc.url + '" style="color:#00577d;font-size:13px;font-weight:600">View details &rarr;</a>' +
-              '</div>'
-            );
-            infoWindow.open(map, marker);
-          });
-          bounds.extend(pos);
-        });
-
-        if (!bounds.isEmpty()) {
-          map.fitBounds(bounds, 60);
-        }
-      };
-
-      function showFallback() {
-        var fb = document.getElementById('locations-map-fallback');
-        var map = document.getElementById('locations-map');
-        if (fb) fb.hidden = false;
-        if (map) map.style.display = 'none';
-      }
-
-      var key = window.UCS_GOOGLE_MAPS_KEY;
-      if (!key || key === 'YOUR_GOOGLE_' + 'MAPS_API_KEY') {
-        showFallback();
-        return;
-      }
-
-      var s = document.createElement('script');
-      s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(key) + '&callback=initUCSMap&v=weekly&loading=async';
-      s.async = true;
-      s.defer = true;
-      s.onerror = showFallback;
-      document.head.appendChild(s);
-    })();
   </script>
 
 </body>
