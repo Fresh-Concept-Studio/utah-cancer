@@ -2881,14 +2881,21 @@ body.menu-open {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/* Image frame pulled up into the hero */
+/* Extra room below the byline so the image can straddle blue and white */
+.story-hero--detail {
+  padding-bottom: 230px;
+}
+
+/* Image frame pulled up into the hero. flow-root stops the negative margin
+   from collapsing into the section, which would drag the white bg up too. */
 .story-detail-media {
   background: #fff;
+  display: flow-root;
 }
 
 .story-detail-frame {
   position: relative;
-  margin-top: -90px;
+  margin-top: -140px;
   border-radius: var(--radius-card);
   overflow: hidden;
   aspect-ratio: 21 / 9;
@@ -3113,9 +3120,13 @@ body.menu-open {
     letter-spacing: -1px;
   }
 
+  .story-hero--detail {
+    padding-bottom: 170px;
+  }
+
   .story-detail-frame {
     aspect-ratio: 16 / 10;
-    margin-top: -70px;
+    margin-top: -100px;
   }
 
   .story-cta-heading {
