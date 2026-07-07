@@ -3763,3 +3763,62 @@
     height: 360px;
   }
 }
+
+/* Radiotheranostics split (radiation-oncology page) */
+.rt-split {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.rt-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rt-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #e8e4e0;
+  border-radius: var(--radius-card);
+  padding: 18px 22px;
+}
+
+.rt-item > .material-symbols-rounded {
+  font-size: 26px;
+  color: #00577d;
+}
+
+.rt-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rt-item-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #003347;
+}
+
+.rt-item-name em {
+  font-style: normal;
+  font-weight: 400;
+  color: #5a6670;
+}
+
+.rt-item-desc {
+  font-size: 13px;
+  color: #5a6670;
+}
+
+@media (max-width: 900px) {
+  .rt-split {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
