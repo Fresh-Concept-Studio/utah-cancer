@@ -2835,7 +2835,7 @@ body.menu-open {
 .story-hero {
   background: linear-gradient(160deg, #002435 0%, #003c57 60%, #00577d 100%);
   color: #fff;
-  padding: 170px 0 140px;
+  padding: 170px 0 90px;
 }
 
 .story-back {
