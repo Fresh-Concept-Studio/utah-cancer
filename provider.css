@@ -3737,64 +3737,29 @@
 
 
 /* ============================================
-   LOCATIONS SPLIT LAYOUT (list + sticky map)
+   LOCATIONS MAP BAND (below the clinic list)
    ============================================ */
-.loc-split {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 42%;
-  gap: 44px;
-  align-items: start;
+.loc-map-band {
+  background: #fafafa;
+  padding: 8px 0 96px;
 }
 
-.loc-split-map {
-  position: sticky;
-  top: 114px;
-}
-
-.loc-split-map .loc-map-wrap {
+.loc-map-band .loc-map-wrap {
   border-radius: var(--radius-card);
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(0, 51, 71, 0.14);
+  box-shadow: 0 16px 40px rgba(0, 51, 71, 0.12);
 }
 
-.loc-split-map .locations-map {
-  height: calc(100vh - 150px);
-  min-height: 460px;
+.loc-map-band .locations-map {
+  height: 520px;
 }
 
-.loc-split .loc-grid {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-@media (max-width: 1024px) {
-  .loc-split {
-    grid-template-columns: 1fr;
-    gap: 28px;
+@media (max-width: 768px) {
+  .loc-map-band {
+    padding-bottom: 64px;
   }
 
-  /* Compact map above the list on smaller screens */
-  .loc-split-map {
-    position: static;
-    order: -1;
-  }
-
-  .loc-split-map .locations-map {
-    height: 320px;
-    min-height: 0;
-  }
-
-  .loc-split .loc-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 700px) {
-  .loc-split .loc-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .loc-split-map .locations-map {
-    height: 260px;
+  .loc-map-band .locations-map {
+    height: 360px;
   }
 }

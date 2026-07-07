@@ -77,8 +77,7 @@
 
   <!-- Locations Grid -->
   <section class="loc-grid-section">
-    <div class="container loc-split">
-      <div class="loc-split-list">
+    <div class="container">
 
       <div class="loc-filters" role="search">
         <label class="loc-filter loc-filter--search">
@@ -349,19 +348,22 @@
         </a>
 
       </div>
-      </div>
-      <aside class="loc-split-map">
-        <div class="loc-map-wrap">
-          <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
-          <div class="locations-map-fallback" id="locations-map-fallback" hidden>
-            <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>locations/index.html</code> to display the interactive map.</p>
-          </div>
-        </div>
-      </aside>
     </div>
   </section>
 
   <!-- Contact CTA -->
+  <!-- Map -->
+  <section class="loc-map-band">
+    <div class="container">
+      <div class="loc-map-wrap">
+        <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
+        <div class="locations-map-fallback" id="locations-map-fallback" hidden>
+          <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>locations/index.html</code> to display the interactive map.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="contact-section">
     <div class="contact-bg">
       <img src="../images/contact-bg.jpg" alt="">
