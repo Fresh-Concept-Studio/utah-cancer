@@ -1489,10 +1489,31 @@
   margin-top: 60px;
 }
 
+/* Regions side-by-side: Utah (wider) on the left, Idaho & Wyoming on the right */
+.loc-regions {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.loc-region {
+  min-width: 0;
+}
+
 .loc-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+}
+
+/* Card columns within each region's own width */
+.loc-grid--utah {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.loc-grid--idwy {
+  grid-template-columns: 1fr;
 }
 
 .loc-card {
@@ -2084,7 +2105,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  .loc-grid {
+  .loc-regions {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  .loc-grid,
+  .loc-grid--utah,
+  .loc-grid--idwy {
     grid-template-columns: repeat(2, 1fr);
   }
   .loc-card--featured {
@@ -2115,7 +2142,9 @@
   .loc-stat-num {
     font-size: 36px;
   }
-  .loc-grid {
+  .loc-grid,
+  .loc-grid--utah,
+  .loc-grid--idwy {
     grid-template-columns: 1fr;
   }
   .loc-card--featured {
