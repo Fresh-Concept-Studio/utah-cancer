@@ -6,7 +6,7 @@
   <title>Patient Resources - Utah Cancer Specialists</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
@@ -59,7 +59,7 @@
     }
     .pr-eyebrow {
       display: inline-block;
-      font-family: 'Almarai', sans-serif;
+      font-family: var(--font-label);
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -68,11 +68,11 @@
     }
     .pr-eyebrow--light { color: rgba(255,255,255,0.55); }
     .pr-section-title {
-      font-family: 'Bricolage Grotesque', serif;
+      font-family: var(--font-heading);
       font-weight: 400;
       font-size: 44px;
       line-height: 1.05;
-      letter-spacing: -1.6px;
+      letter-spacing: -0.025em;
       color: #003347;
     }
     .pr-section-sub {
@@ -127,17 +127,17 @@
       position: absolute;
       top: 28px;
       right: 28px;
-      font-family: 'Almarai', sans-serif;
+      font-family: var(--font-label);
       font-size: 11px;
       letter-spacing: 2px;
       color: #00577d;
       opacity: 0.45;
     }
     .pr-card h3 {
-      font-family: 'Bricolage Grotesque', serif;
+      font-family: var(--font-heading);
       font-weight: 500;
       font-size: 20px;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.017em;
       color: #003347;
       margin-bottom: 8px;
     }
@@ -201,7 +201,7 @@
     .pr-card--feature .pr-card-icon .material-symbols-rounded { font-size: 32px; color: #fff; }
     .pr-card--feature .pr-card-eyebrow {
       display: inline-block;
-      font-family: 'Almarai', sans-serif;
+      font-family: var(--font-label);
       font-size: 11px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
@@ -209,11 +209,11 @@
       margin-bottom: 14px;
     }
     .pr-card--feature h3 {
-      font-family: 'Bricolage Grotesque', serif;
+      font-family: var(--font-heading);
       font-weight: 400;
       font-size: 38px;
       line-height: 1.05;
-      letter-spacing: -1.2px;
+      letter-spacing: -0.022em;
       color: #fff;
       margin-bottom: 14px;
     }
@@ -245,7 +245,7 @@
       color: #003347;
       padding: 14px 24px;
       border-radius: 100px;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
       font-weight: 600;
       font-size: 14px;
       letter-spacing: -0.2px;
@@ -277,7 +277,7 @@
       align-self: flex-start;
       margin-top: auto;
       padding-top: 14px;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
       font-weight: 500;
       font-size: 12.5px;
       letter-spacing: -0.1px;
@@ -308,11 +308,11 @@
       margin-bottom: 36px;
     }
     .pr-community-title {
-      font-family: 'Bricolage Grotesque', serif;
+      font-family: var(--font-heading);
       font-weight: 400;
       font-size: 36px;
       line-height: 1.05;
-      letter-spacing: -1.2px;
+      letter-spacing: -0.023em;
       color: #003347;
     }
     .pr-community-note {
@@ -350,10 +350,10 @@
     }
     .pr-community-link-text { flex: 1; min-width: 0; }
     .pr-community-link-text h4 {
-      font-family: 'Bricolage Grotesque', serif;
+      font-family: var(--font-heading);
       font-weight: 500;
       font-size: 16px;
-      letter-spacing: -0.4px;
+      letter-spacing: -0.017em;
       color: #003347;
       margin-bottom: 4px;
     }

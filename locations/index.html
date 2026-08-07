@@ -6,7 +6,7 @@
   <title>Our Locations - Utah Cancer Specialists</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="../styles.css">
@@ -104,13 +104,24 @@
 
       <p class="loc-empty" id="loc-empty" hidden>No clinics match your search. Try a different keyword or county.</p>
 
-      <!-- Regions side-by-side: Utah on the left, Idaho & Wyoming on the right -->
-      <div class="loc-regions">
+      <!-- Region tabs — Utah is the default view -->
+      <div class="loc-tabs" role="tablist" aria-label="Locations by region">
+        <button type="button" class="loc-tab is-active" role="tab" id="loc-tab-utah"
+                aria-selected="true" aria-controls="loc-panel-utah" data-region="utah">
+          Utah <span class="loc-tab-count">12</span>
+        </button>
+        <button type="button" class="loc-tab" role="tab" id="loc-tab-idwy" tabindex="-1"
+                aria-selected="false" aria-controls="loc-panel-idwy" data-region="idwy">
+          Idaho &amp; Wyoming <span class="loc-tab-count">4</span>
+        </button>
+      </div>
+
+      <div class="loc-panels">
 
         <!-- Utah Locations (alphabetical) -->
-        <div class="loc-region loc-region--utah">
-          <h2 class="loc-region-title">Utah</h2>
-          <div class="loc-grid loc-grid--utah">
+        <div class="loc-panel" id="loc-panel-utah" role="tabpanel"
+             aria-labelledby="loc-tab-utah" data-region="utah">
+          <div class="loc-grid">
 
             <a href="bountiful.html" class="loc-card" data-county="davis">
               <div class="loc-card-image"><img src="../images/location-bountiful.jpg" alt="Bountiful Clinic"></div>
@@ -293,9 +304,9 @@
         </div>
 
         <!-- Idaho & Wyoming Locations (alphabetical) -->
-        <div class="loc-region loc-region--idwy">
-          <h2 class="loc-region-title">Idaho &amp; Wyoming</h2>
-          <div class="loc-grid loc-grid--idwy">
+        <div class="loc-panel" id="loc-panel-idwy" role="tabpanel"
+             aria-labelledby="loc-tab-idwy" data-region="idwy" hidden>
+          <div class="loc-grid">
 
             <a href="idaho-falls.html" class="loc-card" data-county="bonneville">
               <div class="loc-card-image"><img src="../images/location-idaho-falls.jpg" alt="Idaho Falls"></div>
@@ -504,24 +515,51 @@
       });
     })();
 
-    // Search + county filter for location cards
+    // Region tabs + search/county filter (both scoped to the active tab)
     (function() {
       var search = document.getElementById('loc-search');
       var county = document.getElementById('loc-county');
       var countEl = document.getElementById('loc-filter-count');
       var emptyEl = document.getElementById('loc-empty');
-      var cards = Array.prototype.slice.call(document.querySelectorAll('.loc-card'));
-      var regions = Array.prototype.slice.call(document.querySelectorAll('.loc-region-title'));
-      var total = cards.length;
+      var tabs = Array.prototype.slice.call(document.querySelectorAll('.loc-tab'));
+      var panels = Array.prototype.slice.call(document.querySelectorAll('.loc-panel'));
+      var activeRegion = 'utah';
+
+      // Keep the full county list so it can be rebuilt per region
+      var allCounties = Array.prototype.map.call(county.options, function(o) {
+        return { value: o.value, label: o.textContent };
+      });
 
       // Pre-compute searchable haystack for each card
-      cards.forEach(function(c) {
+      Array.prototype.forEach.call(document.querySelectorAll('.loc-card'), function(c) {
         c.dataset.haystack = (c.textContent || '').toLowerCase().replace(/\s+/g, ' ');
       });
+
+      function activeCards() {
+        var panel = panels.filter(function(p) { return p.dataset.region === activeRegion; })[0];
+        return panel ? Array.prototype.slice.call(panel.querySelectorAll('.loc-card')) : [];
+      }
+
+      // Only offer counties that actually exist in the active region
+      function syncCounties() {
+        var present = {};
+        activeCards().forEach(function(c) { present[c.dataset.county] = true; });
+        var prev = county.value;
+        county.innerHTML = '';
+        allCounties.forEach(function(o) {
+          if (o.value && !present[o.value]) return;
+          var opt = document.createElement('option');
+          opt.value = o.value;
+          opt.textContent = o.label;
+          county.appendChild(opt);
+        });
+        county.value = present[prev] ? prev : '';
+      }
 
       function update() {
         var q = (search.value || '').trim().toLowerCase();
         var cty = county.value;
+        var cards = activeCards();
         var visible = 0;
         cards.forEach(function(c) {
           var matchCounty = !cty || c.dataset.county === cty;
@@ -530,46 +568,63 @@
           c.style.display = show ? '' : 'none';
           if (show) visible += 1;
         });
-
-        // Hide region heading if all its cards are hidden
-        regions.forEach(function(h) {
-          var grid = h.nextElementSibling;
-          if (!grid) return;
-          var anyVisible = Array.prototype.some.call(grid.querySelectorAll('.loc-card'), function(c) {
-            return c.style.display !== 'none';
-          });
-          h.style.display = anyVisible ? '' : 'none';
-        });
-
-        if (q || cty) {
-          countEl.textContent = visible + ' of ' + total + ' clinics';
-        } else {
-          countEl.textContent = '';
-        }
+        countEl.textContent = (q || cty) ? visible + ' of ' + cards.length + ' clinics' : '';
         emptyEl.hidden = visible !== 0;
       }
 
+      function selectTab(region, moveFocus) {
+        activeRegion = region;
+        tabs.forEach(function(t) {
+          var on = t.dataset.region === region;
+          t.classList.toggle('is-active', on);
+          t.setAttribute('aria-selected', on ? 'true' : 'false');
+          t.tabIndex = on ? 0 : -1;
+          if (on && moveFocus) t.focus();
+        });
+        panels.forEach(function(p) { p.hidden = p.dataset.region !== region; });
+        syncCounties();
+        update();
+        // Map sits below the cards — keep its pins to this region only
+        if (window.UCSMapShowRegion) window.UCSMapShowRegion(region);
+      }
+
+      tabs.forEach(function(tab, i) {
+        tab.addEventListener('click', function() { selectTab(tab.dataset.region, false); });
+        tab.addEventListener('keydown', function(e) {
+          var step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+          if (!step) return;
+          e.preventDefault();
+          selectTab(tabs[(i + step + tabs.length) % tabs.length].dataset.region, true);
+        });
+      });
+
       search.addEventListener('input', update);
       county.addEventListener('change', update);
-      update();
+      selectTab('utah', false);
     })();
 
     // Locations map — same data + styling as homepage
     window.UCS_GOOGLE_MAPS_KEY = window.UCS_GOOGLE_MAPS_KEY || 'AIzaSyD2zE7aUB6stEv4Jnu8wteS4FzF2MOQnEU';
     (function() {
       var locations = [
-        { name: 'Jordan Valley Cancer Center', address: '3592 West 9000 South, Suite 200, West Jordan, UT 84088', url: 'jordan-valley.html', lat: 40.5879, lng: -111.9768 },
-        { name: 'Ogden Medical Plaza', address: '425 East 5350 South, Suite 101, Ogden, UT 84405', url: 'ogden.html', lat: 41.1661, lng: -111.9701 },
-        { name: 'Layton Clinic', address: '1492 Antelope Drive, Suite 125, Layton, UT 84041', url: 'layton.html', lat: 41.0898, lng: -111.9947 },
-        { name: 'Bountiful Clinic', address: '520 East Medical Drive, Suite 100, Bountiful, UT 84010', url: 'bountiful.html', lat: 40.8862, lng: -111.8707 },
-        { name: 'Salt Lake Clinic', address: '389 South 900 East, Suite 100, Salt Lake City, UT 84102', url: 'salt-lake.html', lat: 40.7612, lng: -111.8649 },
-        { name: 'Cancer Center', address: '3838 South 700 East, Suite 100, Salt Lake City, UT 84106', url: 'cancer-center.html', lat: 40.7051, lng: -111.8714 },
-        { name: "St. Mark's Hospital", address: '1250 East 3900 South, Suite B-10, Salt Lake City, UT 84124', url: 'st-marks.html', lat: 40.6862, lng: -111.8568 },
-        { name: 'Granger Fairbourne Station', address: '2965 W. 3500 S., 4th Floor, West Valley City, UT 84119', url: 'granger.html', lat: 40.6941, lng: -111.9623 },
-        { name: 'Intermountain Medical Center', address: '5131 S. Cottonwood St., Bldg 3, Level 2, Murray, UT 84107', url: 'imc.html', lat: 40.6592, lng: -111.8941 },
-        { name: 'Pleasant Grove Clinic', address: '1076 N. County Blvd, Suite D, Pleasant Grove, UT 84062', url: 'pleasant-grove.html', lat: 40.3748, lng: -111.7688 },
-        { name: 'Timpanogos Regional Hospital', address: '700 West 800 North, Suite 140, Orem, UT 84057', url: 'timpanogos.html', lat: 40.3139, lng: -111.7137 },
-        { name: 'START Mountain Region', address: '2965 West 3500 South, 4th Floor East, West Valley City, UT 84119', url: 'start.html', lat: 40.6944, lng: -111.9620 }
+        // Utah
+        { region: 'utah', name: 'Jordan Valley Cancer Center', address: '3592 West 9000 South, Suite 200, West Jordan, UT 84088', url: 'jordan-valley.html', lat: 40.5879, lng: -111.9768 },
+        { region: 'utah', name: 'Ogden Medical Plaza', address: '425 East 5350 South, Suite 101, Ogden, UT 84405', url: 'ogden.html', lat: 41.1661, lng: -111.9701 },
+        { region: 'utah', name: 'Layton Clinic', address: '1492 Antelope Drive, Suite 125, Layton, UT 84041', url: 'layton.html', lat: 41.0898, lng: -111.9947 },
+        { region: 'utah', name: 'Bountiful Clinic', address: '520 East Medical Drive, Suite 100, Bountiful, UT 84010', url: 'bountiful.html', lat: 40.8862, lng: -111.8707 },
+        { region: 'utah', name: 'Salt Lake Clinic', address: '389 South 900 East, Suite 100, Salt Lake City, UT 84102', url: 'salt-lake.html', lat: 40.7612, lng: -111.8649 },
+        { region: 'utah', name: 'Cancer Center', address: '3838 South 700 East, Suite 100, Salt Lake City, UT 84106', url: 'cancer-center.html', lat: 40.7051, lng: -111.8714 },
+        { region: 'utah', name: "St. Mark's Hospital", address: '1250 East 3900 South, Suite B-10, Salt Lake City, UT 84124', url: 'st-marks.html', lat: 40.6862, lng: -111.8568 },
+        { region: 'utah', name: 'Granger Fairbourne Station', address: '2965 W. 3500 S., 4th Floor, West Valley City, UT 84119', url: 'granger.html', lat: 40.6941, lng: -111.9623 },
+        { region: 'utah', name: 'Intermountain Medical Center', address: '5131 S. Cottonwood St., Bldg 3, Level 2, Murray, UT 84107', url: 'imc.html', lat: 40.6592, lng: -111.8941 },
+        { region: 'utah', name: 'Pleasant Grove Clinic', address: '1076 N. County Blvd, Suite D, Pleasant Grove, UT 84062', url: 'pleasant-grove.html', lat: 40.3748, lng: -111.7688 },
+        { region: 'utah', name: 'Timpanogos Regional Hospital', address: '700 West 800 North, Suite 140, Orem, UT 84057', url: 'timpanogos.html', lat: 40.3139, lng: -111.7137 },
+        { region: 'utah', name: 'START Mountain Region', address: '2965 West 3500 South, 4th Floor East, West Valley City, UT 84119', url: 'start.html', lat: 40.6944, lng: -111.9620 },
+        // Idaho & Wyoming
+        { region: 'idwy', name: 'Idaho Falls', address: '3245 Channing Way, Idaho Falls, ID 83404', url: 'idaho-falls.html', lat: 43.4686, lng: -111.9900 },
+        { region: 'idwy', name: 'Madison Health', address: '450 East Main Street, Rexburg, ID 83440', url: 'madison.html', lat: 43.8261, lng: -111.7710 },
+        { region: 'idwy', name: "St. John's Health", address: '555 E. Broadway Ave., Jackson, WY 83001', url: 'wyoming.html', lat: 43.4798, lng: -110.7505 },
+        { region: 'idwy', name: 'Teton Valley Health Care', address: '120 East Howard Avenue, Driggs, ID 83422', url: 'teton.html', lat: 43.7265, lng: -111.1080 }
       ];
 
       var BRAND = '#00577d';
@@ -584,11 +639,51 @@
         return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
       }
 
+      var map = null;
+      var infoWindow = null;
+      var iconSpec = null;
+      var markers = [];
+      var currentRegion = 'utah';
+
+      // Draw only the pins belonging to the region shown in the tabs above
+      function renderRegion(region) {
+        if (!map) return;
+        markers.forEach(function(m) { m.setMap(null); });
+        markers = [];
+        infoWindow.close();
+
+        var bounds = new google.maps.LatLngBounds();
+        locations.filter(function(loc) { return loc.region === region; }).forEach(function(loc) {
+          var pos = { lat: loc.lat, lng: loc.lng };
+          var marker = new google.maps.Marker({ position: pos, map: map, title: loc.name, icon: iconSpec });
+          marker.addListener('click', function() {
+            infoWindow.setContent(
+              '<div style="font-family: var(--font-body);color:#003347;max-width:220px">' +
+              '<strong style="font-family:var(--font-heading);font-size:16px;display:block;margin-bottom:4px">' + loc.name + '</strong>' +
+              '<span style="font-size:13px;color:#5a6670;display:block;margin-bottom:8px">' + loc.address + '</span>' +
+              '<a href="' + loc.url + '" style="color:#00577d;font-size:13px;font-weight:600">View details &rarr;</a>' +
+              '</div>'
+            );
+            infoWindow.open(map, marker);
+          });
+          markers.push(marker);
+          bounds.extend(pos);
+        });
+
+        if (!bounds.isEmpty()) map.fitBounds(bounds, 60);
+      }
+
+      // Called by the tab handler above; safe to call before the map has loaded
+      window.UCSMapShowRegion = function(region) {
+        currentRegion = region;
+        renderRegion(region);
+      };
+
       window.initUCSMap = function initUCSMap() {
         var el = document.getElementById('locations-map');
         if (!el || !window.google || !window.google.maps) return;
 
-        var map = new google.maps.Map(el, {
+        map = new google.maps.Map(el, {
           center: { lat: 40.75, lng: -111.9 },
           zoom: 7,
           mapTypeControl: false,
@@ -596,27 +691,10 @@
           fullscreenControl: false
         });
 
-        var bounds = new google.maps.LatLngBounds();
-        var infoWindow = new google.maps.InfoWindow();
-        var iconSpec = { url: pinIcon(), scaledSize: new google.maps.Size(34, 44), anchor: new google.maps.Point(17, 42) };
+        infoWindow = new google.maps.InfoWindow();
+        iconSpec = { url: pinIcon(), scaledSize: new google.maps.Size(34, 44), anchor: new google.maps.Point(17, 42) };
 
-        locations.forEach(function(loc) {
-          var pos = { lat: loc.lat, lng: loc.lng };
-          var marker = new google.maps.Marker({ position: pos, map: map, title: loc.name, icon: iconSpec });
-          marker.addListener('click', function() {
-            infoWindow.setContent(
-              '<div style="font-family:Inter,sans-serif;color:#003347;max-width:220px">' +
-              '<strong style="font-family:\'Bricolage Grotesque\',serif;font-size:16px;display:block;margin-bottom:4px">' + loc.name + '</strong>' +
-              '<span style="font-size:13px;color:#5a6670;display:block;margin-bottom:8px">' + loc.address + '</span>' +
-              '<a href="' + loc.url + '" style="color:#00577d;font-size:13px;font-weight:600">View details &rarr;</a>' +
-              '</div>'
-            );
-            infoWindow.open(map, marker);
-          });
-          bounds.extend(pos);
-        });
-
-        if (!bounds.isEmpty()) map.fitBounds(bounds, 60);
+        renderRegion(currentRegion);
       };
 
       function showFallback() {

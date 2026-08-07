@@ -37,11 +37,11 @@
 }
 
 .provider-name {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 64px;
   line-height: 1.05;
-  letter-spacing: -2.4px;
+  letter-spacing: -0.026em;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -128,11 +128,11 @@
 }
 
 .provider-section-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.026em;
   color: #003347;
   margin-bottom: 20px;
 }
@@ -177,7 +177,7 @@
 }
 
 .credential-label {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 14px;
   letter-spacing: -0.32px;
@@ -264,10 +264,10 @@
 }
 
 .sidebar-card-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 22px;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.025em;
   color: #003347;
   margin-bottom: 20px;
   display: flex;
@@ -293,7 +293,7 @@
 }
 
 .location-name {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 15px;
   color: #003347;
@@ -360,11 +360,11 @@
 }
 
 .providers-hero-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 72px;
   line-height: 1.05;
-  letter-spacing: -3px;
+  letter-spacing: -0.029em;
   color: #fff;
   margin-bottom: 16px;
 }
@@ -398,7 +398,7 @@
   border-radius: var(--radius-btn);
   border: 1px solid #d6d1cc;
   background: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   color: #1a3d4e;
   cursor: pointer;
@@ -422,10 +422,10 @@
 }
 
 .provider-category-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 36px;
-  letter-spacing: -1.4px;
+  letter-spacing: -0.027em;
   color: #003347;
   margin-bottom: 32px;
   padding-bottom: 16px;
@@ -484,10 +484,10 @@
 }
 
 .provider-card-name {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.019em;
   color: #003347;
   margin-bottom: 4px;
 }
@@ -571,10 +571,10 @@
 }
 
 .location-card-name {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 20px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.017em;
   color: #003347;
   margin-bottom: 2px;
 }
@@ -635,7 +635,7 @@
 
 .provider-tab {
   padding: 18px 24px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   color: #1a3d4e;
   opacity: 0.6;
@@ -708,7 +708,7 @@
 }
 
 .news-card-source {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 11px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -717,10 +717,10 @@
 }
 
 .news-card-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.016em;
   color: #003347;
   line-height: 1.35;
   margin-bottom: 6px;
@@ -775,7 +775,7 @@
   padding: 12px 16px 12px 44px;
   border: 1px solid #d6d1cc;
   border-radius: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   color: #003347;
   background: #fff;
@@ -798,7 +798,7 @@
 }
 
 .spec-filter-title {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-weight: 600;
   font-size: 11px;
   letter-spacing: 0.8px;
@@ -824,7 +824,7 @@
   border: none;
   background: transparent;
   border-radius: 8px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   color: #1a3d4e;
   cursor: pointer;
@@ -881,9 +881,9 @@
 }
 
 .spec-sidebar-cta h4 {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-size: 17px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.016em;
   color: #003347;
   margin-bottom: 6px;
 }
@@ -922,10 +922,10 @@
 }
 
 .spec-category-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 28px;
-  letter-spacing: -1px;
+  letter-spacing: -0.025em;
   color: #003347;
   margin-bottom: 20px;
   padding-bottom: 12px;
@@ -980,10 +980,10 @@
 }
 
 .spec-card-text h3 {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.016em;
   color: #003347;
   margin-bottom: 2px;
 }
@@ -1308,10 +1308,10 @@
 }
 
 .loc-stat-num {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 48px;
-  letter-spacing: -1.6px;
+  letter-spacing: -0.023em;
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -1413,7 +1413,7 @@
   border: none;
   outline: none;
   background: transparent;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 15px;
   color: #003347;
   flex: 1 1 auto;
@@ -1432,7 +1432,7 @@
 }
 
 .loc-filter-count {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 13px;
   color: rgba(0, 51, 71, 0.65);
   margin-left: auto;
@@ -1458,10 +1458,10 @@
 }
 
 .loc-section-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 40px;
-  letter-spacing: -1.4px;
+  letter-spacing: -0.024em;
   color: #003347;
   margin-bottom: 12px;
 }
@@ -1473,47 +1473,94 @@
   opacity: 0.7;
 }
 
-.loc-region-title {
-  font-family: 'Bricolage Grotesque', serif;
-  font-weight: 400;
-  font-size: 28px;
-  letter-spacing: -1px;
-  color: #003347;
-  margin-bottom: 24px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #00577d;
-  display: inline-block;
+/* Region tabs — Utah / Idaho & Wyoming */
+.loc-tabs {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #e4e8ea;
+  margin-bottom: 36px;
 }
 
-.loc-grid + .loc-region-title {
-  margin-top: 60px;
+.loc-tab {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 36px;
+  padding: 0 2px 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: -0.025em;
+  color: rgba(0, 51, 71, 0.42);
+  transition: color 0.2s;
+}
+
+.loc-tab:last-child {
+  margin-right: 0;
+}
+
+.loc-tab::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background: #00577d;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.loc-tab:hover {
+  color: #003347;
+}
+
+.loc-tab.is-active {
+  color: #003347;
+}
+
+.loc-tab.is-active::after {
+  transform: scaleX(1);
+}
+
+.loc-tab:focus-visible {
+  outline: 2px solid #00577d;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.loc-tab-count {
+  font-family: var(--font-label);
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  color: rgba(0, 51, 71, 0.55);
+  background: #eef2f4;
+  border-radius: 999px;
+  padding: 5px 10px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.loc-tab.is-active .loc-tab-count {
+  background: #00577d;
+  color: #fff;
+}
+
+.loc-panel[hidden] {
+  display: none;
 }
 
 /* Regions side-by-side: Utah (wider) on the left, Idaho & Wyoming on the right */
-.loc-regions {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 44px;
-  align-items: start;
-}
-
-.loc-region {
-  min-width: 0;
-}
-
+/* Each tab panel is full width, so both regions share one 3-up grid */
 .loc-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
-}
-
-/* Card columns within each region's own width */
-.loc-grid--utah {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.loc-grid--idwy {
-  grid-template-columns: 1fr;
 }
 
 .loc-card {
@@ -1576,10 +1623,10 @@
 }
 
 .loc-card-name {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 22px;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.025em;
   color: #003347;
   margin-bottom: 2px;
 }
@@ -1711,11 +1758,11 @@
 }
 
 .loc-hero-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 58px;
   line-height: 1.05;
-  letter-spacing: -2px;
+  letter-spacing: -0.024em;
   color: #fff;
   margin-bottom: 12px;
 }
@@ -1862,10 +1909,10 @@
 }
 
 .loc-provider-info h3 {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.015em;
   color: #003347;
   margin-bottom: 2px;
   line-height: 1.25;
@@ -1976,11 +2023,11 @@
 }
 
 .sd-hero-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 64px;
   line-height: 1.05;
-  letter-spacing: -2.2px;
+  letter-spacing: -0.024em;
   color: #fff;
   margin-bottom: 20px;
 }
@@ -2014,11 +2061,11 @@
 }
 
 .sd-stat-num {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 36px;
   line-height: 1;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.023em;
   color: #00577d;
   margin-bottom: 8px;
 }
@@ -2051,7 +2098,7 @@
 
 .sd-faq-item summary {
   padding: 18px 22px;
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 500;
   font-size: 16px;
   color: #003347;
@@ -2105,14 +2152,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
-  .loc-regions {
-    grid-template-columns: 1fr;
-    gap: 56px;
-  }
-  .loc-grid,
-  .loc-grid--utah,
-  .loc-grid--idwy {
+  .loc-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .loc-tab {
+    font-size: 24px;
+    margin-right: 28px;
   }
   .loc-card--featured {
     grid-column: span 1;
@@ -2142,10 +2187,13 @@
   .loc-stat-num {
     font-size: 36px;
   }
-  .loc-grid,
-  .loc-grid--utah,
-  .loc-grid--idwy {
+  .loc-grid {
     grid-template-columns: 1fr;
+  }
+  .loc-tab {
+    font-size: 20px;
+    margin-right: 20px;
+    gap: 8px;
   }
   .loc-card--featured {
     grid-column: span 1;
@@ -2283,7 +2331,7 @@
   left: 12px;
   background: rgba(255, 255, 255, 0.92);
   color: #00577d;
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   font-size: 10px;
   letter-spacing: 0.6px;
@@ -2297,7 +2345,7 @@
 }
 
 .media-card-source {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 11px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
@@ -2306,10 +2354,10 @@
 }
 
 .media-card-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.016em;
   color: #003347;
   line-height: 1.35;
   margin-bottom: 6px;
@@ -2388,7 +2436,7 @@
   max-width: max-content;
   padding: 5px 12px;
   border-radius: 999px;
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.6px;
@@ -2435,7 +2483,7 @@
 }
 
 .events-hero-eyebrow {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -2445,11 +2493,11 @@
 }
 
 .events-hero-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 72px;
   line-height: 1.02;
-  letter-spacing: -2.4px;
+  letter-spacing: -0.023em;
   color: #fff;
   margin-bottom: 22px;
 }
@@ -2474,7 +2522,7 @@
 }
 
 .events-stat-num {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 38px;
   line-height: 1;
@@ -2482,7 +2530,7 @@
 }
 
 .events-stat-label {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 11px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -2544,7 +2592,7 @@
 }
 
 .calendar-month {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -2562,9 +2610,9 @@
 }
 
 .calendar-day {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
-  letter-spacing: -2px;
+  letter-spacing: -0.013em;
   color: #003347;
   line-height: 1;
 }
@@ -2582,7 +2630,7 @@
 }
 
 .calendar-year {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 12px;
   letter-spacing: 1px;
   color: rgba(0, 51, 71, 0.55);
@@ -2650,7 +2698,7 @@
   left: 20px;
   background: #fff;
   color: #b04025;
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.8px;
@@ -2668,11 +2716,11 @@
 }
 
 .featured-event-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 38px;
   line-height: 1.05;
-  letter-spacing: -1.4px;
+  letter-spacing: -0.026em;
   color: #003347;
   margin: 14px 0 12px;
 }
@@ -2730,11 +2778,11 @@
 }
 
 .events-list-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 40px;
   line-height: 1.1;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.021em;
   color: #003347;
   margin-top: 8px;
 }
@@ -2750,7 +2798,7 @@
   border: 1px solid #d6d1cc;
   border-radius: 999px;
   background: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 13px;
   font-weight: 500;
   color: #1a3d4e;
@@ -2805,7 +2853,7 @@
 }
 
 .event-card-month {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1px;
@@ -2814,16 +2862,16 @@
 }
 
 .event-card-day {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 56px;
   line-height: 1;
-  letter-spacing: -1.6px;
+  letter-spacing: -0.02em;
   color: #fff;
 }
 
 .event-card-year {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 11px;
   letter-spacing: 0.8px;
   color: rgba(255, 255, 255, 0.55);
@@ -2839,11 +2887,11 @@
 }
 
 .event-card-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.25;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.014em;
   color: #003347;
   margin: 6px 0 0;
 }
@@ -2906,11 +2954,11 @@
 }
 
 .past-events-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.022em;
   color: #003347;
   margin-top: 8px;
 }
@@ -2929,7 +2977,7 @@
 }
 
 .past-event-date {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 11px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -2939,11 +2987,11 @@
 }
 
 .past-event-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.25;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.016em;
   color: #003347;
   margin-bottom: 8px;
 }
@@ -2973,11 +3021,11 @@
 }
 
 .events-newsletter-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
-  letter-spacing: -1px;
+  letter-spacing: -0.022em;
   color: #fff;
   margin-bottom: 8px;
 }
@@ -3002,7 +3050,7 @@
   background: rgba(255, 255, 255, 0.08);
   border-radius: 999px;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   outline: none;
 }
@@ -3037,7 +3085,7 @@
   gap: 6px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   letter-spacing: 0.5px;
   margin-bottom: 18px;
   transition: color 0.2s;
@@ -3056,11 +3104,11 @@
 }
 
 .event-detail-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 60px;
   line-height: 1.04;
-  letter-spacing: -2px;
+  letter-spacing: -0.023em;
   color: #fff;
   margin-bottom: 18px;
 }
@@ -3098,7 +3146,7 @@
 }
 
 .event-ticket-month {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 1.4px;
@@ -3107,16 +3155,16 @@
 }
 
 .event-ticket-day {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 124px;
   line-height: 1;
-  letter-spacing: -3px;
+  letter-spacing: -0.017em;
   color: #003347;
 }
 
 .event-ticket-year {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 12px;
   letter-spacing: 1px;
   color: rgba(0, 51, 71, 0.55);
@@ -3164,7 +3212,7 @@
 }
 
 .event-ticket-label {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 11px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -3172,7 +3220,7 @@
 }
 
 .event-ticket-value {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 600;
   color: #003347;
@@ -3221,7 +3269,7 @@
 }
 
 .event-meta-label {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-size: 10.5px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
@@ -3230,7 +3278,7 @@
 }
 
 .event-meta-value {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   font-weight: 500;
   color: #003347;
@@ -3261,11 +3309,11 @@
 }
 
 .event-section-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 32px;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: -0.022em;
   color: #003347;
   margin-bottom: 20px;
 }
@@ -3354,7 +3402,7 @@
 }
 
 .event-schedule-time {
-  font-family: 'Almarai', sans-serif;
+  font-family: var(--font-label);
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.5px;
@@ -3363,10 +3411,10 @@
 }
 
 .event-schedule-body h3 {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 19px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.015em;
   color: #003347;
   margin-bottom: 4px;
 }
@@ -3390,7 +3438,7 @@
 .event-faq summary {
   list-style: none;
   padding: 16px 50px 16px 22px;
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-size: 17px;
   color: #003347;
   cursor: pointer;
@@ -3458,10 +3506,10 @@
 }
 
 .event-detail-sidebar .sidebar-card-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 17px;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.012em;
   color: #003347;
   margin-bottom: 12px;
   display: flex;
@@ -3610,11 +3658,11 @@
 }
 
 .related-events-title {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: var(--font-heading);
   font-weight: 400;
   font-size: 32px;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: -0.022em;
   color: #003347;
   margin-top: 6px;
 }
