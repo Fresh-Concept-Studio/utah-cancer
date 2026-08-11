@@ -551,8 +551,8 @@ img {
   position: absolute;
   right: 76px;
   top: 36px;
-  width: 520px;
-  height: 400px;
+  width: 540px;
+  height: 360px;
   z-index: 3;
 }
 
@@ -2362,7 +2362,7 @@ body.menu-open {
     position: relative;
     width: 100%;
     height: auto;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
   }
 
   .team-photo--single {
@@ -2598,7 +2598,7 @@ body.menu-open {
   }
 
   .team-photo {
-    aspect-ratio: 1/1;
+    aspect-ratio: 3/2;
   }
 
   /* Podcast */
