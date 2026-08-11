@@ -205,7 +205,7 @@ img {
 }
 
 .navbar-logo img {
-  height: 30px;
+  height: 48px;
   width: auto;
 }
 
@@ -850,7 +850,8 @@ img {
   width: min(400px, 100%);
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-card);
-  background: linear-gradient(165deg, #6b8ba0 0%, #3d6076 55%, #1d3a4c 100%);
+  background: radial-gradient(circle at 76% 26%, rgba(255, 255, 255, 0.16), transparent 36%),
+              linear-gradient(165deg, #6b8ba0 0%, #3d6076 55%, #1d3a4c 100%);
   box-shadow: 0 40px 90px rgba(0, 12, 20, 0.55);
   transform: rotate(-3deg);
   padding: 38px 40px;
@@ -866,26 +867,46 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
   pointer-events: none;
+  z-index: 5;
 }
 
 .podcast-cover-logo {
-  height: 22px;
+  position: relative;
+  z-index: 4;
+  height: 38px;
   width: auto;
-  align-self: center;
-  margin-bottom: 30px;
+  align-self: flex-start;
+  margin-bottom: 26px;
+}
+
+.podcast-cover-portrait {
+  position: absolute;
+  z-index: 2;
+  right: -34px;
+  bottom: -26px;
+  width: 78%;
+  height: 92%;
+  object-fit: contain;
+  object-position: right bottom;
+  pointer-events: none;
 }
 
 .podcast-cover-title {
+  position: relative;
+  z-index: 3;
   font-family: var(--font-heading);
   font-weight: 700;
-  font-size: 58px;
+  font-size: 54px;
   line-height: 0.98;
   letter-spacing: -0.018em;
   color: #fff;
   text-transform: uppercase;
+  text-shadow: 0 2px 16px rgba(0, 25, 38, 0.22);
 }
 
 .podcast-cover-badge {
+  position: relative;
+  z-index: 3;
   margin-top: 14px;
   font-family: var(--font-label);
   font-size: 13px;
@@ -895,21 +916,30 @@ img {
 }
 
 .podcast-cover-host {
+  position: relative;
+  z-index: 4;
+  align-self: flex-start;
   margin-top: auto;
-  font-size: 13.5px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(0, 36, 53, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  font-size: 12px;
   letter-spacing: 0.2px;
-  color: rgba(255, 255, 255, 0.85);
+  color: #fff;
 }
 
 /* Animated soundwave bars */
 .podcast-wave {
   position: absolute;
-  right: 36px;
+  right: 28px;
   bottom: 34px;
   display: flex;
   align-items: flex-end;
   gap: 4px;
   height: 26px;
+  z-index: 4;
 }
 
 .podcast-wave span {
@@ -1958,9 +1988,9 @@ img {
    FOOTER
    ============================================ */
 .footer {
-  background: rgba(234, 240, 234, 0.23);
-  border-top: 1px solid #d6d1cc;
-  border-bottom: 1px solid #d6d1cc;
+  background: #002f43;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .footer-inner {
@@ -1972,9 +2002,9 @@ img {
 }
 
 .footer-logo {
-  height: 30px;
+  height: 72px;
   width: auto;
-  margin-bottom: 62px;
+  margin-bottom: 52px;
 }
 
 .footer-tagline {
@@ -1983,7 +2013,7 @@ img {
   font-size: 40px;
   line-height: 1.2;
   letter-spacing: -0.042em;
-  color: #003347;
+  color: #fff;
   opacity: 0.94;
   margin-bottom: 20px;
 }
@@ -1992,13 +2022,13 @@ img {
   font-size: 14.4px;
   line-height: 24px;
   letter-spacing: -0.32px;
-  color: #1a3d4e;
+  color: rgba(255, 255, 255, 0.78);
   opacity: 0.94;
   max-width: 360px;
 }
 
 .footer-right {
-  border-left: 1px solid #d6d1cc;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
   padding-left: 100px;
 }
 
@@ -2014,7 +2044,7 @@ img {
   font-size: 24px;
   line-height: 31.2px;
   letter-spacing: -0.028em;
-  color: #003347;
+  color: #fff;
   opacity: 0.82;
   margin-bottom: 33px;
 }
@@ -2026,7 +2056,7 @@ img {
 .footer-links a {
   font-size: 14.5px;
   line-height: 19.2px;
-  color: #1a3d4e;
+  color: rgba(255, 255, 255, 0.74);
   opacity: 0.82;
   transition: opacity 0.2s;
 }
@@ -2044,7 +2074,7 @@ img {
   font-size: 14.5px;
   line-height: 22px;
   letter-spacing: -0.2px;
-  color: #003347;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 18px;
 }
 
@@ -2056,7 +2086,7 @@ img {
   font-size: 14.5px;
   line-height: 19.2px;
   letter-spacing: -0.32px;
-  color: #1a3d4e;
+  color: rgba(255, 255, 255, 0.72);
   margin-bottom: 8px;
   opacity: 0.68;
 }
@@ -2068,7 +2098,7 @@ img {
 }
 
 .footer-contact-info a {
-  color: #1a3d4e;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-social {
@@ -2080,7 +2110,7 @@ img {
 
 .footer-social a {
   font-size: 18px;
-  color: #00577d;
+  color: #fff;
   transition: opacity 0.2s;
 }
 
@@ -2089,6 +2119,7 @@ img {
 }
 
 .footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   padding-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -2101,8 +2132,7 @@ img {
 .footer-bottom p {
   font-size: 12.6px;
   line-height: 16.8px;
-  color: #1a3d4e;
-  opacity: 0.52;
+  color: rgba(255, 255, 255, 0.62);
 }
 
 .footer-paperless {
@@ -2112,15 +2142,14 @@ img {
   font-size: 12.6px;
   line-height: 16.8px;
   letter-spacing: -0.1px;
-  color: #1a3d4e;
-  opacity: 0.7;
+  color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   transition: opacity 0.2s, color 0.2s;
 }
 
 .footer-paperless:hover {
   opacity: 1;
-  color: #00577d;
+  color: #fff;
 }
 
 .footer-paperless .material-symbols-rounded {
@@ -2499,7 +2528,7 @@ body.menu-open {
   .footer-right {
     border-left: none;
     padding-left: 0;
-    border-top: 1px solid #d6d1cc;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
     padding-top: 40px;
   }
 
@@ -2797,7 +2826,7 @@ body.menu-open {
   }
 
   .navbar-logo img {
-    height: 24px;
+    height: 38px;
   }
 
   .specialty-card {
