@@ -367,8 +367,8 @@ img {
 .hero-heading {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: 90px;
-  line-height: 90px;
+  font-size: 76px;
+  line-height: 80px;
   letter-spacing: -0.028em;
   color: #fff;
   max-width: 820px;
