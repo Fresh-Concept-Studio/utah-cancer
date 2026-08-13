@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership - Utah Cancer Specialists</title>
+  <meta name="description" content="Meet the executive team and directors who lead Utah Cancer Specialists, Utah's largest community-based oncology practice.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="provider.css">
+  <style>
+    /* ============================================
+       LEADERSHIP PAGE — HERO
+       ============================================ */
+    .leaders-hero-label {
+      display: inline-block;
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+
+    /* ============================================
+       LEADERSHIP GROUPS
+       ============================================ */
+    .leaders-section {
+      padding: 72px 0 80px;
+    }
+
+    .leaders-group + .leaders-group {
+      margin-top: 72px;
+    }
+
+    .leaders-group-title {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: -0.027em;
+      color: #003347;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #00577d;
+      display: inline-block;
+    }
+
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    /* ============================================
+       LEADERSHIP CARD
+       ============================================ */
+    .leader-card {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+    }
+
+    .leader-card-photo {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      background: #f0f4f8;
+    }
+
+    .leader-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .leader-card-info {
+      flex: 1;
+      padding: 18px 20px 22px;
+    }
+
+    .leader-card-name {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 1.25;
+      letter-spacing: -0.019em;
+      color: #003347;
+      margin-bottom: 5px;
+    }
+
+    .leader-card-role {
+      font-size: 13px;
+      line-height: 19px;
+      color: #00577d;
+      letter-spacing: -0.2px;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .leaders-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .leaders-section {
+        padding: 48px 0 56px;
+      }
+
+      .leaders-group + .leaders-group {
+        margin-top: 48px;
+      }
+
+      .leaders-group-title {
+        font-size: 28px;
+      }
+
+      .leaders-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .leader-card-name {
+        font-size: 17px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .leaders-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <img src="images/ucs-logo-white.svg" alt="Utah Cancer Specialists">
+      </a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="navbar-nav">
+        <a href="providers/index.html" class="nav-link">Providers</a>
+        <a href="locations/index.html" class="nav-link">Locations</a>
+        <a href="specialties/index.html" class="nav-link">Cancer Types</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Company <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="about.html" class="nav-dropdown-item">About</a>
+            <a href="leadership.html" class="nav-dropdown-item">Leadership</a>
+            <a href="events/index.html" class="nav-dropdown-item">Events</a>
+            <a href="about.html#foundation" class="nav-dropdown-item">Our Foundation</a>
+            </div></div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="newly-diagnosed.html" class="nav-dropdown-item">Newly Diagnosed</a>
+            <a href="treatment-options.html" class="nav-dropdown-item">Treatments</a>
+            <a href="patient-education.html" class="nav-dropdown-item">Patient Education</a>
+            <a href="telehealth.html" class="nav-dropdown-item">Telehealth</a>
+            <a href="clinical-trials.html" class="nav-dropdown-item">Clinical Trials</a>
+            <a href="programs-and-services.html" class="nav-dropdown-item">Programs &amp; Services</a>
+            <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
+            </div></div>
+        </div>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">person</span>
+          Patient Portal
+        </a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon">
+          <span class="material-symbols-rounded">credit_card</span>
+          Quick Pay
+        </a>
+        <a href="providers/index.html" class="nav-btn-cta">
+          <span class="material-symbols-rounded">groups</span>
+          Our Providers
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <!-- Hero -->
+  <section class="providers-hero">
+    <div class="container">
+      <span class="leaders-hero-label">Utah Cancer Specialists</span>
+      <h1 class="providers-hero-title">Leadership</h1>
+      <p class="providers-hero-desc">The executives and directors guiding our practice &mdash; supporting the providers and staff who care for patients across Utah, Idaho, and Wyoming.</p>
+    </div>
+  </section>
+
+  <!-- Leadership Groups -->
+  <section class="leaders-section">
+    <div class="container">
+
+      <!-- Executive Leadership -->
+      <div class="leaders-group">
+        <h2 class="leaders-group-title">Executive Leadership</h2>
+        <div class="leaders-grid">
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-ravin-bisla.jpg" alt="Ravin Bisla"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Ravin Bisla</h3>
+              <p class="leader-card-role">Chief Executive Officer</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-cfo.jpg" alt="Chief Financial Officer"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Chief Financial Officer</h3>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-kyle-kitchen.jpg" alt="Kyle Kitchen"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Kyle Kitchen</h3>
+              <p class="leader-card-role">Chief Clinical Officer</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-shannon-mcrae.jpg" alt="Shannon Mcrae"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Shannon Mcrae</h3>
+              <p class="leader-card-role">Chief of Staff</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Directors -->
+      <div class="leaders-group">
+        <h2 class="leaders-group-title">Directors</h2>
+        <div class="leaders-grid">
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-ben-harkness.jpg" alt="Ben Harkness"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Ben Harkness</h3>
+              <p class="leader-card-role">Director of IT</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-deann-angilau.jpg" alt="DeAnn Angilau"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">DeAnn Angilau</h3>
+              <p class="leader-card-role">Director of Clinical Services</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-johnny-walker.jpg" alt="Johnny Walker"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Johnny Walker</h3>
+              <p class="leader-card-role">Director of Research</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-rachelle-tonga.jpg" alt="Rachelle Tonga"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Rachelle Tonga</h3>
+              <p class="leader-card-role">Director of Administrative Services</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-stephanie-waddoups.jpg" alt="Stephanie Waddoups"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Stephanie Waddoups</h3>
+              <p class="leader-card-role">Director of Clinical Services</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-travis-gunther.jpg" alt="Travis Gunther"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Travis Gunther</h3>
+              <p class="leader-card-role">Director of Laboratory &amp; Radiation Services</p>
+            </div>
+          </div>
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-tym-gilson.jpg" alt="Tym Gilson"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Tym Gilson</h3>
+              <p class="leader-card-role">Director of Facilities &amp; Expansion</p>
+            </div>
+          </div>
+
+          <!-- Name pending from client; move into alphabetical position once known -->
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-hr-director.jpg" alt="Director of Human Resources"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Director of Human Resources</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Administration -->
+      <div class="leaders-group">
+        <h2 class="leaders-group-title">Administration</h2>
+        <div class="leaders-grid">
+
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-mark-williams.jpg" alt="Mark Williams"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Mark Williams</h3>
+              <p class="leader-card-role">Accountant</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="contact-section">
+    <div class="contact-bg">
+      <img src="images/contact-bg.jpg" alt="">
+      <div class="contact-overlay"></div>
+    </div>
+    <div class="container contact-inner">
+      <h2 class="contact-heading">Ready to learn more about your care options?</h2>
+      <a href="tel:8012690231" class="btn btn--white">
+        <span class="material-symbols-rounded">phone</span>
+        Call 801.269.0231
+      </a>
+    </div>
+  </section>
+
+  <!-- Marquee Banner -->
+  <div class="marquee-banner">
+    <div class="marquee-track">
+      <span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span>
+      <span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="images/ucs-logo-white.svg" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col"><h4 class="footer-col-title">About Us</h4><ul class="footer-links"><li><a href="about.html">Our Mission</a></li><li><a href="about.html">Our Vision</a></li><li><a href="about.html">Our Values</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Patient Care</h4><ul class="footer-links"><li><a href="newly-diagnosed.html">Newly Diagnosed</a></li><li><a href="telehealth.html">Telehealth</a></li><li><a href="patient-education.html">Patient Education</a></li><li><a href="patient-resources.html">Patient Resources</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Research</h4><ul class="footer-links"><li><a href="clinical-trials.html">Clinical Trials</a></li><li><a href="programs-and-services.html">Programs</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info">
+            <p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p>
+            <p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/utahcancerspecialists" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/utahcancerspecialists/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/utahcancer-specialists" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.youtube.com/@UTCancerSpecialists" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (function() {
+      var hamburger = document.getElementById('navbar-hamburger');
+      var nav = document.querySelector('.navbar-nav');
+      var overlay = document.getElementById('mobile-menu-overlay');
+      var body = document.body;
+      function toggle() {
+        hamburger.classList.toggle('active');
+        nav.classList.toggle('open');
+        overlay.classList.toggle('open');
+        body.classList.toggle('menu-open');
+      }
+      hamburger.addEventListener('click', toggle);
+      overlay.addEventListener('click', toggle);
+      nav.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (nav.classList.contains('open')) toggle();
+        });
+      });
+    })();
+    // Navbar scroll
+    (function() {
+      var navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
