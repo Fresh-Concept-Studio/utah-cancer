@@ -107,6 +107,20 @@
     .ct-program--late::before {
       background: linear-gradient(90deg, #5e8b9e 0%, #5e8b9e 100%);
     }
+    .ct-program-brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+    .ct-program-logo {
+      display: block;
+      width: 150px;
+      height: 63px;
+      object-fit: contain;
+      object-position: left center;
+    }
     .ct-phase-badge {
       display: inline-flex;
       align-items: center;
@@ -120,7 +134,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      margin-bottom: 22px;
+      margin-bottom: 0;
     }
     .ct-program--late .ct-phase-badge {
       background: linear-gradient(135deg, #5e8b9e 0%, #5e8b9e 100%);
@@ -395,6 +409,7 @@
       .ct-stat-num { font-size: 36px; }
       .ct-programs { padding: 56px 0 40px; }
       .ct-programs-title { font-size: 28px; letter-spacing: -1.2px; }
+      .ct-program-brand-row { align-items: flex-start; flex-direction: column; gap: 14px; }
       .ct-program h3 { font-size: 24px; }
       .ct-journey { padding: 56px 0; }
       .ct-journey-title { font-size: 26px; }
@@ -489,7 +504,10 @@
 
       <div class="ct-programs-grid">
         <article class="ct-program">
-          <span class="ct-phase-badge"><span class="material-symbols-rounded">science</span> Phase I</span>
+          <div class="ct-program-brand-row">
+            <img src="images/logo-start-trials.png" alt="START Mountain Region logo" class="ct-program-logo">
+            <span class="ct-phase-badge"><span class="material-symbols-rounded">science</span> Phase I</span>
+          </div>
           <span class="ct-program-eyebrow">START Mountain Region</span>
           <h3>Early-Phase Trials</h3>
           <p>Established in 2020, the START Mountain Region center is Utah&rsquo;s only dedicated community-based early-phase clinical trial site &mdash; part of the world&rsquo;s largest Phase I medical oncology research program.</p>
@@ -509,7 +527,10 @@
         </article>
 
         <article class="ct-program ct-program--late">
-          <span class="ct-phase-badge"><span class="material-symbols-rounded">monitoring</span> Phase II&ndash;III</span>
+          <div class="ct-program-brand-row">
+            <img src="images/logo-ucs-clinical-trials.png" alt="Utah Cancer Specialists Clinical Trials logo" class="ct-program-logo">
+            <span class="ct-phase-badge"><span class="material-symbols-rounded">monitoring</span> Phase II&ndash;III</span>
+          </div>
           <span class="ct-program-eyebrow">UCS Clinical Research</span>
           <h3>Late-Phase Trials</h3>
           <p>Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West &mdash; trials that help establish new standards of care.</p>
