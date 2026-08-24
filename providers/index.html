@@ -29,6 +29,7 @@
         <a href="index.html" class="nav-link">Providers</a>
         <a href="../locations/index.html" class="nav-link">Locations</a>
         <a href="../specialties/index.html" class="nav-link">Cancer Types</a>
+        <a href="../clinical-trials.html" class="nav-link">Clinical Trials</a>
         <div class="nav-dropdown">
           <button class="nav-link nav-dropdown-toggle">Company <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
           <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
@@ -94,11 +95,11 @@
           <div class="spec-filter-group">
             <h3 class="spec-filter-title">Categories</h3>
             <ul class="spec-filter-list">
-              <li><button class="spec-filter-btn active" data-filter="all">All Providers <span class="spec-filter-count">58</span></button></li>
+              <li><button class="spec-filter-btn active" data-filter="all">All Providers <span class="spec-filter-count">60</span></button></li>
               <li><button class="spec-filter-btn" data-filter="medical-oncology">Medical Oncology &amp; Hematology <span class="spec-filter-count">22</span></button></li>
               <li><button class="spec-filter-btn" data-filter="radiation-oncology">Radiation Oncology <span class="spec-filter-count">12</span></button></li>
               <li><button class="spec-filter-btn" data-filter="supportive-care">Supportive &amp; Rehabilitative Care <span class="spec-filter-count">1</span></button></li>
-              <li><button class="spec-filter-btn" data-filter="advanced-practitioners">Advanced Practitioners <span class="spec-filter-count">23</span></button></li>
+              <li><button class="spec-filter-btn" data-filter="advanced-practitioners">Advanced Practitioners <span class="spec-filter-count">25</span></button></li>
             </ul>
           </div>
 
@@ -131,7 +132,7 @@
       <div class="spec-content">
 
         <div class="spec-results-bar" id="spec-results-bar">
-          <span id="spec-results-count">Showing all 58 providers</span>
+          <span id="spec-results-count">Showing all 60 providers, sorted A&ndash;Z by last name</span>
         </div>
 
       <!-- Medical Oncology and Hematology -->
@@ -501,6 +502,22 @@
             </div>
           </a>
 
+          <a href="heather-mcgivern.html" class="provider-card">
+            <div class="provider-card-photo"><img src="../images/provider-heather-mcgivern.jpg" alt="Heather A. McGivern"></div>
+            <div class="provider-card-info">
+              <h3 class="provider-card-name">Heather A. McGivern, DNP, FNP-BC</h3>
+              <p class="provider-card-dept">Advanced Practitioner</p>
+            </div>
+          </a>
+
+          <a href="makaylie-crowther.html" class="provider-card">
+            <div class="provider-card-photo"><img src="../images/provider-makaylie-crowther.jpg" alt="Makaylie S. Crowther"></div>
+            <div class="provider-card-info">
+              <h3 class="provider-card-name">Makaylie S. Crowther, DNP, FNP-C</h3>
+              <p class="provider-card-dept">Advanced Practitioner</p>
+            </div>
+          </a>
+
           <a href="hyatt-reed.html" class="provider-card">
             <div class="provider-card-photo"><img src="../images/provider-hyatt-reed.jpg" alt="Hyatt W. Reed"></div>
             <div class="provider-card-info">
@@ -762,6 +779,23 @@
 
     // Providers filtering & search
     (function() {
+      function getLastName(card) {
+        var nameEl = card.querySelector('.provider-card-name');
+        var name = nameEl ? nameEl.textContent.split(',')[0].trim() : '';
+        var parts = name.split(/\s+/);
+        return parts.length ? parts[parts.length - 1].replace(/["']/g, '').toLowerCase() : '';
+      }
+
+      document.querySelectorAll('.providers-grid').forEach(function(grid) {
+        Array.from(grid.querySelectorAll('.provider-card'))
+          .sort(function(a, b) {
+            var byLastName = getLastName(a).localeCompare(getLastName(b));
+            if (byLastName !== 0) return byLastName;
+            return a.textContent.localeCompare(b.textContent);
+          })
+          .forEach(function(card) { grid.appendChild(card); });
+      });
+
       var filterBtns = document.querySelectorAll('.spec-filter-btn');
       var categories = document.querySelectorAll('.provider-category');
       var cards = document.querySelectorAll('.provider-card');
@@ -772,7 +806,7 @@
 
       function updateCount() {
         var visible = document.querySelectorAll('.provider-card:not([style*="display: none"])').length;
-        resultsCount.textContent = 'Showing ' + visible + ' of ' + totalProviders + ' providers';
+        resultsCount.textContent = 'Showing ' + visible + ' of ' + totalProviders + ' providers, sorted A-Z by last name';
       }
 
       function applyFilters() {

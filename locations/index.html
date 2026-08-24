@@ -29,6 +29,7 @@
         <a href="../providers/index.html" class="nav-link">Providers</a>
         <a href="index.html" class="nav-link">Locations</a>
         <a href="../specialties/index.html" class="nav-link">Cancer Types</a>
+        <a href="../clinical-trials.html" class="nav-link">Clinical Trials</a>
         <div class="nav-dropdown">
           <button class="nav-link nav-dropdown-toggle">Company <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
           <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
@@ -627,8 +628,8 @@
         { region: 'idwy', name: 'Teton Valley Health Care', address: '120 E. Howard Avenue, Driggs, ID 83422', url: 'teton.html', lat: 43.7265, lng: -111.1080 }
       ];
 
-      var BRAND = '#00577d';
-      var BRAND_DARK = '#003347';
+      var BRAND = '#5e8b9e';
+      var BRAND_DARK = '#00476b';
 
       function pinIcon() {
         var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="34" height="44" viewBox="0 0 34 44">'
@@ -658,10 +659,10 @@
           var marker = new google.maps.Marker({ position: pos, map: map, title: loc.name, icon: iconSpec });
           marker.addListener('click', function() {
             infoWindow.setContent(
-              '<div style="font-family: var(--font-body);color:#003347;max-width:220px">' +
+              '<div style="font-family: var(--font-body);color:#00476b;max-width:220px">' +
               '<strong style="font-family:var(--font-heading);font-size:16px;display:block;margin-bottom:4px">' + loc.name + '</strong>' +
               '<span style="font-size:13px;color:#5a6670;display:block;margin-bottom:8px">' + loc.address + '</span>' +
-              '<a href="' + loc.url + '" style="color:#00577d;font-size:13px;font-weight:600">View details &rarr;</a>' +
+              '<a href="' + loc.url + '" style="color:#5e8b9e;font-size:13px;font-weight:600">View details &rarr;</a>' +
               '</div>'
             );
             infoWindow.open(map, marker);
