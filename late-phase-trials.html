@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore current Phase II and Phase III clinical trials available through Utah Cancer Specialists.">
+  <title>Late-Phase Clinical Trials - Utah Cancer Specialists</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="provider.css">
+  <style>
+    .lp-breadcrumbs {
+      padding: 22px 0;
+      border-bottom: 1px solid #e8e4e0;
+      background: #fff;
+    }
+    .lp-breadcrumbs-inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #5e8b9e;
+    }
+    .lp-breadcrumbs a { color: #00476b; text-decoration: none; }
+    .lp-breadcrumbs .material-symbols-rounded { font-size: 16px; }
+
+    .lp-intro { padding: 88px 0 76px; }
+    .lp-intro-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .lp-eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #5e8b9e;
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .lp-title {
+      max-width: 820px;
+      margin-bottom: 22px;
+      color: #00476b;
+      font-family: var(--font-heading);
+      font-size: clamp(38px, 5vw, 64px);
+      font-weight: 400;
+      letter-spacing: -0.035em;
+      line-height: 1.02;
+    }
+    .lp-lead {
+      max-width: 800px;
+      color: #333;
+      font-size: 18px;
+      line-height: 31px;
+      opacity: 0.82;
+    }
+    .lp-summary-card {
+      padding: 32px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #00476b 0%, #5e8b9e 100%);
+      color: #fff;
+      box-shadow: 0 24px 54px rgba(0, 71, 107, 0.16);
+    }
+    .lp-summary-card .material-symbols-rounded {
+      display: block;
+      margin-bottom: 18px;
+      font-size: 36px;
+    }
+    .lp-summary-card h2 {
+      margin-bottom: 12px;
+      font-family: var(--font-heading);
+      font-size: 27px;
+      font-weight: 500;
+      line-height: 1.15;
+    }
+    .lp-summary-card p { margin-bottom: 22px; font-size: 15px; line-height: 25px; opacity: 0.9; }
+    .lp-summary-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .lp-summary-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .lp-summary-contact .material-symbols-rounded { display: inline; margin: 0; font-size: 18px; }
+
+    .lp-offerings { padding: 76px 0; background: #f7f8f9; border-top: 1px solid #e8e4e0; border-bottom: 1px solid #e8e4e0; }
+    .lp-section-header { max-width: 760px; margin-bottom: 38px; }
+    .lp-section-title {
+      margin-bottom: 12px;
+      color: #00476b;
+      font-family: var(--font-heading);
+      font-size: 38px;
+      font-weight: 400;
+      letter-spacing: -0.027em;
+      line-height: 1.06;
+    }
+    .lp-section-sub { color: #333; font-size: 16px; line-height: 27px; opacity: 0.76; }
+    .lp-offerings-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .lp-offering {
+      padding: 30px;
+      border: 1px solid #e4e8ea;
+      border-radius: 20px;
+      background: #fff;
+    }
+    .lp-offering-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      margin-bottom: 22px;
+      border-radius: 50%;
+      background: #eaf1f4;
+      color: #00476b;
+    }
+    .lp-offering-icon .material-symbols-rounded { font-size: 24px; }
+    .lp-offering h3 { margin-bottom: 9px; color: #00476b; font-family: var(--font-heading); font-size: 21px; font-weight: 500; }
+    .lp-offering p { color: #333; font-size: 14.5px; line-height: 24px; opacity: 0.78; }
+
+    .lp-trials { padding: 88px 0 100px; }
+    .lp-filter-wrap { margin: 34px 0 46px; }
+    .lp-filter-label {
+      display: block;
+      margin-bottom: 13px;
+      color: #5e8b9e;
+      font-family: var(--font-label);
+      font-size: 10px;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+    .lp-filters { display: flex; flex-wrap: wrap; gap: 9px; }
+    .lp-filter {
+      padding: 10px 15px;
+      border: 1px solid #d6e0e5;
+      border-radius: 100px;
+      background: #fff;
+      color: #00476b;
+      font-family: var(--font-body);
+      font-size: 13px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+    .lp-filter:hover, .lp-filter.is-active { border-color: #00476b; background: #00476b; color: #fff; }
+    .lp-trial-section { margin-bottom: 56px; scroll-margin-top: 120px; }
+    .lp-trial-section[hidden] { display: none; }
+    .lp-category-title {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+      color: #00476b;
+      font-family: var(--font-heading);
+      font-size: 27px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+    .lp-category-title::after { content: ""; flex: 1; height: 1px; background: #dfe6e9; }
+    .lp-trial-list { display: grid; gap: 16px; }
+    .lp-trial-card {
+      padding: 28px 30px;
+      border: 1px solid #e2e7e9;
+      border-radius: 18px;
+      background: #fff;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .lp-trial-card:hover { transform: translateY(-2px); border-color: #bfd0d8; box-shadow: 0 16px 38px rgba(0, 71, 107, 0.08); }
+    .lp-trial-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 22px; margin-bottom: 12px; }
+    .lp-trial-title {
+      max-width: 920px;
+      color: #00476b;
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.32;
+      text-decoration: none;
+    }
+    .lp-trial-title:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .lp-status {
+      flex-shrink: 0;
+      padding: 7px 10px;
+      border-radius: 100px;
+      background: #e7f1f4;
+      color: #00476b;
+      font-family: var(--font-label);
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .lp-protocol { margin-bottom: 13px; color: #5e8b9e; font-family: var(--font-label); font-size: 10px; letter-spacing: 1.35px; text-transform: uppercase; }
+    .lp-trial-desc { max-width: 1020px; color: #333; font-size: 14.5px; line-height: 24px; opacity: 0.8; }
+    .lp-trial-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 20px;
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid #ece9e5;
+    }
+    .lp-trial-footer span, .lp-trial-footer a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #5e8b9e;
+      font-size: 13px;
+      text-decoration: none;
+    }
+    .lp-trial-footer a:hover { color: #00476b; }
+    .lp-trial-footer .material-symbols-rounded { font-size: 16px; }
+    .lp-source-note {
+      margin-top: 20px;
+      padding: 18px 22px;
+      border-left: 3px solid #5e8b9e;
+      background: #f5f8f9;
+      color: #333;
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    @media (max-width: 960px) {
+      .lp-intro { padding: 68px 0 60px; }
+      .lp-intro-grid { grid-template-columns: 1fr; gap: 38px; }
+      .lp-summary-card { max-width: 620px; }
+      .lp-offerings-grid { grid-template-columns: 1fr; }
+      .lp-offering { display: grid; grid-template-columns: auto 1fr; column-gap: 20px; }
+      .lp-offering-icon { grid-row: 1 / 3; }
+    }
+    @media (max-width: 640px) {
+      .lp-breadcrumbs { padding: 16px 0; }
+      .lp-intro { padding: 54px 0 46px; }
+      .lp-title { font-size: 38px; }
+      .lp-lead { font-size: 16px; line-height: 27px; }
+      .lp-summary-card { padding: 26px; }
+      .lp-offerings { padding: 56px 0; }
+      .lp-section-title { font-size: 30px; }
+      .lp-offering { display: block; padding: 25px; }
+      .lp-trials { padding: 60px 0 74px; }
+      .lp-filter-wrap { margin-bottom: 36px; }
+      .lp-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; scrollbar-width: thin; }
+      .lp-filter { white-space: nowrap; }
+      .lp-category-title { font-size: 23px; }
+      .lp-trial-card { padding: 23px 20px; }
+      .lp-trial-top { flex-direction: column-reverse; gap: 10px; }
+      .lp-trial-title { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo"><img src="images/ucs-logo-white.svg" alt="Utah Cancer Specialists"></a>
+      <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav class="navbar-nav">
+        <a href="providers/index.html" class="nav-link">Providers</a>
+        <a href="locations/index.html" class="nav-link">Locations</a>
+        <a href="specialties/index.html" class="nav-link">Cancer Types</a>
+        <a href="clinical-trials.html" class="nav-link">Clinical Trials</a>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Company <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="about.html" class="nav-dropdown-item">About</a>
+            <a href="leadership.html" class="nav-dropdown-item">Leadership</a>
+            <a href="events/index.html" class="nav-dropdown-item">Events</a>
+            <a href="about.html#foundation" class="nav-dropdown-item">Our Foundation</a>
+          </div></div>
+        </div>
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-toggle">Patient Resources <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+          <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+            <a href="newly-diagnosed.html" class="nav-dropdown-item">Newly Diagnosed</a>
+            <a href="treatment-options.html" class="nav-dropdown-item">Treatments</a>
+            <a href="patient-education.html" class="nav-dropdown-item">Patient Education</a>
+            <a href="telehealth.html" class="nav-dropdown-item">Telehealth</a>
+            <a href="clinical-trials.html" class="nav-dropdown-item">Clinical Trials</a>
+            <a href="programs-and-services.html" class="nav-dropdown-item">Programs &amp; Services</a>
+            <a href="patient-resources.html" class="nav-dropdown-item">Patient Resources</a>
+          </div></div>
+        </div>
+        <a href="https://utahcancerspecialists.navigatingcare.com/account/login" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">person</span> Patient Portal</a>
+        <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">credit_card</span> Quick Pay</a>
+        <a href="providers/index.html" class="nav-btn-cta"><span class="material-symbols-rounded">groups</span> Our Providers</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+  <section class="sd-hero">
+    <div class="sd-hero-bg"><img src="images/specialty-lung-clinical-hero.jpg" alt=""><div class="sd-hero-overlay"></div></div>
+    <div class="container sd-hero-inner">
+      <span class="sd-hero-tag">UCS Clinical Research</span>
+      <h1 class="sd-hero-title">Late-Phase Clinical Trials</h1>
+      <p class="sd-hero-sub">Phase II and III research bringing the latest therapeutic advances directly to patients and communities across the Intermountain West.</p>
+      <div class="sd-hero-actions">
+        <a href="#active-trials" class="btn btn--white">Explore Active Trials <span class="material-symbols-rounded">arrow_downward</span></a>
+        <a href="mailto:research@utahcancer.com" class="btn btn--outline-dark"><span class="material-symbols-rounded">mail</span> Contact Research</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="lp-breadcrumbs">
+    <div class="container lp-breadcrumbs-inner">
+      <a href="clinical-trials.html">Clinical Trials</a>
+      <span class="material-symbols-rounded">chevron_right</span>
+      <span>Late-Phase Trials</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="lp-intro">
+      <div class="container lp-intro-grid">
+        <div>
+          <span class="lp-eyebrow">Phase II&ndash;III Research Program</span>
+          <h2 class="lp-title">Making clinical trials more accessible to every community we serve.</h2>
+          <p class="lp-lead">Our Utah Cancer Specialists Clinical Research Program travels throughout our many locations in Utah to bring pioneering and impactful health care research directly to our communities and patients. We know a diagnosis of cancer can be a stressful time for you and your family. Let us assist you in enrolling in a clinical trial and guide you through every step of the process.</p>
+        </div>
+        <aside class="lp-summary-card">
+          <span class="material-symbols-rounded">science</span>
+          <h2>About the UCS Cancer Research Program</h2>
+          <p>We are committed to bringing the latest breakthrough cancer treatments to our patients. We manage more than 50 active clinical trials on an ongoing basis, with access across our clinics, including rural communities.</p>
+          <div class="lp-summary-contact">
+            <a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a>
+            <a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="lp-offerings">
+      <div class="container">
+        <div class="lp-section-header">
+          <span class="lp-eyebrow">Our clinical trial offerings</span>
+          <h2 class="lp-section-title">Research capabilities built around patient access.</h2>
+        </div>
+        <div class="lp-offerings-grid">
+          <article class="lp-offering">
+            <div class="lp-offering-icon"><span class="material-symbols-rounded">biotech</span></div>
+            <h3>Biologics / Immuno-Oncology</h3>
+            <p>Utilizing the latest technologies in precision medicine to target cancer.</p>
+          </article>
+          <article class="lp-offering">
+            <div class="lp-offering-icon"><span class="material-symbols-rounded">radiology</span></div>
+            <h3>Theranostics / PET / CT</h3>
+            <p>Antibody- and antigen-targeted therapy used to deliver a radioactive payload to cancer cells.</p>
+          </article>
+          <article class="lp-offering">
+            <div class="lp-offering-icon"><span class="material-symbols-rounded">local_hospital</span></div>
+            <h3>Inpatient Capabilities</h3>
+            <p>Partnering with hospitals in our community to make promising research more accessible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-trials" id="active-trials">
+      <div class="container">
+        <div class="lp-section-header">
+          <span class="lp-eyebrow">Phase II / III Research Program</span>
+          <h2 class="lp-section-title">Active Clinical Trials</h2>
+          <p class="lp-section-sub"><span id="trial-count">19 trials</span> are currently listed. Select a cancer type to narrow the results.</p>
+        </div>
+
+        <div class="lp-filter-wrap">
+          <span class="lp-filter-label">Filter by cancer type</span>
+          <div class="lp-filters" role="group" aria-label="Filter active trials by cancer type">
+            <button class="lp-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="lp-filter" type="button" data-filter="all-comers" aria-pressed="false">All-Comers</button>
+            <button class="lp-filter" type="button" data-filter="breast" aria-pressed="false">Breast cancer</button>
+            <button class="lp-filter" type="button" data-filter="colorectal" aria-pressed="false">Colorectal</button>
+            <button class="lp-filter" type="button" data-filter="gist" aria-pressed="false">Gastrointestinal Stromal Tumors</button>
+            <button class="lp-filter" type="button" data-filter="head-neck" aria-pressed="false">Head &amp; Neck</button>
+            <button class="lp-filter" type="button" data-filter="lung-rmc" aria-pressed="false">Lung &ndash; Non-Small Cell</button>
+            <button class="lp-filter" type="button" data-filter="prostate" aria-pressed="false">Metastatic prostate cancer</button>
+            <button class="lp-filter" type="button" data-filter="metastatic-colorectal" aria-pressed="false">Metastatic colorectal cancer</button>
+            <button class="lp-filter" type="button" data-filter="metastatic-pancreatic" aria-pressed="false">Metastatic pancreatic adenocarcinoma</button>
+            <button class="lp-filter" type="button" data-filter="myeloma" aria-pressed="false">Multiple Myeloma</button>
+            <button class="lp-filter" type="button" data-filter="nsclc" aria-pressed="false">Non-Small Cell Lung Cancer</button>
+            <button class="lp-filter" type="button" data-filter="observational" aria-pressed="false">Observational / Lab</button>
+            <button class="lp-filter" type="button" data-filter="ovarian" aria-pressed="false">Ovarian cancer</button>
+            <button class="lp-filter" type="button" data-filter="pancreatic" aria-pressed="false">Pancreatic cancer</button>
+          </div>
+        </div>
+
+        <div class="lp-trial-section" data-category="all-comers">
+          <h3 class="lp-category-title">All-Comers</h3>
+          <div class="lp-trial-list">
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT03556228" target="_blank" rel="noopener">Selective TrkA Inhibitor VMD-928 to Treat TrkA Overexpression Driven Solid Tumors or Lymphoma</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT03556228</div>
+              <p class="lp-trial-desc">VM Oncology study of Selective TrkA Inhibitor VMD-928 in patients with TrkA Overexpression Driven Solid Tumors or Lymphoma.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT04657068" target="_blank" rel="noopener">A Study of ART0380 for the Treatment of Advanced or Metastatic Solid Tumors</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT04657068</div>
+              <p class="lp-trial-desc">This study is testing ART0380, an oral investigational cancer drug, in people with advanced or metastatic solid tumors. Researchers want to find safe doses, understand side effects, and learn whether ART0380 may work alone or with gemcitabine or irinotecan. Some study groups are focused on tumors with specific DNA repair changes, including certain ovarian and related gynecologic cancers.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="lp-trial-section" data-category="breast">
+          <h3 class="lp-category-title">Breast cancer</h3>
+          <div class="lp-trial-list">
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT06492616" target="_blank" rel="noopener">Elacestrant Versus Standard Endocrine Therapy in Women and Men With Node-positive, Estrogen Receptor-positive, HER2-negative, Early Breast Cancer With High Risk of Recurrence</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT06492616</div>
+              <p class="lp-trial-desc">This phase 3 study is comparing elacestrant with standard endocrine therapy in women and men with early breast cancer that is ER-positive, HER2-negative, node-positive, and at high risk of recurrence. Participants must have already received endocrine therapy and may have previously received certain targeted treatments. The study is recruiting at multiple sites.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07085767" target="_blank" rel="noopener">Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT07085767</div>
+              <p class="lp-trial-desc">This phase 3 study is comparing palazestrant plus ribociclib with letrozole plus ribociclib for adults with ER-positive, HER2-negative advanced breast cancer. It is enrolling women and men who have not received prior systemic anti-cancer treatment for advanced disease. Participants will be randomly assigned to one of the two treatment arms in a double-blind design.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="lp-trial-section" data-category="colorectal">
+          <h3 class="lp-category-title">Colorectal</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://classic.clinicaltrials.gov/ct2/show/NCT03526835" target="_blank" rel="noopener">A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT03526835</div>
+            <p class="lp-trial-desc">Merus study of bispecific antibody MCLA-158 in patients with advanced solid tumors including colorectal.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="gist">
+          <h3 class="lp-category-title">Gastrointestinal Stromal Tumors</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07218926" target="_blank" rel="noopener">A Phase 3, Randomized, Multicenter, Open-Label Study of IDRX-42 (GSK6042981) Versus Sunitinib in Participants With Metastatic and/or Unresectable Gastrointestinal Stromal Tumors (GIST) After Imatinib Therapy (StrateGIST 3)</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT07218926</div>
+            <p class="lp-trial-desc">This phase 3 study is comparing IDRX-42 (also known as GSK6042981) with sunitinib in adults with gastrointestinal stromal tumors (GIST) that have spread or cannot be removed with surgery. Participants must have already received imatinib. The study is evaluating how well the treatment works and how safe it is.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="head-neck">
+          <h3 class="lp-category-title">Head &amp; Neck</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT06129864" target="_blank" rel="noopener">A Global Study of Volrustomig (MEDI5752) for Participants With Unresected Locally Advanced Head and Neck Squamous Cell Carcinoma Following Definitive Concurrent Chemoradiotherapy (eVOLVE-HNSCC)</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT06129864</div>
+            <p class="lp-trial-desc">AstraZeneca global study of Volrustomig (MEDI5752) in unresected locally advanced head and neck squamous cell carcinoma following chemoradiotherapy.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a><a href="https://utahcancer.com/wp-content/uploads/2025/04/PSG_HeadNeck_AZ-EVOLVE.pdf" target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span> View PDF</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="lung-rmc">
+          <h3 class="lp-category-title">Lung &ndash; Non-Small Cell</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT06881784" target="_blank" rel="noopener">Study of Daraxonrasib (RMC-6236) in Previously Treated Patients With RAS Mutated NSCLC (RASolve 301)</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT06881784</div>
+            <p class="lp-trial-desc">Revolution Medicine study of Daraxonrasib (RMC-6236) in previously treated patients with RAS mutated metastatic non-small cell lung cancer.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a><a href="https://utahcancer.com/wp-content/uploads/2025/04/Ad_Lung_Revolution-Medicine-RASolve-17Jan2025.pdf" target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span> View PDF</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="prostate">
+          <h3 class="lp-category-title">Metastatic castration-resistant prostate cancer</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07164443" target="_blank" rel="noopener">A Study of Pasritamig Versus Placebo in Late Line Metastatic Castration-resistant Prostate Cancer (mCRPC)</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT07164443</div>
+            <p class="lp-trial-desc">This phase 3 study is testing pasritamig (JNJ-78278343) plus best supportive care versus placebo plus best supportive care in people with metastatic castration-resistant prostate cancer. The main goal is to see whether pasritamig helps people live longer. It is recruiting participants at multiple centers in the United States.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="metastatic-colorectal">
+          <h3 class="lp-category-title">Metastatic colorectal cancer</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07228832" target="_blank" rel="noopener">Phase III Study of Ivonescimab or Bevacizumab Combined With FOLFOX in Patients With Metastatic Colorectal Cancer</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT07228832</div>
+            <p class="lp-trial-desc">This phase 3 study is testing whether ivonescimab plus FOLFOX works better than bevacizumab plus FOLFOX as a first treatment for metastatic colorectal cancer. The trial is randomized, double-blind, and active-controlled, and it includes about 600 participants who have not previously received systemic therapy for metastatic disease. Treatment is given intravenously, followed by maintenance therapy for up to 2 years.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="metastatic-pancreatic">
+          <h3 class="lp-category-title">Metastatic Pancreatic Adenocarcinoma</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07573215" target="_blank" rel="noopener">Expanded Access Program to Treat Patients With Previously Treated Metastatic Pancreatic Adenocarcinoma With Daraxonrasib</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT07573215</div>
+            <p class="lp-trial-desc">This expanded access program may provide daraxonrasib to adults with previously treated metastatic pancreatic adenocarcinoma who have no comparable or satisfactory alternative treatment options. It is intended for patients who cannot join an ongoing daraxonrasib clinical trial because of ineligibility or lack of access. Daraxonrasib is supplied by the sponsor free of charge during treatment under this program.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="myeloma">
+          <h3 class="lp-category-title">Multiple Myeloma</h3>
+          <div class="lp-trial-list">
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://www.clinicaltrials.gov/study/NCT05552222" target="_blank" rel="noopener">A Study of Teclistamab in Combination With Daratumumab and Lenalidomide (Tec-DR) and Talquetamab in Combination With Daratumumab and Lenalidomide (Tal-DR) in Participants With Newly Diagnosed Multiple Myeloma (MajesTEC-7)</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT05552222</div>
+              <p class="lp-trial-desc">Janssen study of teclistamab-daratumumab-lenalidomide and talquetamab-daratumumab-lenalidomide combinations in newly diagnosed multiple myeloma.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a><a href="https://utahcancer.com/wp-content/uploads/2025/07/64007957MMY3005-Recruitment-Brochure-Advertisements-for-Subjec.pdf" target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span> View PDF</a></div>
+            </article>
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07258511" target="_blank" rel="noopener">A Phase 3 Randomized Study Comparing JNJ-79635322 and an Anti-BCMAxCD3 Bispecific Antibody in Participants With Relapsed or Refractory Multiple Myeloma Who Have Received At Least 3 Prior Lines of Therapy Including a PI, an IMiD, and an Anti CD38 Antibody</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT07258511</div>
+              <p class="lp-trial-desc">This phase 3 study is comparing JNJ-79635322 with an anti-BCMAxCD3 bispecific antibody in people with relapsed or refractory multiple myeloma. The study is looking at how well the treatments work in participants who have already received at least 3 prior lines of therapy. It is enrolling adults with measurable disease and good enough performance status to take part.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="lp-trial-section" data-category="nsclc">
+          <h3 class="lp-category-title">Non-Small Cell Lung Cancer</h3>
+          <div class="lp-trial-list">
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT06767514" target="_blank" rel="noopener">Clinical Study of Ivonescimab for First-line Treatment of Metastatic NSCLC Patients With High PD-L1</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT06767514</div>
+              <p class="lp-trial-desc">This phase 3 study is testing ivonescimab versus pembrolizumab as a first treatment for people with metastatic non-small cell lung cancer whose tumors have high PD-L1 expression. The study is looking at outcomes such as overall survival and progression-free survival. Participants must be adults with stage IV NSCLC and no prior systemic treatment for metastatic disease.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT06712316" target="_blank" rel="noopener">A Phase II/III, Multisite, Randomized Master Protocol for a Global Trial of BNT327 in Combination With Chemotherapy and Other Investigational Agents in First-line Non-Small Cell Lung Cancer</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT06712316</div>
+              <p class="lp-trial-desc">This is a phase 2/3, multicenter study for people with first-line non-small cell lung cancer (NSCLC). Participants are randomized to receive BNT327 (pumitamig) with chemotherapy, and the study includes two substudies based on tumor subtype. The trial is recruiting and is designed to evaluate safety, effectiveness, and pharmacokinetics.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="lp-trial-section" data-category="observational">
+          <h3 class="lp-category-title">Observational / Lab</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/ct2/show/NCT05059444" target="_blank" rel="noopener">Observation of Residual Cancer With Liquid Biopsy Evaluation (ORACLE)</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT05059444</div>
+            <p class="lp-trial-desc">Guardant Health observational study of residual cancer detection using liquid biopsy across multiple cancer types including bladder, NSCLC, breast, melanoma, and others.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a><a href="https://utahcancer.com/wp-content/uploads/2025/04/PF_Lab_Guardant-Health.pdf" target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span> View PDF</a></div>
+          </article></div>
+        </div>
+
+        <div class="lp-trial-section" data-category="ovarian">
+          <h3 class="lp-category-title">Ovarian cancer</h3>
+          <div class="lp-trial-list">
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07023627" target="_blank" rel="noopener">A Phase 2, Single-Arm Study of INCB123667 in Participants With Platinum-Resistant Ovarian Cancer With Cyclin E1 Overexpression (MAESTRA 1)</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT07023627</div>
+              <p class="lp-trial-desc">This phase 2 study is evaluating INCB123667 in people with platinum-resistant ovarian cancer that overexpresses Cyclin E1. The study is looking at the safety and effectiveness of this treatment in participants who have already received prior therapy. It is a single-arm study, so all participants receive the study drug.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+            <article class="lp-trial-card">
+              <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT06819007" target="_blank" rel="noopener">Study of Trastuzumab Deruxtecan With Bevacizumab Versus Bevacizumab Monotherapy for First-line Maintenance in HER2-Expressing Ovarian Cancer (DESTINY-Ovarian01)</a><span class="lp-status">Open</span></div>
+              <div class="lp-protocol">Protocol: NCT06819007</div>
+              <p class="lp-trial-desc">This phase 3 trial is evaluating trastuzumab deruxtecan plus bevacizumab versus bevacizumab alone as first-line maintenance treatment for HER2-expressing advanced high-grade ovarian cancer. Participants must have newly diagnosed stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer and have already received standard bevacizumab with platinum-based chemotherapy. A safety run-in phase is planned before randomization.</p>
+              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="lp-trial-section" data-category="pancreatic">
+          <h3 class="lp-category-title">Pancreatic cancer</h3>
+          <div class="lp-trial-list"><article class="lp-trial-card">
+            <div class="lp-trial-top"><a class="lp-trial-title" href="https://clinicaltrials.gov/study/NCT07409272" target="_blank" rel="noopener">A Phase 3 Study of Setidegrasib With mFOLFIRINOX or NALIRIFOX in KRAS G12D Mutated Metastatic Pancreatic Adenocarcinoma</a><span class="lp-status">Open</span></div>
+            <div class="lp-protocol">Protocol: NCT07409272</div>
+            <p class="lp-trial-desc">This phase 3 study is testing whether setidegrasib, given with standard chemotherapy, can help people with metastatic pancreatic cancer that has a KRAS G12D mutation. Participants are assigned by chance to receive setidegrasib or placebo along with mFOLFIRINOX or NALIRIFOX, which the study doctor selects. The main goal is to see whether the study treatment helps people live longer and to assess safety.</p>
+            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span> Johnny Walker</span><a href="tel:8012816864"><span class="material-symbols-rounded">phone</span> 801.281.6864</a><a href="mailto:research@utahcancer.com"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a></div>
+          </article></div>
+        </div>
+
+        <p class="lp-source-note">Trial availability and eligibility can change. Review the linked ClinicalTrials.gov record and contact the UCS research team for the most current enrollment information.</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact-section">
+    <div class="contact-bg"><img src="images/contact-bg.jpg" alt=""><div class="contact-overlay"></div></div>
+    <div class="container contact-inner">
+      <h2 class="contact-heading">Could a clinical trial be right for you?</h2>
+      <a href="mailto:research@utahcancer.com" class="btn btn--white"><span class="material-symbols-rounded">mail</span> Contact the Research Team</a>
+    </div>
+  </section>
+  <div class="marquee-banner"><div class="marquee-track">
+    <span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span><span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Better care and brighter futures start here</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Redefining healthcare with innovation, excellence, and heart</span><span class="marquee-dot">&bull;</span><span class="marquee-item">A better way to care for your health</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Compassionate care, exceptional outcomes</span><span class="marquee-dot">&bull;</span><span class="marquee-item">Your fight is our fight</span><span class="marquee-dot">&bull;</span>
+  </div></div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="images/ucs-logo-white.svg" alt="Utah Cancer Specialists" class="footer-logo">
+        <h3 class="footer-tagline">Your health, our priority</h3>
+        <p class="footer-tagline-desc">Experience personalized care and advanced treatments. Schedule your consultation today for a healthier tomorrow.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-columns">
+          <div class="footer-col"><h4 class="footer-col-title">About Us</h4><ul class="footer-links"><li><a href="about.html">Our Mission</a></li><li><a href="about.html">Our Vision</a></li><li><a href="about.html">Our Values</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Patient Care</h4><ul class="footer-links"><li><a href="newly-diagnosed.html">Newly Diagnosed</a></li><li><a href="telehealth.html">Telehealth</a></li><li><a href="patient-education.html">Patient Education</a></li><li><a href="patient-resources.html">Patient Resources</a></li></ul></div>
+          <div class="footer-col"><h4 class="footer-col-title">Research</h4><ul class="footer-links"><li><a href="clinical-trials.html">Clinical Trials</a></li><li><a href="late-phase-trials.html">Active UCS Trials</a></li><li><a href="programs-and-services.html">Programs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        </div>
+        <div class="footer-contact">
+          <p class="footer-address">10808 South River Front Parkway, Suite 400<br>South Jordan, UT 84095</p>
+          <div class="footer-contact-info"><p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p><p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p></div>
+          <div class="footer-social"><a href="https://www.facebook.com/utahcancerspecialists" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="https://www.instagram.com/utahcancerspecialists/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a><a href="https://www.linkedin.com/company/utahcancer-specialists" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a href="https://www.youtube.com/@UTCancerSpecialists" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container"><div class="footer-bottom"><p>&copy; Utah Cancer Specialists. All rights reserved.</p><a href="https://utahcanceronline.ci.healthpay24.cloud/account/login" target="_blank" rel="noopener" class="footer-paperless"><span class="material-symbols-rounded">eco</span> Go paperless &middot; Enroll in eStatements <span class="material-symbols-rounded">arrow_outward</span></a></div></div>
+  </footer>
+  <script>
+    (function(){ var hb=document.getElementById('navbar-hamburger'),n=document.querySelector('.navbar-nav'),o=document.getElementById('mobile-menu-overlay'),b=document.body; function t(){ hb.classList.toggle('active');n.classList.toggle('open');o.classList.toggle('open');b.classList.toggle('menu-open'); } hb.addEventListener('click',t);o.addEventListener('click',t);n.querySelectorAll('a').forEach(function(l){ l.addEventListener('click',function(){ if(n.classList.contains('open'))t(); }); }); })();
+    (function(){ var nb=document.querySelector('.navbar');window.addEventListener('scroll',function(){ if(window.scrollY>50){ nb.classList.add('scrolled'); }else{ nb.classList.remove('scrolled'); } }); })();
+    (function(){
+      var filters=Array.prototype.slice.call(document.querySelectorAll('.lp-filter'));
+      var sections=Array.prototype.slice.call(document.querySelectorAll('.lp-trial-section'));
+      var count=document.getElementById('trial-count');
+      filters.forEach(function(button){
+        button.addEventListener('click',function(){
+          var selected=button.getAttribute('data-filter');
+          filters.forEach(function(item){ var active=item===button; item.classList.toggle('is-active',active); item.setAttribute('aria-pressed',active?'true':'false'); });
+          var visibleTrials=0;
+          sections.forEach(function(section){ var show=selected==='all'||section.getAttribute('data-category')===selected; section.hidden=!show; if(show){ visibleTrials+=section.querySelectorAll('.lp-trial-card').length; } });
+          count.textContent=visibleTrials+(visibleTrials===1?' trial':' trials');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

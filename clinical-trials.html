@@ -182,10 +182,40 @@
     }
     .ct-program-actions {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px 18px;
-      align-items: center;
+      flex-direction: column;
+      gap: 14px;
+      align-items: stretch;
       margin-top: auto;
+    }
+    .ct-program-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 54px;
+      padding: 15px 24px;
+      border-radius: 100px;
+      background: #00476b;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    }
+    .ct-program-primary:hover {
+      transform: translateY(-2px);
+      background: #003a58;
+      box-shadow: 0 14px 32px rgba(0, 71, 107, 0.22);
+    }
+    .ct-program-primary .material-symbols-rounded { font-size: 19px; }
+    .ct-program-secondary {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 8px 18px;
     }
     .ct-program-phone {
       display: inline-flex;
@@ -420,8 +450,8 @@
       <h1 class="sd-hero-title">Clinical Trials</h1>
       <p class="sd-hero-sub">For over 25 years, Utah Cancer Specialists has been advancing cancer care through clinical research &mdash; managing 50+ active trials and offering Utah&rsquo;s only community-based early-phase program.</p>
       <div class="sd-hero-actions">
-        <a href="tel:8019074750" class="btn btn--white"><span class="material-symbols-rounded">phone</span> START: 801.907.4750</a>
-        <a href="tel:8012816864" class="btn btn--outline-dark"><span class="material-symbols-rounded">phone</span> UCS Trials: 801.281.6864</a>
+        <a href="https://startresearch.com/mountain-region/" class="btn btn--white" target="_blank" rel="noopener">Explore START Trials <span class="material-symbols-rounded">arrow_outward</span></a>
+        <a href="late-phase-trials.html" class="btn btn--outline-dark">View UCS Late-Phase Trials <span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
   </section>
@@ -470,9 +500,11 @@
             <div class="ct-program-fact"><span class="material-symbols-rounded">public</span><div>Part of the world&rsquo;s largest Phase I medical oncology research program</div></div>
           </div>
           <div class="ct-program-actions">
-            <a href="tel:8019074750" class="ct-program-phone"><span class="material-symbols-rounded">phone</span> 801.907.4750</a>
-            <a href="https://startresearch.com/mountain-region/" class="ct-program-email" target="_blank" rel="noopener"><span class="material-symbols-rounded">arrow_outward</span> View START trials</a>
-            <a href="mailto:research@utcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utcancer.com</a>
+            <a href="https://startresearch.com/mountain-region/" class="ct-program-primary" target="_blank" rel="noopener">Learn More <span class="material-symbols-rounded">arrow_outward</span></a>
+            <div class="ct-program-secondary">
+              <a href="tel:8019074750" class="ct-program-email"><span class="material-symbols-rounded">phone</span> 801.907.4750</a>
+              <a href="mailto:research@utahcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a>
+            </div>
           </div>
         </article>
 
@@ -488,9 +520,11 @@
             <div class="ct-program-fact"><span class="material-symbols-rounded">trending_up</span><div>Establishes new standard-of-care treatments</div></div>
           </div>
           <div class="ct-program-actions">
-            <a href="tel:8012816864" class="ct-program-phone"><span class="material-symbols-rounded">phone</span> 801.281.6864</a>
-            <a href="https://utahcancer.com/late-phase-trials/" class="ct-program-email" target="_blank" rel="noopener"><span class="material-symbols-rounded">arrow_outward</span> View current UCS trials</a>
-            <a href="mailto:research@utcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utcancer.com</a>
+            <a href="late-phase-trials.html" class="ct-program-primary">Learn More <span class="material-symbols-rounded">arrow_forward</span></a>
+            <div class="ct-program-secondary">
+              <a href="tel:8012816864" class="ct-program-email"><span class="material-symbols-rounded">phone</span> 801.281.6864</a>
+              <a href="mailto:research@utahcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a>
+            </div>
           </div>
         </article>
       </div>
