@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" role="img" aria-labelledby="title">
+  <title>Donate</title>
+  <path d="M14 15.1 8.8 10.4C6.4 8.2 7.8 4.7 10.8 4.7c1.4 0 2.6.7 3.2 1.8.7-1.1 1.9-1.8 3.2-1.8 3 0 4.4 3.5 2 5.7L14 15.1Z" fill="#5E8B9E"/>
+  <path d="m3.2 16.7 3.5 4.4a5.6 5.6 0 0 0 4.4 2.1H14M24.8 16.7l-3.5 4.4a5.6 5.6 0 0 1-4.4 2.1H14M6.3 17.1l3.5 2H14m7.7-2-3.5 2H14" fill="none" stroke="#00476B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

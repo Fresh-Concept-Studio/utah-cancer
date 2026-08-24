@@ -313,19 +313,29 @@ img {
 .nav-btn-cta {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  flex-shrink: 0;
+  gap: 7px;
   background: #fff;
   color: #00476b;
-  padding: 10px 20px;
+  padding: 10px 12px;
   border-radius: var(--radius-btn);
-  font-size: 14.3px;
+  font-size: 14px;
   letter-spacing: -0.32px;
   line-height: 24px;
-  transition: opacity 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 8px 22px rgba(0, 34, 51, 0.12);
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .nav-btn-cta:hover {
   opacity: 0.9;
+  transform: translateY(-1px);
+  box-shadow: 0 11px 26px rgba(0, 34, 51, 0.18);
+}
+
+.nav-btn-cta:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.55);
+  outline-offset: 3px;
 }
 
 .navbar.scrolled .nav-btn-cta {
@@ -335,6 +345,12 @@ img {
 .nav-btn-cta .material-symbols-rounded {
   font-size: 25.4px;
   color: #5e8b9e;
+}
+
+.nav-btn-cta-icon {
+  width: 23px;
+  height: 23px;
+  flex: 0 0 auto;
 }
 
 /* ============================================
