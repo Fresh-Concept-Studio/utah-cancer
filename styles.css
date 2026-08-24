@@ -343,14 +343,10 @@ img {
 }
 
 .nav-btn-cta .material-symbols-rounded {
-  font-size: 25.4px;
-  color: #5e8b9e;
-}
-
-.nav-btn-cta-icon {
-  width: 23px;
-  height: 23px;
   flex: 0 0 auto;
+  font-size: 24px;
+  color: #5e8b9e;
+  font-variation-settings: 'FILL' 1, 'wght' 350, 'GRAD' 0, 'opsz' 24;
 }
 
 /* ============================================
