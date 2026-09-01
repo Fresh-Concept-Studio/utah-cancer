@@ -106,7 +106,7 @@
 .provider-hero-photo--leader img {
   object-fit: cover;
   object-position: center top;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
 }
 
 /* ============================================
@@ -1057,6 +1057,7 @@
 
   .provider-hero-photo {
     flex: none;
+    align-self: center; /* base rule stretches, which left-aligns once stacked */
     width: min(330px, 72vw);
     height: 350px;
     min-height: 0;
@@ -1284,6 +1285,17 @@
 
   .spec-card-text p {
     display: none;
+  }
+}
+
+/* Leadership hero portraits keep the 3:4 crop of the leadership grid cards
+   instead of the near-square box the provider cutouts use. Declared after the
+   narrower breakpoints so it wins over their .provider-hero-photo sizing. */
+@media (max-width: 1024px) {
+  .provider-hero-photo--leader {
+    width: min(300px, 66vw);
+    height: auto;
+    aspect-ratio: 3 / 4;
   }
 }
 
