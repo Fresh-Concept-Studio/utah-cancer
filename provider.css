@@ -103,10 +103,129 @@
   filter: drop-shadow(0 20px 24px rgba(0, 25, 38, 0.2));
 }
 
+/* Softens any legacy one-sided crop that does not require a full AI outpaint. */
+.provider-hero-photo:not(.provider-hero-photo--leader) img {
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
+}
+
 .provider-hero-photo--leader img {
-  object-fit: cover;
-  object-position: center top;
-  border-radius: var(--radius-card);
+  object-fit: contain;
+  object-position: center bottom;
+  border-radius: 0;
+}
+
+/* Leadership biographies have their own editorial composition: the knockout
+   portrait and title read as one hero, while the biography sits in a raised
+   paper-like panel instead of floating in a wide, empty page. */
+.leadership-detail .provider-hero {
+  position: relative;
+  background:
+    radial-gradient(circle at 79% 51%, rgba(255, 255, 255, 0.1) 0, rgba(255, 255, 255, 0) 31%),
+    linear-gradient(125deg, #00476b 0%, #246b87 58%, #6791a3 100%);
+}
+
+.leadership-detail .provider-hero-inner,
+.leadership-detail .provider-details-inner {
+  max-width: 1200px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.leadership-detail .provider-hero-inner {
+  min-height: 450px;
+  gap: 52px;
+}
+
+.leadership-detail .provider-hero-text {
+  max-width: 570px;
+  padding-bottom: 82px;
+  position: relative;
+  z-index: 2;
+}
+
+.leadership-detail .provider-breadcrumb {
+  margin-bottom: 30px;
+}
+
+.leadership-detail .provider-name {
+  font-size: clamp(56px, 5vw, 76px);
+  line-height: 0.98;
+  margin-bottom: 18px;
+}
+
+.leadership-detail .provider-specialty {
+  max-width: 520px;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.leadership-detail .provider-hero-photo--leader {
+  flex: 0 0 480px;
+  min-height: 450px;
+  position: relative;
+  z-index: 5;
+  transform: translateY(-44px);
+}
+
+.leadership-detail .provider-hero-photo--leader img {
+  filter: none;
+}
+
+.leadership-detail .provider-details {
+  position: relative;
+  z-index: 3;
+  background: #f2f6f8;
+  padding: 0 0 96px;
+}
+
+.leadership-detail .provider-details-inner {
+  display: block;
+  transform: translateY(-44px);
+  margin-bottom: -44px;
+}
+
+.leadership-detail .provider-main {
+  max-width: none;
+  background: #fff;
+  border-top: 0;
+  padding: 68px 72px 76px;
+  box-shadow: none;
+}
+
+.leadership-detail .provider-section {
+  display: block;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+.leadership-detail .provider-section-title {
+  font-size: 38px;
+  line-height: 1.12;
+  margin: 0 0 34px;
+}
+
+.leadership-detail .provider-section-title::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 2px;
+  margin-top: 24px;
+  background: #5e8b9e;
+}
+
+.leadership-detail .provider-bio {
+  font-size: 17px;
+  line-height: 1.78;
+  letter-spacing: -0.22px;
+  margin: 0;
+}
+
+.leadership-detail .provider-bio + .provider-bio {
+  margin-top: 0;
 }
 
 /* ============================================
@@ -1288,14 +1407,144 @@
   }
 }
 
-/* Leadership hero portraits keep the 3:4 crop of the leadership grid cards
-   instead of the near-square box the provider cutouts use. Declared after the
-   narrower breakpoints so it wins over their .provider-hero-photo sizing. */
 @media (max-width: 1024px) {
-  .provider-hero-photo--leader {
-    width: min(300px, 66vw);
-    height: auto;
-    aspect-ratio: 3 / 4;
+  .leadership-detail .provider-hero-inner,
+  .leadership-detail .provider-details-inner {
+    max-width: 920px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .leadership-detail .provider-hero-inner {
+    flex-direction: row;
+    align-items: flex-end;
+    min-height: 420px;
+    gap: 24px;
+    padding-top: 0;
+  }
+
+  .leadership-detail .provider-hero-text {
+    max-width: none;
+    padding-bottom: 64px;
+    text-align: left;
+  }
+
+  .leadership-detail .provider-breadcrumb {
+    justify-content: flex-start;
+  }
+
+  .leadership-detail .provider-name {
+    font-size: clamp(48px, 6.5vw, 64px);
+  }
+
+  .leadership-detail .provider-hero-photo--leader {
+    flex: 0 0 360px;
+    align-self: flex-end;
+    width: auto;
+    height: 420px;
+    min-height: 420px;
+    aspect-ratio: auto;
+  }
+
+  .leadership-detail .provider-main {
+    padding: 56px 52px 64px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .leadership-detail .provider-hero-inner,
+  .leadership-detail .provider-details-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .leadership-detail .provider-hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding-top: 34px;
+  }
+
+  .leadership-detail .provider-hero-text {
+    width: 100%;
+    padding-bottom: 28px;
+    text-align: center;
+  }
+
+  .leadership-detail .provider-breadcrumb {
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  .leadership-detail .provider-name {
+    font-size: clamp(42px, 12vw, 58px);
+  }
+
+  .leadership-detail .provider-specialty {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+  }
+
+  .leadership-detail .provider-hero-photo--leader {
+    flex: none;
+    align-self: center;
+    width: min(370px, 86vw);
+    height: 350px;
+    min-height: 350px;
+    transform: translateY(-24px);
+  }
+
+  .leadership-detail .provider-details {
+    padding-bottom: 72px;
+  }
+
+  .leadership-detail .provider-details-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateY(-24px);
+    margin-bottom: -24px;
+  }
+
+  .leadership-detail .provider-main {
+    padding: 40px 30px 48px;
+  }
+
+  .leadership-detail .provider-section-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .leadership-detail .provider-bio {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .leadership-detail .provider-bio + .provider-bio {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leadership-detail .provider-hero-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .leadership-detail .provider-hero-photo--leader {
+    width: min(320px, 88vw);
+    height: 310px;
+    min-height: 310px;
+  }
+
+  .leadership-detail .provider-details-inner {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .leadership-detail .provider-main {
+    padding: 34px 24px 42px;
   }
 }
 
