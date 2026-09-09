@@ -104,7 +104,7 @@
 }
 
 /* Softens any legacy one-sided crop that does not require a full AI outpaint. */
-.provider-hero-photo:not(.provider-hero-photo--leader) img {
+.provider-hero-photo:not(.provider-hero-photo--leader):not(.provider-hero-photo--expanded) img {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
   mask-image: linear-gradient(to right, transparent 0%, #000 6%, #000 94%, transparent 100%);
 }

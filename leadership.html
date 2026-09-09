@@ -59,6 +59,7 @@
        LEADERSHIP CARD
        ============================================ */
     .leader-card {
+      height: 100%;
       display: flex;
       flex-direction: column;
       background: #fff;
@@ -85,6 +86,11 @@
       padding: 18px 20px 22px;
     }
 
+    .leader-card-photo img[src="images/leader-sandy-jones.jpg"] {
+      transform: scale(1.22) translateY(-7%);
+      transform-origin: center;
+    }
+
     .leader-card-name {
       font-family: var(--font-heading);
       font-weight: 500;
@@ -109,8 +115,7 @@
     }
 
     a.leader-card-link:hover .leader-card {
-      border-color: #5e8b9e;
-      box-shadow: 0 4px 20px rgba(0, 71, 107, 0.12);
+      background: #f8fafb;
     }
 
     a.leader-card-link:focus-visible .leader-card {
@@ -226,6 +231,53 @@
   <section class="leaders-section">
     <div class="container">
 
+      <!-- Physician Executive Committee -->
+      <div class="leaders-group">
+        <h2 class="leaders-group-title">Physician Executive Committee</h2>
+        <div class="leaders-grid">
+
+          <a href="providers/jason-stinnett.html" class="leader-card-link">
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/provider-jason-stinnett.jpg" alt="Jason M. Stinnett, MD"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Jason M. Stinnett, MD</h3>
+              <p class="leader-card-role">President</p>
+            </div>
+          </div>
+          </a>
+
+          <a href="providers/nitin-chandramouli.html" class="leader-card-link">
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/provider-nitin-chandramouli.jpg" alt="Nitin B. Chandramouli, MD, FACP"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Nitin B. Chandramouli, MD, FACP</h3>
+            </div>
+          </div>
+          </a>
+
+          <a href="providers/robert-havard.html" class="leader-card-link">
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/provider-robert-havard.jpg" alt="Robert A. Havard, MD"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Robert A. Havard, MD</h3>
+            </div>
+          </div>
+          </a>
+
+          <a href="providers/david-warner.html" class="leader-card-link">
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/provider-david-warner.jpg" alt="David E. Warner, MD"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">David E. Warner, MD</h3>
+              <p class="leader-card-role">Secretary</p>
+            </div>
+          </div>
+          </a>
+
+        </div>
+      </div>
+
+
       <!-- Executive Leadership -->
       <div class="leaders-group">
         <h2 class="leaders-group-title">Executive Leadership</h2>
@@ -278,13 +330,6 @@
             <div class="leader-card-info">
               <h3 class="leader-card-name">DeAnn Angilau</h3>
               <p class="leader-card-role">Director of Clinical Services</p>
-            </div>
-          </div>
-
-          <div class="leader-card">
-            <div class="leader-card-photo"><img src="images/leader-hr-director.jpg" alt="Director of Human Resources"></div>
-            <div class="leader-card-info">
-              <h3 class="leader-card-name">Director of Human Resources</h3>
             </div>
           </div>
 
@@ -342,6 +387,14 @@
           </div>
           </a>
 
+          <div class="leader-card">
+            <div class="leader-card-photo"><img src="images/leader-hr-director.jpg" alt="Teresa Leavitt"></div>
+            <div class="leader-card-info">
+              <h3 class="leader-card-name">Teresa Leavitt</h3>
+              <p class="leader-card-role">Director of Human Resources</p>
+            </div>
+          </div>
+
           <a href="leadership/travis-gunther.html" class="leader-card-link">
           <div class="leader-card">
             <div class="leader-card-photo"><img src="images/leader-travis-gunther.jpg" alt="Travis Gunther"></div>
@@ -365,52 +418,6 @@
         </div>
       </div>
 
-      <!-- Physician Executive Committee -->
-      <div class="leaders-group">
-        <h2 class="leaders-group-title">Physician Executive Committee</h2>
-        <div class="leaders-grid">
-
-          <a href="providers/jason-stinnett.html" class="leader-card-link">
-          <div class="leader-card">
-            <div class="leader-card-photo"><img src="images/provider-jason-stinnett.jpg" alt="Jason M. Stinnett, MD"></div>
-            <div class="leader-card-info">
-              <h3 class="leader-card-name">Jason M. Stinnett, MD</h3>
-              <p class="leader-card-role">President</p>
-            </div>
-          </div>
-          </a>
-
-          <a href="providers/nitin-chandramouli.html" class="leader-card-link">
-          <div class="leader-card">
-            <div class="leader-card-photo"><img src="images/provider-nitin-chandramouli.jpg" alt="Nitin B. Chandramouli, MD, FACP"></div>
-            <div class="leader-card-info">
-              <h3 class="leader-card-name">Nitin B. Chandramouli, MD, FACP</h3>
-            </div>
-          </div>
-          </a>
-
-          <a href="providers/robert-havard.html" class="leader-card-link">
-          <div class="leader-card">
-            <div class="leader-card-photo"><img src="images/provider-robert-havard.jpg" alt="Robert A. Havard, MD"></div>
-            <div class="leader-card-info">
-              <h3 class="leader-card-name">Robert A. Havard, MD</h3>
-            </div>
-          </div>
-          </a>
-
-          <a href="providers/david-warner.html" class="leader-card-link">
-          <div class="leader-card">
-            <div class="leader-card-photo"><img src="images/provider-david-warner.jpg" alt="David E. Warner, MD"></div>
-            <div class="leader-card-info">
-              <h3 class="leader-card-name">David E. Warner, MD</h3>
-              <p class="leader-card-role">Secretary</p>
-            </div>
-          </div>
-          </a>
-
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -421,7 +428,7 @@
       <div class="contact-overlay"></div>
     </div>
     <div class="container contact-inner">
-      <h2 class="contact-heading">Ready to learn more about your care options?</h2>
+      <h2 class="contact-heading">Learn More About Your Care Options</h2>
       <a href="tel:8012690231" class="btn btn--white">
         <span class="material-symbols-rounded">phone</span>
         Call 801.269.0231
@@ -460,7 +467,7 @@
           <div class="footer-col"><h4 class="footer-col-title">Research</h4><ul class="footer-links"><li><a href="clinical-trials.html">Clinical Trials</a></li><li><a href="programs-and-services.html">Programs</a></li><li><a href="#">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
         </div>
         <div class="footer-contact">
-          <p class="footer-address">10808 S. River Front Parkway, Ste. 400<br>South Jordan, UT 84095</p>
+          <p class="footer-address">10808 S. River Front Pkwy., Ste. 400<br>South Jordan, UT 84095</p>
           <div class="footer-contact-info">
             <p><span class="footer-contact-label">Phone:</span> <a href="tel:8012690231">801.269.0231</a></p>
             <p><span class="footer-contact-label">Email:</span> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
