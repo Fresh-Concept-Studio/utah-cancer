@@ -101,19 +101,10 @@
 
       <p class="loc-empty" id="loc-empty" hidden>No clinics match your search. Try a different keyword or county.</p>
 
-      <!-- Region tabs — Utah is the default view -->
-      <div class="loc-tabs" role="tablist" aria-label="Locations by region">
-        <button type="button" class="loc-tab is-active" role="tab" id="loc-tab-utah"
-                aria-selected="true" aria-controls="loc-panel-utah" data-region="utah">
-          Utah <span class="loc-tab-count">13</span>
-        </button>
-      </div>
-
       <div class="loc-panels">
 
         <!-- Utah Locations (alphabetical) -->
-        <div class="loc-panel" id="loc-panel-utah" role="tabpanel"
-             aria-labelledby="loc-tab-utah" data-region="utah">
+        <div class="loc-panel">
           <div class="loc-grid">
 
             <a href="bountiful.html" class="loc-card" data-county="davis">
@@ -457,35 +448,27 @@
       });
     })();
 
-    // Region tabs + search/county filter (both scoped to the active tab)
+    // Search and county filters for all Utah locations
     (function() {
       var search = document.getElementById('loc-search');
       var county = document.getElementById('loc-county');
       var countEl = document.getElementById('loc-filter-count');
       var emptyEl = document.getElementById('loc-empty');
-      var tabs = Array.prototype.slice.call(document.querySelectorAll('.loc-tab'));
-      var panels = Array.prototype.slice.call(document.querySelectorAll('.loc-panel'));
-      var activeRegion = 'utah';
+      var cards = Array.prototype.slice.call(document.querySelectorAll('.loc-card'));
 
-      // Keep the full county list so it can be rebuilt per region
+      // Keep only counties represented by the current locations
       var allCounties = Array.prototype.map.call(county.options, function(o) {
         return { value: o.value, label: o.textContent };
       });
 
       // Pre-compute searchable haystack for each card
-      Array.prototype.forEach.call(document.querySelectorAll('.loc-card'), function(c) {
+      cards.forEach(function(c) {
         c.dataset.haystack = (c.textContent || '').toLowerCase().replace(/\s+/g, ' ');
       });
 
-      function activeCards() {
-        var panel = panels.filter(function(p) { return p.dataset.region === activeRegion; })[0];
-        return panel ? Array.prototype.slice.call(panel.querySelectorAll('.loc-card')) : [];
-      }
-
-      // Only offer counties that actually exist in the active region
       function syncCounties() {
         var present = {};
-        activeCards().forEach(function(c) { present[c.dataset.county] = true; });
+        cards.forEach(function(c) { present[c.dataset.county] = true; });
         var prev = county.value;
         county.innerHTML = '';
         allCounties.forEach(function(o) {
@@ -501,7 +484,6 @@
       function update() {
         var q = (search.value || '').trim().toLowerCase();
         var cty = county.value;
-        var cards = activeCards();
         var visible = 0;
         cards.forEach(function(c) {
           var matchCounty = !cty || c.dataset.county === cty;
@@ -514,35 +496,10 @@
         emptyEl.hidden = visible !== 0;
       }
 
-      function selectTab(region, moveFocus) {
-        activeRegion = region;
-        tabs.forEach(function(t) {
-          var on = t.dataset.region === region;
-          t.classList.toggle('is-active', on);
-          t.setAttribute('aria-selected', on ? 'true' : 'false');
-          t.tabIndex = on ? 0 : -1;
-          if (on && moveFocus) t.focus();
-        });
-        panels.forEach(function(p) { p.hidden = p.dataset.region !== region; });
-        syncCounties();
-        update();
-        // Map sits below the cards — keep its pins to this region only
-        if (window.UCSMapShowRegion) window.UCSMapShowRegion(region);
-      }
-
-      tabs.forEach(function(tab, i) {
-        tab.addEventListener('click', function() { selectTab(tab.dataset.region, false); });
-        tab.addEventListener('keydown', function(e) {
-          var step = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
-          if (!step) return;
-          e.preventDefault();
-          selectTab(tabs[(i + step + tabs.length) % tabs.length].dataset.region, true);
-        });
-      });
-
       search.addEventListener('input', update);
       county.addEventListener('change', update);
-      selectTab('utah', false);
+      syncCounties();
+      update();
     })();
 
     // Locations map — same data + styling as homepage
@@ -583,7 +540,7 @@
       var markers = [];
       var currentRegion = 'utah';
 
-      // Draw only the pins belonging to the region shown in the tabs above
+      // Draw the Utah location pins
       function renderRegion(region) {
         if (!map) return;
         markers.forEach(function(m) { m.setMap(null); });
@@ -610,12 +567,6 @@
 
         if (!bounds.isEmpty()) map.fitBounds(bounds, 60);
       }
-
-      // Called by the tab handler above; safe to call before the map has loaded
-      window.UCSMapShowRegion = function(region) {
-        currentRegion = region;
-        renderRegion(region);
-      };
 
       window.initUCSMap = function initUCSMap() {
         var el = document.getElementById('locations-map');
