@@ -2,10 +2,10 @@
 .story-slide--written .story-text::before { content: none; }
 .story-excerpt { font-size: 17px; line-height: 1.7; color: #4c5e68; margin-bottom: 20px; }
 .story-slide--written .story-quote { margin-bottom: 18px; }
-.story-slide--written .story-media img { object-fit: contain; }
+.story-slide--written .story-media img { object-fit: cover; object-position: center center; }
 .story-slide--written .story-media { background: #e9eff2; }
 .stories-index-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.stories-index-grid--two .stories-index-media img { object-fit: contain; background: #e9eff2; }
+.stories-index-grid--two .stories-index-media img { object-fit: cover; object-position: center center; background: #e9eff2; }
 .written-story .story-hero .container { max-width: 1100px; }
 .written-story .story-hero--detail { padding-bottom: 150px; }
 .written-story .story-detail-frame { max-width: 948px; margin: -90px auto 0; aspect-ratio: auto; box-shadow: none; }
