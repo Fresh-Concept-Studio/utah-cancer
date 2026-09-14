@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stories-written.css">
 </head>
 <body>
 
@@ -404,41 +405,29 @@
           </div>
         </div>
       </div>
-      <div class="stories-carousel" id="stories-carousel">
-        <article class="story-slide active">
-          <a href="stories/maria.html" class="story-media">
-            <img src="images/story-maria.jpg" alt="Maria S., breast cancer survivor, in her garden">
-            <span class="story-play"><span class="material-symbols-rounded">play_arrow</span> Watch Maria&rsquo;s story</span>
+      <div class="stories-carousel" id="stories-carousel" aria-live="polite" aria-label="Patient stories">
+        <article class="story-slide story-slide--written active" aria-label="1 of 2: Amy Jensen">
+          <a href="stories/amy-jensen.html" class="story-media" aria-label="Read Amy's story">
+            <img src="images/story-amy-jensen.jpg" alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy">
           </a>
           <div class="story-text">
-            <span class="story-kicker">Breast Cancer &middot; In Remission</span>
-            <blockquote class="story-quote">I walked in terrified. I walked out with a team that never let go of my hand.</blockquote>
-            <span class="story-name">Maria S. &middot; Salt Lake City</span>
-            <a href="stories/maria.html" class="story-link">Read Maria&rsquo;s story <span class="material-symbols-rounded">arrow_forward</span></a>
+            <span class="story-kicker">Breast cancer</span>
+            <h3 class="story-quote">Facing cancer while growing a family</h3>
+            <p class="story-excerpt">Amy navigated a breast cancer diagnosis during pregnancy with support from her family and care team.</p>
+            <span class="story-name">Amy Jensen</span>
+            <a href="stories/amy-jensen.html" class="story-link">Read Amy&rsquo;s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
           </div>
         </article>
-        <article class="story-slide">
-          <a href="stories/dale.html" class="story-media">
-            <img src="images/story-dale.jpg" alt="Dale R., lymphoma survivor, fly fishing at sunrise">
-            <span class="story-play"><span class="material-symbols-rounded">play_arrow</span> Watch Dale&rsquo;s story</span>
+        <article class="story-slide story-slide--written" aria-label="2 of 2: Dukhi Hong">
+          <a href="stories/dukhi-hong.html" class="story-media" aria-label="Read Dukhi's story">
+            <img src="images/story-dukhi-hong.jpg" alt="Dukhi Hong pictured with two loved ones" loading="lazy">
           </a>
           <div class="story-text">
-            <span class="story-kicker">Lymphoma &middot; Three Years Cancer-Free</span>
-            <blockquote class="story-quote">The river was waiting for me. So was the rest of my life.</blockquote>
-            <span class="story-name">Dale R. &middot; Ogden</span>
-            <a href="stories/dale.html" class="story-link">Read Dale&rsquo;s story <span class="material-symbols-rounded">arrow_forward</span></a>
-          </div>
-        </article>
-        <article class="story-slide">
-          <a href="stories/jasmine.html" class="story-media">
-            <img src="images/story-jasmine.jpg" alt="Jasmine K., Hodgkin lymphoma survivor, lacing up on the track">
-            <span class="story-play"><span class="material-symbols-rounded">play_arrow</span> Watch Jasmine&rsquo;s story</span>
-          </a>
-          <div class="story-text">
-            <span class="story-kicker">Hodgkin Lymphoma &middot; Survivor</span>
-            <blockquote class="story-quote">Treatment didn&rsquo;t put my life on pause. My team kept me running.</blockquote>
-            <span class="story-name">Jasmine K. &middot; Provo</span>
-            <a href="stories/jasmine.html" class="story-link">Read Jasmine&rsquo;s story <span class="material-symbols-rounded">arrow_forward</span></a>
+            <span class="story-kicker">Small cell lung cancer</span>
+            <h3 class="story-quote">A milestone of hope</h3>
+            <p class="story-excerpt">At 84, Dukhi marked her 100th immunotherapy treatment with the people who had supported her along the way.</p>
+            <span class="story-name">Dukhi Hong</span>
+            <a href="stories/dukhi-hong.html" class="story-link">Read Dukhi&rsquo;s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
           </div>
         </article>
       </div>
@@ -755,6 +744,7 @@
         var dot = document.createElement('button');
         dot.className = 'stories-dot' + (i === 0 ? ' active' : '');
         dot.setAttribute('aria-label', 'Go to story ' + (i + 1));
+        dot.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
         dot.addEventListener('click', function() { goTo(i); });
         dotsWrap.appendChild(dot);
       });
@@ -763,9 +753,11 @@
       function goTo(i) {
         slides[current].classList.remove('active');
         dots[current].classList.remove('active');
+        dots[current].setAttribute('aria-pressed', 'false');
         current = (i + slides.length) % slides.length;
         slides[current].classList.add('active');
         dots[current].classList.add('active');
+        dots[current].setAttribute('aria-pressed', 'true');
       }
 
       document.getElementById('story-prev').addEventListener('click', function() { goTo(current - 1); });

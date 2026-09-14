@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient Stories - Utah Cancer Specialists</title>
+  <title>Dukhi&rsquo;s Story - Utah Cancer Specialists</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&family=Almarai&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../provider.css">
   <link rel="stylesheet" href="../stories-written.css">
+  <meta name="description" content="At 84, Dukhi marked her 100th immunotherapy treatment with the people who had supported her along the way.">
 </head>
 <body>
 
@@ -62,35 +63,35 @@
   </header>
   <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
 
-  <!-- Stories Index Hero -->
-  <section class="story-hero">
-    <div class="container">
-      <span class="story-hero-kicker">Patient Stories</span>
-      <h1 class="story-hero-title">Every journey deserves to be told.</h1>
-      <p class="story-hero-byline">Personal experiences from the Utah Cancer Specialists community, shared in their original published context.</p>
-    </div>
-  </section>
-
-  <!-- Stories Grid -->
-  <section class="stories-index">
-    <div class="container">
-      <div class="stories-index-grid stories-index-grid--two">
-        <a href="amy-jensen.html" class="stories-index-card">
-          <span class="stories-index-media"><img src="../images/story-amy-jensen.jpg" alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy"></span>
-          <span class="stories-index-body">
-            <span class="story-kicker">Breast cancer</span><span class="stories-index-quote">Facing cancer while growing a family</span>
-            <span class="story-name">Amy Jensen</span><span class="story-link">Read Amy&rsquo;s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
-          </span>
-        </a>
-        <a href="dukhi-hong.html" class="stories-index-card">
-          <span class="stories-index-media"><img src="../images/story-dukhi-hong.jpg" alt="Dukhi Hong pictured with two loved ones" loading="lazy"></span>
-          <span class="stories-index-body">
-            <span class="story-kicker">Small cell lung cancer</span><span class="stories-index-quote">A milestone of hope</span>
-            <span class="story-name">Dukhi Hong</span><span class="story-link">Read Dukhi&rsquo;s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
-          </span>
-        </a>
+  <main class="written-story">
+    <section class="story-hero story-hero--detail">
+      <div class="container">
+        <a href="index.html" class="story-back"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span> All Patient Stories</a>
+        <span class="story-hero-kicker">Small cell lung cancer</span><h1 class="story-hero-title">A milestone of hope</h1>
+        <p class="story-hero-byline">Dukhi Hong &middot; Originally published <time datetime="2025-03-31">March 31, 2025</time></p>
       </div>
-      <p class="stories-index-note">More stories are on the way. If you&rsquo;d like to share yours, <a href="../contact.html">we&rsquo;d be honored to listen</a>.</p>
+    </section>
+    <section class="story-detail-media" aria-label="Dukhi's photograph"><div class="container">
+      <figure class="story-detail-frame"><img src="../images/story-dukhi-hong.jpg" alt="Dukhi Hong pictured with two loved ones"></figure>
+    </div></section>
+    <article class="story-article" aria-label="Dukhi's story"><div class="container"><div class="story-article-body">
+      <p>In June 2019, a seizure brought Dukhi Hong to the emergency room. Doctors diagnosed small cell lung cancer that had spread to her brain, and estimated that she had six to nine months to live.</p>
+      <p>Six years later, at age 84, she reached her 100th immunotherapy treatment at Utah Cancer Specialists. Visits every three to four weeks had become occasions for her family to gather and celebrate time together.</p>
+      <p>Her oncologist, Dr. Stephan Kendall, described the milestone as extraordinary. The March 2025 account reported no signs of cancer in her lungs and minimal activity in her brain. Her response was unusual, not a prediction of how others would respond.</p>
+      <p>Dukhi moved from South Korea to Utah in 1965 and later raised four children as a single mother. Her daughter, Mitzi Maughan, described her as a source of strength and inspiration.</p>
+      <p>For the family, the hundredth treatment meant more than a number: it marked years of shared memories, and the chance for more time with someone they loved.</p>
+      <div class="story-source"><p>Adapted from <a href="https://utahcancer.com/a-milestone-of-hope/" target="_blank" rel="noopener">the original Utah Cancer Specialists article</a>. Original reporting credited to <a href="https://www.abc4.com/news/wasatch-front/utah-woman-100-cancer-treatments/" target="_blank" rel="noopener">ABC4</a>. Photo from Utah Cancer Specialists.</p><p>This account reflects the original publication date. Each patient&rsquo;s experience is different; individual results do not predict another person&rsquo;s outcome.</p></div>
+      <a class="story-link" href="amy-jensen.html">Read Amy&rsquo;s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+    </div></div></article>
+  </main>
+  <!-- Story CTA -->
+  <section class="story-cta">
+    <div class="container story-cta-inner">
+      <h2 class="story-cta-heading">Every story starts with a first appointment.</h2>
+      <div class="story-cta-actions">
+        <a href="../contact.html" class="btn btn--white"><span class="material-symbols-rounded">phone</span> Contact Us</a>
+        <a href="index.html" class="story-cta-link">More patient stories <span class="material-symbols-rounded">arrow_forward</span></a>
+      </div>
     </div>
   </section>
 

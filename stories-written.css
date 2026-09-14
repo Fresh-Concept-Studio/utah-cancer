@@ -1,0 +1,29 @@
+/* Written stories retain the UCS palette and type, without video affordances. */
+.story-slide--written .story-text::before { content: none; }
+.story-excerpt { font-size: 17px; line-height: 1.7; color: #4c5e68; margin-bottom: 20px; }
+.story-slide--written .story-quote { margin-bottom: 18px; }
+.story-slide--written .story-media img { object-fit: contain; }
+.story-slide--written .story-media { background: #e9eff2; }
+.stories-index-grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stories-index-grid--two .stories-index-media img { object-fit: contain; background: #e9eff2; }
+.written-story .story-hero .container { max-width: 1100px; }
+.written-story .story-hero--detail { padding-bottom: 150px; }
+.written-story .story-detail-frame { max-width: 948px; margin: -90px auto 0; aspect-ratio: auto; box-shadow: none; }
+.written-story .story-detail-frame img { position: static; height: auto; width: 100%; }
+.written-story .story-article { padding-top: 52px; }
+.written-story .story-article-body p:first-child::first-letter { float: none; font-size: inherit; line-height: inherit; padding: 0; font-family: inherit; }
+.written-story .story-source { margin-block: 36px; padding-top: 24px; border-top: 1px solid #d9e3e8; }
+.written-story .story-source p { font-size: 13px; line-height: 1.7; color: #52636d; margin-bottom: 14px; }
+.written-story .story-source a { color: #00476b; text-decoration: underline; text-underline-offset: 3px; }
+.story-link:focus-visible, .story-media:focus-visible, .stories-index-card:focus-visible, .stories-dot:focus-visible { outline: 3px solid #00476b; outline-offset: 5px; }
+@media (max-width: 700px) {
+  .stories-index-grid--two { grid-template-columns: 1fr; }
+  .written-story .story-hero--detail { padding-bottom: 100px; }
+  .written-story .story-detail-frame { margin-top: -55px; }
+  .written-story .story-article { padding-block: 36px 48px; }
+  .story-excerpt { font-size: 16px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-slide.active { animation: none; }
+  .story-media img, .stories-index-card { transition: none; }
+}
