@@ -12,37 +12,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="provider.css">
   <style>
-    /* Stats band */
-    .ct-stats { padding: 70px 0 30px; }
-    .ct-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      border-top: 1px solid #e8e4e0;
-      border-bottom: 1px solid #e8e4e0;
-    }
-    .ct-stat {
-      padding: 32px 28px;
-      border-right: 1px solid #e8e4e0;
-    }
-    .ct-stat:last-child { border-right: none; }
-    .ct-stat-num {
-      font-family: var(--font-heading);
-      font-weight: 400;
-      font-size: 48px;
-      line-height: 1;
-      letter-spacing: -0.029em;
-      color: #00476b;
-      margin-bottom: 10px;
-    }
-    .ct-stat-label {
-      font-family: var(--font-label);
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #5e8b9e;
-      opacity: 0.7;
-    }
-
     .ct-eyebrow {
       display: inline-block;
       font-family: var(--font-label);
@@ -382,9 +351,6 @@
     }
 
     @media (max-width: 1024px) {
-      .ct-stats { padding: 56px 0 24px; }
-      .ct-stat { padding: 24px 20px; }
-      .ct-stat-num { font-size: 40px; }
       .ct-programs { padding: 70px 0 56px; }
       .ct-programs-title { font-size: 34px; }
       .ct-programs-grid { grid-template-columns: 1fr; gap: 22px; }
@@ -398,11 +364,6 @@
       .ct-faq-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .ct-stats { padding: 40px 0 16px; }
-      .ct-stats-grid { grid-template-columns: 1fr; }
-      .ct-stat { border-right: none !important; border-bottom: 1px solid #e8e4e0; padding: 20px 0; }
-      .ct-stat:last-child { border-bottom: none; }
-      .ct-stat-num { font-size: 36px; }
       .ct-programs { padding: 56px 0 40px; }
       .ct-programs-title { font-size: 28px; letter-spacing: -1.2px; }
       .ct-program-brand-row { align-items: flex-start; flex-direction: column; gap: 14px; }
@@ -469,25 +430,6 @@
       <div class="sd-hero-actions">
         <a href="https://startresearch.com/mountain-region/" class="btn btn--white" target="_blank" rel="noopener">Explore START Trials <span class="material-symbols-rounded">arrow_forward</span></a>
         <a href="late-phase-trials.html" class="btn btn--outline-dark">View UCS Late-Phase Trials <span class="material-symbols-rounded">arrow_forward</span></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="ct-stats">
-    <div class="container">
-      <div class="ct-stats-grid">
-        <div class="ct-stat">
-          <div class="ct-stat-num">25+</div>
-          <div class="ct-stat-label">Years of research</div>
-        </div>
-        <div class="ct-stat">
-          <div class="ct-stat-num">50+</div>
-          <div class="ct-stat-label">Active trials</div>
-        </div>
-        <div class="ct-stat">
-          <div class="ct-stat-num">I&ndash;III</div>
-          <div class="ct-stat-label">Phase coverage</div>
-        </div>
       </div>
     </div>
   </section>
