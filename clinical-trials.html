@@ -16,7 +16,7 @@
     .ct-stats { padding: 70px 0 30px; }
     .ct-stats-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       border-top: 1px solid #e8e4e0;
       border-bottom: 1px solid #e8e4e0;
     }
@@ -383,11 +383,7 @@
 
     @media (max-width: 1024px) {
       .ct-stats { padding: 56px 0 24px; }
-      .ct-stats-grid { grid-template-columns: 1fr 1fr; }
       .ct-stat { padding: 24px 20px; }
-      .ct-stat:nth-child(odd) { border-right: 1px solid #e8e4e0; }
-      .ct-stat:nth-child(even) { border-right: none; }
-      .ct-stat:nth-child(-n+2) { border-bottom: 1px solid #e8e4e0; }
       .ct-stat-num { font-size: 40px; }
       .ct-programs { padding: 70px 0 56px; }
       .ct-programs-title { font-size: 34px; }
@@ -471,7 +467,7 @@
       <h1 class="sd-hero-title">Clinical Trials</h1>
       <p class="sd-hero-sub">For over 25 years, Utah Cancer Specialists has been advancing cancer care through clinical research &mdash; managing 50+ active trials and offering Utah&rsquo;s only community-based early-phase program.</p>
       <div class="sd-hero-actions">
-        <a href="https://startresearch.com/mountain-region/" class="btn btn--white" target="_blank" rel="noopener">Explore START Trials <span class="material-symbols-rounded">arrow_outward</span></a>
+        <a href="https://startresearch.com/mountain-region/" class="btn btn--white" target="_blank" rel="noopener">Explore START Trials <span class="material-symbols-rounded">arrow_forward</span></a>
         <a href="late-phase-trials.html" class="btn btn--outline-dark">View UCS Late-Phase Trials <span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
@@ -491,10 +487,6 @@
         <div class="ct-stat">
           <div class="ct-stat-num">I&ndash;III</div>
           <div class="ct-stat-label">Phase coverage</div>
-        </div>
-        <div class="ct-stat">
-          <div class="ct-stat-num">1 of 1</div>
-          <div class="ct-stat-label">Utah community-based Phase I</div>
         </div>
       </div>
     </div>
