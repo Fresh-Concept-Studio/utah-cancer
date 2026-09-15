@@ -103,7 +103,7 @@ if fileManager.fileExists(atPath: inputURL.path, isDirectory: &isDirectory), isD
         includingPropertiesForKeys: nil,
         options: [.skipsHiddenFiles]
     )
-    .filter { $0.lastPathComponent.hasPrefix("provider-") && ["jpg", "jpeg", "png"].contains($0.pathExtension.lowercased()) }
+    .filter { ["jpg", "jpeg", "png", "webp"].contains($0.pathExtension.lowercased()) }
     .sorted { $0.lastPathComponent < $1.lastPathComponent }
 } else {
     inputs = [inputURL]
