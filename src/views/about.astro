@@ -1,5 +1,6 @@
 ---
 import { url } from '../lib/urls';
+import CountUpStat from '../components/CountUpStat.astro';
 ---
 <!-- Hero -->
   <section class="about-hero">
@@ -56,27 +57,27 @@ import { url } from '../lib/urls';
         <h2 class="about-mission-title" style="margin-bottom: 36px;">The scope of our impact</h2>
         <div class="numbers-grid">
           <div class="number-item">
-            <div class="number-value">30+</div>
+            <CountUpStat value={30} suffix="+" />
             <div class="number-label">Years serving Utah families since 1994</div>
           </div>
           <div class="number-item">
-            <div class="number-value">13</div>
+            <CountUpStat value={13} />
             <div class="number-label">Locations across Utah</div>
           </div>
           <div class="number-item">
-            <div class="number-value">60+</div>
+            <CountUpStat value={60} suffix="+" />
             <div class="number-label">Physicians and advanced practitioners</div>
           </div>
           <div class="number-item">
-            <div class="number-value">50+</div>
+            <CountUpStat value={50} suffix="+" />
             <div class="number-label">Active clinical trials at any given time</div>
           </div>
           <div class="number-item">
-            <div class="number-value">250+</div>
+            <CountUpStat value={250} suffix="+" />
             <div class="number-label">Dedicated employees across all locations</div>
           </div>
           <div class="number-item">
-            <div class="number-value">100%</div>
+            <CountUpStat value={100} suffix="%" />
             <div class="number-label">Board-certified oncology specialists</div>
           </div>
         </div>
