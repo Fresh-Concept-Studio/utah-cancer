@@ -25,6 +25,10 @@ Astro 7 manages local servers in the background. Use `npx astro dev stop` and `n
 
 ## Where to edit
 
+For browser-based edits with an approval step before live publication, see the
+[SiteAdjust editing guide](docs/siteadjust.md). Its dedicated workflow rebuilds
+and publishes the exact approved source revision to GitHub Pages.
+
 | Change | Source |
 | --- | --- |
 | Navigation and category labels | `src/data/navigation.ts` |

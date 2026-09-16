@@ -1,0 +1,68 @@
+# SiteAdjust publishing protocol: v1
+name: Publish approved SiteAdjust preview
+run-name: SiteAdjust ${{ inputs.siteadjust_publish_id }}
+on:
+  workflow_dispatch:
+    inputs:
+      siteadjust_sha:
+        description: Exact approved source commit
+        type: string
+        required: true
+      siteadjust_publish_id:
+        description: Unique approval identifier
+        type: string
+        required: true
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      SITEADJUST_SHA: ${{ inputs.siteadjust_sha }}
+      SITEADJUST_PUBLISH_ID: ${{ inputs.siteadjust_publish_id }}
+      TARGET_BRANCH: "main"
+    steps:
+      - name: Check approval identifiers
+        run: |
+          node -e 'if (!/^[a-f0-9]{40}$/.test(process.env.SITEADJUST_SHA) || !/^publish_[a-f0-9]{24}$/.test(process.env.SITEADJUST_PUBLISH_ID)) process.exit(1)'
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.siteadjust_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify approved commit is on the publishing branch
+        run: git merge-base --is-ancestor "$SITEADJUST_SHA" "origin/$TARGET_BRANCH"
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Install locked dependencies
+        if: hashFiles('package-lock.json') != ''
+        run: npm ci
+      - name: Validate and build approved source
+        run: npm run verify
+      - name: Prepare deployment artifact
+        run: |
+          node <<'NODE'
+          const fs = require('node:fs');
+          const path = require('node:path');
+          const destination = '.siteadjust-artifact';
+          fs.mkdirSync(destination, { recursive: true });
+          fs.cpSync('dist', destination, { recursive: true });
+          if (!fs.existsSync(path.join(destination, 'index.html'))) throw new Error('The build did not produce an index.html');
+          fs.writeFileSync(path.join(destination, 'siteadjust-deployment.json'), JSON.stringify({ revision: process.env.SITEADJUST_SHA, publishId: process.env.SITEADJUST_PUBLISH_ID }));
+          NODE
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: .siteadjust-artifact
+      - name: Deploy approved site
+        id: deployment
+        uses: actions/deploy-pages@v5
