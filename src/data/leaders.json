@@ -21,6 +21,27 @@
     }
   },
   {
+    "slug": "deann-angilau",
+    "name": "DeAnn Angilau, RN, OCN®",
+    "role": "Director of Clinical Services",
+    "photo": {
+      "src": "/images/leader-cutouts/leader-deann-angilau.webp",
+      "alt": "DeAnn Angilau",
+      "class": "provider-hero-photo provider-hero-photo--leader"
+    },
+    "sections": [
+      {
+        "id": "about",
+        "title": "About DeAnn Angilau",
+        "html": "<p class=\"provider-bio\">DeAnn Angilau is a Registered Nurse and Oncology Certified Nurse (OCN®) with more than 30 years of experience in oncology nursing, clinical operations, and healthcare leadership. She currently serves as Director of Clinical Services at Utah Cancer Specialists, where she oversees multi-site clinical operations, multidisciplinary teams, nurse navigation, quality and safety initiatives, and value-based care programs.</p> <p class=\"provider-bio\">DeAnn joined Utah Cancer Specialists in 1992 and has grown alongside the organization, beginning in direct patient care and advancing into leadership. Her extensive frontline oncology experience continues to shape her approach to clinical operations, staff education, program development, and patient care.</p> <p class=\"provider-bio\">She was drawn to healthcare by a desire to support people during some of the most difficult and vulnerable moments of their lives. Early in her nursing career, she discovered a passion for oncology and for the meaningful relationships that develop with patients and their families throughout the cancer journey. She has remained with UCS because of its commitment to providing high-quality, compassionate care and the opportunity to continually improve how patients are supported.</p> <p class=\"provider-bio\">Looking ahead, DeAnn is excited about the continued growth of Utah Cancer Specialists and the opportunity to develop innovative ways to provide exceptional, patient-centered care. She is especially passionate about expanding care coordination, navigation, supportive services, and value-based care programs that support patients throughout every stage of their cancer journey.</p> <p class=\"provider-bio\">For DeAnn, exceptional patient care begins with treating each patient as a person, not simply a diagnosis. She believes every patient has a unique story, needs, and concerns and deserves to feel seen, heard, and supported. Her philosophy is simple: provide safe, high-quality, compassionate care and treat every patient the way she would want her own family to be treated.</p> <p class=\"provider-bio\">Outside of work, DeAnn’s favorite place to be is with her family, especially her grandchildren. She enjoys family game nights, cheering on her grandkids at sporting events, and spending time with the youngest members of the family. She is also a big college football and basketball fan, enjoys Christian music, and considers anywhere with a beach, a beautiful sunset, and warm, sunny weather her happy place.</p>"
+      }
+    ],
+    "directoryPhoto": {
+      "src": "/images/leader-deann-angilau.jpg",
+      "alt": "DeAnn Angilau"
+    }
+  },
+  {
     "slug": "johnny-walker",
     "name": "Johnny Walker",
     "role": "Director of Research",

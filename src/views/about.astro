@@ -1,6 +1,8 @@
 ---
 import { url } from '../lib/urls';
 import CountUpStat from '../components/CountUpStat.astro';
+// HR total supplied by Sandy Jones on September 16, 2026.
+const employeeCount = 382;
 ---
 <!-- Hero -->
   <section class="about-hero">
@@ -73,7 +75,7 @@ import CountUpStat from '../components/CountUpStat.astro';
             <div class="number-label">Active clinical trials at any given time</div>
           </div>
           <div class="number-item">
-            <CountUpStat value={250} suffix="+" />
+            <CountUpStat value={employeeCount} />
             <div class="number-label">Dedicated employees across all locations</div>
           </div>
           <div class="number-item">
@@ -132,7 +134,7 @@ import CountUpStat from '../components/CountUpStat.astro';
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <div class="timeline-year">Today</div>
-            <div class="timeline-text">With 13 locations across Utah, and more than 250 team members, UCS is the largest community-based oncology practice in the Intermountain West — offering medical oncology, radiation therapy, clinical trials, and integrated support services.</div>
+            <div class="timeline-text">With 13 locations across Utah, and {employeeCount} team members, UCS is the largest community-based oncology practice in the Intermountain West — offering medical oncology, radiation therapy, clinical trials, and integrated support services.</div>
           </div>
         </div>
       </div>

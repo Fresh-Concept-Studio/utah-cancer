@@ -59,12 +59,7 @@
     "title": "Leadership",
     "cards": [
       {
-        "name": "DeAnn Angilau",
-        "role": "Director of Clinical Services",
-        "photo": {
-          "src": "/images/leader-deann-angilau.jpg",
-          "alt": "DeAnn Angilau"
-        }
+        "leader": "deann-angilau"
       },
       {
         "leader": "tym-gilson"
