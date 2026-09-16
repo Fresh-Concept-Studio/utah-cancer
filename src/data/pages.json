@@ -639,5 +639,45 @@
       ]
     },
     "component": "treatment-options"
+  },
+  "providers/dustin-boothe.html": {
+    "title": "Our Providers - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/providers/index.html",
+    "redirectBody": "<p>This provider profile is no longer available. <a href=\"/providers/index.html\">View our current providers.</a></p>"
+  },
+  "providers/grant-hunter.html": {
+    "title": "Our Providers - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/providers/index.html",
+    "redirectBody": "<p>This provider profile is no longer available. <a href=\"/providers/index.html\">View our current providers.</a></p>"
+  },
+  "providers/jeffrey-lee.html": {
+    "title": "Our Providers - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/providers/index.html",
+    "redirectBody": "<p>This provider profile is no longer available. <a href=\"/providers/index.html\">View our current providers.</a></p>"
+  },
+  "providers/rachel-shenker.html": {
+    "title": "Our Providers - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/providers/index.html",
+    "redirectBody": "<p>This provider profile is no longer available. <a href=\"/providers/index.html\">View our current providers.</a></p>"
   }
 }

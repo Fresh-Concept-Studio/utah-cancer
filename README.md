@@ -1,6 +1,6 @@
 # Utah Cancer Specialists
 
-Static Astro site. The build retains the existing 151 `.html` URLs, including directory indexes and four retired-clinic redirects. It runs without a production application server.
+Static Astro site. The build retains the existing 151 `.html` URLs, including directory indexes, four retired-clinic redirects, and four removed-provider redirects. It runs without a production application server.
 
 ## Local development
 
