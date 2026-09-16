@@ -1,0 +1,14 @@
+---
+import { mainPhone } from '../data/contact';
+import SharedContent from './SharedContent.astro';
+interface Props { contact: string }
+const { contact } = Astro.props;
+---
+<aside class="provider-sidebar">
+  <SharedContent name={contact} />
+  <div class="sidebar-card sidebar-card--dark">
+    <h3 class="sidebar-card-title"><span class="material-symbols-rounded" aria-hidden="true">calendar_today</span> Schedule a Visit</h3>
+    <p class="sidebar-card-desc">New and existing patients can request an appointment over the phone.</p>
+    <a href={mainPhone.href} class="btn btn--white btn--full"><span class="material-symbols-rounded" aria-hidden="true">phone</span> Call for an Appointment</a>
+  </div>
+</aside>

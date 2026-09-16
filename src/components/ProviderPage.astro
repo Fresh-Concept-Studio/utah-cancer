@@ -6,6 +6,7 @@ import { url, richHtml } from '../lib/urls';
 import DetailSections from './DetailSections.astro';
 import DetailTabs from './DetailTabs.astro';
 import SharedContent from './SharedContent.astro';
+import ProviderSidebar from './ProviderSidebar.astro';
 import ContentLink from './ContentLink.astro';
 interface Props { slug: string }
 const provider = providers.find(p => p.slug === Astro.props.slug);
@@ -28,7 +29,7 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
 <DetailTabs tabs={provider.tabs} />
 {provider.sections.length > 0 && <section class="provider-details"><div class="container provider-details-inner">
   <div class="provider-main"><DetailSections sections={provider.sections} /></div>
-  <SharedContent name={provider.sidebar} />
+  <ProviderSidebar contact={provider.sidebar} />
 </div></section>}
 <section class="provider-locations" id="locations"><div class="container">
   <h2 class="provider-section-title">Locations</h2>

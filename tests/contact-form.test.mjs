@@ -89,11 +89,18 @@ test('built contact form has a native fallback and all provider appointment call
   const phone = $('a[href="tel:8012629494"]').attr('href');
   assert.ok(phone);
   const providers = JSON.parse(fs.readFileSync('src/data/providers.json', 'utf8'));
-  for (const { slug } of providers) {
+  for (const { slug, sections } of providers) {
     const p = load(fs.readFileSync(`dist/providers/${slug}.html`, 'utf8'));
     const call = p('.provider-hero-actions a').first();
     assert.equal(call.attr('href'), phone, slug);
     assert.match(call.text(), /Call for an Appointment/);
     assert.equal(call.find('[aria-hidden="true"]').text(), 'phone');
+    if (sections.length) {
+      const schedule = p('.provider-sidebar .sidebar-card--dark');
+      assert.equal(schedule.length, 1, slug);
+      assert.equal(schedule.find('a').attr('href'), phone, slug);
+      assert.match(schedule.find('.sidebar-card-desc').text(), /over the phone/);
+      assert.match(schedule.find('a').text(), /Call for an Appointment/);
+    }
   }
 });
