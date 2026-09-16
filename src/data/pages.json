@@ -1,0 +1,641 @@
+{
+  "about.html": {
+    "title": "About Us - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/about.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Ready to learn more about your care options?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "about"
+  },
+  "clinical-trials.html": {
+    "title": "Clinical Trials - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/clinical-trials.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Interested in a clinical trial?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012816864",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.281.6864"
+        },
+        {
+          "attrs": {
+            "href": "mailto:research@utahcancer.com",
+            "class": "ct-contact-email"
+          },
+          "html": "research@utahcancer.com"
+        }
+      ],
+      "actionsClass": "ct-contact-actions"
+    },
+    "component": "clinical-trials"
+  },
+  "contact.html": {
+    "title": "Contact Us - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "contact"
+  },
+  "events/caregiver-workshop.html": {
+    "title": "Caregiver Workshop: Caring for Someone You Love - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-caregiver-workshop"
+  },
+  "events/holiday-gift-drive.html": {
+    "title": "Back-to-School Family Drive - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-holiday-gift-drive"
+  },
+  "events/index.html": {
+    "title": "Events - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [
+      "/scripts/events-index.js"
+    ],
+    "marquee": true,
+    "component": "events-index"
+  },
+  "events/nutrition-during-treatment.html": {
+    "title": "Nutrition During Treatment - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-nutrition-during-treatment"
+  },
+  "events/patient-appreciation-dinner.html": {
+    "title": "Annual Patient Appreciation Dinner - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-patient-appreciation-dinner"
+  },
+  "events/survivorship-support-group.html": {
+    "title": "Cancer Survivorship Support Group - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-survivorship-support-group"
+  },
+  "events/understanding-treatment-options.html": {
+    "title": "Understanding Your Treatment Options - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-understanding-treatment-options"
+  },
+  "events/walk-for-hope.html": {
+    "title": "Walk for Hope 5K - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-walk-for-hope"
+  },
+  "events/young-adult-meetup.html": {
+    "title": "Young Adult Patient Meetup - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "events-young-adult-meetup"
+  },
+  "index.html": {
+    "title": "Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/stories-written.css"
+    ],
+    "scripts": [
+      "/scripts/home.js"
+    ],
+    "marquee": true,
+    "cta": {
+      "heading": "Find the Right Care for You.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "/contact.html",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us"
+        }
+      ]
+    },
+    "component": "index"
+  },
+  "late-phase-trials.html": {
+    "title": "Late-Phase Clinical Trials - Utah Cancer Specialists",
+    "description": "Explore current Phase II and Phase III clinical trials available through Utah Cancer Specialists.",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/late-phase-trials.css"
+    ],
+    "scripts": [
+      "/scripts/late-phase-trials.js"
+    ],
+    "marquee": true,
+    "cta": {
+      "heading": "Could a clinical trial be right for you?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "mailto:research@utahcancer.com",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">mail</span> Contact the Research Team"
+        }
+      ]
+    },
+    "component": "late-phase-trials"
+  },
+  "leadership.html": {
+    "title": "Leadership - Utah Cancer Specialists",
+    "description": "Meet the executive team and directors who lead Utah Cancer Specialists, Utah's largest community-based oncology practice.",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/leadership.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Learn More About Your Care Options",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "leadership"
+  },
+  "locations/idaho-falls.html": {
+    "title": "Utah Locations - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/locations/index.html",
+    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
+  },
+  "locations/index.html": {
+    "title": "Our Locations - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [
+      "/scripts/locations.js"
+    ],
+    "marquee": true,
+    "cta": {
+      "heading": "Not sure which clinic to visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "locations-index"
+  },
+  "locations/madison.html": {
+    "title": "Utah Locations - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/locations/index.html",
+    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
+  },
+  "locations/teton.html": {
+    "title": "Utah Locations - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/locations/index.html",
+    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
+  },
+  "locations/wyoming.html": {
+    "title": "Utah Locations - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [],
+    "scripts": [],
+    "marquee": false,
+    "redirect": "/locations/index.html",
+    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
+  },
+  "newly-diagnosed.html": {
+    "title": "Newly Diagnosed - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/newly-diagnosed.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Have questions? We’re here to help.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "newly-diagnosed"
+  },
+  "patient-education.html": {
+    "title": "Patient Education - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/patient-education.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Questions about your care? We’re here to help.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "patient-education"
+  },
+  "patient-resources.html": {
+    "title": "Patient Resources - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/patient-resources.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Need help finding the right resource?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "patient-resources"
+  },
+  "physical-therapy.html": {
+    "title": "Physical Therapy - Utah Cancer Specialists",
+    "description": "Cancer-focused physical therapy at Utah Cancer Specialists Sandy Clinic. Personalized rehabilitation, exercise, and support during treatment and recovery.",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/physical-therapy.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "physical-therapy"
+  },
+  "programs-and-services.html": {
+    "title": "Programs & Services - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/programs-and-services.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Want to learn more about our programs?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "programs-and-services"
+  },
+  "providers/index.html": {
+    "title": "Our Providers - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [
+      "/scripts/providers-index.js"
+    ],
+    "marquee": true,
+    "component": "providers-index"
+  },
+  "radiation-oncology.html": {
+    "title": "Radiation Oncology - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Questions about radiation therapy?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "radiation-oncology"
+  },
+  "specialties/index.html": {
+    "title": "Types of Cancer - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [
+      "/scripts/specialties-index.js"
+    ],
+    "marquee": true,
+    "cta": {
+      "heading": "Contact us for more information.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "#",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us"
+        }
+      ]
+    },
+    "component": "specialties-index"
+  },
+  "stories/amy-jensen.html": {
+    "title": "Amy’s Story - Utah Cancer Specialists",
+    "description": "Amy navigated a breast cancer diagnosis during pregnancy with support from her family and care team.",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/stories-written.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "stories-amy-jensen"
+  },
+  "stories/dale.html": {
+    "title": "Dale’s Story - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "stories-dale"
+  },
+  "stories/dukhi-hong.html": {
+    "title": "Dukhi’s Story - Utah Cancer Specialists",
+    "description": "At 84, Dukhi marked her 100th immunotherapy treatment with the people who had supported her along the way.",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/stories-written.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "stories-dukhi-hong"
+  },
+  "stories/index.html": {
+    "title": "Patient Stories - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/stories-written.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "stories-index"
+  },
+  "stories/jasmine.html": {
+    "title": "Jasmine’s Story - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "stories-jasmine"
+  },
+  "stories/maria.html": {
+    "title": "Maria’s Story - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": false,
+    "component": "stories-maria"
+  },
+  "telehealth.html": {
+    "title": "Telehealth - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/telehealth.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Ready to schedule a telehealth visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "telehealth"
+  },
+  "treatment-options.html": {
+    "title": "Treatment Options - Utah Cancer Specialists",
+    "description": "",
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/treatment-options.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Ready to discuss your treatment options?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    },
+    "component": "treatment-options"
+  }
+}

@@ -1,0 +1,24 @@
+---
+import { url } from '../lib/urls';
+import { primaryLinks, menus, patientLinks } from '../data/navigation';
+interface Props { activeNav?: string[] }
+const { activeNav = [] } = Astro.props;
+---
+<header class="navbar">
+  <div class="container navbar-inner">
+    <a href={url('/index.html')} class="navbar-logo"><img src={url('/images/ucs-logo-white.svg')} alt="Utah Cancer Specialists" /></a>
+    <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="navbar-nav">
+      {primaryLinks.map(link => <a href={url(link.href)} class:list={['nav-link', {active: activeNav.includes(link.label)}]}>{link.label}</a>)}
+      {menus.map(menu => <div class="nav-dropdown">
+        <button class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
+        <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+          {menu.links.map(link => <a href={url(link.href)} class="nav-dropdown-item">{link.label}</a>)}
+        </div></div>
+      </div>)}
+      {patientLinks.map(link => <a href={link.href} target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">{link.icon}</span> {link.label}</a>)}
+      <a href={url('/index.html#foundation')} class="nav-btn-cta"><span class="material-symbols-rounded" aria-hidden="true">volunteer_activism</span> Donate Now</a>
+    </nav>
+  </div>
+</header>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>

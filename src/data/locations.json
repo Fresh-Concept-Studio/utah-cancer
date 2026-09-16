@@ -1,0 +1,964 @@
+[
+  {
+    "slug": "bountiful",
+    "title": "Bountiful Clinic",
+    "tag": "Medical Oncology",
+    "subtitle": "Lakeview Hospital Campus",
+    "image": {
+      "src": "/images/location-bountiful-new.jpg",
+      "alt": "Bountiful Clinic"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 520 E. Medical Dr., Ste. 100, Bountiful, UT 84010</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.296.6665</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8012966665",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Our Bountiful clinic is located on the Lakeview Hospital campus, bringing comprehensive medical oncology and hematology care to South Davis County. The clinic offers infusion therapy, laboratory services, and patient advocacy support in a comfortable, community-centered environment.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free parking is available on the Lakeview Hospital campus. The cancer center entrance is accessible from the main parking area.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012966665\">801.296.6665</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8012966665",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.296.6665"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 0,
+      "county": "davis",
+      "addressHtml": "520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.296.6665",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.8862,
+      "lng": -111.8707
+    }
+  },
+  {
+    "slug": "cancer-center",
+    "title": "Cancer Center",
+    "tag": "Medical & Radiation Oncology",
+    "subtitle": "Medical & Radiation Oncology",
+    "image": {
+      "src": "/images/location-cancer-center.jpg",
+      "alt": "Cancer Center"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 3838 S. 700 E., Ste. 100, Salt Lake City, UT 84106</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.269.0231</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">The UCS Cancer Center is one of our most comprehensive facilities, offering both medical and radiation oncology under one roof. Equipped with advanced imaging technology including the Omni Legend Digital PET/CT scanner, this clinic serves as a hub for diagnostic workups, treatment delivery, and clinical research. Supportive and rehabilitative care services are also available on site.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">monitor_heart</span> PET/CT Imaging </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free parking is available in the building lot. Accessible parking spaces are located near the main entrance.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "directory": {
+      "order": 1,
+      "county": "salt-lake",
+      "addressHtml": "3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.269.0231",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.7051,
+      "lng": -111.8714
+    }
+  },
+  {
+    "slug": "granger",
+    "title": "Granger Fairbourne Station",
+    "tag": "Medical Oncology",
+    "subtitle": "Medical Oncology & Hematology",
+    "image": {
+      "src": "/images/location-start.jpg",
+      "alt": "Granger Fairbourne Station"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 2965 W. 3500 S., 4th Floor, West Valley City, UT 84119</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.590.9900</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8015909900",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Located in the Fairbourne Station medical building in West Valley City, this clinic brings medical oncology and hematology care to Utah's west side. The fourth-floor clinic offers infusion therapy, laboratory services, and access to UCS patient advocates — making expert cancer care accessible to the communities of West Valley, Kearns, Magna, and Taylorsville.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free parking is available at Fairbourne Station. The building is accessible via elevator to the 4th floor.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015909900\">801.590.9900</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8015909900",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.590.9900"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 2,
+      "county": "salt-lake",
+      "title": "West Valley Clinic",
+      "addressHtml": "2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.590.9900",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.6941,
+      "lng": -111.9623
+    }
+  },
+  {
+    "slug": "imc",
+    "title": "Intermountain Medical Center",
+    "tag": "Medical Oncology",
+    "subtitle": "Medical Oncology & Hematology",
+    "image": {
+      "src": "/images/location-imc-new.jpg",
+      "alt": "Intermountain Medical Center"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 5131 S. Cottonwood St., Bldg. 3, Level 2, Murray, UT 84107</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.263.3416</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8012633416",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Our clinic within the Intermountain Medical Center campus in Murray provides medical oncology and hematology care within one of Utah's largest and most advanced hospital systems. Patients benefit from the seamless coordination between UCS physicians and the broader hospital resources, including imaging, surgical services, and emergency care.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Parking is available in the IMC campus garages. Follow signs to Building 3, then take the elevator to Level 2.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">5131 S. Cottonwood St., Bldg. 3, Level 2<br>Murray, UT 84107</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012633416\">801.263.3416</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8012633416",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.263.3416"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 3,
+      "county": "salt-lake",
+      "title": "Murray Clinic",
+      "addressHtml": "5131 S. Cottonwood St., Bldg. 3, Level 2<br>Murray, UT 84107",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.263.3416",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.6592,
+      "lng": -111.8941
+    }
+  },
+  {
+    "slug": "jordan-valley",
+    "title": "Jordan Valley Cancer Center",
+    "tag": "Medical & Radiation Oncology",
+    "subtitle": "Holy Cross Hospital",
+    "image": {
+      "src": "/images/location-jordan-valley.jpg",
+      "alt": "Jordan Valley Cancer Center"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 3592 W. 9000 S., Ste. 200, West Jordan, UT 84088</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.562.8732</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8015628732",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">The Jordan Valley Cancer Center is a purpose-built, two-story facility opened in 2016 and designed around patient comfort. The hospitality-inspired environment replaces the sterile feel of a traditional medical office with natural healing elements of earth, water, and wood. A dual-level fireplace greets patients upon entry, serving as both a comfort and a wayfinding landmark. The clinic houses medical oncology, radiation oncology, infusion therapy, and clinical research under one roof.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free patient parking is available in the lot directly adjacent to the building. Accessible parking spaces are located near the main entrance on the ground level.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015628732\">801.562.8732</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.562.8733</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8015628732",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.562.8732"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 4,
+      "county": "salt-lake",
+      "title": "Jordan Valley Clinic",
+      "subtitle": "Holy Cross Hospital — Medical & Radiation Oncology",
+      "addressHtml": "3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.562.8732",
+      "badge": "Main Office"
+    },
+    "map": {
+      "lat": 40.5879,
+      "lng": -111.9768
+    }
+  },
+  {
+    "slug": "layton",
+    "title": "Layton Clinic",
+    "tag": "Medical & Radiation Oncology",
+    "subtitle": "Davis Hospital Campus",
+    "image": {
+      "src": "/images/location-layton.jpg",
+      "alt": "Layton Clinic"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 1492 Antelope Dr., Ste. 125, Layton, UT 84041</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.525.3022</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8015253022",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Located on the Davis Hospital campus, our Layton clinic provides both medical and radiation oncology services to Davis County and surrounding communities. Patients benefit from the full range of UCS treatment options — including access to clinical trials — without having to travel to Salt Lake City.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Parking is available on the hospital campus. Follow signs to the cancer center entrance.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1492 Antelope Dr., Ste. 125<br>Layton, UT 84041</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015253022\">801.525.3022</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8015253022",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.525.3022"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 5,
+      "county": "davis",
+      "subtitle": "Davis Hospital Campus — Medical & Radiation Oncology",
+      "addressHtml": "1492 Antelope Dr., Ste. 125<br>Layton, UT 84041",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.525.3022",
+      "badge": ""
+    },
+    "map": {
+      "lat": 41.0898,
+      "lng": -111.9947
+    }
+  },
+  {
+    "slug": "ogden",
+    "title": "Ogden Medical Plaza",
+    "tag": "Medical Oncology",
+    "subtitle": "Medical Oncology & Hematology",
+    "image": {
+      "src": "/images/location-ogden.jpg",
+      "alt": "Ogden Medical Plaza"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 425 E. 5350 S., Ste. 101, Ogden, UT 84405</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 385.423.2855</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:3854232855",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Our Ogden Medical Plaza clinic serves the Weber County community with medical oncology and hematology care. Conveniently located along the 5300 S. corridor, this clinic provides infusion therapy, on-site laboratory services, and the full support of the Utah Cancer Specialists care team — so patients in northern Utah can receive expert cancer care close to home.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free parking is available in the medical plaza lot. Accessible spaces are located near the building entrance.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">425 E. 5350 S., Ste. 101<br>Ogden, UT 84405</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3854232855\">385.423.2855</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:3854232855",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.423.2855"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 6,
+      "county": "weber",
+      "title": "Ogden Clinic",
+      "addressHtml": "425 E. 5350 S., Ste. 101<br>Ogden, UT 84405",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "385.423.2855",
+      "badge": ""
+    },
+    "map": {
+      "lat": 41.1661,
+      "lng": -111.9701
+    }
+  },
+  {
+    "slug": "pleasant-grove",
+    "title": "Pleasant Grove Clinic",
+    "tag": "Medical Oncology",
+    "subtitle": "Medical Oncology & Hematology",
+    "image": {
+      "src": "/images/location-pleasant-grove.jpg",
+      "alt": "Pleasant Grove Clinic"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 1076 N. County Blvd., Ste. D, Pleasant Grove, UT 84062</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.492.9934</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8014929934",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Our Pleasant Grove clinic extends UCS cancer care into northern Utah County. Located along County Boulevard, the clinic provides medical oncology, hematology, and infusion therapy services — bringing expert care to the communities of Pleasant Grove, Lindon, American Fork, and Highland.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free parking is available directly in front of the clinic building.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1076 N. County Blvd., Ste. D<br>Pleasant Grove, UT 84062</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014929934\">801.492.9934</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8014929934",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.492.9934"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 7,
+      "county": "utah",
+      "addressHtml": "1076 N. County Blvd., Ste. D<br>Pleasant Grove, UT 84062",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.492.9934",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.3748,
+      "lng": -111.7688
+    }
+  },
+  {
+    "slug": "salt-lake",
+    "title": "Salt Lake Clinic",
+    "tag": "Medical Oncology",
+    "subtitle": "Medical Oncology & Hematology",
+    "image": {
+      "src": "/images/location-salt-lake-highres.jpg",
+      "alt": "Salt Lake Clinic"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 389 S. 900 E., Ste. 100, Salt Lake City, UT 84102</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 385.347.5500</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:3853475500",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Centrally located near downtown Salt Lake City, this clinic provides medical oncology and hematology services in the heart of the city. Patients have convenient access to infusion therapy, genetic counseling, laboratory services, and the dedicated support of UCS patient advocates.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">family_history</span> Genetic Counseling </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Street parking and nearby surface lots are available. The building entrance is ADA accessible from the main sidewalk.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3853475500\">385.347.5500</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:3853475500",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.347.5500"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 8,
+      "county": "salt-lake",
+      "addressHtml": "389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "385.347.5500",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.7612,
+      "lng": -111.8649
+    }
+  },
+  {
+    "slug": "sandy-physical-therapy",
+    "title": "Sandy Clinic",
+    "tag": "",
+    "subtitle": "7390 Creek Rd., Ste. 104, Sandy, UT 84093",
+    "image": {
+      "src": "/images/location-sandy-clinic.png",
+      "alt": "Sandy Clinic building"
+    },
+    "metaHtml": "",
+    "actions": [],
+    "sections": [
+      {
+        "title": "Visit Sandy Clinic",
+        "html": "<p class=\"provider-bio\">Sandy Clinic offers cancer-focused physical therapy and rehabilitation at 7390 Creek Rd., Ste. 104 in Sandy. Call the clinic to ask about services or schedule your visit.</p> <a href=\"/physical-therapy.html\" class=\"btn btn--primary\">Explore Physical Therapy <span class=\"material-symbols-rounded\" aria-hidden=\"true\">arrow_forward</span></a>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday &amp; Wednesday</span><span>9:30 AM – 2:00 PM MST</span></li> <li><span>Tuesday &amp; Thursday</span><span>9:30 AM – 7:30 PM MST</span></li> </ul> <p class=\"provider-bio\">Please call to confirm availability before your visit.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h2 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h2> <p class=\"sidebar-contact-item\">7390 Creek Rd., Ste. 104<br>Sandy, UT 84093</p> <a href=\"https://www.google.com/maps/search/?api=1&amp;query=7390+Creek+Rd+Ste+104+Sandy+UT+84093\" target=\"_blank\" rel=\"noopener\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h2 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact the clinic</h2> <p class=\"sidebar-card-desc\">For questions and appointments, call our clinic team.</p> <a href=\"tel:8014569898\" class=\"btn btn--white btn--full\">Call 801.456.9898</a> </div>",
+    "page": {
+      "cta": null,
+      "mainLandmark": true
+    },
+    "directory": {
+      "order": 9,
+      "county": "salt-lake",
+      "subtitle": "Physical Therapy",
+      "addressHtml": "7390 Creek Rd., Ste. 104<br>Sandy, UT 84093",
+      "hoursHtml": "Mon &amp; Wed, 9:30 am – 2:00 pm MST<br>Tue &amp; Thu, 9:30 am – 7:30 pm MST",
+      "phone": "801.456.9898",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.61676,
+      "lng": -111.85668
+    }
+  },
+  {
+    "slug": "south-jordan",
+    "title": "South Jordan Clinic",
+    "tag": "Main Office",
+    "subtitle": "Riverfront Medical Campus",
+    "image": {
+      "src": "/images/location-south-jordan.jpg",
+      "alt": "South Jordan Clinic"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"> <span class=\"material-symbols-rounded\">location_on</span> 10808 S. River Front Pkwy., South Jordan, UT </span> <span class=\"loc-hero-meta-item\"> <span class=\"material-symbols-rounded\">phone</span> 801.269.0231 </span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Our South Jordan clinic is the main office and flagship location of Utah Cancer Specialists. Situated on the Riverfront Medical Campus, this full-service facility houses medical oncology, hematology, infusion therapy, on-site lab services, and clinical research in one connected space — so your entire care team is always steps away. Designed with patient comfort in mind, the clinic features private infusion suites, natural light throughout, and a dedicated support services team to help with scheduling, financial counseling, and every step of your care.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">monitor_heart</span> Genetic Counseling </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">payments</span> Financial Counseling </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>8:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>8:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>8:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>8:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>8:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Providers at this location",
+        "html": "<div class=\"loc-providers-grid\"> <a href=\"/providers/belisario-arango.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"> <img src=\"/images/provider-arango.jpg\" alt=\"Belisario A. Arango\"> </div> <div class=\"loc-provider-info\"> <h3>Belisario A. Arango, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/gregory-chipman.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Gregory C. Chipman, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/xylina-gregg.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Xylina T. Gregg, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/jose-pacheco.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Jose M. Pacheco, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/william-mckean.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>William B. McKean, PhD, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/lindsay-hunter.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Lindsay A. Hunter, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> </div> <a href=\"/providers/index.html\" class=\"loc-providers-more\"> See all providers <span class=\"material-symbols-rounded\">arrow_forward</span> </a>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Free patient parking is available in the covered garage directly adjacent to our building. Accessible parking spaces are located near the main entrance on level 1. Take the elevator to Suite 400. If you're arriving via public transit, the UTA TRAX Red Line stops at the Daybreak Parkway station, roughly half a mile from the clinic.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">location_on</span> Address </h3> <p class=\"sidebar-contact-item\"> 10808 S. River Front Pkwy.<br> Suite 400<br> South Jordan, UT 84095 </p> <a href=\"#\" class=\"btn btn--primary btn--full\"> <span class=\"material-symbols-rounded\">directions</span> Get Directions </a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">phone</span> Contact </h3> <p class=\"sidebar-contact-item\"> <strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a> </p> <p class=\"sidebar-contact-item\"> <strong>Fax:</strong> 801.269.0298 </p> <p class=\"sidebar-contact-item\"> <strong>Email:</strong> <a href=\"mailto:info@utcancer.com\">info@utcancer.com</a> </p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit </h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "mapPlaceholder": true
+  },
+  {
+    "slug": "st-marks",
+    "title": "St. Mark's Hospital",
+    "tag": "Radiation Oncology",
+    "subtitle": "Radiation Oncology",
+    "image": {
+      "src": "/images/location-st-marks.jpg",
+      "alt": "St. Mark's Hospital"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 1250 E. 3900 S., Ste. B-10, Salt Lake City, UT 84124</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.456.8401</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8014568401",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Our radiation oncology team at St. Mark's Hospital provides advanced radiation treatment using state-of-the-art technology including the TrueBeam Linear Accelerator. The clinic specializes in precise, image-guided radiation therapy for a wide range of cancer types, with treatment plans coordinated closely with your medical oncology team.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">blur_circular</span> IMRT </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radar</span> Stereotactic Radiosurgery </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">target</span> IGRT </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">visibility</span> Image-Guided Therapy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Patient parking is available on the hospital campus. Follow signs to the cancer center entrance at Suite B-10.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014568401\">801.456.8401</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8014568401",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.456.8401"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 10,
+      "county": "salt-lake",
+      "title": "St. Mark’s Hospital",
+      "addressHtml": "1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.456.8401",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.6862,
+      "lng": -111.8568,
+      "name": "St. Mark's Hospital"
+    }
+  },
+  {
+    "slug": "start",
+    "title": "START Mountain Region",
+    "tag": "Clinical Trials",
+    "subtitle": "Early-Phase Clinical Trials",
+    "image": {
+      "src": "/images/location-start.jpg",
+      "alt": "START Mountain Region"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 2965 W. 3500 S., 4th Floor E., West Valley City, UT 84119</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.907.4750</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:8019074750",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Established in 2020, the START Mountain Region center is Utah's only dedicated community-based early-phase clinical trial site. Part of the world's largest Phase I oncology research program, the center is led by Dr. Justin Call and gives patients across the Intermountain West access to cutting-edge investigational therapies. The program expands options for patients who have exhausted standard treatments and wish to explore emerging approaches.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> Phase I Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Phase II Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Investigational Therapies </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">labs</span> Molecular Testing </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">analytics</span> Biomarker Analysis </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Located on the 4th floor east wing of Fairbourne Station. Free parking is available in the building lot.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor E.<br>West Valley City, UT 84119</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8019074750\">801.907.4750</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8019074750",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.907.4750"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 11,
+      "county": "salt-lake",
+      "subtitle": "Clinical Trials",
+      "addressHtml": "2965 W. 3500 S., 4th Floor E.<br>West Valley City, UT 84119",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "801.907.4750",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.6944,
+      "lng": -111.962
+    }
+  },
+  {
+    "slug": "timpanogos",
+    "title": "Timpanogos Regional Hospital",
+    "tag": "Medical & Radiation Oncology",
+    "subtitle": "Medical & Radiation Oncology",
+    "image": {
+      "src": "/images/location-timpanogos.jpg",
+      "alt": "Timpanogos Regional Hospital"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 700 W. 800 N., Ste. 140, Orem, UT 84057</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 385.241.2293</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:3852412293",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">Located at Timpanogos Regional Hospital in Orem, this clinic serves Utah County with both medical and radiation oncology services. The hospital campus setting gives patients access to the full range of treatment options, and our team coordinates care closely with the hospital's surgical and diagnostic departments.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Parking is available on the Timpanogos Regional Hospital campus. Follow signage to the cancer center at Suite 140.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">700 W. 800 N., Ste. 140<br>Orem, UT 84057</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3852412293\">385.241.2293</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:3852412293",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.241.2293"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 12,
+      "county": "utah",
+      "title": "Orem Clinic",
+      "addressHtml": "700 W. 800 N., Ste. 140<br>Orem, UT 84057",
+      "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+      "phone": "385.241.2293",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.3139,
+      "lng": -111.7137
+    }
+  }
+]

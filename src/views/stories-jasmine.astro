@@ -1,0 +1,48 @@
+---
+import { url } from '../lib/urls';
+---
+<!-- Story Hero -->
+  <section class="story-hero story-hero--detail">
+    <div class="container">
+      <a href={url("/stories/index.html")} class="story-back"><span class="material-symbols-rounded">arrow_back</span> All Patient Stories</a>
+      <span class="story-hero-kicker">Hodgkin Lymphoma · Survivor</span>
+      <h1 class="story-hero-title">“Treatment didn’t put my life on pause. My team kept me running.”</h1>
+      <p class="story-hero-byline">Jasmine K. · Provo</p>
+    </div>
+  </section>
+
+  <!-- Story Media -->
+  <section class="story-detail-media">
+    <div class="container">
+      <div class="story-detail-frame">
+        <img src={url("/images/story-jasmine.jpg")} alt="Jasmine K. lacing up her running shoes on the track at dawn">
+        <button class="story-detail-play" type="button" aria-label="Watch Jasmine’s story">
+          <span class="material-symbols-rounded">play_arrow</span>
+        </button>
+        <span class="story-detail-soon">Video coming soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Article -->
+  <section class="story-article">
+    <div class="container">
+      <div class="story-article-body">
+        <p>At 27, Jasmine was training for her first marathon when a routine physical found something that wasn’t routine at all: Hodgkin lymphoma. “I remember thinking — I’m the healthiest person I know,” she says. “I run fifty miles a week. How is this happening?”</p>
+        <p>Her team at Utah Cancer Specialists never asked her to stop being a runner. They asked her what pace she wanted to set. Her treatment plan was built around her training calendar — infusions on Mondays so she could jog easy by Friday, bloodwork timed around her long runs, honest conversations about what her body could and couldn’t do each week.</p>
+        <p>“There were weeks I could barely walk to the mailbox,” she admits. “But my nurse would say, ‘That’s today. It’s not every day.’ They treated my goals like they were part of the medicine. Because they were.”</p>
+        <p>Eighteen months after her final treatment, Jasmine crossed the finish line of the Utah Valley Marathon. Her care team was at mile 26 with a sign. “Cancer is a chapter,” she says, lacing up at dawn like always. “It was never the whole story.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story CTA -->
+  <section class="story-cta">
+    <div class="container story-cta-inner">
+      <h2 class="story-cta-heading">Every story starts with a first appointment.</h2>
+      <div class="story-cta-actions">
+        <a href={url("/contact.html")} class="btn btn--white"><span class="material-symbols-rounded">phone</span> Contact Us</a>
+        <a href={url("/stories/index.html")} class="story-cta-link">More patient stories <span class="material-symbols-rounded">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>

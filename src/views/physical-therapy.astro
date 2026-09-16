@@ -1,0 +1,62 @@
+---
+import { url } from '../lib/urls';
+---
+<a class="pt-skip" href="#main-content">Skip to main content</a>
+
+  <main id="main-content" class="pt-page">
+    <section class="pt-hero">
+      <div class="pt-wrap pt-hero-grid">
+        <div class="pt-hero-copy">
+          <a class="pt-back" href={url("/patient-resources.html")}>Patient Resources <span aria-hidden="true">/</span></a>
+          <h1>Physical Therapy</h1>
+          <p class="pt-hero-lead">Support for movement, strength, and everyday life.</p>
+          <p>Cancer and its treatment can change how you feel and move. Our cancer-focused physical therapy program offers personalized support during treatment and recovery, with your everyday goals at the center of care.</p>
+          <a class="btn btn--white" href="tel:8014569898"><span class="material-symbols-rounded" aria-hidden="true">phone</span> Call 801.456.9898</a>
+          <p class="pt-hero-note">Physical therapy at Sandy Clinic</p>
+        </div>
+        <figure class="pt-hero-photo"><img src={url("/images/physical-therapy-care.png")} width="1024" height="1024" alt="A therapist supports a patient practicing a step exercise at Cancer Rehabilitation Centers"></figure>
+      </div>
+    </section>
+
+    <nav class="pt-section-nav" aria-label="On this page"><div class="pt-wrap">
+      <a href="#services">How we help</a><a href="#your-care">Your care</a><a href="#visit">Location &amp; appointments</a><a href="#questions">Common questions</a>
+    </div></nav>
+
+    <section id="services" class="pt-section pt-wrap">
+      <div class="pt-section-heading"><span class="pt-eyebrow">Cancer rehabilitation</span><h2>Care that supports your daily life.</h2><p>The services of Cancer Rehabilitation Centers (CRC) are now part of Utah Cancer Specialists. This specialized program brings physical therapy and individualized exercise together to support people affected by cancer.</p></div>
+      <div class="pt-services">
+        <article><span class="material-symbols-rounded" aria-hidden="true">directions_walk</span><h3>Movement &amp; mobility</h3><p>Work on range of motion, balance, and the physical abilities that help you move through your day.</p></article>
+        <article><span class="material-symbols-rounded" aria-hidden="true">battery_charging_full</span><h3>Energy &amp; endurance</h3><p>Explore exercise and energy-conservation strategies to help manage fatigue and support daily activity.</p></article>
+        <article><span class="material-symbols-rounded" aria-hidden="true">accessibility_new</span><h3>Symptoms &amp; function</h3><p>Receive support for pain, neuropathy, and other treatment-related challenges that affect everyday tasks.</p></article>
+      </div>
+    </section>
+
+    <section id="your-care" class="pt-care pt-section">
+      <div class="pt-wrap pt-care-grid">
+        <div><span class="pt-eyebrow">A plan built around you</span><h2>Your starting point.<br>Your goals. Your pace.</h2><p>Physical therapy can be part of care from diagnosis through treatment and into recovery. Your therapist works with your oncology team to shape an individualized approach around your needs.</p><p>Whether your goal is returning to a familiar routine or feeling more confident with daily activities, care begins with understanding what matters to you.</p></div>
+        <ol class="pt-steps">
+          <li><span class="pt-step-num" aria-hidden="true">01</span><div><h3>Start with an assessment</h3><p>Talk through your health history, previous activity, current abilities, and personal goals with a physical therapist.</p></div></li>
+          <li><span class="pt-step-num" aria-hidden="true">02</span><div><h3>Build your care plan</h3><p>Your assessment guides a personalized program of physical therapy and exercise.</p></div></li>
+          <li><span class="pt-step-num" aria-hidden="true">03</span><div><h3>Move forward with support</h3><p>Recovery is different for everyone. Your care focuses on function and quality of life, without a one-size-fits-all timeline.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="visit" class="pt-section pt-wrap">
+      <div class="pt-visit">
+        <div class="pt-visit-copy"><span class="pt-eyebrow">Location &amp; appointments</span><h2>Visit us at Sandy Clinic.</h2><p>Call to schedule a physical therapy assessment, ask about insurance, or arrange a tour of the cancer rehabilitation facility.</p><address>7390 Creek Rd., Ste. 104<br>Sandy, UT 84093</address><a class="pt-phone" href="tel:8014569898">801.456.9898</a>
+          <dl class="pt-hours"><div><dt>Monday &amp; Wednesday</dt><dd>9:30 am – 2:00 pm</dd></div><div><dt>Tuesday &amp; Thursday</dt><dd>9:30 am – 7:30 pm</dd></div><div><dt>Friday – Sunday</dt><dd>Closed</dd></div></dl>
+          <p class="pt-small">Hours are Mountain Time. Please call to confirm availability.</p>
+          <div class="pt-visit-links"><a class="btn btn--primary" href="https://www.google.com/maps/search/?api=1&amp;query=7390+Creek+Rd+Ste+104+Sandy+UT+84093" target="_blank" rel="noopener">Get directions <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></a><a class="pt-text-link" href={url("/locations/sandy-physical-therapy.html")}>Sandy Clinic details <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="pt-visit-image"><img src={url("/images/location-sandy-clinic.png")} alt="Exterior of the building that houses Sandy Clinic" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section id="questions" class="pt-faq pt-section"><div class="pt-wrap pt-faq-grid"><div><span class="pt-eyebrow">Before your visit</span><h2>A few common questions.</h2><p>Have another question?<br><a class="pt-text-link" href="tel:8014569898">Talk with our team at 801.456.9898.</a></p></div><div class="pt-questions">
+      <details><summary>Do I need to finish cancer treatment first?</summary><p>No. The program supports patients during treatment as well as recovery. Talk with your care team about when physical therapy may be appropriate for you.</p></details>
+      <details><summary>What happens at my first visit?</summary><p>A physical therapist assesses your current function and discusses your activity history and goals. This helps establish a care plan tailored to you.</p></details>
+      <details><summary>Will my insurance cover physical therapy?</summary><p>The clinic works with a variety of insurance plans. Coverage and benefits vary, so call before your visit to confirm your plan and any requirements.</p></details>
+      <details><summary>Can I see the facility before getting started?</summary><p>Yes. Call the clinic to arrange a tour and learn more about the cancer-focused rehabilitation setting.</p></details>
+    </div></div></section>
+  </main>

@@ -1,0 +1,63 @@
+---
+import { url } from '../lib/urls';
+---
+<section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Newly Diagnosed</h1>
+      <p class="providers-hero-desc">You’re not in this alone. Our team is here to guide you from your very first visit through every step of treatment and beyond.</p>
+    </div>
+  </section>
+
+  <section class="loc-detail">
+    <div class="container loc-detail-inner">
+      <div class="loc-detail-main">
+
+        <div class="nd-hero-image">
+          <img src={url("/images/generated/firstSteps-hallway.png")} alt="A patient walks alongside a care advocate down a sunlit clinic hallway">
+        </div>
+
+        <div class="provider-section">
+          <h2 class="provider-section-title">Your First Steps</h2>
+          <div class="nd-firstSteps-text">
+            <p class="provider-bio">If you’ve just been diagnosed with cancer, you’re likely going through a whirlwind of emotions. We understand that it can be a very difficult time to collect your thoughts and make decisions. As a new patient at Utah Cancer Specialists, we want you to feel comfortable, cared for, and informed.</p>
+            <p class="provider-bio">While patients and their families have many decisions to make in a short time, our physicians and support staff are with you every step of this journey — from diagnosis through treatment and into survivorship.</p>
+          </div>
+        </div>
+
+        <div class="provider-section">
+          <h2 class="provider-section-title">What to Expect</h2>
+          <div class="provider-credentials nd-expect-grid">
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">person</span></div><div class="credential-content"><h3 class="credential-label">Meet Your Patient Advocate</h3><p>Your advocate is the first person you’ll meet. They coordinate insurance, financial assistance, and emotional support so you can focus on treatment.</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">stethoscope</span></div><div class="credential-content"><h3 class="credential-label">Physician Consultation</h3><p>Your oncologist will review your diagnosis, discuss treatment options, and answer your questions in a thorough initial consultation.</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">description</span></div><div class="credential-content"><h3 class="credential-label">Personalized Treatment Plan</h3><p>Your care team develops a plan tailored to your specific cancer type, stage, and personal goals — drawing on the latest evidence and technology.</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">diversity_3</span></div><div class="credential-content"><h3 class="credential-label">Ongoing Support</h3><p>From support groups and educational classes to nutritional guidance and financial counseling, we address every dimension of your well-being.</p></div></div>
+          </div>
+        </div>
+
+        <div class="provider-section">
+          <h2 class="provider-section-title">Resources for New Patients</h2>
+          <div class="spec-grid nd-resources-grid">
+            <a href={url("/patient-resources.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">folder_open</span></div><div class="spec-card-text"><h3>Patient Resources</h3><p>Helpful resources including financial assistance, support organizations, and community programs.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url("/patient-education.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">school</span></div><div class="spec-card-text"><h3>Patient Education</h3><p>Learn more about your diagnosis, treatment options, and what to expect during your care.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url("/treatment-options.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Understand the therapies available to you, from chemotherapy and radiation to immunotherapy and clinical trials.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url("/telehealth.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">videocam</span></div><div class="spec-card-text"><h3>Telehealth</h3><p>Connect with your care team from home through virtual visits on your smartphone or tablet.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="provider-sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card-title"><span class="material-symbols-rounded">phone</span> Contact</h3>
+          <p class="sidebar-contact-item"><strong>Phone:</strong> <a href="tel:8012690231">801.269.0231</a></p>
+          <p class="sidebar-contact-item"><strong>Email:</strong> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
+          <a href={url("/contact.html")} class="btn btn--primary btn--full"><span class="material-symbols-rounded">mail</span> Contact Us</a>
+        </div>
+        <div class="sidebar-card sidebar-card--dark">
+          <h3 class="sidebar-card-title"><span class="material-symbols-rounded">calendar_today</span> Schedule a Visit</h3>
+          <p class="sidebar-card-desc">Request an appointment with one of our specialists.</p>
+          <a href="#" class="btn btn--white btn--full">Request Appointment</a>
+        </div>
+      </aside>
+    </div>
+  </section>

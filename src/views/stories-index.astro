@@ -1,0 +1,34 @@
+---
+import { url } from '../lib/urls';
+---
+<!-- Stories Index Hero -->
+  <section class="story-hero">
+    <div class="container">
+      <span class="story-hero-kicker">Patient Stories</span>
+      <h1 class="story-hero-title">Every journey deserves to be told.</h1>
+      <p class="story-hero-byline">Personal experiences from the Utah Cancer Specialists community, shared in their original published context.</p>
+    </div>
+  </section>
+
+  <!-- Stories Grid -->
+  <section class="stories-index">
+    <div class="container">
+      <div class="stories-index-grid stories-index-grid--two">
+        <a href={url("/stories/amy-jensen.html")} class="stories-index-card">
+          <span class="stories-index-media"><img src={url("/images/story-amy-jensen.jpg")} alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy"></span>
+          <span class="stories-index-body">
+            <span class="story-kicker">Breast cancer</span><span class="stories-index-quote">Facing cancer while growing a family</span>
+            <span class="story-name">Amy Jensen</span><span class="story-link">Read Amy’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
+          </span>
+        </a>
+        <a href={url("/stories/dukhi-hong.html")} class="stories-index-card">
+          <span class="stories-index-media"><img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones" loading="lazy"></span>
+          <span class="stories-index-body">
+            <span class="story-kicker">Small cell lung cancer</span><span class="stories-index-quote">A milestone of hope</span>
+            <span class="story-name">Dukhi Hong</span><span class="story-link">Read Dukhi’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
+          </span>
+        </a>
+      </div>
+      <p class="stories-index-note">More stories are on the way. If you’d like to share yours, <a href={url("/contact.html")}>we’d be honored to listen</a>.</p>
+    </div>
+  </section>

@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Physician Executive Committee",
+    "cards": [
+      {
+        "provider": "jason-stinnett",
+        "role": "President",
+        "photo": {
+          "src": "/images/provider-jason-stinnett.jpg",
+          "alt": "Jason M. Stinnett, MD"
+        }
+      },
+      {
+        "provider": "nitin-chandramouli",
+        "role": "",
+        "photo": {
+          "src": "/images/provider-nitin-chandramouli.jpg",
+          "alt": "Nitin B. Chandramouli, MD, FACP"
+        }
+      },
+      {
+        "provider": "robert-havard",
+        "role": "",
+        "photo": {
+          "src": "/images/provider-robert-havard.jpg",
+          "alt": "Robert A. Havard, MD"
+        }
+      },
+      {
+        "provider": "david-warner",
+        "role": "Secretary",
+        "photo": {
+          "src": "/images/provider-david-warner.jpg",
+          "alt": "David E. Warner, MD"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Executive Leadership",
+    "cards": [
+      {
+        "leader": "ravin-bisla"
+      },
+      {
+        "name": "Patrick Sheilds",
+        "role": "Chief Financial Officer",
+        "photo": {
+          "src": "/images/leader-cfo.jpg",
+          "alt": "Patrick Sheilds"
+        }
+      },
+      {
+        "leader": "kyle-kitchen"
+      }
+    ]
+  },
+  {
+    "title": "Leadership",
+    "cards": [
+      {
+        "name": "DeAnn Angilau",
+        "role": "Director of Clinical Services",
+        "photo": {
+          "src": "/images/leader-deann-angilau.jpg",
+          "alt": "DeAnn Angilau"
+        }
+      },
+      {
+        "leader": "tym-gilson"
+      },
+      {
+        "leader": "travis-gunther"
+      },
+      {
+        "leader": "ben-harkness"
+      },
+      {
+        "leader": "sandy-jones"
+      },
+      {
+        "leader": "teresa-leavitt"
+      },
+      {
+        "leader": "shannon-mcrae"
+      },
+      {
+        "leader": "rachelle-tonga"
+      },
+      {
+        "leader": "stephanie-waddoups"
+      },
+      {
+        "leader": "johnny-walker"
+      },
+      {
+        "leader": "mark-williams"
+      }
+    ]
+  }
+]

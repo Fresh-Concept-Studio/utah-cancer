@@ -1,0 +1,25 @@
+---
+import locations from '../data/locations.json';
+import { url, richHtml } from '../lib/urls';
+import DetailSections from './DetailSections.astro';
+import ContentLink from './ContentLink.astro';
+interface Props { slug: string }
+const location = locations.find(p => p.slug === Astro.props.slug);
+if (!location) throw new Error(`Unknown location: ${Astro.props.slug}`);
+---
+<section class="loc-hero">
+  <div class="loc-hero-bg"><img src={url(location.image.src)} alt={location.image.alt} /><div class="loc-hero-overlay"></div></div>
+  <div class="container loc-hero-inner">
+    <a href={url('/locations/index.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Locations</a>
+    {location.tag && <span class="loc-hero-tag">{location.tag}</span>}
+    <h1 class="loc-hero-title">{location.title}</h1>
+    {location.subtitle && <p class="loc-hero-sub">{location.subtitle}</p>}
+    {location.metaHtml && <div class="loc-hero-meta" set:html={richHtml(location.metaHtml)} />}
+    {location.actions.length > 0 && <div class="loc-hero-actions">{location.actions.map(link => <ContentLink link={link} />)}</div>}
+  </div>
+</section>
+<section class="loc-detail"><div class="container loc-detail-inner">
+  <div class="loc-detail-main"><DetailSections sections={location.sections} /></div>
+  <aside class="provider-sidebar" set:html={richHtml(location.sidebarHtml)} />
+</div></section>
+{location.mapPlaceholder && <section class="loc-map-section"><div class="loc-map-placeholder"><span class="material-symbols-rounded">map</span><p>Interactive map</p></div></section>}

@@ -1,0 +1,43 @@
+---
+import { url } from '../lib/urls';
+---
+<section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Patient Education</h1>
+      <p class="providers-hero-desc">Knowledge is power. Understanding your diagnosis and treatment options can ease uncertainty and help you make confident decisions about your care.</p>
+    </div>
+  </section>
+
+  <section style="padding:80px 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
+        <div>
+          <h2 class="about-mission-title">Learn About Your Cancer</h2>
+          <p class="provider-bio">Our specialists have curated educational resources to help you and your loved ones understand your cancer type, available treatments, potential side effects, and what to expect at each stage of your care.</p>
+          <p class="provider-bio">We believe informed patients are empowered patients. Whether you’re researching a new diagnosis or preparing for a specific treatment, the resources below can help guide your understanding.</p>
+          <div class="pe-image">
+            <img src={url("/images/generated/patient-education-hero.png")} alt="Hands at a sunlit desk with a tablet, notebook, and study materials">
+          </div>
+          <div class="spec-grid" style="margin-top:24px;">
+            <a href={url("/specialties/index.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">biotech</span></div><div class="spec-card-text"><h3>Types of Cancer We Treat</h3><p>Detailed information on 28+ cancer types and blood disorders.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url("/treatment-options.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Chemotherapy, radiation, immunotherapy, targeted therapy, and more.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url("/radiation-oncology.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">radiology</span></div><div class="spec-card-text"><h3>Radiation Oncology</h3><p>TrueBeam technology, PET/CT imaging, and treatment techniques.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url("/clinical-trials.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div><div class="spec-card-text"><h3>Clinical Trials</h3><p>How trials work, what to expect, and how to determine eligibility.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+          </div>
+        </div>
+        <aside class="pe-portal">
+          <h2 class="about-mission-title">Patient Portal</h2>
+          <p class="provider-bio">Utah Cancer Specialists offers secure, instant access to your Personal Health Record (PHR) through our Patient Portal. Your portal includes:</p>
+          <ul class="provider-list">
+            <li>Your diagnosis and treatment information</li>
+            <li>Current medications and dosages</li>
+            <li>Lab results and imaging reports</li>
+            <li>Educational resources about your condition</li>
+            <li>Online support and discussion groups</li>
+            <li>Secure messaging with your care team</li>
+          </ul>
+          <a href="https://www.navigatingcare.com/navigatingcare/" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:24px;"><span class="material-symbols-rounded">login</span> Log In to Patient Portal</a>
+        </aside>
+      </div>
+    </div>
+  </section>

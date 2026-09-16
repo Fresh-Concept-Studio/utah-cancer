@@ -1,0 +1,674 @@
+{
+  "intermountain-medical-center": {
+    "name": "Intermountain Medical Center",
+    "sublabel": "",
+    "addressHtml": "5131 S. Cottonwood ST., Building 3, Level 2<br>5131 S. Cottonwood ST., Building 3, Level 2<br>Murray, UT 84107",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "timpanogos-regional-hospital": {
+    "name": "Timpanogos Regional Hospital",
+    "sublabel": "",
+    "addressHtml": "700 W. 800 N. Ste. 340<br>700 W. 800 N. Ste. 340<br>Orem, UT 84057",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "salt-lake-clinic": {
+    "name": "Salt Lake Clinic",
+    "sublabel": "",
+    "addressHtml": "389 S. 900 E., Ste. 100<br>389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "bountiful-clinic": {
+    "name": "Bountiful Clinic",
+    "sublabel": "",
+    "addressHtml": "",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "lakeview-hospital-campus": {
+    "name": "Lakeview Hospital Campus",
+    "sublabel": "",
+    "addressHtml": "520 E. Medical Dr., Ste. 100<br>520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "jordan-valley-cancer-center": {
+    "name": "Jordan Valley Cancer Center",
+    "sublabel": "",
+    "addressHtml": "",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "holy-cross-hospital": {
+    "name": "Holy Cross Hospital",
+    "sublabel": "",
+    "addressHtml": "3592 W. 9000 S.; Ste. 200<br>3592 W. 9000 S.; Ste. 200<br>West Jordan, UT 84088",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "timpanogos-clinic": {
+    "name": "Timpanogos Clinic",
+    "sublabel": "",
+    "addressHtml": "",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "utah-valley-hospital": {
+    "name": "Utah Valley Hospital",
+    "sublabel": "",
+    "addressHtml": "395 W. Cougar Blvd., Ste. 104<br>Sorenson Legacy Tower, Bldg. 4<br>Sorenson Legacy Tower, Bldg. 4<br>395 W. Cougar Blvd., Ste. 104<br>Provo, UT 84604",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "layton-clinic": {
+    "name": "Layton Clinic",
+    "sublabel": "",
+    "addressHtml": "",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "davis-hospital-campus": {
+    "name": "Davis Hospital Campus",
+    "sublabel": "",
+    "addressHtml": "1492 Antelope Dr., Ste. 125<br>1492 Antelope Dr., Ste. 125<br>Layton, UT 84041",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "cancer-center": {
+    "name": "Cancer Center",
+    "sublabel": "",
+    "addressHtml": "3838 S. 700 E., Ste. 100<br>3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "granger-fairbourne-station-clinic": {
+    "name": "Granger Fairbourne Station Clinic",
+    "sublabel": "",
+    "addressHtml": "2965 W. 3500 S., 4th Floor<br>2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "radiation-oncology": {
+    "name": "Radiation Oncology",
+    "sublabel": "",
+    "addressHtml": "",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "ucs-cancer-center": {
+    "name": "UCS Cancer Center",
+    "sublabel": "",
+    "addressHtml": "3838 S. 700 E., Ste. 100<br>3838 S. 700 E., Ste. 100<br>Salt Lake City, Utah 84106",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "intermountain-medical-center-bldg-3": {
+    "name": "Intermountain Medical Center, Bldg. 3",
+    "sublabel": "",
+    "addressHtml": "5131 S. Cottonwood St., Level 2<br>5131 S. Cottonwood St., Level 2<br>Murray, Utah 84107",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "intermountain-medical-center-campus": {
+    "name": "Intermountain Medical Center Campus",
+    "sublabel": "",
+    "addressHtml": "5131 S. Cottonwood St., Ste. 200<br>5131 S. Cottonwood St., Ste. 200<br>Murray, UT 84107",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "south-jordan-clinic": {
+    "name": "South Jordan Clinic",
+    "sublabel": "Main Office",
+    "addressHtml": "10808 S. River Front Pkwy., Ste. 400<br>South Jordan, UT 84095",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "bountiful-clinic-2": {
+    "name": "Bountiful Clinic",
+    "sublabel": "",
+    "addressHtml": "Lakeview Hospital Campus<br>520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/bountiful.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "ogden-clinic": {
+    "name": "Ogden Clinic",
+    "sublabel": "",
+    "addressHtml": "425 E. 5350 S., Ste. 101<br>Ogden, UT 84405",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/ogden.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "timpanogos-regional-hospital-2": {
+    "name": "Timpanogos Regional Hospital",
+    "sublabel": "",
+    "addressHtml": "700 W. 800 N., Ste. 140<br>700 W. 800 N., Ste. 140<br>Orem, UT 84057",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "st-mark-s-hospital": {
+    "name": "St. Mark’s Hospital",
+    "sublabel": "",
+    "addressHtml": "1250 E. 3900 S., Ste. B-10<br>1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "holy-cross-davis-hospital": {
+    "name": "Holy Cross Davis Hospital",
+    "sublabel": "",
+    "addressHtml": "2132 N 1700 W, Suite B-101<br>2132 N 1700 W, Suite B-101<br>Layton, UT 84041",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "start-at-granger-faibourne-station": {
+    "name": "START at Granger Faibourne Station",
+    "sublabel": "",
+    "addressHtml": "2965 W. 3500 S., Fourth Floor-E.<br>2965 W. 3500 S., Fourth Floor-E.<br>West Valley, UT 84119",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "start-mountain-region-clinical-trials": {
+    "name": "START Mountain Region-Clinical Trials",
+    "sublabel": "",
+    "addressHtml": "2965 W. 3500 S., Fourth Floor<br>2965 W. 3500 S., Fourth Floor<br>West Valley City, UT 84119",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "ucs-at-granger-fairbourne-station": {
+    "name": "UCS at Granger Fairbourne Station",
+    "sublabel": "START",
+    "addressHtml": "Fourth floor-East<br>2965 W. 3500 S.<br>2965 W. 3500 S.<br>Fourth floor-East<br>West Valley, UT 84119",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "pleasant-grove-clinic": {
+    "name": "Pleasant Grove Clinic",
+    "sublabel": "",
+    "addressHtml": "1076 N County Blvd, Suite D<br>1076 N County Blvd, Suite D<br>Pleasant Grove, UT 84062",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "jordan-valley-cancer-center-2": {
+    "name": "Jordan Valley Cancer Center",
+    "sublabel": "",
+    "addressHtml": "3592 W. 9000 S., Ste. 100<br>3592 W. 9000 S., Ste. 100<br>West Jordan, UT 84088",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "provo-clinic": {
+    "name": "Provo Clinic",
+    "sublabel": "",
+    "addressHtml": "",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "murray-clinic": {
+    "name": "Murray Clinic",
+    "sublabel": "",
+    "addressHtml": "Intermountain Medical Center<br>5131 S. Cottonwood St., Building 3, Level 2<br>Murray, UT 84107",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span>801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/imc.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">location_on</span>View Clinic"
+      }
+    ]
+  },
+  "tooele-clinic": {
+    "name": "Tooele Clinic",
+    "sublabel": "NorthPointe Medical Park",
+    "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  },
+  "salt-lake-clinic-2": {
+    "name": "Salt Lake Clinic",
+    "sublabel": "",
+    "addressHtml": "389 S. 900 E. Ste. 100<br>389 S. 900 E. Ste. 100<br>Salt Lake City, UT 84102",
+    "actions": [
+      {
+        "attrs": {
+          "href": "tel:8012690231",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+      },
+      {
+        "attrs": {
+          "href": "/locations/index.html",
+          "class": "location-card-link"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      }
+    ]
+  }
+}

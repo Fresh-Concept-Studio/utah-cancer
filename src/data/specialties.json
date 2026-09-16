@@ -1,0 +1,2275 @@
+[
+  {
+    "slug": "benign-hematology",
+    "title": "Benign Hematology",
+    "category": "Blood & Bone Marrow",
+    "description": "Diagnosis and treatment of non-cancerous blood disorders including anemia and clotting disorders.",
+    "image": "/images/specialty-blood-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Not all blood disorders are cancer. Our hematologists also diagnose and manage benign conditions such as iron deficiency anemia, vitamin B12 deficiency, inherited and acquired clotting disorders, immune thrombocytopenia, and other non-malignant hematologic conditions.</p> <p class=\"provider-bio\">We provide thorough diagnostic workups and evidence-based management to help patients understand and treat their blood disorder effectively.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Persistent fatigue or pallor</li> <li>Easy bruising or prolonged bleeding</li> <li>Blood clots (DVT or PE)</li> <li>Heavy menstrual periods</li> <li>Recurrent nosebleeds</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC, iron studies, coagulation panels</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Specialized Testing</h3> <p>Thrombophilia panels, hemoglobin electrophoresis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>When indicated for unexplained cytopenias</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Iron or B12 Supplementation</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">bloodtype</span> Blood Transfusions</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Anticoagulation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Monitoring &amp; Management</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Do I need to see an oncologist for anemia?</summary> <p>A hematologist-oncologist can help when anemia is persistent, unexplained, or requires specialized evaluation. Many of our physicians are trained in both benign and malignant hematology.</p> </details> <details class=\"sd-faq-item\"> <summary>What is a thrombophilia workup?</summary> <p>A series of blood tests to evaluate inherited or acquired conditions that increase your risk of blood clots, which helps guide treatment with blood thinners.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 16,
+      "category": "blood",
+      "searchName": "Benign Hematology",
+      "icon": "monitor_heart",
+      "description": "Diagnosis and treatment of non-cancerous blood disorders including anemia and clotting disorders."
+    }
+  },
+  {
+    "slug": "bladder-cancer",
+    "title": "Bladder Cancer",
+    "category": "Common Cancers",
+    "description": "Comprehensive bladder cancer treatment including immunotherapy, chemotherapy, and surgical interventions.",
+    "image": "/images/specialty-kidney-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Bladder cancer ranges from superficial tumors that can be managed with outpatient procedures to muscle-invasive disease requiring aggressive multimodal treatment. Our medical oncologists work with urologic surgeons to provide a coordinated treatment approach at every stage.</p> <p class=\"provider-bio\">Immunotherapy has transformed the treatment of advanced bladder cancer, and our practice offers access to the latest checkpoint inhibitors and clinical trials.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Blood in the urine (hematuria)</li> <li>Frequent or urgent urination</li> <li>Pain or burning during urination</li> <li>Pelvic pain</li> <li>Back pain on one side</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT urogram, cystoscopy, and MRI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Transurethral resection with pathology</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>PD-L1 and FGFR testing for targeted therapy eligibility</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (FGFR)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What causes bladder cancer?</summary> <p>Smoking is the leading risk factor. Chemical exposures, chronic bladder infections, and certain medications also increase risk.</p> </details> <details class=\"sd-faq-item\"> <summary>What is intravesical therapy?</summary> <p>For non-muscle-invasive bladder cancer, treatment can be delivered directly into the bladder through a catheter — including BCG immunotherapy and chemotherapy.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 7,
+      "category": "common",
+      "searchName": "Bladder Cancer",
+      "icon": "medical_information",
+      "description": "Comprehensive treatment including immunotherapy, chemotherapy, and surgical interventions."
+    }
+  },
+  {
+    "slug": "blood-cancers",
+    "title": "Blood Cancers",
+    "category": "Blood & Bone Marrow",
+    "description": "Comprehensive care for leukemia, lymphoma, and other blood disorders with advanced treatment options.",
+    "image": "/images/specialty-blood-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Blood cancers encompass a broad group of malignancies including leukemias, lymphomas, and plasma cell disorders. Our hematology-oncology team has deep expertise in diagnosing and treating the full spectrum of blood cancers, from common conditions to rare subtypes.</p> <p class=\"provider-bio\">We use advanced molecular diagnostics to precisely classify each patient's disease and match them with the most effective treatment — including novel immunotherapies, targeted agents, and clinical trials.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Persistent fatigue and weakness</li> <li>Frequent or severe infections</li> <li>Unexplained bruising or bleeding</li> <li>Swollen lymph nodes</li> <li>Night sweats and fevers</li> <li>Unintended weight loss</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>Complete blood count, peripheral smear, and flow cytometry</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Aspirate and core biopsy with molecular studies</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>PET/CT for staging</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">labs</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Cytogenetics</h3> <p>Chromosome analysis and FISH testing</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is the difference between leukemia and lymphoma?</summary> <p>Leukemia originates in the bone marrow and blood, while lymphoma begins in the lymphatic system. Both are blood cancers but require different treatment approaches.</p> </details> <details class=\"sd-faq-item\"> <summary>Do you coordinate stem cell transplants?</summary> <p>Yes. For patients who need stem cell transplantation, we coordinate referrals to transplant centers and manage pre- and post-transplant care locally.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 10,
+      "category": "blood",
+      "searchName": "Blood Cancers",
+      "icon": "bloodtype",
+      "description": "Comprehensive care for leukemia, lymphoma, and other blood disorders."
+    }
+  },
+  {
+    "slug": "bone-cancers",
+    "title": "Bone Cancers (Osteosarcomas)",
+    "category": "Other Cancers & Conditions",
+    "description": "Comprehensive bone cancer care combining chemotherapy, surgery, and emerging treatments.",
+    "image": "/images/specialty-breast-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Primary bone cancers including osteosarcoma, Ewing sarcoma, and chondrosarcoma are rare but require specialized treatment. Our team coordinates with orthopedic oncology surgeons to deliver neoadjuvant and adjuvant chemotherapy around surgical resection.</p> <p class=\"provider-bio\">For patients with metastatic or recurrent bone cancers, we offer access to clinical trials and emerging therapies.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Bone pain that worsens over time</li> <li>Swelling or a palpable mass near a bone</li> <li>Fracture from weakened bone</li> <li>Limited range of motion</li> <li>Fatigue and weight loss</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>X-ray, MRI, CT, and bone scan</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Core needle or surgical biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Pathology</h3> <p>Histologic subtyping and grading</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Who gets bone cancer?</summary> <p>Osteosarcoma is most common in adolescents and young adults, while chondrosarcoma is more common in middle-aged adults. Ewing sarcoma primarily affects children and young adults.</p> </details> <details class=\"sd-faq-item\"> <summary>Is limb salvage possible?</summary> <p>Yes. Most patients with extremity bone cancers can be treated with limb-salvage surgery rather than amputation, especially when chemotherapy shrinks the tumor before surgery.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-3",
+    "relatedHtml": "",
+    "directory": {
+      "order": 26,
+      "category": "other",
+      "searchName": "Bone Cancers Osteosarcomas",
+      "icon": "orthopedics",
+      "description": "Comprehensive bone cancer care combining chemotherapy, surgery, and emerging treatments."
+    }
+  },
+  {
+    "slug": "bone-marrow-failure",
+    "title": "Bone Marrow Failure Syndromes",
+    "category": "Blood & Bone Marrow",
+    "description": "Expert care for aplastic anemia, MDS, and other bone marrow failure conditions.",
+    "image": "/images/specialty-blood-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Bone marrow failure syndromes include myelodysplastic syndromes (MDS), aplastic anemia, and related conditions where the bone marrow cannot produce enough healthy blood cells.</p> <p class=\"provider-bio\">Our hematologists use advanced molecular diagnostics to classify these conditions and offer treatments including growth factors, immunosuppressive therapy, hypomethylating agents, and transplant coordination.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Severe fatigue and weakness</li> <li>Frequent or serious infections</li> <li>Easy bruising and prolonged bleeding</li> <li>Shortness of breath</li> <li>Recurrent fevers</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Cellularity assessment with cytogenetics</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>Next-generation sequencing for prognostic mutations</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC, reticulocyte count, EPO level</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Hypomethylating Agents</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunosuppressive Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">bloodtype</span> Growth Factors &amp; Transfusions</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Transplant Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is MDS?</summary> <p>Myelodysplastic syndromes are conditions where bone marrow produces abnormal blood cells. MDS can range from mild to severe and may progress to acute leukemia in some cases.</p> </details> <details class=\"sd-faq-item\"> <summary>Is bone marrow transplant the only cure?</summary> <p>Stem cell transplant is the only curative option for many bone marrow failure syndromes, but not all patients are candidates. Other treatments can effectively manage the disease for years.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 15,
+      "category": "blood",
+      "searchName": "Bone Marrow Failure Syndromes",
+      "icon": "healing",
+      "description": "Expert care for aplastic anemia, MDS, and other bone marrow failure conditions."
+    }
+  },
+  {
+    "slug": "brain-cancers",
+    "title": "Brain Cancers",
+    "category": "Common Cancers",
+    "description": "Advanced treatment for primary and metastatic brain tumors using radiation and systemic therapies.",
+    "image": "/images/specialty-headneck-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Brain tumors — whether primary malignancies like gliomas or metastases from other cancers — require specialized, precise treatment. Our radiation oncologists offer stereotactic radiosurgery (SRS) and whole-brain radiation, while our medical oncologists manage systemic therapies tailored to the specific tumor type.</p> <p class=\"provider-bio\">We coordinate closely with neurosurgeons and neuro-oncology specialists to develop comprehensive treatment plans that address both the tumor and quality of life.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Persistent or worsening headaches</li> <li>Seizures (new onset)</li> <li>Vision or speech changes</li> <li>Balance or coordination problems</li> <li>Personality or cognitive changes</li> <li>Nausea or vomiting</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Brain MRI with contrast, CT, and PET</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Surgical biopsy with molecular markers (IDH, MGMT, 1p/19q)</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>Genomic testing to guide targeted therapy options</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radar</span> Stereotactic Radiosurgery</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy (Temozolomide)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is stereotactic radiosurgery?</summary> <p>SRS delivers highly focused radiation beams to a precise target in the brain, often completing treatment in a single session. Despite the name, it does not involve incisions — it is a non-invasive radiation technique.</p> </details> <details class=\"sd-faq-item\"> <summary>Can brain metastases be treated?</summary> <p>Yes. Many patients with brain metastases from other cancers can be effectively treated with SRS, whole-brain radiation, or systemic therapies that cross the blood-brain barrier.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 9,
+      "category": "common",
+      "searchName": "Brain Cancers",
+      "icon": "psychology",
+      "description": "Advanced treatment for primary and metastatic brain tumors using radiation and systemic therapies."
+    }
+  },
+  {
+    "slug": "breast-cancer",
+    "title": "Breast Cancer Treatment",
+    "category": "Common Cancers",
+    "description": "Personalized, multidisciplinary treatment plans combining advanced therapies and compassionate support for every stage of breast cancer.",
+    "image": "/images/specialty-breast.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#providers",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">group</span> Meet the Team"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#providers",
+        "label": "Providers"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Breast cancer is one of the most common cancers diagnosed in women, and with early detection and modern treatment, outcomes are better than ever. At Utah Cancer Specialists, our breast cancer program brings together medical oncologists, radiation oncologists, surgical partners, genetic counselors, and supportive-care specialists into a single coordinated team — so every patient receives a treatment plan built around her specific type, stage, and goals.</p> <p class=\"provider-bio\">Whether you've just been diagnosed or are seeking a second opinion, our team will walk you through every step, explain your options in clear language, and help you make confident, informed decisions about your care.</p> <div class=\"sd-stats\"> <div class=\"sd-stat\"> <div class=\"sd-stat-num\">1 in 8</div> <div class=\"sd-stat-label\">U.S. women diagnosed in their lifetime</div> </div> <div class=\"sd-stat\"> <div class=\"sd-stat-num\">99%</div> <div class=\"sd-stat-label\">5-year survival for localized disease</div> </div> <div class=\"sd-stat\"> <div class=\"sd-stat-num\">40+</div> <div class=\"sd-stat-label\">Clinical trials available</div> </div> </div>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Early Warning Signs",
+        "html": "<p class=\"provider-bio\">Many breast cancers are found through routine screening before symptoms appear. When symptoms do occur, they can include:</p> <ul class=\"provider-list\"> <li>A new lump or thickening in the breast or underarm</li> <li>Changes in the size, shape, or contour of the breast</li> <li>Skin changes such as dimpling, puckering, or redness</li> <li>Nipple changes, including inversion, pain, or discharge</li> <li>Unusual or persistent breast pain</li> <li>Swelling or tenderness in the underarm lymph nodes</li> </ul> <p class=\"provider-bio\">If you notice any of these changes, talk to your primary care provider or request a consultation directly with our team.</p>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Staging",
+        "html": "<p class=\"provider-bio\">Accurate diagnosis and staging are the foundation of effective treatment. Our team uses a comprehensive workup that may include:</p> <div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Diagnostic mammography, breast ultrasound, and breast MRI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Core needle biopsy with receptor (ER/PR/HER2) and genomic testing</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">family_history</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Genetic Counseling</h3> <p>BRCA1/2 and multigene panel testing when appropriate</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Staging Workup</h3> <p>PET/CT, bone scan, and lab studies to define stage and guide therapy</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<p class=\"provider-bio\">Breast cancer treatment is highly individualized. Your plan may combine several of the following approaches, delivered in the right sequence for your specific cancer.</p> <div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">cut</span> Surgical Care </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Chemotherapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">target</span> Targeted Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">balance</span> Hormone Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care </div> </div>"
+      },
+      {
+        "id": "providers",
+        "title": "Providers Who Treat Breast Cancer",
+        "html": "<div class=\"loc-providers-grid\"> <a href=\"/providers/belisario-arango.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"> <img src=\"/images/provider-arango.jpg\" alt=\"Belisario A. Arango\"> </div> <div class=\"loc-provider-info\"> <h3>Belisario A. Arango, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/lindsay-hunter.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Lindsay A. Hunter, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/xylina-gregg.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Xylina T. Gregg, MD</h3> <p>Medical Oncology &amp; Hematology</p> </div> </a> <a href=\"/providers/daniel-miller.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Daniel H. Miller, MD</h3> <p>Radiation Oncology</p> </div> </a> <a href=\"/providers/rachel-shenker.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Rachel F. Shenker, MD</h3> <p>Radiation Oncology</p> </div> </a> <a href=\"/providers/grant-hunter.html\" class=\"loc-provider-card\"> <div class=\"loc-provider-photo\"><div class=\"loc-provider-photo-placeholder\"><span class=\"material-symbols-rounded\">person</span></div></div> <div class=\"loc-provider-info\"> <h3>Grant K. Hunter, MD</h3> <p>Radiation Oncology</p> </div> </a> </div> <a href=\"/providers/index.html\" class=\"loc-providers-more\"> See all providers <span class=\"material-symbols-rounded\">arrow_forward</span> </a>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>When should I start breast cancer screening?</summary> <p>Most guidelines recommend annual screening mammograms starting at age 40, though women with family history or genetic risk factors may need to begin earlier. We're happy to help you build a screening plan that's right for your personal history.</p> </details> <details class=\"sd-faq-item\"> <summary>Will I need chemotherapy?</summary> <p>Not every patient needs chemotherapy. Modern genomic tests like Oncotype DX and MammaPrint help us determine which patients truly benefit — so many early-stage patients can safely avoid chemo and its side effects.</p> </details> <details class=\"sd-faq-item\"> <summary>How do I get a second opinion?</summary> <p>We welcome second-opinion visits. Simply call 801.269.0231 to schedule; our team will help gather your records and imaging so the visit is productive from day one.</p> </details> <details class=\"sd-faq-item\"> <summary>Do you offer clinical trials for breast cancer?</summary> <p>Yes. Through our START Program, patients have access to a growing portfolio of breast cancer clinical trials, including early-phase studies of novel targeted therapies and immunotherapy combinations.</p> </details> <details class=\"sd-faq-item\"> <summary>Is genetic testing covered by insurance?</summary> <p>Most insurance plans cover genetic testing when clinical criteria are met. Our genetic counselors will walk you through the process and help verify coverage before testing.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-4",
+    "relatedHtml": "<section class=\"sd-related\"> <div class=\"container\"> <h2 class=\"provider-section-title\">Related Specialties</h2> <div class=\"spec-grid\"> <a href=\"#\" class=\"spec-card\"> <div class=\"spec-card-icon\"><span class=\"material-symbols-rounded\">female</span></div> <div class=\"spec-card-text\"><h3>Ovarian Cancer</h3><p>Advanced treatment including surgery, chemotherapy, and targeted approaches.</p></div> </a> <a href=\"#\" class=\"spec-card\"> <div class=\"spec-card-icon\"><span class=\"material-symbols-rounded\">female</span></div> <div class=\"spec-card-text\"><h3>Uterine Cancer</h3><p>Specialized treatment with minimally invasive surgical options and targeted therapies.</p></div> </a> <a href=\"#\" class=\"spec-card\"> <div class=\"spec-card-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"spec-card-text\"><h3>Clinical Trials (START Program)</h3><p>Access to cutting-edge clinical trials and investigational treatments.</p></div> </a> </div> </div> </section>",
+    "directory": {
+      "order": 0,
+      "category": "common",
+      "searchName": "Breast Cancer",
+      "title": "Breast Cancer",
+      "icon": "favorite",
+      "description": "Personalized treatment plans combining advanced therapies and compassionate support for every stage."
+    },
+    "page": {
+      "title": "Breast Cancer Treatment - Utah Cancer Specialists"
+    }
+  },
+  {
+    "slug": "chronic-leukemias",
+    "title": "Chronic Leukemias",
+    "category": "Blood & Bone Marrow",
+    "description": "Long-term management of chronic lymphocytic and chronic myeloid leukemias.",
+    "image": "/images/specialty-blood-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Chronic leukemias — including chronic lymphocytic leukemia (CLL) and chronic myeloid leukemia (CML) — are slow-growing blood cancers that often require long-term management rather than aggressive upfront treatment.</p> <p class=\"provider-bio\">CML has been transformed by tyrosine kinase inhibitors, and CLL treatment has been revolutionized by BTK inhibitors and BCL-2 inhibitors. Our hematologists are experienced in selecting the right therapy and monitoring for optimal long-term outcomes.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Persistent fatigue</li> <li>Swollen lymph nodes</li> <li>Frequent infections</li> <li>Easy bruising or bleeding</li> <li>Unexplained weight loss</li> <li>Night sweats</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC, peripheral smear, flow cytometry</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>BCR-ABL for CML; IGHV, TP53, del(17p) for CLL</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>For staging and classification</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (TKIs, BTK, BCL-2)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy (when indicated)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">monitor_heart</span> Watch &amp; Wait</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Does chronic leukemia always need treatment?</summary> <p>Not always. Many CLL patients are monitored with a 'watch and wait' approach until treatment criteria are met. CML typically requires treatment at diagnosis with a TKI.</p> </details> <details class=\"sd-faq-item\"> <summary>Can CML be cured?</summary> <p>While most CML patients take TKI therapy long-term, some patients who achieve deep molecular remission may be eligible for treatment-free remission trials.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 14,
+      "category": "blood",
+      "searchName": "Chronic Leukemias",
+      "icon": "water_drop",
+      "description": "Long-term management of chronic lymphocytic and chronic myeloid leukemias."
+    }
+  },
+  {
+    "slug": "clinical-trials",
+    "title": "Clinical Trials (START Program)",
+    "category": "Other Cancers & Conditions",
+    "description": "Access to cutting-edge clinical trials and investigational treatments through the START Mountain Region program.",
+    "image": "/images/specialty-prostate-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Utah Cancer Specialists has been committed to advancing cancer care through clinical research for more than 25 years. We manage over 50 active clinical trials at any given time, spanning all phases of development from early Phase I through Phase III.</p> <p class=\"provider-bio\">Through the START Mountain Region program — established in 2020 and led by Dr. Justin Call — we offer Utah's only dedicated community-based early-phase clinical trial site, part of the world's largest Phase I medical oncology research program. Patients who have exhausted standard options or want access to the most novel therapies can explore trials right here in Utah.</p>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>Comprehensive genomic testing to match patients with appropriate trials</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biomarker Analysis</h3> <p>Specific biomarker requirements vary by trial</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Eligibility Assessment</h3> <p>Complete medical evaluation for trial enrollment</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Phase I Trials (START)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Phase II-III Trials</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">biotech</span> Novel Drug Combinations</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Agent Studies</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radar</span> Radiation Studies</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is a clinical trial?</summary> <p>A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed by an Institutional Review Board (IRB) and participation is always voluntary.</p> </details> <details class=\"sd-faq-item\"> <summary>Will I receive a placebo?</summary> <p>Most cancer clinical trials do not use placebos. When a placebo arm is included, patients always receive at least the current standard of care.</p> </details> <details class=\"sd-faq-item\"> <summary>How do I find out if I'm eligible?</summary> <p>Contact our clinical research team at 801.907.4750 (START) or 801.281.6864 (UCS Trials), or ask your oncologist about trial options at your next visit.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-3",
+    "relatedHtml": "",
+    "directory": {
+      "order": 27,
+      "category": "other",
+      "searchName": "Clinical Trials START Program",
+      "icon": "science",
+      "description": "Access to cutting-edge clinical trials and investigational treatments."
+    }
+  },
+  {
+    "slug": "colon-cancer",
+    "title": "Colon Cancer",
+    "category": "Gastrointestinal",
+    "description": "Advanced colon cancer care with individualized treatment plans including surgery, chemotherapy, and targeted therapies.",
+    "image": "/images/specialty-colon-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Colorectal cancer is the third most common cancer in the United States, but outcomes have improved significantly with modern screening, surgical techniques, and systemic therapies. Our team manages all stages from early-stage resectable disease through advanced metastatic colorectal cancer.</p> <p class=\"provider-bio\">Molecular profiling — including MSI, RAS, BRAF, and HER2 testing — guides our treatment decisions, ensuring each patient receives the most effective targeted therapy or immunotherapy available.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Change in bowel habits (diarrhea or constipation)</li> <li>Blood in the stool or rectal bleeding</li> <li>Persistent abdominal discomfort or cramping</li> <li>Unexplained weight loss</li> <li>Fatigue and weakness</li> <li>Feeling that the bowel does not empty completely</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT scan, PET/CT, and MRI of pelvis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Colonoscopy &amp; Biopsy</h3> <p>Tissue sampling with histopathology</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>MSI/MMR, KRAS, NRAS, BRAF, HER2</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">CEA Monitoring</h3> <p>Tumor marker tracking</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (Anti-EGFR, Anti-VEGF)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy (for MSI-H)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>When should I start colon cancer screening?</summary> <p>Current guidelines recommend screening colonoscopy beginning at age 45. If you have a family history of colorectal cancer or polyps, screening may need to start earlier.</p> </details> <details class=\"sd-faq-item\"> <summary>What does MSI-high mean for my treatment?</summary> <p>MSI-high (microsatellite instability-high) tumors respond exceptionally well to immunotherapy, sometimes achieving durable remissions even in advanced disease.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 17,
+      "category": "gi",
+      "searchName": "Colon Cancer",
+      "icon": "local_hospital",
+      "description": "Advanced care with individualized treatment plans including surgery, chemo, and targeted therapies."
+    }
+  },
+  {
+    "slug": "endocrine-tumors",
+    "title": "Endocrine Tumors",
+    "category": "Other Cancers & Conditions",
+    "description": "Specialized treatment for adrenal, pituitary, and neuroendocrine tumors.",
+    "image": "/images/specialty-breast-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Endocrine tumors arise from hormone-producing tissues and include neuroendocrine tumors (NETs), adrenal cancers, pituitary tumors, and carcinoid tumors. These cancers often require specialized knowledge of both oncology and endocrinology.</p> <p class=\"provider-bio\">Our team uses somatostatin receptor imaging (Gallium 68 DOTATATE PET) and targeted radionuclide therapy (Lutathera) alongside standard systemic treatments.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Hormonal symptoms (flushing, diarrhea, wheezing)</li> <li>Abdominal pain</li> <li>Unexplained weight changes</li> <li>Fatigue</li> <li>Skin changes</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Specialized Imaging</h3> <p>Ga68 DOTATATE PET/CT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Tissue sampling with Ki-67 grading</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biochemical Markers</h3> <p>Chromogranin A, 5-HIAA, and hormone levels</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Somatostatin Analogs</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> PRRT (Lutathera)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is a neuroendocrine tumor?</summary> <p>NETs arise from neuroendocrine cells found throughout the body. They can be slow-growing (low-grade) or aggressive (high-grade) and may produce excess hormones.</p> </details> <details class=\"sd-faq-item\"> <summary>What is Lutathera?</summary> <p>Lutathera (Lu-177 DOTATATE) is a targeted radionuclide therapy that delivers radiation directly to NET cells expressing somatostatin receptors.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-3",
+    "relatedHtml": "",
+    "directory": {
+      "order": 24,
+      "category": "other",
+      "searchName": "Endocrine Tumors",
+      "icon": "settings_accessibility",
+      "description": "Specialized treatment for adrenal, pituitary, and neuroendocrine tumors."
+    }
+  },
+  {
+    "slug": "esophageal-cancer",
+    "title": "Esophageal Cancer",
+    "category": "Gastrointestinal",
+    "description": "Expert care combining chemotherapy, radiation, and advanced surgical techniques for esophageal cancer.",
+    "image": "/images/specialty-colon-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Esophageal cancer includes squamous cell carcinoma and adenocarcinoma, each with distinct risk factors and treatment approaches. Our team uses a multimodal strategy combining chemotherapy, radiation, and surgery, with immunotherapy now playing an important role in advanced disease.</p> <p class=\"provider-bio\">For locally advanced tumors, neoadjuvant chemoradiation followed by surgery is the standard approach, and our radiation oncologists use advanced techniques to minimize toxicity.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Difficulty swallowing (dysphagia)</li> <li>Unintended weight loss</li> <li>Chest pain or discomfort</li> <li>Persistent heartburn or indigestion</li> <li>Hoarseness or chronic cough</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, PET/CT, and endoscopic ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Endoscopy &amp; Biopsy</h3> <p>EGD with tissue sampling</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>HER2, PD-L1, MSI</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Chemoradiation</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is Barrett's esophagus a risk factor?</summary> <p>Yes. Barrett's esophagus, caused by chronic acid reflux, increases the risk of esophageal adenocarcinoma. Regular surveillance endoscopy is recommended.</p> </details> <details class=\"sd-faq-item\"> <summary>What is the role of immunotherapy?</summary> <p>Checkpoint inhibitors are now part of standard treatment for advanced esophageal cancer and are also being studied as part of neoadjuvant regimens.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 20,
+      "category": "gi",
+      "searchName": "Esophageal Cancer",
+      "icon": "emergency",
+      "description": "Expert care combining chemotherapy, radiation, and advanced surgical techniques."
+    }
+  },
+  {
+    "slug": "head-neck-cancers",
+    "title": "Head & Neck Cancers",
+    "category": "Common Cancers",
+    "description": "Multidisciplinary treatment for cancers of the throat, mouth, sinuses, and other head and neck regions.",
+    "image": "/images/specialty-headneck-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Head and neck cancers include a diverse group of malignancies affecting the oral cavity, pharynx, larynx, sinuses, and salivary glands. Treatment requires a carefully coordinated approach that balances cancer control with preservation of critical functions like speech, swallowing, and breathing.</p> <p class=\"provider-bio\">Our radiation oncologists use advanced techniques like IMRT and IGRT to precisely target tumors while sparing surrounding healthy tissue, and our medical oncologists offer the latest immunotherapy and chemotherapy options.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>A sore in the mouth that does not heal</li> <li>Persistent sore throat or difficulty swallowing</li> <li>A lump in the neck</li> <li>Voice changes or hoarseness</li> <li>Ear pain or hearing changes</li> <li>Unexplained weight loss</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, MRI, PET/CT for staging</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Fine needle aspiration or surgical biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">HPV Testing</h3> <p>p16 immunohistochemistry for HPV status</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Functional Assessment</h3> <p>Speech and swallowing evaluation</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">blur_circular</span> IMRT</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is HPV related to head and neck cancer?</summary> <p>Yes. HPV-positive oropharyngeal cancers are increasingly common, particularly in younger patients. HPV-positive cancers generally respond better to treatment and have a more favorable prognosis.</p> </details> <details class=\"sd-faq-item\"> <summary>Will treatment affect my ability to speak or eat?</summary> <p>Our team prioritizes function preservation. Advanced radiation techniques minimize impact on speech and swallowing, and we provide rehabilitation support throughout treatment.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 5,
+      "category": "common",
+      "searchName": "Head and Neck Cancers",
+      "icon": "face",
+      "description": "Multidisciplinary treatment for cancers of the throat, mouth, sinuses, and more."
+    }
+  },
+  {
+    "slug": "kidney-cancer",
+    "title": "Kidney Cancer",
+    "category": "Common Cancers",
+    "description": "Specialized kidney cancer treatment combining immunotherapy, targeted therapy, and surgical options.",
+    "image": "/images/specialty-kidney-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Kidney cancer, particularly renal cell carcinoma, has seen dramatic advances in treatment with immunotherapy and targeted drug combinations. Our team uses molecular profiling to select the optimal systemic therapy and coordinates closely with urologic surgeons for cases requiring surgical management.</p> <p class=\"provider-bio\">For patients with metastatic disease, novel immunotherapy combinations have significantly improved outcomes, and we offer access to clinical trials testing the next generation of treatments.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Blood in the urine</li> <li>Pain in the side or lower back</li> <li>A mass or lump in the side or abdomen</li> <li>Unexplained weight loss</li> <li>Fatigue and intermittent fever</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT scan, MRI, and ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Core needle biopsy when indicated</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>Histologic subtyping and biomarker analysis</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (TKIs)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Combination Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is kidney cancer curable?</summary> <p>When caught early and confined to the kidney, surgical removal is often curative. Even advanced kidney cancer now has significantly improved survival with modern immunotherapy and targeted therapy combinations.</p> </details> <details class=\"sd-faq-item\"> <summary>What are TKI drugs?</summary> <p>Tyrosine kinase inhibitors (TKIs) are targeted drugs that block specific enzymes cancer cells need to grow. They are a cornerstone of advanced kidney cancer treatment, often combined with immunotherapy.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 8,
+      "category": "common",
+      "searchName": "Kidney Cancer",
+      "icon": "water_drop",
+      "description": "Specialized treatment combining immunotherapy, targeted therapy, and surgical options."
+    }
+  },
+  {
+    "slug": "liver-cancer",
+    "title": "Liver Cancer",
+    "category": "Gastrointestinal",
+    "description": "Expert liver cancer care featuring advanced interventional procedures, systemic therapies, and personalized treatment plans.",
+    "image": "/images/specialty-liver-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Hepatocellular carcinoma (HCC) and other liver cancers require a coordinated approach between medical oncologists, hepatologists, interventional radiologists, and surgeons. Treatment depends on liver function, tumor extent, and overall health.</p> <p class=\"provider-bio\">The introduction of immunotherapy-targeted therapy combinations has significantly improved outcomes in advanced HCC, and our practice offers access to these treatments along with clinical trials.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Abdominal pain or swelling</li> <li>Unexplained weight loss</li> <li>Loss of appetite</li> <li>Nausea or vomiting</li> <li>Jaundice</li> <li>Fatigue</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Triple-phase CT or MRI with contrast</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>When imaging is inconclusive</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">AFP Monitoring</h3> <p>Alpha-fetoprotein tumor marker</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Liver Function</h3> <p>Comprehensive liver panel and Child-Pugh scoring</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Systemic Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (TKIs)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical / Transplant Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What causes liver cancer?</summary> <p>Chronic hepatitis B or C, cirrhosis from any cause, heavy alcohol use, and non-alcoholic fatty liver disease are the leading risk factors.</p> </details> <details class=\"sd-faq-item\"> <summary>Is immunotherapy used for liver cancer?</summary> <p>Yes. Immunotherapy combined with targeted agents is now first-line treatment for advanced HCC, offering significant improvements in survival.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 23,
+      "category": "gi",
+      "searchName": "Liver Cancer",
+      "icon": "biotech",
+      "description": "Expert care featuring advanced interventional procedures and systemic therapies."
+    }
+  },
+  {
+    "slug": "lung-cancer",
+    "title": "Lung Cancer",
+    "category": "Common Cancers",
+    "description": "Comprehensive lung cancer care using the latest diagnostic tools and targeted therapies for the best possible outcomes.",
+    "image": "/images/specialty-lung-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Lung cancer remains one of the most common and serious cancers, but treatment has been transformed by advances in targeted therapy, immunotherapy, and precision radiation. At Utah Cancer Specialists, we use molecular profiling to identify the specific mutations driving your cancer, then match you with the most effective therapies available.</p> <p class=\"provider-bio\">Whether your diagnosis is non-small cell, small cell, or a rare subtype, our multidisciplinary team develops an individualized treatment plan that combines the latest evidence with compassionate, whole-person care.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Persistent cough that worsens over time</li> <li>Coughing up blood or rust-colored sputum</li> <li>Shortness of breath or wheezing</li> <li>Chest pain that worsens with deep breathing</li> <li>Unexplained weight loss and fatigue</li> <li>Recurrent respiratory infections</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Low-dose CT screening, PET/CT, and brain MRI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Molecular Testing</h3> <p>Tissue biopsy with comprehensive genomic profiling (NGS)</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biomarker Analysis</h3> <p>EGFR, ALK, ROS1, PD-L1, KRAS, and other actionable markers</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Pulmonary Function</h3> <p>Breathing tests to assess lung capacity before treatment</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radar</span> SBRT/SRS</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is lung cancer only caused by smoking?</summary> <p>No. While smoking is the leading risk factor, approximately 20% of lung cancer cases occur in people who have never smoked. Radon exposure, secondhand smoke, occupational chemicals, and genetic factors also play a role.</p> </details> <details class=\"sd-faq-item\"> <summary>What is targeted therapy?</summary> <p>Targeted therapy uses drugs designed to attack specific genetic mutations in cancer cells. Molecular testing of your tumor identifies which mutations are present, allowing us to match you with FDA-approved targeted drugs or clinical trials.</p> </details> <details class=\"sd-faq-item\"> <summary>Do you offer lung cancer screening?</summary> <p>Yes. We follow USPSTF guidelines recommending annual low-dose CT screening for adults aged 50-80 with a 20 pack-year smoking history. Talk to your primary care doctor or call us for a referral.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 2,
+      "category": "common",
+      "searchName": "Lung Cancer",
+      "icon": "air",
+      "description": "Comprehensive care using the latest diagnostic tools and targeted therapies for optimal outcomes."
+    }
+  },
+  {
+    "slug": "lymphomas",
+    "title": "Lymphomas",
+    "category": "Blood & Bone Marrow",
+    "description": "Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas using the latest immunotherapy and targeted approaches.",
+    "image": "/images/specialty-lymphoma-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Lymphomas are cancers of the lymphatic system and represent one of the most treatable forms of cancer. Our hematology-oncology team specializes in both Hodgkin lymphoma and the many subtypes of non-Hodgkin lymphoma, using molecular classification to guide treatment selection.</p> <p class=\"provider-bio\">Advances in immunotherapy, CAR-T cell coordination, and targeted agents have dramatically improved outcomes, and our practice offers access to the latest therapies through clinical trials and standard-of-care treatment.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Painless swollen lymph nodes in neck, armpit, or groin</li> <li>Persistent fatigue</li> <li>Unexplained fever and night sweats</li> <li>Unintended weight loss</li> <li>Itching without apparent cause</li> <li>Cough or shortness of breath</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Excisional lymph node biopsy with immunohistochemistry</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">PET/CT Imaging</h3> <p>Whole-body staging and treatment response assessment</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>Flow cytometry, FISH, and next-generation sequencing</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>LDH, beta-2 microglobulin, and CBC</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is the difference between Hodgkin and non-Hodgkin lymphoma?</summary> <p>Hodgkin lymphoma is characterized by the presence of Reed-Sternberg cells and typically follows a predictable pattern of spread. Non-Hodgkin lymphoma is more diverse with over 60 subtypes, each with different behavior and treatment approaches.</p> </details> <details class=\"sd-faq-item\"> <summary>Is lymphoma curable?</summary> <p>Many lymphomas are curable, especially Hodgkin lymphoma and certain aggressive non-Hodgkin lymphomas. Even indolent (slow-growing) lymphomas that may not be curable can often be managed effectively for many years.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 11,
+      "category": "blood",
+      "searchName": "Lymphomas",
+      "icon": "shield",
+      "description": "Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas."
+    }
+  },
+  {
+    "slug": "multiple-myeloma",
+    "title": "Multiple Myeloma",
+    "category": "Blood & Bone Marrow",
+    "description": "Specialized treatment including novel immunotherapies and stem cell transplant support for multiple myeloma.",
+    "image": "/images/specialty-blood-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Multiple myeloma is a cancer of plasma cells in the bone marrow. Treatment has advanced dramatically in recent years with the introduction of proteasome inhibitors, immunomodulatory drugs, monoclonal antibodies, and bispecific antibodies.</p> <p class=\"provider-bio\">Our team manages the full continuum of myeloma care — from smoldering myeloma surveillance through frontline treatment, transplant coordination, and management of relapsed disease.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Bone pain, especially in the spine or ribs</li> <li>Fatigue and weakness</li> <li>Frequent infections</li> <li>Kidney problems or elevated calcium</li> <li>Numbness or tingling in extremities</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood &amp; Urine Tests</h3> <p>SPEP, UPEP, free light chains, beta-2 microglobulin</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Plasma cell quantification with FISH cytogenetics</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>PET/CT, whole-body low-dose CT, or MRI for bone lesions</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Proteasome Inhibitors</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy (Monoclonal Antibodies)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Stem Cell Transplant Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is myeloma curable?</summary> <p>While myeloma is not yet considered curable for most patients, modern treatments have significantly extended survival. Many patients achieve deep remissions and live for years with good quality of life.</p> </details> <details class=\"sd-faq-item\"> <summary>What is a stem cell transplant?</summary> <p>Autologous stem cell transplant uses your own stem cells collected before high-dose chemotherapy, then returned to rebuild your bone marrow. It remains a key treatment for eligible myeloma patients.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 12,
+      "category": "blood",
+      "searchName": "Multiple Myeloma",
+      "icon": "accessibility_new",
+      "description": "Specialized treatment including novel immunotherapies and stem cell transplant support."
+    }
+  },
+  {
+    "slug": "myeloproliferative-disorders",
+    "title": "Myeloproliferative Disorders",
+    "category": "Blood & Bone Marrow",
+    "description": "Diagnosis and management of conditions where bone marrow produces too many blood cells.",
+    "image": "/images/specialty-blood-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Myeloproliferative neoplasms (MPNs) are a group of blood disorders in which the bone marrow overproduces red blood cells, white blood cells, or platelets. Conditions include polycythemia vera, essential thrombocythemia, and myelofibrosis.</p> <p class=\"provider-bio\">Our hematologists have extensive experience managing these chronic conditions, using targeted therapies like JAK inhibitors alongside careful monitoring to reduce complications and maintain quality of life.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Fatigue and weakness</li> <li>Headaches or dizziness</li> <li>Enlarged spleen (abdominal fullness)</li> <li>Night sweats</li> <li>Itching, especially after bathing</li> <li>Blood clots or unusual bleeding</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC with differential, peripheral smear</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>JAK2, CALR, and MPL mutation analysis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Reticulin and collagen fibrosis assessment</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> JAK Inhibitors</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Hydroxyurea</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">bloodtype</span> Phlebotomy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Symptom Management</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Are MPNs a type of cancer?</summary> <p>MPNs are classified as blood neoplasms (cancers), but many behave as chronic conditions that can be managed for years with appropriate treatment.</p> </details> <details class=\"sd-faq-item\"> <summary>Can MPNs transform into leukemia?</summary> <p>There is a small risk of transformation to acute myeloid leukemia over time. Regular monitoring helps detect any changes early.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar",
+    "relatedHtml": "",
+    "directory": {
+      "order": 13,
+      "category": "blood",
+      "searchName": "Myeloproliferative Disorders",
+      "icon": "labs",
+      "description": "Diagnosis and management of conditions where bone marrow produces too many blood cells."
+    }
+  },
+  {
+    "slug": "ovarian-cancer",
+    "title": "Ovarian Cancer",
+    "category": "Common Cancers",
+    "description": "Advanced ovarian cancer treatment including surgery, chemotherapy, and emerging targeted approaches.",
+    "image": "/images/specialty-breast-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Ovarian cancer is often called a silent disease because early symptoms can be subtle. At Utah Cancer Specialists, we combine aggressive surgical and medical approaches with the latest targeted therapies and PARP inhibitors to give every patient the best possible outcome.</p> <p class=\"provider-bio\">Our team includes medical oncologists experienced in gynecologic malignancies who work in coordination with surgical specialists and genetic counselors.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Bloating or abdominal swelling</li> <li>Pelvic or abdominal pain</li> <li>Difficulty eating or feeling full quickly</li> <li>Urinary urgency or frequency</li> <li>Unexplained fatigue or weight change</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, MRI, and transvaginal ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Surgical biopsy with histologic subtyping</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">family_history</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Genetic Testing</h3> <p>BRCA1/2 and HRD testing</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">CA-125 Monitoring</h3> <p>Blood marker tracking for treatment response</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgery</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> PARP Inhibitors</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Should I get genetic testing?</summary> <p>We recommend genetic counseling for all ovarian cancer patients, as BRCA mutations and other hereditary factors affect treatment decisions and family screening recommendations.</p> </details> <details class=\"sd-faq-item\"> <summary>What are PARP inhibitors?</summary> <p>PARP inhibitors are targeted drugs that block cancer cells from repairing their DNA, especially effective in patients with BRCA mutations or HRD-positive tumors.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 4,
+      "category": "common",
+      "searchName": "Ovarian Cancer",
+      "icon": "health_and_safety",
+      "description": "Advanced treatment including surgery, chemotherapy, and emerging targeted approaches."
+    }
+  },
+  {
+    "slug": "pancreatic-gallbladder-cancer",
+    "title": "Pancreatic & Gallbladder Cancer",
+    "category": "Gastrointestinal",
+    "description": "Advanced care with multidisciplinary treatment planning for pancreatic and biliary cancers.",
+    "image": "/images/specialty-liver-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Pancreatic and gallbladder (biliary tract) cancers are among the most challenging malignancies to treat, but advances in chemotherapy combinations, targeted therapies, and clinical trials are improving outcomes.</p> <p class=\"provider-bio\">Our medical oncologists work closely with surgeons, interventional radiologists, and palliative care specialists to provide comprehensive treatment at every stage of disease.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Jaundice (yellowing of skin and eyes)</li> <li>Abdominal or back pain</li> <li>Unexplained weight loss</li> <li>Loss of appetite</li> <li>New-onset diabetes</li> <li>Dark urine or pale stools</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, MRI/MRCP, and EUS</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>EUS-guided FNA or core biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>BRCA, NTRK, MSI, TMB</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">CA 19-9 Monitoring</h3> <p>Tumor marker tracking</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy (FOLFIRINOX, Gem/Abraxane)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (PARP, NTRK)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is pancreatic cancer treatable?</summary> <p>While pancreatic cancer remains challenging, modern chemotherapy regimens and clinical trials have improved survival. Some patients with resectable tumors achieve long-term remission after surgery and adjuvant therapy.</p> </details> <details class=\"sd-faq-item\"> <summary>What role does genetic testing play?</summary> <p>Up to 10% of pancreatic cancers have actionable mutations like BRCA. Germline and somatic testing can identify patients eligible for PARP inhibitors and other targeted therapies.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 22,
+      "category": "gi",
+      "searchName": "Pancreatic Gallbladder Cancer",
+      "title": "Pancreatic/Gallbladder Cancer",
+      "icon": "biotech",
+      "description": "Advanced care with multidisciplinary treatment planning."
+    }
+  },
+  {
+    "slug": "prostate-cancer",
+    "title": "Prostate Cancer",
+    "category": "Common Cancers",
+    "description": "Expert, evidence-based prostate cancer treatment focused on preserving quality of life and long-term health.",
+    "image": "/images/specialty-prostate-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Prostate cancer is the most common cancer in men, but when caught early, it is also one of the most treatable. At Utah Cancer Specialists, our team uses a personalized approach that considers the stage and grade of your cancer, your age, overall health, and personal preferences to develop a treatment plan tailored specifically to you.</p> <p class=\"provider-bio\">From active surveillance for low-risk disease to advanced radiation and systemic therapies for aggressive cancers, we provide the full spectrum of prostate cancer care — always with an emphasis on preserving quality of life.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Difficulty urinating or weak urine flow</li> <li>Frequent urination, especially at night</li> <li>Blood in urine or semen</li> <li>Pain or discomfort in the pelvic area</li> <li>Bone pain (in advanced stages)</li> <li>Erectile dysfunction</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Multiparametric MRI, bone scan, and CT for staging</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Transrectal or MRI-fusion biopsy with Gleason scoring</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Genomic Testing</h3> <p>Decipher, Oncotype DX, and Prolaris for risk stratification</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">PSA Monitoring</h3> <p>Serial PSA testing to guide treatment decisions</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Hormone Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">monitor_heart</span> Active Surveillance</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>When should I start screening?</summary> <p>Most guidelines recommend discussing PSA screening with your doctor starting at age 50, or at 40-45 if you have risk factors such as family history or African American heritage.</p> </details> <details class=\"sd-faq-item\"> <summary>What is active surveillance?</summary> <p>For low-risk prostate cancer, active surveillance means closely monitoring the cancer with regular PSA tests, imaging, and biopsies rather than treating immediately — avoiding side effects while ensuring the cancer doesn't progress.</p> </details> <details class=\"sd-faq-item\"> <summary>Will treatment affect my quality of life?</summary> <p>Modern treatment approaches are designed to minimize side effects. Our team discusses potential impacts on urinary, bowel, and sexual function and works with you to choose the approach that best balances cancer control with quality of life.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 1,
+      "category": "common",
+      "searchName": "Prostate Cancer",
+      "icon": "male",
+      "description": "Expert, evidence-based treatment focused on preserving quality of life and long-term health."
+    }
+  },
+  {
+    "slug": "rectal-cancer",
+    "title": "Rectal Cancer",
+    "category": "Gastrointestinal",
+    "description": "Specialized treatment with multimodal approaches including radiation, chemotherapy, and surgery.",
+    "image": "/images/specialty-colon-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Rectal cancer treatment has evolved significantly, with many patients now receiving neoadjuvant (pre-surgical) chemotherapy and radiation to shrink tumors before surgery. Our team coordinates a multimodal approach that maximizes the chance of organ preservation when possible.</p> <p class=\"provider-bio\">For some patients with complete clinical response to neoadjuvant therapy, a watch-and-wait approach may be considered, avoiding major surgery altogether.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Rectal bleeding or blood in stool</li> <li>Change in bowel habits</li> <li>Narrowing of stools</li> <li>Feeling of incomplete evacuation</li> <li>Pelvic pain or discomfort</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">MRI of Pelvis</h3> <p>High-resolution staging of tumor depth and nodes</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Colonoscopy &amp; Biopsy</h3> <p>Tissue sampling and pathology</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>MSI, KRAS, BRAF</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Neoadjuvant Radiation</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Why is treatment different from colon cancer?</summary> <p>Rectal cancer's proximity to the anal sphincter and other structures requires specialized radiation and surgical techniques to achieve the best cancer control while preserving function.</p> </details> <details class=\"sd-faq-item\"> <summary>What is total neoadjuvant therapy?</summary> <p>TNT delivers all chemotherapy and radiation before surgery, which can improve outcomes and increase the chance of a complete pathologic response.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 18,
+      "category": "gi",
+      "searchName": "Rectal Cancer",
+      "icon": "local_hospital",
+      "description": "Specialized treatment with multimodal approaches including radiation, chemo, and surgery."
+    }
+  },
+  {
+    "slug": "small-bowel-cancers",
+    "title": "Small Bowel Cancers",
+    "category": "Gastrointestinal",
+    "description": "Specialized treatment for rare cancers of the small intestine.",
+    "image": "/images/specialty-colon-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Small bowel cancers are rare and include adenocarcinomas, neuroendocrine tumors, lymphomas, and sarcomas. Due to their rarity, these cancers benefit from the expertise of an experienced oncology team familiar with the nuances of each subtype.</p> <p class=\"provider-bio\">Our team tailors treatment based on tumor type and location, coordinating surgery, systemic therapy, and supportive care.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Abdominal pain or cramping</li> <li>Nausea or vomiting</li> <li>Unexplained weight loss</li> <li>Blood in the stool</li> <li>Bowel obstruction symptoms</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT enterography, capsule endoscopy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Endoscopic or surgical biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Pathology</h3> <p>Subtype classification and molecular profiling</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>How are small bowel cancers diagnosed?</summary> <p>Due to their location, small bowel cancers can be challenging to diagnose. CT enterography and capsule endoscopy are important diagnostic tools.</p> </details> <details class=\"sd-faq-item\"> <summary>Are treatment options different from colon cancer?</summary> <p>Yes. Treatment depends on the specific subtype — adenocarcinoma, neuroendocrine, lymphoma, or sarcoma — each requiring a different approach.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 21,
+      "category": "gi",
+      "searchName": "Small Bowel Cancers",
+      "icon": "vaccines",
+      "description": "Specialized treatment for rare cancers of the small intestine."
+    }
+  },
+  {
+    "slug": "soft-tissue-sarcomas",
+    "title": "Soft Tissue Cancers (Sarcomas)",
+    "category": "Other Cancers & Conditions",
+    "description": "Expert sarcoma treatment for cancers in muscle, fat, nerves, and connective tissues.",
+    "image": "/images/specialty-breast-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Soft tissue sarcomas are rare cancers that can arise in muscle, fat, blood vessels, nerves, and connective tissues anywhere in the body. With over 50 subtypes, expert pathologic classification is essential for treatment planning.</p> <p class=\"provider-bio\">Our team coordinates with orthopedic and surgical oncologists for limb-sparing surgery when possible, and uses radiation and chemotherapy tailored to the specific sarcoma subtype.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>A growing lump or mass in the body</li> <li>Pain if the tumor presses on nerves</li> <li>Swelling in an arm or leg</li> <li>Abdominal fullness or pain</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>MRI, CT, and PET/CT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Core Needle Biopsy</h3> <p>With expert soft tissue pathology review</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>Translocation and mutation analysis</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Are sarcomas different from other cancers?</summary> <p>Yes. Sarcomas arise from connective tissues rather than epithelial tissues (where carcinomas originate). They require specialized pathologic classification and treatment approaches.</p> </details> <details class=\"sd-faq-item\"> <summary>Is limb amputation necessary?</summary> <p>Modern surgical techniques and radiation therapy allow limb-sparing surgery for the majority of extremity sarcomas.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-3",
+    "relatedHtml": "",
+    "directory": {
+      "order": 25,
+      "category": "other",
+      "searchName": "Soft Tissue Cancers Sarcomas",
+      "icon": "fitness_center",
+      "description": "Expert sarcoma treatment for cancers in muscle, fat, nerves, and connective tissues."
+    }
+  },
+  {
+    "slug": "stomach-cancer",
+    "title": "Stomach Cancer",
+    "category": "Gastrointestinal",
+    "description": "Comprehensive gastric cancer treatment including targeted therapy and immunotherapy.",
+    "image": "/images/specialty-colon-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Stomach (gastric) cancer requires a multidisciplinary approach combining surgery, chemotherapy, targeted therapy, and immunotherapy. Our team uses HER2 testing and PD-L1 assessment to identify patients who will benefit from the latest targeted and immune-based treatments.</p> <p class=\"provider-bio\">We manage all stages from early resectable disease through advanced metastatic gastric and gastroesophageal junction cancers.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Persistent indigestion or heartburn</li> <li>Loss of appetite</li> <li>Nausea or vomiting</li> <li>Abdominal pain or fullness</li> <li>Unintended weight loss</li> <li>Blood in the stool</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, PET/CT, and endoscopic ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Endoscopy &amp; Biopsy</h3> <p>Upper GI endoscopy with tissue sampling</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>HER2, PD-L1, MSI status</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (HER2)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What are the risk factors?</summary> <p>H. pylori infection, smoking, high-salt diets, family history, and certain genetic conditions increase risk.</p> </details> <details class=\"sd-faq-item\"> <summary>Is immunotherapy used for stomach cancer?</summary> <p>Yes, immunotherapy with checkpoint inhibitors is now part of standard treatment for many advanced gastric cancers, particularly those that are PD-L1 positive or MSI-high.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-5",
+    "relatedHtml": "",
+    "directory": {
+      "order": 19,
+      "category": "gi",
+      "searchName": "Stomach Cancer",
+      "icon": "restaurant",
+      "description": "Comprehensive gastric cancer treatment including targeted therapy and immunotherapy."
+    }
+  },
+  {
+    "slug": "thyroid-cancer",
+    "title": "Thyroid Cancer",
+    "category": "Common Cancers",
+    "description": "Expert care with specialized surgical, radioactive iodine, and targeted therapy options for thyroid cancer.",
+    "image": "/images/specialty-breast-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Thyroid cancer is one of the most curable cancers when detected early. Our team works closely with endocrinologists and surgeons to provide a complete treatment pathway from diagnosis through long-term surveillance.</p> <p class=\"provider-bio\">For more advanced or aggressive thyroid cancers, we offer targeted therapies, radioactive iodine treatment coordination, and access to clinical trials with novel agents.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>A lump or swelling in the neck</li> <li>Difficulty swallowing or breathing</li> <li>Persistent hoarseness or voice changes</li> <li>Neck or throat pain</li> <li>Swollen lymph nodes in the neck</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Thyroid ultrasound and radioiodine scans</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fine Needle Aspiration</h3> <p>FNA biopsy with cytology and molecular markers</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>BRAF, RAS, and RET mutation analysis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Thyroglobulin Monitoring</h3> <p>Blood marker for surveillance after treatment</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radioactive Iodine</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">balance</span> TSH Suppression</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is the prognosis for thyroid cancer?</summary> <p>Most thyroid cancers have an excellent prognosis. The 5-year survival rate for localized papillary and follicular thyroid cancer is over 99%.</p> </details> <details class=\"sd-faq-item\"> <summary>Will I need to take medication after treatment?</summary> <p>Most patients require lifelong thyroid hormone replacement after surgery, which also helps suppress any remaining cancer cells.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 6,
+      "category": "common",
+      "searchName": "Thyroid Cancer",
+      "icon": "medical_services",
+      "description": "Expert care with specialized surgical, radioactive iodine, and targeted therapy options."
+    }
+  },
+  {
+    "slug": "uterine-cancer",
+    "title": "Uterine Cancer",
+    "category": "Common Cancers",
+    "description": "Specialized treatment with minimally invasive surgical options and targeted therapies for uterine cancer.",
+    "image": "/images/specialty-breast-clinical-hero.jpg",
+    "actions": [
+      {
+        "attrs": {
+          "href": "#",
+          "class": "btn btn--white"
+        },
+        "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment"
+      },
+      {
+        "attrs": {
+          "href": "#treatments",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options"
+      }
+    ],
+    "tabs": [
+      {
+        "href": "#overview",
+        "label": "Overview"
+      },
+      {
+        "href": "#symptoms",
+        "label": "Symptoms"
+      },
+      {
+        "href": "#diagnosis",
+        "label": "Diagnosis"
+      },
+      {
+        "href": "#treatments",
+        "label": "Treatments"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Overview",
+        "html": "<p class=\"provider-bio\">Uterine cancer, including endometrial cancer, is the most common gynecologic malignancy. Early detection leads to excellent outcomes, and our team offers the full range of treatment options from surgery through advanced systemic therapies.</p> <p class=\"provider-bio\">We coordinate closely with gynecologic surgeons and radiation specialists to ensure each patient receives a comprehensive, individualized treatment plan.</p>"
+      },
+      {
+        "id": "symptoms",
+        "title": "Symptoms & Warning Signs",
+        "html": "<ul class=\"provider-list\"> <li>Abnormal vaginal bleeding or spotting</li> <li>Pelvic pain or pressure</li> <li>Pain during intercourse</li> <li>Unexplained weight loss</li> <li>Watery or blood-tinged vaginal discharge</li> </ul>"
+      },
+      {
+        "id": "diagnosis",
+        "title": "Diagnosis & Evaluation",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Transvaginal ultrasound, CT, and MRI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Endometrial biopsy with molecular profiling</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Genomic Testing</h3> <p>MSI, MMR, and other biomarker testing</p> </div> </div> </div>"
+      },
+      {
+        "id": "treatments",
+        "title": "Treatment Options",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgery</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">balance</span> Hormone Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>"
+      },
+      {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What are the risk factors?</summary> <p>Risk factors include obesity, diabetes, hormone replacement therapy, late menopause, and Lynch syndrome. Regular gynecologic exams help with early detection.</p> </details> <details class=\"sd-faq-item\"> <summary>Is surgery always required?</summary> <p>Surgery is the primary treatment for most uterine cancers, but for patients who are not surgical candidates, radiation and systemic therapy can be effective alternatives.</p> </details> </div>"
+      }
+    ],
+    "sidebar": "specialty-sidebar-2",
+    "relatedHtml": "",
+    "directory": {
+      "order": 3,
+      "category": "common",
+      "searchName": "Uterine Cancer",
+      "icon": "female",
+      "description": "Specialized treatment with minimally invasive surgical options and targeted therapies."
+    }
+  }
+]

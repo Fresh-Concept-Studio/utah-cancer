@@ -1,0 +1,8 @@
+---
+import type { Tab } from '../lib/types';
+interface Props { tabs: Tab[] }
+const { tabs } = Astro.props;
+---
+<nav class="provider-tabs"><div class="container provider-tabs-inner">
+  {tabs.map((tab, i) => <a href={tab.href} class:list={['provider-tab', {active: i === 0}]}>{tab.label}</a>)}
+</div></nav>

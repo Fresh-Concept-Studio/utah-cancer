@@ -1,0 +1,48 @@
+---
+import { url } from '../lib/urls';
+---
+<!-- Story Hero -->
+  <section class="story-hero story-hero--detail">
+    <div class="container">
+      <a href={url("/stories/index.html")} class="story-back"><span class="material-symbols-rounded">arrow_back</span> All Patient Stories</a>
+      <span class="story-hero-kicker">Breast Cancer · In Remission</span>
+      <h1 class="story-hero-title">“I walked in terrified. I walked out with a team that never let go of my hand.”</h1>
+      <p class="story-hero-byline">Maria S. · Salt Lake City</p>
+    </div>
+  </section>
+
+  <!-- Story Media -->
+  <section class="story-detail-media">
+    <div class="container">
+      <div class="story-detail-frame">
+        <img src={url("/images/story-maria.jpg")} alt="Maria S. in her garden at golden hour">
+        <button class="story-detail-play" type="button" aria-label="Watch Maria’s story">
+          <span class="material-symbols-rounded">play_arrow</span>
+        </button>
+        <span class="story-detail-soon">Video coming soon</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Article -->
+  <section class="story-article">
+    <div class="container">
+      <div class="story-article-body">
+        <p>When Maria found the lump, she did what so many of us do: she waited. Two weeks of telling herself it was nothing, two weeks of not sleeping. When the diagnosis came back — invasive ductal carcinoma, stage II — the world she knew narrowed to a single word she could not stop hearing.</p>
+        <p>Her first appointment at Utah Cancer Specialists changed the shape of that word. “They drew it for me,” she remembers. “The doctor took out a piece of paper and drew what was happening in my body, and then drew what we were going to do about it. Nobody had done that. Suddenly there was a plan, and I was part of it.”</p>
+        <p>Over fourteen months of treatment — surgery, chemotherapy, radiation — Maria’s care team became a second family. Her patient advocate handled the insurance calls she dreaded. A nurse learned the names of her grandchildren. On her hardest day, someone simply sat with her and held her hand.</p>
+        <p>Today Maria is in remission and back in her garden, where the roses she planted the spring of her diagnosis have bloomed three times over. “Cancer took a year from me,” she says. “But this team gave me all the years after it back.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story CTA -->
+  <section class="story-cta">
+    <div class="container story-cta-inner">
+      <h2 class="story-cta-heading">Every story starts with a first appointment.</h2>
+      <div class="story-cta-actions">
+        <a href={url("/contact.html")} class="btn btn--white"><span class="material-symbols-rounded">phone</span> Contact Us</a>
+        <a href={url("/stories/index.html")} class="story-cta-link">More patient stories <span class="material-symbols-rounded">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>

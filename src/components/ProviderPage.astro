@@ -1,0 +1,46 @@
+---
+import providers from '../data/providers.json';
+import clinics from '../data/provider-locations.json';
+import { url, richHtml } from '../lib/urls';
+import DetailSections from './DetailSections.astro';
+import DetailTabs from './DetailTabs.astro';
+import SharedContent from './SharedContent.astro';
+import ContentLink from './ContentLink.astro';
+interface Props { slug: string }
+const provider = providers.find(p => p.slug === Astro.props.slug);
+if (!provider) throw new Error(`Unknown provider: ${Astro.props.slug}`);
+const locations = provider.locationIds.map(id => clinics[id as keyof typeof clinics]);
+---
+<section class="provider-hero"><div class="container provider-hero-inner">
+  <div class="provider-hero-text">
+    <a href={url('/providers/index.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Providers</a>
+    <h1 class="provider-name">{provider.name}</h1>
+    <p class="provider-specialty">{provider.specialty}</p>
+    <div class="provider-languages"><span class="material-symbols-rounded">translate</span><span>{provider.languages}</span></div>
+    <div class="provider-hero-actions">
+      <a href={url(provider.appointmentHref)} class="btn btn--white"><span class="material-symbols-rounded">calendar_today</span> Request Appointment</a>
+      <a href="#locations" class="btn btn--outline-dark"><span class="material-symbols-rounded">location_on</span> View Locations</a>
+    </div>
+  </div>
+  <div class={provider.photo.class}><img src={url(provider.photo.src)} alt={provider.photo.alt} /></div>
+</div></section>
+<DetailTabs tabs={provider.tabs} />
+<section class="provider-details"><div class="container provider-details-inner">
+  <div class="provider-main"><DetailSections sections={provider.sections} /></div>
+  <SharedContent name={provider.sidebar} />
+</div></section>
+<section class="provider-locations" id="locations"><div class="container">
+  <h2 class="provider-section-title">Locations</h2>
+  {locations.length ? <div class="provider-locations-grid">
+    {locations.map(location => <div class="location-card">
+      <div class="location-card-icon"><span class="material-symbols-rounded">location_on</span></div>
+      <div class="location-card-content">
+        <h3 class="location-card-name">{location.name}</h3>
+        {location.sublabel && <p class="location-card-sublabel">{location.sublabel}</p>}
+        <p class="location-card-address" set:html={richHtml(location.addressHtml)} />
+        <div class="location-card-actions">{location.actions.map(link => <ContentLink link={link} />)}</div>
+      </div>
+    </div>)}
+  </div> : <p class="provider-bio"><a href={url('/locations/index.html')}>View our Utah locations</a> or call <a href="tel:8012690231">801.269.0231</a> for location information.</p>}
+</div></section>
+{provider.media && <SharedContent name={provider.media} />}

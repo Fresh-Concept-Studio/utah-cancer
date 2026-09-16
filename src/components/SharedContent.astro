@@ -1,0 +1,9 @@
+---
+import content from '../data/shared-content.json';
+import { richHtml } from '../lib/urls';
+interface Props { name: string }
+const { name } = Astro.props;
+const html = (content as Record<string, string>)[name];
+if (html === undefined) throw new Error(`Missing shared content: ${name}`);
+---
+<Fragment set:html={richHtml(html)} />

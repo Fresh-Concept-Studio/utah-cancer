@@ -1,0 +1,82 @@
+---
+import { url } from '../lib/urls';
+import specialties from '../data/specialties.json';
+import { specialtyCategories } from '../data/navigation';
+const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.order);
+---
+<!-- Hero -->
+  <section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Types of Cancer</h1>
+      <p class="providers-hero-desc">Comprehensive cancer care across a wide range of cancer types and blood disorders, delivered by board-certified specialists.</p>
+    </div>
+  </section>
+
+  <!-- Main Content with Sidebar -->
+  <section class="spec-layout">
+    <div class="container spec-layout-inner">
+
+      <!-- Left Sidebar -->
+      <aside class="spec-sidebar">
+        <div class="spec-sidebar-sticky">
+
+          <!-- Search -->
+          <div class="spec-search">
+            <span class="material-symbols-rounded spec-search-icon">search</span>
+            <input type="text" id="spec-search" class="spec-search-input" placeholder="Search cancer types...">
+          </div>
+
+          <!-- Categories -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Categories</h3>
+            <ul class="spec-filter-list">
+  <li><button class="spec-filter-btn active" data-filter="all">All Types of Cancer <span class="spec-filter-count">{specialties.length}</span></button></li>
+  {specialtyCategories.map(category => <li><button class="spec-filter-btn" data-filter={category.id}>{category.shortLabel || category.label} <span class="spec-filter-count">{specialties.filter(p => p.directory.category === category.id).length}</span></button></li>)}
+</ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Quick Links</h3>
+            <ul class="spec-filter-list spec-filter-list--links">{specialtyCategories.map(category => <li><a href={`#${category.id}`}>{category.shortLabel || category.label}</a></li>)}</ul>
+          </div>
+
+          <!-- Help CTA -->
+          <div class="spec-sidebar-cta">
+            <span class="material-symbols-rounded">help</span>
+            <h4>Not sure where to start?</h4>
+            <p>Our team can help you find the right specialist for your needs.</p>
+            <a href="#" class="btn btn--primary btn--full btn--sm">
+              <span class="material-symbols-rounded">phone</span>
+              Call 801.269.0231
+            </a>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Right Content -->
+      <div class="spec-content">
+
+        <div class="spec-results-bar" id="spec-results-bar">
+          <span id="spec-results-count">Showing all 28 cancer types</span>
+        </div>
+
+        <!-- Common Cancers -->
+        {specialtyCategories.map(category => <div class="spec-category" data-category={category.id} id={category.id}>
+  <h2 class="spec-category-title">{category.label}</h2>
+  <div class="spec-grid">{ordered.filter(p => p.directory.category === category.id).map(specialty => <a href={url(`/specialties/${specialty.slug}.html`)} class="spec-card" data-name={specialty.directory.searchName}>
+    <div class="spec-card-icon"><span class="material-symbols-rounded">{specialty.directory.icon}</span></div>
+    <div class="spec-card-text"><h3>{specialty.directory.title || specialty.title}</h3><p>{specialty.directory.description}</p></div>
+  </a>)}</div>
+</div>)}
+
+        <!-- Blood & Bone Marrow -->
+
+        <!-- Gastrointestinal Cancers -->
+
+        <!-- Other Cancers & Conditions -->
+
+      </div>
+    </div>
+  </section>

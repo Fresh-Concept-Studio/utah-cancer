@@ -1,0 +1,143 @@
+
+    /* ============================================
+       LEADERSHIP PAGE — HERO
+       ============================================ */
+    .leaders-hero-label {
+      display: inline-block;
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 20px;
+    }
+
+    /* ============================================
+       LEADERSHIP GROUPS
+       ============================================ */
+    .leaders-section {
+      padding: 72px 0 80px;
+    }
+
+    .leaders-group + .leaders-group {
+      margin-top: 72px;
+    }
+
+    .leaders-group-title {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: -0.027em;
+      color: #00476b;
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #5e8b9e;
+      display: inline-block;
+    }
+
+    .leaders-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    /* ============================================
+       LEADERSHIP CARD
+       ============================================ */
+    .leader-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: var(--radius-card);
+      overflow: hidden;
+    }
+
+    .leader-card-photo {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      overflow: hidden;
+      background: #f0f4f8;
+    }
+
+    .leader-card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .leader-card-info {
+      flex: 1;
+      padding: 18px 20px 22px;
+    }
+
+    .leader-card-name {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 1.25;
+      letter-spacing: -0.019em;
+      color: #00476b;
+      margin-bottom: 5px;
+    }
+
+    .leader-card-role {
+      font-size: 13px;
+      line-height: 19px;
+      color: #5e8b9e;
+      letter-spacing: -0.2px;
+    }
+
+    a.leader-card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    a.leader-card-link:hover .leader-card {
+      background: #f8fafb;
+    }
+
+    a.leader-card-link:focus-visible .leader-card {
+      outline: 2px solid #5e8b9e;
+      outline-offset: 2px;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .leaders-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .leaders-section {
+        padding: 48px 0 56px;
+      }
+
+      .leaders-group + .leaders-group {
+        margin-top: 48px;
+      }
+
+      .leaders-group-title {
+        font-size: 28px;
+      }
+
+      .leaders-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .leader-card-name {
+        font-size: 17px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .leaders-grid {
+        grid-template-columns: 1fr;
+      }
+    }

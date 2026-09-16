@@ -1,0 +1,85 @@
+---
+import { url, richHtml } from '../lib/urls';
+import locations from '../data/locations.json';
+const directory = locations.filter(location => location.directory).sort((a,b) => a.directory!.order - b.directory!.order);
+const markers = directory.filter(location => location.map).map(location => ({
+  region: 'utah',
+  name: location.map!.name || location.directory!.title || location.title,
+  address: location.directory!.addressHtml.replace(/<br\s*\/?\s*>/gi, ', '),
+  url: url(`/locations/${location.slug}.html`),
+  lat: location.map!.lat,
+  lng: location.map!.lng,
+}));
+---
+<!-- Hero -->
+  <section class="providers-hero providers-hero--compact">
+    <div class="container">
+      <h1 class="providers-hero-title">Our Locations</h1>
+    </div>
+  </section>
+
+  <!-- Locations Grid -->
+  <section class="loc-grid-section">
+    <div class="container">
+
+      <div class="loc-filters" role="search">
+        <label class="loc-filter loc-filter--search">
+          <span class="material-symbols-rounded loc-filter-icon">search</span>
+          <input type="search" id="loc-search" class="loc-filter-input" placeholder="Search clinic name, city, or hospital" aria-label="Search locations">
+        </label>
+        <label class="loc-filter loc-filter--county">
+          <span class="material-symbols-rounded loc-filter-icon">filter_alt</span>
+          <select id="loc-county" class="loc-filter-input" aria-label="Filter by county">
+            <option value="">All counties</option>
+            <option value="davis">Davis County, UT</option>
+            <option value="salt-lake">Salt Lake County, UT</option>
+            <option value="utah">Utah County, UT</option>
+            <option value="weber">Weber County, UT</option>
+          </select>
+          <span class="material-symbols-rounded loc-filter-caret">expand_more</span>
+        </label>
+        <span class="loc-filter-count" id="loc-filter-count" aria-live="polite"></span>
+      </div>
+
+      <p class="loc-empty" id="loc-empty" hidden="">No clinics match your search. Try a different keyword or county.</p>
+
+      <div class="loc-panels">
+
+        <!-- Utah Locations (alphabetical) -->
+        <div class="loc-panel">
+          <div class="loc-grid">
+  {directory.map(location => {
+    const card = location.directory!;
+    const image = location.image;
+    return <a href={url(`/locations/${location.slug}.html`)} class:list={['loc-card', {'loc-card--featured': card.badge}]} data-county={card.county}>
+      <div class="loc-card-image"><img src={url(image.src)} alt={image.alt} />{card.badge && <span class="loc-card-badge">{card.badge}</span>}</div>
+      <div class="loc-card-body">
+        <h3 class="loc-card-name">{card.title || location.title}</h3>
+        <p class="loc-card-sub">{card.subtitle || location.subtitle}</p>
+        <p class="loc-card-address"><span class="material-symbols-rounded">location_on</span> <Fragment set:html={richHtml(card.addressHtml)} /></p>
+        <p class="loc-card-meta"><span class="material-symbols-rounded">schedule</span> <Fragment set:html={card.hoursHtml} /></p>
+        <div class="loc-card-footer"><span class="loc-card-phone">{card.phone}</span><span class="loc-card-link">View details <span class="material-symbols-rounded">arrow_forward</span></span></div>
+      </div>
+    </a>;
+  })}
+</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="loc-map-band">
+    <div class="container">
+      <div class="loc-map-wrap">
+        <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
+        <div class="locations-map-fallback" id="locations-map-fallback" hidden="">
+          <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>locations/index.html</code> to display the interactive map.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<script is:inline id="locations-data" type="application/json" set:html={JSON.stringify(markers).replace(/</g, "\\u003c")} />

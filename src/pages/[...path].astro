@@ -1,0 +1,9 @@
+---
+import pages from '../lib/pages';
+import Page from '../components/Page.astro';
+export function getStaticPaths() {
+  return Object.keys(pages).filter(path => path !== 'index.html' && !path.endsWith('/index.html'))
+    .map(path => ({ params: { path: path.replace(/\.html$/, '') }, props: { path } }));
+}
+---
+<Page path={Astro.props.path} />

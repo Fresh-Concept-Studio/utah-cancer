@@ -1,0 +1,209 @@
+---
+import { url } from '../lib/urls';
+---
+<section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Treatment Options</h1>
+      <p class="providers-hero-desc">Advanced, evidence-based therapies tailored to your specific cancer type, stage, and goals — with a focus on effectiveness and quality of life.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="hero-bridge">
+      <img src={url("/images/generated/treatment-options-hero.png")} alt="Two people review a treatment plan together at a sunlit clinic table">
+    </div>
+  </div>
+
+  <!-- Intro split: mission text + stats -->
+  <section class="tx-intro">
+    <div class="container">
+      <div class="tx-intro-inner">
+        <div>
+          <span class="tx-eyebrow">Our approach</span>
+          <h2 class="tx-intro-title">Take an active role in your care.</h2>
+          <p class="tx-intro-body">As a cancer patient, you are urged to take an active role in your care and make treatment decisions that are best for you and your loved ones.</p>
+          <p class="tx-intro-body">Our mission is to deliver compassionate, comprehensive, and patient-focused care using the latest treatment modalities — with proactive symptom management built into every plan.</p>
+        </div>
+        <div class="tx-stats">
+          <div class="tx-stat">
+            <div class="tx-stat-value">9</div>
+            <div class="tx-stat-label">Treatment modalities under one practice</div>
+          </div>
+          <div class="tx-stat">
+            <div class="tx-stat-value">50+</div>
+            <div class="tx-stat-label">Active clinical trials in progress</div>
+          </div>
+          <div class="tx-stat">
+            <div class="tx-stat-value">25+</div>
+            <div class="tx-stat-label">Years of community-based research</div>
+          </div>
+          <div class="tx-stat">
+            <div class="tx-stat-value">100%</div>
+            <div class="tx-stat-label">Personalized, multidisciplinary plans</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category 1: Systemic Therapies -->
+  <section class="tx-cat tx-cat--gray">
+    <div class="container">
+      <div class="tx-cat-header">
+        <div class="tx-cat-header-text">
+          <span class="tx-eyebrow">Systemic therapies</span>
+          <h2 class="tx-cat-heading">Treating cancer throughout the body.</h2>
+          <p class="tx-cat-sub">Drug-based modalities that travel through the bloodstream to reach cancer cells wherever they exist.</p>
+        </div>
+        <div class="tx-cat-meta">04 modalities</div>
+      </div>
+
+      <div class="tx-grid-4">
+        <div class="tx-card">
+          <span class="tx-card-num">01</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">medication</span></div>
+          <h3>Chemotherapy</h3>
+          <p>Systemic drug therapy that targets rapidly dividing cancer cells. Modern regimens are more effective and better tolerated than ever, with proactive side-effect management built into every plan.</p>
+        </div>
+        <div class="tx-card">
+          <span class="tx-card-num">02</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">vaccines</span></div>
+          <h3>Immunotherapy</h3>
+          <p>Therapies that harness your own immune system to recognize and attack cancer cells. Checkpoint inhibitors and other agents have transformed outcomes in many cancer types.</p>
+        </div>
+        <div class="tx-card">
+          <span class="tx-card-num">03</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">target</span></div>
+          <h3>Targeted Therapy</h3>
+          <p>Drugs designed to attack specific genetic mutations or proteins in cancer cells while sparing healthy tissue. Molecular profiling identifies which targets your cancer expresses.</p>
+        </div>
+        <div class="tx-card">
+          <span class="tx-card-num">04</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">balance</span></div>
+          <h3>Hormone Therapy</h3>
+          <p>Treatment that blocks or lowers hormones that fuel certain cancers, commonly used in breast and prostate cancer to slow or stop tumor growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category 2: Imaging & Radiation (featured wide cards) -->
+  <section class="tx-cat">
+    <div class="container">
+      <div class="tx-cat-header">
+        <div class="tx-cat-header-text">
+          <span class="tx-eyebrow">Imaging &amp; precision radiation</span>
+          <h2 class="tx-cat-heading">Pinpoint accuracy. Maximum precision.</h2>
+          <p class="tx-cat-sub">Image-guided technology that sees more, exposes less, and treats with millimeter accuracy.</p>
+        </div>
+        <div class="tx-cat-meta">02 platforms</div>
+      </div>
+
+      <div class="tx-grid-2">
+        <div class="tx-card tx-card--feat">
+          <div class="tx-card-icon"><span class="material-symbols-rounded">radiology</span></div>
+          <div>
+            <h3>Radiation Therapy</h3>
+            <p>Precise, image-guided radiation using the TrueBeam Linear Accelerator — delivered with millimeter accuracy and gated respiration synchronization for motion-sensitive tumors.</p>
+            <div class="tx-feat-tags">
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">blur_circular</span> IMRT</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">radar</span> SBRT &amp; SRS</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">target</span> IGRT</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> Brachytherapy</span>
+            </div>
+          </div>
+        </div>
+        <div class="tx-card tx-card--feat">
+          <div class="tx-card-icon"><span class="material-symbols-rounded">monitor_heart</span></div>
+          <div>
+            <h3>Diagnostic Imaging</h3>
+            <p>The Omni Legend Digital PET/CT scanner delivers AI-powered, low-dose imaging with industry-leading sensitivity for precise diagnosis, staging, and treatment monitoring.</p>
+            <div class="tx-feat-tags">
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> FDG</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> Ga68 PSMA</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> F18 PSMA</span>
+              <span class="tx-feat-tag"><span class="material-symbols-rounded">science</span> Axumin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category 3: Research & Comprehensive Care -->
+  <section class="tx-cat tx-cat--gray">
+    <div class="container">
+      <div class="tx-cat-header">
+        <div class="tx-cat-header-text">
+          <span class="tx-eyebrow">Research &amp; comprehensive care</span>
+          <h2 class="tx-cat-heading">Beyond the standard of care.</h2>
+          <p class="tx-cat-sub">Access to investigational therapies, expert hematology, and whole-person support throughout your journey.</p>
+        </div>
+        <div class="tx-cat-meta">03 programs</div>
+      </div>
+
+      <div class="tx-grid-3">
+        <div class="tx-card">
+          <span class="tx-card-num">07</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">science</span></div>
+          <h3>Clinical Trials</h3>
+          <p>Access to investigational treatments through 50+ active trials, including Utah’s only community-based early-phase program (START Mountain Region).</p>
+        </div>
+        <div class="tx-card">
+          <span class="tx-card-num">08</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">self_improvement</span></div>
+          <h3>Supportive Care</h3>
+          <p>Symptom management, pain control, nutrition counseling, and rehabilitative care — addressing the physical and emotional side effects of treatment.</p>
+        </div>
+        <div class="tx-card">
+          <span class="tx-card-num">09</span>
+          <div class="tx-card-icon"><span class="material-symbols-rounded">bloodtype</span></div>
+          <h3>Hematology</h3>
+          <p>Expert diagnosis and treatment of blood cancers and benign blood disorders including anemia, clotting disorders, and bone marrow conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personalized plan band -->
+  <section class="tx-plan">
+    <div class="container">
+      <div class="tx-plan-inner">
+        <div>
+          <span class="tx-plan-eyebrow">How we build your plan</span>
+          <h2 class="tx-plan-title">Your treatment is as unique as you are.</h2>
+          <p class="tx-plan-desc">No two cancers — or patients — are alike. Your plan is shaped by your diagnosis, biology, history, and personal goals, then continually refined as your care progresses.</p>
+        </div>
+        <div class="tx-plan-steps">
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">1</div>
+            <div class="tx-plan-step-text">
+              <h4>Confirm the diagnosis</h4>
+              <p>Pathology, imaging, and molecular profiling establish cancer type, stage, and the genetic markers that guide treatment.</p>
+            </div>
+          </div>
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">2</div>
+            <div class="tx-plan-step-text">
+              <h4>Multidisciplinary review</h4>
+              <p>Medical oncologists, radiation oncologists, and specialists discuss your case together to recommend the strongest options.</p>
+            </div>
+          </div>
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">3</div>
+            <div class="tx-plan-step-text">
+              <h4>Tailor the modalities</h4>
+              <p>The right combination — chemotherapy, radiation, immunotherapy, targeted drugs, or trial enrollment — chosen for you.</p>
+            </div>
+          </div>
+          <div class="tx-plan-step">
+            <div class="tx-plan-step-num">4</div>
+            <div class="tx-plan-step-text">
+              <h4>Treat &amp; support</h4>
+              <p>Side-effect management, nutrition, and emotional support are built into your plan from day one and adjusted as you go.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

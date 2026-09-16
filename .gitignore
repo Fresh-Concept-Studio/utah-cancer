@@ -1,2 +1,8 @@
 team-group-raw.json
 .env
+node_modules/
+dist/
+.astro/
+.DS_Store
+.env.*
+!.env.example

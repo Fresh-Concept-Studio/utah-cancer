@@ -1,0 +1,379 @@
+
+    /* ============================================
+       TREATMENT OPTIONS PAGE
+       ============================================ */
+    .providers-hero { padding-bottom: 120px; }
+    .hero-bridge {
+      position: relative;
+      z-index: 2;
+      margin-top: -60px;
+      aspect-ratio: 16 / 9;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 71, 107, 0.28);
+      background: #f0f4f8;
+    }
+    .hero-bridge img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    @media (max-width: 1024px) {
+      .providers-hero { padding-bottom: 90px; }
+      .hero-bridge { margin-top: -50px; }
+    }
+    @media (max-width: 768px) {
+      .providers-hero { padding-bottom: 70px; }
+      .hero-bridge { margin-top: -40px; aspect-ratio: 16 / 10; border-radius: 14px; }
+    }
+    .tx-intro {
+      padding: 70px 0 80px;
+    }
+    .tx-intro-inner {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .tx-eyebrow {
+      display: inline-block;
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #5e8b9e;
+      margin-bottom: 16px;
+    }
+    .tx-intro-title {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 1.05;
+      letter-spacing: -0.029em;
+      color: #00476b;
+      margin-bottom: 24px;
+    }
+    .tx-intro-body {
+      font-size: 16.5px;
+      line-height: 28px;
+      color: #333333;
+      opacity: 0.85;
+      max-width: 540px;
+    }
+    .tx-intro-body + .tx-intro-body {
+      margin-top: 16px;
+    }
+
+    /* Stats cluster */
+    .tx-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .tx-stat {
+      padding: 32px 28px 30px;
+      border-radius: 16px;
+      background: #f0f4f8;
+      border: 1px solid #e0e9ef;
+      transition: background 0.25s, border-color 0.25s, transform 0.2s;
+    }
+    .tx-stat:hover {
+      background: #e7eef3;
+      border-color: #d0dde5;
+      transform: translateY(-2px);
+    }
+    .tx-stat-value {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 54px;
+      letter-spacing: -0.031em;
+      color: #5e8b9e;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .tx-stat-label {
+      font-size: 13.5px;
+      line-height: 20px;
+      color: #333333;
+      opacity: 0.7;
+      letter-spacing: -0.2px;
+    }
+
+    /* Category bands */
+    .tx-cat {
+      padding: 90px 0;
+    }
+    .tx-cat--gray {
+      background: #f8f9fa;
+      border-top: 1px solid #e8e4e0;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .tx-cat-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e8e4e0;
+    }
+    .tx-cat-header-text {
+      max-width: 640px;
+    }
+    .tx-cat-heading {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-size: 36px;
+      letter-spacing: -0.027em;
+      line-height: 1.1;
+      color: #00476b;
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+    .tx-cat-sub {
+      font-size: 15px;
+      line-height: 24px;
+      color: #333333;
+      opacity: 0.7;
+    }
+    .tx-cat-meta {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 13px;
+      color: #5e8b9e;
+      letter-spacing: -0.011em;
+      white-space: nowrap;
+      padding-bottom: 6px;
+      opacity: 0.65;
+    }
+
+    /* Treatment grids */
+    .tx-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .tx-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .tx-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    /* Treatment card */
+    .tx-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid #e8e4e0;
+      border-radius: 18px;
+      padding: 36px 30px 32px;
+      transition: box-shadow 0.3s, transform 0.2s, border-color 0.2s;
+    }
+    .tx-card:hover {
+      box-shadow: 0 16px 40px rgba(0, 71, 107, 0.08);
+      transform: translateY(-3px);
+      border-color: #d6dee4;
+    }
+    .tx-card-num {
+      position: absolute;
+      top: 28px;
+      right: 28px;
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.027em;
+      color: #5e8b9e;
+      opacity: 0.4;
+    }
+    .tx-card-icon {
+      width: 52px;
+      height: 52px;
+      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      border-radius: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 26px;
+    }
+    .tx-card-icon .material-symbols-rounded {
+      font-size: 26px;
+      color: #fff;
+    }
+    .tx-card h3 {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 21px;
+      letter-spacing: -0.02em;
+      color: #00476b;
+      margin-bottom: 12px;
+    }
+    .tx-card p {
+      font-size: 14.5px;
+      line-height: 23px;
+      color: #333333;
+      opacity: 0.75;
+    }
+
+    /* Featured (wide) card */
+    .tx-card--feat {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 32px;
+      padding: 40px;
+      align-items: flex-start;
+    }
+    .tx-card--feat .tx-card-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      margin-bottom: 0;
+    }
+    .tx-card--feat .tx-card-icon .material-symbols-rounded {
+      font-size: 32px;
+    }
+    .tx-card--feat h3 {
+      font-size: 26px;
+      letter-spacing: -0.8px;
+      margin-bottom: 14px;
+    }
+    .tx-card--feat p {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 6px;
+    }
+    .tx-feat-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    .tx-feat-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      letter-spacing: -0.2px;
+      background: #f0f4f8;
+      color: #5e8b9e;
+      padding: 7px 13px;
+      border-radius: 100px;
+      border: 1px solid #e0e9ef;
+      font-weight: 500;
+    }
+    .tx-feat-tag .material-symbols-rounded {
+      font-size: 15px;
+    }
+
+    /* Personalized plan band */
+    .tx-plan {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      color: #fff;
+    }
+    .tx-plan-inner {
+      display: grid;
+      grid-template-columns: 0.95fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .tx-plan-eyebrow {
+      display: inline-block;
+      font-family: var(--font-label);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 18px;
+    }
+    .tx-plan-title {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-size: 42px;
+      letter-spacing: -0.028em;
+      line-height: 1.08;
+      margin-bottom: 22px;
+    }
+    .tx-plan-desc {
+      font-size: 16px;
+      line-height: 28px;
+      color: rgba(255,255,255,0.75);
+    }
+    .tx-plan-steps {
+      display: grid;
+      gap: 14px;
+    }
+    .tx-plan-step {
+      display: flex;
+      gap: 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 22px 26px;
+      align-items: flex-start;
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .tx-plan-step:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.2);
+    }
+    .tx-plan-step-num {
+      flex: 0 0 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 14px;
+      color: #fff;
+      letter-spacing: -0.015em;
+    }
+    .tx-plan-step-text h4 {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 17px;
+      letter-spacing: -0.016em;
+      margin-bottom: 4px;
+      color: #fff;
+    }
+    .tx-plan-step-text p {
+      font-size: 13.5px;
+      line-height: 21px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: -0.2px;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 1024px) {
+      .tx-intro { padding: 70px 0 60px; }
+      .tx-intro-inner { grid-template-columns: 1fr; gap: 56px; }
+      .tx-intro-title { font-size: 38px; letter-spacing: -1.5px; }
+      .tx-cat { padding: 70px 0; }
+      .tx-cat-heading { font-size: 28px; letter-spacing: -1px; }
+      .tx-grid-4 { grid-template-columns: 1fr 1fr; }
+      .tx-grid-3 { grid-template-columns: 1fr 1fr; }
+      .tx-grid-2 { grid-template-columns: 1fr; }
+      .tx-card--feat { padding: 32px; gap: 24px; }
+      .tx-card--feat h3 { font-size: 22px; }
+      .tx-plan { padding: 70px 0; }
+      .tx-plan-inner { grid-template-columns: 1fr; gap: 48px; }
+      .tx-plan-title { font-size: 32px; letter-spacing: -1.2px; }
+    }
+    @media (max-width: 640px) {
+      .tx-intro { padding: 56px 0; }
+      .tx-intro-title { font-size: 32px; }
+      .tx-stats { gap: 12px; }
+      .tx-stat { padding: 24px 20px; }
+      .tx-stat-value { font-size: 40px; letter-spacing: -1.6px; }
+      .tx-cat { padding: 56px 0; }
+      .tx-cat-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 28px;
+      }
+      .tx-cat-heading { font-size: 26px; }
+      .tx-grid-4, .tx-grid-3 { grid-template-columns: 1fr; }
+      .tx-card { padding: 28px 24px; }
+      .tx-card--feat {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+      }
+      .tx-card--feat h3 { font-size: 20px; }
+      .tx-plan { padding: 56px 0; }
+      .tx-plan-title { font-size: 28px; }
+      .tx-plan-step { padding: 18px 20px; gap: 16px; }
+    }

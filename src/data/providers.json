@@ -1,0 +1,3881 @@
+[
+  {
+    "slug": "andrew-aloia",
+    "name": "Andrew J. Aloia, DNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-andrew-aloia.webp",
+      "alt": "Andrew J. Aloia",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Aloia",
+        "html": "<p class=\"provider-bio\">Andrew Aloia is a board-certified Adult-Gerontology Acute Care Nurse Practitioner who is committed to providing thoughtful, patient-centered care. He believes in listening carefully to each individual, respecting their personal values, and working together to establish clear treatment goals.</p> <p class=\"provider-bio\">His approach to care is grounded in established standards of practice, clear communication, and collaboration. He strives to ensure patients feel heard, informed, and involved in decisions about their care.</p> <p class=\"provider-bio\">Outside of work, Andrew enjoys traveling, football, and hiking.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Nursing, University of Utah, Salt Lake City, UT<br>Doctor of Nursing Practice, University of Utah, College of Nursing Adult Care Nurse Practitioner Program, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board certified as an AG-ACNP through the American Association of Critical-Care Nurses</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-andrew-aloia.jpg",
+      "alt": "Andrew J. Aloia",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 37
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "anita-mcdonald",
+    "name": "Anita McDonald, FNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-anita-mcdonald.webp",
+      "alt": "Anita McDonald",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About McDonald",
+        "html": "<p class=\"provider-bio\">Anita McDonald, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, UT Master of Science, Nursing, Brigham Young University, Provo, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-anita-mcdonald.jpg",
+      "alt": "Anita McDonald",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 38
+    },
+    "locationIds": [
+      "intermountain-medical-center",
+      "timpanogos-regional-hospital"
+    ]
+  },
+  {
+    "slug": "anne-marceau",
+    "name": "Anne W. Marceau, ANP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-anne-marceau.webp",
+      "alt": "Anne W. Marceau",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Marceau",
+        "html": "<p class=\"provider-bio\">Anne W. Marceau, ANP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Fairfield University, Fairfield CT Master of Science, Nursing, Massachusetts General Hospital IHP Advanced Nursing Practice, Massachusetts General Hospital IHP</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-anne-marceau.jpg",
+      "alt": "Anne W. Marceau",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 39
+    },
+    "locationIds": [
+      "salt-lake-clinic"
+    ]
+  },
+  {
+    "slug": "belisario-arango",
+    "name": "Belisario A. Arango, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English, Spanish",
+    "photo": {
+      "src": "/images/provider-expanded/provider-belisario-arango.webp",
+      "alt": "Belisario A. Arango",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Arango",
+        "html": "<p class=\"provider-bio\">Belisario A. Arango, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Universidad Autonoma de Guadalajara in Guadalajara, Mexico</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Henry Ford Hospital, Detroit, MI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology-Oncology University of Miami/Jackson Memorial Hospital, Sylvester Comprehensive Cancer Center in Miami, FL</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Internal Medicine</li> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> </ul>"
+      },
+      {
+        "id": "memberships",
+        "title": "Professional Memberships",
+        "html": "<ul class=\"provider-list\"> <li>American Society of Clinical Oncology</li> <li>American Society of Hematology</li> <li>Society of Utah Medical Oncologists (SUMO)</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-arango.jpg",
+      "alt": "Dr. Belisario A. Arango",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 0
+    },
+    "locationIds": [
+      "bountiful-clinic",
+      "lakeview-hospital-campus"
+    ]
+  },
+  {
+    "slug": "benjamin-solomon",
+    "name": "Benjamin L. Solomon, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-benjamin-solomon.webp",
+      "alt": "Benjamin L. Solomon",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Solomon",
+        "html": "<p class=\"provider-bio\">Dr. Benjamin Solomon earned his undergraduate degree in chemistry from Emory University before completing medical school at the Medical College of Georgia. He completed his Internal Medicine residency at the University of Vermont and his Hematology/Oncology fellowship at the University of Utah, where he also served as Chief Fellow. His training and research have included a particular focus on gastrointestinal cancers and immunotherapy.</p> <p class=\"provider-bio\">Before joining Utah Cancer Specialists in 2023, he served as a Clinical Track Assistant Professor at the University of Utah, caring for patients in both gastrointestinal oncology and community-based hematology and oncology. He has a special interest in gastrointestinal cancer and has contributed to research and publications in oncology and immunotherapy.</p> <p class=\"provider-bio\">His interest in cancer care began as an undergraduate volunteer at Winship Cancer Institute and continued through medical school, residency, fellowship, and clinical research. He remains passionate about translating complex cancer science and the latest advances in treatment into information patients and families can understand.</p> <p class=\"provider-bio\">Dr. Solomon believes every patient should be treated as an individual, not simply as statistics. He approaches care as a partnership, taking time to understand each patient’s goals, priorities, and life outside of treatment. He values shared decision-making and works to ensure patients understand their options and feel actively involved in their care.</p> <p class=\"provider-bio\">Originally from Atlanta, Dr. Solomon first came to Utah for his fellowship and quickly grew to love the state. He enjoys exploring Utah’s national parks, hiking, skiing, spending time outdoors with his dog, reading novels, and watching films of just about any genre or decade. He and his wife are happy to call Utah home.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Undergraduate</h3> <p>Bachelor’s degree in Chemistry, Emory University, Atlanta, GA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Medical College of Georgia, Augusta University, Augusta, GA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal, Medicine, Robert Larner, M.D. College of Medicine, University of Vermont, Burlington, VT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/ Oncology, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified in Internal Medicine</li> <li>Board Certified in Hematology</li> <li>Board Certified in Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-benjamin-solomon.jpg",
+      "alt": "Benjamin L. Solomon",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 1
+    },
+    "locationIds": [
+      "jordan-valley-cancer-center",
+      "holy-cross-hospital"
+    ]
+  },
+  {
+    "slug": "bonnie-wallace",
+    "name": "Bonnie L. Wallace, FNP-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-bonnie-wallace.webp",
+      "alt": "Bonnie L. Wallace",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Wallace",
+        "html": "<p class=\"provider-bio\">Bonnie L. Wallace, FNP-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Auburn University Family Nurse Practitioner, Rocky Mountain University of Health Professions</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-bonnie-wallace.jpg",
+      "alt": "Bonnie L. Wallace",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 40
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "brighton-loveday",
+    "name": "Brighton A. Loveday, ANP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-brighton-loveday.webp",
+      "alt": "Brighton A. Loveday",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Loveday",
+        "html": "<p class=\"provider-bio\">Brighton Loveday brings more than 30 years of experience in oncology, palliative care, hospice, advanced practice nursing, and healthcare leadership. Her career has included serving as a Captain in the U.S. Air Force Nurse Corps, leading hospice and home health organizations, and helping develop supportive oncology and palliative care programs at Huntsman Cancer Institute. Most recently, she served as Director of Advanced Practice at Huntsman Cancer Institute while continuing to care for patients as a nurse practitioner.</p> <p class=\"provider-bio\">Her approach to care is centered on compassion, listening, education, and quality of life. She takes time to help patients and families understand complex medical information, manage symptoms, and make informed decisions that reflect their individual needs and goals. Her extensive background in oncology and palliative care allows her to care for the whole person, not just the diagnosis.</p> <p class=\"provider-bio\">A Salt Lake City native, Brighton grew up in Sugar House and also spent many years living in Hawaii, which she still considers a second home. Outside of work, she enjoys camping, overlanding, sailing, traveling, exploring national parks, reading, writing poetry, and landscape photography. Most of all, she enjoys spending time outdoors with her husband and their dog.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Science in Nursing, University of Cincinnati, Cincinnati, OH Adult Nurse Practitioner –</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Advanced Oncology Certified Nurse Practitioner (AOCNP)</li> <li>Advanced Certified Hospice and Palliative Care Nurse Practitioner (ACHPN)</li> <li>End-of-Life Nursing Education Consortium (ELNEC) training</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-brighton-loveday.jpg",
+      "alt": "Brighton A. Loveday",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 41
+    },
+    "locationIds": [
+      "timpanogos-clinic",
+      "timpanogos-regional-hospital",
+      "utah-valley-hospital"
+    ]
+  },
+  {
+    "slug": "brittany-weed",
+    "name": "Brittany Weed, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-brittany-weed.webp",
+      "alt": "Brittany Weed",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Brittany Weed",
+        "html": "<p class=\"provider-bio\">Brittany Weed’s interest in hematology and oncology began before PA school, while training and working in a medical laboratory setting. Through her undergraduate studies and laboratory experience, she became fascinated by the science of hematology and began looking for opportunities to learn more. Shadowing a physician assistant at Utah Cancer Specialists ultimately confirmed her decision to pursue advanced training as a PA and a career in oncology.</p> <p class=\"provider-bio\">What Brittany values most about her work are the relationships she builds with patients and the opportunity to provide support and comfort during challenging times. She finds purpose in knowing that the effort she puts into continually learning and growing as a provider directly impacts the care her patients receive.</p> <p class=\"provider-bio\">Brittany believes good patient care begins with listening. Taking the time to truly understand a patient’s questions, concerns, and individual experience allows her to provide thoughtful care while helping patients feel heard and supported.</p> <p class=\"provider-bio\">A Utah native, Brittany spent several years living outside the state before realizing how much she missed home—and the mountains. She eventually returned to Utah and is happy to be back where she grew up.</p> <p class=\"provider-bio\">Outside of work, Brittany enjoys ballet, reading, brunch, spending time in the mountains, and walking her dog.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science , Medical Laboratory Science, Brigham Young University, Provo, UT Master of Health Science, Physician Assistant studies, Duke University Medical Center, Durham. North Carolina</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>The American Academy of Physicians Assistants</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-brittany-weed.jpg",
+      "alt": "Brittany Weed",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 42
+    },
+    "locationIds": [
+      "layton-clinic",
+      "davis-hospital-campus"
+    ]
+  },
+  {
+    "slug": "daniel-miller",
+    "name": "Daniel H. Miller, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-daniel-miller.webp",
+      "alt": "Daniel H. Miller",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Miller",
+        "html": "<p class=\"provider-bio\">Daniel H. Miller, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Creighton University School of Medicine, Omaha, NE</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Chief Resident, Mayo Clinic College of Medicine and Science, Jacksonville, FL</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-daniel-miller.jpg",
+      "alt": "Daniel H. Miller",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 23
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "david-warner",
+    "name": "David E. Warner, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-david-warner.webp",
+      "alt": "David E. Warner",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Warner",
+        "html": "<p class=\"provider-bio\">Dr. David Warner is a medical oncologist and sarcoma specialist who believes the best cancer care begins with understanding each patient as an individual. A Salt Lake City native, he returned to Utah to join Utah Cancer Specialists, drawn by the opportunity to work alongside a team of physicians he deeply respected and to care for patients in his home community.</p> <p class=\"provider-bio\">Dr. Warner’s interest in medicine and research began at the University of Utah, where he worked in a laboratory studying iron metabolism throughout college. He went on to attend medical school at the University of Utah, completed his residency at Wake Forest University, and completed his oncology fellowship at the University of Michigan.</p> <p class=\"provider-bio\">As a sarcoma specialist, Dr. Warner brings expertise that is uncommon in community oncology. He enjoys both the science of cancer care and the relationships he develops with his patients, particularly the opportunity to learn what matters most to each person.</p> <p class=\"provider-bio\">His approach to care is centered on partnership. He works with patients to establish their goals and determine the best path forward together. He believes his role is ultimately to help people—and recognizes that what “help” looks like can be different for every patient.</p> <p class=\"provider-bio\">Dr. Warner also has a passion for teaching and learning. He takes time to listen, understand his patients’ priorities, and respect their individual goals and autonomy. For him, getting to know the person behind the diagnosis is an important part of providing thoughtful, meaningful care.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Warner enjoys skiing, running, reading, music, and playing tennis.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>Medical Oncology</li> <li>Residency:</li> <li>Wake Forest University in Winston-Salem, NC</li> <li>Fellowship:</li> <li>University of Michigan Medical Center – Ann Arbor, MI</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-david-warner.jpg",
+      "alt": "David E. Warner",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 2
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "deborah-hatch",
+    "name": "Deborah Hatch, MPAS, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-deborah-hatch.webp",
+      "alt": "Deborah Hatch",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Deborah Hatch",
+        "html": "<p class=\"provider-bio\">Deborah Hatch’s connection to oncology is both professional and deeply personal. Her own experience with cancer and cancer treatment, along with caring for loved ones through their cancer journeys, inspired her to pursue a role where she could support others facing similar challenges.</p> <p class=\"provider-bio\">Those experiences continue to shape the way Deborah cares for patients today. She understands that every person’s experience with cancer is different and believes meaningful care begins with listening. Her approach is centered on empathy, open communication, shared decision-making, and collaboration with the entire care team.</p> <p class=\"provider-bio\">Deborah is BLS certified and is committed to helping patients and their families feel heard, informed, and supported throughout their care.</p> <p class=\"provider-bio\">Born and raised in Utah, Deborah is proud to call it home. Outside of work, she enjoys spending time with her family, cheering on BYU sports, and attending choral and orchestral concerts.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Exercise Science, Brigham Young University, Provo, UT Bachelor of Science, Health Sciences, Butler University, Indianapolis, IN Master of Physician Assistant Studies Degree, Butler University, Indianapolis, IN</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants (NCCPA)</li> <li>American Academy of Physician Assistants</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-deborah-hatch.jpg",
+      "alt": "Deborah Hatch",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 43
+    },
+    "locationIds": [
+      "cancer-center",
+      "lakeview-hospital-campus"
+    ]
+  },
+  {
+    "slug": "disean-kendall",
+    "name": "S. DiSean Kendall, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-disean-kendall.webp",
+      "alt": "S. DiSean Kendall",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Kendall",
+        "html": "<p class=\"provider-bio\">S. DiSean Kendall, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Albany Medical Center, Albany, NY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Duke University Medical Center, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, Duke University Medical Center, Durham, NC</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-disean-kendall.jpg",
+      "alt": "S. DiSean Kendall",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 14
+    },
+    "locationIds": [
+      "cancer-center",
+      "granger-fairbourne-station-clinic"
+    ]
+  },
+  {
+    "slug": "douglas-holt",
+    "name": "Douglas E. Holt, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-douglas-holt.webp",
+      "alt": "Douglas E. Holt",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Holt",
+        "html": "<p class=\"provider-bio\">Douglas E. Holt, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Pittsburgh School of Medicine, Pittsburgh, PA Clinical Scientist Training Program – Institute for Clinical Research Education, University of Pittsburgh, Pittsburgh, PA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>University of Utah School of Medicine, Salt Lake, UT Radiation Oncology, Chief Resident, University of Colorado School of Medicine, Aurora, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Brachytherapy, Memorial Sloan Kettering Cancer Center, New York, NY</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-douglas-holt.jpg",
+      "alt": "Douglas E. Holt",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 24
+    },
+    "locationIds": [
+      "timpanogos-regional-hospital"
+    ]
+  },
+  {
+    "slug": "dustin-boothe",
+    "name": "Dustin L. Boothe, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-dustin-boothe.webp",
+      "alt": "Dustin L. Boothe",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Boothe",
+        "html": "<p class=\"provider-bio\">Dustin L. Boothe, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, University of Utah, Huntsman Cancer Hospital, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Radiation Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-dustin-boothe.jpg",
+      "alt": "Dustin L. Boothe",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 25
+    },
+    "locationIds": [
+      "radiation-oncology",
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "gary-garner",
+    "name": "Gary M. Garner, MD, RPh",
+    "specialty": "Supportive and Rehabilitative Care",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-gary-garner.webp",
+      "alt": "Gary M. Garner",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Garner",
+        "html": "<p class=\"provider-bio\">Dr. Gary Garner has spent more than 25 years caring for patients with cancer, with a particular focus on supportive oncology and symptom management. Together with the Supportive Oncology team, he provides both in-person and telehealth care to patients across Utah Cancer Specialists locations.</p> <p class=\"provider-bio\">Dr. Garner is certified in Palliative Medicine and is a Fellow of the American Academy of Hospice and Palliative Medicine, an honor recognizing his professional contributions and publications in the field. His background as both a physician and pharmacist gives him a unique perspective in managing cancer-related symptoms and tailoring treatments to each patient’s changing needs.</p> <p class=\"provider-bio\">He believes the best care begins with curiosity and listening. By taking time to understand each patient’s symptoms, concerns, and perspective, Dr. Garner works to meet patients wherever they are in their cancer journey. He is also passionate about education and helping develop excellence in supportive oncology care across the Utah Cancer Specialists team.</p> <p class=\"provider-bio\">Dr. Garner grew up working on a Holstein dairy farm and cattle ranch before living in several areas across the country, including the East Coast, Chicago, Texas, and Colorado, eventually returning home to Utah.</p> <p class=\"provider-bio\">Outside of work, he enjoys reading and discussing literature with his wife, exploring Utah’s outdoors, and acting on recommendations from patients for books, movies, and restaurants. He deeply values the care provided at Utah Cancer Specialists and has trusted the organization with the care of many of his own family members and close friends.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT Doctor of Medicine: University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Poudre Valley Hospital, Fort Collins Colorado Fellow of American Academy of Hospice and Palliative Medicine</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Certified in Palliative Medicine</li> <li>Fellow of the American Academy of Hospice and Palliative Medicine (FAAHPM)</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-gary-garner.jpg",
+      "alt": "Gary M. Garner",
+      "category": "supportive-care",
+      "priority": 1,
+      "order": 34
+    },
+    "locationIds": [
+      "ucs-cancer-center",
+      "intermountain-medical-center-bldg-3"
+    ]
+  },
+  {
+    "slug": "grant-hunter",
+    "name": "Grant K. Hunter, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-grant-hunter.webp",
+      "alt": "Grant K. Hunter",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Hunter",
+        "html": "<p class=\"provider-bio\">Grant K. Hunter, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Virginia School of Medicine, Charlottesville, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Cleveland Clinic Foundation – Cleveland, OH</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Radiation Oncology</li> <li>Professional Memberships:</li> <li>Children’s Oncology Group</li> <li>American Society Therapeutic Radiology &amp; Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-grant-hunter.jpg",
+      "alt": "Grant K. Hunter",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 26
+    },
+    "locationIds": [
+      "radiation-oncology",
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "greg-litton",
+    "name": "Greg L. Litton, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-greg-litton.webp",
+      "alt": "Greg L. Litton",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Litton",
+        "html": "<p class=\"provider-bio\">Greg L. Litton, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Washington School of Medicine, Seattle, WA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Department of Medicine, University of Wisconsin, Madison, WI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology ,Department of Medicine, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> <li>Professional Associations:</li> <li>American College of Physicians Member</li> <li>American Society Clinical Oncology</li> <li>Utah Medical Association</li> <li>Utah Society of Medical Oncologists</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-greg-litton.jpg",
+      "alt": "Greg L. Litton",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 3
+    },
+    "locationIds": [
+      "intermountain-medical-center-campus"
+    ]
+  },
+  {
+    "slug": "gregory-chipman",
+    "name": "Gregory C. Chipman, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-gregory-chipman.webp",
+      "alt": "Gregory C. Chipman",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Chipman",
+        "html": "<p class=\"provider-bio\">Gregory C. Chipman, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University Hospitals of Cleveland, Cleveland , OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University Hospitals of Cleveland/ Case Medical Center, Cleveland, OH</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-gregory-chipman.jpg",
+      "alt": "Gregory C. Chipman",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 4
+    },
+    "locationIds": [
+      "south-jordan-clinic"
+    ]
+  },
+  {
+    "slug": "heather-mcgivern",
+    "name": "Heather A. McGivern, DNP, FNP-BC",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-heather-mcgivern.webp",
+      "alt": "Heather A. McGivern",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Heather McGivern",
+        "html": "<p class=\"provider-bio\">Heather Anne McGivern is a board-certified Family Nurse Practitioner with nearly 20 years of healthcare experience and a passion for caring for patients and families affected by cancer. As a lymphoma patient herself, Heather brings a personal understanding of the challenges that can come with a cancer diagnosis and the importance of feeling heard and supported throughout treatment.</p> <p class=\"provider-bio\">Heather began her healthcare career in 2006 and progressed from CNA and LPN to Registered Nurse, earning her nursing degree from Weber State University with high honors. She later earned her Bachelor of Science in Nursing from the University of Washington, graduating with faculty honors. In 2024, she completed her Doctor of Nursing Practice at Weber State University and became board-certified through the American Nurses Credentialing Center as a Family Nurse Practitioner.</p> <p class=\"provider-bio\">Her clinical background includes obstetrics, pre- and postoperative care, PACU, emergency medicine, and chronic pain management. Her approach to patient care combines evidence-based medicine with compassion, open communication, and collaboration across specialties.</p> <p class=\"provider-bio\">Heather’s own experience with lymphoma has strengthened her desire to care for people facing cancer. She believes that being a patient herself has made her a better listener and given her a deeper appreciation for the questions, concerns, and emotions patients and their families may experience.</p> <p class=\"provider-bio\">Born and raised in Utah, Heather has also lived in Pennsylvania, Virginia, and Washington before returning home to be closer to family. She and her husband have three children and a small farm filled with horses, chickens, cats, a dog, and a gecko.</p> <p class=\"provider-bio\">Outside of work, Heather enjoys running, kayaking, horseback riding, rodeos, concerts, and traveling. She especially enjoys running 5Ks and half marathons with her children and, as a former triathlete, hopes to return to triathlons in the future.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Associate of Science in Nursing, Weber State University, Ogden, Utah<br>Bachelor of Science in Nursing, University of Washington, Tacoma, Washington<br>Doctor of Nursing Practice–Family Nurse Practitioner, Weber State University, Ogden, Utah</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Nurses Credentialing Center (ANCC)</li> <li>Family Nurse Practitioner–Board Certified (FNP-BC)</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-heather-mcgivern.jpg",
+      "alt": "Heather A. McGivern",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 44
+    },
+    "locationIds": [
+      "bountiful-clinic-2",
+      "ogden-clinic"
+    ]
+  },
+  {
+    "slug": "hyatt-reed",
+    "name": "Hyatt W. Reed, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-hyatt-reed.webp",
+      "alt": "Hyatt W. Reed",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Reed",
+        "html": "<p class=\"provider-bio\">Hyatt W. Reed, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Science, Physician Assistant Studies, Jefferson College of Health Sciences, Roanoke, VA.</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Academy of Physician Assistants</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-hyatt-reed.jpg",
+      "alt": "Hyatt W. Reed",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 46
+    },
+    "locationIds": [
+      "jordan-valley-cancer-center",
+      "holy-cross-hospital"
+    ]
+  },
+  {
+    "slug": "hyrum-prestwich",
+    "name": "Hyrum B. Prestwich, FNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-hyrum-prestwich.webp",
+      "alt": "Hyrum B. Prestwich",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Prestwich",
+        "html": "<p class=\"provider-bio\">Hyrum B. Prestwich, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Science in Nursing (MSN), Family Nurse Practitioner – Brigham Young University, Provo, UT Bachelor of Science in Nursing (BSN) – Brigham Young University, Provo, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-hyrum-prestwich.jpg",
+      "alt": "Hyrum B. Prestwich",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 47
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "james-clarke",
+    "name": "James W. Clarke, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-james-clarke.webp",
+      "alt": "James W. Clarke",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Clarke",
+        "html": "<p class=\"provider-bio\">James W. Clarke, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Ohio State University College of Medicine, Columbus, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Ohio State University College of Medicine, Columbus, OH Location: Timpanogos Regional Hospital 700 W. 800 N., Ste. 140 Orem, UT 84057</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-james-clarke.jpg",
+      "alt": "James W. Clarke",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 27
+    },
+    "locationIds": [
+      "timpanogos-regional-hospital-2"
+    ]
+  },
+  {
+    "slug": "james-shortridge",
+    "name": "James R. Shortridge, DO",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English, Spanish",
+    "photo": {
+      "src": "/images/provider-expanded/provider-james-shortridge.webp",
+      "alt": "James R. Shortridge",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Shortridge",
+        "html": "<p class=\"provider-bio\">Dr. James Shortridge earned his undergraduate degree in Spanish from Brigham Young University and his medical degree from A.T. Still University Kirksville College of Osteopathic Medicine. He completed his Internal Medicine residency and fellowship in Hematology and Oncology at the University of Missouri before joining Utah Cancer Specialists in 2016.</p> <p class=\"provider-bio\">His interest in oncology began during his first year of residency while caring for patients on an inpatient oncology unit. He was deeply impacted by the optimism, kindness, and hope he saw in patients facing some of life’s most difficult circumstances. Those experiences inspired him to pursue a career in medical oncology.</p> <p class=\"provider-bio\">Dr. Shortridge believes his role is to give patients the information they need to understand their treatment options and make decisions that reflect their individual goals and priorities. He approaches care as a partnership, providing guidance, support, and resources throughout each patient’s cancer journey. His osteopathic training also influences his commitment to caring for the whole person rather than focusing solely on a diagnosis.</p> <p class=\"provider-bio\">Originally from Colorado, Dr. Shortridge has longstanding ties to Utah through his years at BYU and family in the Salt Lake area. Outside of work, he enjoys mountain biking throughout Utah, skiing, hiking, and spending time with his wife and three children. He can also be found attempting to keep up with his kids at video games, watching monster trucks, and attending his wife’s community theater performances.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Undergraduate</h3> <p>Bachelor of Arts in Spanish, Brigham Young University, Provo, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Osteopathic Medicine, A.T. Still University Kirksville College of Osteopathic Medicine, Kirksville, MO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal medicine, University of Missouri in Columbia, MO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology / Oncology, University of Missouri in Columbia, MO</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-james-shortridge.jpg",
+      "alt": "James R. Shortridge",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 5
+    },
+    "locationIds": [
+      "jordan-valley-cancer-center",
+      "holy-cross-hospital"
+    ]
+  },
+  {
+    "slug": "jared-scott",
+    "name": "Jared E. Scott, AG-ACNP, AG-ACCNS",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-jared-scott.webp",
+      "alt": "Jared E. Scott",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Jared Scott",
+        "html": "<p class=\"provider-bio\">Jared Scott is a nurse practitioner with more than two decades of healthcare experience, including 22 years of service in the U.S. Navy as a Registered Nurse and Nurse Practitioner. His career has been primarily focused on emergency medicine, most recently serving as Department Head of the Emergency Department at U.S. Naval Hospital Okinawa in Japan.</p> <p class=\"provider-bio\">After years of caring for patients in emergency settings, Jared was drawn to oncology by the opportunity to build lasting relationships with patients. He values being able to support people over time, helping them navigate difficult diagnoses and the challenges that can come with treatment.</p> <p class=\"provider-bio\">Jared maintains national certifications as an Acute Care Nurse Practitioner and an Emergency Room/Trauma Clinical Nurse Specialist. His approach to care is centered on listening and collaboration. He takes the time to understand each patient’s concerns, assess their individual needs, and work together to develop a plan that is right for them.</p> <p class=\"provider-bio\">Born in Salt Lake City, Jared left Utah after graduate school when he joined the Navy. After completing his military service, he returned home to continue his healthcare career and serve patients in the community where he grew up.</p> <p class=\"provider-bio\">Outside of work, Jared enjoys staying active, spending time outdoors, and playing guitar. He is also a strong believer in the benefits of regular exercise and stretching for maintaining health and quality of life.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, UT Master of Science, Nursing, University of Maryland, Baltimore, MD Master of Public Administration, Brigham Young University, Provo, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Adult-Gerontology Acute Care</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-jared-scott.jpg",
+      "alt": "Jared E. Scott",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 48
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "jason-stinnett",
+    "name": "Jason M. Stinnett, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-jason-stinnett.webp",
+      "alt": "Jason M. Stinnett",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Stinnett",
+        "html": "<p class=\"provider-bio\">Jason M. Stinnett, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Arkansas, Little Rock, AR</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Utah, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/ Medical Oncology, Huntsman Cancer Institute, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-jason-stinnett.jpg",
+      "alt": "Jason M. Stinnett",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 6
+    },
+    "locationIds": [
+      "layton-clinic",
+      "davis-hospital-campus"
+    ]
+  },
+  {
+    "slug": "jeffrey-lee",
+    "name": "R. Jeffrey Lee, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-jeffrey-lee.webp",
+      "alt": "R. Jeffrey Lee",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Lee",
+        "html": "<p class=\"provider-bio\">R. Jeffrey Lee, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Emory University School of Medicine, Atlanta, GA Bachelor of Arts, Economics, Dartmouth College, Hanover, NH</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Radiology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-jeffrey-lee.jpg",
+      "alt": "R. Jeffrey Lee",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 29
+    },
+    "locationIds": [
+      "radiation-oncology",
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "john-hayes",
+    "name": "John K. Hayes, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-john-hayes.webp",
+      "alt": "John K. Hayes",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Hayes",
+        "html": "<p class=\"provider-bio\">John K. Hayes, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University Of Utah School Of Medicine, Salt Lake City, UT 1980-1983</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, University Of Utah School Of Medicine, Salt Lake City, UT 1984-1988</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-john-hayes.jpg",
+      "alt": "John K. Hayes",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 28
+    },
+    "locationIds": [
+      "st-mark-s-hospital",
+      "holy-cross-davis-hospital"
+    ]
+  },
+  {
+    "slug": "jonathan-whisenant",
+    "name": "Jonathan R. Whisenant, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-jonathan-whisenant.webp",
+      "alt": "Jonathan R. Whisenant",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Whisenant",
+        "html": "<p class=\"provider-bio\">Jonathan R. Whisenant, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of California, San Francisco, CA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine University, Colorado Health Science Center, Denver, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology and Medical Oncology, University of California, San Francisco, CA</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Hematology and Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-jonathan-whisenant.jpg",
+      "alt": "Jonathan R. Whisenant",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 7
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "jose-pacheco",
+    "name": "Jose M. Pacheco, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-jose-pacheco.webp",
+      "alt": "Jose M. Pacheco",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Pacheco",
+        "html": "<p class=\"provider-bio\">Jose M. Pacheco, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Texas Medical Branch, Galveston, TX</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Washington University/Barnes Jewish Hospital, Saint Louis, MO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology, Baylor College of Medicine, Houston, TX</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-jose-pacheco.jpg",
+      "alt": "Jose M. Pacheco",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 8
+    },
+    "locationIds": [
+      "start-at-granger-faibourne-station"
+    ]
+  },
+  {
+    "slug": "julie-balk",
+    "name": "Julie A. Balk, DNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-julie-balk.webp",
+      "alt": "Julie A. Balk",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Balk",
+        "html": "<p class=\"provider-bio\">Julie A. Balk, DNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Nursing, Westminster College, SLC UT Master of Science, University of Utah, SLC UT Doctorate of Nursing, University of Utah, SLC UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-julie-balk.jpg",
+      "alt": "Julie A. Balk",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 49
+    },
+    "locationIds": [
+      "intermountain-medical-center-campus"
+    ]
+  },
+  {
+    "slug": "julie-luckart",
+    "name": "Julie B. Luckart, DNP, AOCNP, FNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-julie-luckart.webp",
+      "alt": "Julie B. Luckart",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Luckart",
+        "html": "<p class=\"provider-bio\">Julie B. Luckart, DNP, AOCNP, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Psychology, University of Utah, Salt Lake City, UT Bachelor of Science, Nursing, John Hopkins University, Baltimore, MD Master of Nursing, Family Practice, University of Utah, Salt Lake City, UT Doctorate of Nursing Practice, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Oncology Nursing Certification Corporation</li> <li>American Nursing Credentialing Center</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-julie-luckart.jpg",
+      "alt": "Julie B. Luckart",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 50
+    },
+    "locationIds": [
+      "start-mountain-region-clinical-trials"
+    ]
+  },
+  {
+    "slug": "justin-call",
+    "name": "Justin A. Call, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-justin-call.webp",
+      "alt": "Justin A. Call",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Call",
+        "html": "<p class=\"provider-bio\">Justin A. Call, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Colorado Health Sciences Center, Denver, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Colorado Health Sciences Center, Denver, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology and Medical Oncology, University of Colorado Health Sciences Center, Denver, CO</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-justin-call.jpg",
+      "alt": "Justin A. Call",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 9
+    },
+    "locationIds": [
+      "ucs-at-granger-fairbourne-station"
+    ]
+  },
+  {
+    "slug": "kimberly-mcfee",
+    "name": "Kimberly McFee, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-kimberly-mcfee.webp",
+      "alt": "Kimberly McFee",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About McFee",
+        "html": "<p class=\"provider-bio\">Kim McFee began her career in cardiothoracic surgery before transitioning to inpatient oncology, where she cared for patients in Des Moines, Iowa, for two years. In 2023, she moved to Salt Lake City and continued her career in outpatient oncology.</p> <p class=\"provider-bio\">Kim is passionate about providing patient-centered care and taking the time to truly listen to each patient’s questions and concerns. She uses evidence-based medicine to help manage disease and symptoms while making sure patients understand the reasoning behind her recommendations and the options available to them.</p> <p class=\"provider-bio\">She believes patients should feel informed and involved in decisions about their care. By explaining treatment recommendations clearly and creating space for questions, Kim works to help patients better understand their care and feel confident participating in the process.</p> <p class=\"provider-bio\">Originally from Iowa, Kim moved to Utah for the mountains and the outdoor lifestyle.</p> <p class=\"provider-bio\">Outside of work, she enjoys camping, hiking with her dogs, rock climbing, snowboarding, skiing, and reading.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Kinesiology , Iowa State University, Ames, IA Bachelor of Science, Genetics, Iowa State University, Ames, IA Master of Science, Physician Assistant Studies, Idaho State University, Boise, ID</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>NCCPA Certification</li> <li>BLS Certified</li> <li>ACLS Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-kimberly-mcfee.jpg",
+      "alt": "Kimberly McFee",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 51
+    },
+    "locationIds": [
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "kylee-maliwauki",
+    "name": "Kylee R. Maliwauki, DNP, FNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-kylee-maliwauki.webp",
+      "alt": "Kylee R. Maliwauki",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Maliwauki",
+        "html": "<p class=\"provider-bio\">Kylee R. Maliwauki, DNP, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Utah Valley University, Orem, UT Master of Science, Nursing, Rocky Mountain University of Health Professionals, Provo, UT Certifications: Kylee has extensive experience in Hospice and Palliative Care</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-kylee-maliwauki.jpg",
+      "alt": "Kylee R. Maliwauki",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 52
+    },
+    "locationIds": [
+      "pleasant-grove-clinic",
+      "utah-valley-hospital"
+    ]
+  },
+  {
+    "slug": "leland-rogers",
+    "name": "C. Leland Rogers, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-leland-rogers.webp",
+      "alt": "C. Leland Rogers",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Rogers",
+        "html": "<p class=\"provider-bio\">C. Leland Rogers, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kentucky College of Medicine, Louisville ,KY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology ,University of N. Carolina, Chapel Hill, NC Location: Jordan Valley Cancer Center 3592 W. 9000 S., Ste. 100 West Jordan, UT 84088</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-leland-rogers.jpg",
+      "alt": "C. Leland Rogers",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 22
+    },
+    "locationIds": [
+      "jordan-valley-cancer-center-2"
+    ]
+  },
+  {
+    "slug": "lindsay-hunter",
+    "name": "Lindsay A. Hunter, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-lindsay-hunter.webp",
+      "alt": "Lindsay A. Hunter",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Hunter",
+        "html": "<p class=\"provider-bio\">Dr. Lindsay Hunter is a medical oncologist whose approach to cancer care is rooted in compassion, respect, and meaningful relationships with patients and their families.</p> <p class=\"provider-bio\">After college, Dr. Hunter worked with the National Institutes of Health conducting pediatric research. That experience helped solidify her decision to pursue medicine, and she returned home to Utah for medical school. She completed her residency at the University of Utah, followed by her fellowship at Huntsman Cancer Institute.</p> <p class=\"provider-bio\">Dr. Hunter was drawn to oncology by the patients themselves and the opportunity to care for people throughout some of the most challenging times in their lives. Her decision was also deeply personal. After losing her father to colon cancer, she knew she wanted a career where she could build lasting relationships with patients and families while helping them navigate the complexities of cancer.</p> <p class=\"provider-bio\">Her approach begins with listening. Dr. Hunter takes time to understand each patient’s concerns, values, and individual needs, recognizing that there is much more to a person than their diagnosis. She believes clear communication and shared decision-making are essential to helping patients feel comfortable asking questions and confident in their care. Ultimately, Dr. Hunter wants each patient to feel known, respected, and supported throughout their cancer journey.</p> <p class=\"provider-bio\">A Utah native, Dr. Hunter grew up surrounded by a large extended family and is grateful to continue calling Utah home. Outside of medicine, she enjoys gardening, painting, hiking, and cooking.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Utah, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology, Medical Oncology, University of Utah, Huntsman Cancer Institute and University of Utah, SLC, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-lindsay-hunter.jpg",
+      "alt": "Lindsay A. Hunter",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 10
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "louise-tobey",
+    "name": "Louise K. Tobey, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-louise-tobey.webp",
+      "alt": "Louise K. Tobey",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Tobey",
+        "html": "<p class=\"provider-bio\">Louise Tobey began working in healthcare at age 18, with a career that has taken her through clinical laboratory science, internal medicine, and ultimately oncology at Utah Cancer Specialists.</p> <p class=\"provider-bio\">Her interest in oncology became personal when a family member was diagnosed with cancer. She was deeply grateful for the compassionate care they received and was drawn to oncology because of the meaningful, long-term relationships providers can build with patients and families.</p> <p class=\"provider-bio\">She believes every patient has a unique journey and deserves individualized care. Louise approaches her patients with the same compassion and attention she would want for her own family, taking time to understand their needs and support them throughout their care.</p> <p class=\"provider-bio\">Louise grew up in Brigham City and raised her family in Cache Valley before moving to the Salt Lake area to join Utah Cancer Specialists. Outside of work, her family and grandchildren are her greatest priority. She also enjoys spending time with friends, golfing, bicycling, and reading.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Clinical Laboratory Science, Weber State University, Ogden, UT<br>Master of Science in Physician Assistant Studies, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-louise-tobey.jpg",
+      "alt": "Louise K. Tobey",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 53
+    },
+    "locationIds": [
+      "intermountain-medical-center"
+    ]
+  },
+  {
+    "slug": "maja-lusk",
+    "name": "Maja L. Lusk, FNP, DNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-maja-lusk.webp",
+      "alt": "Maja L. Lusk",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Lusk",
+        "html": "<p class=\"provider-bio\">Maja L. Lusk, FNP, DNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, University of Utah College of Nursing, SLC UT Doctorate of Nursing, Weber State University, Ogden, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Academy of Nurse Practitioners</li> <li>American Nurse Practitioners Association</li> <li>Utah Nurse Practitioner Association</li> <li>Sigma Theta Tau, International Honors Society of Nursing</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-maja-lusk.jpg",
+      "alt": "Maja L. Lusk",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 54
+    },
+    "locationIds": [
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "makaylie-crowther",
+    "name": "Makaylie S. Crowther, DNP, FNP-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-makaylie-crowther.webp",
+      "alt": "Makaylie S. Crowther",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "tel:2087853800",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Makaylie Crowther",
+        "html": "<p class=\"provider-bio\">Makaylie Crowther is a nurse practitioner with experience in oncology, family practice, and urgent care. Her interest in oncology began while working as an infusion nurse, where she cared for patients receiving chemotherapy and immunotherapy. The relationships she developed with patients during treatment inspired her to continue her career in cancer care.</p> <p class=\"provider-bio\">Makaylie has a particular interest in cancer survivorship and providing care that extends beyond active treatment. Her passion for survivorship is also personal. After watching a family member face cancer, she saw firsthand that finishing treatment does not necessarily mean a patient is finished with the effects of cancer. That experience shaped her commitment to supporting patients throughout their entire journey—from diagnosis and treatment to recovery and long-term survivorship.</p> <p class=\"provider-bio\">Her approach focuses on compassionate, comprehensive care that considers the whole person. She works to help patients navigate the physical and emotional challenges of cancer while connecting them with the education, support, and resources they need to maintain their health and quality of life.</p> <p class=\"provider-bio\">In addition to oncology, Makaylie has provided comprehensive care in family practice and urgent care, including diagnosis, treatment planning, preventive care, and patient education. Her background also includes teaching nursing students as an adjunct clinical instructor and serving in leadership roles in behavioral health and long-term care.</p> <p class=\"provider-bio\">Makaylie has called southeast Idaho home for nearly five years. Outside of work, she enjoys reading and baking, as well as camping, mountain biking, and skiing with her husband.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Nursing, Weber State University, Ogden, Utah<br>Doctor of Nursing, Family Nurse Practitioner, Idaho State University, Pocatello, Idaho</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Family Nurse Practitioner–Certified (FNP-C)</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact-2",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-makaylie-crowther.jpg",
+      "alt": "Makaylie S. Crowther",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 45
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "nancy-mortensen",
+    "name": "Nancy W. Mortensen, FNP, ANP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-nancy-mortensen.webp",
+      "alt": "Nancy W. Mortensen",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Mortensen",
+        "html": "<p class=\"provider-bio\">Nancy W. Mortensen, FNP, ANP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Eastern Kentucky University, Richmond, KY Masters Degree, Adult Nurse Practitioner and Oncology Clinical Nurse Specialists Program, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Nurses Association Adult Nurse Practitioner</li> <li>American Nurses Association, Family Nurse Practitioner</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-nancy-mortensen.jpg",
+      "alt": "Nancy W. Mortensen",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 55
+    },
+    "locationIds": [
+      "south-jordan-clinic"
+    ]
+  },
+  {
+    "slug": "nathan-rich",
+    "name": "Nathan T. Rich, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-nathan-rich.webp",
+      "alt": "Nathan T. Rich",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Rich",
+        "html": "<p class=\"provider-bio\">Nathan T. Rich, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Ohio State University College of Medicine and Public Health, Columbus, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Ohio State University Medical Center, Columbus, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology / Oncology, University of Iowa Hospitals and Clinics, Iowa City, IA</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-nathan-rich.jpg",
+      "alt": "Nathan T. Rich",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 11
+    },
+    "locationIds": [
+      "provo-clinic",
+      "utah-valley-hospital"
+    ]
+  },
+  {
+    "slug": "nidhi-sharma",
+    "name": "Nidhi Sharma, DNP, FNP-C",
+    "specialty": "Supportive and Rehabilitative Care",
+    "languages": "English, Punjabi, Hindi/Urdu",
+    "photo": {
+      "src": "/images/provider-nidhi-sharma.jpg",
+      "alt": "Nidhi Sharma",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "tel:8012690231",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Nidhi Sharma",
+        "html": "<p class=\"provider-bio\">Nidhi Sharma, DNP, FNP-C is a family nurse practitioner on the Supportive and Rehabilitative Care team at Utah Cancer Specialists. She sees patients at the Murray Clinic at Intermountain Medical Center.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Doctor of Nursing, Family Nurse Practitioner, Idaho State University, Pocatello, ID</p> <p>Bachelor of Science, Nursing, Dixie State University, St. George, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Family Nurse Practitioner — American Academy of Nurse Practitioners Certification Board (AANPCB)</li> <li>Registered Nurse Licensure — Utah, Vermont, Virginia</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact-3",
+    "media": null,
+    "directory": {
+      "photo": "/images/provider-nidhi-sharma.jpg",
+      "alt": "Nidhi Sharma",
+      "category": "supportive-care",
+      "priority": 0,
+      "order": 36
+    },
+    "locationIds": [
+      "murray-clinic"
+    ],
+    "page": {
+      "description": "Nidhi Sharma, DNP, FNP-C, Supportive and Rehabilitative Care at Utah Cancer Specialists in Murray, Utah.",
+      "cta": {
+        "heading": "Contact us for more information.",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:8012690231",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "slug": "nitin-chandramouli",
+    "name": "Nitin B. Chandramouli, MD, FACP",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-nitin-chandramouli.webp",
+      "alt": "Nitin B. Chandramouli",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Chandramouli",
+        "html": "<p class=\"provider-bio\">Dr. Nitin Chandramouli has been caring for patients at Utah Cancer Specialists since 2002. Originally from Iowa, he attended Tufts University in Boston for his undergraduate education before returning to the University of Iowa for medical school and his Internal Medicine residency. Drawn to the Mountain West, he completed his fellowship in Hematology and Oncology at Huntsman Cancer Institute and the University of Utah.</p> <p class=\"provider-bio\">During residency, Dr. Chandramouli recognized that hematology and oncology were entering an exciting period of new treatments and rapidly advancing technology. That progress drew him to the specialty and continues to make the field meaningful to him today. He is a Fellow of the American College of Physicians (FACP).</p> <p class=\"provider-bio\">Dr. Chandramouli believes that good care starts with listening. He makes an effort to learn about each patient beyond their diagnosis, including their interests, family, and life outside of the clinic. Building that personal connection helps him better understand what matters to each patient and provide care that reflects their individual needs and priorities.</p> <p class=\"provider-bio\">His connection to the region is also personal. His wife was born and raised in southeast Idaho, and the opportunity to build their life in the Mountain West was an important part of making Utah home.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Chandramouli enjoys spending time with his immediate and extended family. He previously enjoyed deer and elk hunting on horseback and now spends more of his free time golfing and shooting.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Iowa, Iowa City, IA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Iowa, Iowa City, IA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Medical Oncology, Huntsman Cancer Institute, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Hematology and Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-nitin-chandramouli.jpg",
+      "alt": "Nitin B. Chandramouli",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 12
+    },
+    "locationIds": [
+      "cancer-center",
+      "tooele-clinic"
+    ]
+  },
+  {
+    "slug": "rachel-shenker",
+    "name": "Rachel F. Shenker, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-rachel-shenker.webp",
+      "alt": "Rachel F. Shenker",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Shenker",
+        "html": "<p class=\"provider-bio\">Rachel F. Shenker, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Wake Forest School of Medicine, Winston-Salem, NC Bachelor of Science in Biology, Duke University, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Duke Cancer Institute, Durham, NC Chief Resident, Radiation Oncology, Duke Cancer Institute, Durham, NC Specialized Training: Gynecologic Brachytherapy Concentration, Duke University, Durham, NC</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>by the American Board of Radiology</li> </ul>"
+      },
+      {
+        "id": "memberships",
+        "title": "Professional Memberships",
+        "html": "<ul class=\"provider-list\"> <li>American Society of Clinical Oncology</li> <li>American Brachytherapy Society</li> <li>American Society for Radiation Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-rachel-shenker.jpg",
+      "alt": "Rachel F. Shenker",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 30
+    },
+    "locationIds": [
+      "radiation-oncology",
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "rik-hanson",
+    "name": "Richard \"Rik\" E. Hanson, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-rik-hanson.webp",
+      "alt": "Richard \"Rik\" E. Hanson",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Hanson",
+        "html": "<p class=\"provider-bio\">Richard \"Rik\" E. Hanson, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Utah Physician Assistant Program, Salt Lake City, UT Bachelor of Science, Health Care Management,</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-rik-hanson.jpg",
+      "alt": "Richard \"Rik\" E. Hanson",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 56
+    },
+    "locationIds": [
+      "tooele-clinic"
+    ]
+  },
+  {
+    "slug": "robert-harris",
+    "name": "Robert A. Harris, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-robert-harris.webp",
+      "alt": "Robert A. Harris",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Harris",
+        "html": "<p class=\"provider-bio\">Robert A. Harris, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Uniformed Services University of the Health Sciences Bethesda, MD</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, National Cancer Institute, Bethesda, MD Location: Holy Cross Davis Hospital 2132 N 1700 W, Suite B-101 Layton, UT 84041</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-robert-harris.jpg",
+      "alt": "Robert A. Harris",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 31
+    },
+    "locationIds": [
+      "holy-cross-davis-hospital"
+    ]
+  },
+  {
+    "slug": "robert-havard",
+    "name": "Robert A. Havard, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-robert-havard.webp",
+      "alt": "Robert A. Havard",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Havard",
+        "html": "<p class=\"provider-bio\">Dr. Havard grew up in Visalia, California, and completed his undergraduate studies at UCLA before heading east for medical school in Chicago and residency at the University of Virginia. He later returned west to complete his oncology training at Huntsman Cancer Institute, where he discovered that Utah was where he wanted to build both his career and his life. He went on to join Utah Cancer Specialists.</p> <p class=\"provider-bio\">With a father who practiced medical oncology, Dr. Havard had an early introduction to both the challenges and rewards of caring for patients with cancer. That perspective, combined with the significant advances in cancer treatment he has witnessed throughout his career, continues to shape his commitment to providing thoughtful, individualized care.</p> <p class=\"provider-bio\">He views the relationship with each patient as a partnership. His approach centers on shared decision-making, providing patients with the information and guidance they need to understand their options, navigate complex decisions, and choose the treatment approach that is right for them.</p> <p class=\"provider-bio\">Dr. Havard first began visiting Utah to ski in 2003 and later returned for his oncology training in 2016. Staying in Utah after completing his training was an easy decision. Outside of work, he enjoys road and mountain biking, trail running, skiing, and spending time with his family.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Undergraduate</h3> <p>Bachelor’s degree, University of California, Los Angeles (UCLA), Los Angeles, CA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Graduate Degrees</h3> <p>Master’s degree in Biomedical Sciences<br>Master’s degree in Healthcare Administration and Management<br>Certificate in Clinical Research</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Rosalind Franklin University of Medicine and Science, North Chicago, IL</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Virginia in Charlottesville, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology, Medical Oncology, University of Utah, Huntsman Cancer Institute and Veterans Affairs Hospital, SLC, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Internal Medicine</li> <li>Hematology and Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-robert-havard.jpg",
+      "alt": "Robert A. Havard",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 13
+    },
+    "locationIds": [
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "robert-isaak",
+    "name": "Robert J. Isaak, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-robert-isaak.webp",
+      "alt": "Robert J. Isaak",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Isaak",
+        "html": "<p class=\"provider-bio\">Robert J. Isaak, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Idaho State University, Pocatello, ID Doctor of medicine, University of Nevada, Reno, NV</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Wayne State University, Detroit MI</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-robert-isaak.jpg",
+      "alt": "Robert J. Isaak",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 32
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "samantha-gaffney",
+    "name": "Samantha L. Gaffney, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-samantha-gaffney.webp",
+      "alt": "Samantha L. Gaffney",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Gaffney",
+        "html": "<p class=\"provider-bio\">Samantha L. Gaffney, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Health Promotion, University of Utah, Salt Lake City, UT Master of Science in Physician Assistant Studies, University of Colorado Anschutz Medical Campus</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants. (NCCPA)</li> <li>Professional Affiliations:</li> <li>American Academy of Physician Assistants (AAPA)</li> <li>Association of Physician Assistants in Oncology (APAO)</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-samantha-gaffney.jpg",
+      "alt": "Samantha L. Gaffney",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 57
+    },
+    "locationIds": [
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "scott-samuelson",
+    "name": "Scott J. Samuelson, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-scott-samuelson.webp",
+      "alt": "Scott J. Samuelson",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Samuelson",
+        "html": "<p class=\"provider-bio\">Dr. Scott Samuelson earned his medical degree from the University of Utah, completed his Internal Medicine residency at Duke University, and went on to complete fellowship training at Huntsman Cancer Institute, where he also spent a year on faculty. He joined Utah Cancer Specialists in 2009.</p> <p class=\"provider-bio\">His interest in oncology began during residency, when he discovered how much he valued working with cancer patients and their families. He considers it a privilege to help patients navigate one of the most difficult times in their lives.</p> <p class=\"provider-bio\">Dr. Samuelson treats a wide range of cancers and blood disorders, with particular expertise in genitourinary cancers, including advanced prostate, bladder, kidney, and testicular cancers. He also has significant experience caring for women with gynecologic cancers and maintains strong relationships with local and national experts in these areas.</p> <p class=\"provider-bio\">His approach to care centers on education, honesty, and shared decision-making. Dr. Samuelson believes patients should fully understand their diagnosis and treatment options so they can make informed decisions about their care. While he believes in treating cancer aggressively when appropriate, he also recognizes that sometimes a less intensive approach may best support a patient’s goals and quality of life.</p> <p class=\"provider-bio\">He is especially grateful for the team he works alongside at Utah Cancer Specialists and the way they make patients feel cared for and supported.</p> <p class=\"provider-bio\">A lifelong Utahn, Dr. Samuelson grew up in Holladay and has lived in Davis County with his family since 2006. Outside of work, he enjoys spending time with his family, especially his granddaughter—his dogs, his faith, and following sports.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Duke University School of Medicine, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology / Oncology, Huntsman Cancer Institute, University of Utah School of Medicine. SLC, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-scott-samuelson.jpg",
+      "alt": "Scott J. Samuelson",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 15
+    },
+    "locationIds": [
+      "salt-lake-clinic"
+    ]
+  },
+  {
+    "slug": "shauna-olsen",
+    "name": "Shauna H. Olsen, FNP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-shauna-olsen.webp",
+      "alt": "Shauna H. Olsen",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Olsen",
+        "html": "<p class=\"provider-bio\">Shauna H. Olsen, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Westminster College, Salt Lake City, UT Masters, Nursing, Westminster College, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-shauna-olsen.jpg",
+      "alt": "Shauna H. Olsen",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 58
+    },
+    "locationIds": [
+      "cancer-center"
+    ]
+  },
+  {
+    "slug": "staci-gunter",
+    "name": "Staci L. Gunter, PA-C",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-staci-gunter.webp",
+      "alt": "Staci L. Gunter",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Gunter",
+        "html": "<p class=\"provider-bio\">Staci L. Gunter, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Physician Assistant, University of Utah Salt Lake City, UT Bachelor of Science, Biology, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-staci-gunter.jpg",
+      "alt": "Staci L. Gunter",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 59
+    },
+    "locationIds": [
+      "provo-clinic",
+      "utah-valley-hospital"
+    ]
+  },
+  {
+    "slug": "stephanie-ellis",
+    "name": "Stephanie H. Ellis, DNP",
+    "specialty": "Supportive and Rehabilitative Care",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-stephanie-ellis.webp",
+      "alt": "Stephanie H. Ellis",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Ellis",
+        "html": "<p class=\"provider-bio\">Stephanie H. Ellis, DNP is a member of the Supportive and Rehabilitative Care team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, Utah Master of Science, Nursing, Maryville University of Saint Louis, St Louis, Missouri</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Adult Gerontology-Certified Nurse Practitioner with expertise in palliative care and oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-stephanie-ellis.jpg",
+      "alt": "Stephanie H. Ellis",
+      "category": "supportive-care",
+      "priority": 0,
+      "order": 35
+    },
+    "locationIds": [
+      "provo-clinic",
+      "utah-valley-hospital",
+      "intermountain-medical-center-bldg-3"
+    ]
+  },
+  {
+    "slug": "sunita-sigdel",
+    "name": "Sunita Sigdel, ANP",
+    "specialty": "Advanced Practitioner",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-sunita-sigdel.webp",
+      "alt": "Sunita Sigdel",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Sigdel",
+        "html": "<p class=\"provider-bio\">Sunita Sigdel, ANP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Nursing (FNP ) from Walden University, Minneapolis, MN Bachelor of Science in Nursing (BSN) from Western Governors University. Salt Lake City, UT ADN from Manipal School of Nursing, Pokhara, Nepal</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-sunita-sigdel.jpg",
+      "alt": "Sunita Sigdel",
+      "category": "advanced-practitioners",
+      "priority": 0,
+      "order": 60
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "thomas-skidmore",
+    "name": "Thomas B. Skidmore, MD",
+    "specialty": "Radiation Oncology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-thomas-skidmore.webp",
+      "alt": "Thomas B. Skidmore",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Skidmore",
+        "html": "<p class=\"provider-bio\">Thomas B. Skidmore, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Westminster College, Salt Lake City, UT, B.S., Psychology with a Minor in Biology, Magna Cum Laude Hiatus from Jan 98-Jan 00 to serve religious mission in Helsinki, Finland East High School, Salt Lake City, UT Summa Cum Laude</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Academy of Radiology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-thomas-skidmore.jpg",
+      "alt": "Thomas B. Skidmore",
+      "category": "radiation-oncology",
+      "priority": 0,
+      "order": 33
+    },
+    "locationIds": [
+      "st-mark-s-hospital"
+    ]
+  },
+  {
+    "slug": "tylan-magnusson",
+    "name": "Tylan Magnusson, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-tylan-magnusson.webp",
+      "alt": "Tylan Magnusson",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Magnusson",
+        "html": "<p class=\"provider-bio\">Tylan Magnusson, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Doctor of Medicine (MD), Medical College of Wisconsin, Green Bay, WI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine Residency, Tinsley Harrison Internal Medicine Residency Program, University of Alabama at Birmingham (UAB), Birmingham, AL</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology and Medical Oncology Fellowship, University of Alabama at Birmingham (UAB), Birmingham, AL</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>The American Board of Internal Medicine</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-tylan-magnusson.jpg",
+      "alt": "Tylan Magnusson",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 16
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "wayne-ormsby",
+    "name": "Wayne D. Ormsby, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-cutouts/provider-wayne-ormsby.webp",
+      "alt": "Wayne D. Ormsby",
+      "class": "provider-hero-photo"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Ormsby",
+        "html": "<p class=\"provider-bio\">Dr. Wayne Ormsby is a board-certified hematologist and medical oncologist who values the long-term relationships he develops with patients and their families. A Utah native, he is committed to bringing innovative cancer treatments and clinical trials into the community so patients can receive advanced care closer to home.</p> <p class=\"provider-bio\">Dr. Ormsby completed his undergraduate education at Brigham Young University, followed by an Internal Medicine residency at the University of Rochester, where he also served as Chief Resident. He completed his fellowship in Hematology and Medical Oncology at Mayo Clinic and previously practiced at Willamette Valley Cancer Institute in Eugene, Oregon. He is board certified in Internal Medicine, Medical Oncology, and Hematology.</p> <p class=\"provider-bio\">At Utah Cancer Specialists, Dr. Ormsby serves as Director of the Hematologic Malignancies Clinic and is the site principal investigator for late-phase clinical trials in hematologic malignancies. In December 2024, he founded and began directing the Utah Cancer Specialists T-cell engager program, which provides bispecific antibody therapy and monitoring entirely in the outpatient setting. The program was developed to make these important treatments more accessible to patients who might otherwise need to travel to an academic medical center or be hospitalized for treatment and monitoring.</p> <p class=\"provider-bio\">Dr. Ormsby finds the science of oncology fascinating, particularly the rapid advances that are helping patients live longer and better, often with fewer side effects. He works to bring promising approaches—including immunotherapies and cutting-edge clinical trials—to patients in the community.</p> <p class=\"provider-bio\">His philosophy is simple: cancer care is a partnership. He believes in being honest with patients and their families, listening carefully, and making treatment decisions together. His goal is to ensure each patient understands their options and has access to the best treatment possible.</p> <p class=\"provider-bio\">Dr. Ormsby was born and raised on the west side of the Salt Lake Valley, where much of his extended family still lives. Outside of medicine, he enjoys spending time with family, traveling, reading, hiking, and weightlifting.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Virginia School of Medicine, Charlottesville, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal medicine, University of Rochester, Rochester, NY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/ Medical Oncology, Mayo Graduate School of Medicine, Rochester, MN</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-wayne-ormsby.jpg",
+      "alt": "Wayne D. Ormsby",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 17
+    },
+    "locationIds": [
+      "bountiful-clinic",
+      "lakeview-hospital-campus",
+      "salt-lake-clinic-2"
+    ]
+  },
+  {
+    "slug": "william-mckean",
+    "name": "William B. McKean, PhD, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-william-mckean.webp",
+      "alt": "William B. McKean",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. McKean",
+        "html": "<p class=\"provider-bio\">William B. McKean, PhD, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Medical Scientist Training Program, University of Texas Southwestern Medical Center, Dallas, TX</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine Residency, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology Fellowship, Huntsman Cancer Institute, Salt Lake City, UT Neuro-Oncology Fellowship, Huntsman Cancer Institute, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>s and Affiliations:</li> <li>Society for Neuro-Oncology</li> <li>Society of Utah Medical Oncologists</li> <li>American Society of Clinical Oncology</li> <li>American Society of Hematology</li> <li>American College of Physicians</li> <li>Utah Medical Association</li> <li>American Medical Association</li> <li>American Association of Cancer Research</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-william-mckean.jpg",
+      "alt": "William B. McKean",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 18
+    },
+    "locationIds": [
+      "ucs-at-granger-fairbourne-station"
+    ]
+  },
+  {
+    "slug": "william-nibley",
+    "name": "William E. Nibley, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-william-nibley.webp",
+      "alt": "William E. Nibley",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Nibley",
+        "html": "<p class=\"provider-bio\">William E. Nibley, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, George Washington University School of Medicine, Washington, DC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Society of Clinical Oncology</li> <li>National Clinical Practice Committee</li> <li>Board Certified in Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-william-nibley.jpg",
+      "alt": "William E. Nibley",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 19
+    },
+    "locationIds": []
+  },
+  {
+    "slug": "william-stephenson",
+    "name": "William T. Stephenson, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-william-stephenson.webp",
+      "alt": "William T. Stephenson",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Stephenson",
+        "html": "<p class=\"provider-bio\">Dr. William Stephenson brings more than two decades of experience in hematology and oncology, including 23 years at a large tertiary referral center in downtown Kansas City. He has a particular interest in benign hematology and values the opportunity his specialty provides to develop meaningful relationships with patients while focusing deeply on complex medical conditions.</p> <p class=\"provider-bio\">At the center of Dr. Stephenson’s approach is education. He believes patients and their families should fully understand their diagnosis, treatment options, and what those choices may mean for their lives. He recognizes that the best answer for most patients is not necessarily the best answer for the individual sitting in front of him. By taking the time to explain options and understand each patient’s priorities, he helps patients make informed decisions that are right for them.</p> <p class=\"provider-bio\">Dr. Stephenson appreciates working with colleagues who share his commitment to patient education and thoughtful, individualized care. He moved to Utah in 2018 to be closer to family and is now partially retired. He continues to care for patients while also providing coverage for colleagues when they are away from the office.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Stephenson has a strong interest in musical composition and theory.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kansas Medical Center, Kansas City, KS</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine University of Virginia Health Science Center, Charlotte, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology Oncology, Indiana University-Perdue University in Indianapolis, IN Hematology / Oncology, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-william-stephenson.jpg",
+      "alt": "William T. Stephenson",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 20
+    },
+    "locationIds": [
+      "provo-clinic",
+      "utah-valley-hospital",
+      "timpanogos-regional-hospital"
+    ]
+  },
+  {
+    "slug": "xylina-gregg",
+    "name": "Xylina T. Gregg, MD",
+    "specialty": "Medical Oncology and Hematology",
+    "languages": "English",
+    "photo": {
+      "src": "/images/provider-expanded/provider-xylina-gregg.webp",
+      "alt": "Xylina T. Gregg",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "appointmentHref": "#",
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#education",
+        "label": "Education"
+      },
+      {
+        "href": "#certifications",
+        "label": "Certifications"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      },
+      {
+        "href": "#media",
+        "label": "Media"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Dr. Gregg",
+        "html": "<p class=\"provider-bio\">Xylina T. Gregg, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+      },
+      {
+        "id": "education",
+        "title": "Education & Training",
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Baylor College of Medicine, Houston, TX</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Alabama Birmingham, Birmingham, AL</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology, University of Alabama Birmingham, Birmingham, AL</p> </div> </div> </div>"
+      },
+      {
+        "id": "certifications",
+        "title": "Board Certifications",
+        "html": "<ul class=\"provider-list\"> <li>Medical Oncology And Hematology</li> </ul>"
+      }
+    ],
+    "sidebar": "provider-contact",
+    "media": "provider-media",
+    "directory": {
+      "photo": "/images/provider-xylina-gregg.jpg",
+      "alt": "Xylina T. Gregg",
+      "category": "medical-oncology",
+      "priority": 0,
+      "order": 21
+    },
+    "locationIds": [
+      "cancer-center"
+    ]
+  }
+]

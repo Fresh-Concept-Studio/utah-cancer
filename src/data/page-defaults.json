@@ -1,0 +1,95 @@
+{
+  "provider": {
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [
+      "/scripts/detail-tabs.js",
+      "/scripts/media-carousel.js"
+    ],
+    "marquee": true,
+    "cta": {
+      "heading": "Contact us for more information.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "class": "btn btn--white",
+            "href": "#"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us"
+        }
+      ]
+    }
+  },
+  "leader": {
+    "bodyClass": "leadership-detail",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Ready to learn more about your care options?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "class": "btn btn--white",
+            "href": "tel:8012690231"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    }
+  },
+  "specialty": {
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [
+      "/scripts/detail-tabs.js"
+    ],
+    "marquee": true,
+    "cta": {
+      "heading": "Ready to talk with a specialist?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "class": "btn btn--white",
+            "href": "tel:8012690231"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    }
+  },
+  "location": {
+    "bodyClass": "",
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "attrs": {
+            "class": "btn btn--white",
+            "href": "tel:8012690231"
+          },
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231"
+        }
+      ]
+    }
+  }
+}

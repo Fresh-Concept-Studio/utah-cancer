@@ -1,0 +1,65 @@
+
+    /* Inline image in left column */
+    .pe-image {
+      margin: 28px 0 8px;
+      border-radius: 16px;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: #f0f4f8;
+      box-shadow: 0 16px 40px rgba(0, 71, 107, 0.12);
+    }
+    .pe-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Sticky Patient Portal card */
+    .pe-portal {
+      position: sticky;
+      top: 114px;
+      background: #f0f4f8;
+      border: 1px solid #e0e9ef;
+      border-radius: 20px;
+      padding: 36px 36px 32px;
+    }
+    .pe-portal h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+    .pe-portal .provider-bio {
+      font-size: 15px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    .pe-portal .provider-list {
+      gap: 10px;
+    }
+    .pe-portal .provider-list li {
+      padding-left: 16px;
+      font-size: 14.5px;
+      line-height: 22px;
+    }
+    .pe-portal .provider-list li::before {
+      top: 9px;
+      width: 5px;
+      height: 5px;
+    }
+
+    @media (max-width: 1024px) {
+      .pe-portal { position: static; padding: 28px; }
+    }
+
+    .spec-card-chevron {
+      flex: 0 0 auto;
+      margin-left: 12px;
+      color: #5e8b9e;
+      opacity: 0.4;
+      font-size: 24px;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .spec-card:hover .spec-card-chevron {
+      opacity: 1;
+      transform: translateX(4px);
+    }

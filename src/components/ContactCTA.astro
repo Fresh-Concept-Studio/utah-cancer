@@ -1,0 +1,14 @@
+---
+import type { PageData } from '../lib/types';
+import { url } from '../lib/urls';
+import ContentLink from './ContentLink.astro';
+interface Props { cta: NonNullable<PageData['cta']> }
+const { cta } = Astro.props;
+---
+<section class="contact-section">
+  <div class="contact-bg"><img src={url(cta.image || '/images/contact-bg.jpg')} alt="" /><div class="contact-overlay"></div></div>
+  <div class="container contact-inner">
+    <h2 class="contact-heading">{cta.heading}</h2>
+    {cta.actionsClass ? <div class={cta.actionsClass}>{cta.links.map(link => <ContentLink link={link} />)}</div> : cta.links.map(link => <ContentLink link={link} />)}
+  </div>
+</section>

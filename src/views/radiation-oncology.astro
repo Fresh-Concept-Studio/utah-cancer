@@ -1,0 +1,80 @@
+---
+import { url } from '../lib/urls';
+---
+<section class="sd-hero">
+    <div class="sd-hero-bg"><img src={url("/images/specialty-headneck-clinical-hero.jpg")} alt=""><div class="sd-hero-overlay"></div></div>
+    <div class="container sd-hero-inner">
+      <span class="sd-hero-tag">Advanced Technology</span>
+      <h1 class="sd-hero-title">Radiation Oncology</h1>
+      <p class="sd-hero-sub">Precise, image-guided radiation therapy using the latest technology — delivered by board-certified radiation oncologists at locations throughout Utah.</p>
+      <div class="sd-hero-actions">
+        <a href="#" class="btn btn--white"><span class="material-symbols-rounded">calendar_today</span> Request Appointment</a>
+        <a href={url("/providers/index.html")} class="btn btn--outline-dark"><span class="material-symbols-rounded">group</span> Our Radiation Oncologists</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 80px 0;">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;">
+        <div>
+          <span class="about-mission-label">TrueBeam™ Linear Accelerator</span>
+          <h2 class="about-mission-title">Pinpoint accuracy. Maximum precision.</h2>
+          <p class="provider-bio">The TrueBeam system enables a radically different approach to cancer treatment with image-guided radiotherapy. Developed from the ground up to deliver powerful cancer treatments with pinpoint accuracy, the system features a 120-leaf multileaf collimator that shapes the radiation beam to match the three-dimensional shape of each tumor.</p>
+          <p class="provider-bio">Cone-beam CT capability reduces radiation exposure during imaging, while real-time imaging ensures targeting accuracy measured in millimeters. Gated respiration synchronization allows precise treatment of lung cancer and other motion-sensitive tumors.</p>
+          <div class="provider-specialties-grid" style="margin-top:24px;">
+            <div class="specialty-tag"><span class="material-symbols-rounded">blur_circular</span> RapidArc (IMRT)</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">radar</span> SBRT &amp; SRS</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">target</span> IGRT</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">radiology</span> 3D External Beam</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">schedule</span> Hypofractionated RT</div>
+          </div>
+        </div>
+        <div>
+          <span class="about-mission-label">Omni Legend Digital PET/CT</span>
+          <h2 class="about-mission-title">See more. Expose less.</h2>
+          <p class="provider-bio">The Omni Legend PET/CT scanner uses Precision DL (deep learning) image processing and an AI-based Auto Positioning Camera for ultra-fast scanning at lower radiation doses. Its industry-leading sensitivity per centimeter enables advanced small-lesion detection and low-contrast detectability.</p>
+          <p class="provider-bio">Q-Clear image reconstruction with motion-free technology provides precise tumor measurement for confident diagnosis and treatment response monitoring.</p>
+          <div class="provider-specialties-grid" style="margin-top:24px;">
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> FDG</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> Ga68 PSMA</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> F18 PSMA</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> Axumin</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> Gallium 68</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:72px 0 84px; background:#f8f9fa; border-top:1px solid #e8e4e0;">
+    <div class="container rt-split">
+      <div>
+        <h2 class="provider-section-title" style="margin-bottom:20px;">Radiotheranostics</h2>
+        <p class="provider-bio">Our practice also offers targeted radionuclide therapies that deliver radiation directly to cancer cells expressing specific receptors — precision treatment at the molecular level.</p>
+      </div>
+      <div class="rt-list">
+        <div class="rt-item">
+          <span class="material-symbols-rounded">radiology</span>
+          <span class="rt-item-info">
+            <span class="rt-item-name">Lutathera <em>(Lu-177 DOTATATE)</em></span>
+            <span class="rt-item-desc">For neuroendocrine tumors expressing somatostatin receptors</span>
+          </span>
+        </div>
+        <div class="rt-item">
+          <span class="material-symbols-rounded">radiology</span>
+          <span class="rt-item-info">
+            <span class="rt-item-name">Pluvicto <em>(Lu-177 PSMA)</em></span>
+            <span class="rt-item-desc">For PSMA-positive metastatic prostate cancer</span>
+          </span>
+        </div>
+        <div class="rt-item">
+          <span class="material-symbols-rounded">radiology</span>
+          <span class="rt-item-info">
+            <span class="rt-item-name">Xofigo <em>(Ra-223)</em></span>
+            <span class="rt-item-desc">For prostate cancer that has spread to bone</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>

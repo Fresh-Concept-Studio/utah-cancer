@@ -1,0 +1,276 @@
+---
+import { url } from '../lib/urls';
+---
+<!-- Events Hero -->
+  <section class="events-hero">
+    <div class="container events-hero-inner">
+      <div class="events-hero-text">
+        <span class="events-hero-eyebrow">What's Happening</span>
+        <h1 class="events-hero-title">Events &amp; Gatherings</h1>
+        <p class="events-hero-desc">From educational workshops to community walks, our events bring patients, families, providers, and supporters together. Stay connected and find something happening near you.</p>
+        <div class="events-hero-stats">
+          <div class="events-stat">
+            <span class="events-stat-num">6</span>
+            <span class="events-stat-label">Upcoming this season</span>
+          </div>
+          <div class="events-stat">
+            <span class="events-stat-num">4</span>
+            <span class="events-stat-label">Run / walk events</span>
+          </div>
+          <div class="events-stat">
+            <span class="events-stat-num">2</span>
+            <span class="events-stat-label">Patient resource events</span>
+          </div>
+        </div>
+      </div>
+      <div class="events-hero-calendar">
+        <div class="calendar-tile calendar-tile--lg">
+          <span class="calendar-month">SEP</span>
+          <span class="calendar-day">26</span>
+          <span class="calendar-year">2026</span>
+        </div>
+        <div class="calendar-tile calendar-tile--md">
+          <span class="calendar-month">OCT</span>
+          <span class="calendar-day">10</span>
+        </div>
+        <div class="calendar-tile calendar-tile--sm">
+          <span class="calendar-month">NOV</span>
+          <span class="calendar-day">26</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Event -->
+  <section class="featured-event">
+    <div class="container">
+      <div class="featured-event-card">
+        <div class="featured-event-img">
+          <img src={url("/images/event-pink-bag.jpg")} alt="People receiving pink resource bags at a community event" class="featured-event-photo">
+          <span class="featured-event-pin">Featured</span>
+        </div>
+        <div class="featured-event-body">
+          <span class="event-category event-category--support">Patient Resources</span>
+          <h2 class="featured-event-title">Pink Bag Event</h2>
+          <p class="featured-event-tagline">A community resource and support event for breast cancer patients and survivors.</p>
+          <div class="featured-event-meta">
+            <div class="event-meta-item">
+              <span class="material-symbols-rounded">calendar_today</span>
+              <span>Saturday, September 26, 2026</span>
+            </div>
+            <div class="event-meta-item">
+              <span class="material-symbols-rounded">schedule</span>
+              <span>Time and location details forthcoming</span>
+            </div>
+          </div>
+          <div class="featured-event-actions">
+            <a href="#pink-bag-event" class="btn btn--primary">
+              <span class="material-symbols-rounded">arrow_forward</span>
+              Event Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filters + Events Grid -->
+  <section class="events-list">
+    <div class="container">
+      <div class="events-list-header">
+        <div>
+          <span class="section-label">Upcoming</span>
+          <h2 class="events-list-title">All Upcoming Events</h2>
+        </div>
+        <div class="events-filters" id="events-filters">
+          <button class="event-filter active" data-filter="all">All</button>
+          <button class="event-filter" data-filter="support">Patient Resources</button>
+          <button class="event-filter" data-filter="community">Community</button>
+          <button class="event-filter" data-filter="fundraiser">Fundraisers</button>
+        </div>
+      </div>
+
+      <div class="events-grid" id="events-grid">
+
+        <a href="#pink-bag-event" class="event-card" data-cat="support" id="pink-bag-event">
+          <div class="event-card-date">
+            <span class="event-card-month">SEP</span>
+            <span class="event-card-day">26</span>
+            <span class="event-card-year">2026</span>
+          </div>
+          <span class="event-card-media"><img src={url("/images/event-pink-bag.jpg")} alt="People receiving pink resource bags at a community event"></span>
+          <div class="event-card-body">
+            <span class="event-category event-category--support">Patient Resources</span>
+            <h3 class="event-card-title">Pink Bag Event</h3>
+            <p class="event-card-desc">A community resource and support event for breast cancer patients and survivors.</p>
+            <div class="event-card-meta">
+              <span class="material-symbols-rounded">schedule</span>
+              <span>Details forthcoming</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://utahprostatecancerrun.com/" class="event-card" data-cat="fundraiser" target="_blank" rel="noopener">
+          <div class="event-card-date">
+            <span class="event-card-month">OCT</span>
+            <span class="event-card-day">10</span>
+            <span class="event-card-year">2026</span>
+          </div>
+          <span class="event-card-media"><img src={url("/images/event-prostate-run.jpg")} alt="Runners gathering at a farm for a community prostate cancer run"></span>
+          <div class="event-card-body">
+            <span class="event-category event-category--fundraiser">Fundraiser</span>
+            <h3 class="event-card-title">Utah Prostate Cancer Run &amp; Walk</h3>
+            <p class="event-card-desc">A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection.</p>
+            <div class="event-card-meta">
+              <span class="material-symbols-rounded">location_on</span>
+              <span>Wheeler Historic Farm, Salt Lake City</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://runtasticevents.com/races/haunted-salt-lake-city/" class="event-card" data-cat="community" target="_blank" rel="noopener">
+          <div class="event-card-date">
+            <span class="event-card-month">OCT</span>
+            <span class="event-card-day">17</span>
+            <span class="event-card-year">2026</span>
+          </div>
+          <span class="event-card-media"><img src={url("/images/event-haunted-half.jpg")} alt="Costumed runners at a fall race in Salt Lake City"></span>
+          <div class="event-card-body">
+            <span class="event-category event-category--community">Run / Walk</span>
+            <h3 class="event-card-title">HAUNTED Salt Lake City</h3>
+            <p class="event-card-desc">A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park.</p>
+            <div class="event-card-meta">
+              <span class="material-symbols-rounded">schedule</span>
+              <span>Half starts 8:00 AM</span>
+              <span class="event-card-meta-dot">·</span>
+              <span class="material-symbols-rounded">location_on</span>
+              <span>Sugar House Park</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#making-strides" class="event-card" data-cat="fundraiser" id="making-strides">
+          <div class="event-card-date">
+            <span class="event-card-month">OCT</span>
+            <span class="event-card-day">24</span>
+            <span class="event-card-year">2026</span>
+          </div>
+          <span class="event-card-media"><img src={url("/images/event-making-strides.jpg")} alt="Breast cancer awareness walk participants gathered outside a stadium"></span>
+          <div class="event-card-body">
+            <span class="event-category event-category--fundraiser">Fundraiser</span>
+            <h3 class="event-card-title">Making Strides Against Breast Cancer Walk</h3>
+            <p class="event-card-desc">Walk together to honor survivors, remember loved ones, and support the fight against breast cancer.</p>
+            <div class="event-card-meta">
+              <span class="material-symbols-rounded">schedule</span>
+              <span>Time to be announced</span>
+              <span class="event-card-meta-dot">·</span>
+              <span class="material-symbols-rounded">location_on</span>
+              <span>America First Field</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#pinksync" class="event-card" data-cat="support" id="pinksync">
+          <div class="event-card-date">
+            <span class="event-card-month">OCT</span>
+            <span class="event-card-day">25</span>
+            <span class="event-card-year">2026</span>
+          </div>
+          <span class="event-card-media"><img src={url("/images/event-pinksync.jpg")} alt="People visiting a pink community resource fair"></span>
+          <div class="event-card-body">
+            <span class="event-category event-category--support">Patient Resources</span>
+            <h3 class="event-card-title">PinkSync</h3>
+            <p class="event-card-desc">A patient resource event featuring speakers, practical information, and valuable resources.</p>
+            <div class="event-card-meta">
+              <span class="material-symbols-rounded">schedule</span>
+              <span>Time to be announced</span>
+              <span class="event-card-meta-dot">·</span>
+              <span class="material-symbols-rounded">location_on</span>
+              <span>Awardco Headquarters, Lindon</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://runtasticevents.com/races/thankful/" class="event-card" data-cat="community" target="_blank" rel="noopener">
+          <div class="event-card-date">
+            <span class="event-card-month">NOV</span>
+            <span class="event-card-day">26</span>
+            <span class="event-card-year">2026</span>
+          </div>
+          <span class="event-card-media"><img src={url("/images/event-thankful.jpg")} alt="Families running together through an autumn landscape at Thanksgiving Point"></span>
+          <div class="event-card-body">
+            <span class="event-category event-category--community">Run / Walk</span>
+            <h3 class="event-card-title">Runtastic THANKFUL</h3>
+            <p class="event-card-desc">A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.</p>
+            <div class="event-card-meta">
+              <span class="material-symbols-rounded">schedule</span>
+              <span>Half starts 7:45 AM</span>
+              <span class="event-card-meta-dot">·</span>
+              <span class="material-symbols-rounded">location_on</span>
+              <span>Thanksgiving Point, Lehi</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="events-empty" id="events-empty" hidden="">
+        <span class="material-symbols-rounded">event_busy</span>
+        <p>No events match this filter right now. Check back soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Past Events -->
+  <section class="past-events">
+    <div class="container">
+      <div class="past-events-header">
+        <span class="section-label">Recently Past</span>
+        <h2 class="past-events-title">Catch up on what we've been up to</h2>
+      </div>
+      <div class="past-events-grid">
+        <article class="past-event-card">
+          <span class="past-event-date">August 29, 2026</span>
+          <h3 class="past-event-title">Runtastic NEBO</h3>
+          <p class="past-event-desc">A marathon, half marathon, 10K, and 5K through Payson Canyon, finishing at Memorial Park in Payson.</p>
+        </article>
+        <article class="past-event-card">
+          <span class="past-event-date">April 19, 2026</span>
+          <h3 class="past-event-title">Spring Wellness Fair</h3>
+          <p class="past-event-desc">Screenings, demos, and provider Q&amp;A across three campuses.</p>
+        </article>
+        <article class="past-event-card">
+          <span class="past-event-date">March 8, 2026</span>
+          <h3 class="past-event-title">Clinical Trials Open House</h3>
+          <p class="past-event-desc">Learn how clinical trials work and what's currently enrolling at UCS.</p>
+        </article>
+        <article class="past-event-card">
+          <span class="past-event-date">February 14, 2026</span>
+          <h3 class="past-event-title">Heart-to-Heart Survivor Brunch</h3>
+          <p class="past-event-desc">A morning of stories, laughter, and brunch with our survivor community.</p>
+        </article>
+        <article class="past-event-card">
+          <span class="past-event-date">January 25, 2026</span>
+          <h3 class="past-event-title">New Year, New Conversations</h3>
+          <p class="past-event-desc">A panel discussion on goal-setting through and beyond cancer treatment.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / Stay Updated -->
+  <section class="events-newsletter">
+    <div class="container events-newsletter-inner">
+      <div>
+        <h2 class="events-newsletter-title">Don't miss the next one</h2>
+        <p class="events-newsletter-desc">Get a monthly email with upcoming events, support groups, and ways to get involved.</p>
+      </div>
+      <form class="events-newsletter-form">
+        <input type="email" placeholder="you@email.com" aria-label="Email address" required="">
+        <button type="submit" class="btn btn--primary">
+          <span class="material-symbols-rounded">mail</span>
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>

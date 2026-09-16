@@ -1,0 +1,16 @@
+---
+import leaders from '../data/leaders.json';
+import { url } from '../lib/urls';
+import DetailSections from './DetailSections.astro';
+interface Props { slug: string }
+const leader = leaders.find(p => p.slug === Astro.props.slug);
+if (!leader) throw new Error(`Unknown leader: ${Astro.props.slug}`);
+---
+<section class="provider-hero"><div class="container provider-hero-inner">
+  <div class="provider-hero-text">
+    <a href={url('/leadership.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Leadership</a>
+    <h1 class="provider-name">{leader.name}</h1><p class="provider-specialty">{leader.role}</p>
+  </div>
+  <div class={leader.photo.class}><img src={url(leader.photo.src)} alt={leader.photo.alt} /></div>
+</div></section>
+<section class="provider-details"><div class="container provider-details-inner"><div class="provider-main"><DetailSections sections={leader.sections} /></div></div></section>

@@ -1,0 +1,34 @@
+---
+import { url } from '../lib/urls';
+---
+<main class="written-story">
+    <section class="story-hero story-hero--detail">
+      <div class="container">
+        <a href={url("/stories/index.html")} class="story-back"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span> All Patient Stories</a>
+        <span class="story-hero-kicker">Small cell lung cancer</span><h1 class="story-hero-title">A milestone of hope</h1>
+        <p class="story-hero-byline">Dukhi Hong · Originally published <time datetime="2025-03-31">March 31, 2025</time></p>
+      </div>
+    </section>
+    <section class="story-detail-media" aria-label="Dukhi's photograph"><div class="container">
+      <figure class="story-detail-frame"><img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones"></figure>
+    </div></section>
+    <article class="story-article" aria-label="Dukhi's story"><div class="container"><div class="story-article-body">
+      <p>In June 2019, a seizure brought Dukhi Hong to the emergency room. Doctors diagnosed small cell lung cancer that had spread to her brain, and estimated that she had six to nine months to live.</p>
+      <p>Six years later, at age 84, she reached her 100th immunotherapy treatment at Utah Cancer Specialists. Visits every three to four weeks had become occasions for her family to gather and celebrate time together.</p>
+      <p>Her oncologist, Dr. Stephan Kendall, described the milestone as extraordinary. The March 2025 account reported no signs of cancer in her lungs and minimal activity in her brain. Her response was unusual, not a prediction of how others would respond.</p>
+      <p>Dukhi moved from South Korea to Utah in 1965 and later raised four children as a single mother. Her daughter, Mitzi Maughan, described her as a source of strength and inspiration.</p>
+      <p>For the family, the hundredth treatment meant more than a number: it marked years of shared memories, and the chance for more time with someone they loved.</p>
+      <div class="story-source"><p>Adapted from <a href="https://utahcancer.com/a-milestone-of-hope/" target="_blank" rel="noopener">the original Utah Cancer Specialists article</a>. Original reporting credited to <a href="https://www.abc4.com/news/wasatch-front/utah-woman-100-cancer-treatments/" target="_blank" rel="noopener">ABC4</a>. Photo from Utah Cancer Specialists.</p><p>This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome.</p></div>
+      <a class="story-link" href={url("/stories/amy-jensen.html")}>Read Amy’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+    </div></div></article>
+  </main>
+  <!-- Story CTA -->
+  <section class="story-cta">
+    <div class="container story-cta-inner">
+      <h2 class="story-cta-heading">Every story starts with a first appointment.</h2>
+      <div class="story-cta-actions">
+        <a href={url("/contact.html")} class="btn btn--white"><span class="material-symbols-rounded">phone</span> Contact Us</a>
+        <a href={url("/stories/index.html")} class="story-cta-link">More patient stories <span class="material-symbols-rounded">arrow_forward</span></a>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,456 @@
+---
+import { url } from '../lib/urls';
+---
+<!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src={url("/images/hero-bg.jpg")} alt="">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <h1 class="hero-heading">Expertise You Can Trust. Care You Can Feel.</h1>
+    </div>
+  </section>
+
+  <!-- Hero action cards (sits at the bottom of the hero, behind the team section) -->
+  <div class="hero-cards">
+    <div class="container">
+      <div class="hero-cards-panel">
+        <a href={url("/providers/index.html")} class="hero-card">
+          <span class="hero-card-icon material-symbols-rounded">groups</span>
+          <span class="hero-card-content">
+            <span class="hero-card-eyebrow">Meet the team</span>
+            <span class="hero-card-title">Our Providers</span>
+          </span>
+          <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
+        </a>
+        <a href={url("/locations/index.html")} class="hero-card">
+          <span class="hero-card-icon material-symbols-rounded">location_on</span>
+          <span class="hero-card-content">
+            <span class="hero-card-eyebrow">13 Utah locations</span>
+            <span class="hero-card-title">Find a Location</span>
+          </span>
+          <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
+        </a>
+        <a href={url("/specialties/index.html")} class="hero-card">
+          <span class="hero-card-icon material-symbols-rounded">stethoscope</span>
+          <span class="hero-card-content">
+            <span class="hero-card-eyebrow">What we treat</span>
+            <span class="hero-card-title">Types of Cancer</span>
+          </span>
+          <span class="hero-card-arrow material-symbols-rounded">arrow_outward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <div class="container team-inner">
+      <div class="team-text">
+        <h2 class="team-heading">Here With You.</h2>
+        <p class="team-description">Utah Cancer Specialists provides advanced, evidence-based cancer care in a supportive setting focused on your total well-being—physical, emotional, and financial. Our board-certified physicians and care teams are here with you, guiding you with expertise and compassion.</p>
+        <a href={url("/providers/index.html")} class="btn btn--primary team-cta">
+          <span class="material-symbols-rounded">person</span>
+          Meet our Providers
+        </a>
+      </div>
+      <div class="team-photos">
+        <div class="team-photo team-photo--single">
+          <img src={url("/images/team-ucs-group.jpg")} alt="The Utah Cancer Specialists care team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialties Section -->
+  <section class="specialties-section">
+    <div class="container">
+      <div class="specialties-header">
+        <div class="specialties-header-left">
+          <h2 class="specialties-heading">Our Services</h2>
+          <p class="specialties-desc">Our cancer specialists provide advanced treatments tailored to your specific cancer type and stage.</p>
+        </div>
+        <div class="specialties-header-right">
+          <a href={url("/specialties/index.html")} class="btn btn--outline">See All Types of Cancer</a>
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn--prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+            <button class="carousel-btn carousel-btn--next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="specialties-carousel">
+        <div class="carousel-track">
+          <a href={url("/specialties/breast-cancer.html")} class="specialty-card">
+            <img src={url("/images/specialty-breast-clinical-card.jpg")} alt="Breast Cancer Treatment" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Breast Cancer Treatment</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/prostate-cancer.html")} class="specialty-card">
+            <img src={url("/images/specialty-prostate-clinical-card.jpg")} alt="Prostate Cancer Care" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Prostate Cancer Care</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/lung-cancer.html")} class="specialty-card">
+            <img src={url("/images/specialty-lung-clinical-card.jpg")} alt="Lung Cancer Treatment" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Lung Cancer Treatment</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/colon-cancer.html")} class="specialty-card">
+            <img src={url("/images/specialty-colon-clinical-card.jpg")} alt="Colon Cancer Treatment" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Colon Cancer Treatment</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/lymphomas.html")} class="specialty-card">
+            <img src={url("/images/specialty-lymphoma-clinical-card.jpg")} alt="Lymphomas" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Lymphomas</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/blood-cancers.html")} class="specialty-card">
+            <img src={url("/images/specialty-blood-clinical-card.jpg")} alt="Blood Cancers" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Blood Cancers</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/head-neck-cancers.html")} class="specialty-card">
+            <img src={url("/images/specialty-headneck-clinical-card.jpg")} alt="Head and Neck Cancers" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Head &amp; Neck Cancers</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/kidney-cancer.html")} class="specialty-card">
+            <img src={url("/images/specialty-kidney-clinical-card.jpg")} alt="Kidney Cancer" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Kidney Cancer</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+          <a href={url("/specialties/liver-cancer.html")} class="specialty-card">
+            <img src={url("/images/specialty-liver-clinical-card.jpg")} alt="Liver Cancer" class="specialty-card-img">
+            <div class="specialty-card-overlay"></div>
+            <div class="specialty-card-content">
+              <h3 class="specialty-card-title">Liver Cancer</h3>
+            </div>
+            <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="home-events">
+    <div class="container">
+      <div class="home-events-header">
+        <div>
+          <span class="section-label">Events</span>
+          <h2 class="home-events-heading">Happening Soon</h2>
+        </div>
+        <a href={url("/events/index.html")} class="btn btn--primary btn--compact">
+          <span class="material-symbols-rounded">calendar_month</span>
+          See All Events
+        </a>
+      </div>
+      <div class="home-events-grid">
+        <a href={url("/events/index.html#pink-bag-event")} class="event-feature">
+          <span class="event-feature-media">
+            <img src={url("/images/event-pink-bag.jpg")} alt="People receiving pink resource bags at a community event" class="event-feature-img">
+            <span class="event-feature-chip">Featured · Patient Resources</span>
+          </span>
+          <span class="event-feature-body">
+            <span class="event-feature-when">Saturday, September 26</span>
+            <span class="event-feature-title">Pink Bag Event</span>
+            <span class="event-feature-desc">A community resource and support event for breast cancer patients and survivors.</span>
+            <span class="event-feature-meta"><span class="material-symbols-rounded">schedule</span> Time and location details forthcoming</span>
+            <span class="event-feature-cta">Event details <span class="material-symbols-rounded">arrow_forward</span></span>
+          </span>
+        </a>
+        <div class="event-mini-list">
+          <a href="https://utahprostatecancerrun.com/" class="event-mini" target="_blank" rel="noopener">
+            <span class="event-mini-thumb"><img src={url("/images/event-prostate-run.jpg")} alt=""></span>
+            <span class="event-mini-info">
+              <span class="event-mini-title">Utah Prostate Cancer Run &amp; Walk</span>
+              <span class="event-mini-meta">Oct 10 · Wheeler Historic Farm</span>
+            </span>
+            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+          </a>
+          <a href="https://runtasticevents.com/races/haunted-salt-lake-city/" class="event-mini" target="_blank" rel="noopener">
+            <span class="event-mini-thumb"><img src={url("/images/event-haunted-half.jpg")} alt=""></span>
+            <span class="event-mini-info">
+              <span class="event-mini-title">HAUNTED Salt Lake City</span>
+              <span class="event-mini-meta">Oct 17 · Half starts 8:00 AM · Sugar House Park</span>
+            </span>
+            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+          </a>
+          <a href={url("/events/index.html#making-strides")} class="event-mini">
+            <span class="event-mini-thumb"><img src={url("/images/event-making-strides.jpg")} alt=""></span>
+            <span class="event-mini-info">
+              <span class="event-mini-title">Making Strides Against Breast Cancer Walk</span>
+              <span class="event-mini-meta">Oct 24 · America First Field</span>
+            </span>
+            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Podcast Launch Section -->
+      <section class="podcast-section" aria-label="The UCS Podcast">
+        <div class="podcast-inner">
+          <div class="podcast-content">
+            <span class="podcast-eyebrow"><span class="material-symbols-rounded">podcasts</span> The UCS Podcast</span>
+            <h2 class="podcast-heading">Here With You.<br>Where good conversations live.</h2>
+            <p class="podcast-desc">Hosted by Scott Jeffrey Miller, the <em>Here With You</em> podcast brings honest conversations with physicians, patients, care teams, advocates, and voices from across our community—about cancer, care, and everything in between.</p>
+            <ul class="podcast-episodes">
+              <li class="podcast-episode">
+                <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
+                <span class="podcast-episode-info">
+                  <span class="podcast-episode-title">What I wish every newly diagnosed patient knew</span>
+                  <span class="podcast-episode-meta">Episode 1</span>
+                </span>
+              </li>
+              <li class="podcast-episode">
+                <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
+                <span class="podcast-episode-info">
+                  <span class="podcast-episode-title">Clinical trials, demystified</span>
+                  <span class="podcast-episode-meta">Episode 2</span>
+                </span>
+              </li>
+              <li class="podcast-episode">
+                <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
+                <span class="podcast-episode-info">
+                  <span class="podcast-episode-title">Caring for the caregiver</span>
+                  <span class="podcast-episode-meta">Episode 3</span>
+                </span>
+              </li>
+            </ul>
+            <div class="podcast-actions">
+              <a href="https://www.facebook.com/utahcancerspecialists" target="_blank" rel="noopener" class="btn btn--white">
+                <span class="material-symbols-rounded">notifications</span>
+                Notify Me at Launch
+              </a>
+              <a href="https://www.facebook.com/utahcancerspecialists" target="_blank" rel="noopener" class="podcast-announce-link">
+                See the announcement <span class="material-symbols-rounded">arrow_outward</span>
+              </a>
+            </div>
+          </div>
+          <div class="podcast-art">
+            <div class="podcast-cover">
+              <img src={url("/images/ucs-logo-white.svg")} alt="Utah Cancer Specialists" class="podcast-cover-logo">
+              <img src={url("/images/scott-jeffrey-miller.webp")} alt="Scott Jeffrey Miller, host of the Here With You podcast" class="podcast-cover-portrait">
+              <span class="podcast-cover-title">Here<br>With<br>You</span>
+              <span class="podcast-cover-badge">Podcast</span>
+              <span class="podcast-cover-host">Hosted by Scott Jeffrey Miller</span>
+              <div class="podcast-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News and media highlights -->
+      <aside class="media-breaker" id="media">
+        <a href="https://youtu.be/SX070PNyqUE" class="media-breaker-video" aria-label="Watch Dr. Justin Call and Katrina on KSL at Noon" target="_blank" rel="noopener">
+          <img src={url("/images/media-interview.jpg")} alt="A Utah Cancer Specialists physician interviewed on a TV news set">
+          <span class="media-breaker-play"><span class="material-symbols-rounded">play_arrow</span></span>
+          <span class="media-breaker-soon">KSL at Noon</span>
+        </a>
+        <span class="media-breaker-text">
+          <span class="media-breaker-title">Media Highlights</span>
+          <span class="media-breaker-desc">Our physicians share the latest in cancer care on Utah’s news networks.</span>
+          <span class="media-breaker-links" aria-label="Utah Cancer Specialists media appearances">
+            <span class="media-breaker-item">
+              <span>Joseph’s Story</span>
+              <span class="media-breaker-platforms">
+                <a href="https://youtube.com/shorts/pVM6P44YH7U?si=PS6z31eUwrZQVqSY" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.instagram.com/reel/DYfaaFyxUdT/?utm_source=ig_web_copy_link&amp;igsi=MzRlODBiNWFlZA==" target="_blank" rel="noopener">Instagram</a>
+              </span>
+            </span>
+            <span class="media-breaker-item">
+              <span>Larry’s Story</span>
+              <span class="media-breaker-platforms">
+                <a href="https://youtube.com/shorts/Eb_i5Bpv_Fo?si=umE0W0c7t0h-nMts" target="_blank" rel="noopener">YouTube</a>
+                <a href="https://www.instagram.com/reel/DaiVEkuzhop/?utm_source=ig_web_copy_link&amp;igsi=MzRlODBiNWFlZA==" target="_blank" rel="noopener">Instagram</a>
+              </span>
+            </span>
+            <a class="media-breaker-item" href="https://youtu.be/b1RiTZt8_-s?si=3c6jydF6pHDTwuuj" target="_blank" rel="noopener">
+              <span>ABC4 · Good Things Utah</span>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+            </a>
+            <a class="media-breaker-item" href="https://youtu.be/SX070PNyqUE" target="_blank" rel="noopener">
+              <span>KSL at Noon · Dr. Call &amp; Katrina</span>
+              <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+            </a>
+          </span>
+          <span class="media-breaker-outlets">
+            <span class="media-breaker-outlets-label">As seen on these outlets</span>
+            <span class="media-breaker-logos">
+              <span class="media-breaker-logo"><img src={url("/images/logos/ksl.svg")} alt="KSL News"></span>
+              <span class="media-breaker-logo"><img src={url("/images/logos/fox13.svg")} alt="FOX 13"></span>
+              <span class="media-breaker-logo"><img src={url("/images/logos/abc4.png")} alt="ABC4 Utah"></span>
+              <span class="media-breaker-logo media-breaker-logotype">Good Things <strong>Utah</strong></span>
+            </span>
+          </span>
+        </span>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Patient Stories Section -->
+  <section class="stories-section">
+    <div class="container">
+      <div class="stories-header">
+        <div>
+          <span class="section-label">Patient Stories</span>
+          <h2 class="stories-heading">Every journey deserves to be told.</h2>
+        </div>
+        <div class="stories-nav">
+          <a href={url("/stories/index.html")} class="stories-all">View all stories</a>
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-btn--prev" id="story-prev" aria-label="Previous story"><i class="fas fa-arrow-left"></i></button>
+            <button class="carousel-btn carousel-btn--next" id="story-next" aria-label="Next story"><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="stories-carousel" id="stories-carousel" aria-live="polite" aria-label="Patient stories">
+        <article class="story-slide story-slide--written active" aria-label="1 of 2: Amy Jensen">
+          <a href={url("/stories/amy-jensen.html")} class="story-media" aria-label="Read Amy's story">
+            <img src={url("/images/story-amy-jensen.jpg")} alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy">
+          </a>
+          <div class="story-text">
+            <span class="story-kicker">Breast cancer</span>
+            <h3 class="story-quote">Facing cancer while growing a family</h3>
+            <p class="story-excerpt">Amy navigated a breast cancer diagnosis during pregnancy with support from her family and care team.</p>
+            <span class="story-name">Amy Jensen</span>
+            <a href={url("/stories/amy-jensen.html")} class="story-link">Read Amy’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+          </div>
+        </article>
+        <article class="story-slide story-slide--written" aria-label="2 of 2: Dukhi Hong">
+          <a href={url("/stories/dukhi-hong.html")} class="story-media" aria-label="Read Dukhi's story">
+            <img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones" loading="lazy">
+          </a>
+          <div class="story-text">
+            <span class="story-kicker">Small cell lung cancer</span>
+            <h3 class="story-quote">A milestone of hope</h3>
+            <p class="story-excerpt">At 84, Dukhi marked her 100th immunotherapy treatment with the people who had supported her along the way.</p>
+            <span class="story-name">Dukhi Hong</span>
+            <a href={url("/stories/dukhi-hong.html")} class="story-link">Read Dukhi’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="stories-dots" id="stories-dots"></div>
+    </div>
+  </section>
+
+  <!-- Foundation CTA -->
+  <section class="foundation-section" id="foundation">
+    <div class="container foundation-inner">
+      <div class="foundation-content">
+        <span class="section-label section-label--light foundation-label">Utah Cancer Foundation</span>
+      </div>
+      <a href={url("/about.html")} class="btn btn--white">
+        <span class="material-symbols-rounded">volunteer_activism</span>
+        Learn More
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="testimonials-panel">
+      <div class="testimonials-header">
+        <h2 class="testimonials-heading">Patient Love</h2>
+        <div class="testimonials-rating">
+          <div class="testimonials-stars" aria-hidden="true">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <span class="testimonials-average">4.7 Average</span>
+        </div>
+      </div>
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="testimonial-card-name">Ana S.</span>
+            <h3 class="testimonial-card-title">Restored hope</h3>
+            <p class="testimonial-card-body">I’m truly grateful for you, Dr. Gregory Chipman. You have not only treated your patients but also restored hope and given life back to so many. Your dedication and compassion make all the difference.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="testimonial-card-name">Adam B.</span>
+            <h3 class="testimonial-card-title">Listens and guides</h3>
+            <p class="testimonial-card-body">Dr. Chipman is one that listens to your situation. He provides options and helps you achieve the goals set. He is straight to the point when you need it and helps you make the next steps happen. This is a team of professionals that cares about their patients and it shows.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="testimonial-card-name">Adam Black</span>
+            <h3 class="testimonial-card-title">Eased my anxiety</h3>
+            <p class="testimonial-card-body">Dr Chipman and staff are amazing! They really understand the anxiety that comes with cancer and go above and beyond to explain everything and put you at ease. Treatment recommendations are conservative and well informed. Couldn’t be happier.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="testimonial-card-name">Lynda H.</span>
+            <h3 class="testimonial-card-title">Respectful care</h3>
+            <p class="testimonial-card-body">Great patient care. Treated with respect and Dr. Chipman listened to all my concerns. Highly recommend as a health care provider!</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="testimonial-card-name">Pam M.</span>
+            <h3 class="testimonial-card-title">Kindness and attention</h3>
+            <p class="testimonial-card-body">Dr. Chipman and his staff treat each patient with the kindness and attention we need.</p>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card-stars" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span class="testimonial-card-name">Joanna R.</span>
+            <h3 class="testimonial-card-title">Stellar in every way</h3>
+            <p class="testimonial-card-body">These people are stellar in every way!!</p>
+          </article>
+        </div>
+      </div>
+      <div class="testimonial-footer">
+        <div class="testimonial-indicators" id="testimonial-indicators"></div>
+        <div class="testimonial-controls">
+          <button class="carousel-btn carousel-btn--prev carousel-btn--on-dark" id="testimonial-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+          <button class="carousel-btn carousel-btn--next carousel-btn--on-dark" id="testimonial-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>

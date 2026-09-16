@@ -1,0 +1,10 @@
+---
+import type { ContentSection } from '../lib/types';
+import { richHtml } from '../lib/urls';
+interface Props { sections: ContentSection[] }
+const { sections } = Astro.props;
+---
+{sections.map(section => <div class="provider-section" id={section.id}>
+  <h2 class="provider-section-title">{section.title}</h2>
+  <Fragment set:html={richHtml(section.html)} />
+</div>)}

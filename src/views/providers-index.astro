@@ -1,0 +1,82 @@
+---
+import { url } from '../lib/urls';
+import providers from '../data/providers.json';
+import { providerCategories } from '../data/navigation';
+const ordered = [...providers].sort((a,b) => a.directory.order - b.directory.order);
+---
+<!-- Hero -->
+  <section class="providers-hero">
+    <div class="container">
+      <h1 class="providers-hero-title">Our Providers</h1>
+      <p class="providers-hero-desc">Board-certified oncologists, radiation specialists, advanced practitioners, and supportive and rehabilitative care professionals dedicated to every aspect of your care.</p>
+    </div>
+  </section>
+
+  <!-- Main Content with Sidebar -->
+  <section class="spec-layout">
+    <div class="container spec-layout-inner">
+
+      <!-- Left Sidebar -->
+      <aside class="spec-sidebar">
+        <div class="spec-sidebar-sticky">
+
+          <!-- Search -->
+          <div class="spec-search">
+            <span class="material-symbols-rounded spec-search-icon">search</span>
+            <input type="text" id="spec-search" class="spec-search-input" placeholder="Search providers...">
+          </div>
+
+          <!-- Categories -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Categories</h3>
+            <ul class="spec-filter-list">
+  <li><button class="spec-filter-btn active" data-filter="all">All Providers <span class="spec-filter-count">{providers.length}</span></button></li>
+  {providerCategories.map(category => <li><button class="spec-filter-btn" data-filter={category.id}>{category.label} <span class="spec-filter-count">{providers.filter(p => p.directory.category === category.id).length}</span></button></li>)}
+</ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="spec-filter-group">
+            <h3 class="spec-filter-title">Quick Links</h3>
+            <ul class="spec-filter-list spec-filter-list--links">{providerCategories.map(category => <li><a href={`#${category.id}`}>{category.label}</a></li>)}</ul>
+          </div>
+
+          <!-- Help CTA -->
+          <div class="spec-sidebar-cta">
+            <span class="material-symbols-rounded">help</span>
+            <h4>Need help finding a provider?</h4>
+            <p>Our team can help match you with the right specialist for your needs.</p>
+            <a href="tel:8012690231" class="btn btn--primary btn--full btn--sm">
+              <span class="material-symbols-rounded">phone</span>
+              Call 801.269.0231
+            </a>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- Right Content -->
+      <div class="spec-content">
+
+        <div class="spec-results-bar" id="spec-results-bar">
+          <span id="spec-results-count">Showing all {providers.length} providers</span>
+        </div>
+
+      <!-- Medical Oncology and Hematology -->
+      {providerCategories.map(category => <div class="provider-category" data-category={category.id} id={category.id}>
+  <h2 class="provider-category-title">{category.label}</h2>
+  <div class="providers-grid">{ordered.filter(p => p.directory.category === category.id).map(provider => <a href={url(`/providers/${provider.slug}.html`)} class="provider-card" data-sort-priority={provider.directory.priority || undefined}>
+    <div class="provider-card-photo"><img src={url(provider.directory.photo)} alt={provider.directory.alt} /></div>
+    <div class="provider-card-info"><h3 class="provider-card-name">{provider.name}</h3></div>
+  </a>)}</div>
+</div>)}
+
+      <!-- Radiation Oncology -->
+
+      <!-- Supportive and Rehabilitative Care -->
+
+      <!-- Advanced Practitioners -->
+
+      </div><!-- /.spec-content -->
+    </div>
+  </section>

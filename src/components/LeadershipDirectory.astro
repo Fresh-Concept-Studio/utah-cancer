@@ -1,0 +1,37 @@
+---
+import groups from '../data/leadership-groups.json';
+import providers from '../data/providers.json';
+import leaders from '../data/leaders.json';
+import { url } from '../lib/urls';
+interface Member { provider?: string; leader?: string; name?: string; role?: string; photo?: { src: string; alt: string } }
+const directory = (groups as {title: string; cards: Member[]}[]).map(group => ({
+  title: group.title,
+  cards: group.cards.map(card => {
+    const provider = providers.find(p => p.slug === card.provider);
+    const leader = leaders.find(p => p.slug === card.leader);
+    const name = card.name ?? provider?.name ?? leader?.name;
+    const role = card.role ?? leader?.role;
+    const photo = card.photo ?? leader?.directoryPhoto ?? (provider ? { src: provider.directory.photo, alt: provider.directory.alt } : undefined);
+    const href = provider ? `/providers/${provider.slug}.html` : leader ? `/leadership/${leader.slug}.html` : undefined;
+    if (!name || !photo) throw new Error(`Missing leadership record in ${group.title}`);
+    return { name, role, photo, href };
+  })
+}));
+---
+<section class="leaders-section"><div class="container">
+  {directory.map(group => <div class="leaders-group">
+    <h2 class="leaders-group-title">{group.title}</h2>
+    <div class="leaders-grid">{group.cards.map(card => {
+      const Tag = card.href ? 'a' : 'div';
+      return <Tag href={card.href ? url(card.href) : undefined} class={card.href ? 'leader-card-link' : 'leader-card'}>
+        {card.href ? <div class="leader-card">
+          <div class="leader-card-photo"><img src={url(card.photo.src)} alt={card.photo.alt} /></div>
+          <div class="leader-card-info"><h3 class="leader-card-name">{card.name}</h3>{card.role && <p class="leader-card-role">{card.role}</p>}</div>
+        </div> : <>
+          <div class="leader-card-photo"><img src={url(card.photo.src)} alt={card.photo.alt} /></div>
+          <div class="leader-card-info"><h3 class="leader-card-name">{card.name}</h3>{card.role && <p class="leader-card-role">{card.role}</p>}</div>
+        </>}
+      </Tag>;
+    })}</div>
+  </div>)}
+</div></section>

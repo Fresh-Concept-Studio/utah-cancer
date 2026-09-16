@@ -1,0 +1,25 @@
+---
+import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
+import pages from '../lib/pages';
+import type { PageData } from '../lib/types';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ProviderPage from './ProviderPage.astro';
+import LeaderPage from './LeaderPage.astro';
+import SpecialtyPage from './SpecialtyPage.astro';
+import LocationPage from './LocationPage.astro';
+import { url, richHtml } from '../lib/urls';
+interface Props { path: string }
+const page = (pages as Record<string, PageData>)[Astro.props.path];
+if (!page) throw new Error(`Unknown page: ${Astro.props.path}`);
+const views = import.meta.glob<{default: AstroComponentFactory}>('../views/*.astro', { eager: true });
+const View = views[`../views/${page.component}.astro`]?.default;
+if (!page.redirect && !page.family && !View) throw new Error(`Missing view for ${Astro.props.path}: ${page.component}`);
+---
+{page.redirect ? <><Fragment set:html="<!DOCTYPE html>" /><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>{page.title}</title><meta http-equiv="refresh" content={`0; url=${url(page.redirect)}`} /><meta name="robots" content="noindex, follow" /><link rel="canonical" href={new URL(url(page.redirect), Astro.site)} /></head><body><Fragment set:html={richHtml(page.redirectBody)} /></body></html></> :
+<SiteLayout page={page}>
+  {page.family === 'provider' ? <ProviderPage slug={page.slug!} /> :
+   page.family === 'leader' ? <LeaderPage slug={page.slug!} /> :
+   page.family === 'specialty' ? <SpecialtyPage slug={page.slug!} /> :
+   page.family === 'location' ? <LocationPage slug={page.slug!} /> :
+   View ? <View /> : null}
+</SiteLayout>}

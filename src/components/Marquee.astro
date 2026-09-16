@@ -1,0 +1,6 @@
+---
+const messages = ['Better care and brighter futures start here', 'Redefining healthcare with innovation, excellence, and heart', 'A better way to care for your health', 'Compassionate care, exceptional outcomes', 'Your fight is our fight'];
+---
+<div class="marquee-banner"><div class="marquee-track">
+  {[...messages, ...messages].map(message => <><span class="marquee-item">{message}</span><span class="marquee-dot">&bull;</span></>)}
+</div></div>

@@ -1,0 +1,8 @@
+---
+import type { ContentLink } from '../lib/types';
+import { url, richHtml } from '../lib/urls';
+interface Props { link: ContentLink }
+const { link } = Astro.props;
+const attributes = { ...link.attrs, href: url(link.attrs.href) };
+---
+<a {...attributes} set:html={richHtml(link.html)} />
