@@ -312,6 +312,9 @@ img {
 }
 
 .nav-btn-cta {
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-body);
   display: inline-flex;
   align-items: center;
   flex-shrink: 0;

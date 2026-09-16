@@ -17,7 +17,7 @@ const { activeNav = [] } = Astro.props;
         </div></div>
       </div>)}
       {patientLinks.map(link => <a href={link.href} target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">{link.icon}</span> {link.label}</a>)}
-      <a href={url('/index.html#foundation')} class="nav-btn-cta"><span class="material-symbols-rounded" aria-hidden="true">volunteer_activism</span> Donate Now</a>
+      <button type="button" class="nav-btn-cta" data-coming-soon aria-haspopup="dialog" aria-controls="coming-soon-modal"><span class="material-symbols-rounded" aria-hidden="true">volunteer_activism</span> Donate Now</button>
     </nav>
   </div>
 </header>

@@ -14,7 +14,7 @@
   }
   toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
   overlay.addEventListener('click', () => setOpen(false));
-  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+  nav.querySelectorAll('a, [data-coming-soon]').forEach(link => link.addEventListener('click', () => setOpen(false)));
   document.addEventListener('keydown', event => { if (event.key === 'Escape') setOpen(false); });
   const updateHeader = () => header.classList.toggle('scrolled', window.scrollY > 50);
   window.addEventListener('scroll', updateHeader, { passive: true });

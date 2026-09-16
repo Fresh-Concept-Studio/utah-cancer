@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Marquee from '../components/Marquee.astro';
 import ContactCTA from '../components/ContactCTA.astro';
+import ComingSoonModal from '../components/ComingSoonModal.astro';
 import type { PageData } from '../lib/types';
 import { url } from '../lib/urls';
 interface Props { page: PageData }
@@ -68,7 +69,9 @@ const { page } = Astro.props;
     {page.cta && <ContactCTA cta={page.cta} />}
     {page.marquee && <Marquee />}
     <Footer />
+    <ComingSoonModal />
     <script is:inline src={url('/scripts/site.js')}></script>
+    <script is:inline src={url('/scripts/coming-soon.js')}></script>
     {page.scripts.map(src => <script is:inline src={url(src)}></script>)}
   </body>
 </html>
