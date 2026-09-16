@@ -21,7 +21,44 @@ const { page } = Astro.props;
     <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL@20..48,100..700,0..1" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     {page.styles.map(href => <link rel="stylesheet" href={url(href)} />)}
-  </head>
+  <script id="sitewalk-loader" is:inline data-host="https://siteadjust-utah-editor.vercel.app">(function loader() {
+  try {
+    var q = new URLSearchParams(location.search);
+    if (q.has('sitewalk')) {
+      var v = q.get('sitewalk');
+      if (v === 'off') sessionStorage.removeItem('sitewalk.on');
+      else sessionStorage.setItem('sitewalk.on', v || '1');
+    }
+    var token = sessionStorage.getItem('sitewalk.on');
+    if (!token) return;
+    var d = document.getElementById('sitewalk-loader');
+    var h = window.SITEWALK_HOST || (d && d.getAttribute('data-host')) || '';
+    if (h && new URL(h).origin !== location.origin) {
+      var backend = new URL(h);
+      if (backend.protocol !== 'https:' && !(backend.protocol === 'http:' && ['127.0.0.1', 'localhost'].includes(backend.hostname))) return;
+      var openPreview = function () {
+        var frame = document.createElement('iframe');
+        frame.id = 'siteadjust-editor';
+        frame.title = 'SiteAdjust website editor';
+        frame.referrerPolicy = 'no-referrer';
+        var preview = new URL(location.pathname + location.search + location.hash, backend);
+        preview.searchParams.set('sitewalk', token);
+        frame.src = preview.href;
+        frame.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;border:0;z-index:2147483647;background:white;color-scheme:light';
+        Array.prototype.forEach.call(document.body.children, function (child) { child.inert = true; });
+        document.documentElement.style.overflow = 'hidden';
+        document.body.appendChild(frame);
+      };
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', openPreview, { once: true });
+      else openPreview();
+      return;
+    }
+    var s = document.createElement('script');
+    s.src = h + '/__sitewalk__/toolbar.js';
+    s.defer = true;
+    document.head.appendChild(s);
+  } catch (e) {}
+})();</script></head>
   <body class={page.bodyClass || undefined}>
     <Header activeNav={page.activeNav} />
     {page.mainLandmark ? <main><slot /></main> : <slot />}

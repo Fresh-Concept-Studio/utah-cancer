@@ -6,8 +6,11 @@ available. Neither workflow deploys on an ordinary Git push.
 
 ## Edit and review
 
-Open the editing URL supplied by the SiteAdjust service. The public GitHub Pages
-URL is the published site; it does not serve drafts or the editing backend.
+Open the private editing link supplied by the site owner: the public GitHub Pages
+URL with `?sitewalk=YOUR_TOKEN`. Its loader opens an authenticated preview from
+`https://siteadjust-utah-editor.vercel.app` over the public page. Ordinary visitors
+see the published site. The editing service runs on Vercel; the owner's computer
+does not need to stay on.
 
 1. Use **Comment** to select text or an image, **Ask AI** for a change request,
    or **New page** to describe a new page.
@@ -27,6 +30,27 @@ If the live branch changes outside SiteAdjust, reconcile the editing checkout
 and rebuild/review before continuing. Changes are never force-pushed.
 
 ## Run the editing service
+
+### Hosted service
+
+The Vercel project `siteadjust-utah-editor` starts a persistent cloud workspace
+on demand. That workspace holds a dedicated repository clone, generated previews,
+drafts, and publication records. It saves a filesystem snapshot when stopped and
+restores it on the next visit. A cold start can take a minute or two.
+
+API and GitHub credentials are encrypted Vercel environment variables and are
+passed to the worker process; they are not committed to this repository. Keep
+the private editing link private: anyone with its shared token can edit and
+approve publication. Individual client accounts are not implemented yet.
+
+The initial trial allows approximately three hours of cumulative workspace
+runtime, with 20-minute sessions extended when submitting edits. The owner must
+explicitly extend the trial budget after it is exhausted. This is an application
+guard, not an account-wide billing cap. Vercel compute, snapshots, and traffic use
+the existing Pro allocation; Claude API usage is billed separately. Hosted image
+uploads must be smaller than 3 MB.
+
+### Local fallback
 
 Use Node 24, the SiteAdjust tool checkout, and a **dedicated clone** of this
 repository with its real GitHub `origin`. Keep the clone clean. Install its
