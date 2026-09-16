@@ -11,7 +11,7 @@ export const menus = [
     { label: 'Events', href: '/events/index.html' },
     { label: 'Our Foundation', href: '/about.html#foundation' },
   ] },
-  { label: 'Patient Resources', links: [
+  { label: 'Patient Resources', href: '/patient-resources.html', links: [
     { label: 'Newly Diagnosed', href: '/newly-diagnosed.html' },
     { label: 'Treatments', href: '/treatment-options.html' },
     { label: 'Patient Education', href: '/patient-education.html' },
@@ -19,7 +19,6 @@ export const menus = [
     { label: 'Clinical Trials', href: '/clinical-trials.html' },
     { label: 'Programs & Services', href: '/programs-and-services.html' },
     { label: 'Physical Therapy', href: '/physical-therapy.html' },
-    { label: 'Patient Resources', href: '/patient-resources.html' },
   ] },
 ];
 export const patientLinks = [

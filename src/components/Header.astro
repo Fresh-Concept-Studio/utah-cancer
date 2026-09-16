@@ -10,9 +10,12 @@ const { activeNav = [] } = Astro.props;
     <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="navbar-nav">
       {primaryLinks.map(link => <a href={url(link.href)} class:list={['nav-link', {active: activeNav.includes(link.label)}]}>{link.label}</a>)}
-      {menus.map(menu => <div class="nav-dropdown">
-        <button class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>
-        <div class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
+      {menus.map((menu, index) => <div class:list={['nav-dropdown', { 'nav-dropdown--linked': !!menu.href }]}>
+        {menu.href ? <>
+          <a href={url(menu.href)} class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow" aria-hidden="true">expand_more</span></a>
+          <button type="button" class="nav-dropdown-disclosure" aria-label={`Toggle ${menu.label} submenu`} aria-expanded="false" aria-controls={`nav-submenu-${index}`}><span class="material-symbols-rounded nav-dropdown-arrow" aria-hidden="true">expand_more</span></button>
+        </> : <button class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>}
+        <div id={`nav-submenu-${index}`} class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
           {menu.links.map(link => <a href={url(link.href)} class="nav-dropdown-item">{link.label}</a>)}
         </div></div>
       </div>)}
@@ -22,3 +25,27 @@ const { activeNav = [] } = Astro.props;
   </div>
 </header>
 <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+<style>
+  .nav-dropdown-disclosure { display: none; }
+  @media (max-width: 1024px) {
+    .nav-dropdown--linked { display: grid; grid-template-columns: 1fr 44px; width: 100%; }
+    .nav-dropdown--linked > a .nav-dropdown-arrow { display: none; }
+    .nav-dropdown-disclosure { display: grid; place-items: center; min-height: 44px; border: 0; border-bottom: 1px solid rgb(255 255 255 / 8%); background: none; color: #fff; cursor: pointer; }
+    .nav-dropdown-disclosure:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
+    .nav-dropdown-disclosure .nav-dropdown-arrow { transform: none; }
+    .nav-dropdown-disclosure[aria-expanded="true"] .nav-dropdown-arrow { transform: rotate(180deg); }
+    .nav-dropdown--linked .nav-dropdown-menu { display: none; grid-column: 1 / -1; position: static; padding: 0 0 12px; visibility: visible; opacity: 1; transform: none; }
+    .nav-dropdown--linked[data-expanded] .nav-dropdown-menu { display: block; }
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.nav-dropdown-disclosure').forEach(button => {
+    button.addEventListener('click', () => {
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      button.closest('.nav-dropdown')?.toggleAttribute('data-expanded', expanded);
+    });
+  });
+</script>
