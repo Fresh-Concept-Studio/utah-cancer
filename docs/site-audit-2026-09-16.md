@@ -18,6 +18,8 @@
 - Granger **Faibourne → Fairbourne** in Jose Pacheco’s location card, consistent with the [official clinic listing](https://utahcancer.com/fairbourne/).
 - **John Hopkins → Johns Hopkins** in Julie Luckart’s education, matching the [university’s name](https://www.jhu.edu/about/history/).
 - Corrected punctuation/spacing in education details for Brittany Weed, Greg Litton, Gregory Chipman, Kimberly McFee, Leland Rogers, and Sunita Sigdel.
+- Corrected Rocky Mountain University of Health **Professionals → Professions** in Kylee Maliwauki’s education, verified against the [university website](https://rm.edu/about/).
+- Added the missing comma in **Fort Collins, Colorado** in Gary Garner’s education details.
 - Added the possessive apostrophe in **Master’s** for Nancy Mortensen and Shauna Olsen.
 - Removed the duplicated medical-school sentence for Gary Garner and repeated street-address lines in 20 shared provider location records.
 - Added the missing **an** in Tym Gilson’s “provide an exceptional experience.”

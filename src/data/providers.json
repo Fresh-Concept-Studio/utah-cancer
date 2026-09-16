@@ -955,7 +955,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Poudre Valley Hospital, Fort Collins Colorado Fellow of American Academy of Hospice and Palliative Medicine</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Poudre Valley Hospital, Fort Collins, Colorado Fellow of American Academy of Hospice and Palliative Medicine</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -2013,7 +2013,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Utah Valley University, Orem, UT Master of Science, Nursing, Rocky Mountain University of Health Professionals, Provo, UT Certifications: Kylee has extensive experience in Hospice and Palliative Care</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Utah Valley University, Orem, UT Master of Science, Nursing, Rocky Mountain University of Health Professions, Provo, UT Certifications: Kylee has extensive experience in Hospice and Palliative Care</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
