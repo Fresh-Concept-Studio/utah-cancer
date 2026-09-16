@@ -17,7 +17,7 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
     <a href={url('/providers/index.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Providers</a>
     <h1 class="provider-name">{provider.name}</h1>
     <p class="provider-specialty">{provider.specialty}</p>
-    <div class="provider-languages"><span class="material-symbols-rounded">translate</span><span>{provider.languages}</span></div>
+    {provider.languages && <div class="provider-languages"><span class="material-symbols-rounded">translate</span><span>{provider.languages}</span></div>}
     <div class="provider-hero-actions">
       <a href={mainPhone.href} class="btn btn--white"><span class="material-symbols-rounded" aria-hidden="true">phone</span> Call for an Appointment</a>
       <a href="#locations" class="btn btn--outline-dark"><span class="material-symbols-rounded">location_on</span> View Locations</a>
@@ -26,10 +26,10 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
   <div class={provider.photo.class}><img src={url(provider.photo.src)} alt={provider.photo.alt} /></div>
 </div></section>
 <DetailTabs tabs={provider.tabs} />
-<section class="provider-details"><div class="container provider-details-inner">
+{provider.sections.length > 0 && <section class="provider-details"><div class="container provider-details-inner">
   <div class="provider-main"><DetailSections sections={provider.sections} /></div>
   <SharedContent name={provider.sidebar} />
-</div></section>
+</div></section>}
 <section class="provider-locations" id="locations"><div class="container">
   <h2 class="provider-section-title">Locations</h2>
   {locations.length ? <div class="provider-locations-grid">
@@ -42,6 +42,6 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
         <div class="location-card-actions">{location.actions.map(link => <ContentLink link={link} />)}</div>
       </div>
     </div>)}
-  </div> : <p class="provider-bio"><a href={url('/locations/index.html')}>View our Utah locations</a> or call <a href="tel:8012690231">801.269.0231</a> for location information.</p>}
+  </div> : <p class="provider-bio"><a href={url('/locations/index.html')}>View our Utah locations</a> or call <a href={mainPhone.href}>{mainPhone.display}</a> for location information.</p>}
 </div></section>
 {provider.media && <SharedContent name={provider.media} />}

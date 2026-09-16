@@ -380,6 +380,60 @@
     ]
   },
   {
+    "slug": "bridget-thackeray",
+    "name": "Bridget Thackeray",
+    "specialty": "Clinical Mental Health Counselor",
+    "languages": "",
+    "photo": {
+      "src": "/images/provider-bridget-thackeray.png",
+      "alt": "Bridget Thackeray",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "tabs": [
+      {
+        "href": "#about",
+        "label": "About"
+      },
+      {
+        "href": "#locations",
+        "label": "Locations"
+      }
+    ],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Bridget Thackeray",
+        "html": "<p class=\"provider-bio\">Bridget Thackeray is a Clinical Mental Health Counselor who provides psychological and emotional support for individuals, couples, and families navigating a variety of mental health and life challenges. She personally believes that life’s challenges are not meant to break us but to propel us toward growth and personal fulfillment.</p> <p class=\"provider-bio\">Bridget’s clinical background includes extensive work in grief support, where she facilitated groups for families and children coping with the loss of loved ones. She has also worked in outreach programs supporting children who had experienced the death of a parent. She has spent the last two years in private practice working with a variety of clients and a range of mental health issues, particularly focusing on helping people navigate moments of profound loss and transition.</p> <p class=\"provider-bio\">Her approach to counseling is strongly influenced by existential psychology and Viktor Frankl’s philosophy of logotherapy, which emphasizes the human capacity to find meaning and purpose even in the midst of suffering. Bridget believes that while a cancer diagnosis can profoundly disrupt life, patients and families can still discover sources of strength, meaning, and connection as they move through the experience.</p> <p class=\"provider-bio\">In her role at Utah Cancer Specialists, Bridget hopes to support both patients and the care team by providing space for patients and caregivers to process the emotional impact of cancer, navigate difficult decisions, and face uncertainty with greater clarity and resilience.</p> <p class=\"provider-bio\">Outside of work, Bridget enjoys road biking, playing pickleball, reading, and spending time with her husband and their four children.</p>"
+      }
+    ],
+    "sidebar": "provider-contact-3",
+    "media": null,
+    "directory": {
+      "photo": "/images/provider-bridget-thackeray.png",
+      "alt": "Bridget Thackeray",
+      "category": "supportive-care",
+      "priority": 0,
+      "order": 36.1
+    },
+    "locationIds": [],
+    "page": {
+      "description": "Bridget Thackeray, Clinical Mental Health Counselor at Utah Cancer Specialists.",
+      "cta": {
+        "heading": "Contact us for more information.",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "class": "btn btn--white",
+              "href": "tel:8012629494"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.262.9494"
+          }
+        ]
+      }
+    }
+  },
+  {
     "slug": "brighton-loveday",
     "name": "Brighton A. Loveday, ANP",
     "specialty": "Advanced Practitioner",
@@ -815,6 +869,50 @@
     "locationIds": [
       "timpanogos-regional-hospital"
     ]
+  },
+  {
+    "slug": "emma-hanson",
+    "name": "Emma Hanson, FNP-S",
+    "specialty": "Supportive & Rehabilitative Care",
+    "languages": "",
+    "photo": {
+      "src": "/images/provider-emma-hanson.png",
+      "alt": "Emma Hanson",
+      "class": "provider-hero-photo provider-hero-photo--expanded"
+    },
+    "tabs": [
+      {
+        "href": "#locations",
+        "label": "Locations"
+      }
+    ],
+    "sections": [],
+    "sidebar": "provider-contact-3",
+    "media": null,
+    "directory": {
+      "photo": "/images/provider-emma-hanson.png",
+      "alt": "Emma Hanson",
+      "category": "supportive-care",
+      "priority": 0,
+      "order": 36.2
+    },
+    "locationIds": [],
+    "page": {
+      "description": "Emma Hanson, FNP-S, Supportive & Rehabilitative Care at Utah Cancer Specialists.",
+      "cta": {
+        "heading": "Contact us for more information.",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "class": "btn btn--white",
+              "href": "tel:8012629494"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.262.9494"
+          }
+        ]
+      }
+    }
   },
   {
     "slug": "gary-garner",
