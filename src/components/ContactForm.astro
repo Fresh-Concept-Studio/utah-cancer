@@ -1,0 +1,40 @@
+---
+import { contactForm, mainPhone } from '../data/contact';
+const endpoint = `${contactForm.serviceUrl}/${contactForm.endpointId}`;
+---
+<p class="contact-form-notice" id="contact-form-notice">For general inquiries only. Please do not include medical details, insurance information, or other sensitive information. For medical questions, use the <a href="https://www.navigatingcare.com/navigatingcare/" target="_blank" rel="noopener">patient portal</a> or call <a href={mainPhone.href}>{mainPhone.display}</a>.</p>
+<form id="contact-form" action={endpoint} method="post" data-ajax-endpoint={`${contactForm.serviceUrl}/ajax/${contactForm.endpointId}`} aria-describedby="contact-form-notice">
+  <input type="hidden" name="_subject" value="Utah Cancer Specialists — general inquiry" />
+  <input type="hidden" name="_template" value="table" />
+  {contactForm.copyRecipients.length > 0 && <input type="hidden" name="_cc" value={contactForm.copyRecipients.join(',')} />}
+  <div class="contact-honeypot" aria-hidden="true"><label>Leave this field blank<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label></div>
+  <div class="contact-name-fields">
+    <label>First name <span aria-hidden="true">*</span><input name="first_name" type="text" autocomplete="given-name" required maxlength="80" /></label>
+    <label>Last name <span aria-hidden="true">*</span><input name="last_name" type="text" autocomplete="family-name" required maxlength="80" /></label>
+  </div>
+  <label>Email address <span aria-hidden="true">*</span><input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+  <label>Phone number (optional)<input name="phone" type="tel" autocomplete="tel" maxlength="40" /></label>
+  <label>Subject <span aria-hidden="true">*</span><input name="subject" type="text" required maxlength="160" /></label>
+  <label>Message <span aria-hidden="true">*</span><textarea name="message" rows="5" required maxlength="4000"></textarea></label>
+  <p class="contact-required-note">* Required fields</p>
+  <button type="submit" class="btn btn--primary"><span class="material-symbols-rounded" aria-hidden="true">send</span><span data-submit-label>Send Message</span></button>
+  <p id="contact-form-status" class="contact-form-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+</form>
+<style>
+  .contact-form-notice { margin-bottom: 24px; font-size: 14px; line-height: 1.6; color: #445561; }
+  .contact-form-notice a { color: #00476b; text-decoration: underline; }
+  form { display: flex; flex-direction: column; gap: 16px; }
+  .contact-name-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  label { display: flex; flex-direction: column; gap: 8px; color: #00476b; font-size: 14px; font-weight: 600; }
+  label > span { display: contents; }
+  input, textarea { width: 100%; min-width: 0; padding: 14px 18px; border: 1px solid #d6d1cc; border-radius: 10px; font-family: var(--font-body); font-size: 16px; color: #333; background: #fff; }
+  input:focus-visible, textarea:focus-visible { outline: 2px solid #00476b; outline-offset: 2px; }
+  textarea { resize: vertical; }
+  button { align-self: flex-start; }
+  button:disabled { opacity: .65; cursor: wait; }
+  .contact-honeypot { display: none; }
+  .contact-required-note { font-size: 12px; color: #576670; }
+  .contact-form-status { padding: 16px; border-radius: 10px; background: #f0f4f8; color: #00476b; line-height: 1.5; }
+  .contact-form-status[data-state="error"] { background: #fff1ef; color: #8b291d; }
+  @media (max-width: 480px) { .contact-name-fields { grid-template-columns: 1fr; } }
+</style>

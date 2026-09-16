@@ -1,4 +1,6 @@
 ---
+import { mainPhone } from '../data/contact';
+import ContactForm from '../components/ContactForm.astro';
 ---
 <section class="providers-hero">
     <div class="container">
@@ -9,26 +11,16 @@
 
   <section style="padding:80px 0;">
     <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;">
+      <div class="contact-layout">
         <div>
           <h2 class="about-mission-title" style="margin-bottom:24px;">Send Us a Message</h2>
-          <form style="display:flex; flex-direction:column; gap:16px;">
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
-              <input type="text" placeholder="First Name" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family: var(--font-body); font-size:14px; outline:none;">
-              <input type="text" placeholder="Last Name" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family: var(--font-body); font-size:14px; outline:none;">
-            </div>
-            <input type="email" placeholder="Email Address" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family: var(--font-body); font-size:14px; outline:none;">
-            <input type="tel" placeholder="Phone Number" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family: var(--font-body); font-size:14px; outline:none;">
-            <input type="text" placeholder="Subject" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family: var(--font-body); font-size:14px; outline:none;">
-            <textarea placeholder="Message" rows="5" style="padding:14px 18px; border:1px solid #d6d1cc; border-radius:10px; font-family: var(--font-body); font-size:14px; outline:none; resize:vertical;"></textarea>
-            <button type="submit" class="btn btn--primary" style="align-self:flex-start;"><span class="material-symbols-rounded">send</span> Send Message</button>
-          </form>
+          <ContactForm />
         </div>
         <div>
           <h2 class="about-mission-title" style="margin-bottom:24px;">Get in Touch</h2>
           <div class="provider-credentials">
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">apartment</span></div><div class="credential-content"><h3 class="credential-label">Clinical Support Services</h3><p>10808 S. River Front Pkwy., Ste. 400<br>South Jordan, UT 84095</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">phone</span></div><div class="credential-content"><h3 class="credential-label">Phone</h3><p><a href="tel:8012629494" style="color:#5e8b9e;">801.262.9494</a><br>Monday–Friday, 9:00 AM – 5:00 PM</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">phone</span></div><div class="credential-content"><h3 class="credential-label">Phone</h3><p><a href={mainPhone.href} style="color:#5e8b9e;">{mainPhone.display}</a><br>Monday–Friday, 9:00 AM – 5:00 PM</p></div></div>
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">mail</span></div><div class="credential-content"><h3 class="credential-label">Email</h3><p><a href="mailto:info@utcancer.com" style="color:#5e8b9e;">info@utcancer.com</a></p></div></div>
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">payments</span></div><div class="credential-content"><h3 class="credential-label">Billing Questions</h3><p><a href="tel:8012660878" style="color:#5e8b9e;">801.266.0878</a><br>Monday–Friday, 7:00 AM – 4:00 PM</p></div></div>
           </div>
@@ -40,3 +32,8 @@
       </div>
     </div>
   </section>
+
+<style>
+  .contact-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: start; }
+  @media (max-width: 760px) { .contact-layout { grid-template-columns: 1fr; gap: 48px; } }
+</style>

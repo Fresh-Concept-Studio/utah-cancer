@@ -1,6 +1,7 @@
 ---
 import providers from '../data/providers.json';
 import clinics from '../data/provider-locations.json';
+import { mainPhone } from '../data/contact';
 import { url, richHtml } from '../lib/urls';
 import DetailSections from './DetailSections.astro';
 import DetailTabs from './DetailTabs.astro';
@@ -18,7 +19,7 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
     <p class="provider-specialty">{provider.specialty}</p>
     <div class="provider-languages"><span class="material-symbols-rounded">translate</span><span>{provider.languages}</span></div>
     <div class="provider-hero-actions">
-      <a href={url(provider.appointmentHref)} class="btn btn--white"><span class="material-symbols-rounded">calendar_today</span> Request Appointment</a>
+      <a href={mainPhone.href} class="btn btn--white"><span class="material-symbols-rounded" aria-hidden="true">phone</span> Call for an Appointment</a>
       <a href="#locations" class="btn btn--outline-dark"><span class="material-symbols-rounded">location_on</span> View Locations</a>
     </div>
   </div>

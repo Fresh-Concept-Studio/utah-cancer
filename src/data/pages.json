@@ -67,7 +67,9 @@
       "/styles.css",
       "/provider.css"
     ],
-    "scripts": [],
+    "scripts": [
+      "/scripts/contact-form.js"
+    ],
     "marquee": true,
     "component": "contact"
   },
