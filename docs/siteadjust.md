@@ -7,7 +7,7 @@ available. Neither workflow deploys on an ordinary Git push.
 ## Edit and review
 
 Open the private editing link supplied by the site owner: the public GitHub Pages
-URL with `?sitewalk=YOUR_TOKEN`. Its loader opens an authenticated preview from
+URL with `?siteadjust=YOUR_TOKEN`. Its loader opens an authenticated preview from
 `https://siteadjust-utah-editor.vercel.app` over the public page. Ordinary visitors
 see the published site. The editing service runs on Vercel; the owner's computer
 does not need to stay on.
@@ -69,7 +69,7 @@ node /path/to/siteadjust/bin/sitewalk.js serve /path/to/dedicated-utah-checkout 
   --publish-repo Fresh-Concept-Studio/utah-cancer
 ```
 
-For local trials, open `http://127.0.0.1:4747/utah-cancer/?sitewalk=YOUR_TOKEN`
+For local trials, open `http://127.0.0.1:4747/utah-cancer/?siteadjust=YOUR_TOKEN`
 on the computer running the service. Keep the service running while editing
 and publishing. For remote clients, host the service behind HTTPS with access
 control; a localhost URL only works on the host computer. Current access uses

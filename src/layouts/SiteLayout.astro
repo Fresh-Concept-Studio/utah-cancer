@@ -24,8 +24,10 @@ const { page } = Astro.props;
   <script id="sitewalk-loader" is:inline data-host="https://siteadjust-utah-editor.vercel.app">(function loader() {
   try {
     var q = new URLSearchParams(location.search);
-    if (q.has('sitewalk')) {
-      var v = q.get('sitewalk');
+    // Keep existing private links working while using the branded parameter.
+    var parameter = q.has('siteadjust') ? 'siteadjust' : 'sitewalk';
+    if (q.has(parameter)) {
+      var v = q.get(parameter);
       if (v === 'off') sessionStorage.removeItem('sitewalk.on');
       else sessionStorage.setItem('sitewalk.on', v || '1');
     }
@@ -42,7 +44,8 @@ const { page } = Astro.props;
         frame.title = 'SiteAdjust website editor';
         frame.referrerPolicy = 'no-referrer';
         var preview = new URL(location.pathname + location.search + location.hash, backend);
-        preview.searchParams.set('sitewalk', token);
+        preview.searchParams.delete('sitewalk');
+        preview.searchParams.set('siteadjust', token);
         frame.src = preview.href;
         frame.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;border:0;z-index:2147483647;background:white;color-scheme:light';
         Array.prototype.forEach.call(document.body.children, function (child) { child.inert = true; });
