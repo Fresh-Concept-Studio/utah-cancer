@@ -538,7 +538,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science , Medical Laboratory Science, Brigham Young University, Provo, UT Master of Health Science, Physician Assistant studies, Duke University Medical Center, Durham. North Carolina</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Medical Laboratory Science, Brigham Young University, Provo, UT Master of Health Science, Physician Assistant studies, Duke University Medical Center, Durham, North Carolina</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -955,7 +955,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT Doctor of Medicine: University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Poudre Valley Hospital, Fort Collins Colorado Fellow of American Academy of Hospice and Palliative Medicine</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Poudre Valley Hospital, Fort Collins Colorado Fellow of American Academy of Hospice and Palliative Medicine</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -1018,7 +1018,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Washington School of Medicine, Seattle, WA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Department of Medicine, University of Wisconsin, Madison, WI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology ,Department of Medicine, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Washington School of Medicine, Seattle, WA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Department of Medicine, University of Wisconsin, Madison, WI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology, Department of Medicine, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -1080,7 +1080,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University Hospitals of Cleveland, Cleveland , OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University Hospitals of Cleveland/ Case Medical Center, Cleveland, OH</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University Hospitals of Cleveland, Cleveland, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University Hospitals of Cleveland/ Case Medical Center, Cleveland, OH</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -1827,7 +1827,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Psychology, University of Utah, Salt Lake City, UT Bachelor of Science, Nursing, John Hopkins University, Baltimore, MD Master of Nursing, Family Practice, University of Utah, Salt Lake City, UT Doctorate of Nursing Practice, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Psychology, University of Utah, Salt Lake City, UT Bachelor of Science, Nursing, Johns Hopkins University, Baltimore, MD Master of Nursing, Family Practice, University of Utah, Salt Lake City, UT Doctorate of Nursing Practice, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -1951,7 +1951,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Kinesiology , Iowa State University, Ames, IA Bachelor of Science, Genetics, Iowa State University, Ames, IA Master of Science, Physician Assistant Studies, Idaho State University, Boise, ID</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Kinesiology, Iowa State University, Ames, IA Bachelor of Science, Genetics, Iowa State University, Ames, IA Master of Science, Physician Assistant Studies, Idaho State University, Boise, ID</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -2076,7 +2076,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kentucky College of Medicine, Louisville ,KY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology ,University of N. Carolina, Chapel Hill, NC Location: Jordan Valley Cancer Center 3592 W. 9000 S., Ste. 100 West Jordan, UT 84088</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kentucky College of Medicine, Louisville, KY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, University of N. Carolina, Chapel Hill, NC Location: Jordan Valley Cancer Center 3592 W. 9000 S., Ste. 100 West Jordan, UT 84088</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -2384,7 +2384,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Eastern Kentucky University, Richmond, KY Masters Degree, Adult Nurse Practitioner and Oncology Clinical Nurse Specialists Program, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Eastern Kentucky University, Richmond, KY Master’s Degree, Adult Nurse Practitioner and Oncology Clinical Nurse Specialists Program, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -3016,7 +3016,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Westminster College, Salt Lake City, UT Masters, Nursing, Westminster College, Salt Lake City, UT</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Westminster College, Salt Lake City, UT Master’s, Nursing, Westminster College, Salt Lake City, UT</p> </div> </div> </div>"
       },
       {
         "id": "certifications",
@@ -3205,7 +3205,7 @@
       {
         "id": "education",
         "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Nursing (FNP ) from Walden University, Minneapolis, MN Bachelor of Science in Nursing (BSN) from Western Governors University. Salt Lake City, UT ADN from Manipal School of Nursing, Pokhara, Nepal</p> </div> </div> </div>"
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Nursing (FNP) from Walden University, Minneapolis, MN Bachelor of Science in Nursing (BSN) from Western Governors University, Salt Lake City, UT ADN from Manipal School of Nursing, Pokhara, Nepal</p> </div> </div> </div>"
       },
       {
         "id": "certifications",

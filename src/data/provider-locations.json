@@ -2,7 +2,7 @@
   "intermountain-medical-center": {
     "name": "Intermountain Medical Center",
     "sublabel": "",
-    "addressHtml": "5131 S. Cottonwood ST., Building 3, Level 2<br>5131 S. Cottonwood ST., Building 3, Level 2<br>Murray, UT 84107",
+    "addressHtml": "5131 S. Cottonwood ST., Building 3, Level 2<br>Murray, UT 84107",
     "actions": [
       {
         "attrs": {
@@ -23,7 +23,7 @@
   "timpanogos-regional-hospital": {
     "name": "Timpanogos Regional Hospital",
     "sublabel": "",
-    "addressHtml": "700 W. 800 N. Ste. 340<br>700 W. 800 N. Ste. 340<br>Orem, UT 84057",
+    "addressHtml": "700 W. 800 N. Ste. 340<br>Orem, UT 84057",
     "actions": [
       {
         "attrs": {
@@ -44,7 +44,7 @@
   "salt-lake-clinic": {
     "name": "Salt Lake Clinic",
     "sublabel": "",
-    "addressHtml": "389 S. 900 E., Ste. 100<br>389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102",
+    "addressHtml": "389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102",
     "actions": [
       {
         "attrs": {
@@ -86,7 +86,7 @@
   "lakeview-hospital-campus": {
     "name": "Lakeview Hospital Campus",
     "sublabel": "",
-    "addressHtml": "520 E. Medical Dr., Ste. 100<br>520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
+    "addressHtml": "520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
     "actions": [
       {
         "attrs": {
@@ -128,7 +128,7 @@
   "holy-cross-hospital": {
     "name": "Holy Cross Hospital",
     "sublabel": "",
-    "addressHtml": "3592 W. 9000 S.; Ste. 200<br>3592 W. 9000 S.; Ste. 200<br>West Jordan, UT 84088",
+    "addressHtml": "3592 W. 9000 S.; Ste. 200<br>West Jordan, UT 84088",
     "actions": [
       {
         "attrs": {
@@ -212,7 +212,7 @@
   "davis-hospital-campus": {
     "name": "Davis Hospital Campus",
     "sublabel": "",
-    "addressHtml": "1492 Antelope Dr., Ste. 125<br>1492 Antelope Dr., Ste. 125<br>Layton, UT 84041",
+    "addressHtml": "1492 Antelope Dr., Ste. 125<br>Layton, UT 84041",
     "actions": [
       {
         "attrs": {
@@ -233,7 +233,7 @@
   "cancer-center": {
     "name": "Cancer Center",
     "sublabel": "",
-    "addressHtml": "3838 S. 700 E., Ste. 100<br>3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106",
+    "addressHtml": "3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106",
     "actions": [
       {
         "attrs": {
@@ -254,7 +254,7 @@
   "granger-fairbourne-station-clinic": {
     "name": "Granger Fairbourne Station Clinic",
     "sublabel": "",
-    "addressHtml": "2965 W. 3500 S., 4th Floor<br>2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
+    "addressHtml": "2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
     "actions": [
       {
         "attrs": {
@@ -296,7 +296,7 @@
   "ucs-cancer-center": {
     "name": "UCS Cancer Center",
     "sublabel": "",
-    "addressHtml": "3838 S. 700 E., Ste. 100<br>3838 S. 700 E., Ste. 100<br>Salt Lake City, Utah 84106",
+    "addressHtml": "3838 S. 700 E., Ste. 100<br>Salt Lake City, Utah 84106",
     "actions": [
       {
         "attrs": {
@@ -317,7 +317,7 @@
   "intermountain-medical-center-bldg-3": {
     "name": "Intermountain Medical Center, Bldg. 3",
     "sublabel": "",
-    "addressHtml": "5131 S. Cottonwood St., Level 2<br>5131 S. Cottonwood St., Level 2<br>Murray, Utah 84107",
+    "addressHtml": "5131 S. Cottonwood St., Level 2<br>Murray, Utah 84107",
     "actions": [
       {
         "attrs": {
@@ -338,7 +338,7 @@
   "intermountain-medical-center-campus": {
     "name": "Intermountain Medical Center Campus",
     "sublabel": "",
-    "addressHtml": "5131 S. Cottonwood St., Ste. 200<br>5131 S. Cottonwood St., Ste. 200<br>Murray, UT 84107",
+    "addressHtml": "5131 S. Cottonwood St., Ste. 200<br>Murray, UT 84107",
     "actions": [
       {
         "attrs": {
@@ -422,7 +422,7 @@
   "timpanogos-regional-hospital-2": {
     "name": "Timpanogos Regional Hospital",
     "sublabel": "",
-    "addressHtml": "700 W. 800 N., Ste. 140<br>700 W. 800 N., Ste. 140<br>Orem, UT 84057",
+    "addressHtml": "700 W. 800 N., Ste. 140<br>Orem, UT 84057",
     "actions": [
       {
         "attrs": {
@@ -443,7 +443,7 @@
   "st-mark-s-hospital": {
     "name": "St. Mark’s Hospital",
     "sublabel": "",
-    "addressHtml": "1250 E. 3900 S., Ste. B-10<br>1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124",
+    "addressHtml": "1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124",
     "actions": [
       {
         "attrs": {
@@ -464,7 +464,7 @@
   "holy-cross-davis-hospital": {
     "name": "Holy Cross Davis Hospital",
     "sublabel": "",
-    "addressHtml": "2132 N 1700 W, Suite B-101<br>2132 N 1700 W, Suite B-101<br>Layton, UT 84041",
+    "addressHtml": "2132 N 1700 W, Suite B-101<br>Layton, UT 84041",
     "actions": [
       {
         "attrs": {
@@ -483,9 +483,9 @@
     ]
   },
   "start-at-granger-faibourne-station": {
-    "name": "START at Granger Faibourne Station",
+    "name": "START at Granger Fairbourne Station",
     "sublabel": "",
-    "addressHtml": "2965 W. 3500 S., Fourth Floor-E.<br>2965 W. 3500 S., Fourth Floor-E.<br>West Valley, UT 84119",
+    "addressHtml": "2965 W. 3500 S., Fourth Floor-E.<br>West Valley, UT 84119",
     "actions": [
       {
         "attrs": {
@@ -506,7 +506,7 @@
   "start-mountain-region-clinical-trials": {
     "name": "START Mountain Region-Clinical Trials",
     "sublabel": "",
-    "addressHtml": "2965 W. 3500 S., Fourth Floor<br>2965 W. 3500 S., Fourth Floor<br>West Valley City, UT 84119",
+    "addressHtml": "2965 W. 3500 S., Fourth Floor<br>West Valley City, UT 84119",
     "actions": [
       {
         "attrs": {
@@ -548,7 +548,7 @@
   "pleasant-grove-clinic": {
     "name": "Pleasant Grove Clinic",
     "sublabel": "",
-    "addressHtml": "1076 N County Blvd, Suite D<br>1076 N County Blvd, Suite D<br>Pleasant Grove, UT 84062",
+    "addressHtml": "1076 N County Blvd, Suite D<br>Pleasant Grove, UT 84062",
     "actions": [
       {
         "attrs": {
@@ -569,7 +569,7 @@
   "jordan-valley-cancer-center-2": {
     "name": "Jordan Valley Cancer Center",
     "sublabel": "",
-    "addressHtml": "3592 W. 9000 S., Ste. 100<br>3592 W. 9000 S., Ste. 100<br>West Jordan, UT 84088",
+    "addressHtml": "3592 W. 9000 S., Ste. 100<br>West Jordan, UT 84088",
     "actions": [
       {
         "attrs": {
@@ -632,7 +632,7 @@
   "tooele-clinic": {
     "name": "Tooele Clinic",
     "sublabel": "NorthPointe Medical Park",
-    "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
+    "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
     "actions": [
       {
         "attrs": {
@@ -653,7 +653,7 @@
   "salt-lake-clinic-2": {
     "name": "Salt Lake Clinic",
     "sublabel": "",
-    "addressHtml": "389 S. 900 E. Ste. 100<br>389 S. 900 E. Ste. 100<br>Salt Lake City, UT 84102",
+    "addressHtml": "389 S. 900 E. Ste. 100<br>Salt Lake City, UT 84102",
     "actions": [
       {
         "attrs": {
