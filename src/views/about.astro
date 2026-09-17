@@ -7,7 +7,16 @@ const employeeCount = 382;
 <!-- Hero -->
   <section class="about-hero">
     <div class="about-hero-bg">
-      <img src={url("/images/hero-bg.jpg")} alt="">
+      <img
+        src={url("/images/hero-bg.webp")}
+        srcset={`${url("/images/hero-bg-720.webp")} 720w, ${url("/images/hero-bg.webp")} 1536w`}
+        sizes="100vw"
+        width="1536"
+        height="1024"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      >
       <div class="about-hero-overlay"></div>
     </div>
     <div class="container about-hero-inner">
@@ -28,13 +37,13 @@ const employeeCount = 382;
       </div>
       <div class="about-mission-photos">
         <div class="about-mission-photo">
-          <img src={url("/images/specialty-prostate-clinical-card.jpg")} alt="Patient receiving care from a UCS clinician">
+          <img src={url("/images/specialty-prostate-clinical-card-480.webp")} width="480" height="640" alt="Patient receiving care from a UCS clinician" loading="lazy" decoding="async">
         </div>
         <div class="about-mission-photo">
-          <img src={url("/images/specialty-headneck-clinical-card.jpg")} alt="UCS clinician in a care setting">
+          <img src={url("/images/specialty-headneck-clinical-card-480.webp")} width="480" height="640" alt="UCS clinician in a care setting" loading="lazy" decoding="async">
         </div>
         <div class="about-mission-photo">
-          <img src={url("/images/specialty-kidney-clinical-card.jpg")} alt="UCS care team member in the infusion center">
+          <img src={url("/images/specialty-kidney-clinical-card-480.webp")} width="480" height="640" alt="UCS care team member in the infusion center" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -52,7 +61,7 @@ const employeeCount = 382;
   <section class="about-numbers">
     <div class="container about-numbers-inner">
       <div class="about-numbers-image">
-        <img src={url("/images/location-jordan-valley.jpg")} alt="Jordan Valley Cancer Center">
+        <img src={url("/images/location-jordan-valley-640.webp")} width="640" height="640" alt="Jordan Valley Cancer Center" loading="lazy" decoding="async">
       </div>
       <div>
         <span class="about-mission-label">By the Numbers</span>
@@ -216,19 +225,19 @@ const employeeCount = 382;
     <div class="container about-team-inner">
       <div class="about-leadership-portraits" role="group" aria-label="Utah Cancer Specialists executive leadership team">
         <figure class="about-leadership-portrait">
-          <img src={url("/images/leader-ravin-bisla.jpg")} alt="Ravin Bisla, Chief Executive Officer">
+          <img src={url("/images/leader-ravin-bisla.jpg")} alt="Ravin Bisla, Chief Executive Officer" loading="lazy" decoding="async">
           <figcaption><strong>Ravin Bisla</strong><span>CEO</span></figcaption>
         </figure>
         <figure class="about-leadership-portrait">
-          <img src={url("/images/leader-cfo.jpg")} alt="Patrick Shields, Chief Financial Officer">
+          <img src={url("/images/leader-cfo.jpg")} alt="Patrick Shields, Chief Financial Officer" loading="lazy" decoding="async">
           <figcaption><strong>Patrick Shields</strong><span>CFO</span></figcaption>
         </figure>
         <figure class="about-leadership-portrait">
-          <img src={url("/images/leader-kyle-kitchen.jpg")} alt="Kyle Kitchen, Chief Clinical Officer">
+          <img src={url("/images/leader-kyle-kitchen.jpg")} alt="Kyle Kitchen, Chief Clinical Officer" loading="lazy" decoding="async">
           <figcaption><strong>Kyle Kitchen</strong><span>CCO</span></figcaption>
         </figure>
         <figure class="about-leadership-portrait">
-          <img src={url("/images/leader-shannon-mcrae.jpg")} alt="Shannon McRae, Chief of Staff">
+          <img src={url("/images/leader-shannon-mcrae.jpg")} alt="Shannon McRae, Chief of Staff" loading="lazy" decoding="async">
           <figcaption><strong>Shannon McRae</strong><span>Chief of Staff</span></figcaption>
         </figure>
       </div>
@@ -250,7 +259,7 @@ const employeeCount = 382;
     <div class="container about-team-inner reverse">
       <div class="about-team-photos about-team-photos--single">
         <div class="about-team-photo">
-          <img src={url("/images/location-start.jpg")} alt="START Mountain Region clinical trials location">
+          <img src={url("/images/location-start-640.webp")} width="408" height="272" alt="START Mountain Region clinical trials location" loading="lazy" decoding="async">
         </div>
       </div>
       <div class="about-team-text">

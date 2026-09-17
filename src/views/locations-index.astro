@@ -48,11 +48,12 @@ const markers = directory.filter(location => location.map).map(location => ({
         <!-- Utah Locations (alphabetical) -->
         <div class="loc-panel">
           <div class="loc-grid">
-  {directory.map(location => {
+  {directory.map((location, index) => {
     const card = location.directory!;
     const image = location.image;
+    const cardImage = image.src.replace(/\.(?:jpe?g|png|webp)$/i, '-640.webp');
     return <a href={url(`/locations/${location.slug}.html`)} class:list={['loc-card', {'loc-card--featured': card.badge}]} data-county={card.county}>
-      <div class="loc-card-image"><img src={url(image.src)} alt={image.alt} />{card.badge && <span class="loc-card-badge">{card.badge}</span>}</div>
+      <div class="loc-card-image"><img src={url(cardImage)} width="640" height="480" alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : 'auto'} decoding="async" />{card.badge && <span class="loc-card-badge">{card.badge}</span>}</div>
       <div class="loc-card-body">
         <h3 class="loc-card-name">{card.title || location.title}</h3>
         <p class="loc-card-sub">{card.subtitle || location.subtitle}</p>

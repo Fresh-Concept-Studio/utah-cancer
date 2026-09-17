@@ -6,7 +6,7 @@ const { activeNav = [] } = Astro.props;
 ---
 <header class="navbar">
   <div class="container navbar-inner">
-    <a href={url('/index.html')} class="navbar-logo"><img src={url('/images/ucs-logo-white.svg')} alt="Utah Cancer Specialists" /></a>
+    <a href={url('/index.html')} class="navbar-logo"><img src={url('/images/ucs-logo-white.svg')} alt="Utah Cancer Specialists" width="589" height="192" /></a>
     <button class="navbar-hamburger" id="navbar-hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav class="navbar-nav">
       {primaryLinks.map(link => <a href={url(link.href)} class:list={['nav-link', {active: activeNav.includes(link.label)}]}>{link.label}</a>)}

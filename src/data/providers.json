@@ -385,7 +385,7 @@
     "specialty": "Clinical Mental Health Counselor",
     "languages": "",
     "photo": {
-      "src": "/images/provider-cutouts/provider-bridget-thackeray.png",
+      "src": "/images/provider-cutouts/provider-bridget-thackeray.webp",
       "alt": "Bridget Thackeray",
       "class": "provider-hero-photo provider-hero-photo--expanded"
     },
@@ -409,7 +409,7 @@
     "sidebar": "provider-contact-3",
     "media": null,
     "directory": {
-      "photo": "/images/provider-bridget-thackeray.png",
+      "photo": "/images/provider-bridget-thackeray.webp",
       "alt": "Bridget Thackeray",
       "category": "supportive-care",
       "priority": 0,

@@ -6,9 +6,10 @@ import ContentLink from './ContentLink.astro';
 interface Props { slug: string }
 const location = locations.find(p => p.slug === Astro.props.slug);
 if (!location) throw new Error(`Unknown location: ${Astro.props.slug}`);
+const heroImage = location.image.src.replace(/\.(?:jpe?g|png|webp)$/i, '-1280.webp');
 ---
 <section class="loc-hero">
-  <div class="loc-hero-bg"><img src={url(location.image.src)} alt={location.image.alt} /><div class="loc-hero-overlay"></div></div>
+  <div class="loc-hero-bg"><img src={url(heroImage)} width="1280" height="800" alt={location.image.alt} fetchpriority="high" decoding="async" /><div class="loc-hero-overlay"></div></div>
   <div class="container loc-hero-inner">
     <a href={url('/locations/index.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Locations</a>
     {location.tag && <span class="loc-hero-tag">{location.tag}</span>}

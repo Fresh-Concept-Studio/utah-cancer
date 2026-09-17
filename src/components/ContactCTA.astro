@@ -4,9 +4,10 @@ import { url } from '../lib/urls';
 import ContentLink from './ContentLink.astro';
 interface Props { cta: NonNullable<PageData['cta']> }
 const { cta } = Astro.props;
+const image = cta.image === '/images/contact-bg.jpg' || !cta.image ? '/images/contact-bg.webp' : cta.image;
 ---
 <section class="contact-section">
-  <div class="contact-bg"><img src={url(cta.image || '/images/contact-bg.jpg')} alt="" /><div class="contact-overlay"></div></div>
+  <div class="contact-bg"><img src={url(image)} srcset={image === '/images/contact-bg.webp' ? `${url('/images/contact-bg-800.webp')} 800w, ${url('/images/contact-bg.webp')} 1360w` : undefined} sizes="100vw" alt="" width="1360" height="1020" loading="lazy" decoding="async" /><div class="contact-overlay"></div></div>
   <div class="container contact-inner">
     <h2 class="contact-heading">{cta.heading}</h2>
     {cta.actionsClass ? <div class={cta.actionsClass}>{cta.links.map(link => <ContentLink link={link} />)}</div> : cta.links.map(link => <ContentLink link={link} />)}

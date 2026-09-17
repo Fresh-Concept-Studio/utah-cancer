@@ -66,7 +66,7 @@ const ordered = [...providers].sort((a,b) => a.directory.order - b.directory.ord
       {providerCategories.map(category => <div class="provider-category" data-category={category.id} id={category.id}>
   <h2 class="provider-category-title">{category.label}</h2>
   <div class="providers-grid">{ordered.filter(p => p.directory.category === category.id).map(provider => <a href={url(`/providers/${provider.slug}.html`)} class="provider-card" data-sort-priority={provider.directory.priority || undefined}>
-    <div class="provider-card-photo"><img src={url(provider.directory.photo)} alt={provider.directory.alt} /></div>
+    <div class="provider-card-photo"><img src={url(provider.directory.photo)} width="400" height="600" alt={provider.directory.alt} loading="lazy" decoding="async" /></div>
     <div class="provider-card-info"><h3 class="provider-card-name">{provider.name}</h3></div>
   </a>)}</div>
 </div>)}

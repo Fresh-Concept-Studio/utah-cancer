@@ -4,7 +4,16 @@ import { url } from '../lib/urls';
 <!-- Hero Section -->
   <section class="hero">
     <div class="hero-bg">
-      <img src={url("/images/hero-bg.jpg")} alt="">
+      <img
+        src={url("/images/hero-bg.webp")}
+        srcset={`${url("/images/hero-bg-720.webp")} 720w, ${url("/images/hero-bg.webp")} 1536w`}
+        sizes="100vw"
+        width="1536"
+        height="1024"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
+      >
       <div class="hero-overlay"></div>
     </div>
     <div class="container hero-content">
@@ -57,7 +66,16 @@ import { url } from '../lib/urls';
       </div>
       <div class="team-photos">
         <div class="team-photo team-photo--single">
-          <img src={url("/images/team-ucs-group.jpg")} alt="The Utah Cancer Specialists care team">
+          <img
+            src={url("/images/team-ucs-group-960.webp")}
+            srcset={`${url("/images/team-ucs-group-480.webp")} 480w, ${url("/images/team-ucs-group-960.webp")} 960w`}
+            sizes="(max-width: 700px) 100vw, 540px"
+            width="960"
+            height="640"
+            alt="The Utah Cancer Specialists care team"
+            loading="lazy"
+            decoding="async"
+          >
         </div>
       </div>
     </div>
@@ -74,15 +92,15 @@ import { url } from '../lib/urls';
         <div class="specialties-header-right">
           <a href={url("/specialties/index.html")} class="btn btn--outline">See All Types of Cancer</a>
           <div class="carousel-controls">
-            <button class="carousel-btn carousel-btn--prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
-            <button class="carousel-btn carousel-btn--next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+            <button class="carousel-btn carousel-btn--prev" aria-label="Previous"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span></button>
+            <button class="carousel-btn carousel-btn--next" aria-label="Next"><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
           </div>
         </div>
       </div>
       <div class="specialties-carousel">
         <div class="carousel-track">
           <a href={url("/specialties/breast-cancer.html")} class="specialty-card">
-            <img src={url("/images/specialty-breast-clinical-card.jpg")} alt="Breast Cancer Treatment" class="specialty-card-img">
+            <img src={url("/images/specialty-breast-clinical-card-480.webp")} width="480" height="640" alt="Breast Cancer Treatment" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Breast Cancer Treatment</h3>
@@ -90,7 +108,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/prostate-cancer.html")} class="specialty-card">
-            <img src={url("/images/specialty-prostate-clinical-card.jpg")} alt="Prostate Cancer Care" class="specialty-card-img">
+            <img src={url("/images/specialty-prostate-clinical-card-480.webp")} width="480" height="640" alt="Prostate Cancer Care" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Prostate Cancer Care</h3>
@@ -98,7 +116,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/lung-cancer.html")} class="specialty-card">
-            <img src={url("/images/specialty-lung-clinical-card.jpg")} alt="Lung Cancer Treatment" class="specialty-card-img">
+            <img src={url("/images/specialty-lung-clinical-card-480.webp")} width="480" height="640" alt="Lung Cancer Treatment" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Lung Cancer Treatment</h3>
@@ -106,7 +124,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/colon-cancer.html")} class="specialty-card">
-            <img src={url("/images/specialty-colon-clinical-card.jpg")} alt="Colon Cancer Treatment" class="specialty-card-img">
+            <img src={url("/images/specialty-colon-clinical-card-480.webp")} width="480" height="640" alt="Colon Cancer Treatment" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Colon Cancer Treatment</h3>
@@ -114,7 +132,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/lymphomas.html")} class="specialty-card">
-            <img src={url("/images/specialty-lymphoma-clinical-card.jpg")} alt="Lymphomas" class="specialty-card-img">
+            <img src={url("/images/specialty-lymphoma-clinical-card-480.webp")} width="480" height="640" alt="Lymphomas" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Lymphomas</h3>
@@ -122,7 +140,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/blood-cancers.html")} class="specialty-card">
-            <img src={url("/images/specialty-blood-clinical-card.jpg")} alt="Blood Cancers" class="specialty-card-img">
+            <img src={url("/images/specialty-blood-clinical-card-480.webp")} width="480" height="640" alt="Blood Cancers" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Blood Cancers</h3>
@@ -130,7 +148,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/head-neck-cancers.html")} class="specialty-card">
-            <img src={url("/images/specialty-headneck-clinical-card.jpg")} alt="Head and Neck Cancers" class="specialty-card-img">
+            <img src={url("/images/specialty-headneck-clinical-card-480.webp")} width="480" height="640" alt="Head and Neck Cancers" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Head &amp; Neck Cancers</h3>
@@ -138,7 +156,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/kidney-cancer.html")} class="specialty-card">
-            <img src={url("/images/specialty-kidney-clinical-card.jpg")} alt="Kidney Cancer" class="specialty-card-img">
+            <img src={url("/images/specialty-kidney-clinical-card-480.webp")} width="480" height="640" alt="Kidney Cancer" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Kidney Cancer</h3>
@@ -146,7 +164,7 @@ import { url } from '../lib/urls';
             <span class="specialty-card-arrow material-symbols-rounded" aria-hidden="true">arrow_forward</span>
           </a>
           <a href={url("/specialties/liver-cancer.html")} class="specialty-card">
-            <img src={url("/images/specialty-liver-clinical-card.jpg")} alt="Liver Cancer" class="specialty-card-img">
+            <img src={url("/images/specialty-liver-clinical-card-480.webp")} width="480" height="640" alt="Liver Cancer" class="specialty-card-img" loading="lazy" decoding="async">
             <div class="specialty-card-overlay"></div>
             <div class="specialty-card-content">
               <h3 class="specialty-card-title">Liver Cancer</h3>
@@ -174,7 +192,7 @@ import { url } from '../lib/urls';
       <div class="home-events-grid">
         <a href={url("/events/index.html#pink-bag-event")} class="event-feature">
           <span class="event-feature-media">
-            <img src={url("/images/event-pink-bag.jpg")} alt="People receiving pink resource bags at a community event" class="event-feature-img">
+            <img src={url("/images/event-pink-bag-640.webp")} width="640" height="320" alt="People receiving pink resource bags at a community event" class="event-feature-img" loading="lazy" decoding="async">
             <span class="event-feature-chip">Featured · Patient Resources</span>
           </span>
           <span class="event-feature-body">
@@ -187,7 +205,7 @@ import { url } from '../lib/urls';
         </a>
         <div class="event-mini-list">
           <a href="https://utahprostatecancerrun.com/" class="event-mini" target="_blank" rel="noopener">
-            <span class="event-mini-thumb"><img src={url("/images/event-prostate-run.jpg")} alt=""></span>
+            <span class="event-mini-thumb"><img src={url("/images/event-prostate-run-240.webp")} width="240" height="127" alt="" loading="lazy" decoding="async"></span>
             <span class="event-mini-info">
               <span class="event-mini-title">Utah Prostate Cancer Run &amp; Walk</span>
               <span class="event-mini-meta">Oct 10 · Wheeler Historic Farm</span>
@@ -195,7 +213,7 @@ import { url } from '../lib/urls';
             <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
           </a>
           <a href="https://runtasticevents.com/races/haunted-salt-lake-city/" class="event-mini" target="_blank" rel="noopener">
-            <span class="event-mini-thumb"><img src={url("/images/event-haunted-half.jpg")} alt=""></span>
+            <span class="event-mini-thumb"><img src={url("/images/event-haunted-half-240.webp")} width="240" height="120" alt="" loading="lazy" decoding="async"></span>
             <span class="event-mini-info">
               <span class="event-mini-title">HAUNTED Salt Lake City</span>
               <span class="event-mini-meta">Oct 17 · Half starts 8:00 AM · Sugar House Park</span>
@@ -203,7 +221,7 @@ import { url } from '../lib/urls';
             <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
           </a>
           <a href={url("/events/index.html#making-strides")} class="event-mini">
-            <span class="event-mini-thumb"><img src={url("/images/event-making-strides.jpg")} alt=""></span>
+            <span class="event-mini-thumb"><img src={url("/images/event-making-strides-240.webp")} width="240" height="150" alt="" loading="lazy" decoding="async"></span>
             <span class="event-mini-info">
               <span class="event-mini-title">Making Strides Against Breast Cancer Walk</span>
               <span class="event-mini-meta">Oct 24 · America First Field</span>
@@ -255,8 +273,8 @@ import { url } from '../lib/urls';
           </div>
           <div class="podcast-art">
             <div class="podcast-cover">
-              <img src={url("/images/ucs-logo-white.svg")} alt="Utah Cancer Specialists" class="podcast-cover-logo">
-              <img src={url("/images/scott-jeffrey-miller.webp")} alt="Scott Jeffrey Miller, host of the Here With You podcast" class="podcast-cover-portrait">
+              <img src={url("/images/ucs-logo-white.svg")} width="589" height="192" alt="Utah Cancer Specialists" class="podcast-cover-logo" loading="lazy" decoding="async">
+              <img src={url("/images/scott-jeffrey-miller.webp")} width="1590" height="1600" alt="Scott Jeffrey Miller, host of the Here With You podcast" class="podcast-cover-portrait" loading="lazy" decoding="async">
               <span class="podcast-cover-title">Here<br>With<br>You</span>
               <span class="podcast-cover-badge">Podcast</span>
               <span class="podcast-cover-host">Hosted by Scott Jeffrey Miller</span>
@@ -271,7 +289,7 @@ import { url } from '../lib/urls';
       <!-- News and media highlights -->
       <aside class="media-breaker" id="media">
         <a href="https://youtu.be/SX070PNyqUE" class="media-breaker-video" aria-label="Watch Dr. Justin Call and Katrina on KSL at Noon" target="_blank" rel="noopener">
-          <img src={url("/images/media-interview.jpg")} alt="A Utah Cancer Specialists physician interviewed on a TV news set">
+          <img src={url("/images/media-interview-640.webp")} width="640" height="427" alt="A Utah Cancer Specialists physician interviewed on a TV news set" loading="lazy" decoding="async">
           <span class="media-breaker-play"><span class="material-symbols-rounded">play_arrow</span></span>
           <span class="media-breaker-soon">KSL at Noon</span>
         </a>
@@ -305,9 +323,9 @@ import { url } from '../lib/urls';
           <span class="media-breaker-outlets">
             <span class="media-breaker-outlets-label">As seen on these outlets</span>
             <span class="media-breaker-logos">
-              <span class="media-breaker-logo"><img src={url("/images/logos/ksl.svg")} alt="KSL News"></span>
-              <span class="media-breaker-logo"><img src={url("/images/logos/fox13.svg")} alt="FOX 13"></span>
-              <span class="media-breaker-logo"><img src={url("/images/logos/abc4.png")} alt="ABC4 Utah"></span>
+              <span class="media-breaker-logo"><img src={url("/images/logos/ksl.svg")} width="200" height="200" alt="KSL News" loading="lazy" decoding="async"></span>
+              <span class="media-breaker-logo"><img src={url("/images/logos/fox13.svg")} width="80" height="42" alt="FOX 13" loading="lazy" decoding="async"></span>
+              <span class="media-breaker-logo"><img src={url("/images/logos/abc4-100.webp")} width="100" height="96" alt="ABC4 Utah" loading="lazy" decoding="async"></span>
               <span class="media-breaker-logo media-breaker-logotype">Good Things <strong>Utah</strong></span>
             </span>
           </span>
@@ -327,15 +345,15 @@ import { url } from '../lib/urls';
         <div class="stories-nav">
           <a href={url("/stories/index.html")} class="stories-all">View all stories</a>
           <div class="carousel-controls">
-            <button class="carousel-btn carousel-btn--prev" id="story-prev" aria-label="Previous story"><i class="fas fa-arrow-left"></i></button>
-            <button class="carousel-btn carousel-btn--next" id="story-next" aria-label="Next story"><i class="fas fa-arrow-right"></i></button>
+            <button class="carousel-btn carousel-btn--prev" id="story-prev" aria-label="Previous story"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span></button>
+            <button class="carousel-btn carousel-btn--next" id="story-next" aria-label="Next story"><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
           </div>
         </div>
       </div>
       <div class="stories-carousel" id="stories-carousel" aria-live="polite" aria-label="Patient stories">
         <article class="story-slide story-slide--written active" aria-label="1 of 2: Amy Jensen">
           <a href={url("/stories/amy-jensen.html")} class="story-media" aria-label="Read Amy's story">
-            <img src={url("/images/story-amy-jensen.jpg")} alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy">
+            <img src={url("/images/story-amy-jensen.jpg")} alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy" decoding="async">
           </a>
           <div class="story-text">
             <span class="story-kicker">Breast cancer</span>
@@ -347,7 +365,7 @@ import { url } from '../lib/urls';
         </article>
         <article class="story-slide story-slide--written" aria-label="2 of 2: Dukhi Hong">
           <a href={url("/stories/dukhi-hong.html")} class="story-media" aria-label="Read Dukhi's story">
-            <img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones" loading="lazy">
+            <img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones" loading="lazy" decoding="async">
           </a>
           <div class="story-text">
             <span class="story-kicker">Small cell lung cancer</span>
@@ -447,8 +465,8 @@ import { url } from '../lib/urls';
       <div class="testimonial-footer">
         <div class="testimonial-indicators" id="testimonial-indicators"></div>
         <div class="testimonial-controls">
-          <button class="carousel-btn carousel-btn--prev carousel-btn--on-dark" id="testimonial-prev" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
-          <button class="carousel-btn carousel-btn--next carousel-btn--on-dark" id="testimonial-next" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+          <button class="carousel-btn carousel-btn--prev carousel-btn--on-dark" id="testimonial-prev" aria-label="Previous"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span></button>
+          <button class="carousel-btn carousel-btn--next carousel-btn--on-dark" id="testimonial-next" aria-label="Next"><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></button>
         </div>
       </div>
       </div>

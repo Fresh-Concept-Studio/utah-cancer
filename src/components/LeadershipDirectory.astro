@@ -25,10 +25,10 @@ const directory = (groups as {title: string; cards: Member[]}[]).map(group => ({
       const Tag = card.href ? 'a' : 'div';
       return <Tag href={card.href ? url(card.href) : undefined} class={card.href ? 'leader-card-link' : 'leader-card'}>
         {card.href ? <div class="leader-card">
-          <div class="leader-card-photo"><img src={url(card.photo.src)} alt={card.photo.alt} /></div>
+          <div class="leader-card-photo"><img src={url(card.photo.src)} width="400" height="520" alt={card.photo.alt} loading="lazy" decoding="async" /></div>
           <div class="leader-card-info"><h3 class="leader-card-name">{card.name}</h3>{card.role && <p class="leader-card-role">{card.role}</p>}</div>
         </div> : <>
-          <div class="leader-card-photo"><img src={url(card.photo.src)} alt={card.photo.alt} /></div>
+          <div class="leader-card-photo"><img src={url(card.photo.src)} width="400" height="520" alt={card.photo.alt} loading="lazy" decoding="async" /></div>
           <div class="leader-card-info"><h3 class="leader-card-name">{card.name}</h3>{card.role && <p class="leader-card-role">{card.role}</p>}</div>
         </>}
       </Tag>;

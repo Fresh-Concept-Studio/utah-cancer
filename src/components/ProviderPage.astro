@@ -24,7 +24,7 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
       <a href="#locations" class="btn btn--outline-dark"><span class="material-symbols-rounded">location_on</span> View Locations</a>
     </div>
   </div>
-  <div class={provider.photo.class}><img src={url(provider.photo.src)} alt={provider.photo.alt} /></div>
+  <div class={provider.photo.class}><img src={url(provider.photo.src)} width="600" height="800" alt={provider.photo.alt} fetchpriority="high" decoding="async" /></div>
 </div></section>
 <DetailTabs tabs={provider.tabs} />
 {provider.sections.length > 0 && <section class="provider-details"><div class="container provider-details-inner">
