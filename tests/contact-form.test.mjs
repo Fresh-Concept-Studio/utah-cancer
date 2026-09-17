@@ -82,7 +82,7 @@ test('built contact form has a native fallback and all provider appointment call
   const $ = load(fs.readFileSync('dist/contact.html', 'utf8'));
   const form = $('#contact-form');
   assert.equal(form.attr('method'), 'post');
-  assert.match(form.attr('action'), /^https:\/\/formsubmit.co\/[^/]+$/);
+  assert.equal(form.attr('action'), 'https://formsubmit.co/referrals@utahcancerspecialists.com');
   assert.equal(form.attr('data-ajax-endpoint'), form.attr('action').replace('formsubmit.co/', 'formsubmit.co/ajax/'));
   for (const name of ['first_name', 'last_name', 'email', 'subject', 'message']) assert.equal(form.find(`[name="${name}"][required]`).length, 1);
   assert.equal($('script[src$="/scripts/contact-form.js"]').length, 1);

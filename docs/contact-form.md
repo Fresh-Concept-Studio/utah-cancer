@@ -1,6 +1,6 @@
 # Contact form delivery
 
-The static Astro/GitHub Pages site sends general inquiries through [FormSubmit](https://formsubmit.co/documentation). The verified public endpoint alias in `src/data/contact.ts` currently delivers to **kyle@freshconcept.co** for prototype testing. No server, API secret, or hosting migration is required.
+The static Astro/GitHub Pages site sends general inquiries through [FormSubmit](https://formsubmit.co/documentation). The public endpoint in `src/data/contact.ts` is **referrals@utahcancerspecialists.com**. No server, API secret, or hosting migration is required.
 
 Medical questions belong in the patient portal. The form displays this instruction and asks visitors not to include sensitive information. This setup is for general inquiries; it is not a patient messaging system.
 
@@ -8,11 +8,10 @@ Medical questions belong in the patient portal. The form displays this instructi
 
 Use a clinic-owned shared mailbox or email distribution group as the primary recipient. Group membership can then change in the clinic's email administration without a site deployment. Ensure the group accepts external mail and that someone can receive its verification message.
 
-1. Replace `contactForm.endpointId` with the new mailbox/group email address.
-2. Submit a synthetic test from the deployed site's contact page.
-3. Open FormSubmit's activation email in that mailbox and activate the form.
-4. Replace the address in `endpointId` with the public alias supplied in the activation email. Rebuild and deploy.
-5. Submit another uniquely labeled test and confirm the actual email arrives, contains the fields, and has the visitor's address in `Reply-To`.
+1. Submit a synthetic test from the deployed site's contact page.
+2. Open FormSubmit's activation email in the referrals mailbox and activate the form.
+3. If FormSubmit supplies an opaque endpoint alias after activation, replace the address in `endpointId` with that alias, rebuild, and deploy.
+4. Submit another uniquely labeled test and confirm the actual email arrives, contains the fields, and has the visitor's address in `Reply-To`.
 
 For additional direct recipients, set `copyRecipients` to an array of addresses. These become FormSubmit's `_cc` field and are public in the built HTML. Prefer one shared mailbox/group when practical. Verify every intended recipient with a test. Recheck activation and delivery whenever the site origin or recipient changes.
 

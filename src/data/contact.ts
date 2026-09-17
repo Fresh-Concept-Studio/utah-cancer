@@ -4,11 +4,10 @@ export const mainPhone = {
   href: 'tel:8012629494',
 };
 
-// Verified FormSubmit alias for kyle@freshconcept.co (prototype testing).
-// For clinic launch, replace with the clinic's verified mailbox/group alias.
-// This is a public form identifier, not an API key. See docs/contact-form.md.
+// Clinic-owned shared mailbox. FormSubmit will send its activation message to
+// this address after the first submission. This address is public in the form.
 export const contactForm = {
-  endpointId: 'd1d24e45613a2ea20d5ee15cc88c41bd',
+  endpointId: 'referrals@utahcancerspecialists.com',
   copyRecipients: [] as string[],
   serviceUrl: 'https://formsubmit.co',
 };
