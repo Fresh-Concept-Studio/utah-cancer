@@ -308,6 +308,7 @@
       color: #00476b;
       margin-bottom: 10px;
     }
+    .ps-service h3 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 4px; }
     .ps-service p {
       font-size: 14.5px;
       line-height: 24px;

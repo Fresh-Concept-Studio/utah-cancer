@@ -1,0 +1,29 @@
+---
+import { url } from '../lib/urls';
+const resources = [
+  { href: '/housing/', icon: 'location_on', title: 'Housing & Utilities', text: 'Housing, rent, energy, and statewide assistance programs.' },
+  { href: '/nutrition/', icon: 'restaurant', title: 'Nutrition & Food', text: 'Treatment nutrition guidance and Utah food assistance.' },
+  { href: '/transportation/', icon: 'directions_walk', title: 'Transportation', text: 'Public transit discounts and rides to cancer appointments.' },
+  { href: '/cleaning/', icon: 'volunteer_activism', title: 'Home Cleaning', text: 'Free cleaning assistance for eligible cancer patients.' },
+  { href: '/personalsafety/', icon: 'support_agent', title: 'Personal Safety', text: 'Crisis, domestic violence, and immediate safety resources.' },
+];
+---
+<section class="resource-hero resource-hero--hub">
+  <div class="container resource-hero__inner">
+    <nav class="resource-breadcrumb" aria-label="Breadcrumb"><a href={url('/patient-resources.html')}>Patient Resources</a><span aria-hidden="true">/</span><span>Supportive Resources</span></nav>
+    <p class="resource-eyebrow">Help beyond the clinic</p>
+    <h1>Practical support for daily life.</h1>
+    <p class="resource-intro">Trusted starting points for housing, food, transportation, home care, and personal safety during cancer treatment.</p>
+  </div>
+</section>
+<section class="resource-section">
+  <div class="container">
+    <div class="support-grid">
+      {resources.map(item => <a class="support-card" href={url(item.href)}>
+        <span class="support-card__icon material-symbols-rounded" aria-hidden="true">{item.icon}</span>
+        <h2>{item.title}</h2><p>{item.text}</p><span class="support-card__link">View resources <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
+      </a>)}
+    </div>
+    <div class="support-callout"><div><p class="resource-eyebrow">Personal guidance</p><h2>Your patient advocate can help.</h2><p>Ask about insurance, financial assistance, transportation, and community programs that fit your needs.</p></div><a class="resource-button" href={url('/programs-and-services.html#patient-advocacy')}>Learn about patient advocacy</a></div>
+  </div>
+</section>

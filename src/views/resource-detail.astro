@@ -1,0 +1,35 @@
+---
+import type { PageData } from '../lib/types';
+import { richHtml, url } from '../lib/urls';
+interface Props { page: PageData }
+const { page } = Astro.props;
+---
+<section class="resource-hero">
+  <div class="container resource-hero__inner">
+    <nav class="resource-breadcrumb" aria-label="Breadcrumb">
+      <a href={url('/patient-resources.html')}>Patient Resources</a><span aria-hidden="true">/</span><span>{page.heading}</span>
+    </nav>
+    <div class="resource-hero__content">
+      <div class="resource-hero__icon"><span class="material-symbols-rounded" aria-hidden="true">{page.resourceIcon}</span></div>
+      <div><p class="resource-eyebrow">{page.eyebrow}</p><h1>{page.heading}</h1><p class="resource-intro">{page.intro}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="resource-section">
+  <div class="container resource-layout">
+    <article class="resource-content"><Fragment set:html={richHtml(page.contentHtml)} /></article>
+    <aside class="resource-aside">
+      <div class="resource-help">
+        <span class="material-symbols-rounded" aria-hidden="true">support_agent</span>
+        <h2>Need help?</h2>
+        <p>Our team can help you find the right clinic, service, or resource.</p>
+        <a href="tel:8012690231">Call 801-269-0231</a>
+      </div>
+      {page.relatedLinks?.length && <nav class="resource-related" aria-label="Related resources">
+        <h2>Related resources</h2>
+        {page.relatedLinks.map(link => <a href={url(link.href)}>{link.label}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>)}
+      </nav>}
+    </aside>
+  </div>
+</section>

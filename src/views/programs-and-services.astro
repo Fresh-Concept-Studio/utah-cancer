@@ -83,7 +83,7 @@ import { url } from '../lib/urls';
           </div>
         </div>
 
-        <div class="ps-schedule-card">
+        <a class="ps-schedule-card" href={url('/breathwork-class/')} style="color:inherit;text-decoration:none;">
           <div class="ps-schedule-badge ps-schedule-badge--alt">
             <span class="ps-schedule-badge-cadence">2nd</span>
             <span class="ps-schedule-badge-day">THU</span>
@@ -98,7 +98,7 @@ import { url } from '../lib/urls';
               <div class="ps-schedule-meta-item"><span class="material-symbols-rounded">videocam</span><span>Online — link sent on registration</span></div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -123,14 +123,14 @@ import { url } from '../lib/urls';
         <div class="ps-service">
           <div class="ps-service-icon"><span class="material-symbols-rounded">restaurant</span></div>
           <div>
-            <h3>Nutrition Guidance</h3>
+            <h3><a href={url('/nutrition/')}>Nutrition Guidance</a></h3>
             <p>Nutritional support and education to help optimize your health during treatment and aid in your recovery afterward.</p>
           </div>
         </div>
         <div class="ps-service">
           <div class="ps-service-icon"><span class="material-symbols-rounded">healing</span></div>
           <div>
-            <h3>Supportive &amp; Palliative Care</h3>
+            <h3><a href={url('/supportivecare/')}>Supportive &amp; Palliative Care</a></h3>
             <p>Symptom management, pain control, and quality-of-life support throughout your treatment journey, led by our supportive care physician Dr. Gary Garner.</p>
           </div>
         </div>
@@ -142,5 +142,6 @@ import { url } from '../lib/urls';
           </div>
         </div>
       </div>
+      <p style="margin-top:28px;"><a href={url('/medically-integrated-pharmacy/')} class="btn btn--outline-dark"><span class="material-symbols-rounded">medication</span> Medically Integrated Pharmacy</a></p>
     </div>
   </section>

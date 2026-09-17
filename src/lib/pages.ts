@@ -6,6 +6,7 @@ import specialties from '../data/specialties.json';
 import locations from '../data/locations.json';
 import policies from '../data/policies.json';
 import { newsPosts } from '../data/news';
+import { resourcePages } from '../data/resources';
 import type { PageData } from './types';
 
 type Family = NonNullable<PageData['family']>;
@@ -134,6 +135,35 @@ for (const post of newsPosts) {
     scripts: [],
     marquee: false,
     component: 'news-article',
+  };
+}
+
+pages['supportive-resources/index.html'] = {
+  title: 'Supportive Resources for Cancer Patients | Utah Cancer Specialists',
+  description: 'Find practical Utah resources for housing, nutrition, transportation, home cleaning, personal safety, and cancer treatment support.',
+  bodyClass: 'resource-page',
+  styles: ['/styles.css', '/provider.css', '/page-styles/resource-detail.css'],
+  scripts: [],
+  marquee: false,
+  component: 'supportive-resources',
+};
+
+for (const resource of resourcePages) {
+  pages[`${resource.slug}/index.html`] = {
+    title: resource.seoTitle,
+    description: resource.description,
+    heading: resource.title,
+    eyebrow: resource.eyebrow,
+    intro: resource.intro,
+    resourceIcon: resource.icon,
+    contentHtml: resource.html,
+    relatedLinks: resource.relatedLinks,
+    slug: resource.slug,
+    bodyClass: 'resource-page',
+    styles: ['/styles.css', '/provider.css', '/page-styles/resource-detail.css'],
+    scripts: [],
+    marquee: false,
+    component: 'resource-detail',
   };
 }
 

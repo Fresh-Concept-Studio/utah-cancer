@@ -4198,3 +4198,14 @@
     gap: 28px;
   }
 }
+.rt-feature-callout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .rt-feature-callout { grid-template-columns: 1fr; gap: 24px; }
+  .rt-feature-callout .btn { justify-self: start; }
+}

@@ -1,6 +1,6 @@
 # Older patient-resource content review
 
-The review began with 20 old URLs after resolving the policy, news, location, test, and WordPress archive decisions. The three obsolete COVID pages and six clear replacement URLs are now resolved. Eleven pages remain for content-owner confirmation.
+The review began with 20 old URLs after resolving the policy, news, location, test, and WordPress archive decisions. All 20 URLs now have a launch disposition: three obsolete COVID pages retire, six URLs redirect to direct replacements, and eleven useful patient-resource pages remain at their original URLs.
 
 ## Recommended decisions
 
@@ -29,10 +29,10 @@ The review began with 20 old URLs after resolving the policy, news, location, te
 
 ## Implementation status
 
-1. **Approved and configured:** six clear redirects for Education Videos, Patient Advocacy, Team Approach, the broad Patient Education guide, Brain Tumors, and Cancer Rehabilitation.
-2. **Approved for retirement:** the three obsolete COVID pages will return `410 Gone` at Cloudflare launch.
-3. **Still to confirm:** whether DigniCap, medically integrated pharmacy, supportive care, breathwork, and LDRT are current. Preserve the active services; LDRT, pharmacy, and supportive care should receive dedicated pages.
-4. **Still to confirm:** the visitor policy with clinic operations.
-5. **Still to build:** one maintained Supportive Resources page for housing, nutrition, personal safety, cleaning, and transportation, with a named owner and periodic link review.
+1. **Configured redirects:** Education Videos, Patient Advocacy, Team Approach, the broad Patient Education guide, Brain Tumors, and Cancer Rehabilitation redirect to direct current replacements.
+2. **Configured retirement:** the three obsolete COVID pages will return `410 Gone` at Cloudflare launch.
+3. **Recreated at original URLs:** visitor guidance, housing, nutrition, personal safety, cleaning, transportation, DigniCap, integrated pharmacy, supportive care, breathwork, and LDRT.
+4. **Added contextual discovery:** Patient Resources links to the practical-support hub and core services; Programs & Services links to breathwork, nutrition, supportive care, and pharmacy; Radiation Oncology links to LDRT; Amy Jensen’s story links to DigniCap.
+5. **Kept global navigation focused:** none of the eleven pages was added as an individual header or footer item.
 
-This approach preserves useful patient help and search value while avoiding stale medical guidance and duplicated encyclopedia content.
+The visitor policy and recurring class schedule should still be reviewed periodically by the responsible clinic team. External assistance links and crisis numbers should be checked on a regular schedule.

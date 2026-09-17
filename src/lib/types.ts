@@ -16,6 +16,9 @@ export interface PageData {
   heading?: string;
   eyebrow?: string;
   contentHtml?: string;
+  intro?: string;
+  resourceIcon?: string;
+  relatedLinks?: { href: string; label: string }[];
   sourceUrl?: string;
   sourceTextHash?: string;
   publishedDate?: string;

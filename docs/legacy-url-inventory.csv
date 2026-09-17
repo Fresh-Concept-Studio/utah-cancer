@@ -15,12 +15,12 @@ https://utahcancer.com/education-videos/,redirect,https://utahcancer.com/patient
 https://utahcancer.com/articles/,no_change,https://utahcancer.com/articles/,News index recreated at its original URL
 https://utahcancer.com/termsandconditions/,no_change,https://utahcancer.com/termsandconditions/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/covid-19/,retire,Return 410,Obsolete 2021 visitor and COVID-19 guidance intentionally omitted
-https://utahcancer.com/visitorandguestinfo/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
-https://utahcancer.com/housing/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
-https://utahcancer.com/nutrition/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
-https://utahcancer.com/personalsafety/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
-https://utahcancer.com/cleaning/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
-https://utahcancer.com/transportation/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
+https://utahcancer.com/visitorandguestinfo/,no_change,https://utahcancer.com/visitorandguestinfo/,Recreated at the original URL with maintained visitor guidance
+https://utahcancer.com/housing/,no_change,https://utahcancer.com/housing/,Recreated at the original URL and linked from Supportive Resources
+https://utahcancer.com/nutrition/,no_change,https://utahcancer.com/nutrition/,Recreated at the original URL with current nutrition and food assistance links
+https://utahcancer.com/personalsafety/,no_change,https://utahcancer.com/personalsafety/,Recreated at the original URL with current crisis and safety contacts
+https://utahcancer.com/cleaning/,no_change,https://utahcancer.com/cleaning/,Recreated at the original URL with current program details
+https://utahcancer.com/transportation/,no_change,https://utahcancer.com/transportation/,Recreated at the original URL with current transportation links
 https://utahcancer.com/benign-hematology-treatment-in-utah/,redirect,https://utahcancer.com/specialties/benign-hematology.html,Direct specialty replacement
 https://utahcancer.com/bladder-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bladder-cancer.html,Direct specialty replacement
 https://utahcancer.com/blood-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/blood-cancers.html,Direct specialty replacement
@@ -31,7 +31,7 @@ https://utahcancer.com/breast-cancer-treatment-in-utah/,redirect,https://utahcan
 https://utahcancer.com/chronic-leukemia-treatment-in-utah/,redirect,https://utahcancer.com/specialties/chronic-leukemias.html,Direct specialty replacement
 https://utahcancer.com/colon-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/colon-cancer.html,Direct specialty replacement
 https://utahcancer.com/covid-19-vaccine/,retire,Return 410,Obsolete COVID-19 vaccine availability guidance intentionally omitted
-https://utahcancer.com/dignicap/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
+https://utahcancer.com/dignicap/,no_change,https://utahcancer.com/dignicap/,Recreated at the original URL and linked from the Amy Jensen story
 https://utahcancer.com/discalaimer/,no_change,https://utahcancer.com/discalaimer/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/endocrine-tumor-treatment-in-utah/,redirect,https://utahcancer.com/specialties/endocrine-tumors.html,Direct specialty replacement
 https://utahcancer.com/esophageal-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/esophageal-cancer.html,Direct specialty replacement
@@ -58,7 +58,7 @@ https://utahcancer.com/locations-and-physicians/,redirect,https://utahcancer.com
 https://utahcancer.com/a-team-approach/,redirect,https://utahcancer.com/programs-and-services.html,Consolidated multidisciplinary care and support content
 https://utahcancer.com/educational-resources/,redirect,https://utahcancer.com/patient-resources.html,Direct replacement
 https://utahcancer.com/telehealth/,redirect,https://utahcancer.com/telehealth.html,Direct replacement
-https://utahcancer.com/medically-integrated-pharmacy/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
+https://utahcancer.com/medically-integrated-pharmacy/,no_change,https://utahcancer.com/medically-integrated-pharmacy/,Recreated at the original URL and linked from service hubs
 https://utahcancer.com/cancers-we-treat/,redirect,https://utahcancer.com/specialties/,Direct replacement
 https://utahcancer.com/treatment-options/,redirect,https://utahcancer.com/treatment-options.html,Direct replacement
 https://utahcancer.com/patient-resources/,redirect,https://utahcancer.com/patient-resources.html,Direct replacement
@@ -83,20 +83,20 @@ https://utahcancer.com/idahofalls/,retire,Return 410,Former Idaho clinic intenti
 https://utahcancer.com/job-application/,redirect,https://utahcancer.com/careers.html,Direct replacement
 https://utahcancer.com/cancer-center/,redirect,https://utahcancer.com/locations/cancer-center.html,Direct location replacement
 https://utahcancer.com/west-jordan/,redirect,https://utahcancer.com/locations/jordan-valley.html,Direct location replacement
-https://utahcancer.com/supportivecare/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
+https://utahcancer.com/supportivecare/,no_change,https://utahcancer.com/supportivecare/,Recreated at the original URL and linked from Programs & Services
 https://utahcancer.com/ogden/,redirect,https://utahcancer.com/locations/ogden.html,Direct location replacement
 https://utahcancer.com/radiation-oncology/,redirect,https://utahcancer.com/radiation-oncology.html,Direct replacement
 https://utahcancer.com/intermountain-medical-center-campus/,redirect,https://utahcancer.com/locations/imc.html,Direct location replacement
 https://utahcancer.com/fairbourne/,redirect,https://utahcancer.com/locations/granger.html,Direct location replacement
 https://utahcancer.com/test/,retire,Return 410,WordPress test content intentionally omitted
 https://utahcancer.com/team-members-2/,redirect,https://utahcancer.com/providers/,Direct replacement
-https://utahcancer.com/breathwork-class/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
+https://utahcancer.com/breathwork-class/,no_change,https://utahcancer.com/breathwork-class/,Recreated at the original URL and linked from Programs & Services
 https://utahcancer.com/programs-and-services/,redirect,https://utahcancer.com/programs-and-services.html,Direct replacement
 https://utahcancer.com/contact/,redirect,https://utahcancer.com/contact.html,Direct replacement
 https://utahcancer.com/test-page/,retire,Return 410,WordPress test content intentionally omitted
 https://utahcancer.com/late-phase-trials/,redirect,https://utahcancer.com/late-phase-trials.html,Direct replacement
 https://utahcancer.com/bingham-healthcare/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
-https://utahcancer.com/low-dose-radiation-therapy-ldrt/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
+https://utahcancer.com/low-dose-radiation-therapy-ldrt/,no_change,https://utahcancer.com/low-dose-radiation-therapy-ldrt/,Recreated at the original URL and linked from Radiation Oncology
 https://utahcancer.com/cancer-rehabilitation-centers/,redirect,https://utahcancer.com/physical-therapy.html,Current Physical Therapy page preserves the same clinic and service
 https://utahcancer.com/jobs/,redirect,https://utahcancer.com/careers.html,Direct replacement
 https://utahcancer.com/team-members/,redirect,https://utahcancer.com/providers/,Direct replacement

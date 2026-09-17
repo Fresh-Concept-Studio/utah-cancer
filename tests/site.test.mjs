@@ -151,6 +151,24 @@ test('legacy news posts remain available at their original public URLs', () => {
   }
 });
 
+test('legacy patient resources remain available without crowding global navigation', () => {
+  const slugs = [
+    'visitorandguestinfo', 'housing', 'nutrition', 'personalsafety', 'cleaning', 'transportation',
+    'dignicap', 'medically-integrated-pharmacy', 'supportivecare', 'breathwork-class',
+    'low-dose-radiation-therapy-ldrt',
+  ];
+  assert.equal(pages.has('supportive-resources/index.html'), true, 'missing practical-support hub');
+  for (const slug of slugs) {
+    const file = `${slug}/index.html`;
+    assert.equal(pages.has(file), true, `${file}: missing recreated resource`);
+    const $ = pages.get(file);
+    assert.equal($('h1').length, 1, `${file}: expected one page heading`);
+    assert.equal($(`.navbar a[href="${base}/${slug}/"], footer a[href="${base}/${slug}/"]`).length, 0, `${file}: resource should not be in global navigation`);
+  }
+  const inventory = fs.readFileSync('docs/legacy-url-inventory.csv', 'utf8');
+  assert.doesNotMatch(inventory, /,review,/, 'legacy inventory still contains unresolved reviews');
+});
+
 test('retired WordPress and former-location URLs are omitted from generated pages', () => {
   for (const file of ['locations/idaho-falls.html', 'locations/madison.html', 'locations/teton.html', 'locations/wyoming.html']) {
     assert.equal(pages.has(file), false, `${file}: retired fallback should not be generated`);
