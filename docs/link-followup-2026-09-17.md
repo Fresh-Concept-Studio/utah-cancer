@@ -19,12 +19,7 @@ The source now contains no `href="#"` placeholders and no missing internal page 
 - No authoritative registration pages were found for the eight older event-detail pages. The unverified pages and their unused assets were removed.
 - The current UCS website has no events newsletter subscription form or connected mailing-list destination. The nonfunctional Subscribe section was removed.
 - Event social links open sharing composers with the published event URL.
-
-## Still needs confirmation
-
-### HealthPay24 eStatements
-
-The footer and Patient Resources **Enroll in eStatements** destination continues to return HTTP 403 to automated checks and was blocked in browser testing. It remains unchanged because it may require a valid patient session. Confirm it manually or provide a replacement URL. The separate Quick Pay/POS payment link is functional.
+- The unverified HealthPay24 eStatements actions were removed from Patient Resources and the global footer. The separate Quick Pay/POS payment link remains functional.
 
 ## Verification
 

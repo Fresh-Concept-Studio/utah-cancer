@@ -109,8 +109,11 @@ test('resolved event, foundation, and Provo actions use confirmed destinations',
   }
 
   const resources = pages.get('patient-resources.html');
+  assert.equal(resources('a[href*="healthpay24"]').length, 0);
   const foundation = resources('button[data-coming-soon]').filter((_, element) => resources(element).text().includes('Utah Cancer Foundation'));
   assert.equal(foundation.length, 1);
+
+  for (const [file, $] of pages) assert.equal($('a[href*="healthpay24"]').length, 0, file);
 
   for (const slug of ['nathan-rich', 'staci-gunter', 'stephanie-ellis', 'william-stephenson']) {
     const $ = pages.get(`providers/${slug}.html`);

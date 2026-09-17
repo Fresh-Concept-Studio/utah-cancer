@@ -255,30 +255,6 @@
       z-index: 1;
       border-radius: inherit;
     }
-    .pr-card-secondary {
-      position: relative;
-      z-index: 2;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      align-self: flex-start;
-      margin-top: auto;
-      padding-top: 14px;
-      font-family: var(--font-body);
-      font-weight: 500;
-      font-size: 12.5px;
-      letter-spacing: -0.1px;
-      color: #5e8b9e;
-      text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    .pr-card-secondary:hover {
-      color: #00476b;
-      border-bottom-color: rgba(0, 71, 107, 0.4);
-    }
-    .pr-card-secondary .material-symbols-rounded { font-size: 13px; }
-
     /* Community Resources */
     .pr-community-section { padding: 0 0 100px; }
     .pr-community-wrap {

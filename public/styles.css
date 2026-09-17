@@ -2189,27 +2189,6 @@ a.media-breaker-item:focus-visible {
   color: rgba(255, 255, 255, 0.62);
 }
 
-.footer-paperless {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12.6px;
-  line-height: 16.8px;
-  letter-spacing: -0.1px;
-  color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
-  transition: opacity 0.2s, color 0.2s;
-}
-
-.footer-paperless:hover {
-  opacity: 1;
-  color: #fff;
-}
-
-.footer-paperless .material-symbols-rounded {
-  font-size: 14px;
-}
-
 /* ============================================
    MARQUEE BANNER
    ============================================ */
