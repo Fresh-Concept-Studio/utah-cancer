@@ -50,7 +50,7 @@ test('all internal page links and local HTML/CSS assets resolve under the GitHub
 
 test('normal pages share one header/footer and load each valid script once', () => {
   for (const [file,$] of pages) {
-    if ($('meta[http-equiv="refresh"]').length) continue;
+    if ($('meta[http-equiv="refresh"]').length || file.startsWith('signature/')) continue;
     assert.equal($('.navbar').length,1,file);
     assert.equal($('footer').length,1,file);
     const scripts=$('script[src]').toArray().map(e=>$(e).attr('src'));
@@ -59,6 +59,21 @@ test('normal pages share one header/footer and load each valid script once', () 
   }
   for (const file of files('public/scripts').filter(p=>p.endsWith('.js'))) {
     assert.doesNotThrow(()=>parse(fs.readFileSync('public/scripts/'+file,'utf8'),{ecmaVersion:'latest'}),file);
+  }
+});
+
+test('email signature assets retain the filenames distributed to staff', () => {
+  const signatureFiles = [
+    'UCS-logo-black.svg',
+    'UCS-logo-color.svg',
+    'UCS-logo-white.svg',
+    'img-89b9f6bd-eba3-4cdd-97ea-29f5582fbec5.jpg',
+  ];
+  const directory = pages.get('signature/index.html');
+  assert.ok(directory, 'signature directory index');
+  for (const filename of signatureFiles) {
+    assert.ok(fs.existsSync(path.join('dist/signature', filename)), filename);
+    assert.equal(directory(`[href="${filename}"]`).length, 1, `${filename}: directory link`);
   }
 });
 
