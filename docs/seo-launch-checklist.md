@@ -11,8 +11,9 @@ This site is prepared to move from the GitHub Pages project URL to `https://utah
 - `robots.txt` and page-level robots metadata keep the GitHub preview out of search results.
 - Production builds remove `noindex`, allow crawling, and advertise the production sitemap.
 - Automated checks cover metadata uniqueness, canonical URLs, crawl controls, social metadata, structured data, and redirect destinations.
-- `cloudflare-redirects.csv` contains 163 clear one-to-one legacy mappings in Cloudflare Bulk Redirect CSV format. Each mapping includes both trailing-slash variants, for 326 import rows, and applies to the apex domain and `www`.
-- `legacy-url-inventory.csv` records all 213 URLs from the old WordPress sitemaps and identifies the 44 that still need a content decision.
+- `cloudflare-redirects.csv` contains 164 clear one-to-one legacy mappings in Cloudflare Bulk Redirect CSV format. Each mapping includes both trailing-slash variants, for 328 import rows, and applies to the apex domain and `www`.
+- `legacy-url-inventory.csv` records all 213 URLs from the old WordPress sitemaps. Twenty older patient-resource URLs remain for a content decision, documented in `patient-resource-content-review.md`.
+- `retired-legacy-urls.md` lists 19 WordPress archive, test, and former-location URLs that should return `410 Gone` after Cloudflare is enabled.
 
 ## Before changing DNS
 
@@ -43,7 +44,7 @@ The Bulk Redirect CSV intentionally has no header row because Cloudflare's impor
 - Confirm `/robots.txt` allows crawling and names the production sitemap.
 - Confirm every imported legacy URL returns one `301` hop to a `200` production page.
 - Keep the redirects active for at least one year; keeping them indefinitely is preferable for backlinks and bookmarks.
-- Do not redirect the 44 review URLs to the homepage as a blanket rule. Preserve them temporarily, recreate useful content, map them to a genuinely equivalent page, or return `410` after review.
+- Do not redirect the 20 remaining review URLs to the homepage as a blanket rule. Use the recommendations in `patient-resource-content-review.md` to preserve useful content, map it to a genuinely equivalent page, or return `410` after review.
 
 ## Rollback
 

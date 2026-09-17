@@ -18,6 +18,11 @@ export interface PageData {
   contentHtml?: string;
   sourceUrl?: string;
   sourceTextHash?: string;
+  publishedDate?: string;
+  dateLabel?: string;
+  excerpt?: string;
+  socialImage?: string;
+  schemaType?: 'WebPage' | 'NewsArticle';
   redirect?: string;
   redirectBody?: string;
   cta?: { heading: string; image?: string; links: ContentLink[]; actionsClass?: string };

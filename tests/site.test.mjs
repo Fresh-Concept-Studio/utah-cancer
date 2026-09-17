@@ -131,6 +131,36 @@ test('policy pages preserve the checked-in source wording and public paths', () 
   }
 });
 
+test('legacy news posts remain available at their original public URLs', () => {
+  const expected = [
+    ['dr-william-stephensons-new-works-at-reflections-concert/index.html', '2025-09-23'],
+    ['attended-recent-event-to-support-cancer-patients-in-the-community/index.html', '2019-07-01'],
+    ['utah-caner-specialists-patient-making-cancer-treatment-look-like-a-piece-of-cake/index.html', '2019-04-25'],
+  ];
+  assert.equal(pages.has('articles/index.html'), true, 'missing News index');
+  const newsIndex = pages.get('articles/index.html');
+  for (const [file, publishedDate] of expected) {
+    assert.equal(pages.has(file), true, `${file}: missing migrated news article`);
+    const $ = pages.get(file);
+    assert.equal($('article.news-article').length, 1, `${file}: missing article content`);
+    assert.equal($('meta[property="og:type"]').attr('content'), 'article', `${file}: Open Graph type`);
+    assert.equal($('meta[property="article:published_time"]').attr('content'), publishedDate, `${file}: published date`);
+    assert.equal($('script[type="application/ld+json"]').text().includes('NewsArticle'), true, `${file}: NewsArticle schema`);
+    const href = `${base}/${file.replace(/index\.html$/, '')}`;
+    assert.equal(newsIndex(`a[href="${href}"]`).length > 0, true, `${file}: not linked from News index`);
+  }
+});
+
+test('retired WordPress and former-location URLs are omitted from generated pages', () => {
+  for (const file of ['locations/idaho-falls.html', 'locations/madison.html', 'locations/teton.html', 'locations/wyoming.html']) {
+    assert.equal(pages.has(file), false, `${file}: retired fallback should not be generated`);
+  }
+  const inventory = fs.readFileSync('docs/legacy-url-inventory.csv', 'utf8');
+  for (const path of ['/author/administrator/', '/tag/abc4/', '/test/', '/test-page/', '/ucs-tooele/', '/idahofalls/']) {
+    assert.match(inventory, new RegExp(`https://utahcancer\\.com${path.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')},retire,`), `${path}: not marked retired`);
+  }
+});
+
 test('sitemap and robots directives match the deployment target', () => {
   const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
   const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
@@ -159,15 +189,6 @@ test('email signature assets retain the filenames distributed to staff', () => {
   for (const filename of signatureFiles) {
     assert.ok(fs.existsSync(path.join('dist/signature', filename)), filename);
     assert.equal(directory(`[href="${filename}"]`).length, 1, `${filename}: directory link`);
-  }
-});
-
-test('retired clinic URLs preserve their redirect, fallback link, and canonical destination', () => {
-  for (const slug of ['idaho-falls','madison','teton','wyoming']) {
-    const $=pages.get(`locations/${slug}.html`);
-    assert.equal($('meta[http-equiv="refresh"]').attr('content'),`0; url=${base}/locations/index.html`);
-    assert.equal($('body a').attr('href'),`${base}/locations/index.html`);
-    assert.equal($('link[rel="canonical"]').attr('href'),`${site}${base}/locations/index.html`);
   }
 });
 

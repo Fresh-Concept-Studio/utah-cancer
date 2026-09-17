@@ -5,6 +5,7 @@ import leaders from '../data/leaders.json';
 import specialties from '../data/specialties.json';
 import locations from '../data/locations.json';
 import policies from '../data/policies.json';
+import { newsPosts } from '../data/news';
 import type { PageData } from './types';
 
 type Family = NonNullable<PageData['family']>;
@@ -24,6 +25,7 @@ interface RecordPage {
 
 const standaloneDescriptions: Record<string, string> = {
   'about.html': 'Learn about Utah Cancer Specialists, a community-based oncology practice providing compassionate cancer care, research, and support across Utah.',
+  'articles/index.html': 'Read news, announcements, and community stories from Utah Cancer Specialists and its cancer care teams across Utah.',
   'clinical-trials.html': 'Explore clinical trials available through Utah Cancer Specialists and learn how our research team connects patients with promising cancer treatments.',
   'careers.html': 'Explore current career opportunities at Utah Cancer Specialists and apply to join a team dedicated to compassionate, community-based cancer care.',
   'contact.html': 'Contact Utah Cancer Specialists for general questions, clinic information, and help finding the right cancer care team or location.',
@@ -103,6 +105,35 @@ for (const policy of policies) {
     scripts: [],
     marquee: false,
     component: 'policy-page',
+  };
+}
+
+pages['articles/index.html'] = {
+  title: 'News | Utah Cancer Specialists',
+  description: standaloneDescriptions['articles/index.html'],
+  bodyClass: 'news-page',
+  styles: ['/styles.css', '/page-styles/news.css'],
+  scripts: [],
+  marquee: false,
+  component: 'news-index',
+};
+
+for (const post of newsPosts) {
+  pages[`${post.slug}/index.html`] = {
+    title: post.seoTitle,
+    description: post.excerpt,
+    heading: post.title,
+    contentHtml: post.contentHtml,
+    publishedDate: post.publishedDate,
+    dateLabel: post.dateLabel,
+    excerpt: post.excerpt,
+    socialImage: post.featuredImage,
+    schemaType: 'NewsArticle',
+    bodyClass: 'news-page',
+    styles: ['/styles.css', '/page-styles/news.css'],
+    scripts: [],
+    marquee: false,
+    component: 'news-article',
   };
 }
 

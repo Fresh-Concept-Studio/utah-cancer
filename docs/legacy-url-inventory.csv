@@ -1,10 +1,10 @@
 legacy_url,status,target_or_recommendation,reason
-https://utahcancer.com/utah-caner-specialists-patient-making-cancer-treatment-look-like-a-piece-of-cake/,review,Recreate as an article/story if valuable; otherwise return 410 after backlink review,Legacy news post has no equivalent new article
+https://utahcancer.com/utah-caner-specialists-patient-making-cancer-treatment-look-like-a-piece-of-cake/,no_change,https://utahcancer.com/utah-caner-specialists-patient-making-cancer-treatment-look-like-a-piece-of-cake/,News article recreated at its original URL
 https://utahcancer.com/dr-xylina-gregg-oncologist-at-utah-cancer-specialists-president-elect-of-sumo/,redirect,https://utahcancer.com/providers/xylina-gregg.html,Direct story or provider replacement
 https://utahcancer.com/amy-jensens-story/,redirect,https://utahcancer.com/stories/amy-jensen.html,Direct story or provider replacement
-https://utahcancer.com/attended-recent-event-to-support-cancer-patients-in-the-community/,review,Recreate as an article/story if valuable; otherwise return 410 after backlink review,Legacy news post has no equivalent new article
+https://utahcancer.com/attended-recent-event-to-support-cancer-patients-in-the-community/,no_change,https://utahcancer.com/attended-recent-event-to-support-cancer-patients-in-the-community/,News article recreated at its original URL
 https://utahcancer.com/a-milestone-of-hope/,redirect,https://utahcancer.com/stories/dukhi-hong.html,Direct story or provider replacement
-https://utahcancer.com/dr-william-stephensons-new-works-at-reflections-concert/,review,Recreate as an article/story if valuable; otherwise return 410 after backlink review,Legacy news post has no equivalent new article
+https://utahcancer.com/dr-william-stephensons-new-works-at-reflections-concert/,no_change,https://utahcancer.com/dr-william-stephensons-new-works-at-reflections-concert/,News article recreated at its original URL
 https://utahcancer.com/,no_change,https://utahcancer.com/,Homepage remains at the same URL
 https://utahcancer.com/covid-19-vaccine-update/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
 https://utahcancer.com/head-and-neck-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/head-neck-cancers.html,Direct specialty replacement
@@ -12,7 +12,7 @@ https://utahcancer.com/nosurprisesact/,no_change,https://utahcancer.com/nosurpri
 https://utahcancer.com/newly-diagnosed/,redirect,https://utahcancer.com/newly-diagnosed.html,Direct replacement
 https://utahcancer.com/patient-education/,redirect,https://utahcancer.com/patient-education.html,Direct replacement
 https://utahcancer.com/education-videos/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
-https://utahcancer.com/articles/,redirect,https://utahcancer.com/events/,Direct replacement
+https://utahcancer.com/articles/,no_change,https://utahcancer.com/articles/,News index recreated at its original URL
 https://utahcancer.com/termsandconditions/,no_change,https://utahcancer.com/termsandconditions/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/covid-19/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
 https://utahcancer.com/visitorandguestinfo/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
@@ -51,8 +51,8 @@ https://utahcancer.com/soft-tissue-cancers-sarcomas-treatment-in-utah/,redirect,
 https://utahcancer.com/stomach-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/stomach-cancer.html,Direct specialty replacement
 https://utahcancer.com/thyroid-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/thyroid-cancer.html,Direct specialty replacement
 https://utahcancer.com/uterine-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/uterine-cancer.html,Direct specialty replacement
-https://utahcancer.com/steel-memorial/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
-https://utahcancer.com/wyoming/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
+https://utahcancer.com/steel-memorial/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
+https://utahcancer.com/wyoming/,retire,Return 410,Former Wyoming clinic intentionally omitted from the Utah site
 https://utahcancer.com/all-locations/,redirect,https://utahcancer.com/locations/,Direct replacement
 https://utahcancer.com/locations-and-physicians/,redirect,https://utahcancer.com/locations/,Direct replacement
 https://utahcancer.com/a-team-approach/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
@@ -63,11 +63,11 @@ https://utahcancer.com/cancers-we-treat/,redirect,https://utahcancer.com/special
 https://utahcancer.com/treatment-options/,redirect,https://utahcancer.com/treatment-options.html,Direct replacement
 https://utahcancer.com/patient-resources/,redirect,https://utahcancer.com/patient-resources.html,Direct replacement
 https://utahcancer.com/clinical-trials/,redirect,https://utahcancer.com/clinical-trials.html,Direct replacement
-https://utahcancer.com/madison-health/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
-https://utahcancer.com/teton-valley-health-care/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
+https://utahcancer.com/madison-health/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
+https://utahcancer.com/teton-valley-health-care/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
 https://utahcancer.com/startmountainregion/,redirect,https://utahcancer.com/locations/start.html,Direct location replacement
 https://utahcancer.com/bountiful/,redirect,https://utahcancer.com/locations/bountiful.html,Direct location replacement
-https://utahcancer.com/davis-hospital-campus/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
+https://utahcancer.com/davis-hospital-campus/,redirect,https://utahcancer.com/locations/layton.html,Same medical oncology address as the current Layton clinic
 https://utahcancer.com/timpanogos/,redirect,https://utahcancer.com/locations/timpanogos.html,Direct location replacement
 https://utahcancer.com/about-utah-cancer-specialists/,redirect,https://utahcancer.com/about.html,Direct replacement
 https://utahcancer.com/patient-education-empowering-individuals-through-knowledge/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
@@ -75,11 +75,11 @@ https://utahcancer.com/patient-education-empowering-individuals-through-knowledg
 https://utahcancer.com/patient-privacy/,no_change,https://utahcancer.com/patient-privacy/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/privacy-policy/,no_change,https://utahcancer.com/privacy-policy/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/pleasant-grove/,redirect,https://utahcancer.com/locations/pleasant-grove.html,Direct location replacement
-https://utahcancer.com/utah-valley-hospital/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
-https://utahcancer.com/ucs-tooele/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
+https://utahcancer.com/utah-valley-hospital/,redirect,https://utahcancer.com/locations/provo.html,Same address as the current Provo clinic
+https://utahcancer.com/ucs-tooele/,retire,Return 410,Former Utah clinic has no matching current location
 https://utahcancer.com/st-marks-hospital-radiation/,redirect,https://utahcancer.com/locations/st-marks.html,Direct location replacement
 https://utahcancer.com/salt-lake/,redirect,https://utahcancer.com/locations/salt-lake.html,Direct location replacement
-https://utahcancer.com/idahofalls/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
+https://utahcancer.com/idahofalls/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
 https://utahcancer.com/job-application/,redirect,https://utahcancer.com/careers.html,Direct replacement
 https://utahcancer.com/cancer-center/,redirect,https://utahcancer.com/locations/cancer-center.html,Direct location replacement
 https://utahcancer.com/west-jordan/,redirect,https://utahcancer.com/locations/jordan-valley.html,Direct location replacement
@@ -88,14 +88,14 @@ https://utahcancer.com/ogden/,redirect,https://utahcancer.com/locations/ogden.ht
 https://utahcancer.com/radiation-oncology/,redirect,https://utahcancer.com/radiation-oncology.html,Direct replacement
 https://utahcancer.com/intermountain-medical-center-campus/,redirect,https://utahcancer.com/locations/imc.html,Direct location replacement
 https://utahcancer.com/fairbourne/,redirect,https://utahcancer.com/locations/granger.html,Direct location replacement
-https://utahcancer.com/test/,review,Return 410 and remove from all search indexes,WordPress test content
+https://utahcancer.com/test/,retire,Return 410,WordPress test content intentionally omitted
 https://utahcancer.com/team-members-2/,redirect,https://utahcancer.com/providers/,Direct replacement
 https://utahcancer.com/breathwork-class/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
 https://utahcancer.com/programs-and-services/,redirect,https://utahcancer.com/programs-and-services.html,Direct replacement
 https://utahcancer.com/contact/,redirect,https://utahcancer.com/contact.html,Direct replacement
-https://utahcancer.com/test-page/,review,Return 410 and remove from all search indexes,WordPress test content
+https://utahcancer.com/test-page/,retire,Return 410,WordPress test content intentionally omitted
 https://utahcancer.com/late-phase-trials/,redirect,https://utahcancer.com/late-phase-trials.html,Direct replacement
-https://utahcancer.com/bingham-healthcare/,review,Confirm whether the clinic closed or was renamed; then redirect to the exact successor or return 410,No verified one-to-one current location
+https://utahcancer.com/bingham-healthcare/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
 https://utahcancer.com/low-dose-radiation-therapy-ldrt/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
 https://utahcancer.com/cancer-rehabilitation-centers/,review,Confirm whether content is represented on Patient Resources or Programs & Services; map to an exact section or recreate,Legacy patient resource has no verified one-to-one replacement
 https://utahcancer.com/jobs/,redirect,https://utahcancer.com/careers.html,Direct replacement
@@ -179,17 +179,17 @@ https://utahcancer.com/cancer-trial/palazestrant-in-combination-with-ribociclib-
 https://utahcancer.com/cancer-trial/a-phase-3-randomized-study-comparing-jnj-79635322-and-an-anti-bcmaxcd3-bispecific-antibody-in-participants-with-relapsed-or-refractory-multiple-myeloma-who-have-received-at-least-3-prior-lines-of-ther/,redirect,https://utahcancer.com/late-phase-trials.html#trials-myeloma,Trial retained in consolidated listing
 https://utahcancer.com/cancer-trial/bgb-43395-plus-letrozole-versus-cdk4-6i-plus-letrozole-for-patients-with-advanced-or-metastatic-hr-her2-breast-cancer-who-have-not-received-prior-treatment-for-advanced-or-metastatic-disease/,redirect,https://utahcancer.com/late-phase-trials.html#trials-hr-positive-breast,Trial retained in consolidated listing
 https://utahcancer.com/cancer-trial/a-global-multicenter-randomized-open-label-phase-3-study-of-sacituzumab-govitecan-versus-standard-of-care-soc-in-participants-with-previously-treated-extensive-stage-small-cell-lung-cancer-es-s/,redirect,https://utahcancer.com/late-phase-trials.html#trials-es-sclc,Trial retained in consolidated listing
-https://utahcancer.com/category/articles/,redirect,https://utahcancer.com/events/,Consolidated events and articles
+https://utahcancer.com/category/articles/,redirect,https://utahcancer.com/articles/,WordPress category replaced by the News index
 https://utahcancer.com/category/articles/events/,redirect,https://utahcancer.com/events/,Consolidated events and articles
-https://utahcancer.com/tag/100th-dose/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/abc4/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/dr-william-stephenson/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/dukhi-hong/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/immunotherapy/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/mount-timpanogos-village/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/reflections-concert/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/small-cell-lung-cancer/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
-https://utahcancer.com/tag/utah-cancer-specialists/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
+https://utahcancer.com/tag/100th-dose/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/abc4/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/dr-william-stephenson/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/dukhi-hong/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/immunotherapy/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/mount-timpanogos-village/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/reflections-concert/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/small-cell-lung-cancer/,retire,Return 410,Thin WordPress tag archive intentionally omitted
+https://utahcancer.com/tag/utah-cancer-specialists/,retire,Return 410,Thin WordPress tag archive intentionally omitted
 https://utahcancer.com/trial-category/all-comers/,redirect,https://utahcancer.com/late-phase-trials.html#trials-all-comers,Consolidated trial category
 https://utahcancer.com/trial-category/breast-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-breast,Consolidated trial category
 https://utahcancer.com/trial-category/colorectal/,redirect,https://utahcancer.com/late-phase-trials.html#trials-colorectal,Consolidated trial category
@@ -211,4 +211,4 @@ https://utahcancer.com/team-group/physician-assistant/,redirect,https://utahcanc
 https://utahcancer.com/team-group/radiation-oncology/,redirect,https://utahcancer.com/providers/,Consolidated provider directory
 https://utahcancer.com/team-group/supportive-and-rehabilitative-care/,redirect,https://utahcancer.com/providers/,Consolidated provider directory
 https://utahcancer.com/slide_group/homepage-slides/,redirect,https://utahcancer.com/,Internal homepage archive
-https://utahcancer.com/author/administrator/,review,Return 410 unless analytics or backlinks justify a relevant archive replacement,Thin WordPress taxonomy/archive URL
+https://utahcancer.com/author/administrator/,retire,Return 410,Thin WordPress author archive intentionally omitted

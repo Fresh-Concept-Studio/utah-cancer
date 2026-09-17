@@ -1,0 +1,29 @@
+---
+import { newsPosts } from '../data/news';
+import { url } from '../lib/urls';
+---
+<section class="news-hero">
+  <div class="container news-hero__inner">
+    <p class="news-eyebrow">From Utah Cancer Specialists</p>
+    <h1>News</h1>
+    <p>Updates, community stories, and announcements from our care teams.</p>
+  </div>
+</section>
+
+<section class="news-index-section">
+  <div class="container news-grid">
+    {newsPosts.map((post, index) => (
+      <article class:list={["news-card", index === 0 && "news-card--featured"]}>
+        <a class="news-card__image" href={url(`/${post.slug}/`)} aria-label={`Read ${post.title}`}>
+          <img src={url(post.featuredImage)} alt={post.featuredAlt} width={index === 0 ? 1200 : 960} height={index === 0 ? 927 : 720} loading={index === 0 ? "eager" : "lazy"} decoding="async" />
+        </a>
+        <div class="news-card__body">
+          <time datetime={post.publishedDate}>{post.dateLabel}</time>
+          <h2><a href={url(`/${post.slug}/`)}>{post.title}</a></h2>
+          <p>{post.excerpt}</p>
+          <a class="news-card__link" href={url(`/${post.slug}/`)}>Read article <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

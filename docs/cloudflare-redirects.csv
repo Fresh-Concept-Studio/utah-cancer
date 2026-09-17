@@ -6,8 +6,6 @@ utahcancer.com/all-locations/,https://utahcancer.com/locations/,301,TRUE,TRUE,FA
 utahcancer.com/all-locations,https://utahcancer.com/locations/,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/amy-jensens-story/,https://utahcancer.com/stories/amy-jensen.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/amy-jensens-story,https://utahcancer.com/stories/amy-jensen.html,301,TRUE,TRUE,FALSE,FALSE
-utahcancer.com/articles/,https://utahcancer.com/events/,301,TRUE,TRUE,FALSE,FALSE
-utahcancer.com/articles,https://utahcancer.com/events/,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/benign-hematology-treatment-in-utah/,https://utahcancer.com/specialties/benign-hematology.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/benign-hematology-treatment-in-utah,https://utahcancer.com/specialties/benign-hematology.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/bladder-cancer-treatment-in-utah/,https://utahcancer.com/specialties/bladder-cancer.html,301,TRUE,TRUE,FALSE,FALSE
@@ -64,8 +62,8 @@ utahcancer.com/cancer-trial/study-of-trastuzumab-deruxtecan-with-bevacizumab-ver
 utahcancer.com/cancer-trial/study-of-trastuzumab-deruxtecan-with-bevacizumab-versus-bevacizumab-monotherapy-for-first-line-maintenance-in-her2-expressing-ovarian-cancer-destiny-ovarian01,https://utahcancer.com/late-phase-trials.html#trials-ovarian,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/cancers-we-treat/,https://utahcancer.com/specialties/,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/cancers-we-treat,https://utahcancer.com/specialties/,301,TRUE,TRUE,FALSE,FALSE
-utahcancer.com/category/articles/,https://utahcancer.com/events/,301,TRUE,TRUE,FALSE,FALSE
-utahcancer.com/category/articles,https://utahcancer.com/events/,301,TRUE,TRUE,FALSE,FALSE
+utahcancer.com/category/articles/,https://utahcancer.com/articles/,301,TRUE,TRUE,FALSE,FALSE
+utahcancer.com/category/articles,https://utahcancer.com/articles/,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/category/articles/events/,https://utahcancer.com/events/,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/category/articles/events,https://utahcancer.com/events/,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/chronic-leukemia-treatment-in-utah/,https://utahcancer.com/specialties/chronic-leukemias.html,301,TRUE,TRUE,FALSE,FALSE
@@ -76,6 +74,8 @@ utahcancer.com/colon-cancer-treatment-in-utah/,https://utahcancer.com/specialtie
 utahcancer.com/colon-cancer-treatment-in-utah,https://utahcancer.com/specialties/colon-cancer.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/contact/,https://utahcancer.com/contact.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/contact,https://utahcancer.com/contact.html,301,TRUE,TRUE,FALSE,FALSE
+utahcancer.com/davis-hospital-campus/,https://utahcancer.com/locations/layton.html,301,TRUE,TRUE,FALSE,FALSE
+utahcancer.com/davis-hospital-campus,https://utahcancer.com/locations/layton.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/dr-xylina-gregg-oncologist-at-utah-cancer-specialists-president-elect-of-sumo/,https://utahcancer.com/providers/xylina-gregg.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/dr-xylina-gregg-oncologist-at-utah-cancer-specialists-president-elect-of-sumo,https://utahcancer.com/providers/xylina-gregg.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/educational-resources/,https://utahcancer.com/patient-resources.html,301,TRUE,TRUE,FALSE,FALSE
@@ -322,5 +322,7 @@ utahcancer.com/trial-category/pancreatic-cancer/,https://utahcancer.com/late-pha
 utahcancer.com/trial-category/pancreatic-cancer,https://utahcancer.com/late-phase-trials.html#trials-pancreatic,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/uterine-cancer-treatment-in-utah/,https://utahcancer.com/specialties/uterine-cancer.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/uterine-cancer-treatment-in-utah,https://utahcancer.com/specialties/uterine-cancer.html,301,TRUE,TRUE,FALSE,FALSE
+utahcancer.com/utah-valley-hospital/,https://utahcancer.com/locations/provo.html,301,TRUE,TRUE,FALSE,FALSE
+utahcancer.com/utah-valley-hospital,https://utahcancer.com/locations/provo.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/west-jordan/,https://utahcancer.com/locations/jordan-valley.html,301,TRUE,TRUE,FALSE,FALSE
 utahcancer.com/west-jordan,https://utahcancer.com/locations/jordan-valley.html,301,TRUE,TRUE,FALSE,FALSE

@@ -1,0 +1,26 @@
+---
+import type { PageData } from '../lib/types';
+import { richHtml, url } from '../lib/urls';
+
+interface Props { page: PageData }
+const { page } = Astro.props;
+---
+<article class="news-article">
+  <header class="news-article__header">
+    <div class="container news-article__header-inner">
+      <a class="news-back" href={url('/articles/')}>News</a>
+      <time datetime={page.publishedDate}>{page.dateLabel}</time>
+      <h1>{page.heading}</h1>
+      <p>{page.excerpt}</p>
+    </div>
+  </header>
+  <div class="container news-article__layout">
+    <div class="news-article__content">
+      <Fragment set:html={richHtml(page.contentHtml)} />
+    </div>
+    <aside class="news-article__aside">
+      <p>Utah Cancer Specialists</p>
+      <a href={url('/contact.html')}>Contact our team <span aria-hidden="true">→</span></a>
+    </aside>
+  </div>
+</article>

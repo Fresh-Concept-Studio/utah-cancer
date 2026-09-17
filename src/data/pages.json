@@ -182,16 +182,6 @@
     },
     "component": "leadership"
   },
-  "locations/idaho-falls.html": {
-    "title": "Utah Locations - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [],
-    "scripts": [],
-    "marquee": false,
-    "redirect": "/locations/index.html",
-    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
-  },
   "locations/index.html": {
     "title": "Our Locations - Utah Cancer Specialists",
     "description": "",
@@ -218,36 +208,6 @@
       ]
     },
     "component": "locations-index"
-  },
-  "locations/madison.html": {
-    "title": "Utah Locations - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [],
-    "scripts": [],
-    "marquee": false,
-    "redirect": "/locations/index.html",
-    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
-  },
-  "locations/teton.html": {
-    "title": "Utah Locations - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [],
-    "scripts": [],
-    "marquee": false,
-    "redirect": "/locations/index.html",
-    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
-  },
-  "locations/wyoming.html": {
-    "title": "Utah Locations - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [],
-    "scripts": [],
-    "marquee": false,
-    "redirect": "/locations/index.html",
-    "redirectBody": "<p>This clinic listing is no longer part of the Utah website. <a href=\"/locations/index.html\">View our Utah locations.</a></p>"
   },
   "newly-diagnosed.html": {
     "title": "Newly Diagnosed - Utah Cancer Specialists",
