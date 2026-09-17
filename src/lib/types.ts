@@ -13,6 +13,11 @@ export interface PageData {
   family?: 'provider' | 'leader' | 'specialty' | 'location';
   slug?: string;
   component?: string;
+  heading?: string;
+  eyebrow?: string;
+  contentHtml?: string;
+  sourceUrl?: string;
+  sourceTextHash?: string;
   redirect?: string;
   redirectBody?: string;
   cta?: { heading: string; image?: string; links: ContentLink[]; actionsClass?: string };

@@ -4,6 +4,7 @@ import providers from '../data/providers.json';
 import leaders from '../data/leaders.json';
 import specialties from '../data/specialties.json';
 import locations from '../data/locations.json';
+import policies from '../data/policies.json';
 import type { PageData } from './types';
 
 type Family = NonNullable<PageData['family']>;
@@ -92,6 +93,19 @@ const pages: Record<string, PageData> = Object.fromEntries(
     ...(path === 'index.html' ? { title: 'Cancer Care in Utah | Utah Cancer Specialists' } : {}),
   }]),
 ) as Record<string, PageData>;
+
+for (const policy of policies) {
+  pages[`${policy.slug}/index.html`] = {
+    ...policy,
+    contentHtml: policy.html,
+    bodyClass: 'policy-page',
+    styles: ['/styles.css', '/page-styles/policy.css'],
+    scripts: [],
+    marquee: false,
+    component: 'policy-page',
+  };
+}
+
 const families: { family: Family; directory: string; records: RecordPage[] }[] = [
   { family: 'provider', directory: 'providers', records: providers },
   { family: 'leader', directory: 'leadership', records: leaders },

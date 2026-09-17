@@ -1,0 +1,21 @@
+---
+import type { PageData } from '../lib/types';
+import { richHtml } from '../lib/urls';
+
+interface Props { page: PageData }
+const { page } = Astro.props;
+---
+<section class="policy-hero">
+  <div class="container policy-hero__inner">
+    <p class="policy-eyebrow">{page.eyebrow}</p>
+    <h1>{page.heading}</h1>
+  </div>
+</section>
+
+<section class="policy-section">
+  <div class="container policy-shell">
+    <article class="policy-content">
+      <Fragment set:html={richHtml(page.contentHtml)} />
+    </article>
+  </div>
+</section>

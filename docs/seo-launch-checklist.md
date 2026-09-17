@@ -5,13 +5,14 @@ This site is prepared to move from the GitHub Pages project URL to `https://utah
 ## Completed in the site
 
 - Every indexable page has a unique title and meta description.
+- The five existing policy and patient-rights pages are preserved at their current public paths with their current wording.
 - Canonical, Open Graph, Twitter, and JSON-LD metadata use the configured deployment URL.
 - `sitemap.xml` includes all indexable pages and excludes redirect stubs.
 - `robots.txt` and page-level robots metadata keep the GitHub preview out of search results.
 - Production builds remove `noindex`, allow crawling, and advertise the production sitemap.
 - Automated checks cover metadata uniqueness, canonical URLs, crawl controls, social metadata, structured data, and redirect destinations.
 - `cloudflare-redirects.csv` contains 163 clear one-to-one legacy mappings in Cloudflare Bulk Redirect CSV format. Each mapping includes both trailing-slash variants, for 326 import rows, and applies to the apex domain and `www`.
-- `legacy-url-inventory.csv` records all 213 URLs from the old WordPress sitemaps and identifies the 49 that still need a content decision.
+- `legacy-url-inventory.csv` records all 213 URLs from the old WordPress sitemaps and identifies the 44 that still need a content decision.
 
 ## Before changing DNS
 
@@ -42,7 +43,7 @@ The Bulk Redirect CSV intentionally has no header row because Cloudflare's impor
 - Confirm `/robots.txt` allows crawling and names the production sitemap.
 - Confirm every imported legacy URL returns one `301` hop to a `200` production page.
 - Keep the redirects active for at least one year; keeping them indefinitely is preferable for backlinks and bookmarks.
-- Do not redirect the 49 review URLs to the homepage as a blanket rule. Preserve them temporarily, recreate useful content, map them to a genuinely equivalent page, or return `410` after review.
+- Do not redirect the 44 review URLs to the homepage as a blanket rule. Preserve them temporarily, recreate useful content, map them to a genuinely equivalent page, or return `410` after review.
 
 ## Rollback
 

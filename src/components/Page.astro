@@ -21,5 +21,5 @@ if (!page.redirect && !page.family && !View) throw new Error(`Missing view for $
    page.family === 'leader' ? <LeaderPage slug={page.slug!} /> :
    page.family === 'specialty' ? <SpecialtyPage slug={page.slug!} /> :
    page.family === 'location' ? <LocationPage slug={page.slug!} /> :
-   View ? <View /> : null}
+   View ? <View page={page} /> : null}
 </SiteLayout>}

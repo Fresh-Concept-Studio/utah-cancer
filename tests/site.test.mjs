@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { load } from 'cheerio';
 import { parse } from 'acorn';
+import { createHash } from 'node:crypto';
 import { base, files, site } from './helpers.mjs';
 const readData = name => JSON.parse(fs.readFileSync(`src/data/${name}.json`, 'utf8'));
 const htmlFiles = files('dist').filter(p => p.endsWith('.html'));
@@ -109,6 +110,24 @@ test('Cloudflare legacy redirects have unique sources and valid local targets', 
       const $ = load(fs.readFileSync(path.join('dist', output), 'utf8'));
       assert.equal($(parsed.hash).length, 1, `${source}: missing target fragment ${parsed.hash}`);
     }
+  }
+});
+
+test('policy pages preserve the checked-in source wording and public paths', () => {
+  const policies = readData('policies');
+  const normalize = value => value.replace(/\u00a0/g, ' ').replace(/\s+/g, ' ').trim();
+  for (const policy of policies) {
+    const file = `${policy.slug}/index.html`;
+    assert.equal(pages.has(file), true, `${file}: missing policy page`);
+    const $ = pages.get(file);
+    assert.equal($('h1').text().trim(), policy.heading);
+    assert.equal($('.policy-content').length, 1);
+    const hash = createHash('sha256').update(normalize($('.policy-content').text())).digest('hex');
+    assert.equal(hash, policy.sourceTextHash, `${file}: policy wording changed`);
+    assert.equal($(`link[rel="canonical"]`).attr('href'), `${site}${base}/${policy.slug}/`);
+  }
+  for (const href of ['/nosurprisesact/', '/termsandconditions/', '/privacy-policy/', '/patient-privacy/', '/discalaimer/']) {
+    assert.equal(pages.get('index.html')(`.footer-legal a[href="${base}${href}"]`).length, 1, `missing footer link ${href}`);
   }
 });
 

@@ -2241,6 +2241,24 @@ a.media-breaker-item:focus-visible {
   color: rgba(255, 255, 255, 0.62);
 }
 
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 20px;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12.6px;
+  line-height: 16.8px;
+  transition: color 0.2s;
+}
+
+.footer-legal a:hover {
+  color: #fff;
+}
+
 /* ============================================
    MARQUEE BANNER
    ============================================ */
