@@ -16,7 +16,10 @@ const { activeNav = [] } = Astro.props;
           <button type="button" class="nav-dropdown-disclosure" aria-label={`Toggle ${menu.label} submenu`} aria-expanded="false" aria-controls={`nav-submenu-${index}`}><span class="material-symbols-rounded nav-dropdown-arrow" aria-hidden="true">expand_more</span></button>
         </> : <button class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>}
         <div id={`nav-submenu-${index}`} class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
-          {menu.links.map(link => <a href={url(link.href)} class="nav-dropdown-item">{link.label}</a>)}
+          {menu.links.map(link => link.comingSoon ?
+            <button type="button" class="nav-dropdown-item nav-dropdown-item--button" data-coming-soon aria-haspopup="dialog" aria-controls="coming-soon-modal">{link.label}</button> :
+            <a href={url(link.href)} class="nav-dropdown-item">{link.label}</a>
+          )}
         </div></div>
       </div>)}
       {patientLinks.map(link => <a href={link.href} target="_blank" rel="noopener" class="nav-link nav-link--icon"><span class="material-symbols-rounded">{link.icon}</span> {link.label}</a>)}
@@ -28,6 +31,7 @@ const { activeNav = [] } = Astro.props;
 
 <style>
   .nav-dropdown-disclosure { display: none; }
+  .nav-dropdown-item--button { width: 100%; border: 0; background: none; font-family: var(--font-body); text-align: left; cursor: pointer; }
   @media (max-width: 1024px) {
     .nav-dropdown--linked { display: grid; grid-template-columns: 1fr 44px; width: 100%; }
     .nav-dropdown--linked > a .nav-dropdown-arrow { display: none; }

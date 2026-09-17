@@ -17,6 +17,3 @@
         });
       });
     })();
-
-// The existing newsletter form is a visual placeholder.
-document.querySelector('.events-newsletter-form')?.addEventListener('submit', function(event) { event.preventDefault(); });

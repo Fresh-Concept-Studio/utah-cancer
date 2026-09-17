@@ -14,7 +14,6 @@ export function canonical(value, file, built = true) {
 }
 
 // Ignore formatting whitespace and shared chrome; compare the page itself.
-// The newsletter's inline handler moved to events-index.js without changing behavior.
 export function fingerprints(html, file, built = true) {
   const $ = load(html);
   const metadata = [$('title').text(), $('meta[name="description"]').attr('content') || '', $('body').attr('class') || ''];

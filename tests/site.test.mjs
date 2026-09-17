@@ -76,7 +76,7 @@ test('internal section links point to existing anchors', () => {
   const failures = [];
   for (const [file, $] of pages) for (const a of $('a[href]').toArray()) {
     const href = $(a).attr('href');
-    if (href === '#') continue; // Registration and other undecided destinations remain in the audit.
+    assert.notEqual(href, '#', `${file}: placeholder link`);
     const target = new URL(href, `${origin}${base}/${file}`);
     if (target.origin !== origin || !target.hash) continue;
     let pathname = target.pathname.slice(base.length + 1);
@@ -86,6 +86,41 @@ test('internal section links point to existing anchors', () => {
     if (!doc || !doc('[id],[name]').toArray().some(e => e.attribs.id === id || e.attribs.name === id)) failures.push(`${file}: ${href}`);
   }
   assert.deepEqual(failures, []);
+});
+
+test('resolved event, foundation, and Provo actions use confirmed destinations', () => {
+  const events = pages.get('events/index.html');
+  assert.equal(events('#pink-bag-event').attr('href'), 'https://www.fashionplace.com/en/events/50851/');
+  assert.equal(events('#making-strides').attr('href'), 'https://makingstrideswalk.org/saltlakecityut');
+  assert.equal(events('#pinksync').attr('href'), 'https://www.pinksync.org/registration-pages/register');
+  assert.equal(events('.events-newsletter-form').length, 0);
+
+  for (const file of [
+    'events/caregiver-workshop.html',
+    'events/holiday-gift-drive.html',
+    'events/nutrition-during-treatment.html',
+    'events/patient-appreciation-dinner.html',
+    'events/survivorship-support-group.html',
+    'events/understanding-treatment-options.html',
+    'events/walk-for-hope.html',
+    'events/young-adult-meetup.html',
+  ]) {
+    const $ = pages.get(file);
+    assert.equal($('.event-detail-actions').text().includes('Register'), false, file);
+    assert.equal($('.sidebar-card--cta').length, 0, file);
+  }
+
+  const resources = pages.get('patient-resources.html');
+  const foundation = resources('button[data-coming-soon]').filter((_, element) => resources(element).text().includes('Utah Cancer Foundation'));
+  assert.equal(foundation.length, 1);
+
+  for (const slug of ['nathan-rich', 'staci-gunter', 'stephanie-ellis', 'william-stephenson']) {
+    const $ = pages.get(`providers/${slug}.html`);
+    const card = $('.location-card').filter((_, element) => $(element).text().includes('Provo Clinic'));
+    assert.equal(card.length, 1, slug);
+    assert.match(card.text(), /395 W\. Cougar Blvd\./, slug);
+    assert.match(card.find('a').filter((_, element) => $(element).text().includes('Get Directions')).attr('href'), /^https:\/\/www\.google\.com\/maps\/dir\//, slug);
+  }
 });
 
 test('clinic appointment links call that clinic and event shares use the published page', () => {

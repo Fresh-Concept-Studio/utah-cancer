@@ -2464,7 +2464,6 @@
       "order": 11
     },
     "locationIds": [
-      "provo-clinic",
       "utah-valley-hospital"
     ]
   },
@@ -3096,7 +3095,6 @@
       "order": 59
     },
     "locationIds": [
-      "provo-clinic",
       "utah-valley-hospital"
     ]
   },
@@ -3159,7 +3157,6 @@
       "order": 35
     },
     "locationIds": [
-      "provo-clinic",
       "utah-valley-hospital",
       "intermountain-medical-center-bldg-3"
     ]
@@ -3591,7 +3588,6 @@
       "order": 20
     },
     "locationIds": [
-      "provo-clinic",
       "utah-valley-hospital",
       "timpanogos-regional-hospital"
     ]
