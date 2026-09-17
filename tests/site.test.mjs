@@ -121,6 +121,14 @@ test('resolved event, foundation, and Provo actions use confirmed destinations',
     assert.match(card.text(), /395 W\. Cougar Blvd\./, slug);
     assert.match(card.find('a').filter((_, element) => $(element).text().includes('Get Directions')).attr('href'), /^https:\/\/www\.google\.com\/maps\/dir\//, slug);
   }
+
+  const locations = pages.get('locations/index.html');
+  const provoCard = locations('.loc-card').filter((_, element) => locations(element).text().includes('Provo Clinic'));
+  assert.equal(provoCard.length, 1);
+  assert.equal(provoCard.attr('href'), `${base}/locations/provo.html`);
+  const provo = pages.get('locations/provo.html');
+  assert.match(provo('.loc-hero-meta').text(), /395 W\. Cougar Blvd\./);
+  assert.equal(provo('.loc-hero-actions a[href^="tel:"]').attr('href'), 'tel:3853752700');
 });
 
 test('clinic appointment links call that clinic and event shares use the published page', () => {
