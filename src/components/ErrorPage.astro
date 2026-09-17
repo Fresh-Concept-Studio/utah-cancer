@@ -1,0 +1,52 @@
+---
+import { url } from '../lib/urls';
+
+interface Props {
+  code: string;
+  heading: string;
+  message: string;
+  detail: string;
+  primaryHref?: string;
+  primaryLabel?: string;
+}
+
+const {
+  code,
+  heading,
+  message,
+  detail,
+  primaryHref = '/index.html',
+  primaryLabel = 'Return home',
+} = Astro.props;
+---
+<section class="error-hero" aria-labelledby="error-heading">
+  <div class="error-path error-path--one" aria-hidden="true"></div>
+  <div class="error-path error-path--two" aria-hidden="true"></div>
+  <div class="container error-hero-inner">
+    <div class="error-copy">
+      <p class="error-status">Error {code}</p>
+      <h1 id="error-heading">{heading}</h1>
+      <p class="error-message">{message}</p>
+      <p class="error-detail">{detail}</p>
+      <div class="error-actions">
+        <a class="btn btn--white" href={url(primaryHref)}><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>{primaryLabel}</a>
+        <a class="error-contact" href={url('/contact.html')}>Contact us <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+      </div>
+    </div>
+    <div class="error-code" aria-hidden="true">
+      <span>{code}</span>
+      <div class="error-code-note"><span class="material-symbols-rounded">arrow_forward</span> Let’s find a clear path forward.</div>
+    </div>
+  </div>
+</section>
+
+<section class="error-shortcuts" aria-labelledby="error-shortcuts-heading">
+  <div class="container error-shortcuts-inner">
+    <h2 id="error-shortcuts-heading">Where would you like to go?</h2>
+    <nav aria-label="Helpful destinations">
+      <a href={url('/providers/index.html')}><span class="material-symbols-rounded" aria-hidden="true">person</span><span><strong>Find a provider</strong><small>Search our care team</small></span></a>
+      <a href={url('/locations/index.html')}><span class="material-symbols-rounded" aria-hidden="true">location_on</span><span><strong>View locations</strong><small>Find a clinic near you</small></span></a>
+      <a href={url('/patient-resources.html')}><span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span><span><strong>Patient resources</strong><small>Access helpful information</small></span></a>
+    </nav>
+  </div>
+</section>

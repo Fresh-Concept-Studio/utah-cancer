@@ -80,7 +80,7 @@ https://utahcancer.com/ucs-tooele/,retire,Return 410,Former Utah clinic has no m
 https://utahcancer.com/st-marks-hospital-radiation/,redirect,https://utahcancer.com/locations/st-marks/,Direct location replacement
 https://utahcancer.com/salt-lake/,redirect,https://utahcancer.com/locations/salt-lake/,Direct location replacement
 https://utahcancer.com/idahofalls/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
-https://utahcancer.com/job-application/,redirect,https://utahcancer.com/careers/,Direct replacement
+https://utahcancer.com/job-application/,no_change,https://utahcancer.com/job-application/,Employment application recreated from the archived form at its original URL
 https://utahcancer.com/cancer-center/,redirect,https://utahcancer.com/locations/cancer-center/,Direct location replacement
 https://utahcancer.com/west-jordan/,redirect,https://utahcancer.com/locations/jordan-valley/,Direct location replacement
 https://utahcancer.com/supportivecare/,no_change,https://utahcancer.com/supportivecare/,Recreated at the original URL and linked from Programs & Services

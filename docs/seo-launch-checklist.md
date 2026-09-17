@@ -12,7 +12,7 @@ This site is prepared to move from the GitHub Pages project URL to `https://utah
 - Production builds remove `noindex`, allow crawling, and advertise the production sitemap.
 - Automated checks cover metadata uniqueness, canonical URLs, crawl controls, social metadata, structured data, and redirect destinations.
 - Public pages use clean trailing-slash URLs, and internal links, canonical metadata, the sitemap, and redirect destinations all use that same format.
-- `cloudflare-redirects.csv` contains 170 clear one-to-one legacy mappings in Cloudflare Bulk Redirect CSV format. Each mapping includes both trailing-slash variants, for 340 import rows, and applies to the apex domain and `www`.
+- `cloudflare-redirects.csv` contains 328 import rows in Cloudflare Bulk Redirect CSV format. Moved legacy URLs include both trailing-slash variants; ten URLs that already match their clean destinations only need the no-slash variant. Self redirects are excluded to prevent loops. The rule should be scoped to the apex domain and `www`.
 - `legacy-url-inventory.csv` records all 213 URLs from the old WordPress sitemaps. All older patient-resource URLs now have a launch disposition; eleven useful pages were recreated at their original paths.
 - `retired-legacy-urls.md` lists 22 WordPress archive, test, obsolete COVID, and former-location URLs that should return `410 Gone` after Cloudflare is enabled.
 

@@ -73,6 +73,21 @@
     "marquee": true,
     "component": "careers"
   },
+  "job-application/index.html": {
+    "title": "Job Application | Utah Cancer Specialists",
+    "description": "Apply for a position with Utah Cancer Specialists by completing the employment application and uploading your resume for the hiring team.",
+    "bodyClass": "job-application-page",
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/job-application.css"
+    ],
+    "scripts": [
+      "/scripts/job-application.js"
+    ],
+    "marquee": true,
+    "component": "job-application"
+  },
   "contact.html": {
     "title": "Contact Us - Utah Cancer Specialists",
     "description": "",

@@ -1,0 +1,16 @@
+---
+import ErrorPage from '../components/ErrorPage.astro';
+import ErrorLayout from '../layouts/ErrorLayout.astro';
+---
+<ErrorLayout
+  code="404"
+  title="Page Not Found"
+  description="The requested page could not be found. Return to Utah Cancer Specialists or use a helpful link to continue."
+>
+  <ErrorPage
+    code="404"
+    heading="We couldn’t find that page."
+    message="The address may have changed during our site update, or the page may no longer be available."
+    detail="You can return home or use one of the shortcuts below to keep moving."
+  />
+</ErrorLayout>

@@ -1,7 +1,7 @@
 ---
 import { url } from '../lib/urls';
 
-const applicationUrl = 'https://utahcancer.com/job-application/';
+const applicationUrl = url('/job-application/');
 
 const jobs = [
   {
@@ -168,7 +168,7 @@ const jobs = [
       <p>Join a team committed to helping patients and families find a clear path through cancer treatment, close to home.</p>
       <div class="careers-hero-actions">
         <a href="#openings" class="btn btn--white">View open positions <span class="material-symbols-rounded">arrow_downward</span></a>
-        <a href={applicationUrl} class="careers-text-link" target="_blank" rel="noopener">Start an application <span class="material-symbols-rounded">arrow_outward</span></a>
+        <a href={applicationUrl} class="careers-text-link">Start an application <span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
     <figure class="careers-hero-photo">
@@ -231,7 +231,7 @@ const jobs = [
                 <ul>{job.qualifications.map(item => <li>{item}</li>)}</ul>
               </div>
             </div>
-            <a href={applicationUrl} class="btn btn--primary btn--compact" target="_blank" rel="noopener">Apply for this role <span class="material-symbols-rounded">arrow_outward</span></a>
+            <a href={`${applicationUrl}?position=${encodeURIComponent(job.title)}`} class="btn btn--primary btn--compact">Apply for this role <span class="material-symbols-rounded">arrow_forward</span></a>
           </div>
         </details>
       ))}
@@ -247,7 +247,7 @@ const jobs = [
     </div>
     <div>
       <p>Use the secure employment application to share your experience and the position that interests you. Openings can change as roles are filled.</p>
-      <a href={applicationUrl} class="btn btn--white" target="_blank" rel="noopener">Open employment application <span class="material-symbols-rounded">arrow_outward</span></a>
+      <a href={applicationUrl} class="btn btn--white">Open employment application <span class="material-symbols-rounded">arrow_forward</span></a>
     </div>
   </div>
 </section>

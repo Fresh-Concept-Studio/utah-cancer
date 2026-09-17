@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ComingSoonModal from '../components/ComingSoonModal.astro';
+import { url } from '../lib/urls';
+
+interface Props {
+  code: string;
+  title: string;
+  description: string;
+}
+
+const { code, title, description } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | Utah Cancer Specialists</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#00476b" />
+    <link rel="icon" href={url('/images/ucs-logo-color.svg')} type="image/svg+xml" />
+    <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href={url('/fonts/inter-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href={url('/styles.css')} />
+    <link rel="stylesheet" href={url('/page-styles/error.css')} />
+  </head>
+  <body class={`error-page error-page--${code}`}>
+    <Header />
+    <main><slot /></main>
+    <Footer />
+    <ComingSoonModal />
+    <script is:inline src={url('/scripts/site.js')}></script>
+    <script is:inline src={url('/scripts/coming-soon.js')}></script>
+  </body>
+</html>

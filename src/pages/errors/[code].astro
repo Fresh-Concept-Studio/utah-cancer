@@ -1,0 +1,23 @@
+---
+import ErrorPage from '../../components/ErrorPage.astro';
+import ErrorLayout from '../../layouts/ErrorLayout.astro';
+
+export function getStaticPaths() {
+  const errors = {
+    '400': { title: 'Request Not Understood', heading: 'We couldn’t open that request.', message: 'Something in the web address or request was not understood.', detail: 'Check the address and try again, or return to the home page.' },
+    '403': { title: 'Access Not Available', heading: 'This page isn’t available to you.', message: 'The page may be restricted, or access may not be available from your current connection.', detail: 'Return to the public site or contact us if you believe you should have access.' },
+    '408': { title: 'Request Timed Out', heading: 'The request took too long.', message: 'The connection ended before the page could finish loading.', detail: 'Try the request again. If it continues, return home and choose another page.', primaryLabel: 'Try from home' },
+    '429': { title: 'Too Many Requests', heading: 'Please wait a moment.', message: 'This connection has made too many requests in a short period of time.', detail: 'Wait briefly before trying again, or return to the home page.' },
+    '500': { title: 'Site Error', heading: 'Something went wrong on our side.', message: 'The site could not complete your request.', detail: 'Try again shortly. You can also contact us if you need help finding information now.' },
+    '502': { title: 'Connection Error', heading: 'The connection was interrupted.', message: 'A service needed to load this page did not respond correctly.', detail: 'Try again shortly, or return to the home page to continue browsing.' },
+    '503': { title: 'Temporarily Unavailable', heading: 'The site is temporarily unavailable.', message: 'We may be completing maintenance or handling a brief service interruption.', detail: 'Please try again in a few minutes. Our main phone line remains available at 801.269.0231.' },
+    '504': { title: 'Connection Timed Out', heading: 'A service took too long to respond.', message: 'The site could not finish loading this request in time.', detail: 'Try again shortly, or return to the home page to continue browsing.' },
+  };
+  return Object.entries(errors).map(([code, error]) => ({ params: { code }, props: { code, error } }));
+}
+
+const { code, error } = Astro.props;
+---
+<ErrorLayout code={code} title={error.title} description={`${error.message} ${error.detail}`}>
+  <ErrorPage code={code} heading={error.heading} message={error.message} detail={error.detail} primaryLabel={'primaryLabel' in error ? error.primaryLabel : undefined} />
+</ErrorLayout>

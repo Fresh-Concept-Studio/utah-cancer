@@ -29,6 +29,7 @@ const standaloneDescriptions: Record<string, string> = {
   'articles/index.html': 'Read news, announcements, and community stories from Utah Cancer Specialists and its cancer care teams across Utah.',
   'clinical-trials.html': 'Explore clinical trials available through Utah Cancer Specialists and learn how our research team connects patients with promising cancer treatments.',
   'careers.html': 'Explore current career opportunities at Utah Cancer Specialists and apply to join a team dedicated to compassionate, community-based cancer care.',
+  'job-application/index.html': 'Apply for a position with Utah Cancer Specialists by completing the employment application and uploading your resume for the hiring team.',
   'contact.html': 'Contact Utah Cancer Specialists for general questions, clinic information, and help finding the right cancer care team or location.',
   'events/index.html': 'Find upcoming Utah Cancer Specialists events, education opportunities, fundraisers, and community programs for patients and families.',
   'index.html': 'Utah Cancer Specialists provides advanced, compassionate cancer care, clinical trials, and supportive services at convenient locations across Utah.',

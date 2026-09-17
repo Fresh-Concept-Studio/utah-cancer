@@ -9,6 +9,7 @@ import { base, files, site } from './helpers.mjs';
 const readData = name => JSON.parse(fs.readFileSync(`src/data/${name}.json`, 'utf8'));
 const htmlFiles = files('dist').filter(p => p.endsWith('.html'));
 const pages = new Map(htmlFiles.map(file => [file, load(fs.readFileSync(`dist/${file}`, 'utf8'))]));
+const isErrorFile = file => file === '404.html' || file.startsWith('errors/');
 
 test('every content record has a detail page, and every directory card points to one', () => {
   for (const [name, folder] of [['providers','providers'],['leaders','leadership'],['specialties','specialties'],['locations','locations']]) {
@@ -67,7 +68,7 @@ test('normal pages share one header/footer and load each valid script once', () 
 });
 
 test('publishable pages have unique search and social metadata', () => {
-  const publishable = [...pages].filter(([file, $]) => !file.startsWith('signature/') && !$('meta[http-equiv="refresh"]').length);
+  const publishable = [...pages].filter(([file, $]) => !file.startsWith('signature/') && !isErrorFile(file) && !$('meta[http-equiv="refresh"]').length);
   const titles = new Map();
   const descriptions = new Map();
   for (const [file, $] of publishable) {
@@ -93,6 +94,7 @@ test('publishable pages have unique search and social metadata', () => {
 test('Cloudflare legacy redirects have unique sources and valid local targets', () => {
   const rows = fs.readFileSync('docs/cloudflare-redirects.csv', 'utf8').trim().split('\n');
   const sources = new Set();
+  const sourcePaths = new Set(rows.map(row => new URL(`https://${row.split(',')[0]}`).pathname));
   assert.ok(rows.length >= 300, `expected both slash variants for the redirect inventory, found ${rows.length}`);
   for (const row of rows) {
     const [source, target, status, preserveQuery, includeSubdomains, subpathMatching, preserveSuffix] = row.split(',');
@@ -104,6 +106,7 @@ test('Cloudflare legacy redirects have unique sources and valid local targets', 
     assert.equal(subpathMatching, 'FALSE');
     assert.equal(preserveSuffix, 'FALSE');
     const parsed = new URL(target);
+    assert.equal(sourcePaths.has(parsed.pathname), false, `${source}: target is also a redirect source (loop or chain): ${target}`);
     assert.equal(parsed.origin, 'https://utahcancer.com', `${source}: unexpected target host`);
     const output = parsed.pathname.endsWith('/')
       ? `${parsed.pathname.slice(1)}index.html`
@@ -172,6 +175,15 @@ test('legacy patient resources remain available without crowding global navigati
   assert.doesNotMatch(inventory, /,review,/, 'legacy inventory still contains unresolved reviews');
 });
 
+test('employment application is restored at its legacy URL', () => {
+  const $ = pages.get('job-application/index.html');
+  assert.ok($, 'missing employment application');
+  assert.equal($('form[enctype="multipart/form-data"]').length, 1);
+  assert.equal($('[name="job_applying_for"][required]').length, 1);
+  assert.equal($('[name="attachment"][type="file"][required]').length, 1);
+  assert.equal(pages.get('careers/index.html')('a[href*="/job-application/"]').length > 0, true);
+});
+
 test('retired WordPress and former-location URLs are omitted from generated pages', () => {
   for (const file of ['locations/idaho-falls/index.html', 'locations/madison/index.html', 'locations/teton/index.html', 'locations/wyoming/index.html']) {
     assert.equal(pages.has(file), false, `${file}: retired fallback should not be generated`);
@@ -185,7 +197,7 @@ test('retired WordPress and former-location URLs are omitted from generated page
 test('sitemap and robots directives match the deployment target', () => {
   const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
   const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
-  const publishableCount = [...pages].filter(([file, $]) => !file.startsWith('signature/') && !$('meta[http-equiv="refresh"]').length).length;
+  const publishableCount = [...pages].filter(([file, $]) => !file.startsWith('signature/') && !isErrorFile(file) && !$('meta[http-equiv="refresh"]').length).length;
   assert.equal(locations.length, publishableCount);
   assert.equal(new Set(locations).size, locations.length);
   for (const location of locations) assert.ok(location.startsWith(`${site}${base}/`) || location === `${site}${base}/`, location);
@@ -195,6 +207,19 @@ test('sitemap and robots directives match the deployment target', () => {
     assert.match(robots, new RegExp(`Sitemap: ${site.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
   } else {
     assert.match(robots, new RegExp(`Disallow: ${base || '/'}(?:/|$)`));
+  }
+});
+
+test('themed error documents are generated and kept out of search indexes', () => {
+  const expected = ['404.html', 'errors/400/index.html', 'errors/403/index.html', 'errors/408/index.html', 'errors/429/index.html', 'errors/500/index.html', 'errors/502/index.html', 'errors/503/index.html', 'errors/504/index.html'];
+  for (const file of expected) {
+    const $ = pages.get(file);
+    assert.ok($, `${file}: missing error document`);
+    assert.equal($('meta[name="robots"]').attr('content'), 'noindex, nofollow', `${file}: robots`);
+    assert.equal($('h1').length, 1, `${file}: expected one heading`);
+    assert.equal($('.error-shortcuts a').length, 3, `${file}: helpful destinations`);
+    assert.equal($('.navbar').length, 1, `${file}: shared header`);
+    assert.equal($('footer').length, 1, `${file}: shared footer`);
   }
 });
 
