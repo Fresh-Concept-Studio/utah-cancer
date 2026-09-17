@@ -105,9 +105,7 @@ test('resolved event, foundation, and Provo actions use confirmed destinations',
     'events/walk-for-hope.html',
     'events/young-adult-meetup.html',
   ]) {
-    const $ = pages.get(file);
-    assert.equal($('.event-detail-actions').text().includes('Register'), false, file);
-    assert.equal($('.sidebar-card--cta').length, 0, file);
+    assert.equal(pages.has(file), false, file);
   }
 
   const resources = pages.get('patient-resources.html');

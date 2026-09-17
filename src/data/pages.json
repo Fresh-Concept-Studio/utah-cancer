@@ -87,30 +87,6 @@
     "marquee": true,
     "component": "contact"
   },
-  "events/caregiver-workshop.html": {
-    "title": "Caregiver Workshop: Caring for Someone You Love - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-caregiver-workshop"
-  },
-  "events/holiday-gift-drive.html": {
-    "title": "Back-to-School Family Drive - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-holiday-gift-drive"
-  },
   "events/index.html": {
     "title": "Events - Utah Cancer Specialists",
     "description": "",
@@ -124,78 +100,6 @@
     ],
     "marquee": true,
     "component": "events-index"
-  },
-  "events/nutrition-during-treatment.html": {
-    "title": "Nutrition During Treatment - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-nutrition-during-treatment"
-  },
-  "events/patient-appreciation-dinner.html": {
-    "title": "Annual Patient Appreciation Dinner - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-patient-appreciation-dinner"
-  },
-  "events/survivorship-support-group.html": {
-    "title": "Cancer Survivorship Support Group - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-survivorship-support-group"
-  },
-  "events/understanding-treatment-options.html": {
-    "title": "Understanding Your Treatment Options - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-understanding-treatment-options"
-  },
-  "events/walk-for-hope.html": {
-    "title": "Walk for Hope 5K - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-walk-for-hope"
-  },
-  "events/young-adult-meetup.html": {
-    "title": "Young Adult Patient Meetup - Utah Cancer Specialists",
-    "description": "",
-    "bodyClass": "",
-    "styles": [
-      "/styles.css",
-      "/provider.css"
-    ],
-    "scripts": [],
-    "marquee": true,
-    "component": "events-young-adult-meetup"
   },
   "index.html": {
     "title": "Utah Cancer Specialists",

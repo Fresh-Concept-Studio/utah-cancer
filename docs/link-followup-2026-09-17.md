@@ -16,7 +16,7 @@ The source now contains no `href="#"` placeholders and no missing internal page 
 - Pink Bag Event opens the confirmed Fashion Place event page. Its displayed time and venue were updated to 10:00 AM–1:30 PM at Fashion Place Mall.
 - Making Strides Against Breast Cancer opens the official 2026 American Cancer Society Utah registration page.
 - PinkSync opens the event’s official registration page. Its date was corrected to October 24, 2026 and its time to 9:00 AM–2:00 PM.
-- No authoritative registration pages were found for the eight older event-detail pages. Their nonfunctional Register, Register Now, and Add to calendar actions were removed.
+- No authoritative registration pages were found for the eight older event-detail pages. The unverified pages and their unused assets were removed.
 - The current UCS website has no events newsletter subscription form or connected mailing-list destination. The nonfunctional Subscribe section was removed.
 - Event social links open sharing composers with the published event URL.
 
@@ -25,10 +25,6 @@ The source now contains no `href="#"` placeholders and no missing internal page 
 ### HealthPay24 eStatements
 
 The footer and Patient Resources **Enroll in eStatements** destination continues to return HTTP 403 to automated checks and was blocked in browser testing. It remains unchanged because it may require a valid patient session. Confirm it manually or provide a replacement URL. The separate Quick Pay/POS payment link is functional.
-
-### Older event content
-
-The eight older event-detail pages remain published, but their May–August 2026 dates and event descriptions do not appear on the current UCS website or in authoritative search results. The registration controls are gone; the pages themselves should be confirmed with UCS before they are treated as current events.
 
 ## Verification
 
