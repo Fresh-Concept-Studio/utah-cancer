@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { load } from 'cheerio';
 import { parse } from 'acorn';
-import { base, files } from './helpers.mjs';
+import { base, files, site } from './helpers.mjs';
 const readData = name => JSON.parse(fs.readFileSync(`src/data/${name}.json`, 'utf8'));
 const htmlFiles = files('dist').filter(p => p.endsWith('.html'));
 const pages = new Map(htmlFiles.map(file => [file, load(fs.readFileSync(`dist/${file}`, 'utf8'))]));
@@ -62,6 +62,72 @@ test('normal pages share one header/footer and load each valid script once', () 
   }
 });
 
+test('publishable pages have unique search and social metadata', () => {
+  const publishable = [...pages].filter(([file, $]) => !file.startsWith('signature/') && !$('meta[http-equiv="refresh"]').length);
+  const titles = new Map();
+  const descriptions = new Map();
+  for (const [file, $] of publishable) {
+    const title = $('title').text().trim();
+    const description = $('meta[name="description"]').attr('content')?.trim() || '';
+    const canonical = $('link[rel="canonical"]').attr('href');
+    assert.ok(title.length >= 30 && title.length <= 70, `${file}: title length ${title.length}`);
+    assert.ok(description.length >= 70 && description.length <= 180, `${file}: description length ${description.length}`);
+    assert.equal(titles.has(title), false, `${file}: duplicate title with ${titles.get(title)}`);
+    assert.equal(descriptions.has(description), false, `${file}: duplicate description with ${descriptions.get(description)}`);
+    titles.set(title, file);
+    descriptions.set(description, file);
+    assert.ok(canonical?.startsWith(`${site}${base}/`) || canonical === `${site}${base}/`, `${file}: canonical ${canonical}`);
+    assert.equal($('meta[property="og:title"]').attr('content'), title, `${file}: og:title`);
+    assert.equal($('meta[property="og:description"]').attr('content'), description, `${file}: og:description`);
+    assert.equal($('meta[property="og:url"]').attr('content'), canonical, `${file}: og:url`);
+    assert.equal($('meta[name="twitter:card"]').attr('content'), 'summary_large_image', `${file}: Twitter card`);
+    assert.doesNotThrow(() => JSON.parse($('script[type="application/ld+json"]').text()), `${file}: JSON-LD`);
+    assert.equal($('meta[name="robots"]').length, process.env.SITE_INDEXABLE === 'true' ? 0 : 1, `${file}: indexability`);
+  }
+});
+
+test('Cloudflare legacy redirects have unique sources and valid local targets', () => {
+  const rows = fs.readFileSync('docs/cloudflare-redirects.csv', 'utf8').trim().split('\n');
+  const sources = new Set();
+  assert.ok(rows.length >= 300, `expected both slash variants for the redirect inventory, found ${rows.length}`);
+  for (const row of rows) {
+    const [source, target, status, preserveQuery, includeSubdomains, subpathMatching, preserveSuffix] = row.split(',');
+    assert.equal(sources.has(source), false, `duplicate redirect source: ${source}`);
+    sources.add(source);
+    assert.equal(status, '301', `${source}: expected permanent redirect`);
+    assert.equal(preserveQuery, 'TRUE', `${source}: query strings should be preserved`);
+    assert.equal(includeSubdomains, 'TRUE');
+    assert.equal(subpathMatching, 'FALSE');
+    assert.equal(preserveSuffix, 'FALSE');
+    const parsed = new URL(target);
+    assert.equal(parsed.origin, 'https://utahcancer.com', `${source}: unexpected target host`);
+    const output = parsed.pathname.endsWith('/')
+      ? `${parsed.pathname.slice(1)}index.html`
+      : parsed.pathname.slice(1);
+    assert.equal(fs.existsSync(path.join('dist', output)), true, `${source}: missing target ${parsed.pathname}`);
+    if (parsed.hash) {
+      const $ = load(fs.readFileSync(path.join('dist', output), 'utf8'));
+      assert.equal($(parsed.hash).length, 1, `${source}: missing target fragment ${parsed.hash}`);
+    }
+  }
+});
+
+test('sitemap and robots directives match the deployment target', () => {
+  const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
+  const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+  const publishableCount = [...pages].filter(([file, $]) => !file.startsWith('signature/') && !$('meta[http-equiv="refresh"]').length).length;
+  assert.equal(locations.length, publishableCount);
+  assert.equal(new Set(locations).size, locations.length);
+  for (const location of locations) assert.ok(location.startsWith(`${site}${base}/`) || location === `${site}${base}/`, location);
+  const robots = fs.readFileSync('dist/robots.txt', 'utf8');
+  if (process.env.SITE_INDEXABLE === 'true') {
+    assert.match(robots, /Allow: \/\n/);
+    assert.match(robots, new RegExp(`Sitemap: ${site.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
+  } else {
+    assert.match(robots, new RegExp(`Disallow: ${base || '/'}(?:/|$)`));
+  }
+});
+
 test('email signature assets retain the filenames distributed to staff', () => {
   const signatureFiles = [
     'UCS-logo-black.svg',
@@ -82,12 +148,12 @@ test('retired clinic URLs preserve their redirect, fallback link, and canonical 
     const $=pages.get(`locations/${slug}.html`);
     assert.equal($('meta[http-equiv="refresh"]').attr('content'),`0; url=${base}/locations/index.html`);
     assert.equal($('body a').attr('href'),`${base}/locations/index.html`);
-    assert.equal($('link[rel="canonical"]').attr('href'),`https://fresh-concept-studio.github.io${base}/locations/index.html`);
+    assert.equal($('link[rel="canonical"]').attr('href'),`${site}${base}/locations/index.html`);
   }
 });
 
 test('internal section links point to existing anchors', () => {
-  const origin = 'https://fresh-concept-studio.github.io';
+  const origin = site;
   const failures = [];
   for (const [file, $] of pages) for (const a of $('a[href]').toArray()) {
     const href = $(a).attr('href');
@@ -160,7 +226,7 @@ test('clinic appointment links call that clinic and event shares use the publish
       assert.match(dest.searchParams.get('destination'), /\d.+(?:UT|Utah)/, file);
     }
     if ($('.event-share').length) {
-      const canonical = `https://fresh-concept-studio.github.io${base}/${file}`;
+      const canonical = `${site}${base}/${file}`;
       for (const a of $('.event-share a').toArray()) {
         const target = new URL($(a).attr('href'));
         const key = target.protocol === 'mailto:' ? 'body' : target.hostname.includes('facebook') ? 'u' : 'url';

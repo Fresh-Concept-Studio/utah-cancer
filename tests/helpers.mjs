@@ -4,12 +4,13 @@ import { createHash } from 'node:crypto';
 import { load } from 'cheerio';
 
 export const baselineCommit = 'e910dc774aa8a575a3d3bd55e7eeb96ef96936e9';
-export const base = '/utah-cancer';
+export const base = (process.env.BASE_PATH ?? '/utah-cancer').replace(/\/$/, '');
+export const site = process.env.SITE_URL || 'https://fresh-concept-studio.github.io';
 export const hash = value => createHash('sha256').update(value).digest('hex');
 export const files = directory => fs.readdirSync(directory, { recursive: true }).filter(file => fs.statSync(path.join(directory, file)).isFile()).sort();
 export function canonical(value, file, built = true) {
   if (!value) return value;
-  if (built) value = value.replace(/^\/utah-cancer(?=\/)/, '');
+  if (built && base) value = value.replace(new RegExp(`^${base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?=/)`), '');
   return new URL(value, 'https://site.test/' + file).href;
 }
 

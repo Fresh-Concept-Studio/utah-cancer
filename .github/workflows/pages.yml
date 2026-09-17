@@ -17,6 +17,10 @@ jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ vars.SITE_URL || 'https://fresh-concept-studio.github.io' }}
+      BASE_PATH: ${{ vars.BASE_PATH || '/utah-cancer' }}
+      SITE_INDEXABLE: ${{ vars.SITE_INDEXABLE || 'false' }}
     steps:
       - uses: actions/checkout@v7
       - name: Install, verify, build, and upload

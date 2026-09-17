@@ -10,6 +10,31 @@ interface Props { page: PageData }
 const { page } = Astro.props;
 const description = page.description?.trim() || 'Utah Cancer Specialists provides compassionate cancer care, advanced treatments, clinical trials, and patient resources throughout Utah.';
 const hasOwnMain = ['physical-therapy', 'late-phase-trials', 'stories-amy-jensen', 'stories-dukhi-hong'].includes(page.component || '');
+const canonical = Astro.url.href;
+const siteRoot = new URL(url('/'), Astro.site).href;
+const socialImage = new URL(url('/images/hero-bg.webp'), Astro.site).href;
+const isIndexable = process.env.SITE_INDEXABLE === 'true';
+const structuredData = JSON.stringify([
+  {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalOrganization',
+    '@id': `${siteRoot}#organization`,
+    name: 'Utah Cancer Specialists',
+    url: siteRoot,
+    logo: new URL(url('/images/ucs-logo-color.svg'), Astro.site).href,
+    telephone: '+1-801-262-9494',
+    areaServed: { '@type': 'State', name: 'Utah' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: page.title,
+    description,
+    url: canonical,
+    isPartOf: { '@type': 'WebSite', '@id': `${siteRoot}#website`, name: 'Utah Cancer Specialists', url: siteRoot },
+    about: { '@id': `${siteRoot}#organization` },
+  },
+]).replace(/</g, '\\u003c');
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +43,19 @@ const hasOwnMain = ['physical-therapy', 'late-phase-trials', 'stories-amy-jensen
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{page.title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={Astro.url.href} />
+    {!isIndexable && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Utah Cancer Specialists" />
+    <meta property="og:title" content={page.title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={page.title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <script type="application/ld+json" set:html={structuredData} is:inline></script>
     <link rel="icon" href={url('/images/ucs-logo-color.svg')} type="image/svg+xml" />
     <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href={url('/fonts/inter-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
