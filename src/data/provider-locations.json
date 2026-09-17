@@ -13,8 +13,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=5131+S.+Cottonwood+ST.%2C+Building+3%2C+Level+2+Murray%2C+UT+84107",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -34,8 +36,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.+Ste.+340+Orem%2C+UT+84057",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -55,8 +59,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=389+S.+900+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84102",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -76,8 +82,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -97,8 +105,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -118,8 +128,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%2C+Ste.+200+West+Jordan%2C+UT+84088",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -139,8 +151,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%3B+Ste.+200+West+Jordan%2C+UT+84088",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -160,8 +174,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -181,8 +197,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=395+W.+Cougar+Blvd.%2C+Ste.+104+Sorenson+Legacy+Tower%2C+Bldg.+4+Provo%2C+UT+84604",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -202,8 +220,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -223,8 +243,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -244,8 +266,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3838+S.+700+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84106",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -265,8 +289,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+4th+Floor+West+Valley+City%2C+UT+84119",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -307,8 +333,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3838+S.+700+E.%2C+Ste.+100+Salt+Lake+City%2C+Utah+84106",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -328,8 +356,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=5131+S.+Cottonwood+St.%2C+Level+2+Murray%2C+Utah+84107",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -349,8 +379,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=5131+S.+Cottonwood+St.%2C+Ste.+200+Murray%2C+UT+84107",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -370,8 +402,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=10808+S.+River+Front+Pkwy.%2C+Ste.+400+South+Jordan%2C+UT+84095",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -391,8 +425,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/bountiful.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Lakeview+Hospital+Campus+520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -412,8 +448,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/ogden.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=425+E.+5350+S.%2C+Ste.+101+Ogden%2C+UT+84405",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -433,8 +471,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -454,8 +494,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1250+E.+3900+S.%2C+Ste.+B-10+Salt+Lake+City%2C+UT+84124",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -475,8 +517,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2132+N+1700+W%2C+Suite+B-101+Layton%2C+UT+84041",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -496,8 +540,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+Fourth+Floor-E.+West+Valley%2C+UT+84119",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -517,8 +563,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+Fourth+Floor+West+Valley+City%2C+UT+84119",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -538,8 +586,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=Fourth+floor-East+2965+W.+3500+S.+West+Valley%2C+UT+84119",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -559,8 +609,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1076+N+County+Blvd%2C+Suite+D+Pleasant+Grove%2C+UT+84062",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -580,8 +632,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%2C+Ste.+100+West+Jordan%2C+UT+84088",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -643,8 +697,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2326+N.+400+E.%2C+Building+C%2C+Ste.+204+Tooele%2C+UT+84074",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }
@@ -664,8 +720,10 @@
       },
       {
         "attrs": {
-          "href": "/locations/index.html",
-          "class": "location-card-link"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=389+S.+900+E.+Ste.+100+Salt+Lake+City%2C+UT+84102",
+          "class": "location-card-link",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       }

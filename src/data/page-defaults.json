@@ -17,7 +17,7 @@
         {
           "attrs": {
             "class": "btn btn--white",
-            "href": "#"
+            "href": "/contact.html"
           },
           "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us"
         }

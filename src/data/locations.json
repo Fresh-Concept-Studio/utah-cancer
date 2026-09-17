@@ -12,8 +12,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -43,7 +45,7 @@
         "html": "<p class=\"provider-bio\">Free parking is available on the Lakeview Hospital campus. The cancer center entrance is accessible from the main parking area.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012966665\">801.296.6665</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012966665\">801.296.6665</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8012966665\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -85,8 +87,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3838+S.+700+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84106",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -116,7 +120,7 @@
         "html": "<p class=\"provider-bio\">Free parking is available in the building lot. Accessible parking spaces are located near the main entrance.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3838 S. 700 E., Ste. 100<br>Salt Lake City, UT 84106</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=3838+S.+700+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84106\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8012690231\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "directory": {
       "order": 1,
       "county": "salt-lake",
@@ -143,8 +147,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+4th+Floor+West+Valley+City%2C+UT+84119",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -174,7 +180,7 @@
         "html": "<p class=\"provider-bio\">Free parking is available at Fairbourne Station. The building is accessible via elevator to the 4th floor.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015909900\">801.590.9900</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=2965+W.+3500+S.%2C+4th+Floor+West+Valley+City%2C+UT+84119\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015909900\">801.590.9900</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8015909900\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -217,8 +223,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=5131+S.+Cottonwood+St.%2C+Bldg.+3%2C+Level+2+Murray%2C+UT+84107",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -248,7 +256,7 @@
         "html": "<p class=\"provider-bio\">Parking is available in the IMC campus garages. Follow signs to Building 3, then take the elevator to Level 2.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">5131 S. Cottonwood St., Bldg. 3, Level 2<br>Murray, UT 84107</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012633416\">801.263.3416</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">5131 S. Cottonwood St., Bldg. 3, Level 2<br>Murray, UT 84107</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=5131+S.+Cottonwood+St.%2C+Bldg.+3%2C+Level+2+Murray%2C+UT+84107\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012633416\">801.263.3416</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8012633416\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -291,8 +299,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%2C+Ste.+200+West+Jordan%2C+UT+84088",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -322,7 +332,7 @@
         "html": "<p class=\"provider-bio\">Free patient parking is available in the lot directly adjacent to the building. Accessible parking spaces are located near the main entrance on the ground level.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015628732\">801.562.8732</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.562.8733</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=3592+W.+9000+S.%2C+Ste.+200+West+Jordan%2C+UT+84088\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015628732\">801.562.8732</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.562.8733</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8015628732\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -366,8 +376,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -397,7 +409,7 @@
         "html": "<p class=\"provider-bio\">Parking is available on the hospital campus. Follow signs to the cancer center entrance.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1492 Antelope Dr., Ste. 125<br>Layton, UT 84041</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015253022\">801.525.3022</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1492 Antelope Dr., Ste. 125<br>Layton, UT 84041</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015253022\">801.525.3022</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8015253022\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -440,8 +452,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=425+E.+5350+S.%2C+Ste.+101+Ogden%2C+UT+84405",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -471,7 +485,7 @@
         "html": "<p class=\"provider-bio\">Free parking is available in the medical plaza lot. Accessible spaces are located near the building entrance.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">425 E. 5350 S., Ste. 101<br>Ogden, UT 84405</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3854232855\">385.423.2855</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">425 E. 5350 S., Ste. 101<br>Ogden, UT 84405</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=425+E.+5350+S.%2C+Ste.+101+Ogden%2C+UT+84405\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3854232855\">385.423.2855</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3854232855\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -514,8 +528,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1076+N.+County+Blvd.%2C+Ste.+D+Pleasant+Grove%2C+UT+84062",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -545,7 +561,7 @@
         "html": "<p class=\"provider-bio\">Free parking is available directly in front of the clinic building.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1076 N. County Blvd., Ste. D<br>Pleasant Grove, UT 84062</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014929934\">801.492.9934</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1076 N. County Blvd., Ste. D<br>Pleasant Grove, UT 84062</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=1076+N.+County+Blvd.%2C+Ste.+D+Pleasant+Grove%2C+UT+84062\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014929934\">801.492.9934</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8014929934\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -587,8 +603,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=389+S.+900+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84102",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -618,7 +636,7 @@
         "html": "<p class=\"provider-bio\">Street parking and nearby surface lots are available. The building entrance is ADA accessible from the main sidewalk.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3853475500\">385.347.5500</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=389+S.+900+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84102\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3853475500\">385.347.5500</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3853475500\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -700,8 +718,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=10808+S.+River+Front+Pkwy.%2C+South+Jordan%2C+UT",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -735,7 +755,7 @@
         "html": "<p class=\"provider-bio\">Free patient parking is available in the covered garage directly adjacent to our building. Accessible parking spaces are located near the main entrance on level 1. Take the elevator to Suite 400. If you're arriving via public transit, the UTA TRAX Red Line stops at the Daybreak Parkway station, roughly half a mile from the clinic.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">location_on</span> Address </h3> <p class=\"sidebar-contact-item\"> 10808 S. River Front Pkwy.<br> Suite 400<br> South Jordan, UT 84095 </p> <a href=\"#\" class=\"btn btn--primary btn--full\"> <span class=\"material-symbols-rounded\">directions</span> Get Directions </a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">phone</span> Contact </h3> <p class=\"sidebar-contact-item\"> <strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a> </p> <p class=\"sidebar-contact-item\"> <strong>Fax:</strong> 801.269.0298 </p> <p class=\"sidebar-contact-item\"> <strong>Email:</strong> <a href=\"mailto:info@utcancer.com\">info@utcancer.com</a> </p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit </h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">location_on</span> Address </h3> <p class=\"sidebar-contact-item\"> 10808 S. River Front Pkwy.<br> Suite 400<br> South Jordan, UT 84095 </p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=10808+S.+River+Front+Pkwy.%2C+South+Jordan%2C+UT\" class=\"btn btn--primary btn--full\"> <span class=\"material-symbols-rounded\">directions</span> Get Directions </a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">phone</span> Contact </h3> <p class=\"sidebar-contact-item\"> <strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a> </p> <p class=\"sidebar-contact-item\"> <strong>Fax:</strong> 801.269.0298 </p> <p class=\"sidebar-contact-item\"> <strong>Email:</strong> <a href=\"mailto:info@utcancer.com\">info@utcancer.com</a> </p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"> <span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit </h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8012690231\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "mapPlaceholder": true
   },
   {
@@ -751,8 +771,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=1250+E.+3900+S.%2C+Ste.+B-10+Salt+Lake+City%2C+UT+84124",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -782,7 +804,7 @@
         "html": "<p class=\"provider-bio\">Patient parking is available on the hospital campus. Follow signs to the cancer center entrance at Suite B-10.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014568401\">801.456.8401</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=1250+E.+3900+S.%2C+Ste.+B-10+Salt+Lake+City%2C+UT+84124\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014568401\">801.456.8401</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8014568401\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -826,8 +848,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+4th+Floor+E.+West+Valley+City%2C+UT+84119",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -857,7 +881,7 @@
         "html": "<p class=\"provider-bio\">Located on the 4th floor east wing of Fairbourne Station. Free parking is available in the building lot.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor E.<br>West Valley City, UT 84119</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8019074750\">801.907.4750</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor E.<br>West Valley City, UT 84119</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=2965+W.+3500+S.%2C+4th+Floor+E.+West+Valley+City%2C+UT+84119\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8019074750\">801.907.4750</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8019074750\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",
@@ -900,8 +924,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "#",
-          "class": "btn btn--white"
+          "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
         },
         "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
       },
@@ -931,7 +957,7 @@
         "html": "<p class=\"provider-bio\">Parking is available on the Timpanogos Regional Hospital campus. Follow signage to the cancer center at Suite 140.</p>"
       }
     ],
-    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">700 W. 800 N., Ste. 140<br>Orem, UT 84057</p> <a href=\"#\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3852412293\">385.241.2293</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"#\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">700 W. 800 N., Ste. 140<br>Orem, UT 84057</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3852412293\">385.241.2293</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3852412293\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
     "page": {
       "cta": {
         "heading": "Questions about your visit?",

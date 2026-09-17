@@ -504,7 +504,7 @@
       "links": [
         {
           "attrs": {
-            "href": "#",
+            "href": "/contact.html",
             "class": "btn btn--white"
           },
           "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us"

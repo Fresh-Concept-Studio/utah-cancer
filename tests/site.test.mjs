@@ -70,3 +70,43 @@ test('retired clinic URLs preserve their redirect, fallback link, and canonical 
     assert.equal($('link[rel="canonical"]').attr('href'),`https://fresh-concept-studio.github.io${base}/locations/index.html`);
   }
 });
+
+test('internal section links point to existing anchors', () => {
+  const origin = 'https://fresh-concept-studio.github.io';
+  const failures = [];
+  for (const [file, $] of pages) for (const a of $('a[href]').toArray()) {
+    const href = $(a).attr('href');
+    if (href === '#') continue; // Registration and other undecided destinations remain in the audit.
+    const target = new URL(href, `${origin}${base}/${file}`);
+    if (target.origin !== origin || !target.hash) continue;
+    let pathname = target.pathname.slice(base.length + 1);
+    if (!pathname || pathname.endsWith('/')) pathname += 'index.html';
+    const doc = pages.get(pathname);
+    const id = decodeURIComponent(target.hash.slice(1));
+    if (!doc || !doc('[id],[name]').toArray().some(e => e.attribs.id === id || e.attribs.name === id)) failures.push(`${file}: ${href}`);
+  }
+  assert.deepEqual(failures, []);
+});
+
+test('clinic appointment links call that clinic and event shares use the published page', () => {
+  for (const [file, $] of pages) {
+    if (file.startsWith('locations/') && $('.loc-hero-actions').length) {
+      const phone = $('.loc-hero-actions a[href^="tel:"]').attr('href');
+      const appointment = $('a').filter((_, e) => $(e).text().trim() === 'Request Appointment');
+      assert.equal(appointment.attr('href'), phone, file);
+      const directions = $('.loc-hero-actions a').filter((_, e) => $(e).text().includes('Get Directions'));
+      const dest = new URL(directions.attr('href'));
+      assert.equal(dest.pathname, '/maps/dir/', file);
+      assert.equal(dest.searchParams.get('api'), '1', file);
+      assert.match(dest.searchParams.get('destination'), /\d.+(?:UT|Utah)/, file);
+    }
+    if ($('.event-share').length) {
+      const canonical = `https://fresh-concept-studio.github.io${base}/${file}`;
+      for (const a of $('.event-share a').toArray()) {
+        const target = new URL($(a).attr('href'));
+        const key = target.protocol === 'mailto:' ? 'body' : target.hostname.includes('facebook') ? 'u' : 'url';
+        assert.equal(target.searchParams.get(key), canonical, `${file}: ${$(a).attr('aria-label')}`);
+      }
+    }
+  }
+});

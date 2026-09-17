@@ -9,7 +9,7 @@ export const menus = [
     { label: 'About', href: '/about.html' },
     { label: 'Leadership', href: '/leadership.html' },
     { label: 'Events', href: '/events/index.html' },
-    { label: 'Our Foundation', href: '/about.html#foundation' },
+    { label: 'Our Foundation', href: '/index.html#foundation' },
   ] },
   { label: 'Patient Resources', href: '/patient-resources.html', links: [
     { label: 'Newly Diagnosed', href: '/newly-diagnosed.html' },

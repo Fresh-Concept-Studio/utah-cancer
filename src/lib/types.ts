@@ -1,4 +1,4 @@
-export interface ContentLink { attrs: Record<string, string>; html: string }
+export interface ContentLink { attrs: { href: string; [attribute: string]: string | undefined }; html: string }
 export interface ContentSection { id?: string; title: string; html: string }
 export interface Tab { href: string; label: string }
 export interface PageData {

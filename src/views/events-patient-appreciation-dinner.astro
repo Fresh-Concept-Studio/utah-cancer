@@ -1,5 +1,6 @@
 ---
 import { url } from '../lib/urls';
+import EventShareLinks from '../components/EventShareLinks.astro';
 ---
 <!-- Event Hero -->
   <section class="event-detail-hero">
@@ -193,12 +194,7 @@ import { url } from '../lib/urls';
 
         <div class="sidebar-card">
           <h3 class="sidebar-card-title"><span class="material-symbols-rounded">share</span> Share</h3>
-          <div class="event-share">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Email"><span class="material-symbols-rounded">mail</span></a>
-          </div>
+          <EventShareLinks title="Annual Patient Appreciation Dinner" />
         </div>
       </aside>
     </div>
