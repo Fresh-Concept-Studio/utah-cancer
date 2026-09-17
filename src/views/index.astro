@@ -1,5 +1,6 @@
 ---
 import { url } from '../lib/urls';
+import MediaHighlights from '../components/MediaHighlights.astro';
 ---
 <!-- Hero Section -->
   <section class="hero">
@@ -287,50 +288,7 @@ import { url } from '../lib/urls';
       </section>
 
       <!-- News and media highlights -->
-      <aside class="media-breaker" id="media">
-        <a href="https://youtu.be/SX070PNyqUE" class="media-breaker-video" aria-label="Watch Dr. Justin Call and Katrina on KSL at Noon" target="_blank" rel="noopener">
-          <img src={url("/images/media-interview-640.webp")} width="640" height="427" alt="A Utah Cancer Specialists physician interviewed on a TV news set" loading="lazy" decoding="async">
-          <span class="media-breaker-play"><span class="material-symbols-rounded">play_arrow</span></span>
-          <span class="media-breaker-soon">KSL at Noon</span>
-        </a>
-        <span class="media-breaker-text">
-          <span class="media-breaker-title">Media Highlights</span>
-          <span class="media-breaker-desc">Our physicians share the latest in cancer care on Utah’s news networks.</span>
-          <span class="media-breaker-links" aria-label="Utah Cancer Specialists media appearances">
-            <span class="media-breaker-item">
-              <span>Joseph’s Story</span>
-              <span class="media-breaker-platforms">
-                <a href="https://youtube.com/shorts/pVM6P44YH7U?si=PS6z31eUwrZQVqSY" target="_blank" rel="noopener">YouTube</a>
-                <a href="https://www.instagram.com/reel/DYfaaFyxUdT/?utm_source=ig_web_copy_link&amp;igsi=MzRlODBiNWFlZA==" target="_blank" rel="noopener">Instagram</a>
-              </span>
-            </span>
-            <span class="media-breaker-item">
-              <span>Larry’s Story</span>
-              <span class="media-breaker-platforms">
-                <a href="https://youtube.com/shorts/Eb_i5Bpv_Fo?si=umE0W0c7t0h-nMts" target="_blank" rel="noopener">YouTube</a>
-                <a href="https://www.instagram.com/reel/DaiVEkuzhop/?utm_source=ig_web_copy_link&amp;igsi=MzRlODBiNWFlZA==" target="_blank" rel="noopener">Instagram</a>
-              </span>
-            </span>
-            <a class="media-breaker-item" href="https://youtu.be/b1RiTZt8_-s?si=3c6jydF6pHDTwuuj" target="_blank" rel="noopener">
-              <span>ABC4 · Good Things Utah</span>
-              <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
-            </a>
-            <a class="media-breaker-item" href="https://youtu.be/SX070PNyqUE" target="_blank" rel="noopener">
-              <span>KSL at Noon · Dr. Call &amp; Katrina</span>
-              <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
-            </a>
-          </span>
-          <span class="media-breaker-outlets">
-            <span class="media-breaker-outlets-label">As seen on these outlets</span>
-            <span class="media-breaker-logos">
-              <span class="media-breaker-logo"><img src={url("/images/logos/ksl.svg")} width="200" height="200" alt="KSL News" loading="lazy" decoding="async"></span>
-              <span class="media-breaker-logo"><img src={url("/images/logos/fox13.svg")} width="80" height="42" alt="FOX 13" loading="lazy" decoding="async"></span>
-              <span class="media-breaker-logo"><img src={url("/images/logos/abc4-100.webp")} width="100" height="96" alt="ABC4 Utah" loading="lazy" decoding="async"></span>
-              <span class="media-breaker-logo media-breaker-logotype">Good Things <strong>Utah</strong></span>
-            </span>
-          </span>
-        </span>
-      </aside>
+      <MediaHighlights />
     </div>
   </section>
 

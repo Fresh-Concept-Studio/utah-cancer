@@ -5,7 +5,7 @@ import { mainPhone } from '../data/contact';
 import { url, richHtml } from '../lib/urls';
 import DetailSections from './DetailSections.astro';
 import DetailTabs from './DetailTabs.astro';
-import SharedContent from './SharedContent.astro';
+import MediaHighlights from './MediaHighlights.astro';
 import ProviderSidebar from './ProviderSidebar.astro';
 import ContentLink from './ContentLink.astro';
 interface Props { slug: string }
@@ -45,4 +45,4 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
     </div>)}
   </div> : <p class="provider-bio"><a href={url('/locations/index.html')}>View our Utah locations</a> or call <a href={mainPhone.href}>{mainPhone.display}</a> for location information.</p>}
 </div></section>
-{provider.media && <SharedContent name={provider.media} />}
+<section class="provider-media"><div class="container"><MediaHighlights /></div></section>

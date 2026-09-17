@@ -4209,3 +4209,9 @@
   .rt-feature-callout { grid-template-columns: 1fr; gap: 24px; }
   .rt-feature-callout .btn { justify-self: start; }
 }
+
+/* Shared homepage highlights sit within the provider section spacing. */
+.provider-media .media-breaker {
+  margin-top: 0;
+  scroll-margin-top: 180px;
+}
