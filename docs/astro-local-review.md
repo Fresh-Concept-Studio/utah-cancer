@@ -15,12 +15,12 @@ Review date: September 15, 2026.
 Use the production preview, which serves the built output:
 
 - [Home](http://127.0.0.1:4323/utah-cancer/)
-- [Providers](http://127.0.0.1:4323/utah-cancer/providers/index.html)
-- [Locations and map](http://127.0.0.1:4323/utah-cancer/locations/index.html)
-- [Types of Cancer](http://127.0.0.1:4323/utah-cancer/specialties/index.html)
-- [Leadership](http://127.0.0.1:4323/utah-cancer/leadership.html)
-- [Clinical Trials](http://127.0.0.1:4323/utah-cancer/clinical-trials.html)
-- [Events](http://127.0.0.1:4323/utah-cancer/events/index.html)
+- [Providers](http://127.0.0.1:4323/utah-cancer/providers/)
+- [Locations and map](http://127.0.0.1:4323/utah-cancer/locations/)
+- [Types of Cancer](http://127.0.0.1:4323/utah-cancer/specialties/)
+- [Leadership](http://127.0.0.1:4323/utah-cancer/leadership/)
+- [Clinical Trials](http://127.0.0.1:4323/utah-cancer/clinical-trials/)
+- [Events](http://127.0.0.1:4323/utah-cancer/events/)
 
 The live-edit development server runs at http://127.0.0.1:4322/utah-cancer/.
 
@@ -31,7 +31,7 @@ The live-edit development server runs at http://127.0.0.1:4322/utah-cancer/.
 - Shared navigation, footer, calls to action, tabs, sidebar content, and browser behavior are defined once.
 - Provider, leadership, cancer-type, and location listings reference shared records. Clinic map markers are generated from location records. Repeated provider clinic cards reference 32 preserved address variants.
 - Page source is about 0.78 MB, compared with 2.84 MB of original HTML. Images were moved into `public/images/` unchanged.
-- Existing `.html` paths, directory indexes, metadata, page content, design, and clinic redirects are retained.
+- Page content and design are retained while public URLs use clean trailing-slash paths.
 - Documentation and a manual deployment workflow are prepared for the eventual approved release.
 
 ## Verification completed

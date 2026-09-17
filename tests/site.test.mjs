@@ -14,12 +14,15 @@ test('every content record has a detail page, and every directory card points to
   for (const [name, folder] of [['providers','providers'],['leaders','leadership'],['specialties','specialties'],['locations','locations']]) {
     const records = readData(name);
     assert.equal(new Set(records.map(p => p.slug)).size, records.length, `${name}: duplicate slug`);
-    for (const record of records) assert.ok(pages.has(`${folder}/${record.slug}.html`), `${folder}/${record.slug}`);
+    for (const record of records) assert.ok(pages.has(`${folder}/${record.slug}/index.html`), `${folder}/${record.slug}`);
   }
   for (const [file, selector, family] of [['providers/index.html','.provider-card','providers'],['specialties/index.html','.spec-card','specialties']]) {
     const $ = pages.get(file);
     assert.equal($(selector).length, readData(family).length);
-    for (const element of $(selector).toArray()) assert.ok(pages.has($(element).attr('href').slice(base.length+1)));
+    for (const element of $(selector).toArray()) {
+      const pathname = new URL($(element).attr('href'), 'https://site.test').pathname.slice(base.length + 1);
+      assert.ok(pages.has(`${pathname}index.html`));
+    }
   }
   const clinics = readData('provider-locations');
   for (const provider of readData('providers')) for (const id of provider.locationIds) assert.ok(clinics[id], `${provider.slug}: unknown clinic ${id}`);
@@ -170,7 +173,7 @@ test('legacy patient resources remain available without crowding global navigati
 });
 
 test('retired WordPress and former-location URLs are omitted from generated pages', () => {
-  for (const file of ['locations/idaho-falls.html', 'locations/madison.html', 'locations/teton.html', 'locations/wyoming.html']) {
+  for (const file of ['locations/idaho-falls/index.html', 'locations/madison/index.html', 'locations/teton/index.html', 'locations/wyoming/index.html']) {
     assert.equal(pages.has(file), false, `${file}: retired fallback should not be generated`);
   }
   const inventory = fs.readFileSync('docs/legacy-url-inventory.csv', 'utf8');
@@ -247,7 +250,7 @@ test('resolved event, foundation, and Provo actions use confirmed destinations',
     assert.equal(pages.has(file), false, file);
   }
 
-  const resources = pages.get('patient-resources.html');
+  const resources = pages.get('patient-resources/index.html');
   assert.equal(resources('a[href*="healthpay24"]').length, 0);
   const foundation = resources('button[data-coming-soon]').filter((_, element) => resources(element).text().includes('Utah Cancer Foundation'));
   assert.equal(foundation.length, 1);
@@ -255,7 +258,7 @@ test('resolved event, foundation, and Provo actions use confirmed destinations',
   for (const [file, $] of pages) assert.equal($('a[href*="healthpay24"]').length, 0, file);
 
   for (const slug of ['nathan-rich', 'staci-gunter', 'stephanie-ellis', 'william-stephenson']) {
-    const $ = pages.get(`providers/${slug}.html`);
+    const $ = pages.get(`providers/${slug}/index.html`);
     const card = $('.location-card').filter((_, element) => $(element).text().includes('Provo Clinic'));
     assert.equal(card.length, 1, slug);
     assert.match(card.text(), /395 W\. Cougar Blvd\./, slug);
@@ -265,8 +268,8 @@ test('resolved event, foundation, and Provo actions use confirmed destinations',
   const locations = pages.get('locations/index.html');
   const provoCard = locations('.loc-card').filter((_, element) => locations(element).text().includes('Provo Clinic'));
   assert.equal(provoCard.length, 1);
-  assert.equal(provoCard.attr('href'), `${base}/locations/provo.html`);
-  const provo = pages.get('locations/provo.html');
+  assert.equal(provoCard.attr('href'), `${base}/locations/provo/`);
+  const provo = pages.get('locations/provo/index.html');
   assert.match(provo('.loc-hero-meta').text(), /395 W\. Cougar Blvd\./);
   assert.equal(provo('.loc-hero-actions a[href^="tel:"]').attr('href'), 'tel:3853752700');
 });
@@ -284,7 +287,7 @@ test('clinic appointment links call that clinic and event shares use the publish
       assert.match(dest.searchParams.get('destination'), /\d.+(?:UT|Utah)/, file);
     }
     if ($('.event-share').length) {
-      const canonical = `${site}${base}/${file}`;
+      const canonical = `${site}${base}/${file.replace(/index\.html$/, '')}`;
       for (const a of $('.event-share a').toArray()) {
         const target = new URL($(a).attr('href'));
         const key = target.protocol === 'mailto:' ? 'body' : target.hostname.includes('facebook') ? 'u' : 'url';

@@ -1,17 +1,17 @@
 legacy_url,status,target_or_recommendation,reason
 https://utahcancer.com/utah-caner-specialists-patient-making-cancer-treatment-look-like-a-piece-of-cake/,no_change,https://utahcancer.com/utah-caner-specialists-patient-making-cancer-treatment-look-like-a-piece-of-cake/,News article recreated at its original URL
-https://utahcancer.com/dr-xylina-gregg-oncologist-at-utah-cancer-specialists-president-elect-of-sumo/,redirect,https://utahcancer.com/providers/xylina-gregg.html,Direct story or provider replacement
-https://utahcancer.com/amy-jensens-story/,redirect,https://utahcancer.com/stories/amy-jensen.html,Direct story or provider replacement
+https://utahcancer.com/dr-xylina-gregg-oncologist-at-utah-cancer-specialists-president-elect-of-sumo/,redirect,https://utahcancer.com/providers/xylina-gregg/,Direct story or provider replacement
+https://utahcancer.com/amy-jensens-story/,redirect,https://utahcancer.com/stories/amy-jensen/,Direct story or provider replacement
 https://utahcancer.com/attended-recent-event-to-support-cancer-patients-in-the-community/,no_change,https://utahcancer.com/attended-recent-event-to-support-cancer-patients-in-the-community/,News article recreated at its original URL
-https://utahcancer.com/a-milestone-of-hope/,redirect,https://utahcancer.com/stories/dukhi-hong.html,Direct story or provider replacement
+https://utahcancer.com/a-milestone-of-hope/,redirect,https://utahcancer.com/stories/dukhi-hong/,Direct story or provider replacement
 https://utahcancer.com/dr-william-stephensons-new-works-at-reflections-concert/,no_change,https://utahcancer.com/dr-william-stephensons-new-works-at-reflections-concert/,News article recreated at its original URL
 https://utahcancer.com/,no_change,https://utahcancer.com/,Homepage remains at the same URL
 https://utahcancer.com/covid-19-vaccine-update/,retire,Return 410,Obsolete COVID-19 vaccine guidance intentionally omitted
-https://utahcancer.com/head-and-neck-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/head-neck-cancers.html,Direct specialty replacement
+https://utahcancer.com/head-and-neck-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/head-neck-cancers/,Direct specialty replacement
 https://utahcancer.com/nosurprisesact/,no_change,https://utahcancer.com/nosurprisesact/,Policy page preserved at its existing public path with current wording
-https://utahcancer.com/newly-diagnosed/,redirect,https://utahcancer.com/newly-diagnosed.html,Direct replacement
-https://utahcancer.com/patient-education/,redirect,https://utahcancer.com/patient-education.html,Direct replacement
-https://utahcancer.com/education-videos/,redirect,https://utahcancer.com/patient-education.html,Educational content consolidated on the current Patient Education page
+https://utahcancer.com/newly-diagnosed/,redirect,https://utahcancer.com/newly-diagnosed/,Direct replacement
+https://utahcancer.com/patient-education/,redirect,https://utahcancer.com/patient-education/,Direct replacement
+https://utahcancer.com/education-videos/,redirect,https://utahcancer.com/patient-education/,Educational content consolidated on the current Patient Education page
 https://utahcancer.com/articles/,no_change,https://utahcancer.com/articles/,News index recreated at its original URL
 https://utahcancer.com/termsandconditions/,no_change,https://utahcancer.com/termsandconditions/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/covid-19/,retire,Return 410,Obsolete 2021 visitor and COVID-19 guidance intentionally omitted
@@ -21,164 +21,164 @@ https://utahcancer.com/nutrition/,no_change,https://utahcancer.com/nutrition/,Re
 https://utahcancer.com/personalsafety/,no_change,https://utahcancer.com/personalsafety/,Recreated at the original URL with current crisis and safety contacts
 https://utahcancer.com/cleaning/,no_change,https://utahcancer.com/cleaning/,Recreated at the original URL with current program details
 https://utahcancer.com/transportation/,no_change,https://utahcancer.com/transportation/,Recreated at the original URL with current transportation links
-https://utahcancer.com/benign-hematology-treatment-in-utah/,redirect,https://utahcancer.com/specialties/benign-hematology.html,Direct specialty replacement
-https://utahcancer.com/bladder-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bladder-cancer.html,Direct specialty replacement
-https://utahcancer.com/blood-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/blood-cancers.html,Direct specialty replacement
-https://utahcancer.com/bone-cancer-osteosarcomas-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bone-cancers.html,Direct specialty replacement
-https://utahcancer.com/bone-marrow-failure-syndromes-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bone-marrow-failure.html,Direct specialty replacement
-https://utahcancer.com/brain-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/brain-cancers.html,Direct specialty replacement
-https://utahcancer.com/breast-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/breast-cancer.html,Direct specialty replacement
-https://utahcancer.com/chronic-leukemia-treatment-in-utah/,redirect,https://utahcancer.com/specialties/chronic-leukemias.html,Direct specialty replacement
-https://utahcancer.com/colon-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/colon-cancer.html,Direct specialty replacement
+https://utahcancer.com/benign-hematology-treatment-in-utah/,redirect,https://utahcancer.com/specialties/benign-hematology/,Direct specialty replacement
+https://utahcancer.com/bladder-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bladder-cancer/,Direct specialty replacement
+https://utahcancer.com/blood-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/blood-cancers/,Direct specialty replacement
+https://utahcancer.com/bone-cancer-osteosarcomas-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bone-cancers/,Direct specialty replacement
+https://utahcancer.com/bone-marrow-failure-syndromes-treatment-in-utah/,redirect,https://utahcancer.com/specialties/bone-marrow-failure/,Direct specialty replacement
+https://utahcancer.com/brain-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/brain-cancers/,Direct specialty replacement
+https://utahcancer.com/breast-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/breast-cancer/,Direct specialty replacement
+https://utahcancer.com/chronic-leukemia-treatment-in-utah/,redirect,https://utahcancer.com/specialties/chronic-leukemias/,Direct specialty replacement
+https://utahcancer.com/colon-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/colon-cancer/,Direct specialty replacement
 https://utahcancer.com/covid-19-vaccine/,retire,Return 410,Obsolete COVID-19 vaccine availability guidance intentionally omitted
 https://utahcancer.com/dignicap/,no_change,https://utahcancer.com/dignicap/,Recreated at the original URL and linked from the Amy Jensen story
 https://utahcancer.com/discalaimer/,no_change,https://utahcancer.com/discalaimer/,Policy page preserved at its existing public path with current wording
-https://utahcancer.com/endocrine-tumor-treatment-in-utah/,redirect,https://utahcancer.com/specialties/endocrine-tumors.html,Direct specialty replacement
-https://utahcancer.com/esophageal-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/esophageal-cancer.html,Direct specialty replacement
-https://utahcancer.com/kidney-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/kidney-cancer.html,Direct specialty replacement
-https://utahcancer.com/liver-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/liver-cancer.html,Direct specialty replacement
-https://utahcancer.com/lung-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/lung-cancer.html,Direct specialty replacement
-https://utahcancer.com/lymphoma-treatment-in-utah/,redirect,https://utahcancer.com/specialties/lymphomas.html,Direct specialty replacement
-https://utahcancer.com/multiple-myeloma-treatment-in-utah/,redirect,https://utahcancer.com/specialties/multiple-myeloma.html,Direct specialty replacement
-https://utahcancer.com/myeloproliferative-disorders-treatment-in-utah/,redirect,https://utahcancer.com/specialties/myeloproliferative-disorders.html,Direct specialty replacement
-https://utahcancer.com/ovarian-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/ovarian-cancer.html,Direct specialty replacement
-https://utahcancer.com/pancreatic-gallbladder-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/pancreatic-gallbladder-cancer.html,Direct specialty replacement
-https://utahcancer.com/patient-advocacy/,redirect,https://utahcancer.com/programs-and-services.html#patient-advocacy,Direct replacement section for patient advocacy
-https://utahcancer.com/prostate-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/prostate-cancer.html,Direct specialty replacement
-https://utahcancer.com/rectal-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/rectal-cancer.html,Direct specialty replacement
-https://utahcancer.com/small-bowel-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/small-bowel-cancers.html,Direct specialty replacement
-https://utahcancer.com/soft-tissue-cancers-sarcomas-treatment-in-utah/,redirect,https://utahcancer.com/specialties/soft-tissue-sarcomas.html,Direct specialty replacement
-https://utahcancer.com/stomach-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/stomach-cancer.html,Direct specialty replacement
-https://utahcancer.com/thyroid-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/thyroid-cancer.html,Direct specialty replacement
-https://utahcancer.com/uterine-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/uterine-cancer.html,Direct specialty replacement
+https://utahcancer.com/endocrine-tumor-treatment-in-utah/,redirect,https://utahcancer.com/specialties/endocrine-tumors/,Direct specialty replacement
+https://utahcancer.com/esophageal-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/esophageal-cancer/,Direct specialty replacement
+https://utahcancer.com/kidney-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/kidney-cancer/,Direct specialty replacement
+https://utahcancer.com/liver-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/liver-cancer/,Direct specialty replacement
+https://utahcancer.com/lung-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/lung-cancer/,Direct specialty replacement
+https://utahcancer.com/lymphoma-treatment-in-utah/,redirect,https://utahcancer.com/specialties/lymphomas/,Direct specialty replacement
+https://utahcancer.com/multiple-myeloma-treatment-in-utah/,redirect,https://utahcancer.com/specialties/multiple-myeloma/,Direct specialty replacement
+https://utahcancer.com/myeloproliferative-disorders-treatment-in-utah/,redirect,https://utahcancer.com/specialties/myeloproliferative-disorders/,Direct specialty replacement
+https://utahcancer.com/ovarian-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/ovarian-cancer/,Direct specialty replacement
+https://utahcancer.com/pancreatic-gallbladder-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/pancreatic-gallbladder-cancer/,Direct specialty replacement
+https://utahcancer.com/patient-advocacy/,redirect,https://utahcancer.com/programs-and-services/#patient-advocacy,Direct replacement section for patient advocacy
+https://utahcancer.com/prostate-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/prostate-cancer/,Direct specialty replacement
+https://utahcancer.com/rectal-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/rectal-cancer/,Direct specialty replacement
+https://utahcancer.com/small-bowel-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/small-bowel-cancers/,Direct specialty replacement
+https://utahcancer.com/soft-tissue-cancers-sarcomas-treatment-in-utah/,redirect,https://utahcancer.com/specialties/soft-tissue-sarcomas/,Direct specialty replacement
+https://utahcancer.com/stomach-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/stomach-cancer/,Direct specialty replacement
+https://utahcancer.com/thyroid-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/thyroid-cancer/,Direct specialty replacement
+https://utahcancer.com/uterine-cancer-treatment-in-utah/,redirect,https://utahcancer.com/specialties/uterine-cancer/,Direct specialty replacement
 https://utahcancer.com/steel-memorial/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
 https://utahcancer.com/wyoming/,retire,Return 410,Former Wyoming clinic intentionally omitted from the Utah site
 https://utahcancer.com/all-locations/,redirect,https://utahcancer.com/locations/,Direct replacement
 https://utahcancer.com/locations-and-physicians/,redirect,https://utahcancer.com/locations/,Direct replacement
-https://utahcancer.com/a-team-approach/,redirect,https://utahcancer.com/programs-and-services.html,Consolidated multidisciplinary care and support content
-https://utahcancer.com/educational-resources/,redirect,https://utahcancer.com/patient-resources.html,Direct replacement
-https://utahcancer.com/telehealth/,redirect,https://utahcancer.com/telehealth.html,Direct replacement
+https://utahcancer.com/a-team-approach/,redirect,https://utahcancer.com/programs-and-services/,Consolidated multidisciplinary care and support content
+https://utahcancer.com/educational-resources/,redirect,https://utahcancer.com/patient-resources/,Direct replacement
+https://utahcancer.com/telehealth/,redirect,https://utahcancer.com/telehealth/,Direct replacement
 https://utahcancer.com/medically-integrated-pharmacy/,no_change,https://utahcancer.com/medically-integrated-pharmacy/,Recreated at the original URL and linked from service hubs
 https://utahcancer.com/cancers-we-treat/,redirect,https://utahcancer.com/specialties/,Direct replacement
-https://utahcancer.com/treatment-options/,redirect,https://utahcancer.com/treatment-options.html,Direct replacement
-https://utahcancer.com/patient-resources/,redirect,https://utahcancer.com/patient-resources.html,Direct replacement
-https://utahcancer.com/clinical-trials/,redirect,https://utahcancer.com/clinical-trials.html,Direct replacement
+https://utahcancer.com/treatment-options/,redirect,https://utahcancer.com/treatment-options/,Direct replacement
+https://utahcancer.com/patient-resources/,redirect,https://utahcancer.com/patient-resources/,Direct replacement
+https://utahcancer.com/clinical-trials/,redirect,https://utahcancer.com/clinical-trials/,Direct replacement
 https://utahcancer.com/madison-health/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
 https://utahcancer.com/teton-valley-health-care/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
-https://utahcancer.com/startmountainregion/,redirect,https://utahcancer.com/locations/start.html,Direct location replacement
-https://utahcancer.com/bountiful/,redirect,https://utahcancer.com/locations/bountiful.html,Direct location replacement
-https://utahcancer.com/davis-hospital-campus/,redirect,https://utahcancer.com/locations/layton.html,Same medical oncology address as the current Layton clinic
-https://utahcancer.com/timpanogos/,redirect,https://utahcancer.com/locations/timpanogos.html,Direct location replacement
-https://utahcancer.com/about-utah-cancer-specialists/,redirect,https://utahcancer.com/about.html,Direct replacement
-https://utahcancer.com/patient-education-empowering-individuals-through-knowledge/,redirect,https://utahcancer.com/patient-education.html,Current Patient Education page replaces the duplicated general guide
-https://utahcancer.com/patient-education-empowering-individuals-through-knowledge/brain-tumors-the-basics/,redirect,https://utahcancer.com/specialties/brain-cancers.html,Brain Cancer specialty page is the closest maintained replacement
+https://utahcancer.com/startmountainregion/,redirect,https://utahcancer.com/locations/start/,Direct location replacement
+https://utahcancer.com/bountiful/,redirect,https://utahcancer.com/locations/bountiful/,Direct location replacement
+https://utahcancer.com/davis-hospital-campus/,redirect,https://utahcancer.com/locations/layton/,Same medical oncology address as the current Layton clinic
+https://utahcancer.com/timpanogos/,redirect,https://utahcancer.com/locations/timpanogos/,Direct location replacement
+https://utahcancer.com/about-utah-cancer-specialists/,redirect,https://utahcancer.com/about/,Direct replacement
+https://utahcancer.com/patient-education-empowering-individuals-through-knowledge/,redirect,https://utahcancer.com/patient-education/,Current Patient Education page replaces the duplicated general guide
+https://utahcancer.com/patient-education-empowering-individuals-through-knowledge/brain-tumors-the-basics/,redirect,https://utahcancer.com/specialties/brain-cancers/,Brain Cancer specialty page is the closest maintained replacement
 https://utahcancer.com/patient-privacy/,no_change,https://utahcancer.com/patient-privacy/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/privacy-policy/,no_change,https://utahcancer.com/privacy-policy/,Policy page preserved at its existing public path with current wording
-https://utahcancer.com/pleasant-grove/,redirect,https://utahcancer.com/locations/pleasant-grove.html,Direct location replacement
-https://utahcancer.com/utah-valley-hospital/,redirect,https://utahcancer.com/locations/provo.html,Same address as the current Provo clinic
+https://utahcancer.com/pleasant-grove/,redirect,https://utahcancer.com/locations/pleasant-grove/,Direct location replacement
+https://utahcancer.com/utah-valley-hospital/,redirect,https://utahcancer.com/locations/provo/,Same address as the current Provo clinic
 https://utahcancer.com/ucs-tooele/,retire,Return 410,Former Utah clinic has no matching current location
-https://utahcancer.com/st-marks-hospital-radiation/,redirect,https://utahcancer.com/locations/st-marks.html,Direct location replacement
-https://utahcancer.com/salt-lake/,redirect,https://utahcancer.com/locations/salt-lake.html,Direct location replacement
+https://utahcancer.com/st-marks-hospital-radiation/,redirect,https://utahcancer.com/locations/st-marks/,Direct location replacement
+https://utahcancer.com/salt-lake/,redirect,https://utahcancer.com/locations/salt-lake/,Direct location replacement
 https://utahcancer.com/idahofalls/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
-https://utahcancer.com/job-application/,redirect,https://utahcancer.com/careers.html,Direct replacement
-https://utahcancer.com/cancer-center/,redirect,https://utahcancer.com/locations/cancer-center.html,Direct location replacement
-https://utahcancer.com/west-jordan/,redirect,https://utahcancer.com/locations/jordan-valley.html,Direct location replacement
+https://utahcancer.com/job-application/,redirect,https://utahcancer.com/careers/,Direct replacement
+https://utahcancer.com/cancer-center/,redirect,https://utahcancer.com/locations/cancer-center/,Direct location replacement
+https://utahcancer.com/west-jordan/,redirect,https://utahcancer.com/locations/jordan-valley/,Direct location replacement
 https://utahcancer.com/supportivecare/,no_change,https://utahcancer.com/supportivecare/,Recreated at the original URL and linked from Programs & Services
-https://utahcancer.com/ogden/,redirect,https://utahcancer.com/locations/ogden.html,Direct location replacement
-https://utahcancer.com/radiation-oncology/,redirect,https://utahcancer.com/radiation-oncology.html,Direct replacement
-https://utahcancer.com/intermountain-medical-center-campus/,redirect,https://utahcancer.com/locations/imc.html,Direct location replacement
-https://utahcancer.com/fairbourne/,redirect,https://utahcancer.com/locations/granger.html,Direct location replacement
+https://utahcancer.com/ogden/,redirect,https://utahcancer.com/locations/ogden/,Direct location replacement
+https://utahcancer.com/radiation-oncology/,redirect,https://utahcancer.com/radiation-oncology/,Direct replacement
+https://utahcancer.com/intermountain-medical-center-campus/,redirect,https://utahcancer.com/locations/imc/,Direct location replacement
+https://utahcancer.com/fairbourne/,redirect,https://utahcancer.com/locations/granger/,Direct location replacement
 https://utahcancer.com/test/,retire,Return 410,WordPress test content intentionally omitted
 https://utahcancer.com/team-members-2/,redirect,https://utahcancer.com/providers/,Direct replacement
 https://utahcancer.com/breathwork-class/,no_change,https://utahcancer.com/breathwork-class/,Recreated at the original URL and linked from Programs & Services
-https://utahcancer.com/programs-and-services/,redirect,https://utahcancer.com/programs-and-services.html,Direct replacement
-https://utahcancer.com/contact/,redirect,https://utahcancer.com/contact.html,Direct replacement
+https://utahcancer.com/programs-and-services/,redirect,https://utahcancer.com/programs-and-services/,Direct replacement
+https://utahcancer.com/contact/,redirect,https://utahcancer.com/contact/,Direct replacement
 https://utahcancer.com/test-page/,retire,Return 410,WordPress test content intentionally omitted
-https://utahcancer.com/late-phase-trials/,redirect,https://utahcancer.com/late-phase-trials.html,Direct replacement
+https://utahcancer.com/late-phase-trials/,redirect,https://utahcancer.com/late-phase-trials/,Direct replacement
 https://utahcancer.com/bingham-healthcare/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site
 https://utahcancer.com/low-dose-radiation-therapy-ldrt/,no_change,https://utahcancer.com/low-dose-radiation-therapy-ldrt/,Recreated at the original URL and linked from Radiation Oncology
-https://utahcancer.com/cancer-rehabilitation-centers/,redirect,https://utahcancer.com/physical-therapy.html,Current Physical Therapy page preserves the same clinic and service
-https://utahcancer.com/jobs/,redirect,https://utahcancer.com/careers.html,Direct replacement
+https://utahcancer.com/cancer-rehabilitation-centers/,redirect,https://utahcancer.com/physical-therapy/,Current Physical Therapy page preserves the same clinic and service
+https://utahcancer.com/jobs/,redirect,https://utahcancer.com/careers/,Direct replacement
 https://utahcancer.com/team-members/,redirect,https://utahcancer.com/providers/,Direct replacement
-https://utahcancer.com/team-members/brighton-loveday/,redirect,https://utahcancer.com/providers/brighton-loveday.html,Direct provider replacement
-https://utahcancer.com/team-members/sunita-sigdel-anp/,redirect,https://utahcancer.com/providers/sunita-sigdel.html,Direct provider replacement
-https://utahcancer.com/team-members/robert-isaak-md/,redirect,https://utahcancer.com/providers/robert-isaak.html,Direct provider replacement
-https://utahcancer.com/team-members/jared-e-scott-ag-acnp-ag-accns/,redirect,https://utahcancer.com/providers/jared-scott.html,Direct provider replacement
-https://utahcancer.com/team-members/jose-pacheco-md/,redirect,https://utahcancer.com/providers/jose-pacheco.html,Direct provider replacement
-https://utahcancer.com/team-members/hyrum-prestwich/,redirect,https://utahcancer.com/providers/hyrum-prestwich.html,Direct provider replacement
-https://utahcancer.com/team-members/bonnie-wallace-fnp-c/,redirect,https://utahcancer.com/providers/bonnie-wallace.html,Direct provider replacement
-https://utahcancer.com/team-members/andrew-aloia/,redirect,https://utahcancer.com/providers/andrew-aloia.html,Direct provider replacement
-https://utahcancer.com/team-members/anita-mcdonald/,redirect,https://utahcancer.com/providers/anita-mcdonald.html,Direct provider replacement
-https://utahcancer.com/team-members/julie-luckart/,redirect,https://utahcancer.com/providers/julie-luckart.html,Direct provider replacement
-https://utahcancer.com/team-members/kylee-maliwauki/,redirect,https://utahcancer.com/providers/kylee-maliwauki.html,Direct provider replacement
-https://utahcancer.com/team-members/maja-lusk/,redirect,https://utahcancer.com/providers/maja-lusk.html,Direct provider replacement
-https://utahcancer.com/team-members/nancy-walker-mortensen/,redirect,https://utahcancer.com/providers/nancy-mortensen.html,Direct provider replacement
-https://utahcancer.com/team-members/shauna-olsen/,redirect,https://utahcancer.com/providers/shauna-olsen.html,Direct provider replacement
-https://utahcancer.com/team-members/anne-marceau/,redirect,https://utahcancer.com/providers/anne-marceau.html,Direct provider replacement
-https://utahcancer.com/team-members/brittany-weed/,redirect,https://utahcancer.com/providers/brittany-weed.html,Direct provider replacement
-https://utahcancer.com/team-members/julie-p-balk/,redirect,https://utahcancer.com/providers/julie-balk.html,Direct provider replacement
-https://utahcancer.com/team-members/staci-gunter/,redirect,https://utahcancer.com/providers/staci-gunter.html,Direct provider replacement
-https://utahcancer.com/team-members/deborah-hatch/,redirect,https://utahcancer.com/providers/deborah-hatch.html,Direct provider replacement
-https://utahcancer.com/team-members/richard-e-hanson/,redirect,https://utahcancer.com/providers/rik-hanson.html,Direct provider replacement
-https://utahcancer.com/team-members/whitman-reed/,redirect,https://utahcancer.com/providers/hyatt-reed.html,Direct provider replacement
-https://utahcancer.com/team-members/kim-mcfee/,redirect,https://utahcancer.com/providers/kimberly-mcfee.html,Direct provider replacement
-https://utahcancer.com/team-members/louise-tobey/,redirect,https://utahcancer.com/providers/louise-tobey.html,Direct provider replacement
-https://utahcancer.com/team-members/samantha-gaffney/,redirect,https://utahcancer.com/providers/samantha-gaffney.html,Direct provider replacement
-https://utahcancer.com/team-members/c-leland-rogers/,redirect,https://utahcancer.com/providers/leland-rogers.html,Direct provider replacement
-https://utahcancer.com/team-members/daniel-miller/,redirect,https://utahcancer.com/providers/daniel-miller.html,Direct provider replacement
+https://utahcancer.com/team-members/brighton-loveday/,redirect,https://utahcancer.com/providers/brighton-loveday/,Direct provider replacement
+https://utahcancer.com/team-members/sunita-sigdel-anp/,redirect,https://utahcancer.com/providers/sunita-sigdel/,Direct provider replacement
+https://utahcancer.com/team-members/robert-isaak-md/,redirect,https://utahcancer.com/providers/robert-isaak/,Direct provider replacement
+https://utahcancer.com/team-members/jared-e-scott-ag-acnp-ag-accns/,redirect,https://utahcancer.com/providers/jared-scott/,Direct provider replacement
+https://utahcancer.com/team-members/jose-pacheco-md/,redirect,https://utahcancer.com/providers/jose-pacheco/,Direct provider replacement
+https://utahcancer.com/team-members/hyrum-prestwich/,redirect,https://utahcancer.com/providers/hyrum-prestwich/,Direct provider replacement
+https://utahcancer.com/team-members/bonnie-wallace-fnp-c/,redirect,https://utahcancer.com/providers/bonnie-wallace/,Direct provider replacement
+https://utahcancer.com/team-members/andrew-aloia/,redirect,https://utahcancer.com/providers/andrew-aloia/,Direct provider replacement
+https://utahcancer.com/team-members/anita-mcdonald/,redirect,https://utahcancer.com/providers/anita-mcdonald/,Direct provider replacement
+https://utahcancer.com/team-members/julie-luckart/,redirect,https://utahcancer.com/providers/julie-luckart/,Direct provider replacement
+https://utahcancer.com/team-members/kylee-maliwauki/,redirect,https://utahcancer.com/providers/kylee-maliwauki/,Direct provider replacement
+https://utahcancer.com/team-members/maja-lusk/,redirect,https://utahcancer.com/providers/maja-lusk/,Direct provider replacement
+https://utahcancer.com/team-members/nancy-walker-mortensen/,redirect,https://utahcancer.com/providers/nancy-mortensen/,Direct provider replacement
+https://utahcancer.com/team-members/shauna-olsen/,redirect,https://utahcancer.com/providers/shauna-olsen/,Direct provider replacement
+https://utahcancer.com/team-members/anne-marceau/,redirect,https://utahcancer.com/providers/anne-marceau/,Direct provider replacement
+https://utahcancer.com/team-members/brittany-weed/,redirect,https://utahcancer.com/providers/brittany-weed/,Direct provider replacement
+https://utahcancer.com/team-members/julie-p-balk/,redirect,https://utahcancer.com/providers/julie-balk/,Direct provider replacement
+https://utahcancer.com/team-members/staci-gunter/,redirect,https://utahcancer.com/providers/staci-gunter/,Direct provider replacement
+https://utahcancer.com/team-members/deborah-hatch/,redirect,https://utahcancer.com/providers/deborah-hatch/,Direct provider replacement
+https://utahcancer.com/team-members/richard-e-hanson/,redirect,https://utahcancer.com/providers/rik-hanson/,Direct provider replacement
+https://utahcancer.com/team-members/whitman-reed/,redirect,https://utahcancer.com/providers/hyatt-reed/,Direct provider replacement
+https://utahcancer.com/team-members/kim-mcfee/,redirect,https://utahcancer.com/providers/kimberly-mcfee/,Direct provider replacement
+https://utahcancer.com/team-members/louise-tobey/,redirect,https://utahcancer.com/providers/louise-tobey/,Direct provider replacement
+https://utahcancer.com/team-members/samantha-gaffney/,redirect,https://utahcancer.com/providers/samantha-gaffney/,Direct provider replacement
+https://utahcancer.com/team-members/c-leland-rogers/,redirect,https://utahcancer.com/providers/leland-rogers/,Direct provider replacement
+https://utahcancer.com/team-members/daniel-miller/,redirect,https://utahcancer.com/providers/daniel-miller/,Direct provider replacement
 https://utahcancer.com/team-members/dustin-l-boothe/,redirect,https://utahcancer.com/providers/,Provider no longer listed
 https://utahcancer.com/team-members/grant-k-hunter/,redirect,https://utahcancer.com/providers/,Provider no longer listed
-https://utahcancer.com/team-members/james-w-clarke/,redirect,https://utahcancer.com/providers/james-clarke.html,Direct provider replacement
-https://utahcancer.com/team-members/john-hayes/,redirect,https://utahcancer.com/providers/john-hayes.html,Direct provider replacement
+https://utahcancer.com/team-members/james-w-clarke/,redirect,https://utahcancer.com/providers/james-clarke/,Direct provider replacement
+https://utahcancer.com/team-members/john-hayes/,redirect,https://utahcancer.com/providers/john-hayes/,Direct provider replacement
 https://utahcancer.com/team-members/r-jeffrey-lee/,redirect,https://utahcancer.com/providers/,Provider no longer listed
 https://utahcancer.com/team-members/rachel-shenker-md/,redirect,https://utahcancer.com/providers/,Provider no longer listed
-https://utahcancer.com/team-members/robert-a-harris/,redirect,https://utahcancer.com/providers/robert-harris.html,Direct provider replacement
-https://utahcancer.com/team-members/thomas-b-skidmore/,redirect,https://utahcancer.com/providers/thomas-skidmore.html,Direct provider replacement
-https://utahcancer.com/team-members/belisario-arango/,redirect,https://utahcancer.com/providers/belisario-arango.html,Direct provider replacement
-https://utahcancer.com/team-members/benjamin-l-solomon/,redirect,https://utahcancer.com/providers/benjamin-solomon.html,Direct provider replacement
-https://utahcancer.com/team-members/david-e-warner/,redirect,https://utahcancer.com/providers/david-warner.html,Direct provider replacement
-https://utahcancer.com/team-members/gary-garner/,redirect,https://utahcancer.com/providers/gary-garner.html,Direct provider replacement
-https://utahcancer.com/team-members/greg-litton/,redirect,https://utahcancer.com/providers/greg-litton.html,Direct provider replacement
-https://utahcancer.com/team-members/greg-chipman/,redirect,https://utahcancer.com/providers/gregory-chipman.html,Direct provider replacement
-https://utahcancer.com/team-members/james-shortridge/,redirect,https://utahcancer.com/providers/james-shortridge.html,Direct provider replacement
-https://utahcancer.com/team-members/jason-stinnett/,redirect,https://utahcancer.com/providers/jason-stinnett.html,Direct provider replacement
-https://utahcancer.com/team-members/jonathan-whisenant/,redirect,https://utahcancer.com/providers/jonathan-whisenant.html,Direct provider replacement
-https://utahcancer.com/team-members/justin-a-call/,redirect,https://utahcancer.com/providers/justin-call.html,Direct provider replacement
-https://utahcancer.com/team-members/lindsay-hunter/,redirect,https://utahcancer.com/providers/lindsay-hunter.html,Direct provider replacement
-https://utahcancer.com/team-members/nathan-rich/,redirect,https://utahcancer.com/providers/nathan-rich.html,Direct provider replacement
-https://utahcancer.com/team-members/robert-a-havard/,redirect,https://utahcancer.com/providers/robert-havard.html,Direct provider replacement
-https://utahcancer.com/team-members/disean-kendall/,redirect,https://utahcancer.com/providers/disean-kendall.html,Direct provider replacement
-https://utahcancer.com/team-members/scott-samuelson/,redirect,https://utahcancer.com/providers/scott-samuelson.html,Direct provider replacement
-https://utahcancer.com/team-members/tylan-magnusson/,redirect,https://utahcancer.com/providers/tylan-magnusson.html,Direct provider replacement
-https://utahcancer.com/team-members/wayne-ormsby/,redirect,https://utahcancer.com/providers/wayne-ormsby.html,Direct provider replacement
-https://utahcancer.com/team-members/william-b-mckean/,redirect,https://utahcancer.com/providers/william-mckean.html,Direct provider replacement
-https://utahcancer.com/team-members/william-nibley/,redirect,https://utahcancer.com/providers/william-nibley.html,Direct provider replacement
-https://utahcancer.com/team-members/william-t-stephenson-ii/,redirect,https://utahcancer.com/providers/william-stephenson.html,Direct provider replacement
-https://utahcancer.com/team-members/xylina-gregg/,redirect,https://utahcancer.com/providers/xylina-gregg.html,Direct provider replacement
-https://utahcancer.com/team-members/nitin-chandramouli/,redirect,https://utahcancer.com/providers/nitin-chandramouli.html,Direct provider replacement
-https://utahcancer.com/team-members/douglas-holt/,redirect,https://utahcancer.com/providers/douglas-holt.html,Direct provider replacement
-https://utahcancer.com/team-members/stephanie-ellis/,redirect,https://utahcancer.com/providers/stephanie-ellis.html,Direct provider replacement
-https://utahcancer.com/team-members/makaylie-s-crowther-dnp-fnp-c/,redirect,https://utahcancer.com/providers/makaylie-crowther.html,Direct provider replacement
-https://utahcancer.com/team-members/heather-mcgivern/,redirect,https://utahcancer.com/providers/heather-mcgivern.html,Direct provider replacement
-https://utahcancer.com/team-members/nidhi-sharma-dnp-fnp-c/,redirect,https://utahcancer.com/providers/nidhi-sharma.html,Direct provider replacement
-https://utahcancer.com/cancer-trial/elacestrant-versus-standard-endocrine-therapy-in-women-and-men-with-node-positive-estrogen-receptor-positive-her2-negative-early-breast-cancer-with-high-risk-of-recurrence/,redirect,https://utahcancer.com/late-phase-trials.html#trials-breast,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-study-of-bispecific-antibody-mcla-158-in-patients-with-advanced-solid-tumors/,redirect,https://utahcancer.com/late-phase-trials.html#trials-colorectal,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-global-study-of-volrustomig-medi5752-for-participants-with-unresected-locally-advanced-head-and-neck-squamous-cell-carcinoma-following-definitive-concurrent-chemoradiotherapy-evolve-hnscc/,redirect,https://utahcancer.com/late-phase-trials.html#trials-head-neck,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/study-of-daraxonrasib-rmc-6236-in-previously-treated-patients-with-ras-mutated-nsclc-rasolve-301/,redirect,https://utahcancer.com/late-phase-trials.html#trials-lung-rmc,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/selective-trka-inhibitor-vmd-928-to-treat-trka-overexpression-driven-solid-tumors-or-lymphoma/,redirect,https://utahcancer.com/late-phase-trials.html#trials-all-comers,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/observation-of-residual-cancer-with-liquid-biopsy-evaluation-oracle/,redirect,https://utahcancer.com/late-phase-trials.html#trials-observational,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-phase-3-study-of-setidegrasib-with-mfolfirinox-or-nalirifox-in-kras-g12d-mutated-metastatic-pancreatic-adenocarcinoma/,redirect,https://utahcancer.com/late-phase-trials.html#trials-pancreatic,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-phase-2-single-arm-study-of-incb123667-in-participants-with-platinum-resistant-ovarian-cancer-with-cyclin-e1-overexpression-maestra-1/,redirect,https://utahcancer.com/late-phase-trials.html#trials-ovarian,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-study-of-pasritamig-versus-placebo-in-late-line-metastatic-castration-resistant-prostate-cancer-mcrpc/,redirect,https://utahcancer.com/late-phase-trials.html#trials-prostate,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/phase-iii-study-of-ivonescimab-or-bevacizumab-combined-with-folfox-in-patients-with-metastatic-colorectal-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-metastatic-colorectal,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/clinical-study-of-ivonescimab-for-first-line-treatment-of-metastatic-nsclc-patients-with-high-pd-l1/,redirect,https://utahcancer.com/late-phase-trials.html#trials-lung-rmc,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-phase-3-randomized-multicenter-open-label-study-of-idrx-42-gsk6042981-versus-sunitinib-in-participants-with-metastatic-and-or-unresectable-gastrointestinal-stromal-tumors-gist-after-imatinib/,redirect,https://utahcancer.com/late-phase-trials.html#trials-gist,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/study-of-trastuzumab-deruxtecan-with-bevacizumab-versus-bevacizumab-monotherapy-for-first-line-maintenance-in-her2-expressing-ovarian-cancer-destiny-ovarian01/,redirect,https://utahcancer.com/late-phase-trials.html#trials-ovarian,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-phase-ii-iii-multisite-randomized-master-protocol-for-a-global-trial-of-bnt327-in-combination-with-chemotherapy-and-other-investigational-agents-in-first-line-non-small-cell-lung-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-lung-rmc,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/palazestrant-in-combination-with-ribociclib-for-the-first-line-treatment-of-er-her2-advanced-breast-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-breast,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-phase-3-randomized-study-comparing-jnj-79635322-and-an-anti-bcmaxcd3-bispecific-antibody-in-participants-with-relapsed-or-refractory-multiple-myeloma-who-have-received-at-least-3-prior-lines-of-ther/,redirect,https://utahcancer.com/late-phase-trials.html#trials-myeloma,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/bgb-43395-plus-letrozole-versus-cdk4-6i-plus-letrozole-for-patients-with-advanced-or-metastatic-hr-her2-breast-cancer-who-have-not-received-prior-treatment-for-advanced-or-metastatic-disease/,redirect,https://utahcancer.com/late-phase-trials.html#trials-hr-positive-breast,Trial retained in consolidated listing
-https://utahcancer.com/cancer-trial/a-global-multicenter-randomized-open-label-phase-3-study-of-sacituzumab-govitecan-versus-standard-of-care-soc-in-participants-with-previously-treated-extensive-stage-small-cell-lung-cancer-es-s/,redirect,https://utahcancer.com/late-phase-trials.html#trials-es-sclc,Trial retained in consolidated listing
+https://utahcancer.com/team-members/robert-a-harris/,redirect,https://utahcancer.com/providers/robert-harris/,Direct provider replacement
+https://utahcancer.com/team-members/thomas-b-skidmore/,redirect,https://utahcancer.com/providers/thomas-skidmore/,Direct provider replacement
+https://utahcancer.com/team-members/belisario-arango/,redirect,https://utahcancer.com/providers/belisario-arango/,Direct provider replacement
+https://utahcancer.com/team-members/benjamin-l-solomon/,redirect,https://utahcancer.com/providers/benjamin-solomon/,Direct provider replacement
+https://utahcancer.com/team-members/david-e-warner/,redirect,https://utahcancer.com/providers/david-warner/,Direct provider replacement
+https://utahcancer.com/team-members/gary-garner/,redirect,https://utahcancer.com/providers/gary-garner/,Direct provider replacement
+https://utahcancer.com/team-members/greg-litton/,redirect,https://utahcancer.com/providers/greg-litton/,Direct provider replacement
+https://utahcancer.com/team-members/greg-chipman/,redirect,https://utahcancer.com/providers/gregory-chipman/,Direct provider replacement
+https://utahcancer.com/team-members/james-shortridge/,redirect,https://utahcancer.com/providers/james-shortridge/,Direct provider replacement
+https://utahcancer.com/team-members/jason-stinnett/,redirect,https://utahcancer.com/providers/jason-stinnett/,Direct provider replacement
+https://utahcancer.com/team-members/jonathan-whisenant/,redirect,https://utahcancer.com/providers/jonathan-whisenant/,Direct provider replacement
+https://utahcancer.com/team-members/justin-a-call/,redirect,https://utahcancer.com/providers/justin-call/,Direct provider replacement
+https://utahcancer.com/team-members/lindsay-hunter/,redirect,https://utahcancer.com/providers/lindsay-hunter/,Direct provider replacement
+https://utahcancer.com/team-members/nathan-rich/,redirect,https://utahcancer.com/providers/nathan-rich/,Direct provider replacement
+https://utahcancer.com/team-members/robert-a-havard/,redirect,https://utahcancer.com/providers/robert-havard/,Direct provider replacement
+https://utahcancer.com/team-members/disean-kendall/,redirect,https://utahcancer.com/providers/disean-kendall/,Direct provider replacement
+https://utahcancer.com/team-members/scott-samuelson/,redirect,https://utahcancer.com/providers/scott-samuelson/,Direct provider replacement
+https://utahcancer.com/team-members/tylan-magnusson/,redirect,https://utahcancer.com/providers/tylan-magnusson/,Direct provider replacement
+https://utahcancer.com/team-members/wayne-ormsby/,redirect,https://utahcancer.com/providers/wayne-ormsby/,Direct provider replacement
+https://utahcancer.com/team-members/william-b-mckean/,redirect,https://utahcancer.com/providers/william-mckean/,Direct provider replacement
+https://utahcancer.com/team-members/william-nibley/,redirect,https://utahcancer.com/providers/william-nibley/,Direct provider replacement
+https://utahcancer.com/team-members/william-t-stephenson-ii/,redirect,https://utahcancer.com/providers/william-stephenson/,Direct provider replacement
+https://utahcancer.com/team-members/xylina-gregg/,redirect,https://utahcancer.com/providers/xylina-gregg/,Direct provider replacement
+https://utahcancer.com/team-members/nitin-chandramouli/,redirect,https://utahcancer.com/providers/nitin-chandramouli/,Direct provider replacement
+https://utahcancer.com/team-members/douglas-holt/,redirect,https://utahcancer.com/providers/douglas-holt/,Direct provider replacement
+https://utahcancer.com/team-members/stephanie-ellis/,redirect,https://utahcancer.com/providers/stephanie-ellis/,Direct provider replacement
+https://utahcancer.com/team-members/makaylie-s-crowther-dnp-fnp-c/,redirect,https://utahcancer.com/providers/makaylie-crowther/,Direct provider replacement
+https://utahcancer.com/team-members/heather-mcgivern/,redirect,https://utahcancer.com/providers/heather-mcgivern/,Direct provider replacement
+https://utahcancer.com/team-members/nidhi-sharma-dnp-fnp-c/,redirect,https://utahcancer.com/providers/nidhi-sharma/,Direct provider replacement
+https://utahcancer.com/cancer-trial/elacestrant-versus-standard-endocrine-therapy-in-women-and-men-with-node-positive-estrogen-receptor-positive-her2-negative-early-breast-cancer-with-high-risk-of-recurrence/,redirect,https://utahcancer.com/late-phase-trials/#trials-breast,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-study-of-bispecific-antibody-mcla-158-in-patients-with-advanced-solid-tumors/,redirect,https://utahcancer.com/late-phase-trials/#trials-colorectal,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-global-study-of-volrustomig-medi5752-for-participants-with-unresected-locally-advanced-head-and-neck-squamous-cell-carcinoma-following-definitive-concurrent-chemoradiotherapy-evolve-hnscc/,redirect,https://utahcancer.com/late-phase-trials/#trials-head-neck,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/study-of-daraxonrasib-rmc-6236-in-previously-treated-patients-with-ras-mutated-nsclc-rasolve-301/,redirect,https://utahcancer.com/late-phase-trials/#trials-lung-rmc,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/selective-trka-inhibitor-vmd-928-to-treat-trka-overexpression-driven-solid-tumors-or-lymphoma/,redirect,https://utahcancer.com/late-phase-trials/#trials-all-comers,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/observation-of-residual-cancer-with-liquid-biopsy-evaluation-oracle/,redirect,https://utahcancer.com/late-phase-trials/#trials-observational,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-phase-3-study-of-setidegrasib-with-mfolfirinox-or-nalirifox-in-kras-g12d-mutated-metastatic-pancreatic-adenocarcinoma/,redirect,https://utahcancer.com/late-phase-trials/#trials-pancreatic,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-phase-2-single-arm-study-of-incb123667-in-participants-with-platinum-resistant-ovarian-cancer-with-cyclin-e1-overexpression-maestra-1/,redirect,https://utahcancer.com/late-phase-trials/#trials-ovarian,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-study-of-pasritamig-versus-placebo-in-late-line-metastatic-castration-resistant-prostate-cancer-mcrpc/,redirect,https://utahcancer.com/late-phase-trials/#trials-prostate,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/phase-iii-study-of-ivonescimab-or-bevacizumab-combined-with-folfox-in-patients-with-metastatic-colorectal-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-metastatic-colorectal,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/clinical-study-of-ivonescimab-for-first-line-treatment-of-metastatic-nsclc-patients-with-high-pd-l1/,redirect,https://utahcancer.com/late-phase-trials/#trials-lung-rmc,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-phase-3-randomized-multicenter-open-label-study-of-idrx-42-gsk6042981-versus-sunitinib-in-participants-with-metastatic-and-or-unresectable-gastrointestinal-stromal-tumors-gist-after-imatinib/,redirect,https://utahcancer.com/late-phase-trials/#trials-gist,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/study-of-trastuzumab-deruxtecan-with-bevacizumab-versus-bevacizumab-monotherapy-for-first-line-maintenance-in-her2-expressing-ovarian-cancer-destiny-ovarian01/,redirect,https://utahcancer.com/late-phase-trials/#trials-ovarian,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-phase-ii-iii-multisite-randomized-master-protocol-for-a-global-trial-of-bnt327-in-combination-with-chemotherapy-and-other-investigational-agents-in-first-line-non-small-cell-lung-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-lung-rmc,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/palazestrant-in-combination-with-ribociclib-for-the-first-line-treatment-of-er-her2-advanced-breast-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-breast,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-phase-3-randomized-study-comparing-jnj-79635322-and-an-anti-bcmaxcd3-bispecific-antibody-in-participants-with-relapsed-or-refractory-multiple-myeloma-who-have-received-at-least-3-prior-lines-of-ther/,redirect,https://utahcancer.com/late-phase-trials/#trials-myeloma,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/bgb-43395-plus-letrozole-versus-cdk4-6i-plus-letrozole-for-patients-with-advanced-or-metastatic-hr-her2-breast-cancer-who-have-not-received-prior-treatment-for-advanced-or-metastatic-disease/,redirect,https://utahcancer.com/late-phase-trials/#trials-hr-positive-breast,Trial retained in consolidated listing
+https://utahcancer.com/cancer-trial/a-global-multicenter-randomized-open-label-phase-3-study-of-sacituzumab-govitecan-versus-standard-of-care-soc-in-participants-with-previously-treated-extensive-stage-small-cell-lung-cancer-es-s/,redirect,https://utahcancer.com/late-phase-trials/#trials-es-sclc,Trial retained in consolidated listing
 https://utahcancer.com/category/articles/,redirect,https://utahcancer.com/articles/,WordPress category replaced by the News index
 https://utahcancer.com/category/articles/events/,redirect,https://utahcancer.com/events/,Consolidated events and articles
 https://utahcancer.com/tag/100th-dose/,retire,Return 410,Thin WordPress tag archive intentionally omitted
@@ -190,21 +190,21 @@ https://utahcancer.com/tag/mount-timpanogos-village/,retire,Return 410,Thin Word
 https://utahcancer.com/tag/reflections-concert/,retire,Return 410,Thin WordPress tag archive intentionally omitted
 https://utahcancer.com/tag/small-cell-lung-cancer/,retire,Return 410,Thin WordPress tag archive intentionally omitted
 https://utahcancer.com/tag/utah-cancer-specialists/,retire,Return 410,Thin WordPress tag archive intentionally omitted
-https://utahcancer.com/trial-category/all-comers/,redirect,https://utahcancer.com/late-phase-trials.html#trials-all-comers,Consolidated trial category
-https://utahcancer.com/trial-category/breast-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-breast,Consolidated trial category
-https://utahcancer.com/trial-category/colorectal/,redirect,https://utahcancer.com/late-phase-trials.html#trials-colorectal,Consolidated trial category
-https://utahcancer.com/trial-category/extensive-stage-small-cell-lung-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-es-sclc,Consolidated trial category
-https://utahcancer.com/trial-category/gastrointestinal-stromal-tumors/,redirect,https://utahcancer.com/late-phase-trials.html#trials-gist,Consolidated trial category
-https://utahcancer.com/trial-category/head-neck/,redirect,https://utahcancer.com/late-phase-trials.html#trials-head-neck,Consolidated trial category
-https://utahcancer.com/trial-category/hr-her2-breast-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-hr-positive-breast,Consolidated trial category
-https://utahcancer.com/trial-category/lung-non-small-cell/,redirect,https://utahcancer.com/late-phase-trials.html#trials-lung-rmc,Consolidated trial category
-https://utahcancer.com/trial-category/metastatic-castration-resistant-prostate-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-prostate,Consolidated trial category
-https://utahcancer.com/trial-category/metastatic-colorectal-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-metastatic-colorectal,Consolidated trial category
-https://utahcancer.com/trial-category/multiple-myeloma/,redirect,https://utahcancer.com/late-phase-trials.html#trials-myeloma,Consolidated trial category
-https://utahcancer.com/trial-category/non-small-cell-lung-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-lung-rmc,Consolidated trial category
-https://utahcancer.com/trial-category/observational-lab/,redirect,https://utahcancer.com/late-phase-trials.html#trials-observational,Consolidated trial category
-https://utahcancer.com/trial-category/ovarian-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-ovarian,Consolidated trial category
-https://utahcancer.com/trial-category/pancreatic-cancer/,redirect,https://utahcancer.com/late-phase-trials.html#trials-pancreatic,Consolidated trial category
+https://utahcancer.com/trial-category/all-comers/,redirect,https://utahcancer.com/late-phase-trials/#trials-all-comers,Consolidated trial category
+https://utahcancer.com/trial-category/breast-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-breast,Consolidated trial category
+https://utahcancer.com/trial-category/colorectal/,redirect,https://utahcancer.com/late-phase-trials/#trials-colorectal,Consolidated trial category
+https://utahcancer.com/trial-category/extensive-stage-small-cell-lung-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-es-sclc,Consolidated trial category
+https://utahcancer.com/trial-category/gastrointestinal-stromal-tumors/,redirect,https://utahcancer.com/late-phase-trials/#trials-gist,Consolidated trial category
+https://utahcancer.com/trial-category/head-neck/,redirect,https://utahcancer.com/late-phase-trials/#trials-head-neck,Consolidated trial category
+https://utahcancer.com/trial-category/hr-her2-breast-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-hr-positive-breast,Consolidated trial category
+https://utahcancer.com/trial-category/lung-non-small-cell/,redirect,https://utahcancer.com/late-phase-trials/#trials-lung-rmc,Consolidated trial category
+https://utahcancer.com/trial-category/metastatic-castration-resistant-prostate-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-prostate,Consolidated trial category
+https://utahcancer.com/trial-category/metastatic-colorectal-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-metastatic-colorectal,Consolidated trial category
+https://utahcancer.com/trial-category/multiple-myeloma/,redirect,https://utahcancer.com/late-phase-trials/#trials-myeloma,Consolidated trial category
+https://utahcancer.com/trial-category/non-small-cell-lung-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-lung-rmc,Consolidated trial category
+https://utahcancer.com/trial-category/observational-lab/,redirect,https://utahcancer.com/late-phase-trials/#trials-observational,Consolidated trial category
+https://utahcancer.com/trial-category/ovarian-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-ovarian,Consolidated trial category
+https://utahcancer.com/trial-category/pancreatic-cancer/,redirect,https://utahcancer.com/late-phase-trials/#trials-pancreatic,Consolidated trial category
 https://utahcancer.com/team-group/advanced-practitioners/,redirect,https://utahcancer.com/providers/,Consolidated provider directory
 https://utahcancer.com/team-group/medical-oncology-and-hematology/,redirect,https://utahcancer.com/providers/,Consolidated provider directory
 https://utahcancer.com/team-group/physician-assistant/,redirect,https://utahcancer.com/providers/,Consolidated provider directory

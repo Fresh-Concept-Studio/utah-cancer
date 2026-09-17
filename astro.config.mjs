@@ -7,7 +7,7 @@ export default defineConfig({
   site,
   base,
   output: 'static',
-  build: { format: 'preserve' },
+  build: { format: 'directory' },
   trailingSlash: 'ignore',
   server: { port: 4322 },
   devToolbar: { enabled: false },

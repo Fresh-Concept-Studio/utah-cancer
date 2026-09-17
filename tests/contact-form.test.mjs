@@ -79,7 +79,7 @@ test('invalid fields and the spam trap never send', async () => {
 });
 
 test('built contact form has a native fallback and all provider appointment calls use the contact number', () => {
-  const $ = load(fs.readFileSync('dist/contact.html', 'utf8'));
+  const $ = load(fs.readFileSync('dist/contact/index.html', 'utf8'));
   const form = $('#contact-form');
   assert.equal(form.attr('method'), 'post');
   assert.equal(form.attr('action'), 'https://formsubmit.co/referrals@utahcancerspecialists.com');
@@ -90,7 +90,7 @@ test('built contact form has a native fallback and all provider appointment call
   assert.ok(phone);
   const providers = JSON.parse(fs.readFileSync('src/data/providers.json', 'utf8'));
   for (const { slug, sections } of providers) {
-    const p = load(fs.readFileSync(`dist/providers/${slug}.html`, 'utf8'));
+    const p = load(fs.readFileSync(`dist/providers/${slug}/index.html`, 'utf8'));
     const call = p('.provider-hero-actions a').first();
     assert.equal(call.attr('href'), phone, slug);
     assert.match(call.text(), /Call for an Appointment/);

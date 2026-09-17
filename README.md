@@ -1,6 +1,6 @@
 # Utah Cancer Specialists
 
-Static Astro site. The build retains the existing 151 `.html` URLs, including directory indexes, four retired-clinic redirects, and four removed-provider redirects. It runs without a production application server.
+Static Astro site. Public pages use clean trailing-slash URLs such as `/providers/belisario-arango/`; Astro writes the corresponding `index.html` files during the build. The site runs without a production application server.
 
 ## Local development
 
@@ -55,7 +55,7 @@ Provider, specialty, and location listings use their detail records. Leadership 
 
 To add a unique page, create its body in `src/views/`, then register its path and component name in `src/data/pages.json`. The site layout adds its header/footer and registered assets. Event and story body layouts remain individual views because their content differs; their shared site chrome is still defined once.
 
-Rich-text fields contain trusted, checked-in HTML. Use root-relative content paths such as `/locations/index.html`. In Astro markup, pass internal links and images through `url()` from `src/lib/urls.ts`; render rich text through `richHtml()` so the `/utah-cancer` deployment base is applied. Do not use these helpers for untrusted remote HTML.
+Rich-text fields contain trusted, checked-in HTML. Their legacy source keys may still use paths such as `/locations/index.html`; `url()` and `richHtml()` convert those references to clean public paths such as `/locations/` and apply the deployment base. Use the helpers for internal links and checked-in rich text, never for untrusted remote HTML.
 
 `public/` files are copied into `dist/`. Do not edit or commit `dist/`, `.astro/`, or `node_modules/`. Production builds include public assets, not repository tooling or private environment files.
 
