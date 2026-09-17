@@ -31,7 +31,7 @@
       color: #00476b;
       margin-bottom: 32px;
       padding-bottom: 16px;
-      border-bottom: 2px solid #5e8b9e;
+      border-bottom: 2px solid #477080;
       display: inline-block;
     }
 
@@ -85,7 +85,7 @@
     .leader-card-role {
       font-size: 13px;
       line-height: 19px;
-      color: #5e8b9e;
+      color: #477080;
       letter-spacing: -0.2px;
     }
 
@@ -100,7 +100,7 @@
     }
 
     a.leader-card-link:focus-visible .leader-card {
-      outline: 2px solid #5e8b9e;
+      outline: 2px solid #477080;
       outline-offset: 2px;
     }
 

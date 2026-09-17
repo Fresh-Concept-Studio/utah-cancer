@@ -46,7 +46,7 @@ html {
 :root {
   /* UCS brand palette, sourced from the approved color logo */
   --brand-blue: #00476b;
-  --brand-blue-light: #5e8b9e;
+  --brand-blue-light: #477080;
   --brand-charcoal: #333333;
 
   /* Standardized corner radii — buttons share one radius, cards/panels another */
@@ -143,7 +143,7 @@ img {
 
 .btn--white {
   background: #fff;
-  color: #5e8b9e;
+  color: #477080;
 }
 
 .btn--glass {
@@ -155,14 +155,14 @@ img {
 }
 
 .btn--primary {
-  background: #5e8b9e;
+  background: #477080;
   color: #fff;
   padding: 20px 30px;
 }
 
 .btn--outline {
   background: #fff;
-  color: #5e8b9e;
+  color: #477080;
   padding: 18px 35px;
   border: none;
 }
@@ -394,7 +394,7 @@ img {
 .nav-btn-cta .material-symbols-rounded {
   flex: 0 0 auto;
   font-size: 24px;
-  color: #5e8b9e;
+  color: #477080;
   font-variation-settings: 'FILL' 1, 'wght' 350, 'GRAD' 0, 'opsz' 24;
 }
 
@@ -507,7 +507,7 @@ img {
 
 .hero-card:hover .hero-card-arrow {
   transform: translate(2px, -2px);
-  color: #5e8b9e;
+  color: #477080;
 }
 
 .hero-card-icon {
@@ -516,7 +516,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background: #fff;
-  color: #5e8b9e;
+  color: #477080;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -783,7 +783,7 @@ img {
 .podcast-section {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(160deg, #00476b 0%, #00476b 55%, #5e8b9e 100%);
+  background: linear-gradient(160deg, #00476b 0%, #00476b 55%, #477080 100%);
   margin-top: 72px;
   padding: 28px;
   border-radius: var(--radius-card);
@@ -1138,7 +1138,7 @@ img {
   font-size: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: rgba(0, 71, 107, 0.6);
+  color: #00476b;
 }
 
 .event-feature-title {
@@ -1166,7 +1166,7 @@ img {
 
 .event-feature-meta .material-symbols-rounded {
   font-size: 17px;
-  color: #5e8b9e;
+  color: #477080;
 }
 
 .event-feature-cta {
@@ -1177,7 +1177,7 @@ img {
   padding-top: 8px;
   font-size: 14px;
   font-weight: 600;
-  color: #5e8b9e;
+  color: #477080;
 }
 
 .event-feature-cta .material-symbols-rounded {
@@ -1255,7 +1255,7 @@ img {
 
 .event-mini-arrow {
   margin-left: auto;
-  color: #5e8b9e;
+  color: #477080;
   font-size: 20px;
   opacity: 0;
   transform: translateX(-4px);
@@ -1550,7 +1550,7 @@ a.media-breaker-item:focus-visible {
 .stories-all {
   font-size: 14px;
   font-weight: 600;
-  color: #5e8b9e;
+  color: #477080;
   border-bottom: 1px solid rgba(94, 139, 158, 0.35);
   padding-bottom: 2px;
   transition: border-color 0.2s;
@@ -1558,7 +1558,7 @@ a.media-breaker-item:focus-visible {
 }
 
 .stories-all:hover {
-  border-color: #5e8b9e;
+  border-color: #477080;
 }
 
 .story-slide {
@@ -1648,7 +1648,7 @@ a.media-breaker-item:focus-visible {
   font-size: 12px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: rgba(17, 40, 62, 0.6);
+  color: #465b6e;
   margin-bottom: 18px;
 }
 
@@ -1675,7 +1675,7 @@ a.media-breaker-item:focus-visible {
   gap: 6px;
   font-size: 14.5px;
   font-weight: 600;
-  color: #5e8b9e;
+  color: #477080;
   transition: gap 0.2s;
 }
 
@@ -1705,7 +1705,7 @@ a.media-breaker-item:focus-visible {
 }
 
 .stories-dot.active {
-  background: #5e8b9e;
+  background: #477080;
   width: 48px;
 }
 
@@ -1840,7 +1840,7 @@ a.media-breaker-item:focus-visible {
    FOUNDATION CTA
    ============================================ */
 .foundation-section {
-  background: #5e8b9e;
+  background: #477080;
   padding: 57px 0;
 }
 
@@ -1891,7 +1891,7 @@ a.media-breaker-item:focus-visible {
 }
 
 .testimonials-panel {
-  background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+  background: linear-gradient(135deg, #00476b 0%, #477080 100%);
   border-radius: var(--radius-card);
   padding: 80px 64px 64px;
   color: #fff;
@@ -1966,7 +1966,7 @@ a.media-breaker-item:focus-visible {
   display: flex;
   gap: 3px;
   margin-bottom: 14px;
-  color: #5e8b9e;
+  color: #477080;
   font-size: 20px;
   line-height: 1;
 }
@@ -1974,7 +1974,7 @@ a.media-breaker-item:focus-visible {
 .testimonial-card-name {
   font-family: var(--font-body);
   font-size: 15px;
-  color: #9aa3aa;
+  color: #5f6c75;
   margin-bottom: 18px;
 }
 
@@ -2165,7 +2165,7 @@ a.media-breaker-item:focus-visible {
 }
 
 .footer-contact {
-  opacity: 0.82;
+  opacity: 1;
 }
 
 .footer-address {
@@ -2185,9 +2185,9 @@ a.media-breaker-item:focus-visible {
   font-size: 14.5px;
   line-height: 19.2px;
   letter-spacing: -0.32px;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 8px;
-  opacity: 0.68;
+  opacity: 1;
 }
 
 .footer-contact-label {
@@ -2245,7 +2245,7 @@ a.media-breaker-item:focus-visible {
    MARQUEE BANNER
    ============================================ */
 .marquee-banner {
-  background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+  background: linear-gradient(135deg, #00476b 0%, #477080 100%);
   overflow: hidden;
   padding: 18px 0;
   white-space: nowrap;
@@ -2956,7 +2956,7 @@ body.menu-open {
    STORY DETAIL & INDEX PAGES
    ============================================ */
 .story-hero {
-  background: linear-gradient(160deg, #00476b 0%, #00476b 60%, #5e8b9e 100%);
+  background: linear-gradient(160deg, #00476b 0%, #00476b 60%, #477080 100%);
   color: #fff;
   padding: 170px 0 90px;
 }
@@ -3100,11 +3100,11 @@ body.menu-open {
   float: left;
   padding-right: 12px;
   padding-top: 4px;
-  color: #5e8b9e;
+  color: #477080;
 }
 
 .story-cta {
-  background: #5e8b9e;
+  background: #477080;
   padding: 64px 0;
   color: #fff;
 }
@@ -3217,7 +3217,7 @@ body.menu-open {
 }
 
 .stories-index-note a {
-  color: #5e8b9e;
+  color: #477080;
   font-weight: 600;
 }
 

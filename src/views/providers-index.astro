@@ -28,7 +28,7 @@ const ordered = [...providers].sort((a,b) => a.directory.order - b.directory.ord
 
           <!-- Categories -->
           <div class="spec-filter-group">
-            <h3 class="spec-filter-title">Categories</h3>
+            <h2 class="spec-filter-title">Categories</h2>
             <ul class="spec-filter-list">
   <li><button class="spec-filter-btn active" data-filter="all">All Providers <span class="spec-filter-count">{providers.length}</span></button></li>
   {providerCategories.map(category => <li><button class="spec-filter-btn" data-filter={category.id}>{category.label} <span class="spec-filter-count">{providers.filter(p => p.directory.category === category.id).length}</span></button></li>)}

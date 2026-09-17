@@ -79,7 +79,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       margin-bottom: 16px;
     }
     .about-mission-title {
@@ -159,7 +159,7 @@
       top: 0;
       bottom: 0;
       width: 2px;
-      background: linear-gradient(180deg, #5e8b9e 0%, #e8e4e0 100%);
+      background: linear-gradient(180deg, #477080 0%, #e8e4e0 100%);
       transform: translateX(-50%);
     }
     .timeline-item {
@@ -187,11 +187,11 @@
       top: 6px;
       width: 16px;
       height: 16px;
-      background: #5e8b9e;
+      background: #477080;
       border: 3px solid #fff;
       border-radius: 50%;
       transform: translateX(-50%);
-      box-shadow: 0 0 0 3px #5e8b9e;
+      box-shadow: 0 0 0 3px #477080;
       z-index: 1;
     }
     .timeline-content {
@@ -201,7 +201,7 @@
       font-family: var(--font-heading);
       font-weight: 500;
       font-size: 28px;
-      color: #5e8b9e;
+      color: #477080;
       letter-spacing: -0.02em;
       margin-bottom: 6px;
     }
@@ -321,7 +321,7 @@
       font-weight: 500;
       font-size: 48px;
       letter-spacing: -0.029em;
-      color: #5e8b9e;
+      color: #477080;
       line-height: 1;
       margin-bottom: 8px;
     }
@@ -542,7 +542,7 @@
       font-size: 9px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
     }
     .about-leadership-label {
       display: block;
@@ -551,7 +551,7 @@
       font-size: 11px;
       letter-spacing: 1.8px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
     }
 
     /* ============================================
@@ -559,7 +559,7 @@
        ============================================ */
     .about-quote {
       padding: 80px 0;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       color: #fff;
       text-align: center;
     }

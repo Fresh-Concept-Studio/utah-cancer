@@ -55,7 +55,7 @@ const markers = directory.filter(location => location.map).map(location => ({
     return <a href={url(`/locations/${location.slug}.html`)} class:list={['loc-card', {'loc-card--featured': card.badge}]} data-county={card.county}>
       <div class="loc-card-image"><img src={url(cardImage)} width="640" height="480" alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : 'auto'} decoding="async" />{card.badge && <span class="loc-card-badge">{card.badge}</span>}</div>
       <div class="loc-card-body">
-        <h3 class="loc-card-name">{card.title || location.title}</h3>
+        <h2 class="loc-card-name">{card.title || location.title}</h2>
         <p class="loc-card-sub">{card.subtitle || location.subtitle}</p>
         <p class="loc-card-address"><span class="material-symbols-rounded">location_on</span> <Fragment set:html={richHtml(card.addressHtml)} /></p>
         <p class="loc-card-meta"><span class="material-symbols-rounded">schedule</span> <Fragment set:html={card.hoursHtml} /></p>
@@ -74,7 +74,7 @@ const markers = directory.filter(location => location.map).map(location => ({
   <section class="loc-map-band">
     <div class="container">
       <div class="loc-map-wrap">
-        <div id="locations-map" class="locations-map" aria-label="Map of Utah Cancer Specialists locations"></div>
+        <div id="locations-map" class="locations-map" role="region" aria-label="Map of Utah Cancer Specialists locations"></div>
         <div class="locations-map-fallback" id="locations-map-fallback" hidden="">
           <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>locations/index.html</code> to display the interactive map.</p>
         </div>

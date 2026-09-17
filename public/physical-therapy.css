@@ -35,7 +35,7 @@
 .pt-steps { list-style: none; }
 .pt-steps li { display: flex; gap: 22px; padding: 25px 0; border-bottom: 1px solid #d2e0e6; }
 .pt-steps li:first-child { padding-top: 0; }
-.pt-step-num { font-family: var(--font-heading); font-size: 18px; color: #547e90; padding-top: 3px; }
+.pt-step-num { font-family: var(--font-heading); font-size: 18px; color: #477080; padding-top: 3px; }
 .pt-steps h3 { font-size: 22px; }
 .pt-visit { display: grid; grid-template-columns: 1.1fr 1fr; gap: 64px; align-items: center; }
 .pt-visit-copy > p { color: var(--pt-muted); }
@@ -48,7 +48,7 @@
 .pt-page .pt-small { font-size: 12px; }
 .pt-visit-links { display: flex; flex-wrap: wrap; gap: 22px; align-items: center; margin-top: 28px; }
 .pt-text-link { color: var(--pt-blue); text-decoration: underline; text-underline-offset: 4px; font-size: 14px; line-height: 1.7; }
-.pt-visit-image img { width: 100%; border-radius: 12px; }
+.pt-visit-image img { width: 100%; height: auto; border-radius: 12px; }
 .pt-questions details { border-bottom: 1px solid #cbdbe2; }
 .pt-questions details:first-child { border-top: 1px solid #cbdbe2; }
 .pt-questions summary { cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 20px; list-style: none; padding-block: 23px; font-size: 17px; font-weight: 500; color: var(--pt-blue); line-height: 1.45; }

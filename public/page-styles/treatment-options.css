@@ -37,7 +37,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       margin-bottom: 16px;
     }
     .tx-intro-title {
@@ -83,7 +83,7 @@
       font-weight: 500;
       font-size: 54px;
       letter-spacing: -0.031em;
-      color: #5e8b9e;
+      color: #477080;
       line-height: 1;
       margin-bottom: 10px;
     }
@@ -136,11 +136,11 @@
       font-family: var(--font-heading);
       font-weight: 500;
       font-size: 13px;
-      color: #5e8b9e;
+      color: #477080;
       letter-spacing: -0.011em;
       white-space: nowrap;
       padding-bottom: 6px;
-      opacity: 0.65;
+      opacity: 1;
     }
 
     /* Treatment grids */
@@ -170,13 +170,13 @@
       font-weight: 500;
       font-size: 13px;
       letter-spacing: 0.027em;
-      color: #5e8b9e;
-      opacity: 0.4;
+      color: #477080;
+      opacity: 1;
     }
     .tx-card-icon {
       width: 52px;
       height: 52px;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       border-radius: 13px;
       display: flex;
       align-items: center;
@@ -242,7 +242,7 @@
       font-size: 12.5px;
       letter-spacing: -0.2px;
       background: #f0f4f8;
-      color: #5e8b9e;
+      color: #477080;
       padding: 7px 13px;
       border-radius: 100px;
       border: 1px solid #e0e9ef;
@@ -255,7 +255,7 @@
     /* Personalized plan band */
     .tx-plan {
       padding: 100px 0;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       color: #fff;
     }
     .tx-plan-inner {
@@ -319,7 +319,7 @@
       color: #fff;
       letter-spacing: -0.015em;
     }
-    .tx-plan-step-text h4 {
+    .tx-plan-step-text h3 {
       font-family: var(--font-heading);
       font-weight: 500;
       font-size: 17px;

@@ -2,7 +2,7 @@
     .spec-card-chevron {
       flex: 0 0 auto;
       margin-left: 12px;
-      color: #5e8b9e;
+      color: #477080;
       opacity: 0.4;
       font-size: 24px;
       transition: transform 0.2s, opacity 0.2s;
@@ -84,7 +84,7 @@
     .nd-expect-grid .credential-icon {
       flex: 0 0 40px;
       height: 40px;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       border-radius: 10px;
     }
     .nd-expect-grid .credential-icon .material-symbols-rounded {

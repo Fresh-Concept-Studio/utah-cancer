@@ -50,7 +50,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       margin-bottom: 16px;
     }
     .pr-eyebrow--light { color: rgba(255,255,255,0.55); }
@@ -109,7 +109,7 @@
       justify-content: center;
       margin-bottom: 18px;
     }
-    .pr-card-icon .material-symbols-rounded { font-size: 24px; color: #5e8b9e; }
+    .pr-card-icon .material-symbols-rounded { font-size: 24px; color: #477080; }
     .pr-card-num {
       position: absolute;
       top: 28px;
@@ -117,8 +117,8 @@
       font-family: var(--font-label);
       font-size: 11px;
       letter-spacing: 2px;
-      color: #5e8b9e;
-      opacity: 0.45;
+      color: #477080;
+      opacity: 1;
     }
     .pr-card h3 {
       font-family: var(--font-heading);
@@ -147,7 +147,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #5e8b9e;
+      color: #477080;
       transition: transform 0.25s, background 0.25s, color 0.25s;
     }
     .pr-card-arrow .material-symbols-rounded { font-size: 18px; }
@@ -156,7 +156,7 @@
     .pr-card--feature {
       grid-column: span 4;
       grid-row: span 2;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       color: #fff;
       border: none;
       padding: 44px;
@@ -307,7 +307,7 @@
       transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
     }
     .pr-community-link:hover {
-      border-color: #5e8b9e;
+      border-color: #477080;
       box-shadow: 0 8px 20px rgba(0, 71, 107, 0.07);
       transform: translateY(-2px);
     }
@@ -316,7 +316,7 @@
       transform: translate(2px, -2px);
     }
     .pr-community-link-text { flex: 1; min-width: 0; }
-    .pr-community-link-text h4 {
+    .pr-community-link-text h3 {
       font-family: var(--font-heading);
       font-weight: 500;
       font-size: 16px;
@@ -331,7 +331,7 @@
       opacity: 0.72;
     }
     .pr-community-link-ext {
-      color: #5e8b9e;
+      color: #477080;
       transition: transform 0.2s, color 0.2s;
       flex-shrink: 0;
     }

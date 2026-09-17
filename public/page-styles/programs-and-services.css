@@ -16,7 +16,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       margin-bottom: 16px;
     }
     .ps-eyebrow--light { color: rgba(255,255,255,0.55); }
@@ -95,15 +95,15 @@
     }
     .ps-pillar-icon .material-symbols-rounded {
       font-size: 22px;
-      color: #5e8b9e;
+      color: #477080;
     }
     .ps-pillar-num {
       font-family: var(--font-label);
       font-size: 10px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
-      opacity: 0.55;
+      color: #477080;
+      opacity: 1;
       display: block;
       margin-bottom: 2px;
     }
@@ -169,7 +169,7 @@
       flex: 0 0 132px;
       width: 132px;
       height: 132px;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       border-radius: 16px;
       padding: 18px 14px;
       color: #fff;
@@ -181,7 +181,7 @@
       box-shadow: 0 8px 24px rgba(0, 71, 107, 0.2);
     }
     .ps-schedule-badge--alt {
-      background: linear-gradient(135deg, #5e8b9e 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #477080 0%, #477080 100%);
     }
     .ps-schedule-badge-cadence {
       font-family: var(--font-label);
@@ -219,7 +219,7 @@
       font-size: 10.5px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       background: #f0f4f8;
       border: 1px solid #e0e9ef;
       padding: 6px 12px;
@@ -259,7 +259,7 @@
     }
     .ps-schedule-meta-item .material-symbols-rounded {
       font-size: 18px;
-      color: #5e8b9e;
+      color: #477080;
       flex-shrink: 0;
     }
 
@@ -289,7 +289,7 @@
     .ps-service-icon {
       width: 56px;
       height: 56px;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       border-radius: 14px;
       display: flex;
       align-items: center;

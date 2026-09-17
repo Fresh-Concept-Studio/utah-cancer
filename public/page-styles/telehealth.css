@@ -27,7 +27,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       margin-bottom: 16px;
     }
 
@@ -93,7 +93,7 @@
       width: 88px;
       height: 88px;
       margin: 0 auto 22px;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       border-radius: 24px;
       display: flex;
       align-items: center;
@@ -112,7 +112,7 @@
       width: 32px;
       height: 32px;
       background: #fff;
-      border: 2px solid #5e8b9e;
+      border: 2px solid #477080;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -120,15 +120,15 @@
       font-family: var(--font-label);
       font-size: 13px;
       font-weight: 700;
-      color: #5e8b9e;
+      color: #477080;
     }
     .th-step-label {
       font-family: var(--font-label);
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
-      opacity: 0.7;
+      color: #477080;
+      opacity: 1;
       margin-bottom: 8px;
     }
     .th-step-title {

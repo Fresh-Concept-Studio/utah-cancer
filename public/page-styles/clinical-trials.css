@@ -5,7 +5,7 @@
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       margin-bottom: 16px;
     }
 
@@ -58,10 +58,10 @@
       left: 0;
       right: 0;
       height: 6px;
-      background: linear-gradient(90deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(90deg, #00476b 0%, #477080 100%);
     }
     .ct-program--late::before {
-      background: linear-gradient(90deg, #5e8b9e 0%, #5e8b9e 100%);
+      background: linear-gradient(90deg, #477080 0%, #477080 100%);
     }
     .ct-program-brand-row {
       display: flex;
@@ -82,7 +82,7 @@
       align-items: center;
       gap: 6px;
       align-self: flex-start;
-      background: linear-gradient(135deg, #00476b 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #00476b 0%, #477080 100%);
       color: #fff;
       padding: 7px 14px;
       border-radius: 100px;
@@ -93,14 +93,14 @@
       margin-bottom: 0;
     }
     .ct-program--late .ct-phase-badge {
-      background: linear-gradient(135deg, #5e8b9e 0%, #5e8b9e 100%);
+      background: linear-gradient(135deg, #477080 0%, #477080 100%);
     }
     .ct-program-eyebrow {
       font-family: var(--font-label);
       font-size: 11px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
+      color: #477080;
       opacity: 0.65;
       margin-bottom: 8px;
       display: block;
@@ -142,7 +142,7 @@
     }
     .ct-program-fact .material-symbols-rounded {
       font-size: 18px;
-      color: #5e8b9e;
+      color: #477080;
       flex-shrink: 0;
       margin-top: 2px;
     }
@@ -212,13 +212,13 @@
       align-items: center;
       gap: 6px;
       font-size: 13.5px;
-      color: #5e8b9e;
+      color: #477080;
       text-decoration: none;
       letter-spacing: -0.2px;
       border-bottom: 1px solid transparent;
       transition: border-color 0.2s;
     }
-    .ct-program-email:hover { border-bottom-color: #5e8b9e; }
+    .ct-program-email:hover { border-bottom-color: #477080; }
     .ct-program-email .material-symbols-rounded { font-size: 14px; }
 
     /* Trial journey */
@@ -275,7 +275,7 @@
       width: 56px;
       height: 56px;
       background: #fff;
-      border: 2px solid #5e8b9e;
+      border: 2px solid #477080;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -291,8 +291,8 @@
       font-size: 10px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #5e8b9e;
-      opacity: 0.65;
+      color: #477080;
+      opacity: 1;
       margin-bottom: 6px;
     }
     .ct-step h3 {

@@ -333,7 +333,8 @@
 }
 
 .careers-apply h2 { max-width: 610px; font-size: clamp(42px, 4.4vw, 64px); }
-.careers-apply-inner > div:last-child p { max-width: 520px; margin-bottom: 28px; font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.82); }
+.careers-apply .careers-eyebrow { color: rgba(255,255,255,0.92); }
+.careers-apply-inner > div:last-child p { max-width: 520px; margin-bottom: 28px; font-size: 16px; line-height: 1.7; color: rgba(255,255,255,0.95); }
 
 @keyframes career-reveal { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 
