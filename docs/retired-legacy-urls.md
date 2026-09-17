@@ -20,6 +20,12 @@ These old WordPress URLs should not be recreated or redirected to unrelated cont
 - `/test/`
 - `/test-page/`
 
+## Obsolete COVID-19 guidance
+
+- `/covid-19/`
+- `/covid-19-vaccine/`
+- `/covid-19-vaccine-update/`
+
 ## Former locations with no current Utah replacement
 
 - `/bingham-healthcare/` — Blackfoot, Idaho

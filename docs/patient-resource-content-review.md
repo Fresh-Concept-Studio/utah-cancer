@@ -1,6 +1,6 @@
 # Older patient-resource content review
 
-Twenty old URLs remain after resolving the policy, news, location, test, and WordPress archive decisions. They fall into four practical groups.
+The review began with 20 old URLs after resolving the policy, news, location, test, and WordPress archive decisions. The three obsolete COVID pages and six clear replacement URLs are now resolved. Eleven pages remain for content-owner confirmation.
 
 ## Recommended decisions
 
@@ -27,12 +27,12 @@ Twenty old URLs remain after resolving the policy, news, location, test, and Wor
 | `/low-dose-radiation-therapy-ldrt/` | LDRT for arthritis and chronic joint pain, conditions treated, physicians, location, and consultation details | **Build a dedicated LDRT service page** and link it from Radiation Oncology. This is distinctive, current service content with meaningful search value. |
 | `/cancer-rehabilitation-centers/` | The Sandy cancer-rehabilitation clinic, address, hours, phone, and physical-therapy summary | **301 redirect to `/physical-therapy.html`.** The current page carries the same address, phone number, hours, and service. |
 
-## Recommended order
+## Implementation status
 
-1. Apply the six clear redirects: Education Videos, Patient Advocacy, Team Approach, the broad Patient Education guide, Brain Tumors, and Cancer Rehabilitation.
-2. Retire the three obsolete COVID pages with `410 Gone` at Cloudflare launch.
-3. Confirm whether DigniCap, medically integrated pharmacy, supportive care, breathwork, and LDRT are current. Preserve the active services; LDRT, pharmacy, and supportive care should receive dedicated pages.
-4. Confirm the visitor policy with clinic operations.
-5. Build one maintained Supportive Resources page for housing, nutrition, personal safety, cleaning, and transportation, with a named owner and periodic link review.
+1. **Approved and configured:** six clear redirects for Education Videos, Patient Advocacy, Team Approach, the broad Patient Education guide, Brain Tumors, and Cancer Rehabilitation.
+2. **Approved for retirement:** the three obsolete COVID pages will return `410 Gone` at Cloudflare launch.
+3. **Still to confirm:** whether DigniCap, medically integrated pharmacy, supportive care, breathwork, and LDRT are current. Preserve the active services; LDRT, pharmacy, and supportive care should receive dedicated pages.
+4. **Still to confirm:** the visitor policy with clinic operations.
+5. **Still to build:** one maintained Supportive Resources page for housing, nutrition, personal safety, cleaning, and transportation, with a named owner and periodic link review.
 
 This approach preserves useful patient help and search value while avoiding stale medical guidance and duplicated encyclopedia content.

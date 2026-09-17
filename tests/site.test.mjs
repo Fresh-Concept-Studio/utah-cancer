@@ -156,7 +156,7 @@ test('retired WordPress and former-location URLs are omitted from generated page
     assert.equal(pages.has(file), false, `${file}: retired fallback should not be generated`);
   }
   const inventory = fs.readFileSync('docs/legacy-url-inventory.csv', 'utf8');
-  for (const path of ['/author/administrator/', '/tag/abc4/', '/test/', '/test-page/', '/ucs-tooele/', '/idahofalls/']) {
+  for (const path of ['/author/administrator/', '/tag/abc4/', '/test/', '/test-page/', '/ucs-tooele/', '/idahofalls/', '/covid-19/', '/covid-19-vaccine/']) {
     assert.match(inventory, new RegExp(`https://utahcancer\\.com${path.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')},retire,`), `${path}: not marked retired`);
   }
 });
