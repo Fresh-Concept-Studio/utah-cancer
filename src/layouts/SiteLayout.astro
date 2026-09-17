@@ -12,7 +12,8 @@ const description = page.description?.trim() || 'Utah Cancer Specialists provide
 const hasOwnMain = ['physical-therapy', 'late-phase-trials', 'stories-amy-jensen', 'stories-dukhi-hong'].includes(page.component || '');
 const canonical = Astro.url.href;
 const siteRoot = new URL(url('/'), Astro.site).href;
-const socialImage = new URL(url(page.socialImage || '/images/hero-bg.webp'), Astro.site).href;
+const socialImage = new URL(url(page.socialImage || '/images/utah-cancer-social.png'), Astro.site).href;
+const defaultSocialImageAlt = 'Utah Cancer Specialists logo over a patient talking with a care provider.';
 const isIndexable = process.env.SITE_INDEXABLE === 'true';
 const pageSchema = page.schemaType === 'NewsArticle' ? {
   '@context': 'https://schema.org',
@@ -61,11 +62,18 @@ const structuredData = JSON.stringify([
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={socialImage} />
+    {!page.socialImage && <>
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1734" />
+      <meta property="og:image:height" content="907" />
+      <meta property="og:image:alt" content={defaultSocialImageAlt} />
+    </>}
     {page.publishedDate && <meta property="article:published_time" content={page.publishedDate} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={page.title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImage} />
+    {!page.socialImage && <meta name="twitter:image:alt" content={defaultSocialImageAlt} />}
     <script type="application/ld+json" set:html={structuredData} is:inline></script>
     <link rel="icon" href={url('/images/ucs-logo-color.svg')} type="image/svg+xml" />
     <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
