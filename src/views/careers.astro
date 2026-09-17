@@ -1,0 +1,253 @@
+---
+import { url } from '../lib/urls';
+
+const applicationUrl = 'https://utahcancer.com/job-application/';
+
+const jobs = [
+  {
+    title: 'Patient Advocate',
+    location: 'Cancer Center',
+    schedule: 'Full time · 32–40 hours',
+    status: 'Non-exempt',
+    summary: 'Serve as a liaison between patients, billing, and clinic staff; welcome new patients; resolve account and insurance issues; and help arrange financial assistance.',
+    responsibilities: [
+      'Educate patients about services and insurance, gather new-patient information, and verify coverage.',
+      'Identify referral or authorization needs before service and maintain authorizations for ongoing treatment.',
+      'Help resolve billing questions, arrange assistance or drug-replacement coverage, and establish payment plans.',
+    ],
+    qualifications: [
+      'Two to three years of medical-office experience with front-office or billing experience.',
+      'High school diploma required; some college preferred.',
+    ],
+  },
+  {
+    title: 'Admixture Technician',
+    location: 'Cancer Center',
+    schedule: 'Full time · 32–40 hours',
+    status: 'Non-exempt',
+    summary: 'Compound chemotherapy agents under physician and pharmacy leadership while maintaining safe, accurate workflow and established policies.',
+    responsibilities: [
+      'Compound chemotherapy agents according to physician orders and follow OSHA and company procedures.',
+      'Support workflow, scheduling, team coverage, and training for new employees.',
+      'Read and communicate measurements accurately while safely handling vials, needles, syringes, and medicinal preparations.',
+    ],
+    qualifications: [
+      'Strong organization, communication, mathematics, data-entry, and teamwork skills.',
+      'Two years of IV-admixture experience and chemotherapy experience are preferred.',
+      'High school diploma or GED required; national pharmacy technician certification preferred.',
+    ],
+  },
+  {
+    title: 'Medical Records Clerk',
+    location: 'Salt Lake Clinic',
+    schedule: 'Full time · 32–40 hours',
+    status: 'Non-exempt',
+    summary: 'Keep clinical records organized and accessible through careful filing, clerical support, and accurate use of office equipment and systems.',
+    responsibilities: [
+      'File reports in charts and charts in the appropriate files using alphabetical and numeric systems.',
+      'Operate standard office equipment and follow written and verbal instructions accurately.',
+      'Travel occasionally to UCS offices along the Wasatch Front.',
+    ],
+    qualifications: [
+      'General clerical experience preferred, with exposure to medical terminology.',
+      'High school diploma or GED required.',
+      'The role includes frequent bending and stooping and lifting up to 50 pounds.',
+    ],
+  },
+  {
+    title: 'Patient Services Representative',
+    location: 'Ogden / Layton',
+    schedule: 'Full time · 32–40 hours',
+    status: 'Non-exempt',
+    summary: 'Welcome patients and visitors, coordinate scheduling, gather insurance information, and connect patients with the right clinical support.',
+    responsibilities: [
+      'Work Monday through Thursday in Ogden and Friday in Layton.',
+      'Greet, instruct, direct, and schedule patients while collecting accurate insurance and contact information.',
+      'Serve as a consistent liaison between patients and the medical support team.',
+    ],
+    qualifications: [
+      'Clear communication, careful data entry, and confidence using standard office systems.',
+      'One year of medical-office experience and medical terminology knowledge preferred.',
+      'High school diploma or GED required.',
+    ],
+  },
+  {
+    title: 'Patient Services Representative',
+    location: 'Murray / IMC',
+    schedule: 'Full time · 32–40 hours',
+    status: 'Non-exempt',
+    summary: 'Welcome patients and visitors, coordinate scheduling, gather insurance information, and connect patients with the right clinical support.',
+    responsibilities: [
+      'Greet, instruct, direct, and schedule patients while collecting accurate insurance and contact information.',
+      'Answer phones and assist patients in a busy reception setting with professionalism and care.',
+      'Serve as a consistent liaison between patients and the medical support team.',
+    ],
+    qualifications: [
+      'Clear communication, careful data entry, and confidence using standard office systems.',
+      'One year of medical-office experience and medical terminology knowledge preferred.',
+      'High school diploma or GED required.',
+    ],
+  },
+  {
+    title: 'Physician Outreach Specialist',
+    location: 'UCS service area',
+    schedule: 'Full time · 32–40 hours',
+    status: 'Exempt',
+    summary: 'Build and strengthen relationships with referring providers, increase awareness of UCS services, and support thoughtful growth across the service area.',
+    responsibilities: [
+      'Serve as the primary liaison between UCS and current or prospective referring providers.',
+      'Plan strategic outreach, maintain provider relationships, and communicate UCS physician, clinic, and service information.',
+      'Interpret referral data, identify trends, and recommend outreach initiatives; frequent local travel is required.',
+    ],
+    qualifications: [
+      'Excellent relationship-building, communication, organization, and independent time-management skills.',
+      'A bachelor’s degree in marketing, communications, business, healthcare administration, or a related field is preferred.',
+      'Healthcare marketing, provider outreach, business development, sales, or clinical experience is preferred.',
+    ],
+  },
+  {
+    title: 'Registered Nurse',
+    location: 'Provo',
+    schedule: 'Full time',
+    status: 'Non-exempt',
+    summary: 'Provide professional nursing care for clinic patients using established standards, sound clinical judgment, and clear communication.',
+    responsibilities: [
+      'Assess patient needs, provide ongoing care, maintain records, and respond calmly in urgent situations.',
+      'Apply professional nursing standards, safety precautions, and clinic procedures throughout care delivery.',
+      'Travel to other UCS locations may occasionally be required.',
+    ],
+    qualifications: [
+      'Graduate of an accredited nursing school with a current Utah registered nurse license.',
+      'Current BLS certification.',
+      'One year of professional nursing experience in a clinic setting preferred.',
+    ],
+  },
+  {
+    title: 'Registered Nurse',
+    location: 'Pleasant Grove',
+    schedule: 'Full time',
+    status: 'Non-exempt',
+    summary: 'Provide professional nursing care for clinic patients using established standards, sound clinical judgment, and clear communication.',
+    responsibilities: [
+      'Assess patient needs, provide ongoing care, maintain records, and respond calmly in urgent situations.',
+      'Apply professional nursing standards, safety precautions, and clinic procedures throughout care delivery.',
+      'Travel to other UCS locations may occasionally be required.',
+    ],
+    qualifications: [
+      'Graduate of an accredited nursing school with a current Utah registered nurse license.',
+      'Current BLS certification.',
+      'One year of professional nursing experience in a clinic setting preferred.',
+    ],
+  },
+  {
+    title: 'Registered Nurse Care Manager',
+    location: 'To be determined',
+    schedule: 'Full time',
+    status: 'Non-exempt',
+    summary: 'Coordinate individualized, comprehensive care and help patients, families, and caregivers move through every phase of the cancer-care continuum.',
+    responsibilities: [
+      'Assess patient needs and develop individualized care plans with the healthcare team.',
+      'Coordinate care across physicians, specialists, and community resources; monitor progress and update plans.',
+      'Provide education about treatment, symptom management, and self-care while documenting care accurately.',
+      'Advocate for patients and participate in interdisciplinary care planning.',
+    ],
+    qualifications: [
+      'Graduate of an accredited school of nursing with a current state registered nurse license.',
+      'Current BLS certification.',
+      'Care-management and oncology experience preferred.',
+    ],
+  },
+];
+---
+
+<section class="careers-hero">
+  <div class="container careers-hero-grid">
+    <div class="careers-hero-copy">
+      <span class="careers-eyebrow">Careers at Utah Cancer Specialists</span>
+      <h1>Make a difference where care feels personal.</h1>
+      <p>Join a team committed to helping patients and families find a clear path through cancer treatment, close to home.</p>
+      <div class="careers-hero-actions">
+        <a href="#openings" class="btn btn--white">View open positions <span class="material-symbols-rounded">arrow_downward</span></a>
+        <a href={applicationUrl} class="careers-text-link" target="_blank" rel="noopener">Start an application <span class="material-symbols-rounded">arrow_outward</span></a>
+      </div>
+    </div>
+    <figure class="careers-hero-photo">
+      <img src={url('/images/team-ucs-group.jpg')} alt="Utah Cancer Specialists team members together outdoors" />
+      <figcaption><strong>One team.</strong> Many ways to make care better.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="careers-intro" aria-labelledby="careers-intro-heading">
+  <div class="container careers-intro-grid">
+    <div>
+      <span class="careers-eyebrow careers-eyebrow--blue">Work with purpose</span>
+      <h2 id="careers-intro-heading">Your work becomes part of someone’s care story.</h2>
+    </div>
+    <div class="careers-intro-copy">
+      <p>Every UCS role contributes to the patient experience. Our nurses, pharmacy teams, patient advocates, records staff, outreach specialists, and front-office teams work together to make expert cancer care easier to reach and navigate.</p>
+      <p>Explore the current openings below. Each listing includes the role’s core responsibilities and qualifications.</p>
+    </div>
+    <div class="careers-figure" aria-label={`${jobs.length} current openings`}>
+      <span>{String(jobs.length).padStart(2, '0')}</span>
+      <small>Current<br />openings</small>
+    </div>
+  </div>
+</section>
+
+<section class="careers-openings" id="openings" aria-labelledby="openings-heading">
+  <div class="container careers-openings-layout">
+    <header class="careers-openings-header">
+      <span class="careers-eyebrow careers-eyebrow--blue">Open positions</span>
+      <h2 id="openings-heading">Find your place on the team.</h2>
+      <p>Select a position to review its responsibilities and qualifications.</p>
+      <div class="careers-equal-opportunity">
+        <span class="material-symbols-rounded" aria-hidden="true">diversity_3</span>
+        <p>Utah Cancer Specialists is an equal opportunity employer.</p>
+      </div>
+    </header>
+
+    <div class="careers-jobs">
+      {jobs.map((job, index) => (
+        <details class="career-job">
+          <summary>
+            <span class="career-job-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            <span class="career-job-heading">
+              <strong>{job.title}</strong>
+              <span>{job.location} <i>·</i> {job.schedule}</span>
+            </span>
+            <span class="career-job-toggle material-symbols-rounded" aria-hidden="true">add</span>
+          </summary>
+          <div class="career-job-body">
+            <p class="career-job-summary">{job.summary}</p>
+            <div class="career-job-meta"><span>{job.status}</span><span>{job.schedule}</span><span>{job.location}</span></div>
+            <div class="career-job-columns">
+              <div>
+                <h3>What you’ll do</h3>
+                <ul>{job.responsibilities.map(item => <li>{item}</li>)}</ul>
+              </div>
+              <div>
+                <h3>What you’ll bring</h3>
+                <ul>{job.qualifications.map(item => <li>{item}</li>)}</ul>
+              </div>
+            </div>
+            <a href={applicationUrl} class="btn btn--primary btn--compact" target="_blank" rel="noopener">Apply for this role <span class="material-symbols-rounded">arrow_outward</span></a>
+          </div>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="careers-apply" aria-labelledby="careers-apply-heading">
+  <div class="container careers-apply-inner">
+    <div>
+      <span class="careers-eyebrow">Ready to apply?</span>
+      <h2 id="careers-apply-heading">Take the next step with UCS.</h2>
+    </div>
+    <div>
+      <p>Use the secure employment application to share your experience and the position that interests you. Openings can change as roles are filled.</p>
+      <a href={applicationUrl} class="btn btn--white" target="_blank" rel="noopener">Open employment application <span class="material-symbols-rounded">arrow_outward</span></a>
+    </div>
+  </div>
+</section>

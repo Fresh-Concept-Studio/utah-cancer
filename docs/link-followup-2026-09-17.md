@@ -10,7 +10,7 @@ This supersedes the unresolved-link list in the September 16 audit. The earlier 
 - Contact Us, Send a Message, and Message Us go to the existing Contact page, following the newer provider pages’ convention. That page explains that the form is for general inquiries and directs medical questions to the patient portal.
 - 26 clinic directions buttons and 69 provider location directions buttons open Google Maps directions for the selected location’s displayed address. Addressless Bountiful, Jordan Valley, Timpanogos, and Layton cards use their matching clinic record. Four Provo cards remain unresolved below.
 - Our Foundation in the header goes to the existing homepage Foundation section, whose Learn More button opens the approved coming-soon modal.
-- Careers opens the [official UCS job openings page](https://utahcancer.com/jobs/), linked from the current UCS website.
+- Careers now opens a native Careers page in the new site from both the Company menu and footer. The page carries over the nine distinct current openings from the official UCS jobs page; the duplicate Patient Advocate listing was consolidated. Applications continue through the existing UCS employment application.
 - Patient Advocacy goes to that service on Programs & Services.
 - Patient Resources now links to the official [American Cancer Society](https://www.cancer.org/), [National Cancer Institute](https://www.cancer.gov/), and [CancerCare](https://www.cancercare.org/) websites.
 - Related Ovarian Cancer, Uterine Cancer, and Clinical Trials cards on Breast Cancer open the matching existing site pages.

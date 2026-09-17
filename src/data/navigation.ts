@@ -8,6 +8,7 @@ export const menus = [
   { label: 'Company', links: [
     { label: 'About', href: '/about.html' },
     { label: 'Leadership', href: '/leadership.html' },
+    { label: 'Careers', href: '/careers.html' },
     { label: 'Events', href: '/events/index.html' },
     { label: 'Our Foundation', href: '/index.html#foundation' },
   ] },

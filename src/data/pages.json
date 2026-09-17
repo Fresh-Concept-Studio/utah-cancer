@@ -59,6 +59,20 @@
     },
     "component": "clinical-trials"
   },
+  "careers.html": {
+    "title": "Careers - Utah Cancer Specialists",
+    "description": "Explore current career opportunities at Utah Cancer Specialists and apply to join a team dedicated to compassionate, community-based cancer care.",
+    "bodyClass": "careers-page",
+    "mainLandmark": true,
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/careers.css"
+    ],
+    "scripts": [],
+    "marquee": true,
+    "component": "careers"
+  },
   "contact.html": {
     "title": "Contact Us - Utah Cancer Specialists",
     "description": "",
