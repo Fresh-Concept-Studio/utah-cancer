@@ -14,7 +14,7 @@ const { activeNav = [] } = Astro.props;
         {menu.href ? <>
           <a href={url(menu.href)} class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow" aria-hidden="true">expand_more</span></a>
           <button type="button" class="nav-dropdown-disclosure" aria-label={`Toggle ${menu.label} submenu`} aria-expanded="false" aria-controls={`nav-submenu-${index}`}><span class="material-symbols-rounded nav-dropdown-arrow" aria-hidden="true">expand_more</span></button>
-        </> : <button class="nav-link nav-dropdown-toggle">{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow">expand_more</span></button>}
+        </> : <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false" aria-controls={`nav-submenu-${index}`}>{menu.label} <span class="material-symbols-rounded nav-dropdown-arrow" aria-hidden="true">expand_more</span></button>}
         <div id={`nav-submenu-${index}`} class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
           {menu.links.map(link => 'comingSoon' in link && link.comingSoon ?
             <button type="button" class="nav-dropdown-item nav-dropdown-item--button" data-coming-soon aria-haspopup="dialog" aria-controls="coming-soon-modal">{link.label}</button> :
@@ -33,19 +33,25 @@ const { activeNav = [] } = Astro.props;
   .nav-dropdown-disclosure { display: none; }
   .nav-dropdown-item--button { width: 100%; border: 0; background: none; font-family: var(--font-body); text-align: left; cursor: pointer; }
   @media (max-width: 1024px) {
+    .nav-dropdown { width: 100%; }
+    button.nav-dropdown-toggle { width: 100%; justify-content: space-between; text-align: left; }
+    .nav-dropdown-menu-inner { width: 100%; min-width: 0; }
+    .nav-dropdown-item { white-space: normal; }
+    .nav-dropdown-toggle .nav-dropdown-arrow { transform: none; }
+    .nav-dropdown-toggle[aria-expanded="true"] .nav-dropdown-arrow { transform: rotate(180deg); }
     .nav-dropdown--linked { display: grid; grid-template-columns: 1fr 44px; width: 100%; }
     .nav-dropdown--linked > a .nav-dropdown-arrow { display: none; }
     .nav-dropdown-disclosure { display: grid; place-items: center; min-height: 44px; border: 0; border-bottom: 1px solid rgb(255 255 255 / 8%); background: none; color: #fff; cursor: pointer; }
     .nav-dropdown-disclosure:focus-visible { outline: 2px solid #fff; outline-offset: -4px; }
     .nav-dropdown-disclosure .nav-dropdown-arrow { transform: none; }
     .nav-dropdown-disclosure[aria-expanded="true"] .nav-dropdown-arrow { transform: rotate(180deg); }
-    .nav-dropdown--linked .nav-dropdown-menu { display: none; grid-column: 1 / -1; position: static; padding: 0 0 12px; visibility: visible; opacity: 1; transform: none; }
-    .nav-dropdown--linked[data-expanded] .nav-dropdown-menu { display: block; }
+    .nav-dropdown .nav-dropdown-menu { display: none; width: 100%; left: auto; grid-column: 1 / -1; position: static; padding: 0 0 12px; visibility: visible; opacity: 1; transform: none; }
+    .nav-dropdown[data-expanded] .nav-dropdown-menu { display: block; }
   }
 </style>
 
 <script>
-  document.querySelectorAll<HTMLButtonElement>('.nav-dropdown-disclosure').forEach(button => {
+  document.querySelectorAll<HTMLButtonElement>('.nav-dropdown-disclosure, button.nav-dropdown-toggle').forEach(button => {
     button.addEventListener('click', () => {
       const expanded = button.getAttribute('aria-expanded') !== 'true';
       button.setAttribute('aria-expanded', String(expanded));

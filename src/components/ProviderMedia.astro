@@ -1,0 +1,27 @@
+---
+import { mediaHighlights } from '../data/media';
+import { url } from '../lib/urls';
+---
+<section class="provider-media" id="media" aria-labelledby="provider-media-title">
+  <div class="container">
+    <h2 class="provider-section-title" id="provider-media-title">In the Media</h2>
+    <p class="provider-media-intro">Stories from our patients and insights from the Utah Cancer Specialists team.</p>
+    <div class="media-carousel">
+      <button type="button" class="media-carousel-btn media-carousel-btn--prev" aria-label="Previous videos" aria-controls="provider-media-track"><span class="material-symbols-rounded" aria-hidden="true">chevron_left</span></button>
+      <div class="media-carousel-track" id="provider-media-track" tabindex="0" role="region" aria-label="Media videos">
+        {mediaHighlights.map(video => <a class="media-card" href={video.href} target="_blank" rel="noopener" aria-label={`Watch ${video.title} on YouTube (opens in a new tab)`}>
+          <div class="media-card-video">
+            <img src={url(`/images/media/${video.id}.jpg`)} width="480" height="360" alt="" loading="lazy" decoding="async" />
+            <span class="material-symbols-rounded media-card-play" aria-hidden="true">play_circle</span>
+            <span class="media-card-badge">{video.badge}</span>
+          </div>
+          <div class="media-card-info">
+            <p class="media-card-source">{video.source}</p>
+            <h3 class="media-card-title">{video.title}</h3>
+          </div>
+        </a>)}
+      </div>
+      <button type="button" class="media-carousel-btn media-carousel-btn--next" aria-label="Next videos" aria-controls="provider-media-track"><span class="material-symbols-rounded" aria-hidden="true">chevron_right</span></button>
+    </div>
+  </div>
+</section>

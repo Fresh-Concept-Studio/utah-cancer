@@ -6,7 +6,8 @@
       "/provider.css"
     ],
     "scripts": [
-      "/scripts/detail-tabs.js"
+      "/scripts/detail-tabs.js",
+      "/scripts/media-carousel.js"
     ],
     "marquee": true,
     "cta": {
