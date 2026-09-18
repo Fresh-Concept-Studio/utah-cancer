@@ -25,3 +25,11 @@ import { url } from '../lib/urls';
     </div>
   </div>
 </section>
+
+<style>
+  /* Keep these with the component so updated markup and image sizing ship together. */
+  .media-card-video { display: block; position: relative; width: 100%; height: auto; aspect-ratio: 16 / 9; overflow: hidden; }
+  .media-card-video img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .media-card-play { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; line-height: 1; text-shadow: 0 2px 12px rgba(0, 0, 0, .65); }
+  .media-card-badge { z-index: 2; }
+</style>
