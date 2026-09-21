@@ -1,0 +1,14 @@
+---
+import { analytics } from '../data/analytics';
+import { url } from '../lib/urls';
+interface Props { title: string }
+const path = Astro.url.pathname.replace(/\/$/, '') + '/';
+const active = import.meta.env.PROD && process.env.SITE_INDEXABLE === 'true'
+  && Astro.site?.origin === analytics.productionOrigin
+  && !analytics.excludedPaths.some(excluded => path.startsWith(excluded));
+---
+{active && <script is:inline defer src={url('/scripts/analytics.js')}
+  data-measurement-id={analytics.measurementId}
+  data-origin={analytics.productionOrigin}
+  data-title={Astro.props.title}
+  data-path={path}></script>}

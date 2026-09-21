@@ -47,6 +47,7 @@ and publishes the exact approved source revision to GitHub Pages.
 | Global and page-specific styles | `public/*.css`, `public/page-styles/` |
 | Browser interactions | `public/scripts/` |
 | Contact form delivery and main appointment phone | `src/data/contact.ts` (see [setup guide](docs/contact-form.md)) |
+| Google Analytics, exclusions, client access, and reporting | `src/data/analytics.ts` (see [Analytics handoff](docs/analytics.md)) |
 | Images and portraits | `public/images/` |
 
 `src/lib/pages.ts` generates detail routes from records. Adding a provider, leader, specialty, or location does not require a second page file or route entry. Use a unique `slug` and follow an existing record's shape. Optional `page` overrides preserve special metadata or calls to action.

@@ -4,6 +4,7 @@ import Footer from '../components/Footer.astro';
 import Marquee from '../components/Marquee.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import ComingSoonModal from '../components/ComingSoonModal.astro';
+import Analytics from '../components/Analytics.astro';
 import type { PageData } from '../lib/types';
 import { url } from '../lib/urls';
 interface Props { page: PageData }
@@ -126,6 +127,7 @@ const structuredData = JSON.stringify([
     {page.cta && <ContactCTA cta={page.cta} />}
     {page.marquee && <Marquee />}
     <Footer />
+    <Analytics title={page.title} />
     <ComingSoonModal />
     <script is:inline src={url('/scripts/site.js')}></script>
     <script is:inline src={url('/scripts/coming-soon.js')}></script>

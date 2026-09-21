@@ -17,5 +17,24 @@ const { page } = Astro.props;
     <article class="policy-content">
       <Fragment set:html={richHtml(page.contentHtml)} />
     </article>
+    {page.slug === 'privacy-policy' && <section class="analytics-notice" id="website-analytics" aria-labelledby="analytics-heading">
+      <h2 id="analytics-heading">Website analytics and your choices</h2>
+      <p>We use Google Analytics on public informational pages to understand website visits, traffic sources, campaigns, and content engagement. It loads automatically on eligible pages and uses first-party analytics cookies with a 13-month expiration. Google processes technical information such as your IP address, approximate location, and browser and device information when receiving these requests. User and event data are retained for up to 14 months; aggregated reports may be retained longer.</p>
+      <p>We measure page views, scrolling, supported video interactions, public file downloads, general phone and email link clicks, and outbound website clicks. Analytics is excluded from our contact and employment application forms. We do not collect form entries, search terms, contact-link phone numbers or email addresses, or patient portal and payment interactions. We filter campaign parameters and remove other URL parameters, fragments, and referring-page paths. Advertising personalization and Google signals are disabled.</p>
+      <p>You can turn off analytics for this browser below. We also honor Global Privacy Control and Do Not Track. Your choice is stored in this browser; clearing its local storage resets the choice.</p>
+      <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></p>
+      <p id="analytics-status" role="status">Analytics does not run on preview versions of this site.</p>
+      <button type="button" id="analytics-opt-out" hidden>Turn off website analytics</button>
+      <noscript><p>Analytics is off because JavaScript is disabled.</p></noscript>
+    </section>}
   </div>
 </section>
+<style>
+  .analytics-notice { margin-top: 40px; padding-top: 32px; border-top: 1px solid #b9c9d0; color: #183e4f; line-height: 1.7; scroll-margin-top: 110px; }
+  .analytics-notice h2 { font: 600 26px/1.3 var(--font-heading, sans-serif); margin-bottom: 20px; }
+  .analytics-notice p { margin: 0 0 16px; }
+  .analytics-notice a { color: #00476b; text-decoration: underline; }
+  .analytics-notice button { padding: 12px 18px; border: 1px solid #477080; border-radius: 6px; background: white; color: #00476b; font: inherit; cursor: pointer; }
+  .analytics-notice button[hidden] { display: none; }
+  .analytics-notice button:focus-visible { outline: 3px solid #00476b; outline-offset: 3px; }
+</style>
