@@ -1,6 +1,6 @@
 ---
 import { url } from '../lib/urls';
-import specialties from '../data/specialties.json';
+import { specialties } from '../lib/content';
 import { specialtyCategories } from '../data/navigation';
 const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.order);
 ---

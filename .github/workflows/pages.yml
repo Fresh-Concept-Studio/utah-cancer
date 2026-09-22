@@ -3,6 +3,8 @@ name: Publish Astro to GitHub Pages
 # Deliberate manual release. No deployment is triggered by a push.
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [sanity-publish]
 
 permissions:
   contents: read
@@ -21,6 +23,7 @@ jobs:
       SITE_URL: ${{ vars.SITE_URL || 'https://fresh-concept-studio.github.io' }}
       BASE_PATH: ${{ vars.BASE_PATH || '/utah-cancer' }}
       SITE_INDEXABLE: ${{ vars.SITE_INDEXABLE || 'false' }}
+      SANITY_REQUIRED: 'true'
     steps:
       - uses: actions/checkout@v7
       - name: Install, verify, build, and upload

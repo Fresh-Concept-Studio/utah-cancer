@@ -1,6 +1,6 @@
 ---
 import { url } from '../lib/urls';
-import providers from '../data/providers.json';
+import { providers } from '../lib/content';
 import { providerCategories } from '../data/navigation';
 const ordered = [...providers].sort((a,b) => a.directory.order - b.directory.order);
 ---

@@ -1,5 +1,6 @@
 ---
-import { contactForm, mainPhone } from '../data/contact';
+import { contactForm } from '../data/contact';
+import { mainPhone } from '../lib/content';
 const endpoint = `${contactForm.serviceUrl}/${contactForm.endpointId}`;
 ---
 <p class="contact-form-notice" id="contact-form-notice">For general inquiries only. Please do not include medical details, insurance information, or other sensitive information. For medical questions, use the <a href="https://www.navigatingcare.com/navigatingcare/" target="_blank" rel="noopener">patient portal</a> or call <a href={mainPhone.href}>{mainPhone.display}</a>.</p>

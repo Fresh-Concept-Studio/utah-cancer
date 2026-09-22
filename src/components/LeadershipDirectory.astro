@@ -1,7 +1,5 @@
 ---
-import groups from '../data/leadership-groups.json';
-import providers from '../data/providers.json';
-import leaders from '../data/leaders.json';
+import { leadershipGroups as groups, providers, leaders } from '../lib/content';
 import { url } from '../lib/urls';
 interface Member { provider?: string; leader?: string; name?: string; role?: string; photo?: { src: string; alt: string } }
 const directory = (groups as {title: string; cards: Member[]}[]).map(group => ({

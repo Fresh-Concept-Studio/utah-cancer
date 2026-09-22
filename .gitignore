@@ -8,3 +8,6 @@ dist/
 !.env.example
 .sitewalk/
 .siteadjust-artifact/
+.sanity/
+studio/dist/
+studio/node_modules/

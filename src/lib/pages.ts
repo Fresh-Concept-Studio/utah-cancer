@@ -1,12 +1,4 @@
-import standalonePages from '../data/pages.json';
-import defaults from '../data/page-defaults.json';
-import providers from '../data/providers.json';
-import leaders from '../data/leaders.json';
-import specialties from '../data/specialties.json';
-import locations from '../data/locations.json';
-import policies from '../data/policies.json';
-import { newsPosts } from '../data/news';
-import { resourcePages } from '../data/resources';
+import { pages as standalonePages, pageDefaults as defaults, providers, leaders, specialties, locations, policies, newsPosts, resourcePages } from './content';
 import type { PageData } from './types';
 
 type Family = NonNullable<PageData['family']>;

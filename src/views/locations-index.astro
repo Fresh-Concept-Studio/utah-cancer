@@ -1,6 +1,6 @@
 ---
 import { url, richHtml } from '../lib/urls';
-import locations from '../data/locations.json';
+import { locations } from '../lib/content';
 const directory = locations.filter(location => location.directory).sort((a,b) => a.directory!.order - b.directory!.order);
 const markers = directory.filter(location => location.map).map(location => ({
   region: 'utah',
