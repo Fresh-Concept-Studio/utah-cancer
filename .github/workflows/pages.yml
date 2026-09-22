@@ -3,8 +3,6 @@ name: Publish Astro to GitHub Pages
 # Deliberate manual release. No deployment is triggered by a push.
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [sanity-publish]
 
 permissions:
   contents: read
