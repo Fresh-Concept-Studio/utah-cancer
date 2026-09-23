@@ -868,11 +868,21 @@
     },
     "tabs": [
       {
+        "href": "#about",
+        "label": "About"
+      },
+      {
         "href": "#locations",
         "label": "Locations"
       }
     ],
-    "sections": [],
+    "sections": [
+      {
+        "id": "about",
+        "title": "About Emma",
+        "html": "<p class=\"provider-bio\">Emma has worked in healthcare in a variety of roles since graduating from high school, including dental assisting, phlebotomy, and working as a CNA. Although she explored several different healthcare paths, she ultimately followed her lifelong goal of becoming a nurse.</p> <p class=\"provider-bio\">Before joining Utah Cancer Specialists, Emma spent three years at Huntsman Cancer Hospital on the medical oncology unit, where she provided inpatient chemotherapy, symptom management, and end-of-life care.</p> <p class=\"provider-bio\">Emma’s connection to oncology is also deeply personal. After losing her best friend to cancer in 2023, she reflected on how profoundly cancer had affected the lives of people she loved. Those experiences strengthened her passion for palliative and supportive care and her belief that people living with cancer should be able to suffer less and live more, including during the most difficult stages of their illness.</p> <p class=\"provider-bio\">Her approach to care begins with meeting each patient where they are. Emma believes trust is built through consistency, kindness, and taking the time to listen. She strives to be a strong advocate for her patients and to create a space where they feel comfortable sharing their concerns, goals, and needs.</p> <p class=\"provider-bio\">Emma also values the ability to sit alongside patients and families during difficult moments with compassion and an open heart. She believes those relationships are an important part of helping patients feel supported throughout their cancer journey.</p> <p class=\"provider-bio\">Outside of work, Emma is a mom to three boys and enjoys spending time outdoors with them and attending their many sporting events. She also loves traveling when she can and trying new foods.</p> <p class=\"provider-bio\">Emma grew up in Sandy, Utah, before moving to Texas, where her two oldest sons were born. Her family later returned to Utah, which she is happy to once again call home.</p> <p class=\"provider-bio\">She is excited to be part of Dr. Garner’s Supportive Oncology team at Utah Cancer Specialists and to help patients live as fully and comfortably as possible throughout their care.</p>"
+      }
+    ],
     "sidebar": "provider-contact-3",
     "directory": {
       "photo": "/images/provider-emma-hanson.png",
@@ -1486,7 +1496,7 @@
       {
         "id": "about",
         "title": "About Dr. Stinnett",
-        "html": "<p class=\"provider-bio\">Jason M. Stinnett, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "html": "<p class=\"provider-bio\">Dr. Stinnett was raised in Arkansas, where he completed medical school before moving to Utah in 1998. He completed his training in internal medicine followed by hematology and oncology. After training, he began his career in Boise, Idaho, where he practiced for nearly three years before returning to Utah.</p> <p class=\"provider-bio\">Cancer has touched Dr. Stinnett’s life personally. The mother of his closest childhood friend, as well as his grandmother, grandfather, and father, were all affected by cancer at different points in his life. Those experiences, along with the stories and relationships he has shared with patients throughout his career, have made oncology much more than a profession to him.</p> <p class=\"provider-bio\">With a background in computer science, Dr. Stinnett has a strong interest in the use of technology in everyday medical practice. His research interests include breast cancer therapeutics as well as approaches to managing the long-term side effects of treatment for patients with breast and prostate cancers.</p> <p class=\"provider-bio\">Dr. Stinnett believes every patient is unique. Each person brings a different background, perspective on their health, goals, and experience with treatment. Understanding those differences is essential to providing truly personalized care.</p> <p class=\"provider-bio\">Communication is central to his approach. He believes meaningful dialogue with patients about their goals, concerns, and priorities should come before developing a treatment plan. Taking the time to listen allows him and his patients to make informed decisions together.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Stinnett enjoys traveling and has a lifelong love of sports. Although he grew up in Arkansas, he has now lived in Utah longer than anywhere else and considers it home. He appreciates Utah’s world-class outdoor recreation, the entertainment and culture of Salt Lake City, and, most of all, the people he has the privilege of caring for each day.</p>"
       },
       {
         "id": "education",
@@ -1731,8 +1741,8 @@
     "sections": [
       {
         "id": "about",
-        "title": "About Balk",
-        "html": "<p class=\"provider-bio\">Julie A. Balk, DNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Julie",
+        "html": "<p class=\"provider-bio\">Julie brings more than 30 years of nurse practitioner experience across internal medicine, family practice, cardiology, infectious disease, and endocrinology. Her broad clinical background provides a valuable perspective in caring for patients with complex and diverse healthcare needs.</p> <p class=\"provider-bio\">Julie was drawn to healthcare by both the science of medicine and compassion at the heart of patient care. She believes the best care comes from a true team approach—combining rapidly evolving medical knowledge and therapies with the expertise of the clinical care team and, most importantly, the voice of each patient and their support system.</p> <p class=\"provider-bio\">She values the extensive experience she has gained outside of oncology and the unique perspective it brings to her work with patients at Utah Cancer Specialists.</p> <p class=\"provider-bio\">Born and raised in Salt Lake City, Julie enjoys traveling, golfing, and spending time with her grandchildren.</p>"
       },
       {
         "id": "education",
@@ -2038,7 +2048,7 @@
       {
         "id": "about",
         "title": "About Dr. Rogers",
-        "html": "<p class=\"provider-bio\">C. Leland Rogers, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "html": "<p class=\"provider-bio\">Dr. C. Leland Rogers is a board-certified radiation oncologist with more than 40 years of experience in academic medicine, Veterans Affairs, and private practice. He earned his Doctor of Medicine with honors from the University of Kentucky College of Medicine and completed his radiation oncology training at the University of North Carolina at Chapel Hill, where he served as an American Cancer Society Clinical Fellow.</p> <p class=\"provider-bio\">Throughout his career, Dr. Rogers has practiced at several respected institutions, including Mayo Clinic, Barrow Neurological Institute, GammaWest Brachytherapy, Virginia Commonwealth University, and the Richmond VA Medical Center. His clinical and academic interests have included central nervous system tumors, prostate cancer, brachytherapy, and innovative applications of radiation therapy. He has also contributed extensively to medical research, with approximately 100 peer-reviewed publications, book chapters, editorials, and other scholarly works.</p> <p class=\"provider-bio\">Dr. Rogers originally planned to pursue a career in anesthesiology, but his path changed after several close family members were diagnosed with cancer. Seeing the impact radiation therapy had on their care inspired him to explore radiation oncology. He was drawn to the specialty because of the opportunity to build meaningful relationships with patients while using rapidly advancing technology to improve outcomes and quality of life.</p> <p class=\"provider-bio\">His connection to cancer care became even more personal during his final year of residency, when he was diagnosed with an aggressive cancer himself. After successfully completing treatment, the experience profoundly influenced the way he practices medicine. He strives to provide patients with the same combination of expertise, compassion, and personal connection that made such a difference during his own cancer journey.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Rogers enjoys tennis, skiing, and music. He is also a published songwriter, with music available under “Leland Rogers” on several streaming platforms. He and his wife, Juliana, have four grown sons and four grandchildren. After living in Utah at several points throughout their lives, they returned in 2020 and are grateful to once again call Utah home.</p>"
       },
       {
         "id": "education",
@@ -2659,7 +2669,7 @@
       {
         "id": "about",
         "title": "About Dr. Harris",
-        "html": "<p class=\"provider-bio\">Robert A. Harris, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "html": "<p class=\"provider-bio\">Dr. Harris brings decades of experience in radiation oncology and a deep commitment to providing thoughtful, patient-centered cancer care.</p> <p class=\"provider-bio\">He earned his undergraduate degree in Chemical Engineering from Brigham Young University in 1988 and his medical degree from the Uniformed Services University in 1992. He completed his internship at Naval Hospital San Diego in 1993 and then served as a Navy Undersea Medical Officer from 1993 to 1996. He completed his radiation oncology residency at the National Cancer Institute in 2000.</p> <p class=\"provider-bio\">Following residency, Dr. Harris served as an attending physician and service manager at the National Naval Medical Center from 2000 to 2004. He then practiced with Gammawest Cancer Services for 20 years before joining Utah Cancer Specialists in 2024.</p> <p class=\"provider-bio\">Dr. Harris was drawn to radiation oncology because of the complexity of cancer treatment, the rapid advancement of medical science, and the opportunity to collaborate closely with physicians across multiple specialties. He also values the meaningful relationships that develop through the time spent with patients throughout their treatment.</p> <p class=\"provider-bio\">He believes excellent radiation therapy requires a highly coordinated team of specialists. Dr. Harris emphasizes that every member of the care team should prioritize the patient experience, helping make each patient's cancer journey as comfortable and positive as possible.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Harris enjoys traveling, skiing, scuba diving, snorkeling, home improvement projects, and spending time with his children and grandchildren. After completing his service in the Navy, he and his family moved to Utah to be closer to their parents and to give their children the opportunity to build strong relationships with their grandparents.</p>"
       },
       {
         "id": "education",
