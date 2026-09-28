@@ -10,9 +10,10 @@
 .ucs-editor button {font:inherit; padding:9px 14px; cursor:pointer; border-radius:5px; border:1px solid #89949d66; color:inherit; background:transparent;}
 .ucs-choice {display:flex; gap:10px; align-items:start; margin:12px 0; font-size:14px;}
 .ucs-guide {padding:24px; max-width:820px; margin:auto; font:inherit; line-height:1.65;}
-.ucs-guide a {color:#2274ad;}
+.ucs-guide a {color:inherit; text-underline-offset:3px;}
 .ucs-guide h1 {font-size:27px; line-height:1.25;}
 .ucs-guide h2 {font-size:18px; margin-top:28px;}
 .ucs-guide .ucs-note {padding:16px; border-radius:6px; background:#47708015; border:1px solid #47708035;}
 .ucs-guide .ucs-related {display:block; text-decoration:none; border-bottom:1px solid #89949d44; padding:12px 0;}
+.ucs-guide .ucs-related:hover strong, .ucs-guide .ucs-related:focus-visible strong {text-decoration:underline; text-underline-offset:3px;}
 .ucs-guide .ucs-related small {display:block; opacity:.7;}
