@@ -1061,5 +1061,80 @@
       "lat": 40.2505064,
       "lng": -111.665678
     }
+  },
+  {
+    "slug": "tooele",
+    "title": "Tooele Clinic",
+    "tag": "Medical Oncology & Hematology",
+    "subtitle": "NorthPointe Medical Park",
+    "image": {
+      "src": "/images/location-tooele.jpg",
+      "alt": "Patient receiving cancer care"
+    },
+    "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 2326 N. 400 E., Building C, Ste. 204, Tooele, UT 84074</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 435.882.2365</span>",
+    "actions": [
+      {
+        "attrs": {
+          "href": "https://www.google.com/maps/dir/?api=1&destination=2326+N.+400+E.%2C+Building+C%2C+Ste.+204+Tooele%2C+UT+84074",
+          "class": "btn btn--white",
+          "target": "_blank",
+          "rel": "noopener"
+        },
+        "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions"
+      },
+      {
+        "attrs": {
+          "href": "tel:4358822365",
+          "class": "btn btn--outline-dark"
+        },
+        "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic"
+      }
+    ],
+    "sections": [
+      {
+        "title": "About this clinic",
+        "html": "<p class=\"provider-bio\">The Tooele Clinic at NorthPointe Medical Park brings Utah Cancer Specialists care to patients in Tooele County. The clinic is located in Building C, Suite 204.</p>"
+      },
+      {
+        "title": "Services at this location",
+        "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> </div>"
+      },
+      {
+        "title": "Hours of operation",
+        "html": "<p class=\"provider-bio\">First and third Thursdays of each month, 9:00 AM–5:00 PM. Please call to confirm hours before visiting.</p>"
+      },
+      {
+        "title": "Parking & directions",
+        "html": "<p class=\"provider-bio\">Find us at NorthPointe Medical Park, 2326 N. 400 E., Building C, Suite 204, Tooele, UT 84074.</p>"
+      }
+    ],
+    "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">NorthPointe Medical Park<br>2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=2326+N.+400+E.%2C+Building+C%2C+Ste.+204+Tooele%2C+UT+84074\" class=\"btn btn--primary btn--full\" target=\"_blank\" rel=\"noopener\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:4358822365\">435.882.2365</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5614</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">Call to confirm clinic hours or request an appointment.</p> <a href=\"tel:4358822365\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+    "page": {
+      "cta": {
+        "heading": "Questions about your visit?",
+        "image": "/images/contact-bg.jpg",
+        "links": [
+          {
+            "attrs": {
+              "href": "tel:4358822365",
+              "class": "btn btn--white"
+            },
+            "html": "<span class=\"material-symbols-rounded\">phone</span> Call 435.882.2365"
+          }
+        ]
+      }
+    },
+    "directory": {
+      "order": 14,
+      "county": "tooele",
+      "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
+      "hoursHtml": "1st & 3rd Thu, 9:00 am – 5:00 pm",
+      "phone": "435.882.2365",
+      "badge": ""
+    },
+    "map": {
+      "lat": 40.5718679,
+      "lng": -112.2924096
+    }
   }
 ]

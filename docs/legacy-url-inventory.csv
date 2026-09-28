@@ -76,7 +76,7 @@ https://utahcancer.com/patient-privacy/,no_change,https://utahcancer.com/patient
 https://utahcancer.com/privacy-policy/,no_change,https://utahcancer.com/privacy-policy/,Policy page preserved at its existing public path with current wording
 https://utahcancer.com/pleasant-grove/,redirect,https://utahcancer.com/locations/pleasant-grove/,Direct location replacement
 https://utahcancer.com/utah-valley-hospital/,redirect,https://utahcancer.com/locations/provo/,Same address as the current Provo clinic
-https://utahcancer.com/ucs-tooele/,retire,Return 410,Former Utah clinic has no matching current location
+https://utahcancer.com/ucs-tooele/,retire,Return 410,Former URL; current Tooele Clinic is at /locations/tooele/
 https://utahcancer.com/st-marks-hospital-radiation/,redirect,https://utahcancer.com/locations/st-marks/,Direct location replacement
 https://utahcancer.com/salt-lake/,redirect,https://utahcancer.com/locations/salt-lake/,Direct location replacement
 https://utahcancer.com/idahofalls/,retire,Return 410,Former Idaho clinic intentionally omitted from the Utah site

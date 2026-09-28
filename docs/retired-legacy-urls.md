@@ -34,6 +34,7 @@ These old WordPress URLs should not be recreated or redirected to unrelated cont
 - `/steel-memorial/` — Salmon, Idaho
 - `/teton-valley-health-care/` — Driggs, Idaho
 - `/wyoming/` — Jackson, Wyoming
-- `/ucs-tooele/` — former Tooele clinic; no current location has the same address
 
 The former Davis Hospital Campus page redirects to the current Layton clinic because both use `1492 Antelope Drive, Suite 125, Layton, UT 84041`. The former Utah Valley Hospital page redirects to the current Provo clinic because both use `395 W. Cougar Blvd., Suite 104, Provo, UT 84604`.
+
+The current Tooele Clinic is listed at `/locations/tooele/`. Its former `/ucs-tooele/` URL remains retired.
