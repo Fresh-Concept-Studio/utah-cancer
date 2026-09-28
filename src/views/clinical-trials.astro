@@ -1,15 +1,17 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <section class="sd-hero">
-    <div class="sd-hero-bg"><img src={url("/images/specialty-lung-clinical-hero.webp")} width="1200" height="675" alt="" fetchpriority="high" decoding="async"><div class="sd-hero-overlay"></div></div>
+    <div class="sd-hero-bg"><img src={url(edit.image("image-561ca38b27", "/images/specialty-lung-clinical-hero.webp"))} width="1200" height="675" alt={edit.imageAlt("image-561ca38b27", "")} fetchpriority="high" decoding="async"><div class="sd-hero-overlay"></div></div>
     <div class="container sd-hero-inner">
-      <span class="sd-hero-tag">Research &amp; Innovation</span>
-      <h1 class="sd-hero-title">Clinical Trials</h1>
-      <p class="sd-hero-sub">For over 25 years, Utah Cancer Specialists has been advancing cancer care through clinical research — managing 50+ active trials and offering Utah’s only community-based early-phase program.</p>
+      <span class="sd-hero-tag">{edit.text("text-b008039132", "Research & Innovation")}</span>
+      <h1 class="sd-hero-title">{edit.text("text-65221b74ce", "Clinical Trials")}</h1>
+      <p class="sd-hero-sub">{edit.text("text-b8d33e22ac", "For over 25 years, Utah Cancer Specialists has been advancing cancer care through clinical research — managing 50+ active trials and offering Utah’s only community-based early-phase program.")}</p>
       <div class="sd-hero-actions">
-        <a href="https://startresearch.com/mountain-region/" class="btn btn--white" target="_blank" rel="noopener">Explore START Trials <span class="material-symbols-rounded">arrow_forward</span></a>
-        <a href={url("/late-phase-trials.html")} class="btn btn--outline-dark">View UCS Late-Phase Trials <span class="material-symbols-rounded">arrow_forward</span></a>
+        <a href={url(edit.text("link-a1e5839718", "https://startresearch.com/mountain-region/"))} class="btn btn--white" target="_blank" rel="noopener">{edit.text("text-fb7451182f", "Explore START Trials ")}<span class="material-symbols-rounded">arrow_forward</span></a>
+        <a href={url(edit.text("link-edef5333d6", "/late-phase-trials.html"))} class="btn btn--outline-dark">{edit.text("text-4674182d0c", "View UCS Late-Phase Trials ")}<span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
   </section>
@@ -17,54 +19,54 @@ import { url } from '../lib/urls';
   <section class="ct-programs">
     <div class="container">
       <div class="ct-programs-header">
-        <span class="ct-eyebrow">Two research programs</span>
-        <h2 class="ct-programs-title">Investigational therapies and standard-of-care advances, side by side.</h2>
-        <p class="ct-programs-sub">From cutting-edge first-in-human Phase I studies to large-scale Phase II and III trials, our research teams help you understand what’s available and whether a trial fits your situation.</p>
+        <span class="ct-eyebrow">{edit.text("text-7ee789218c", "Two research programs")}</span>
+        <h2 class="ct-programs-title">{edit.text("text-a5b1977863", "Investigational therapies and standard-of-care advances, side by side.")}</h2>
+        <p class="ct-programs-sub">{edit.text("text-d8f047e136", "From cutting-edge first-in-human Phase I studies to large-scale Phase II and III trials, our research teams help you understand what’s available and whether a trial fits your situation.")}</p>
       </div>
 
       <div class="ct-programs-grid">
         <article class="ct-program">
           <div class="ct-program-brand-row">
-            <img src={url("/images/logo-start-trials.png")} alt="START Mountain Region logo" class="ct-program-logo">
-            <span class="ct-phase-badge"><span class="material-symbols-rounded">science</span> Phase I</span>
+            <img src={url(edit.image("image-a5d4c453d6", "/images/logo-start-trials.png"))} alt={edit.imageAlt("image-a5d4c453d6", "START Mountain Region logo")} class="ct-program-logo">
+            <span class="ct-phase-badge"><span class="material-symbols-rounded">science</span>{edit.text("text-edad79c23a", " Phase I")}</span>
           </div>
-          <span class="ct-program-eyebrow">START Mountain Region</span>
-          <h3>Early-Phase Trials</h3>
-          <p>Established in 2020, the START Mountain Region center is Utah’s only dedicated community-based early-phase clinical trial site — part of the world’s largest Phase I medical oncology research program.</p>
-          <p>Led by Dr. Justin Call, the program expands options for patients who have exhausted standard treatments and wish to explore emerging investigational therapies, right here in Utah.</p>
+          <span class="ct-program-eyebrow">{edit.text("text-abd4b1069f", "START Mountain Region")}</span>
+          <h3>{edit.text("text-2ac9538e7b", "Early-Phase Trials")}</h3>
+          <p>{edit.text("text-f7a84a017b", "Established in 2020, the START Mountain Region center is Utah’s only dedicated community-based early-phase clinical trial site — part of the world’s largest Phase I medical oncology research program.")}</p>
+          <p>{edit.text("text-38ce75d58f", "Led by Dr. Justin Call, the program expands options for patients who have exhausted standard treatments and wish to explore emerging investigational therapies, right here in Utah.")}</p>
           <div class="ct-program-facts">
-            <div class="ct-program-fact"><span class="material-symbols-rounded">flag</span><div>Established <strong>2020</strong></div></div>
-            <div class="ct-program-fact"><span class="material-symbols-rounded">person</span><div>Led by <strong>Dr. Justin Call</strong></div></div>
-            <div class="ct-program-fact"><span class="material-symbols-rounded">public</span><div>Part of the world’s largest Phase I medical oncology research program</div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">flag</span><div>{edit.text("text-48dd9c7617", "Established ")}<strong>{edit.text("text-85568b20c3", "2020")}</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">person</span><div>{edit.text("text-d598981eea", "Led by ")}<strong>{edit.text("text-e602db0a6b", "Dr. Justin Call")}</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">public</span><div>{edit.text("text-de0fbf7195", "Part of the world’s largest Phase I medical oncology research program")}</div></div>
           </div>
           <div class="ct-program-actions">
-            <a href="https://startresearch.com/mountain-region/" class="ct-program-primary" target="_blank" rel="noopener">Learn More <span class="material-symbols-rounded">arrow_outward</span></a>
+            <a href={url(edit.text("link-a1e5839718-1", "https://startresearch.com/mountain-region/"))} class="ct-program-primary" target="_blank" rel="noopener">{edit.text("text-b05afac5af", "Learn More ")}<span class="material-symbols-rounded">arrow_outward</span></a>
             <div class="ct-program-secondary">
-              <a href="tel:8019074750" class="ct-program-email"><span class="material-symbols-rounded">phone</span> 801.907.4750</a>
-              <a href="mailto:research@utahcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a>
+              <a href={url(edit.text("link-bd512febc2", "tel:8019074750"))} class="ct-program-email"><span class="material-symbols-rounded">phone</span>{edit.text("text-1dbb098ed9", " 801.907.4750")}</a>
+              <a href={url(edit.text("link-0567610c7e", "mailto:research@utahcancer.com"))} class="ct-program-email"><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07", " research@utahcancer.com")}</a>
             </div>
           </div>
         </article>
 
         <article class="ct-program ct-program--late">
           <div class="ct-program-brand-row">
-            <img src={url("/images/ucs-logo-color.svg")} alt="Utah Cancer Specialists" class="ct-program-logo">
-            <span class="ct-phase-badge"><span class="material-symbols-rounded">monitoring</span> Phase II–III</span>
+            <img src={url(edit.image("image-e880bb9929", "/images/ucs-logo-color.svg"))} alt={edit.imageAlt("image-e880bb9929", "Utah Cancer Specialists")} class="ct-program-logo">
+            <span class="ct-phase-badge"><span class="material-symbols-rounded">monitoring</span>{edit.text("text-9ba0591868", " Phase II–III")}</span>
           </div>
-          <span class="ct-program-eyebrow">UCS Clinical Research</span>
-          <h3>Late-Phase Trials</h3>
-          <p>Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West — trials that help establish new standards of care.</p>
-          <p>With trials spanning all cancer types, our research team can help determine whether a clinical trial might be right for you based on your diagnosis, treatment history, and molecular profile.</p>
+          <span class="ct-program-eyebrow">{edit.text("text-e2f6d61a65", "UCS Clinical Research")}</span>
+          <h3>{edit.text("text-65cdaaab89", "Late-Phase Trials")}</h3>
+          <p>{edit.text("text-8486e038fa", "Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West — trials that help establish new standards of care.")}</p>
+          <p>{edit.text("text-a0557500e3", "With trials spanning all cancer types, our research team can help determine whether a clinical trial might be right for you based on your diagnosis, treatment history, and molecular profile.")}</p>
           <div class="ct-program-facts">
-            <div class="ct-program-fact"><span class="material-symbols-rounded">category</span><div>Trials spanning <strong>all cancer types</strong></div></div>
-            <div class="ct-program-fact"><span class="material-symbols-rounded">map</span><div>Serving the <strong>Intermountain West</strong></div></div>
-            <div class="ct-program-fact"><span class="material-symbols-rounded">trending_up</span><div>Establishes new standard-of-care treatments</div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">category</span><div>{edit.text("text-f195ab4626", "Trials spanning ")}<strong>{edit.text("text-ab647dbbd3", "all cancer types")}</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">map</span><div>{edit.text("text-5ecce4da1c", "Serving the ")}<strong>{edit.text("text-8c16bbf25c", "Intermountain West")}</strong></div></div>
+            <div class="ct-program-fact"><span class="material-symbols-rounded">trending_up</span><div>{edit.text("text-4e273213ef", "Establishes new standard-of-care treatments")}</div></div>
           </div>
           <div class="ct-program-actions">
-            <a href={url("/late-phase-trials.html")} class="ct-program-primary">Learn More <span class="material-symbols-rounded">arrow_forward</span></a>
+            <a href={url(edit.text("link-edef5333d6-1", "/late-phase-trials.html"))} class="ct-program-primary">{edit.text("text-b05afac5af-1", "Learn More ")}<span class="material-symbols-rounded">arrow_forward</span></a>
             <div class="ct-program-secondary">
-              <a href="tel:8012816864" class="ct-program-email"><span class="material-symbols-rounded">phone</span> 801.281.6864</a>
-              <a href="mailto:research@utahcancer.com" class="ct-program-email"><span class="material-symbols-rounded">mail</span> research@utahcancer.com</a>
+              <a href={url(edit.text("link-3277871004", "tel:8012816864"))} class="ct-program-email"><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9", " 801.281.6864")}</a>
+              <a href={url(edit.text("link-0567610c7e-1", "mailto:research@utahcancer.com"))} class="ct-program-email"><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-1", " research@utahcancer.com")}</a>
             </div>
           </div>
         </article>
@@ -75,34 +77,34 @@ import { url } from '../lib/urls';
   <section class="ct-journey">
     <div class="container">
       <div class="ct-journey-header">
-        <span class="ct-eyebrow">Your trial journey</span>
-        <h2 class="ct-journey-title">What participation actually looks like.</h2>
-        <p class="ct-journey-sub">Trials are voluntary at every step — here’s how a typical journey unfolds, from first conversation through follow-up care.</p>
+        <span class="ct-eyebrow">{edit.text("text-8adeefd2cf", "Your trial journey")}</span>
+        <h2 class="ct-journey-title">{edit.text("text-b71694809f", "What participation actually looks like.")}</h2>
+        <p class="ct-journey-sub">{edit.text("text-911ef07ed5", "Trials are voluntary at every step — here’s how a typical journey unfolds, from first conversation through follow-up care.")}</p>
       </div>
       <div class="ct-steps">
         <div class="ct-step">
-          <div class="ct-step-num">1</div>
-          <div class="ct-step-label">Step 01</div>
-          <h3>Consultation</h3>
-          <p>Talk with your oncologist about whether a trial fits your diagnosis, treatment history, and goals.</p>
+          <div class="ct-step-num">{edit.text("text-356a192b79", "1")}</div>
+          <div class="ct-step-label">{edit.text("text-42cd9f795a", "Step 01")}</div>
+          <h3>{edit.text("text-54b87b9233", "Consultation")}</h3>
+          <p>{edit.text("text-e4c783944e", "Talk with your oncologist about whether a trial fits your diagnosis, treatment history, and goals.")}</p>
         </div>
         <div class="ct-step">
-          <div class="ct-step-num">2</div>
-          <div class="ct-step-label">Step 02</div>
-          <h3>Screening</h3>
-          <p>Eligibility review based on labs, imaging, and your molecular profile to match you with the right trial.</p>
+          <div class="ct-step-num">{edit.text("text-da4b9237ba", "2")}</div>
+          <div class="ct-step-label">{edit.text("text-38cff1f8dd", "Step 02")}</div>
+          <h3>{edit.text("text-50783a7176", "Screening")}</h3>
+          <p>{edit.text("text-3696a88f53", "Eligibility review based on labs, imaging, and your molecular profile to match you with the right trial.")}</p>
         </div>
         <div class="ct-step">
-          <div class="ct-step-num">3</div>
-          <div class="ct-step-label">Step 03</div>
-          <h3>Enrollment</h3>
-          <p>Informed consent, baseline tests, and a clear study schedule before any treatment begins.</p>
+          <div class="ct-step-num">{edit.text("text-77de68daec", "3")}</div>
+          <div class="ct-step-label">{edit.text("text-87bd4ea1ec", "Step 03")}</div>
+          <h3>{edit.text("text-cbffa39fa4", "Enrollment")}</h3>
+          <p>{edit.text("text-5afca8f663", "Informed consent, baseline tests, and a clear study schedule before any treatment begins.")}</p>
         </div>
         <div class="ct-step">
-          <div class="ct-step-num">4</div>
-          <div class="ct-step-label">Step 04</div>
-          <h3>Treatment &amp; Follow-up</h3>
-          <p>Receive the trial therapy with close monitoring and continued support from your full care team.</p>
+          <div class="ct-step-num">{edit.text("text-1b64538924", "4")}</div>
+          <div class="ct-step-label">{edit.text("text-1e82da3050", "Step 04")}</div>
+          <h3>{edit.text("text-fd1dbf0922", "Treatment & Follow-up")}</h3>
+          <p>{edit.text("text-ae905cd0d6", "Receive the trial therapy with close monitoring and continued support from your full care team.")}</p>
         </div>
       </div>
     </div>
@@ -111,19 +113,19 @@ import { url } from '../lib/urls';
   <section class="ct-faq">
     <div class="container">
       <div class="ct-faq-header">
-        <span class="ct-eyebrow">Common questions</span>
-        <h2 class="ct-faq-title">What patients ask most.</h2>
-        <p class="ct-faq-sub">If you don’t see your question here, our research team is happy to answer it directly — reach out to either program above.</p>
+        <span class="ct-eyebrow">{edit.text("text-f07ac22a9e", "Common questions")}</span>
+        <h2 class="ct-faq-title">{edit.text("text-4c52610e9b", "What patients ask most.")}</h2>
+        <p class="ct-faq-sub">{edit.text("text-0af36de7d5", "If you don’t see your question here, our research team is happy to answer it directly — reach out to either program above.")}</p>
       </div>
       <div class="ct-faq-grid">
         <div class="sd-faq">
-          <details class="sd-faq-item"><summary>What is a clinical trial?</summary><p>A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed and approved by an Institutional Review Board (IRB) to ensure patient safety, and participation is always voluntary.</p></details>
-          <details class="sd-faq-item"><summary>Will I receive a placebo?</summary><p>Most cancer clinical trials do not use placebos alone. When a control arm is included, participants always receive at least the current standard of care in addition to any investigational agent.</p></details>
-          <details class="sd-faq-item"><summary>Are there costs to participate?</summary><p>Investigational drugs and study-related tests are typically provided at no cost. Standard-of-care costs (like routine blood work) are generally billed to your insurance as they normally would be.</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-72361e80ff", "What is a clinical trial?")}</summary><p>{edit.text("text-1b4a19a711", "A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed and approved by an Institutional Review Board (IRB) to ensure patient safety, and participation is always voluntary.")}</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-c967ef5945", "Will I receive a placebo?")}</summary><p>{edit.text("text-0e8cc30892", "Most cancer clinical trials do not use placebos alone. When a control arm is included, participants always receive at least the current standard of care in addition to any investigational agent.")}</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-5f68eb3cd9", "Are there costs to participate?")}</summary><p>{edit.text("text-cafcfe55d7", "Investigational drugs and study-related tests are typically provided at no cost. Standard-of-care costs (like routine blood work) are generally billed to your insurance as they normally would be.")}</p></details>
         </div>
         <div class="sd-faq">
-          <details class="sd-faq-item"><summary>How do I find out if I’m eligible?</summary><p>Ask your oncologist about trial options at your next visit, or contact our research team directly. We’ll review your diagnosis, treatment history, and molecular profile to identify suitable trials.</p></details>
-          <details class="sd-faq-item"><summary>Can I leave a trial if I change my mind?</summary><p>Yes. Participation is entirely voluntary. You may withdraw from a clinical trial at any time, for any reason, without affecting your ongoing care at Utah Cancer Specialists.</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-4cac751184", "How do I find out if I’m eligible?")}</summary><p>{edit.text("text-3f80a8fcbe", "Ask your oncologist about trial options at your next visit, or contact our research team directly. We’ll review your diagnosis, treatment history, and molecular profile to identify suitable trials.")}</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-270ff4407a", "Can I leave a trial if I change my mind?")}</summary><p>{edit.text("text-d32e1ad09d", "Yes. Participation is entirely voluntary. You may withdraw from a clinical trial at any time, for any reason, without affecting your ongoing care at Utah Cancer Specialists.")}</p></details>
         </div>
       </div>
     </div>

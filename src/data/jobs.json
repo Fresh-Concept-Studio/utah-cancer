@@ -1,0 +1,155 @@
+[
+  {
+    "title": "Patient Advocate",
+    "location": "Cancer Center",
+    "schedule": "Full time · 32–40 hours",
+    "status": "Non-exempt",
+    "summary": "Serve as a liaison between patients, billing, and clinic staff; welcome new patients; resolve account and insurance issues; and help arrange financial assistance.",
+    "responsibilities": [
+      "Educate patients about services and insurance, gather new-patient information, and verify coverage.",
+      "Identify referral or authorization needs before service and maintain authorizations for ongoing treatment.",
+      "Help resolve billing questions, arrange assistance or drug-replacement coverage, and establish payment plans."
+    ],
+    "qualifications": [
+      "Two to three years of medical-office experience with front-office or billing experience.",
+      "High school diploma required; some college preferred."
+    ]
+  },
+  {
+    "title": "Admixture Technician",
+    "location": "Cancer Center",
+    "schedule": "Full time · 32–40 hours",
+    "status": "Non-exempt",
+    "summary": "Compound chemotherapy agents under physician and pharmacy leadership while maintaining safe, accurate workflow and established policies.",
+    "responsibilities": [
+      "Compound chemotherapy agents according to physician orders and follow OSHA and company procedures.",
+      "Support workflow, scheduling, team coverage, and training for new employees.",
+      "Read and communicate measurements accurately while safely handling vials, needles, syringes, and medicinal preparations."
+    ],
+    "qualifications": [
+      "Strong organization, communication, mathematics, data-entry, and teamwork skills.",
+      "Two years of IV-admixture experience and chemotherapy experience are preferred.",
+      "High school diploma or GED required; national pharmacy technician certification preferred."
+    ]
+  },
+  {
+    "title": "Medical Records Clerk",
+    "location": "Salt Lake Clinic",
+    "schedule": "Full time · 32–40 hours",
+    "status": "Non-exempt",
+    "summary": "Keep clinical records organized and accessible through careful filing, clerical support, and accurate use of office equipment and systems.",
+    "responsibilities": [
+      "File reports in charts and charts in the appropriate files using alphabetical and numeric systems.",
+      "Operate standard office equipment and follow written and verbal instructions accurately.",
+      "Travel occasionally to UCS offices along the Wasatch Front."
+    ],
+    "qualifications": [
+      "General clerical experience preferred, with exposure to medical terminology.",
+      "High school diploma or GED required.",
+      "The role includes frequent bending and stooping and lifting up to 50 pounds."
+    ]
+  },
+  {
+    "title": "Patient Services Representative",
+    "location": "Ogden / Layton",
+    "schedule": "Full time · 32–40 hours",
+    "status": "Non-exempt",
+    "summary": "Welcome patients and visitors, coordinate scheduling, gather insurance information, and connect patients with the right clinical support.",
+    "responsibilities": [
+      "Work Monday through Thursday in Ogden and Friday in Layton.",
+      "Greet, instruct, direct, and schedule patients while collecting accurate insurance and contact information.",
+      "Serve as a consistent liaison between patients and the medical support team."
+    ],
+    "qualifications": [
+      "Clear communication, careful data entry, and confidence using standard office systems.",
+      "One year of medical-office experience and medical terminology knowledge preferred.",
+      "High school diploma or GED required."
+    ]
+  },
+  {
+    "title": "Patient Services Representative",
+    "location": "Murray / IMC",
+    "schedule": "Full time · 32–40 hours",
+    "status": "Non-exempt",
+    "summary": "Welcome patients and visitors, coordinate scheduling, gather insurance information, and connect patients with the right clinical support.",
+    "responsibilities": [
+      "Greet, instruct, direct, and schedule patients while collecting accurate insurance and contact information.",
+      "Answer phones and assist patients in a busy reception setting with professionalism and care.",
+      "Serve as a consistent liaison between patients and the medical support team."
+    ],
+    "qualifications": [
+      "Clear communication, careful data entry, and confidence using standard office systems.",
+      "One year of medical-office experience and medical terminology knowledge preferred.",
+      "High school diploma or GED required."
+    ]
+  },
+  {
+    "title": "Physician Outreach Specialist",
+    "location": "UCS service area",
+    "schedule": "Full time · 32–40 hours",
+    "status": "Exempt",
+    "summary": "Build and strengthen relationships with referring providers, increase awareness of UCS services, and support thoughtful growth across the service area.",
+    "responsibilities": [
+      "Serve as the primary liaison between UCS and current or prospective referring providers.",
+      "Plan strategic outreach, maintain provider relationships, and communicate UCS physician, clinic, and service information.",
+      "Interpret referral data, identify trends, and recommend outreach initiatives; frequent local travel is required."
+    ],
+    "qualifications": [
+      "Excellent relationship-building, communication, organization, and independent time-management skills.",
+      "A bachelor’s degree in marketing, communications, business, healthcare administration, or a related field is preferred.",
+      "Healthcare marketing, provider outreach, business development, sales, or clinical experience is preferred."
+    ]
+  },
+  {
+    "title": "Registered Nurse",
+    "location": "Provo",
+    "schedule": "Full time",
+    "status": "Non-exempt",
+    "summary": "Provide professional nursing care for clinic patients using established standards, sound clinical judgment, and clear communication.",
+    "responsibilities": [
+      "Assess patient needs, provide ongoing care, maintain records, and respond calmly in urgent situations.",
+      "Apply professional nursing standards, safety precautions, and clinic procedures throughout care delivery.",
+      "Travel to other UCS locations may occasionally be required."
+    ],
+    "qualifications": [
+      "Graduate of an accredited nursing school with a current Utah registered nurse license.",
+      "Current BLS certification.",
+      "One year of professional nursing experience in a clinic setting preferred."
+    ]
+  },
+  {
+    "title": "Registered Nurse",
+    "location": "Pleasant Grove",
+    "schedule": "Full time",
+    "status": "Non-exempt",
+    "summary": "Provide professional nursing care for clinic patients using established standards, sound clinical judgment, and clear communication.",
+    "responsibilities": [
+      "Assess patient needs, provide ongoing care, maintain records, and respond calmly in urgent situations.",
+      "Apply professional nursing standards, safety precautions, and clinic procedures throughout care delivery.",
+      "Travel to other UCS locations may occasionally be required."
+    ],
+    "qualifications": [
+      "Graduate of an accredited nursing school with a current Utah registered nurse license.",
+      "Current BLS certification.",
+      "One year of professional nursing experience in a clinic setting preferred."
+    ]
+  },
+  {
+    "title": "Registered Nurse Care Manager",
+    "location": "To be determined",
+    "schedule": "Full time",
+    "status": "Non-exempt",
+    "summary": "Coordinate individualized, comprehensive care and help patients, families, and caregivers move through every phase of the cancer-care continuum.",
+    "responsibilities": [
+      "Assess patient needs and develop individualized care plans with the healthcare team.",
+      "Coordinate care across physicians, specialists, and community resources; monitor progress and update plans.",
+      "Provide education about treatment, symptom management, and self-care while documenting care accurately.",
+      "Advocate for patients and participate in interdisciplinary care planning."
+    ],
+    "qualifications": [
+      "Graduate of an accredited school of nursing with a current state registered nurse license.",
+      "Current BLS certification.",
+      "Care-management and oncology experience preferred."
+    ]
+  }
+]

@@ -8,7 +8,7 @@ import ContentLink from './ContentLink.astro';
 interface Props { slug: string }
 const specialty = specialties.find(p => p.slug === Astro.props.slug);
 if (!specialty) throw new Error(`Unknown specialty: ${Astro.props.slug}`);
-const heroImage = specialty.image.replace(/\.(?:jpe?g|png)$/i, '.webp');
+const heroImage = /^https?:\/\//.test(specialty.image) ? specialty.image : specialty.image.replace(/\.(?:jpe?g|png)$/i, '.webp');
 ---
 <section class="sd-hero">
   <div class="sd-hero-bg"><img src={url(heroImage)} alt="" fetchpriority="high" decoding="async" /><div class="sd-hero-overlay"></div></div>

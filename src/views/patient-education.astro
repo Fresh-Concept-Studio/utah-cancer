@@ -1,10 +1,12 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Patient Education</h1>
-      <p class="providers-hero-desc">Knowledge is power. Understanding your diagnosis and treatment options can ease uncertainty and help you make confident decisions about your care.</p>
+      <h1 class="providers-hero-title">{edit.text("text-74374531cb", "Patient Education")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-98937754c7", "Knowledge is power. Understanding your diagnosis and treatment options can ease uncertainty and help you make confident decisions about your care.")}</p>
     </div>
   </section>
 
@@ -12,31 +14,31 @@ import { url } from '../lib/urls';
     <div class="container">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;">
         <div>
-          <h2 class="about-mission-title">Learn About Your Cancer</h2>
-          <p class="provider-bio">Our specialists have curated educational resources to help you and your loved ones understand your cancer type, available treatments, potential side effects, and what to expect at each stage of your care.</p>
-          <p class="provider-bio">We believe informed patients are empowered patients. Whether you’re researching a new diagnosis or preparing for a specific treatment, the resources below can help guide your understanding.</p>
+          <h2 class="about-mission-title">{edit.text("text-8446e741a6", "Learn About Your Cancer")}</h2>
+          <p class="provider-bio">{edit.text("text-4bf434383e", "Our specialists have curated educational resources to help you and your loved ones understand your cancer type, available treatments, potential side effects, and what to expect at each stage of your care.")}</p>
+          <p class="provider-bio">{edit.text("text-2e337d5616", "We believe informed patients are empowered patients. Whether you’re researching a new diagnosis or preparing for a specific treatment, the resources below can help guide your understanding.")}</p>
           <div class="pe-image">
-            <img src={url("/images/generated/patient-education-hero-960.webp")} width="960" height="640" alt="Hands at a sunlit desk with a tablet, notebook, and study materials" fetchpriority="high" decoding="async">
+            <img src={url(edit.image("image-1480ddbcd1", "/images/generated/patient-education-hero-960.webp"))} width="960" height="640" alt={edit.imageAlt("image-1480ddbcd1", "Hands at a sunlit desk with a tablet, notebook, and study materials")} fetchpriority="high" decoding="async">
           </div>
           <div class="spec-grid" style="margin-top:24px;">
-            <a href={url("/specialties/index.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">biotech</span></div><div class="spec-card-text"><h3>Types of Cancer We Treat</h3><p>Detailed information on 28+ cancer types and blood disorders.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
-            <a href={url("/treatment-options.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Chemotherapy, radiation, immunotherapy, targeted therapy, and more.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
-            <a href={url("/radiation-oncology.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">radiology</span></div><div class="spec-card-text"><h3>Radiation Oncology</h3><p>TrueBeam technology, PET/CT imaging, and treatment techniques.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
-            <a href={url("/clinical-trials.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div><div class="spec-card-text"><h3>Clinical Trials</h3><p>How trials work, what to expect, and how to determine eligibility.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-f5e6f072f6", "/specialties/index.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">biotech</span></div><div class="spec-card-text"><h3>{edit.text("text-5760993e13", "Types of Cancer We Treat")}</h3><p>{edit.text("text-3fcd4fed2b", "Detailed information on 28+ cancer types and blood disorders.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-6db0994629", "/treatment-options.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>{edit.text("text-84e29a2735", "Treatment Options")}</h3><p>{edit.text("text-8cbe12a81c", "Chemotherapy, radiation, immunotherapy, targeted therapy, and more.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-165c983968", "/radiation-oncology.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">radiology</span></div><div class="spec-card-text"><h3>{edit.text("text-042a35360e", "Radiation Oncology")}</h3><p>{edit.text("text-065f29089a", "TrueBeam technology, PET/CT imaging, and treatment techniques.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-ac92c0ebdf", "/clinical-trials.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">science</span></div><div class="spec-card-text"><h3>{edit.text("text-65221b74ce", "Clinical Trials")}</h3><p>{edit.text("text-8d6aa373d3", "How trials work, what to expect, and how to determine eligibility.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
           </div>
         </div>
         <aside class="pe-portal">
-          <h2 class="about-mission-title">Patient Portal</h2>
-          <p class="provider-bio">Utah Cancer Specialists offers secure, instant access to your Personal Health Record (PHR) through our Patient Portal. Your portal includes:</p>
+          <h2 class="about-mission-title">{edit.text("text-01dfb82161", "Patient Portal")}</h2>
+          <p class="provider-bio">{edit.text("text-6fde40628a", "Utah Cancer Specialists offers secure, instant access to your Personal Health Record (PHR) through our Patient Portal. Your portal includes:")}</p>
           <ul class="provider-list">
-            <li>Your diagnosis and treatment information</li>
-            <li>Current medications and dosages</li>
-            <li>Lab results and imaging reports</li>
-            <li>Educational resources about your condition</li>
-            <li>Online support and discussion groups</li>
-            <li>Secure messaging with your care team</li>
+            <li>{edit.text("text-21dc3d50df", "Your diagnosis and treatment information")}</li>
+            <li>{edit.text("text-029fa7464f", "Current medications and dosages")}</li>
+            <li>{edit.text("text-fa35a043b5", "Lab results and imaging reports")}</li>
+            <li>{edit.text("text-172a1f605c", "Educational resources about your condition")}</li>
+            <li>{edit.text("text-44d7541901", "Online support and discussion groups")}</li>
+            <li>{edit.text("text-e7d43587c0", "Secure messaging with your care team")}</li>
           </ul>
-          <a href="https://www.navigatingcare.com/navigatingcare/" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:24px;"><span class="material-symbols-rounded">login</span> Log In to Patient Portal</a>
+          <a href={url(edit.text("link-f9e79993d9", "https://www.navigatingcare.com/navigatingcare/"))} target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:24px;"><span class="material-symbols-rounded">login</span>{edit.text("text-9e7f02d46d", " Log In to Patient Portal")}</a>
         </aside>
       </div>
     </div>

@@ -1,10 +1,12 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Newly Diagnosed</h1>
-      <p class="providers-hero-desc">You’re not in this alone. Our team is here to guide you from your very first visit through every step of treatment and beyond.</p>
+      <h1 class="providers-hero-title">{edit.text("text-b61143de72", "Newly Diagnosed")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-13cb406946", "You’re not in this alone. Our team is here to guide you from your very first visit through every step of treatment and beyond.")}</p>
     </div>
   </section>
 
@@ -13,34 +15,34 @@ import { url } from '../lib/urls';
       <div class="loc-detail-main">
 
         <div class="nd-hero-image">
-          <img src={url("/images/generated/firstSteps-hallway-960.webp")} width="960" height="640" alt="A patient walks alongside a care advocate down a sunlit clinic hallway" fetchpriority="high" decoding="async">
+          <img src={url(edit.image("image-f2ff9a1bf4", "/images/generated/firstSteps-hallway-960.webp"))} width="960" height="640" alt={edit.imageAlt("image-f2ff9a1bf4", "A patient walks alongside a care advocate down a sunlit clinic hallway")} fetchpriority="high" decoding="async">
         </div>
 
         <div class="provider-section">
-          <h2 class="provider-section-title">Your First Steps</h2>
+          <h2 class="provider-section-title">{edit.text("text-f3e1da68ad", "Your First Steps")}</h2>
           <div class="nd-firstSteps-text">
-            <p class="provider-bio">If you’ve just been diagnosed with cancer, you’re likely going through a whirlwind of emotions. We understand that it can be a very difficult time to collect your thoughts and make decisions. As a new patient at Utah Cancer Specialists, we want you to feel comfortable, cared for, and informed.</p>
-            <p class="provider-bio">While patients and their families have many decisions to make in a short time, our physicians and support staff are with you every step of this journey — from diagnosis through treatment and into survivorship.</p>
+            <p class="provider-bio">{edit.text("text-7cf8e73969", "If you’ve just been diagnosed with cancer, you’re likely going through a whirlwind of emotions. We understand that it can be a very difficult time to collect your thoughts and make decisions. As a new patient at Utah Cancer Specialists, we want you to feel comfortable, cared for, and informed.")}</p>
+            <p class="provider-bio">{edit.text("text-638556039c", "While patients and their families have many decisions to make in a short time, our physicians and support staff are with you every step of this journey — from diagnosis through treatment and into survivorship.")}</p>
           </div>
         </div>
 
         <div class="provider-section">
-          <h2 class="provider-section-title">What to Expect</h2>
+          <h2 class="provider-section-title">{edit.text("text-84fa9a10d5", "What to Expect")}</h2>
           <div class="provider-credentials nd-expect-grid">
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">person</span></div><div class="credential-content"><h3 class="credential-label">Meet Your Patient Advocate</h3><p>Your advocate is the first person you’ll meet. They coordinate insurance, financial assistance, and emotional support so you can focus on treatment.</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">stethoscope</span></div><div class="credential-content"><h3 class="credential-label">Physician Consultation</h3><p>Your oncologist will review your diagnosis, discuss treatment options, and answer your questions in a thorough initial consultation.</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">description</span></div><div class="credential-content"><h3 class="credential-label">Personalized Treatment Plan</h3><p>Your care team develops a plan tailored to your specific cancer type, stage, and personal goals — drawing on the latest evidence and technology.</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">diversity_3</span></div><div class="credential-content"><h3 class="credential-label">Ongoing Support</h3><p>From support groups and educational classes to nutritional guidance and financial counseling, we address every dimension of your well-being.</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">person</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-d8fb3e31fc", "Meet Your Patient Advocate")}</h3><p>{edit.text("text-72086e5a07", "Your advocate is the first person you’ll meet. They coordinate insurance, financial assistance, and emotional support so you can focus on treatment.")}</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">stethoscope</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-9203d4a08c", "Physician Consultation")}</h3><p>{edit.text("text-a3df15de26", "Your oncologist will review your diagnosis, discuss treatment options, and answer your questions in a thorough initial consultation.")}</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">description</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-08fe3159d7", "Personalized Treatment Plan")}</h3><p>{edit.text("text-3e604ff9b8", "Your care team develops a plan tailored to your specific cancer type, stage, and personal goals — drawing on the latest evidence and technology.")}</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">diversity_3</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-6b59635d0b", "Ongoing Support")}</h3><p>{edit.text("text-ecd6068abf", "From support groups and educational classes to nutritional guidance and financial counseling, we address every dimension of your well-being.")}</p></div></div>
           </div>
         </div>
 
         <div class="provider-section">
-          <h2 class="provider-section-title">Resources for New Patients</h2>
+          <h2 class="provider-section-title">{edit.text("text-6d06feab46", "Resources for New Patients")}</h2>
           <div class="spec-grid nd-resources-grid">
-            <a href={url("/patient-resources.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">folder_open</span></div><div class="spec-card-text"><h3>Patient Resources</h3><p>Helpful resources including financial assistance, support organizations, and community programs.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
-            <a href={url("/patient-education.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">school</span></div><div class="spec-card-text"><h3>Patient Education</h3><p>Learn more about your diagnosis, treatment options, and what to expect during your care.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
-            <a href={url("/treatment-options.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>Treatment Options</h3><p>Understand the therapies available to you, from chemotherapy and radiation to immunotherapy and clinical trials.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
-            <a href={url("/telehealth.html")} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">videocam</span></div><div class="spec-card-text"><h3>Telehealth</h3><p>Connect with your care team from home through virtual visits on your smartphone or tablet.</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-5b9da5af13", "/patient-resources.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">folder_open</span></div><div class="spec-card-text"><h3>{edit.text("text-f14e95f52d", "Patient Resources")}</h3><p>{edit.text("text-30265a9baf", "Helpful resources including financial assistance, support organizations, and community programs.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-40350aee20", "/patient-education.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">school</span></div><div class="spec-card-text"><h3>{edit.text("text-74374531cb", "Patient Education")}</h3><p>{edit.text("text-238647dd73", "Learn more about your diagnosis, treatment options, and what to expect during your care.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-6db0994629", "/treatment-options.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">medication</span></div><div class="spec-card-text"><h3>{edit.text("text-84e29a2735", "Treatment Options")}</h3><p>{edit.text("text-edce1d38ef", "Understand the therapies available to you, from chemotherapy and radiation to immunotherapy and clinical trials.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
+            <a href={url(edit.text("link-952ff786df", "/telehealth.html"))} class="spec-card"><div class="spec-card-icon"><span class="material-symbols-rounded">videocam</span></div><div class="spec-card-text"><h3>{edit.text("text-27581862f6", "Telehealth")}</h3><p>{edit.text("text-bd420f0530", "Connect with your care team from home through virtual visits on your smartphone or tablet.")}</p></div><span class="material-symbols-rounded spec-card-chevron">chevron_right</span></a>
           </div>
         </div>
 
@@ -48,15 +50,15 @@ import { url } from '../lib/urls';
 
       <aside class="provider-sidebar">
         <div class="sidebar-card">
-          <h3 class="sidebar-card-title"><span class="material-symbols-rounded">phone</span> Contact</h3>
-          <p class="sidebar-contact-item"><strong>Phone:</strong> <a href="tel:8012690231">801.269.0231</a></p>
-          <p class="sidebar-contact-item"><strong>Email:</strong> <a href="mailto:info@utcancer.com">info@utcancer.com</a></p>
-          <a href={url("/contact.html")} class="btn btn--primary btn--full"><span class="material-symbols-rounded">mail</span> Contact Us</a>
+          <h3 class="sidebar-card-title"><span class="material-symbols-rounded">phone</span>{edit.text("text-7d9204e485", " Contact")}</h3>
+          <p class="sidebar-contact-item"><strong>{edit.text("text-daeea4d0cc", "Phone:")}</strong> <a href={url(edit.text("link-0fc44bd2ab", "tel:8012690231"))}>{edit.text("text-282d9159f2", "801.269.0231")}</a></p>
+          <p class="sidebar-contact-item"><strong>{edit.text("text-4c4e6b2d1d", "Email:")}</strong> <a href={url(edit.text("link-4546bb4dd0", "mailto:info@utcancer.com"))}>{edit.text("text-c5ed8a9d99", "info@utcancer.com")}</a></p>
+          <a href={url(edit.text("link-686a9a3e68", "/contact.html"))} class="btn btn--primary btn--full"><span class="material-symbols-rounded">mail</span>{edit.text("text-3127f37906", " Contact Us")}</a>
         </div>
         <div class="sidebar-card sidebar-card--dark">
-          <h3 class="sidebar-card-title"><span class="material-symbols-rounded">calendar_today</span> Schedule a Visit</h3>
-          <p class="sidebar-card-desc">Request an appointment with one of our specialists.</p>
-          <a href="tel:8012629494" class="btn btn--white btn--full">Request Appointment</a>
+          <h3 class="sidebar-card-title"><span class="material-symbols-rounded">calendar_today</span>{edit.text("text-45135a9af3", " Schedule a Visit")}</h3>
+          <p class="sidebar-card-desc">{edit.text("text-939d476efd", "Request an appointment with one of our specialists.")}</p>
+          <a href={url(edit.text("link-6464e105f6", "tel:8012629494"))} class="btn btn--white btn--full">{edit.text("text-abe5107326", "Request Appointment")}</a>
         </div>
       </aside>
     </div>

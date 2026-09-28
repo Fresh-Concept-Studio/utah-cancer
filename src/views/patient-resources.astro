@@ -1,14 +1,16 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Patient Resources</h1>
-      <p class="providers-hero-desc">A collection of resources to support you through every stage of your cancer journey — from diagnosis through treatment and into survivorship.</p>
+      <h1 class="providers-hero-title">{edit.text("text-f14e95f52d", "Patient Resources")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-222a5e457a", "A collection of resources to support you through every stage of your cancer journey — from diagnosis through treatment and into survivorship.")}</p>
       <div class="pr-hero-meta">
-        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">apps</span><span>Six core resources</span></div>
-        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">schedule</span><span>24/7 portal access</span></div>
-        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">support_agent</span><span>Patient advocates on call</span></div>
+        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">apps</span><span>{edit.text("text-716940f105", "Six core resources")}</span></div>
+        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">schedule</span><span>{edit.text("text-b3c66bc182", "24/7 portal access")}</span></div>
+        <div class="pr-hero-meta-item"><span class="material-symbols-rounded">support_agent</span><span>{edit.text("text-205124fd5d", "Patient advocates on call")}</span></div>
       </div>
     </div>
   </section>
@@ -17,65 +19,65 @@ import { url } from '../lib/urls';
     <div class="container">
       <div class="pr-bento-header">
         <div>
-          <span class="pr-eyebrow">Everything you need</span>
-          <h2 class="pr-section-title">A change built around your care.</h2>
+          <span class="pr-eyebrow">{edit.text("text-23b72125a0", "Everything you need")}</span>
+          <h2 class="pr-section-title">{edit.text("text-dce80d2b09", "A change built around your care.")}</h2>
         </div>
-        <p class="pr-section-sub">Resources to help you stay connected, informed, and supported — from secure messaging with your care team to community programs that go beyond the clinic.</p>
+        <p class="pr-section-sub">{edit.text("text-d0a9a9a655", "Resources to help you stay connected, informed, and supported — from secure messaging with your care team to community programs that go beyond the clinic.")}</p>
       </div>
 
       <div class="pr-bento">
-        <a href="https://www.navigatingcare.com/navigatingcare/" target="_blank" rel="noopener" class="pr-card pr-card--feature">
+        <a href={url(edit.text("link-f9e79993d9", "https://www.navigatingcare.com/navigatingcare/"))} target="_blank" rel="noopener" class="pr-card pr-card--feature">
           <div class="pr-card-feature-top">
             <div class="pr-card-icon"><span class="material-symbols-rounded">person</span></div>
             <div>
-              <span class="pr-card-eyebrow">Most used · 24/7 access</span>
-              <h3>Patient Portal</h3>
-              <p>Secure access to your health records, lab results, medications, and direct messaging with your care team — all in one place, any time.</p>
+              <span class="pr-card-eyebrow">{edit.text("text-86a08a20f3", "Most used · 24/7 access")}</span>
+              <h3>{edit.text("text-01dfb82161", "Patient Portal")}</h3>
+              <p>{edit.text("text-9a8d7e3dbe", "Secure access to your health records, lab results, medications, and direct messaging with your care team — all in one place, any time.")}</p>
             </div>
           </div>
           <div class="pr-card-feature-bottom">
-            <span class="pr-feature-cta">Log in to your portal <span class="material-symbols-rounded">arrow_forward</span></span>
+            <span class="pr-feature-cta">{edit.text("text-c6be43241f", "Log in to your portal ")}<span class="material-symbols-rounded">arrow_forward</span></span>
           </div>
         </a>
 
-        <a href={url("/programs-and-services.html#patient-advocacy")} class="pr-card pr-card--side">
-          <span class="pr-card-num">02</span>
+        <a href={url(edit.text("link-7fa125168e", "/programs-and-services.html#patient-advocacy"))} class="pr-card pr-card--side">
+          <span class="pr-card-num">{edit.text("text-bcac9d1d8e", "02")}</span>
           <div class="pr-card-icon"><span class="material-symbols-rounded">volunteer_activism</span></div>
-          <h3>Patient Advocacy</h3>
-          <p>Your personal liaison — insurance, authorizations, and support throughout treatment.</p>
+          <h3>{edit.text("text-4bebaa708b", "Patient Advocacy")}</h3>
+          <p>{edit.text("text-56d1e16ad9", "Your personal liaison — insurance, authorizations, and support throughout treatment.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
         </a>
 
         <div class="pr-card pr-card--side">
-          <a href="https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2" target="_blank" rel="noopener" class="pr-card-link" aria-label="Billing and Quick Pay"></a>
-          <span class="pr-card-num">03</span>
+          <a href={url(edit.text("link-cd90c25e01", "https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2"))} target="_blank" rel="noopener" class="pr-card-link" aria-label="Billing and Quick Pay"></a>
+          <span class="pr-card-num">{edit.text("text-3ea6c91e24", "03")}</span>
           <div class="pr-card-icon"><span class="material-symbols-rounded">payments</span></div>
-          <h3>Billing &amp; Quick Pay</h3>
-          <p>View statements, make secure payments, and set up autopay.</p>
+          <h3>{edit.text("text-c4a9e188c6", "Billing & Quick Pay")}</h3>
+          <p>{edit.text("text-0c472a5ab3", "View statements, make secure payments, and set up autopay.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
         </div>
 
-        <a href={url("/telehealth.html")} class="pr-card pr-card--bottom">
-          <span class="pr-card-num">04</span>
+        <a href={url(edit.text("link-952ff786df", "/telehealth.html"))} class="pr-card pr-card--bottom">
+          <span class="pr-card-num">{edit.text("text-798f861ee7", "04")}</span>
           <div class="pr-card-icon"><span class="material-symbols-rounded">videocam</span></div>
-          <h3>Telehealth</h3>
-          <p>Virtual visits from home — simple, direct, on any smartphone or tablet.</p>
+          <h3>{edit.text("text-27581862f6", "Telehealth")}</h3>
+          <p>{edit.text("text-8518247a64", "Virtual visits from home — simple, direct, on any smartphone or tablet.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
         </a>
 
-        <a href={url("/patient-education.html")} class="pr-card pr-card--bottom">
-          <span class="pr-card-num">05</span>
+        <a href={url(edit.text("link-40350aee20", "/patient-education.html"))} class="pr-card pr-card--bottom">
+          <span class="pr-card-num">{edit.text("text-28a5c28185", "05")}</span>
           <div class="pr-card-icon"><span class="material-symbols-rounded">school</span></div>
-          <h3>Education &amp; Videos</h3>
-          <p>Resources to help you understand your diagnosis, treatment, and what to expect.</p>
+          <h3>{edit.text("text-3f41f101a8", "Education & Videos")}</h3>
+          <p>{edit.text("text-191666c724", "Resources to help you understand your diagnosis, treatment, and what to expect.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
         </a>
 
-        <a href={url("/programs-and-services.html")} class="pr-card pr-card--bottom">
-          <span class="pr-card-num">06</span>
+        <a href={url(edit.text("link-d83833224e", "/programs-and-services.html"))} class="pr-card pr-card--bottom">
+          <span class="pr-card-num">{edit.text("text-7316b3d5fe", "06")}</span>
           <div class="pr-card-icon"><span class="material-symbols-rounded">group</span></div>
-          <h3>Programs &amp; Support</h3>
-          <p>Support groups, breathwork, nutrition, and community programs for patients and caregivers.</p>
+          <h3>{edit.text("text-57c94151c7", "Programs & Support")}</h3>
+          <p>{edit.text("text-a55e1da91b", "Support groups, breathwork, nutrition, and community programs for patients and caregivers.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded">arrow_outward</span></span>
         </a>
       </div>
@@ -85,34 +87,34 @@ import { url } from '../lib/urls';
   <section class="pr-bento-section" style="padding-top: 0;">
     <div class="container">
       <div class="pr-bento">
-        <a href={url("/supportive-resources/")} class="pr-card pr-card--bottom">
+        <a href={url(edit.text("link-fc0a93edd1", "/supportive-resources/"))} class="pr-card pr-card--bottom">
           <div class="pr-card-icon"><span class="material-symbols-rounded" aria-hidden="true">diversity_1</span></div>
-          <h3>Practical Support</h3>
-          <p>Housing, food, transportation, home cleaning, and personal safety resources.</p>
+          <h3>{edit.text("text-1b91d547c0", "Practical Support")}</h3>
+          <p>{edit.text("text-f96b5b41e1", "Housing, food, transportation, home cleaning, and personal safety resources.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></span>
         </a>
-        <a href={url("/supportivecare/")} class="pr-card pr-card--bottom">
+        <a href={url(edit.text("link-fdc8e7cdae", "/supportivecare/"))} class="pr-card pr-card--bottom">
           <div class="pr-card-icon"><span class="material-symbols-rounded" aria-hidden="true">favorite</span></div>
-          <h3>Supportive Care</h3>
-          <p>Help managing symptoms, side effects, stress, and quality of life.</p>
+          <h3>{edit.text("text-70c65d21f7", "Supportive Care")}</h3>
+          <p>{edit.text("text-739babc25a", "Help managing symptoms, side effects, stress, and quality of life.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></span>
         </a>
-        <a href={url("/medically-integrated-pharmacy/")} class="pr-card pr-card--bottom">
+        <a href={url(edit.text("link-e5e89960c7", "/medically-integrated-pharmacy/"))} class="pr-card pr-card--bottom">
           <div class="pr-card-icon"><span class="material-symbols-rounded" aria-hidden="true">medication</span></div>
-          <h3>Integrated Pharmacy</h3>
-          <p>Oral medication coordination, education, authorizations, and assistance.</p>
+          <h3>{edit.text("text-919e5c030d", "Integrated Pharmacy")}</h3>
+          <p>{edit.text("text-a76bed17cf", "Oral medication coordination, education, authorizations, and assistance.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></span>
         </a>
-        <a href={url("/visitorandguestinfo/")} class="pr-card pr-card--bottom">
+        <a href={url(edit.text("link-d756ed2ef0", "/visitorandguestinfo/"))} class="pr-card pr-card--bottom">
           <div class="pr-card-icon"><span class="material-symbols-rounded" aria-hidden="true">groups</span></div>
-          <h3>Visitor Information</h3>
-          <p>Guidance for family members, caregivers, and other clinic visitors.</p>
+          <h3>{edit.text("text-d84b674870", "Visitor Information")}</h3>
+          <p>{edit.text("text-db6671806b", "Guidance for family members, caregivers, and other clinic visitors.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></span>
         </a>
-        <a href={url("/physical-therapy.html")} class="pr-card pr-card--bottom">
+        <a href={url(edit.text("link-6af14cceff", "/physical-therapy.html"))} class="pr-card pr-card--bottom">
           <div class="pr-card-icon"><span class="material-symbols-rounded" aria-hidden="true">directions_walk</span></div>
-          <h3>Physical Therapy</h3>
-          <p>Cancer-focused rehabilitation for movement, energy, and recovery.</p>
+          <h3>{edit.text("text-889c0b24cd", "Physical Therapy")}</h3>
+          <p>{edit.text("text-5533289f2d", "Cancer-focused rehabilitation for movement, energy, and recovery.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></span>
         </a>
       </div>
@@ -124,30 +126,30 @@ import { url } from '../lib/urls';
       <div class="pr-community-wrap">
         <div class="pr-community-head">
           <div>
-            <span class="pr-eyebrow">Beyond Utah Cancer</span>
-            <h2 class="pr-community-title">Trusted external resources.</h2>
+            <span class="pr-eyebrow">{edit.text("text-5863403d25", "Beyond Utah Cancer")}</span>
+            <h2 class="pr-community-title">{edit.text("text-76538924fb", "Trusted external resources.")}</h2>
           </div>
-          <p class="pr-community-note">The following external organizations may be helpful. Inclusion does not imply endorsement by Utah Cancer Specialists.</p>
+          <p class="pr-community-note">{edit.text("text-a8bae193eb", "The following external organizations may be helpful. Inclusion does not imply endorsement by Utah Cancer Specialists.")}</p>
         </div>
         <div class="pr-community-list">
-          <a href="https://www.cancer.org/" class="pr-community-link" target="_blank" rel="noopener">
+          <a href={url(edit.text("link-643a03bf96", "https://www.cancer.org/"))} class="pr-community-link" target="_blank" rel="noopener">
             <div class="pr-community-link-text">
-              <h3>American Cancer Society</h3>
-              <p>Information, support, and resources for cancer patients and families.</p>
+              <h3>{edit.text("text-0f7e9aabeb", "American Cancer Society")}</h3>
+              <p>{edit.text("text-02facc249a", "Information, support, and resources for cancer patients and families.")}</p>
             </div>
             <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
           </a>
-          <a href="https://www.cancer.gov/" class="pr-community-link" target="_blank" rel="noopener">
+          <a href={url(edit.text("link-35313c6221", "https://www.cancer.gov/"))} class="pr-community-link" target="_blank" rel="noopener">
             <div class="pr-community-link-text">
-              <h3>National Cancer Institute</h3>
-              <p>Comprehensive cancer information from the U.S. government.</p>
+              <h3>{edit.text("text-2ca60c923f", "National Cancer Institute")}</h3>
+              <p>{edit.text("text-65555e498c", "Comprehensive cancer information from the U.S. government.")}</p>
             </div>
             <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
           </a>
-          <a href="https://www.cancercare.org/" class="pr-community-link" target="_blank" rel="noopener">
+          <a href={url(edit.text("link-dc77fa5450", "https://www.cancercare.org/"))} class="pr-community-link" target="_blank" rel="noopener">
             <div class="pr-community-link-text">
-              <h3>CancerCare</h3>
-              <p>Free professional support including counseling, support groups, and financial assistance.</p>
+              <h3>{edit.text("text-9af6350dc5", "CancerCare")}</h3>
+              <p>{edit.text("text-6460558b4b", "Free professional support including counseling, support groups, and financial assistance.")}</p>
             </div>
             <span class="pr-community-link-ext"><span class="material-symbols-rounded">arrow_outward</span></span>
           </a>

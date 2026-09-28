@@ -1,4 +1,6 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { contactForm } from '../data/contact';
 import { url } from '../lib/urls';
 
@@ -9,14 +11,14 @@ const states = ['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL'
 <section class="application-hero">
   <div class="container application-hero-inner">
     <div>
-      <a class="application-back" href={url('/careers/')}><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span> Careers</a>
-      <span class="application-eyebrow">Careers at Utah Cancer Specialists</span>
-      <h1>Employment application</h1>
-      <p>Tell us about your experience and the position that interests you. Fields marked with an asterisk are required.</p>
+      <a class="application-back" href={url(edit.text("link-02c83a4128", "/careers/"))}><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>{edit.text("text-10b34387a2", " Careers")}</a>
+      <span class="application-eyebrow">{edit.text("text-986d6ff8e1", "Careers at Utah Cancer Specialists")}</span>
+      <h1>{edit.text("text-050110a104", "Employment application")}</h1>
+      <p>{edit.text("text-629dd6a9f3", "Tell us about your experience and the position that interests you. Fields marked with an asterisk are required.")}</p>
     </div>
     <div class="application-hero-note">
       <span class="material-symbols-rounded" aria-hidden="true">description</span>
-      <p>Have your résumé ready before you begin. Accepted formats include PDF, Word, text, and common image files.</p>
+      <p>{edit.text("text-ce1fb6d2f2", "Have your résumé ready before you begin. Accepted formats include PDF, Word, text, and common image files.")}</p>
     </div>
   </div>
 </section>
@@ -24,10 +26,10 @@ const states = ['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL'
 <section class="application-section" aria-labelledby="application-heading">
   <div class="container application-layout">
     <aside class="application-intro">
-      <span class="application-eyebrow application-eyebrow--blue">Apply to join UCS</span>
-      <h2 id="application-heading">Your next step starts here.</h2>
-      <p>This application preserves the information requested by the previous UCS employment form. Please do not include medical or patient information.</p>
-      <p>Utah Cancer Specialists is an equal opportunity employer.</p>
+      <span class="application-eyebrow application-eyebrow--blue">{edit.text("text-d33512842d", "Apply to join UCS")}</span>
+      <h2 id="application-heading">{edit.text("text-e3b6f123af", "Your next step starts here.")}</h2>
+      <p>{edit.text("text-50aeaf3263", "This application preserves the information requested by the previous UCS employment form. Please do not include medical or patient information.")}</p>
+      <p>{edit.text("text-e770e6935a", "Utah Cancer Specialists is an equal opportunity employer.")}</p>
     </aside>
 
     <form class="application-form" action={endpoint} method="post" enctype="multipart/form-data">

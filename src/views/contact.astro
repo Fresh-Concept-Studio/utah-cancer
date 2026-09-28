@@ -1,11 +1,14 @@
 ---
+import { url } from '../lib/urls';
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { mainPhone } from '../lib/content';
 import ContactForm from '../components/ContactForm.astro';
 ---
 <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Contact Us</h1>
-      <p class="providers-hero-desc">We’re here to help. Reach out to our team by phone, email, or the form below.</p>
+      <h1 class="providers-hero-title">{edit.text("text-9ad0ccff7c", "Contact Us")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-421d2fb937", "We’re here to help. Reach out to our team by phone, email, or the form below.")}</p>
     </div>
   </section>
 
@@ -13,20 +16,20 @@ import ContactForm from '../components/ContactForm.astro';
     <div class="container">
       <div class="contact-layout">
         <div>
-          <h2 class="about-mission-title" style="margin-bottom:24px;">Send Us a Message</h2>
+          <h2 class="about-mission-title" style="margin-bottom:24px;">{edit.text("text-b45573500c", "Send Us a Message")}</h2>
           <ContactForm />
         </div>
         <div>
-          <h2 class="about-mission-title" style="margin-bottom:24px;">Get in Touch</h2>
+          <h2 class="about-mission-title" style="margin-bottom:24px;">{edit.text("text-56cddd3405", "Get in Touch")}</h2>
           <div class="provider-credentials">
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">apartment</span></div><div class="credential-content"><h3 class="credential-label">Clinical Support Services</h3><p>10808 S. River Front Pkwy., Ste. 400<br>South Jordan, UT 84095</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">phone</span></div><div class="credential-content"><h3 class="credential-label">Phone</h3><p><a href={mainPhone.href} style="color:#477080;">{mainPhone.display}</a><br>Monday–Friday, 9:00 AM – 5:00 PM</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">mail</span></div><div class="credential-content"><h3 class="credential-label">Email</h3><p><a href="mailto:info@utcancer.com" style="color:#477080;">info@utcancer.com</a></p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">payments</span></div><div class="credential-content"><h3 class="credential-label">Billing Questions</h3><p><a href="tel:8012660878" style="color:#477080;">801.266.0878</a><br>Monday–Friday, 7:00 AM – 4:00 PM</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">apartment</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-30b7084fdb", "Clinical Support Services")}</h3><p>{edit.text("text-0cc14f5ea4", "10808 S. River Front Pkwy., Ste. 400")}<br>{edit.text("text-793df8ac60", "South Jordan, UT 84095")}</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">phone</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-77064d5265", "Phone")}</h3><p><a href={mainPhone.href} style="color:#477080;">{mainPhone.display}</a><br>{edit.text("text-970a15791b", "Monday–Friday, 9:00 AM – 5:00 PM")}</p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">mail</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-84add5b295", "Email")}</h3><p><a href={url(edit.text("link-4546bb4dd0", "mailto:info@utcancer.com"))} style="color:#477080;">{edit.text("text-c5ed8a9d99", "info@utcancer.com")}</a></p></div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">payments</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-4017ad06a0", "Billing Questions")}</h3><p><a href={url(edit.text("link-a9f3908618", "tel:8012660878"))} style="color:#477080;">{edit.text("text-a4fe46e220", "801.266.0878")}</a><br>{edit.text("text-b5193210ef", "Monday–Friday, 7:00 AM – 4:00 PM")}</p></div></div>
           </div>
           <div style="margin-top:32px; padding:24px; background:#f0f4f8; border-radius:16px; border:1px solid #e0e9ef;">
-            <h3 style="font-family: var(--font-heading); font-size:17px; color:#00476b; margin-bottom:8px;">Need urgent medical attention?</h3>
-            <p style="font-size:14px; color:#333333; opacity:0.8; line-height:22px;">If you need urgent care beyond regular office hours, please go directly to a hospital emergency room. A physician will be contacted upon your arrival. One of our physicians is always on call.</p>
+            <h3 style="font-family: var(--font-heading); font-size:17px; color:#00476b; margin-bottom:8px;">{edit.text("text-406ed9314c", "Need urgent medical attention?")}</h3>
+            <p style="font-size:14px; color:#333333; opacity:0.8; line-height:22px;">{edit.text("text-1d0075fc57", "If you need urgent care beyond regular office hours, please go directly to a hospital emergency room. A physician will be contacted upon your arrival. One of our physicians is always on call.")}</p>
           </div>
         </div>
       </div>

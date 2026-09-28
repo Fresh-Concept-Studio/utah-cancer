@@ -1,19 +1,21 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 const resources = [
-  { href: '/housing/', icon: 'location_on', title: 'Housing & Utilities', text: 'Housing, rent, energy, and statewide assistance programs.' },
-  { href: '/nutrition/', icon: 'restaurant', title: 'Nutrition & Food', text: 'Treatment nutrition guidance and Utah food assistance.' },
-  { href: '/transportation/', icon: 'directions_walk', title: 'Transportation', text: 'Public transit discounts and rides to cancer appointments.' },
-  { href: '/cleaning/', icon: 'volunteer_activism', title: 'Home Cleaning', text: 'Free cleaning assistance for eligible cancer patients.' },
-  { href: '/personalsafety/', icon: 'support_agent', title: 'Personal Safety', text: 'Crisis, domestic violence, and immediate safety resources.' },
+  { href: edit.text("resource-card-0", "/housing/"), icon: 'location_on', title: edit.text("resource-card-1", "Housing & Utilities"), text: edit.text("resource-card-2", "Housing, rent, energy, and statewide assistance programs.") },
+  { href: edit.text("resource-card-3", "/nutrition/"), icon: 'restaurant', title: edit.text("resource-card-4", "Nutrition & Food"), text: edit.text("resource-card-5", "Treatment nutrition guidance and Utah food assistance.") },
+  { href: edit.text("resource-card-6", "/transportation/"), icon: 'directions_walk', title: edit.text("resource-card-7", "Transportation"), text: edit.text("resource-card-8", "Public transit discounts and rides to cancer appointments.") },
+  { href: edit.text("resource-card-9", "/cleaning/"), icon: 'volunteer_activism', title: edit.text("resource-card-10", "Home Cleaning"), text: edit.text("resource-card-11", "Free cleaning assistance for eligible cancer patients.") },
+  { href: edit.text("resource-card-12", "/personalsafety/"), icon: 'support_agent', title: edit.text("resource-card-13", "Personal Safety"), text: edit.text("resource-card-14", "Crisis, domestic violence, and immediate safety resources.") },
 ];
 ---
 <section class="resource-hero resource-hero--hub">
   <div class="container resource-hero__inner">
-    <nav class="resource-breadcrumb" aria-label="Breadcrumb"><a href={url('/patient-resources.html')}>Patient Resources</a><span aria-hidden="true">/</span><span>Supportive Resources</span></nav>
-    <p class="resource-eyebrow">Help beyond the clinic</p>
-    <h1>Practical support for daily life.</h1>
-    <p class="resource-intro">Trusted starting points for housing, food, transportation, home care, and personal safety during cancer treatment.</p>
+    <nav class="resource-breadcrumb" aria-label="Breadcrumb"><a href={url(edit.text("link-5b9da5af13", "/patient-resources.html"))}>{edit.text("text-f14e95f52d", "Patient Resources")}</a><span aria-hidden="true">/</span><span>{edit.text("text-209dce885c", "Supportive Resources")}</span></nav>
+    <p class="resource-eyebrow">{edit.text("text-cf1c685e16", "Help beyond the clinic")}</p>
+    <h1>{edit.text("text-727213130d", "Practical support for daily life.")}</h1>
+    <p class="resource-intro">{edit.text("text-cab9706df0", "Trusted starting points for housing, food, transportation, home care, and personal safety during cancer treatment.")}</p>
   </div>
 </section>
 <section class="resource-section">
@@ -21,9 +23,9 @@ const resources = [
     <div class="support-grid">
       {resources.map(item => <a class="support-card" href={url(item.href)}>
         <span class="support-card__icon material-symbols-rounded" aria-hidden="true">{item.icon}</span>
-        <h2>{item.title}</h2><p>{item.text}</p><span class="support-card__link">View resources <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
+        <h2>{item.title}</h2><p>{item.text}</p><span class="support-card__link">{edit.text("text-e997ea2a15", "View resources ")}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
       </a>)}
     </div>
-    <div class="support-callout"><div><p class="resource-eyebrow">Personal guidance</p><h2>Your patient advocate can help.</h2><p>Ask about insurance, financial assistance, transportation, and community programs that fit your needs.</p></div><a class="resource-button" href={url('/programs-and-services.html#patient-advocacy')}>Learn about patient advocacy</a></div>
+    <div class="support-callout"><div><p class="resource-eyebrow">{edit.text("text-c52bc38b4c", "Personal guidance")}</p><h2>{edit.text("text-aacc1594e3", "Your patient advocate can help.")}</h2><p>{edit.text("text-83794bcf49", "Ask about insurance, financial assistance, transportation, and community programs that fit your needs.")}</p></div><a class="resource-button" href={url(edit.text("link-7fa125168e", "/programs-and-services.html#patient-advocacy"))}>{edit.text("text-d731594487", "Learn about patient advocacy")}</a></div>
   </div>
 </section>

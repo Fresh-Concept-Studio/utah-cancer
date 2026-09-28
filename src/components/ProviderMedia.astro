@@ -1,5 +1,5 @@
 ---
-import { mediaHighlights } from '../data/media';
+import { mediaHighlights } from '../lib/content';
 import { url } from '../lib/urls';
 ---
 <section class="provider-media" id="media" aria-labelledby="provider-media-title">
@@ -11,7 +11,7 @@ import { url } from '../lib/urls';
       <div class="media-carousel-track" id="provider-media-track" tabindex="0" role="region" aria-label="Media videos">
         {mediaHighlights.map(video => <a class="media-card" href={video.href} target="_blank" rel="noopener" aria-label={`Watch ${video.title} on YouTube (opens in a new tab)`}>
           <div class="media-card-video">
-            <img src={url(`/images/media/${video.id}.jpg`)} width="480" height="360" alt="" loading="lazy" decoding="async" />
+            <img src={url(video.photo?.src || `/images/media/${video.id}.jpg`)} width="480" height="360" alt="" loading="lazy" decoding="async" />
             <span class="material-symbols-rounded media-card-play" aria-hidden="true">play_circle</span>
             <span class="media-card-badge">{video.badge}</span>
           </div>

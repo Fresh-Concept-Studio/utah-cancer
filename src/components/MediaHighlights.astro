@@ -1,16 +1,18 @@
 ---
-import { mediaHighlights } from '../data/media';
+import { mediaHighlights } from '../lib/content';
 import { url } from '../lib/urls';
+import { pageEditor } from '../lib/page-content';
+const edit=pageEditor(Astro.props.page);
 ---
 <aside class="media-breaker" id="media">
-  <a href="https://youtu.be/SX070PNyqUE" class="media-breaker-video" aria-label="Watch Dr. Justin Call and Katrina on KSL at Noon" target="_blank" rel="noopener">
-    <img src={url("/images/media-interview-640.webp")} width="640" height="427" alt="A Utah Cancer Specialists physician interviewed on a TV news set" loading="lazy" decoding="async">
+  <a href={edit.text("media-feature-url", "https://youtu.be/SX070PNyqUE")} class="media-breaker-video" aria-label={edit.text("media-feature-label", "KSL at Noon")} target="_blank" rel="noopener">
+    <img src={url(edit.image("media-feature-photo", "/images/media-interview-640.webp"))} width="640" height="427" alt={edit.imageAlt("media-feature-photo", "A Utah Cancer Specialists physician interviewed on a TV news set")} loading="lazy" decoding="async">
     <span class="media-breaker-play"><span class="material-symbols-rounded">play_arrow</span></span>
-    <span class="media-breaker-soon">KSL at Noon</span>
+    <span class="media-breaker-soon">{edit.text("media-feature-label", "KSL at Noon")}</span>
   </a>
   <span class="media-breaker-text">
-    <span class="media-breaker-title">Media Highlights</span>
-    <span class="media-breaker-desc">Our physicians share the latest in cancer care on Utah’s news networks.</span>
+    <span class="media-breaker-title">{edit.text("media-heading", "Media Highlights")}</span>
+    <span class="media-breaker-desc">{edit.text("media-description", "Our physicians share the latest in cancer care on Utah\u2019s news networks.")}</span>
     <span class="media-breaker-links" aria-label="Utah Cancer Specialists media appearances">
       {mediaHighlights.map(video => video.instagram ?
         <span class="media-breaker-item">

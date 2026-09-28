@@ -1,54 +1,56 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Telehealth</h1>
-      <p class="providers-hero-desc">Connecting with your physician through technology — virtual, home-based care without a disruption in treatment.</p>
+      <h1 class="providers-hero-title">{edit.text("text-27581862f6", "Telehealth")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-2e6a79cafa", "Connecting with your physician through technology — virtual, home-based care without a disruption in treatment.")}</p>
     </div>
   </section>
 
   <div class="container">
     <div class="hero-bridge">
-      <img src={url("/images/generated/telehealth-hero-960.webp")} width="960" height="640" alt="A laptop on a sunlit kitchen table set up for a virtual care visit at home" fetchpriority="high" decoding="async">
+      <img src={url(edit.image("image-164af3d6ae", "/images/generated/telehealth-hero-960.webp"))} width="960" height="640" alt={edit.imageAlt("image-164af3d6ae", "A laptop on a sunlit kitchen table set up for a virtual care visit at home")} fetchpriority="high" decoding="async">
     </div>
   </div>
 
   <section class="th-how">
     <div class="container">
       <div class="th-how-header">
-        <span class="th-eyebrow">How it works</span>
-        <h2 class="th-how-title">Care that meets you at home, in three simple steps.</h2>
-        <p class="th-how-intro">Telehealth lets you connect with your physician or advanced care practitioner from your smartphone, tablet, or computer — no downloads, no special software, no disruption to your treatment.</p>
+        <span class="th-eyebrow">{edit.text("text-1dd6a17cb4", "How it works")}</span>
+        <h2 class="th-how-title">{edit.text("text-56998b62bb", "Care that meets you at home, in three simple steps.")}</h2>
+        <p class="th-how-intro">{edit.text("text-d4842a1d15", "Telehealth lets you connect with your physician or advanced care practitioner from your smartphone, tablet, or computer — no downloads, no special software, no disruption to your treatment.")}</p>
       </div>
 
       <div class="th-steps">
         <div class="th-step">
           <div class="th-step-icon">
             <span class="material-symbols-rounded">smartphone</span>
-            <span class="th-step-num">1</span>
+            <span class="th-step-num">{edit.text("text-356a192b79", "1")}</span>
           </div>
-          <div class="th-step-label">Step 01</div>
-          <h3 class="th-step-title">Receive Your Link</h3>
-          <p class="th-step-desc">Your clinic sends a clickable link to your smartphone, tablet, or email before your appointment.</p>
+          <div class="th-step-label">{edit.text("text-42cd9f795a", "Step 01")}</div>
+          <h3 class="th-step-title">{edit.text("text-049377ee15", "Receive Your Link")}</h3>
+          <p class="th-step-desc">{edit.text("text-a053e5d180", "Your clinic sends a clickable link to your smartphone, tablet, or email before your appointment.")}</p>
         </div>
         <div class="th-step">
           <div class="th-step-icon">
             <span class="material-symbols-rounded">videocam</span>
-            <span class="th-step-num">2</span>
+            <span class="th-step-num">{edit.text("text-da4b9237ba", "2")}</span>
           </div>
-          <div class="th-step-label">Step 02</div>
-          <h3 class="th-step-title">Connect</h3>
-          <p class="th-step-desc">Click the link at your scheduled time. No downloads or special software required — just one tap to join.</p>
+          <div class="th-step-label">{edit.text("text-38cff1f8dd", "Step 02")}</div>
+          <h3 class="th-step-title">{edit.text("text-b65463cb6a", "Connect")}</h3>
+          <p class="th-step-desc">{edit.text("text-cd5f2cff09", "Click the link at your scheduled time. No downloads or special software required — just one tap to join.")}</p>
         </div>
         <div class="th-step">
           <div class="th-step-icon">
             <span class="material-symbols-rounded">stethoscope</span>
-            <span class="th-step-num">3</span>
+            <span class="th-step-num">{edit.text("text-77de68daec", "3")}</span>
           </div>
-          <div class="th-step-label">Step 03</div>
-          <h3 class="th-step-title">Your Visit</h3>
-          <p class="th-step-desc">Meet face-to-face with your provider, discuss your care, and ask questions from the comfort of home.</p>
+          <div class="th-step-label">{edit.text("text-87bd4ea1ec", "Step 03")}</div>
+          <h3 class="th-step-title">{edit.text("text-e75c7cfecc", "Your Visit")}</h3>
+          <p class="th-step-desc">{edit.text("text-a40780caf7", "Meet face-to-face with your provider, discuss your care, and ask questions from the comfort of home.")}</p>
         </div>
       </div>
     </div>
@@ -57,12 +59,12 @@ import { url } from '../lib/urls';
   <section class="th-faq-section">
     <div class="container">
       <div class="th-faq-wrap">
-        <h2 class="th-faq-title">Common Questions</h2>
+        <h2 class="th-faq-title">{edit.text("text-1f955b144e", "Common Questions")}</h2>
         <div class="sd-faq">
-          <details class="sd-faq-item"><summary>What equipment do I need?</summary><p>A smartphone, tablet, or computer with a camera and microphone. Most modern devices have everything you need built in.</p></details>
-          <details class="sd-faq-item"><summary>Is telehealth covered by insurance?</summary><p>Most insurance plans cover telehealth visits. Our patient advocates can verify your coverage before your appointment.</p></details>
-          <details class="sd-faq-item"><summary>What types of visits can be done via telehealth?</summary><p>Follow-up consultations, treatment discussions, symptom checks, lab result reviews, and survivorship visits are all well-suited for telehealth. Your care team will let you know if an in-person visit is needed.</p></details>
-          <details class="sd-faq-item"><summary>Is my telehealth visit private and secure?</summary><p>Yes. All telehealth visits use HIPAA-compliant, encrypted video connections to protect your privacy.</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-0c174e4d28", "What equipment do I need?")}</summary><p>{edit.text("text-d72ca26a8b", "A smartphone, tablet, or computer with a camera and microphone. Most modern devices have everything you need built in.")}</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-6e241cacbd", "Is telehealth covered by insurance?")}</summary><p>{edit.text("text-ce52ec164c", "Most insurance plans cover telehealth visits. Our patient advocates can verify your coverage before your appointment.")}</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-78103f72c0", "What types of visits can be done via telehealth?")}</summary><p>{edit.text("text-04884fa441", "Follow-up consultations, treatment discussions, symptom checks, lab result reviews, and survivorship visits are all well-suited for telehealth. Your care team will let you know if an in-person visit is needed.")}</p></details>
+          <details class="sd-faq-item"><summary>{edit.text("text-bffa39e48a", "Is my telehealth visit private and secure?")}</summary><p>{edit.text("text-211bfb33dd", "Yes. All telehealth visits use HIPAA-compliant, encrypted video connections to protect your privacy.")}</p></details>
         </div>
       </div>
     </div>

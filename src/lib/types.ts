@@ -3,6 +3,9 @@ export interface ContentSection { id?: string; title: string; html: string }
 export interface Tab { href: string; label: string }
 export interface PageData {
   title: string;
+  jobs?: {title: string; location: string; schedule: string; status: string; summary: string; responsibilities: string[]; qualifications: string[]}[];
+  editorContent?: {key?: string; _key?: string; value: string}[];
+  editorImages?: {key?: string; _key?: string; image: {src: string; alt: string}}[];
   description?: string;
   bodyClass?: string;
   mainLandmark?: boolean;

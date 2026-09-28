@@ -1,4 +1,5 @@
 ---
+import { imageVariant } from '../lib/images';
 import { locations } from '../lib/content';
 import { url, richHtml } from '../lib/urls';
 import DetailSections from './DetailSections.astro';
@@ -6,7 +7,7 @@ import ContentLink from './ContentLink.astro';
 interface Props { slug: string }
 const location = locations.find(p => p.slug === Astro.props.slug);
 if (!location) throw new Error(`Unknown location: ${Astro.props.slug}`);
-const heroImage = location.image.src.replace(/\.(?:jpe?g|png|webp)$/i, '-1280.webp');
+const heroImage = imageVariant(location.image.src, 1280, 800);
 ---
 <section class="loc-hero">
   <div class="loc-hero-bg"><img src={url(heroImage)} width="1280" height="800" alt={location.image.alt} fetchpriority="high" decoding="async" /><div class="loc-hero-overlay"></div></div>

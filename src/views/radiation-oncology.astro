@@ -1,15 +1,17 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <section class="sd-hero">
-    <div class="sd-hero-bg"><img src={url("/images/specialty-headneck-clinical-hero.jpg")} alt=""><div class="sd-hero-overlay"></div></div>
+    <div class="sd-hero-bg"><img src={url(edit.image("image-cedb2a48f4", "/images/specialty-headneck-clinical-hero.jpg"))} alt={edit.imageAlt("image-cedb2a48f4", "")}><div class="sd-hero-overlay"></div></div>
     <div class="container sd-hero-inner">
-      <span class="sd-hero-tag">Advanced Technology</span>
-      <h1 class="sd-hero-title">Radiation Oncology</h1>
-      <p class="sd-hero-sub">Precise, image-guided radiation therapy using the latest technology — delivered by board-certified radiation oncologists at locations throughout Utah.</p>
+      <span class="sd-hero-tag">{edit.text("text-71165c2e52", "Advanced Technology")}</span>
+      <h1 class="sd-hero-title">{edit.text("text-042a35360e", "Radiation Oncology")}</h1>
+      <p class="sd-hero-sub">{edit.text("text-c23b72dbf4", "Precise, image-guided radiation therapy using the latest technology — delivered by board-certified radiation oncologists at locations throughout Utah.")}</p>
       <div class="sd-hero-actions">
-        <a href="tel:8012629494" class="btn btn--white"><span class="material-symbols-rounded">calendar_today</span> Request Appointment</a>
-        <a href={url("/providers/index.html")} class="btn btn--outline-dark"><span class="material-symbols-rounded">group</span> Our Radiation Oncologists</a>
+        <a href={url(edit.text("link-6464e105f6", "tel:8012629494"))} class="btn btn--white"><span class="material-symbols-rounded">calendar_today</span>{edit.text("text-b37cd7fed3", " Request Appointment")}</a>
+        <a href={url(edit.text("link-fc55c827ec", "/providers/index.html"))} class="btn btn--outline-dark"><span class="material-symbols-rounded">group</span>{edit.text("text-3fa7717147", " Our Radiation Oncologists")}</a>
       </div>
     </div>
   </section>
@@ -18,29 +20,29 @@ import { url } from '../lib/urls';
     <div class="container">
       <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start;">
         <div>
-          <span class="about-mission-label">TrueBeam™ Linear Accelerator</span>
-          <h2 class="about-mission-title">Pinpoint accuracy. Maximum precision.</h2>
-          <p class="provider-bio">The TrueBeam system enables a radically different approach to cancer treatment with image-guided radiotherapy. Developed from the ground up to deliver powerful cancer treatments with pinpoint accuracy, the system features a 120-leaf multileaf collimator that shapes the radiation beam to match the three-dimensional shape of each tumor.</p>
-          <p class="provider-bio">Cone-beam CT capability reduces radiation exposure during imaging, while real-time imaging ensures targeting accuracy measured in millimeters. Gated respiration synchronization allows precise treatment of lung cancer and other motion-sensitive tumors.</p>
+          <span class="about-mission-label">{edit.text("text-fcde961543", "TrueBeam™ Linear Accelerator")}</span>
+          <h2 class="about-mission-title">{edit.text("text-d802926348", "Pinpoint accuracy. Maximum precision.")}</h2>
+          <p class="provider-bio">{edit.text("text-040354e852", "The TrueBeam system enables a radically different approach to cancer treatment with image-guided radiotherapy. Developed from the ground up to deliver powerful cancer treatments with pinpoint accuracy, the system features a 120-leaf multileaf collimator that shapes the radiation beam to match the three-dimensional shape of each tumor.")}</p>
+          <p class="provider-bio">{edit.text("text-fbe53305c6", "Cone-beam CT capability reduces radiation exposure during imaging, while real-time imaging ensures targeting accuracy measured in millimeters. Gated respiration synchronization allows precise treatment of lung cancer and other motion-sensitive tumors.")}</p>
           <div class="provider-specialties-grid" style="margin-top:24px;">
-            <div class="specialty-tag"><span class="material-symbols-rounded">blur_circular</span> RapidArc (IMRT)</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">radar</span> SBRT &amp; SRS</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">target</span> IGRT</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">radiology</span> 3D External Beam</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">schedule</span> Hypofractionated RT</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">blur_circular</span>{edit.text("text-f7c54bc5e2", " RapidArc (IMRT)")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">radar</span>{edit.text("text-4167562736", " SBRT & SRS")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">target</span>{edit.text("text-bb7d7bae3b", " IGRT")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">radiology</span>{edit.text("text-4a0d44d00e", " 3D External Beam")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">schedule</span>{edit.text("text-e0a984158f", " Hypofractionated RT")}</div>
           </div>
         </div>
         <div>
-          <span class="about-mission-label">Omni Legend Digital PET/CT</span>
-          <h2 class="about-mission-title">See more. Expose less.</h2>
-          <p class="provider-bio">The Omni Legend PET/CT scanner uses Precision DL (deep learning) image processing and an AI-based Auto Positioning Camera for ultra-fast scanning at lower radiation doses. Its industry-leading sensitivity per centimeter enables advanced small-lesion detection and low-contrast detectability.</p>
-          <p class="provider-bio">Q-Clear image reconstruction with motion-free technology provides precise tumor measurement for confident diagnosis and treatment response monitoring.</p>
+          <span class="about-mission-label">{edit.text("text-30ce476472", "Omni Legend Digital PET/CT")}</span>
+          <h2 class="about-mission-title">{edit.text("text-74072dd358", "See more. Expose less.")}</h2>
+          <p class="provider-bio">{edit.text("text-046aed87c8", "The Omni Legend PET/CT scanner uses Precision DL (deep learning) image processing and an AI-based Auto Positioning Camera for ultra-fast scanning at lower radiation doses. Its industry-leading sensitivity per centimeter enables advanced small-lesion detection and low-contrast detectability.")}</p>
+          <p class="provider-bio">{edit.text("text-97ee3d72e0", "Q-Clear image reconstruction with motion-free technology provides precise tumor measurement for confident diagnosis and treatment response monitoring.")}</p>
           <div class="provider-specialties-grid" style="margin-top:24px;">
-            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> FDG</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> Ga68 PSMA</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> F18 PSMA</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> Axumin</div>
-            <div class="specialty-tag"><span class="material-symbols-rounded">science</span> Gallium 68</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span>{edit.text("text-507296094e", " FDG")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span>{edit.text("text-490f0e03e7", " Ga68 PSMA")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span>{edit.text("text-48ec8c94ca", " F18 PSMA")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span>{edit.text("text-79595ce582", " Axumin")}</div>
+            <div class="specialty-tag"><span class="material-symbols-rounded">science</span>{edit.text("text-d6a704a212", " Gallium 68")}</div>
           </div>
         </div>
       </div>
@@ -50,40 +52,40 @@ import { url } from '../lib/urls';
   <section style="padding:72px 0; background:#eaf2f5;">
     <div class="container rt-feature-callout">
       <div>
-        <span class="about-mission-label">Care for benign conditions</span>
-        <h2 class="about-mission-title">Low-dose radiation therapy for joint pain.</h2>
-        <p class="provider-bio">For selected patients, low-dose radiation therapy may offer a painless, noninvasive option for persistent pain from certain inflammatory and degenerative conditions.</p>
+        <span class="about-mission-label">{edit.text("text-ee9e5a72f3", "Care for benign conditions")}</span>
+        <h2 class="about-mission-title">{edit.text("text-33ae0d1d60", "Low-dose radiation therapy for joint pain.")}</h2>
+        <p class="provider-bio">{edit.text("text-80bed40549", "For selected patients, low-dose radiation therapy may offer a painless, noninvasive option for persistent pain from certain inflammatory and degenerative conditions.")}</p>
       </div>
-      <a href={url('/low-dose-radiation-therapy-ldrt/')} class="btn btn--primary">Learn about LDRT <span class="material-symbols-rounded">arrow_forward</span></a>
+      <a href={url(edit.text("link-31dacfbef4", "/low-dose-radiation-therapy-ldrt/"))} class="btn btn--primary">{edit.text("text-87d0fd5049", "Learn about LDRT ")}<span class="material-symbols-rounded">arrow_forward</span></a>
     </div>
   </section>
 
   <section style="padding:72px 0 84px; background:#f8f9fa; border-top:1px solid #e8e4e0;">
     <div class="container rt-split">
       <div>
-        <h2 class="provider-section-title" style="margin-bottom:20px;">Radiotheranostics</h2>
-        <p class="provider-bio">Our practice also offers targeted radionuclide therapies that deliver radiation directly to cancer cells expressing specific receptors — precision treatment at the molecular level.</p>
+        <h2 class="provider-section-title" style="margin-bottom:20px;">{edit.text("text-1eb643d2d3", "Radiotheranostics")}</h2>
+        <p class="provider-bio">{edit.text("text-22032258b1", "Our practice also offers targeted radionuclide therapies that deliver radiation directly to cancer cells expressing specific receptors — precision treatment at the molecular level.")}</p>
       </div>
       <div class="rt-list">
         <div class="rt-item">
           <span class="material-symbols-rounded">radiology</span>
           <span class="rt-item-info">
-            <span class="rt-item-name">Lutathera <em>(Lu-177 DOTATATE)</em></span>
-            <span class="rt-item-desc">For neuroendocrine tumors expressing somatostatin receptors</span>
+            <span class="rt-item-name">{edit.text("text-a0a4c71011", "Lutathera ")}<em>{edit.text("text-9470afb91e", "(Lu-177 DOTATATE)")}</em></span>
+            <span class="rt-item-desc">{edit.text("text-39e5c8ab96", "For neuroendocrine tumors expressing somatostatin receptors")}</span>
           </span>
         </div>
         <div class="rt-item">
           <span class="material-symbols-rounded">radiology</span>
           <span class="rt-item-info">
-            <span class="rt-item-name">Pluvicto <em>(Lu-177 PSMA)</em></span>
-            <span class="rt-item-desc">For PSMA-positive metastatic prostate cancer</span>
+            <span class="rt-item-name">{edit.text("text-3a9a55c0ea", "Pluvicto ")}<em>{edit.text("text-83c0baf0a5", "(Lu-177 PSMA)")}</em></span>
+            <span class="rt-item-desc">{edit.text("text-c5dfb01331", "For PSMA-positive metastatic prostate cancer")}</span>
           </span>
         </div>
         <div class="rt-item">
           <span class="material-symbols-rounded">radiology</span>
           <span class="rt-item-info">
-            <span class="rt-item-name">Xofigo <em>(Ra-223)</em></span>
-            <span class="rt-item-desc">For prostate cancer that has spread to bone</span>
+            <span class="rt-item-name">{edit.text("text-7c2406f101", "Xofigo ")}<em>{edit.text("text-67589e094f", "(Ra-223)")}</em></span>
+            <span class="rt-item-desc">{edit.text("text-7187c1c319", "For prostate cancer that has spread to bone")}</span>
           </span>
         </div>
       </div>

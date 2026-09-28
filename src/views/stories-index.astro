@@ -1,12 +1,14 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <!-- Stories Index Hero -->
   <section class="story-hero">
     <div class="container">
-      <span class="story-hero-kicker">Patient Stories</span>
-      <h1 class="story-hero-title">Every journey deserves to be told.</h1>
-      <p class="story-hero-byline">Personal experiences from the Utah Cancer Specialists community, shared in their original published context.</p>
+      <span class="story-hero-kicker">{edit.text("text-19e93c72e0", "Patient Stories")}</span>
+      <h1 class="story-hero-title">{edit.text("text-85a09fbd84", "Every journey deserves to be told.")}</h1>
+      <p class="story-hero-byline">{edit.text("text-d21e0ddc86", "Personal experiences from the Utah Cancer Specialists community, shared in their original published context.")}</p>
     </div>
   </section>
 
@@ -14,21 +16,21 @@ import { url } from '../lib/urls';
   <section class="stories-index">
     <div class="container">
       <div class="stories-index-grid stories-index-grid--two">
-        <a href={url("/stories/amy-jensen.html")} class="stories-index-card">
-          <span class="stories-index-media"><img src={url("/images/story-amy-jensen.jpg")} alt="Amy Jensen with her husband Chad and their son Jacob" loading="lazy"></span>
+        <a href={url(edit.text("link-cf52a071c3", "/stories/amy-jensen.html"))} class="stories-index-card">
+          <span class="stories-index-media"><img src={url(edit.image("image-ce45fd460b", "/images/story-amy-jensen.jpg"))} alt={edit.imageAlt("image-ce45fd460b", "Amy Jensen with her husband Chad and their son Jacob")} loading="lazy"></span>
           <span class="stories-index-body">
-            <span class="story-kicker">Breast cancer</span><span class="stories-index-quote">Facing cancer while growing a family</span>
-            <span class="story-name">Amy Jensen</span><span class="story-link">Read Amy’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
+            <span class="story-kicker">{edit.text("text-00e2e91ac8", "Breast cancer")}</span><span class="stories-index-quote">{edit.text("text-3fa8f059d4", "Facing cancer while growing a family")}</span>
+            <span class="story-name">{edit.text("text-9c3b94c3aa", "Amy Jensen")}</span><span class="story-link">{edit.text("text-217b252d14", "Read Amy’s story ")}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
           </span>
         </a>
-        <a href={url("/stories/dukhi-hong.html")} class="stories-index-card">
-          <span class="stories-index-media"><img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones" loading="lazy"></span>
+        <a href={url(edit.text("link-9ca77d9084", "/stories/dukhi-hong.html"))} class="stories-index-card">
+          <span class="stories-index-media"><img src={url(edit.image("image-741de34811", "/images/story-dukhi-hong.jpg"))} alt={edit.imageAlt("image-741de34811", "Dukhi Hong pictured with two loved ones")} loading="lazy"></span>
           <span class="stories-index-body">
-            <span class="story-kicker">Small cell lung cancer</span><span class="stories-index-quote">A milestone of hope</span>
-            <span class="story-name">Dukhi Hong</span><span class="story-link">Read Dukhi’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
+            <span class="story-kicker">{edit.text("text-c2c63e8777", "Small cell lung cancer")}</span><span class="stories-index-quote">{edit.text("text-0a698fa025", "A milestone of hope")}</span>
+            <span class="story-name">{edit.text("text-807f154e96", "Dukhi Hong")}</span><span class="story-link">{edit.text("text-f1fbaf6214", "Read Dukhi’s story ")}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></span>
           </span>
         </a>
       </div>
-      <p class="stories-index-note">More stories are on the way. If you’d like to share yours, <a href={url("/contact.html")}>we’d be honored to listen</a>.</p>
+      <p class="stories-index-note">{edit.text("text-2e4d5426a3", "More stories are on the way. If you’d like to share yours, ")}<a href={url(edit.text("link-686a9a3e68", "/contact.html"))}>{edit.text("text-7d64799327", "we’d be honored to listen")}</a>.</p>
     </div>
   </section>

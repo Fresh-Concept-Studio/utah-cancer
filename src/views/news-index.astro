@@ -1,12 +1,14 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { newsPosts } from '../lib/content';
 import { url } from '../lib/urls';
 ---
 <section class="news-hero">
   <div class="container news-hero__inner">
-    <p class="news-eyebrow">From Utah Cancer Specialists</p>
-    <h1>News</h1>
-    <p>Updates, community stories, and announcements from our care teams.</p>
+    <p class="news-eyebrow">{edit.text("text-2c9f84ee93", "From Utah Cancer Specialists")}</p>
+    <h1>{edit.text("text-34c808d0a6", "News")}</h1>
+    <p>{edit.text("text-d9eb5d40c1", "Updates, community stories, and announcements from our care teams.")}</p>
   </div>
 </section>
 
@@ -21,7 +23,7 @@ import { url } from '../lib/urls';
           <time datetime={post.publishedDate}>{post.dateLabel}</time>
           <h2><a href={url(`/${post.slug}/`)}>{post.title}</a></h2>
           <p>{post.excerpt}</p>
-          <a class="news-card__link" href={url(`/${post.slug}/`)}>Read article <span aria-hidden="true">→</span></a>
+          <a class="news-card__link" href={url(`/${post.slug}/`)}>{edit.text("text-9fff03c353", "Read article ")}<span aria-hidden="true">→</span></a>
         </div>
       </article>
     ))}

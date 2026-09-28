@@ -1,34 +1,36 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <main class="written-story">
     <section class="story-hero story-hero--detail">
       <div class="container">
-        <a href={url("/stories/index.html")} class="story-back"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span> All Patient Stories</a>
-        <span class="story-hero-kicker">Breast cancer</span><h1 class="story-hero-title">Facing cancer while growing a family</h1>
-        <p class="story-hero-byline">Amy Jensen · Originally published <time datetime="2019-07-01">July 1, 2019</time></p>
+        <a href={url(edit.text("link-b4ae4f4939", "/stories/index.html"))} class="story-back"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>{edit.text("text-ea662bbb0e", " All Patient Stories")}</a>
+        <span class="story-hero-kicker">{edit.text("text-00e2e91ac8", "Breast cancer")}</span><h1 class="story-hero-title">{edit.text("text-3fa8f059d4", "Facing cancer while growing a family")}</h1>
+        <p class="story-hero-byline">{edit.text("text-04db637ad5", "Amy Jensen · Originally published ")}<time datetime="2019-07-01">{edit.text("text-c3520208c5", "July 1, 2019")}</time></p>
       </div>
     </section>
     <section class="story-detail-media" aria-label="Amy's photograph"><div class="container">
-      <figure class="story-detail-frame"><img src={url("/images/story-amy-jensen.jpg")} alt="Amy Jensen with her husband Chad and their son Jacob"></figure>
+      <figure class="story-detail-frame"><img src={url(edit.image("image-ce45fd460b", "/images/story-amy-jensen.jpg"))} alt={edit.imageAlt("image-ce45fd460b", "Amy Jensen with her husband Chad and their son Jacob")}></figure>
     </div></section>
     <article class="story-article" aria-label="Amy's story"><div class="container"><div class="story-article-body">
-      <p>Amy Jensen was hoping for another baby when persistent changes in her breast led her to seek further testing. On the morning of a planned biopsy, she learned she was pregnant. She later pursued the biopsy at around thirteen weeks of pregnancy and was diagnosed with HER2-positive invasive ductal carcinoma.</p>
-      <p>Amy and her husband, Chad, shared the news with their daughters. Alongside concerns about treatment, Amy worried about how losing her hair might affect her children.</p>
-      <p>At eighteen weeks pregnant, Amy underwent surgery with Dr. Teresa Reading at IMC Hospital, including a mastectomy and reconstruction. Her subsequent care at Utah Cancer Specialists included chemotherapy and Herceptin.</p>
-      <p>Chad researched scalp cooling and connected with Dr. Gregory Litton. Amy used the <a href={url('/dignicap/')}>DigniCap system</a> during treatment. Although initially anxious about discomfort, she found it more tolerable than expected, and Dr. Litton observed that she was retaining her hair.</p>
-      <p>The July 2019 account reported that Amy was cancer-free. Her family had also welcomed Jacob, born in December 2018.</p>
-      <div class="story-source"><p>Adapted from the original Utah Cancer Specialists article. Photo from Utah Cancer Specialists.</p><p>This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome.</p></div>
-      <a class="story-link" href={url("/stories/dukhi-hong.html")}>Read Dukhi’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+      <p>{edit.text("text-13697216ec", "Amy Jensen was hoping for another baby when persistent changes in her breast led her to seek further testing. On the morning of a planned biopsy, she learned she was pregnant. She later pursued the biopsy at around thirteen weeks of pregnancy and was diagnosed with HER2-positive invasive ductal carcinoma.")}</p>
+      <p>{edit.text("text-e273da0cf1", "Amy and her husband, Chad, shared the news with their daughters. Alongside concerns about treatment, Amy worried about how losing her hair might affect her children.")}</p>
+      <p>{edit.text("text-f15b090c8d", "At eighteen weeks pregnant, Amy underwent surgery with Dr. Teresa Reading at IMC Hospital, including a mastectomy and reconstruction. Her subsequent care at Utah Cancer Specialists included chemotherapy and Herceptin.")}</p>
+      <p>{edit.text("text-bcf1cc2bd9", "Chad researched scalp cooling and connected with Dr. Gregory Litton. Amy used the ")}<a href={url(edit.text("link-62e00f868a", "/dignicap/"))}>{edit.text("text-61aeb63231", "DigniCap system")}</a>{edit.text("text-82389512aa", " during treatment. Although initially anxious about discomfort, she found it more tolerable than expected, and Dr. Litton observed that she was retaining her hair.")}</p>
+      <p>{edit.text("text-e8459f52dc", "The July 2019 account reported that Amy was cancer-free. Her family had also welcomed Jacob, born in December 2018.")}</p>
+      <div class="story-source"><p>{edit.text("text-8f71efb1ef", "Adapted from the original Utah Cancer Specialists article. Photo from Utah Cancer Specialists.")}</p><p>{edit.text("text-951656865c", "This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome.")}</p></div>
+      <a class="story-link" href={url(edit.text("link-9ca77d9084", "/stories/dukhi-hong.html"))}>{edit.text("text-f1fbaf6214", "Read Dukhi’s story ")}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
     </div></div></article>
   </main>
   <!-- Story CTA -->
   <section class="story-cta">
     <div class="container story-cta-inner">
-      <h2 class="story-cta-heading">Every story starts with a first appointment.</h2>
+      <h2 class="story-cta-heading">{edit.text("text-03a7ccbd43", "Every story starts with a first appointment.")}</h2>
       <div class="story-cta-actions">
-        <a href={url("/contact.html")} class="btn btn--white"><span class="material-symbols-rounded">phone</span> Contact Us</a>
-        <a href={url("/stories/index.html")} class="story-cta-link">More patient stories <span class="material-symbols-rounded">arrow_forward</span></a>
+        <a href={url(edit.text("link-686a9a3e68", "/contact.html"))} class="btn btn--white"><span class="material-symbols-rounded">phone</span>{edit.text("text-3127f37906", " Contact Us")}</a>
+        <a href={url(edit.text("link-b4ae4f4939-1", "/stories/index.html"))} class="story-cta-link">{edit.text("text-b8cf626149", "More patient stories ")}<span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
   </section>

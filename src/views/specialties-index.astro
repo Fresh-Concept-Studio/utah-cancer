@@ -1,4 +1,6 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 import { specialties } from '../lib/content';
 import { specialtyCategories } from '../data/navigation';
@@ -7,8 +9,8 @@ const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.o
 <!-- Hero -->
   <section class="providers-hero">
     <div class="container">
-      <h1 class="providers-hero-title">Types of Cancer</h1>
-      <p class="providers-hero-desc">Comprehensive cancer care across a wide range of cancer types and blood disorders, delivered by board-certified specialists.</p>
+      <h1 class="providers-hero-title">{edit.text("text-9a5f9d6772", "Types of Cancer")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-0fe036c95c", "Comprehensive cancer care across a wide range of cancer types and blood disorders, delivered by board-certified specialists.")}</p>
     </div>
   </section>
 
@@ -28,7 +30,7 @@ const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.o
 
           <!-- Categories -->
           <div class="spec-filter-group">
-            <h2 class="spec-filter-title">Categories</h2>
+            <h2 class="spec-filter-title">{edit.text("text-6ccb60071b", "Categories")}</h2>
             <ul class="spec-filter-list">
   <li><button class="spec-filter-btn active" data-filter="all">All Types of Cancer <span class="spec-filter-count">{specialties.length}</span></button></li>
   {specialtyCategories.map(category => <li><button class="spec-filter-btn" data-filter={category.id}>{category.shortLabel || category.label} <span class="spec-filter-count">{specialties.filter(p => p.directory.category === category.id).length}</span></button></li>)}
@@ -37,19 +39,17 @@ const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.o
 
           <!-- Quick Links -->
           <div class="spec-filter-group">
-            <h3 class="spec-filter-title">Quick Links</h3>
+            <h3 class="spec-filter-title">{edit.text("text-917bcf00a5", "Quick Links")}</h3>
             <ul class="spec-filter-list spec-filter-list--links">{specialtyCategories.map(category => <li><a href={`#${category.id}`}>{category.shortLabel || category.label}</a></li>)}</ul>
           </div>
 
           <!-- Help CTA -->
           <div class="spec-sidebar-cta">
             <span class="material-symbols-rounded">help</span>
-            <h4>Not sure where to start?</h4>
-            <p>Our team can help you find the right specialist for your needs.</p>
-            <a href="tel:8012690231" class="btn btn--primary btn--full btn--sm">
-              <span class="material-symbols-rounded">phone</span>
-              Call 801.269.0231
-            </a>
+            <h4>{edit.text("text-63de101ba7", "Not sure where to start?")}</h4>
+            <p>{edit.text("text-ec35ca7fb9", "Our team can help you find the right specialist for your needs.")}</p>
+            <a href={url(edit.text("link-0fc44bd2ab", "tel:8012690231"))} class="btn btn--primary btn--full btn--sm">
+              <span class="material-symbols-rounded">phone</span>{edit.text("text-2939f80944", " Call 801.269.0231 ")}</a>
           </div>
 
         </div>
@@ -59,7 +59,7 @@ const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.o
       <div class="spec-content">
 
         <div class="spec-results-bar" id="spec-results-bar">
-          <span id="spec-results-count">Showing all 28 cancer types</span>
+          <span id="spec-results-count">{edit.text("text-db7de9d3f1", "Showing all 28 cancer types")}</span>
         </div>
 
         <!-- Common Cancers -->

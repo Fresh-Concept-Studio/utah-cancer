@@ -1,4 +1,7 @@
 ---
+import { imageVariant } from '../lib/images';
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url, richHtml } from '../lib/urls';
 import { locations } from '../lib/content';
 const directory = locations.filter(location => location.directory).sort((a,b) => a.directory!.order - b.directory!.order);
@@ -14,7 +17,7 @@ const markers = directory.filter(location => location.map).map(location => ({
 <!-- Hero -->
   <section class="providers-hero providers-hero--compact">
     <div class="container">
-      <h1 class="providers-hero-title">Our Locations</h1>
+      <h1 class="providers-hero-title">{edit.text("text-9f076f54d0", "Our Locations")}</h1>
     </div>
   </section>
 
@@ -42,7 +45,7 @@ const markers = directory.filter(location => location.map).map(location => ({
         <span class="loc-filter-count" id="loc-filter-count" aria-live="polite"></span>
       </div>
 
-      <p class="loc-empty" id="loc-empty" hidden="">No clinics match your search. Try a different keyword or county.</p>
+      <p class="loc-empty" id="loc-empty" hidden="">{edit.text("text-6b8ff54ff2", "No clinics match your search. Try a different keyword or county.")}</p>
 
       <div class="loc-panels">
 
@@ -52,7 +55,7 @@ const markers = directory.filter(location => location.map).map(location => ({
   {directory.map((location, index) => {
     const card = location.directory!;
     const image = location.image;
-    const cardImage = image.src.replace(/\.(?:jpe?g|png|webp)$/i, '-640.webp');
+    const cardImage = imageVariant(image.src, 640, 480);
     return <a href={url(`/locations/${location.slug}.html`)} class:list={['loc-card', {'loc-card--featured': card.badge}]} data-county={card.county}>
       <div class="loc-card-image"><img src={url(cardImage)} width="640" height="480" alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : 'auto'} decoding="async" />{card.badge && <span class="loc-card-badge">{card.badge}</span>}</div>
       <div class="loc-card-body">
@@ -60,7 +63,7 @@ const markers = directory.filter(location => location.map).map(location => ({
         <p class="loc-card-sub">{card.subtitle || location.subtitle}</p>
         <p class="loc-card-address"><span class="material-symbols-rounded">location_on</span> <Fragment set:html={richHtml(card.addressHtml)} /></p>
         <p class="loc-card-meta"><span class="material-symbols-rounded">schedule</span> <Fragment set:html={card.hoursHtml} /></p>
-        <div class="loc-card-footer"><span class="loc-card-phone">{card.phone}</span><span class="loc-card-link">View details <span class="material-symbols-rounded">arrow_forward</span></span></div>
+        <div class="loc-card-footer"><span class="loc-card-phone">{card.phone}</span><span class="loc-card-link">{edit.text("text-9264b0fa3e", "View details ")}<span class="material-symbols-rounded">arrow_forward</span></span></div>
       </div>
     </a>;
   })}
@@ -77,7 +80,7 @@ const markers = directory.filter(location => location.map).map(location => ({
       <div class="loc-map-wrap">
         <div id="locations-map" class="locations-map" role="region" aria-label="Map of Utah Cancer Specialists locations"></div>
         <div class="locations-map-fallback" id="locations-map-fallback" hidden="">
-          <p>Add a Google Maps API key to <code>window.UCS_GOOGLE_MAPS_KEY</code> in <code>locations/index.html</code> to display the interactive map.</p>
+          <p>{edit.text("text-2104dd5591", "Add a Google Maps API key to ")}<code>{edit.text("text-4814aef610", "window.UCS_GOOGLE_MAPS_KEY")}</code>{edit.text("text-64d2f058b2", " in ")}<code>{edit.text("text-a0b16ec9af", "locations/index.html")}</code>{edit.text("text-7e3f7ac771", " to display the interactive map.")}</p>
         </div>
       </div>
     </div>

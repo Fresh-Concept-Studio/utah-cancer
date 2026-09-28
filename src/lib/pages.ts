@@ -10,6 +10,8 @@ interface RecordPage {
   specialty?: string;
   languages?: string;
   description?: string;
+  seoTitle?: string;
+  seoDescription?: string;
   tag?: string;
   subtitle?: string;
   directory?: { addressHtml?: string; [key: string]: unknown };
@@ -85,14 +87,15 @@ function metadataFor(family: Family, record: RecordPage): Pick<PageData, 'title'
 const pages: Record<string, PageData> = Object.fromEntries(
   Object.entries(standalonePages).map(([path, page]) => [path, {
     ...page,
-    description: standaloneDescriptions[path] || page.description,
-    ...(path === 'index.html' ? { title: 'Cancer Care in Utah | Utah Cancer Specialists' } : {}),
+    description: page.description || standaloneDescriptions[path],
+    ...(path === 'index.html' && page.title === 'Utah Cancer Specialists' ? { title: 'Cancer Care in Utah | Utah Cancer Specialists' } : {}),
   }]),
 ) as Record<string, PageData>;
 
 for (const policy of policies) {
   pages[`${policy.slug}/index.html`] = {
     ...policy,
+    title: policy.seoTitle || policy.title,
     contentHtml: policy.html,
     bodyClass: 'policy-page',
     styles: ['/styles.css', '/page-styles/policy.css'],
@@ -110,12 +113,13 @@ pages['articles/index.html'] = {
   scripts: [],
   marquee: false,
   component: 'news-index',
+  ...(pages['articles/index.html'] as Partial<PageData>),
 };
 
 for (const post of newsPosts) {
   pages[`${post.slug}/index.html`] = {
     title: post.seoTitle,
-    description: post.excerpt,
+    description: post.description || post.excerpt,
     heading: post.title,
     contentHtml: post.contentHtml,
     publishedDate: post.publishedDate,
@@ -139,6 +143,7 @@ pages['supportive-resources/index.html'] = {
   scripts: [],
   marquee: false,
   component: 'supportive-resources',
+  ...(pages['supportive-resources/index.html'] as Partial<PageData>),
 };
 
 for (const resource of resourcePages) {
@@ -175,6 +180,8 @@ for (const { family, directory, records } of families) {
       ...defaults[family],
       ...metadata,
       ...record.page,
+      ...(record.seoTitle ? {title: record.seoTitle} : {}),
+      ...(record.seoDescription ? {description: record.seoDescription} : family !== 'specialty' && record.description ? {description: record.description} : {}),
       family,
       slug: record.slug,
     } as PageData;

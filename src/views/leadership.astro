@@ -1,12 +1,14 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import LeadershipDirectory from '../components/LeadershipDirectory.astro';
 ---
 <!-- Hero -->
   <section class="providers-hero">
     <div class="container">
-      <span class="leaders-hero-label">Utah Cancer Specialists</span>
-      <h1 class="providers-hero-title">Leadership</h1>
-      <p class="providers-hero-desc">The executives and directors guiding our practice — supporting the providers and staff who care for patients across Utah.</p>
+      <span class="leaders-hero-label">{edit.text("text-a1655bc88c", "Utah Cancer Specialists")}</span>
+      <h1 class="providers-hero-title">{edit.text("text-f5427e8f6f", "Leadership")}</h1>
+      <p class="providers-hero-desc">{edit.text("text-80718a2954", "The executives and directors guiding our practice — supporting the providers and staff who care for patients across Utah.")}</p>
     </div>
   </section>
 

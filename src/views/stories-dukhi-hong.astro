@@ -1,34 +1,36 @@
 ---
+import { pageEditor } from '../lib/page-content';
+const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 ---
 <main class="written-story">
     <section class="story-hero story-hero--detail">
       <div class="container">
-        <a href={url("/stories/index.html")} class="story-back"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span> All Patient Stories</a>
-        <span class="story-hero-kicker">Small cell lung cancer</span><h1 class="story-hero-title">A milestone of hope</h1>
-        <p class="story-hero-byline">Dukhi Hong · Originally published <time datetime="2025-03-31">March 31, 2025</time></p>
+        <a href={url(edit.text("link-b4ae4f4939", "/stories/index.html"))} class="story-back"><span class="material-symbols-rounded" aria-hidden="true">arrow_back</span>{edit.text("text-ea662bbb0e", " All Patient Stories")}</a>
+        <span class="story-hero-kicker">{edit.text("text-c2c63e8777", "Small cell lung cancer")}</span><h1 class="story-hero-title">{edit.text("text-0a698fa025", "A milestone of hope")}</h1>
+        <p class="story-hero-byline">{edit.text("text-4d6517c881", "Dukhi Hong · Originally published ")}<time datetime="2025-03-31">{edit.text("text-4e6263d5aa", "March 31, 2025")}</time></p>
       </div>
     </section>
     <section class="story-detail-media" aria-label="Dukhi's photograph"><div class="container">
-      <figure class="story-detail-frame"><img src={url("/images/story-dukhi-hong.jpg")} alt="Dukhi Hong pictured with two loved ones"></figure>
+      <figure class="story-detail-frame"><img src={url(edit.image("image-741de34811", "/images/story-dukhi-hong.jpg"))} alt={edit.imageAlt("image-741de34811", "Dukhi Hong pictured with two loved ones")}></figure>
     </div></section>
     <article class="story-article" aria-label="Dukhi's story"><div class="container"><div class="story-article-body">
-      <p>In June 2019, a seizure brought Dukhi Hong to the emergency room. Doctors diagnosed small cell lung cancer that had spread to her brain, and estimated that she had six to nine months to live.</p>
-      <p>Six years later, at age 84, she reached her 100th immunotherapy treatment at Utah Cancer Specialists. Visits every three to four weeks had become occasions for her family to gather and celebrate time together.</p>
-      <p>Her oncologist, Dr. Stephan Kendall, described the milestone as extraordinary. The March 2025 account reported no signs of cancer in her lungs and minimal activity in her brain. Her response was unusual, not a prediction of how others would respond.</p>
-      <p>Dukhi moved from South Korea to Utah in 1965 and later raised four children as a single mother. Her daughter, Mitzi Maughan, described her as a source of strength and inspiration.</p>
-      <p>For the family, the hundredth treatment meant more than a number: it marked years of shared memories, and the chance for more time with someone they loved.</p>
-      <div class="story-source"><p>Adapted from the original Utah Cancer Specialists article. Original reporting credited to <a href="https://www.abc4.com/news/wasatch-front/utah-woman-100-cancer-treatments/" target="_blank" rel="noopener">ABC4</a>. Photo from Utah Cancer Specialists.</p><p>This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome.</p></div>
-      <a class="story-link" href={url("/stories/amy-jensen.html")}>Read Amy’s story <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+      <p>{edit.text("text-b28ecdb79e", "In June 2019, a seizure brought Dukhi Hong to the emergency room. Doctors diagnosed small cell lung cancer that had spread to her brain, and estimated that she had six to nine months to live.")}</p>
+      <p>{edit.text("text-a965119214", "Six years later, at age 84, she reached her 100th immunotherapy treatment at Utah Cancer Specialists. Visits every three to four weeks had become occasions for her family to gather and celebrate time together.")}</p>
+      <p>{edit.text("text-419e03de45", "Her oncologist, Dr. Stephan Kendall, described the milestone as extraordinary. The March 2025 account reported no signs of cancer in her lungs and minimal activity in her brain. Her response was unusual, not a prediction of how others would respond.")}</p>
+      <p>{edit.text("text-0d14fb0b14", "Dukhi moved from South Korea to Utah in 1965 and later raised four children as a single mother. Her daughter, Mitzi Maughan, described her as a source of strength and inspiration.")}</p>
+      <p>{edit.text("text-c1fab70d22", "For the family, the hundredth treatment meant more than a number: it marked years of shared memories, and the chance for more time with someone they loved.")}</p>
+      <div class="story-source"><p>{edit.text("text-db54b09b61", "Adapted from the original Utah Cancer Specialists article. Original reporting credited to ")}<a href={url(edit.text("link-73a1f6b647", "https://www.abc4.com/news/wasatch-front/utah-woman-100-cancer-treatments/"))} target="_blank" rel="noopener">{edit.text("text-4a2875a455", "ABC4")}</a>{edit.text("text-1fdd80798f", ". Photo from Utah Cancer Specialists.")}</p><p>{edit.text("text-951656865c", "This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome.")}</p></div>
+      <a class="story-link" href={url(edit.text("link-cf52a071c3", "/stories/amy-jensen.html"))}>{edit.text("text-217b252d14", "Read Amy’s story ")}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
     </div></div></article>
   </main>
   <!-- Story CTA -->
   <section class="story-cta">
     <div class="container story-cta-inner">
-      <h2 class="story-cta-heading">Every story starts with a first appointment.</h2>
+      <h2 class="story-cta-heading">{edit.text("text-03a7ccbd43", "Every story starts with a first appointment.")}</h2>
       <div class="story-cta-actions">
-        <a href={url("/contact.html")} class="btn btn--white"><span class="material-symbols-rounded">phone</span> Contact Us</a>
-        <a href={url("/stories/index.html")} class="story-cta-link">More patient stories <span class="material-symbols-rounded">arrow_forward</span></a>
+        <a href={url(edit.text("link-686a9a3e68", "/contact.html"))} class="btn btn--white"><span class="material-symbols-rounded">phone</span>{edit.text("text-3127f37906", " Contact Us")}</a>
+        <a href={url(edit.text("link-b4ae4f4939-1", "/stories/index.html"))} class="story-cta-link">{edit.text("text-b8cf626149", "More patient stories ")}<span class="material-symbols-rounded">arrow_forward</span></a>
       </div>
     </div>
   </section>
