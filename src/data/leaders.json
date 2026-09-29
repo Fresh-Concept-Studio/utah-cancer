@@ -84,25 +84,27 @@
     }
   },
   {
-    "slug": "mark-williams",
-    "name": "Mark Williams",
-    "role": "Accountant",
-    "photo": {
-      "src": "/images/leader-cutouts/leader-mark-williams.webp?v=20260902",
-      "alt": "Mark Williams",
-      "class": "provider-hero-photo provider-hero-photo--leader"
+    "description": "Meet Catherine Standiford, a Cancer Exercise Specialist at Utah Cancer Specialists with more than 25 years of experience in cancer care and exercise.",
+    "directoryPhoto": {
+      "alt": "Catherine Standiford",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/fc6e860f2d2dfd9446173e701566c5a3598a64d2-1024x1536.png?crop=focalpoint&fp-x=0.5&fp-y=0.3"
     },
+    "name": "Catherine Standiford",
+    "photo": {
+      "alt": "Catherine Standiford",
+      "class": "provider-hero-photo provider-hero-photo--leader",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/fc6e860f2d2dfd9446173e701566c5a3598a64d2-1024x1536.png?crop=focalpoint&fp-x=0.5&fp-y=0.3"
+    },
+    "role": "Cancer Exercise Specialist",
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Catherine has worked in cancer care and exercise for more than 25 years. Her passion is helping patients regain a sense of control during and after cancer treatment, with a focus on improving strength, function, and overall quality of life.</p> <p class=\"provider-bio\">Her connection to cancer care is deeply personal. Catherine’s mother is a two-time breast cancer survivor, and several other members of her family have also faced breast cancer. Those experiences helped shape her commitment to working with patients with cancer and ultimately guided her career.</p> <p class=\"provider-bio\">Catherine is a Cancer Exercise Specialist and has participated in numerous research studies focused on cancer and exercise. She also serves on the Board of the American Cancer Society and as the State Lead Ambassador for the American Cancer Society Cancer Action Network, where she advocates for cancer-related policies and improved outcomes for patients.</p> <p class=\"provider-bio\">Her approach to care is centered on meeting patients where they are. Because treatment side effects and energy levels can change from day to day, Catherine focuses on manageable goals and individualized care that support survivorship. She believes in listening closely, sharing practical knowledge, and creating an environment where patients feel comfortable, supported, and encouraged.</p> <p class=\"provider-bio\">Outside of work, Catherine enjoys traveling and spending time with her husband, two sons, two dogs, and her large extended family. She has lived in Utah for most of her life and is proud to call it home. A former college basketball and volleyball player, she has always valued movement, teamwork, and connection.</p> <p class=\"provider-bio\">Catherine is excited to be part of Utah Cancer Specialists and to support patients within an organization she has trusted personally through her own family’s cancer care.</p>",
         "id": "about",
-        "title": "About Mark Williams",
-        "html": "<p class=\"provider-bio\">With a background in healthcare finance, accounting, and operations, Mark brings experience in financial reporting, budgeting and forecasting, cash-flow management, process improvement, contracts, and organizational growth. At Utah Cancer Specialists, he focuses on turning complex financial information into practical insights that support thoughtful decision-making and the long-term strength of the organization. He is also passionate about developing people, improving systems, and helping teams understand how their work contributes to UCS’s mission.</p> <p class=\"provider-bio\">He holds a Master of Business Administration and a bachelor’s degree in marketing management and continues to pursue professional development in healthcare finance, accounting, and leadership.</p> <p class=\"provider-bio\">He was drawn to healthcare because of the meaningful impact it has on patients and families. While his role primarily takes place behind the scenes, he believes strong financial stewardship plays an important part in exceptional patient care by ensuring physicians and staff have the resources, people, and systems they need to do their best work. He was especially drawn to Utah Cancer Specialists because of its patient-centered approach, strong community roots, and commitment to growing while remaining focused on the people it serves.</p> <p class=\"provider-bio\">Looking ahead, he is excited about UCS’s continued growth and the opportunity to bring high-quality cancer care to more patients and communities. He believes that strengthening systems, using information effectively, and planning thoughtfully for the future will help UCS continue serving patients and families for generations.</p> <p class=\"provider-bio\">Outside of work, he enjoys spending time with his wife and three children, writing, teaching, exploring new technology, and working on hands-on projects. Writing is one of his favorite creative outlets, particularly developing books and resources that make complicated topics more practical and approachable.</p> <p class=\"provider-bio\">For him, exceptional patient care means seeing each patient as a person—not simply a diagnosis. It means providing compassionate, timely, and clinically excellent care while reducing unnecessary financial and administrative burdens. His goal is to provide strong stewardship behind the scenes that allows UCS physicians and staff to remain focused on what matters most: caring for patients.</p>"
+        "title": "About Catherine Standiford"
       }
     ],
-    "directoryPhoto": {
-      "src": "/images/leader-mark-williams.jpg",
-      "alt": "Mark Williams"
-    }
+    "seoTitle": "Catherine Standiford | Utah Cancer Specialists",
+    "slug": "catherine-standiford"
   },
   {
     "slug": "rachelle-tonga",
