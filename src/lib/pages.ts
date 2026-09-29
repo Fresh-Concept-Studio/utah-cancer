@@ -87,7 +87,7 @@ function metadataFor(family: Family, record: RecordPage): Pick<PageData, 'title'
 const pages: Record<string, PageData> = Object.fromEntries(
   Object.entries(standalonePages).map(([path, page]) => [path, {
     ...page,
-    description: page.description || standaloneDescriptions[path],
+    description: ('description' in page && page.description) || standaloneDescriptions[path],
     ...(path === 'index.html' && page.title === 'Utah Cancer Specialists' ? { title: 'Cancer Care in Utah | Utah Cancer Specialists' } : {}),
   }]),
 ) as Record<string, PageData>;
