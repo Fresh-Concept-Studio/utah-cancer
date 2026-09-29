@@ -6,7 +6,7 @@ import DetailSections from './DetailSections.astro';
 interface Props { slug: string }
 const leader = leaders.find(p => p.slug === Astro.props.slug);
 if (!leader) throw new Error(`Unknown leader: ${Astro.props.slug}`);
-const portrait = imageVariant(leader.photo.src, 600, 750);
+const portrait = imageVariant(leader.photo.src, 600);
 ---
 <section class="provider-hero"><div class="container provider-hero-inner">
   <div class="provider-hero-text">

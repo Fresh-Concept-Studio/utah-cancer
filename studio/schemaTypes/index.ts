@@ -196,7 +196,7 @@ const leadershipMember = defineType({
 })
 const leadershipGroup = defineType({
   name: 'leadershipGroup', title: 'Leadership group', type: 'object', initialValue: {cards: []},
-  fields: [defineField({name: 'title', title: 'Group name', type: 'string', validation: required}), defineField({name: 'cards', title: 'People in this group', type: 'array', of: [{type: 'leadershipMember'}]})],
+  fields: [defineField({name: 'title', title: 'Group name', type: 'string', validation: required}), defineField({name: 'cards', title: 'People in this group', description: 'The Leadership group displays alphabetically by last name on the website. Executive Leadership and Physician Executive Committee use the order shown here.', type: 'array', of: [{type: 'leadershipMember'}]})],
   preview: {select: {title: 'title'}},
 })
 const mediaVideo = defineType({

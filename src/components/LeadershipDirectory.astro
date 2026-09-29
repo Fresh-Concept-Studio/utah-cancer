@@ -1,11 +1,12 @@
 ---
 import { imageVariant } from '../lib/images';
+import { sortLeadershipCards } from '../lib/leadership';
 import { leadershipGroups as groups, providers, leaders } from '../lib/content';
 import { url } from '../lib/urls';
 interface Member { provider?: string; leader?: string; name?: string; role?: string; photo?: { src: string; alt: string } }
 const directory = (groups as {title: string; cards: Member[]}[]).map(group => ({
   title: group.title,
-  cards: group.cards.map(card => {
+  cards: sortLeadershipCards(group.title, group.cards.map(card => {
     const provider = providers.find(p => p.slug === card.provider);
     const leader = leaders.find(p => p.slug === card.leader);
     const name = card.name ?? provider?.name ?? leader?.name;
@@ -15,7 +16,7 @@ const directory = (groups as {title: string; cards: Member[]}[]).map(group => ({
     const href = provider ? `/providers/${provider.slug}.html` : leader ? `/leadership/${leader.slug}.html` : undefined;
     if (!name || !photo) throw new Error(`Missing leadership record in ${group.title}`);
     return { name, role, photo, href };
-  })
+  }))
 }));
 const optimizedDirectoryPhoto = (src: string) => imageVariant(src, 400, 520);
 ---

@@ -4,6 +4,15 @@ import {convert} from '../src/lib/cms-records.ts';
 import {imageVariant, uploadedImageUrl} from '../src/lib/images.ts';
 import {pageEditor} from '../src/lib/page-content.ts';
 import {pageAddress} from '../studio/page-address.ts';
+import {sortLeadershipCards} from '../src/lib/leadership.ts';
+
+test('Leadership always sorts by surname while executive groups preserve their chosen order', () => {
+  const cards = ['Johnny Walker', 'Catherine Standiford', 'DeAnn Angilau, RN, OCN®', 'Stephanie Waddoups', 'Aaron Standiford', 'John Jones Jr.'].map(name => ({name}));
+  assert.deepEqual(sortLeadershipCards('Leadership', cards).map(c => c.name), ['DeAnn Angilau, RN, OCN®', 'John Jones Jr.', 'Aaron Standiford', 'Catherine Standiford', 'Stephanie Waddoups', 'Johnny Walker']);
+  assert.equal(sortLeadershipCards('Executive Leadership', cards), cards);
+  assert.equal(sortLeadershipCards('Physician Executive Committee', cards), cards);
+  assert.equal(cards[0].name, 'Johnny Walker');
+});
 
 const imageUrl='https://cdn.sanity.io/images/spba0u9p/production/example-1020x1020.jpg';
 test('uploaded images override repository paths through nested Sanity image fields', () => {

@@ -50,6 +50,7 @@ The project ID and public dataset name are safe to commit. Do not commit Sanity 
 - **Published website** shows the live page, not a draft preview. Drafts stay out of builds. Publishing triggers the existing verified GitHub Pages workflow.
 - Bios and existing formatted content use plain text controls that preserve the HTML layout. New paragraphs can be appended to content fields. Changes to the page’s layout, new section types, navigation, and form structure remain development work.
 - Careers job listings are stored on the Careers page. About page statistics are editable under its numbers section. Leadership groups and media appearances are under **Shared content & contact cards → Leadership directory & media**.
+- The group named **Leadership** is always sorted by last name when the website builds, including new CMS additions. Executive Leadership and Physician Executive Committee retain their CMS order. A leader's **Profile photo** and **Directory photo** can be different images.
 - Native Sanity uploads now render correctly in cards and detail pages, including Studio crop and focal point settings.
 
 See [the client walkthrough](cms-client-walkthrough.md) for a short Loom outline.
