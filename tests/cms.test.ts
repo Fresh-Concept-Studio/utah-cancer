@@ -15,6 +15,7 @@ test('uploaded images override repository paths through nested Sanity image fiel
   assert.equal(hero.searchParams.get('w'),'1280');
   assert.equal(hero.searchParams.get('h'),'800');
   assert.equal(imageVariant('/images/location-tooele.jpg',640,480),'/images/location-tooele-640.webp');
+  assert.equal(imageVariant('/images/leader-cutouts/leader-mark-williams.webp?v=20260902',600,750),'/images/leader-cutouts/leader-mark-williams-600.webp?v=20260902');
   assert.equal(imageVariant('https://example.com/photo.jpg',640),'https://example.com/photo.jpg');
 });
 test('a page edit overrides its field while other text and responsive image defaults survive', () => {

@@ -9,7 +9,7 @@ export function imageVariant(src: string, width: number, height?: number): strin
     return image.toString();
   }
   if (/^https?:\/\//.test(src)) return src;
-  return src.replace(/\.(?:jpe?g|png|webp)$/i, `-${width}.webp`);
+  return src.replace(/\.(?:jpe?g|png|webp)(?=\?|$)/i, `-${width}.webp`);
 }
 
 /** Carry Studio crop and focal-point choices into every rendered image size. */
