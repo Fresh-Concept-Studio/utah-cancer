@@ -418,10 +418,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "tel:8012690231",
+          "href": "tel:8012966665",
           "class": "location-card-link"
         },
-        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.296.6665"
       },
       {
         "attrs": {
@@ -441,10 +441,10 @@
     "actions": [
       {
         "attrs": {
-          "href": "tel:8012690231",
+          "href": "tel:3854232855",
           "class": "location-card-link"
         },
-        "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231"
+        "html": "<span class=\"material-symbols-rounded\">phone</span> 385.423.2855"
       },
       {
         "attrs": {
@@ -575,7 +575,7 @@
   "ucs-at-granger-fairbourne-station": {
     "name": "UCS at Granger Fairbourne Station",
     "sublabel": "START",
-    "addressHtml": "Fourth floor-East<br>2965 W. 3500 S.<br>2965 W. 3500 S.<br>Fourth floor-East<br>West Valley, UT 84119",
+    "addressHtml": "2965 W. 3500 S.<br>Fourth floor-East<br>West Valley, UT 84119",
     "actions": [
       {
         "attrs": {

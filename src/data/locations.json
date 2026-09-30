@@ -356,7 +356,7 @@
       "addressHtml": "3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088",
       "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
       "phone": "801.562.8732",
-      "badge": "Main Office"
+      "badge": ""
     },
     "map": {
       "lat": 40.5879,
@@ -1101,7 +1101,7 @@
       },
       {
         "title": "Hours of operation",
-        "html": "<p class=\"provider-bio\">First and third Thursdays of each month, 9:00 AM–5:00 PM. Please call to confirm hours before visiting.</p>"
+        "html": "<p class=\"provider-bio\">Open Mondays and Tuesdays. Please call 435.882.2365 to confirm appointment hours before visiting.</p>"
       },
       {
         "title": "Parking & directions",
@@ -1128,7 +1128,7 @@
       "order": 14,
       "county": "tooele",
       "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
-      "hoursHtml": "1st & 3rd Thu, 9:00 am – 5:00 pm",
+      "hoursHtml": "Mondays &amp; Tuesdays — call for hours",
       "phone": "435.882.2365",
       "badge": ""
     },
