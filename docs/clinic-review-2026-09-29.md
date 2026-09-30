@@ -33,6 +33,8 @@ Hours below exclude weekends, which Google lists as closed for these clinics. �
 
 ## Published corrections
 
+Follow-up: the EDEN footer link below was a new addition, not a repair of a located existing link. A subsequent audit of all 163 public sitemap pages, 221 CMS records, and Git history found no older EDEN link. The original reported link remains unidentified. At the user's request, the added footer link was removed; the user will clarify the original page with the email participants.
+
 - Added **EDEN (Death Entry)** under the footer's **Resources**, linking to <https://umap.dhhs.utah.gov/>. The former state portal, <https://umap.health.utah.gov/>, announces this move. Verified the new link from the live UCS footer opens “UMAP — Utah Mortality Application Portal,” with the Utah ID login button.
 - Dr. Arango: retained one complete Bountiful entry, added Ogden, removed the duplicate Lakeview assignment; corrected the shared Bountiful and Ogden clinic-card telephone links.
 - Dr. Call: removed duplicate address lines from the UCS at Granger Fairbourne Station card.
