@@ -1,5 +1,6 @@
 import {PageCopyInput, ReadableHtmlInput, LocationChoicesInput, ExistingImageInput} from '../components/ContentInputs'
 import {EditorNotice} from '../components/EditorGuide'
+import {JobListingsInput} from '../components/JobListingsInput'
 import {pageAddress} from '../page-address'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
@@ -225,6 +226,7 @@ const pageImage = defineType({
 })
 const page = defineType({
   name: 'page', title: 'Website page', type: 'document',
+  components: {input: JobListingsInput},
   groups: [{name: 'content', title: 'Page content', default: true}, {name: 'images', title: 'Images'}, {name: 'seo', title: 'Search appearance'}, {name: 'settings', title: 'Page options'}, {name: 'jobs', title: 'Job openings', hidden: ({document}: any) => document?.settings?.component !== 'careers'}],
   fields: [
     defineField({name: 'editorNotice', title: 'Editing this page', type: 'string', group: 'content', components: {input: EditorNotice}, readOnly: true}),

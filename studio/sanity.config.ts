@@ -9,6 +9,12 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
   S.listItem().title('Start here — editing guide').id('start').child(S.component().id('guide').title('Editing guide').component(StartHere)),
   S.listItem().title('Website pages').id('pages').child(S.component().id('all-pages').title('Website pages').component(PageDirectory)),
   S.listItem().title('Main pages').id('main-pages').child(S.documentTypeList('page').title('Main pages').filter('_type == "page" && !defined(settings.redirect)').initialValueTemplates([])),
+  S.listItem().title('Job Listings').id('job-listings').child(
+    S.document().schemaType('page').documentId('page-careers-html').title('Job Listings').views([
+      S.view.form().title('Edit jobs'),
+      S.view.component(PublishedPage).title('Published website'),
+    ]),
+  ),
   S.divider(),
   ...['provider','location','specialty','leader','newsArticle','resourcePage'].map(type=>S.documentTypeListItem(type)),
   S.divider(),

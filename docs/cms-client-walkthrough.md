@@ -14,7 +14,7 @@ Start at [Website pages](https://utah-cancer-specialists.sanity.studio/structure
 
 ## Other useful edits
 
-- **Careers:** Job openings tab. Add, edit, reorder, or remove a listing, then publish the Careers page.
+- **Job Listings:** Open **Job Listings** in the left sidebar. Click a listing to edit its title, location, schedule, summary, responsibilities, and qualifications. Use **Add item** for a new opening; use the listing menu to remove one. Drag to reorder, then **Publish**. This uses the existing Careers page draft, so publication also includes any other pending Careers edits. The full Careers page remains under Main pages.
 - **About:** Page content → The scope of our impact. Edit statistics and their labels.
 - **Leadership:** Related content → Leadership directory, media & shared contact settings → Leadership directory. Choose linked profiles, edit roles, or change group order.
 - **Videos:** Shared content & contact cards → Leadership directory & media → Media & videos.
