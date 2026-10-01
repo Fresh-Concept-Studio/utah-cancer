@@ -862,7 +862,7 @@
     "specialty": "Supportive & Rehabilitative Care",
     "languages": "",
     "photo": {
-      "src": "/images/provider-emma-hanson.png",
+      "src": "/images/provider-expanded/provider-emma-hanson.png",
       "alt": "Emma Hanson",
       "class": "provider-hero-photo provider-hero-photo--expanded"
     },
@@ -2443,7 +2443,7 @@
     "specialty": "Supportive and Rehabilitative Care",
     "languages": "English, Punjabi, Hindi/Urdu",
     "photo": {
-      "src": "/images/provider-nidhi-sharma.jpg",
+      "src": "/images/provider-expanded/provider-nidhi-sharma.png",
       "alt": "Nidhi Sharma",
       "class": "provider-hero-photo provider-hero-photo--expanded"
     },
