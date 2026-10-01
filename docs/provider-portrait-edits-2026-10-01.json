@@ -1,0 +1,15 @@
+{
+  "tool": "Built-in image_gen",
+  "images": [
+    {
+      "asset": "public/images/provider-expanded/provider-emma-hanson.png",
+      "source": "public/images/provider-emma-hanson.png",
+      "prompt": "Use case: identity-preserve / background-extraction. Edit target: the supplied professional portrait of Emma Hanson. Extend the original photo to show both complete shoulders and upper arms, naturally completing only the missing black blazer and hair at the left and right edges. Create a clean transparent-background cutout for a healthcare provider detail-page hero. Preserve her exact facial identity, facial proportions, expression, eyes, teeth, skin texture, hairstyle, jewelry, white blouse, black blazer, original pose and lighting. Do not beautify, retouch, reimagine, or change her face. Frame from head to mid-torso, keep both shoulder silhouettes wholly inside the canvas with modest transparent side margins; body may meet bottom edge. Remove all of the gray studio background, preserve natural fine hair edges, no shadow or backdrop. Output actual PNG alpha transparency, not a checkerboard or solid color. High fidelity photographic edit."
+    },
+    {
+      "asset": "public/images/provider-expanded/provider-nidhi-sharma.png",
+      "source": "public/images/provider-nidhi-sharma.jpg",
+      "prompt": "Use case: identity-preserve / background-extraction. Edit target: supplied professional portrait of Nidhi Sharma. Extend the left and right edges naturally so both complete shoulders and upper arms are visible, completing the missing dark navy zippered jacket. Remove the gray studio background entirely and output a clean cutout with actual PNG alpha transparency for a healthcare provider detail-page hero. Preserve her exact facial identity, facial proportions, expression, eyes, skin texture, hairstyle, earrings, navy zippered jacket and black undershirt, original pose and lighting. Do not beautify, retouch, reimagine or change her face. Frame head to mid torso with both shoulder silhouettes wholly inside the canvas, modest transparent side margins, no shoulder or arm cutoffs at left/right; body may meet bottom edge. Preserve natural fine hair edges, no shadow or backdrop, no checkerboard. High fidelity photographic edit."
+    }
+  ]
+}
