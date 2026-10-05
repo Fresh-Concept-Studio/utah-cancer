@@ -95,11 +95,13 @@ test('built contact form has a native fallback and provider calls use their list
     const hero = p('.provider-hero-actions');
     assert.equal(hero.find('.provider-call-menu').length, phones.length > 1 ? 1 : 0, slug);
     assert.equal(hero.find('.provider-call-caret').length, phones.length > 1 ? 1 : 0, slug);
+    if (phones.length) assert.match(hero.find('.provider-call').text(), /Request an Appointment/, slug);
     assert.deepEqual(hero.find('.provider-call-options a, a.provider-call').toArray().map(a => p(a).attr('href')), phones, slug);
     if (sections.length) {
       const schedule = p('.provider-sidebar .sidebar-card--dark');
       assert.equal(schedule.length, phones.length ? 1 : 0, slug);
       assert.deepEqual(schedule.find('.provider-call-options a, a.provider-call').toArray().map(a => p(a).attr('href')), phones, slug);
+      if (phones.length) assert.match(schedule.find('.provider-call').text(), /Request an Appointment/, slug);
       assert.equal(p('.provider-sidebar .sidebar-card:not(.sidebar-card--dark) a[href^="tel:"]').length, 0, slug);
       assert.equal(p('.provider-sidebar .sidebar-card:not(.sidebar-card--dark) .sidebar-contact-item').length, 0, slug);
     }

@@ -8,6 +8,10 @@
   z-index: 2;
 }
 
+.provider-hero:has(.provider-call-menu[open]) {
+  z-index: 11;
+}
+
 .provider-hero-inner {
   display: flex;
   align-items: flex-end;
