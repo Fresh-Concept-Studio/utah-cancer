@@ -257,7 +257,7 @@ const siteSettings = defineType({
   name: 'siteSettings', title: 'Website-wide content', type: 'document', groups: [{name:'contact',title:'Contact',default:true},{name:'leadership',title:'Leadership directory'},{name:'media',title:'Media & videos'}],
   fields: [
     defineField({name: 'siteName', group: 'contact', title: 'Site name', type: 'string', readOnly: true}),
-    defineField({name: 'mainPhoneDisplay', group: 'contact', title: 'Default appointment phone number', type: 'string', description: 'Used on provider appointment buttons and the Contact page. Clinics can have their own numbers.'}),
+    defineField({name: 'mainPhoneDisplay', group: 'contact', title: 'Default appointment phone number', type: 'string', description: 'Used for general contact links. Provider pages use the phone numbers on their clinic cards.'}),
     defineField({name: 'mainPhoneHref', title: 'Main phone link', type: 'string', hidden: true}),
     defineField({name:'leadershipGroups',title:'Groups on the Leadership page',type:'array',group:'leadership',of:[{type:'leadershipGroup'}]}),
     defineField({name:'mediaHighlights',title:'Media appearances',type:'array',group:'media',of:[{type:'mediaVideo'}],description:'Used on the homepage and provider pages. Edit a video once to update both.'}),

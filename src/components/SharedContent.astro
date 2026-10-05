@@ -1,9 +1,10 @@
 ---
 import { sharedContent as content } from '../lib/content';
 import { richHtml } from '../lib/urls';
-interface Props { name: string }
-const { name } = Astro.props;
-const html = (content as Record<string, string>)[name];
+interface Props { name: string; omitClinicNumbers?: boolean }
+const { name, omitClinicNumbers = false } = Astro.props;
+const source = (content as Record<string, string>)[name];
+const html = omitClinicNumbers ? source?.replace(/<p class="sidebar-contact-item"><strong>(?:Phone|Fax):<\/strong>.*?<\/p>/g, '') : source;
 if (html === undefined) throw new Error(`Missing shared content: ${name}`);
 ---
 <Fragment set:html={richHtml(html)} />

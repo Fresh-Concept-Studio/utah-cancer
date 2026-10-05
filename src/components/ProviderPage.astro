@@ -1,15 +1,18 @@
 ---
-import { providers, providerLocations as clinics, mainPhone } from '../lib/content';
+import { providers, providerLocations as clinics } from '../lib/content';
 import { url, richHtml } from '../lib/urls';
+import {providerCalls} from '../lib/provider-calls';
 import DetailSections from './DetailSections.astro';
 import DetailTabs from './DetailTabs.astro';
 import ProviderMedia from './ProviderMedia.astro';
 import ProviderSidebar from './ProviderSidebar.astro';
 import ContentLink from './ContentLink.astro';
+import ProviderCall from './ProviderCall.astro';
 interface Props { slug: string }
 const provider = providers.find(p => p.slug === Astro.props.slug);
 if (!provider) throw new Error(`Unknown provider: ${Astro.props.slug}`);
-const locations = provider.locationIds.map(id => clinics[id as keyof typeof clinics]);
+const locations = provider.locationIds.map(id => clinics[id as keyof typeof clinics]).filter(Boolean);
+const calls = providerCalls(locations);
 ---
 <section class="provider-hero"><div class="container provider-hero-inner">
   <div class="provider-hero-text">
@@ -18,7 +21,7 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
     <p class="provider-specialty">{provider.specialty}</p>
     {provider.languages && <div class="provider-languages"><span class="material-symbols-rounded">translate</span><span>{provider.languages}</span></div>}
     <div class="provider-hero-actions">
-      <a href={mainPhone.href} class="btn btn--white"><span class="material-symbols-rounded" aria-hidden="true">phone</span> Call for an Appointment</a>
+      <ProviderCall calls={calls} />
       <a href="#locations" class="btn btn--outline-dark"><span class="material-symbols-rounded">location_on</span> View Locations</a>
     </div>
   </div>
@@ -27,7 +30,7 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
 <DetailTabs tabs={provider.tabs} />
 {provider.sections.length > 0 && <section class="provider-details"><div class="container provider-details-inner">
   <div class="provider-main"><DetailSections sections={provider.sections} /></div>
-  <ProviderSidebar contact={provider.sidebar} />
+  <ProviderSidebar contact={provider.sidebar} calls={calls} />
 </div></section>}
 <section class="provider-locations" id="locations"><div class="container">
   <h2 class="provider-section-title">Locations</h2>
@@ -41,6 +44,6 @@ const locations = provider.locationIds.map(id => clinics[id as keyof typeof clin
         <div class="location-card-actions">{location.actions.map(link => <ContentLink link={link} />)}</div>
       </div>
     </div>)}
-  </div> : <p class="provider-bio"><a href={url('/locations/index.html')}>View our Utah locations</a> or call <a href={mainPhone.href}>{mainPhone.display}</a> for location information.</p>}
+  </div> : <p class="provider-bio"><a href={url('/locations/index.html')}>View our Utah locations</a> for clinic contact information.</p>}
 </div></section>
 <ProviderMedia />

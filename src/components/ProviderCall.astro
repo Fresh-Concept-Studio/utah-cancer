@@ -1,0 +1,20 @@
+---
+import type {ClinicCall} from '../lib/provider-calls'
+interface Props {calls: ClinicCall[]; full?: boolean}
+const {calls, full = false} = Astro.props
+---
+{calls.length === 1 ? <a class:list={['btn', 'btn--white', 'provider-call', {'btn--full': full}]} href={calls[0].href} aria-label={`Call ${calls[0].name} at ${calls[0].phone}`}>
+  <span class="material-symbols-rounded" aria-hidden="true">phone</span>
+  <span class="provider-call-label"><strong>Call {calls[0].name}</strong><small>{calls[0].phone}</small></span>
+</a> : calls.length > 1 ? <details class:list={['provider-call-menu', {'provider-call-menu--full': full}]}>
+  <summary class:list={['btn', 'btn--white', 'provider-call', {'btn--full': full}]}>
+    <span class="material-symbols-rounded" aria-hidden="true">phone</span>
+    <span>Choose a Clinic to Call</span>
+    <span class="material-symbols-rounded provider-call-caret" aria-hidden="true">expand_more</span>
+  </summary>
+  <div class="provider-call-options">
+    {calls.map((call) => <a href={call.href} aria-label={`Call ${call.name} at ${call.phone}`}>
+      <span>{call.name}</span><strong>{call.phone}</strong>
+    </a>)}
+  </div>
+</details> : null}

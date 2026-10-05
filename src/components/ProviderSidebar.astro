@@ -1,14 +1,15 @@
 ---
-import { mainPhone } from '../lib/content';
 import SharedContent from './SharedContent.astro';
-interface Props { contact: string }
-const { contact } = Astro.props;
+import ProviderCall from './ProviderCall.astro';
+import type {ClinicCall} from '../lib/provider-calls';
+interface Props { contact: string; calls: ClinicCall[] }
+const { contact, calls } = Astro.props;
 ---
 <aside class="provider-sidebar">
-  <SharedContent name={contact} />
-  <div class="sidebar-card sidebar-card--dark">
+  <SharedContent name={contact} omitClinicNumbers />
+  {calls.length > 0 && <div class="sidebar-card sidebar-card--dark">
     <h3 class="sidebar-card-title"><span class="material-symbols-rounded" aria-hidden="true">calendar_today</span> Schedule a Visit</h3>
     <p class="sidebar-card-desc">New and existing patients can request an appointment over the phone.</p>
-    <a href={mainPhone.href} class="btn btn--white btn--full"><span class="material-symbols-rounded" aria-hidden="true">phone</span> Call for an Appointment</a>
-  </div>
+    <ProviderCall calls={calls} full />
+  </div>}
 </aside>

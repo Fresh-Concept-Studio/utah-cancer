@@ -4,7 +4,8 @@
 .provider-hero {
   background: linear-gradient(135deg, #00476b 0%, #477080 100%);
   padding: 118px 0 0; /* 94px navbar + compact breathing room */
-  overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .provider-hero-inner {
@@ -72,6 +73,97 @@
 .provider-hero-actions {
   display: flex;
   gap: 12px;
+}
+
+.provider-call {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 62px;
+  text-align: left;
+  white-space: normal;
+}
+
+.provider-call-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.provider-call-label strong {
+  font-weight: 600;
+}
+
+.provider-call-label small {
+  font-size: 12px;
+}
+
+.provider-call-menu {
+  position: relative;
+  min-width: 235px;
+}
+
+.provider-call-menu--full {
+  width: 100%;
+}
+
+.provider-call-menu summary {
+  list-style: none;
+  width: 100%;
+}
+
+.provider-call-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.provider-call-caret {
+  margin-left: auto;
+  transition: transform .2s ease;
+}
+
+.provider-call-menu[open] .provider-call-caret {
+  transform: rotate(180deg);
+}
+
+.provider-call-options {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 6px);
+  left: 0;
+  width: max(100%, 260px);
+  max-width: min(360px, 90vw);
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #d8e0e3;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 25, 38, .22);
+}
+
+.provider-call-options a {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: #164b62;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.provider-call-options a:hover,
+.provider-call-options a:focus-visible {
+  background: #eaf1f3;
+}
+
+.provider-call-options strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.provider-call-menu summary:focus-visible,
+.provider-call:focus-visible {
+  outline: 3px solid #ffd67b;
+  outline-offset: 3px;
 }
 
 .btn--outline-dark {
@@ -1316,6 +1408,10 @@
   .provider-hero-actions .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  .provider-call-menu {
+    width: 100%;
   }
 
   .provider-section-title {
