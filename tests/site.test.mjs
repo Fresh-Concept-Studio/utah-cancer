@@ -29,6 +29,16 @@ test('every content record has a detail page, and every directory card points to
   for (const provider of readData('providers')) for (const id of provider.locationIds) assert.ok(clinics[id], `${provider.slug}: unknown clinic ${id}`);
 });
 
+test('clinical trial count and filters match the rendered studies', () => {
+  const $ = pages.get('late-phase-trials/index.html');
+  const cards = $('.lp-trial-card');
+  assert.equal($('#trial-count').text().trim(), `${cards.length} trials`);
+  const filters = $('.lp-filter[data-filter]').toArray().map(button => $(button).attr('data-filter')).filter(value => value !== 'all');
+  const sections = $('.lp-trial-section').toArray();
+  assert.deepEqual(filters, sections.map(section => $(section).attr('data-category')));
+  for (const section of sections) assert.ok($(section).find('.lp-trial-card').length > 0, $(section).attr('data-category'));
+});
+
 test('all internal page links and local HTML/CSS assets resolve under the GitHub Pages base', () => {
   const failures = [];
   function check(value, from) {

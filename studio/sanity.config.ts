@@ -6,9 +6,15 @@ import {StartHere, PublishedPage, RelatedContent, PageDirectory} from './compone
 const fixedTypes = new Set(['siteSettings', 'page', 'sharedContent', 'providerLocation'])
 const pageTypes=['page','provider','location','specialty','leader','policy','newsArticle','resourcePage']
 const structure: StructureResolver = S => S.list().title('Website editor').items([
-  S.listItem().title('Start here — editing guide').id('start').child(S.component().id('guide').title('Editing guide').component(StartHere)),
-  S.listItem().title('Website pages').id('pages').child(S.component().id('all-pages').title('Website pages').component(PageDirectory)),
-  S.listItem().title('Main pages').id('main-pages').child(S.documentTypeList('page').title('Main pages').filter('_type == "page" && !defined(settings.redirect)').initialValueTemplates([])),
+  S.listItem().title('Start Here').id('start').child(S.component().id('guide').title('Editing guide').component(StartHere)),
+  S.listItem().title('Website Pages').id('pages').child(S.component().id('all-pages').title('Website pages').component(PageDirectory)),
+  S.listItem().title('Main Pages').id('main-pages').child(S.documentTypeList('page').title('Main pages').filter('_type == "page" && !defined(settings.redirect)').initialValueTemplates([])),
+  S.documentTypeListItem('provider').title('Providers'),
+  S.documentTypeListItem('location').title('Locations'),
+  S.documentTypeListItem('specialty').title('Cancers'),
+  S.documentTypeListItem('leader').title('Leadership'),
+  S.documentTypeListItem('newsArticle').title('News Articles'),
+  S.documentTypeListItem('resourcePage').title('Resource Pages'),
   S.listItem().title('Job Listings').id('job-listings').child(
     S.document().schemaType('page').documentId('page-careers-html').title('Job Listings').views([
       S.view.form().title('Edit jobs'),
@@ -16,8 +22,12 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
     ]),
   ),
   S.divider(),
-  ...['provider','location','specialty','leader','newsArticle','resourcePage'].map(type=>S.documentTypeListItem(type)),
-  S.divider(),
+  S.listItem().title('Clinical Trials').id('clinical-trials').child(
+    S.document().schemaType('page').documentId('page-late-phase-trials-html').title('Clinical Trials').views([
+      S.view.form().title('Edit trials'),
+      S.view.component(PublishedPage).title('Published website'),
+    ]),
+  ),
   S.listItem().title('Shared content & contact cards').id('shared').child(S.list().title('Shared content').items([
     S.listItem().title('Leadership directory & media').id('shared-settings').child(S.document().schemaType('siteSettings').documentId('siteSettings')),
     S.documentTypeListItem('sharedContent').title('Shared contact panels'),

@@ -233,6 +233,7 @@ const page = defineType({
     defineField({name: 'path', title: 'Site path', type: 'string', validation: required, hidden: true}),
     defineField({name: 'title', title: 'Page name', type: 'string', hidden: true}),
     defineField({name: 'editorContent', title: 'Text & links', type: 'array', group: 'content', components: {input: PageCopyInput}, of: [{type: 'pageCopy'}]}),
+    defineField({name: 'retiredTrials', title: 'Unavailable trial IDs', type: 'array', group: 'content', hidden: ({document}: any) => document?.settings?.component !== 'late-phase-trials', description: 'Enter the NCT ID of each study that should be removed from the public trial list. Remove an ID to show it again, then publish.', of: [{type: 'string', validation: (r: any) => r.regex(/^NCT\d{8}$/, {name: 'NCT ID'})}], validation: (r: any) => r.unique()}),
     defineField({name: 'jobs', title: 'Current job openings', type: 'array', group: 'jobs', hidden: ({document}: any) => document?.settings?.component !== 'careers', of: [{type: 'jobOpening'}], description: 'Add, edit, reorder, or remove listings here. Changes go live when this page is published.'}),
     defineField({name: 'editorImages', title: 'Images on this page', type: 'array', group: 'images', options: {disableActions: ['add','remove','duplicate']}, of: [{type: 'pageImage'}]}),
     defineField({name: 'seoTitle', title: 'Search title', type: 'string', group: 'seo', description: 'Shown in browser tabs and search results.'}),

@@ -51,7 +51,7 @@ async function loadContent() {
       type(name).map((doc) => [doc[key], valueKey ? doc[valueKey] : Object.fromEntries(Object.entries(doc).filter(([field]) => field !== key))]),
     )
     const pageDocs = type('page')
-    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, jobs, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, jobs, ...settings}]))
+    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, retiredTrials, jobs, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, retiredTrials, jobs, ...settings}]))
     const newsPosts = type('newsArticle').map(({html, featuredPhoto, ...post}) => ({...post, featuredImage: featuredPhoto?.src || post.featuredImage, featuredAlt: featuredPhoto?.alt ?? post.featuredAlt, contentHtml: html}))
     const settings = type('siteSettings')[0]
     return {
