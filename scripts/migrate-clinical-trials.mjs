@@ -38,6 +38,17 @@ if(process.argv.includes('--apply')||process.argv.includes('--cleanup')){
   }
  }
  await tx.commit();
+ if(process.argv.includes('--cleanup')){
+  for(const source of [page,draft].filter(Boolean)){
+   const cleaned=await client.getDocument(source._id);
+   const expected=source.editorContent.filter(i=>!legacyKeys.has(i.key||i._key));
+   if(cleaned.retiredTrials!==undefined||JSON.stringify(cleaned.editorContent)!==JSON.stringify(expected))throw Error(`Page cleanup verification failed: ${source._id}`);
+  }
+  const fallbackPath=new URL('../src/data/page-content.json',import.meta.url);
+  const fallback=JSON.parse(readFileSync(fallbackPath,'utf8'));
+  fallback['late-phase-trials'].editorContent=fallback['late-phase-trials'].editorContent.filter(i=>!legacyKeys.has(i.key||i._key));
+  writeFileSync(fallbackPath,JSON.stringify(fallback,null,2)+'\n');
+ }
  const confirmed=await client.fetch('*[_type=="clinicalTrial" && !(_id in path("drafts.**"))]');
  for(const record of records){const actual=confirmed.find(d=>d._id===record._id);if(!actual||Object.keys(record).some(k=>JSON.stringify(record[k])!==JSON.stringify(actual[k])))throw Error(`Verification failed for ${record.nctId}`);}
  writeFileSync(new URL('../src/data/clinical-trials.json',import.meta.url),JSON.stringify(confirmed.map(({_id,_rev,_type,_createdAt,_updatedAt,...r})=>r),null,2)+'\n');
