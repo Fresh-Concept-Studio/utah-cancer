@@ -67,3 +67,18 @@ test('trial records support additions, category changes, and removing the last s
   assert.equal(grouped.length, 1);
   assert.deepEqual(grouped[0].trials.map(t => t.nctId), ['NCT12345679', 'NCT12345678']);
 });
+
+test('clinic departments replace the shared contact cards and list their own hours', async () => {
+  const {departmentHoursHtml, sidebarWithoutContact, hasHours} = await import('../src/lib/departments.ts');
+  const sidebar = '<div class="sidebar-card"> <h3 class="sidebar-card-title"><span class="material-symbols-rounded">location_on</span> Address</h3> <p>700 W. 800 N.</p> </div> <div class="sidebar-card"> <h3 class="sidebar-card-title"><span class="material-symbols-rounded">phone</span> Contact</h3> <p>Fax</p> </div> <div class="sidebar-card sidebar-card--dark"> <h3 class="sidebar-card-title"><span class="material-symbols-rounded">calendar_today</span> Schedule a Visit</h3> </div>';
+  const remaining = sidebarWithoutContact(sidebar);
+  assert.ok(remaining.includes('Schedule a Visit'));
+  assert.ok(!remaining.includes('Address') && !remaining.includes('Fax'));
+  const medical = {name: 'Medical Oncology', street: '700 W. 800 N., Ste. 340', city: 'Orem, UT 84057', hours: {wednesday: '9:00 AM – 5:00 PM'}};
+  const radiation = {name: 'Radiation Oncology', street: '700 W. 800 N., Ste. 140', city: 'Orem, UT 84057'};
+  assert.equal(hasHours(radiation), false);
+  const html = departmentHoursHtml([medical, radiation]);
+  assert.equal((html.match(/loc-hours-dept/g) || []).length, 1);
+  assert.match(html, /<li><span>Wednesday<\/span><span>9:00 AM – 5:00 PM<\/span><\/li>/);
+  assert.match(html, /<li><span>Monday<\/span><span class="loc-hours-closed">Closed<\/span><\/li>/);
+});

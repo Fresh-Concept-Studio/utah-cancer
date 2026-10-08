@@ -2227,6 +2227,22 @@
   color: #00476b;
 }
 
+.loc-hours-dept {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 18px;
+  color: #00476b;
+  margin: 0 0 4px;
+}
+
+.loc-hours-list + .loc-hours-dept {
+  margin-top: 28px;
+}
+
+.sidebar-card--department .sidebar-contact-item:first-of-type {
+  margin-bottom: 12px;
+}
+
 .loc-hours-closed {
   color: #333333;
   opacity: 0.5;
