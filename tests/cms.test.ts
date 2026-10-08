@@ -53,3 +53,17 @@ test('Studio crop and focal point survive responsive image sizing', () => {
   assert.equal(sized.searchParams.get('fp-x'),'0.625');
   assert.equal(sized.searchParams.get('fp-y'),'0.4');
 });
+
+test('trial records support additions, category changes, and removing the last study', async () => {
+  const {groupTrials} = await import('../src/lib/clinical-trials.ts');
+  const trial = {nctId: 'NCT12345678', title: 'New study', cancerType: 'New cancer category', description: 'Study information', statusLabel: 'Open'};
+  const added = groupTrials([trial]);
+  assert.equal(added.length, 1);
+  assert.deepEqual(added[0].trials, [trial]);
+  assert.equal(added[0].title, trial.cancerType);
+  assert.deepEqual(groupTrials([]), []);
+  assert.equal(groupTrials([{...trial, cancerType: 'Breast cancer'}])[0].id, 'breast');
+  const grouped = groupTrials([{...trial, cancerType: 'Breast cancer', sortOrder: 2}, {...trial, nctId: 'NCT12345679', cancerType: ' breast cancer ', sortOrder: 1}]);
+  assert.equal(grouped.length, 1);
+  assert.deepEqual(grouped[0].trials.map(t => t.nctId), ['NCT12345679', 'NCT12345678']);
+});

@@ -2,28 +2,11 @@
 import { pageEditor } from '../lib/page-content';
 const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
-const retiredTrials = new Set(Astro.props.page.retiredTrials || []);
-const trialIdsByCategory: Record<string, string[]> = {
-  'all-comers': ['NCT03556228', 'NCT04657068'],
-  breast: ['NCT06492616', 'NCT07085767'],
-  colorectal: ['NCT03526835'],
-  'es-sclc': ['NCT06801834'],
-  gist: ['NCT07218926'],
-  'head-neck': ['NCT06129864'],
-  'hr-positive-breast': ['NCT07492641'],
-  'lung-rmc': ['NCT06881784', 'NCT06767514', 'NCT06712316'],
-  prostate: ['NCT07164443'],
-  'metastatic-colorectal': ['NCT07228832'],
-  'metastatic-pancreatic': ['NCT07573215'],
-  myeloma: ['NCT05552222', 'NCT07258511'],
-  observational: ['NCT05059444'],
-  ovarian: ['NCT07023627', 'NCT06819007'],
-  pancreatic: ['NCT07409272'],
-};
-const showTrial = (id: string) => !retiredTrials.has(id);
-const categoryHasTrials = (category: string) => trialIdsByCategory[category].some(showTrial);
-const trialCount = Object.values(trialIdsByCategory).flat().filter(showTrial).length;
-const trialCountLabel = edit.text('text-441ef24964', '21 trials').replace(/^\d+\s+trials?/, `${trialCount} ${trialCount === 1 ? 'trial' : 'trials'}`);
+import { clinicalTrials } from '../lib/content';
+import { groupTrials } from '../lib/clinical-trials';
+const categories = groupTrials(clinicalTrials);
+const trialCount = clinicalTrials.length;
+const trialCountLabel = `${trialCount} ${trialCount === 1 ? 'trial' : 'trials'}`;
 ---
 <section class="sd-hero">
     <div class="sd-hero-bg"><img src={url(edit.image("image-561ca38b27", "/images/specialty-lung-clinical-hero.webp"))} width="1200" height="675" alt={edit.imageAlt("image-561ca38b27", "")} fetchpriority="high" decoding="async"><div class="sd-hero-overlay"></div></div>
@@ -104,219 +87,34 @@ const trialCountLabel = edit.text('text-441ef24964', '21 trials').replace(/^\d+\
           <span class="lp-filter-label">{edit.text("text-7bc90c8f72", "Filter by cancer type")}</span>
           <div class="lp-filters" role="group" aria-label="Filter active trials by cancer type">
             <button class="lp-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-            {categoryHasTrials('all-comers') && (<button class="lp-filter" type="button" data-filter="all-comers" aria-pressed="false">All-Comers</button>)}
-            {categoryHasTrials('breast') && (<button class="lp-filter" type="button" data-filter="breast" aria-pressed="false">Breast cancer</button>)}
-            {categoryHasTrials('colorectal') && (<button class="lp-filter" type="button" data-filter="colorectal" aria-pressed="false">Colorectal</button>)}
-            {categoryHasTrials('es-sclc') && (<button class="lp-filter" type="button" data-filter="es-sclc" aria-pressed="false">Extensive Stage Small Cell Lung Cancer</button>)}
-            {categoryHasTrials('gist') && (<button class="lp-filter" type="button" data-filter="gist" aria-pressed="false">Gastrointestinal Stromal Tumors</button>)}
-            {categoryHasTrials('head-neck') && (<button class="lp-filter" type="button" data-filter="head-neck" aria-pressed="false">Head &amp; Neck</button>)}
-            {categoryHasTrials('hr-positive-breast') && (<button class="lp-filter" type="button" data-filter="hr-positive-breast" aria-pressed="false">HR+/HER2- Breast Cancer</button>)}
-            {categoryHasTrials('lung-rmc') && (<button class="lp-filter" type="button" data-filter="lung-rmc" aria-pressed="false">Lung – Non-Small Cell</button>)}
-            {categoryHasTrials('prostate') && (<button class="lp-filter" type="button" data-filter="prostate" aria-pressed="false">Metastatic prostate cancer</button>)}
-            {categoryHasTrials('metastatic-colorectal') && (<button class="lp-filter" type="button" data-filter="metastatic-colorectal" aria-pressed="false">Metastatic colorectal cancer</button>)}
-            {categoryHasTrials('metastatic-pancreatic') && (<button class="lp-filter" type="button" data-filter="metastatic-pancreatic" aria-pressed="false">Metastatic pancreatic adenocarcinoma</button>)}
-            {categoryHasTrials('myeloma') && (<button class="lp-filter" type="button" data-filter="myeloma" aria-pressed="false">Multiple Myeloma</button>)}
-            {categoryHasTrials('observational') && (<button class="lp-filter" type="button" data-filter="observational" aria-pressed="false">Observational / Lab</button>)}
-            {categoryHasTrials('ovarian') && (<button class="lp-filter" type="button" data-filter="ovarian" aria-pressed="false">Ovarian cancer</button>)}
-            {categoryHasTrials('pancreatic') && (<button class="lp-filter" type="button" data-filter="pancreatic" aria-pressed="false">Pancreatic cancer</button>)}
+            {categories.map(category => <button class="lp-filter" type="button" data-filter={category.id} aria-pressed="false">{category.title}</button>)}
           </div>
         </div>
 
-        {categoryHasTrials('all-comers') && (<div class="lp-trial-section" id="trials-all-comers" data-category="all-comers">
-          <h3 class="lp-category-title">{edit.text("text-0579310abc", "All-Comers")}</h3>
-          <div class="lp-trial-list">
-            {showTrial('NCT03556228') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-0733d0deae", "https://clinicaltrials.gov/study/NCT03556228"))} target="_blank" rel="noopener">{edit.text("text-3265ebe9a5", "Selective TrkA Inhibitor VMD-928 to Treat TrkA Overexpression Driven Solid Tumors or Lymphoma")}</a><span class="lp-status">{edit.text("text-cf9b77061f", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-d4b8aecd0d", "Protocol: NCT03556228")}</div>
-              <p class="lp-trial-desc">{edit.text("text-ccc8fccf75", "VM Oncology study of Selective TrkA Inhibitor VMD-928 in patients with TrkA Overexpression Driven Solid Tumors or Lymphoma.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-1", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-1", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-2", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-1", " research@utahcancer.com")}</a></div>
-            </article>)}
-            {showTrial('NCT04657068') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-9338fc8070", "https://clinicaltrials.gov/study/NCT04657068"))} target="_blank" rel="noopener">{edit.text("text-f4b9e55c5d", "A Study of ART0380 for the Treatment of Advanced or Metastatic Solid Tumors")}</a><span class="lp-status">{edit.text("text-cf9b77061f-1", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-2e09a0e5f9", "Protocol: NCT04657068")}</div>
-              <p class="lp-trial-desc">{edit.text("text-6eeabf2f70", "This study is testing ART0380, an oral investigational cancer drug, in people with advanced or metastatic solid tumors. Researchers want to find safe doses, understand side effects, and learn whether ART0380 may work alone or with gemcitabine or irinotecan. Some study groups are focused on tumors with specific DNA repair changes, including certain ovarian and related gynecologic cancers.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-1", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-2", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-2", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-3", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-2", " research@utahcancer.com")}</a></div>
-            </article>)}
+        {categories.map(category => (
+          <div class="lp-trial-section" id={`trials-${category.id}`} data-category={category.id}>
+            <h3 class="lp-category-title">{category.title}</h3>
+            <div class="lp-trial-list">
+              {category.trials.map(trial => (
+                <article class="lp-trial-card">
+                  <div class="lp-trial-top">
+                    <a class="lp-trial-title" href={trial.studyUrl || `https://clinicaltrials.gov/study/${trial.nctId}`} target="_blank" rel="noopener">{trial.title}</a>
+                    <span class="lp-status">{trial.statusLabel}</span>
+                  </div>
+                  <div class="lp-protocol">Protocol: {trial.nctId}</div>
+                  <p class="lp-trial-desc">{trial.description}</p>
+                  <div class="lp-trial-footer">
+                    {trial.contactName && <span><span class="material-symbols-rounded">person</span> {trial.contactName}</span>}
+                    {trial.phone && <a href={`tel:${trial.phone.replace(/[^+\d]/g, '')}`}><span class="material-symbols-rounded">phone</span> {trial.phone}</a>}
+                    {trial.email && <a href={`mailto:${trial.email}`}><span class="material-symbols-rounded">mail</span> {trial.email}</a>}
+                    {(trial.pdfAssetUrl || trial.pdfUrl) && <a href={trial.pdfAssetUrl || trial.pdfUrl} target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span> {trial.pdfLabel || 'View PDF'}</a>}
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
-        </div>)}
-
-        {categoryHasTrials('breast') && (<div class="lp-trial-section" id="trials-breast" data-category="breast">
-          <h3 class="lp-category-title">{edit.text("text-00e2e91ac8", "Breast cancer")}</h3>
-          <div class="lp-trial-list">
-            {showTrial('NCT06492616') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-f05845cf85", "https://clinicaltrials.gov/study/NCT06492616"))} target="_blank" rel="noopener">{edit.text("text-efa4dae06e", "Elacestrant Versus Standard Endocrine Therapy in Women and Men With Node-positive, Estrogen Receptor-positive, HER2-negative, Early Breast Cancer With High Risk of Recurrence")}</a><span class="lp-status">{edit.text("text-cf9b77061f-2", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-fd9e041492", "Protocol: NCT06492616")}</div>
-              <p class="lp-trial-desc">{edit.text("text-af2e52557a", "This phase 3 study is comparing elacestrant with standard endocrine therapy in women and men with early breast cancer that is ER-positive, HER2-negative, node-positive, and at high risk of recurrence. Participants must have already received endocrine therapy and may have previously received certain targeted treatments. The study is recruiting at multiple sites.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-2", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-3", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-3", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-4", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-3", " research@utahcancer.com")}</a></div>
-            </article>)}
-            {showTrial('NCT07085767') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-79a9ba85e9", "https://clinicaltrials.gov/study/NCT07085767"))} target="_blank" rel="noopener">{edit.text("text-3ef487b517", "Palazestrant in Combination With Ribociclib for the First-line Treatment of ER+/HER2- Advanced Breast Cancer")}</a><span class="lp-status">{edit.text("text-cf9b77061f-3", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-2305a46235", "Protocol: NCT07085767")}</div>
-              <p class="lp-trial-desc">{edit.text("text-2f9b77265e", "This phase 3 study is comparing palazestrant plus ribociclib with letrozole plus ribociclib for adults with ER-positive, HER2-negative advanced breast cancer. It is enrolling women and men who have not received prior systemic anti-cancer treatment for advanced disease. Participants will be randomly assigned to one of the two treatment arms in a double-blind design.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-3", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-4", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-4", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-5", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-4", " research@utahcancer.com")}</a></div>
-            </article>)}
-          </div>
-        </div>)}
-
-        {categoryHasTrials('colorectal') && (<div class="lp-trial-section" id="trials-colorectal" data-category="colorectal">
-          <h3 class="lp-category-title">{edit.text("text-ce13c04588", "Colorectal")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT03526835') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-6c64f3fb95", "https://classic.clinicaltrials.gov/ct2/show/NCT03526835"))} target="_blank" rel="noopener">{edit.text("text-fc5209be73", "A Study of Bispecific Antibody MCLA-158 in Patients With Advanced Solid Tumors")}</a><span class="lp-status">{edit.text("text-cf9b77061f-4", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-38926eb1e7", "Protocol: NCT03526835")}</div>
-            <p class="lp-trial-desc">{edit.text("text-15b2b982ee", "Merus study of bispecific antibody MCLA-158 in patients with advanced solid tumors including colorectal.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-4", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-5", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-5", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-6", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-5", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        <!-- Listings supplied by UCS: https://utahcancer.com/late-phase-trials/ (September 9, 2026). -->
-        {categoryHasTrials('es-sclc') && (<div class="lp-trial-section" id="trials-es-sclc" data-category="es-sclc">
-          <h3 class="lp-category-title">{edit.text("text-f3d8454137", "Extensive Stage Small Cell Lung Cancer")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT06801834') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-c805272294", "https://clinicaltrials.gov/study/NCT06801834"))} target="_blank" rel="noopener">{edit.text("text-53eb77cf8d", "A Global, Multicenter, Randomized, Open-label, Phase 3 Study of Sacituzumab Govitecan Versus Standard of Care (SOC) in Participants With Previously Treated Extensive Stage Small Cell Lung Cancer (ES-SCLC)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-5", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-6f30c63edb", "Protocol: NCT06801834")}</div>
-            <p class="lp-trial-desc">{edit.text("text-a6239e7c83", "This phase 3 study compares sacituzumab govitecan with standard treatment after prior platinum-based therapy for extensive-stage small cell lung cancer. Researchers are evaluating overall survival. The UCS listing indicates that the study is recruiting.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-5", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-6", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-6", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-7", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-6", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('gist') && (<div class="lp-trial-section" id="trials-gist" data-category="gist">
-          <h3 class="lp-category-title">{edit.text("text-f83bda6291", "Gastrointestinal Stromal Tumors")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT07218926') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-2d209de9d7", "https://clinicaltrials.gov/study/NCT07218926"))} target="_blank" rel="noopener">{edit.text("text-608c1401b7", "A Phase 3, Randomized, Multicenter, Open-Label Study of IDRX-42 (GSK6042981) Versus Sunitinib in Participants With Metastatic and/or Unresectable Gastrointestinal Stromal Tumors (GIST) After Imatinib Therapy (StrateGIST 3)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-6", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-9cc6871976", "Protocol: NCT07218926")}</div>
-            <p class="lp-trial-desc">{edit.text("text-0db0724f08", "This phase 3 study is comparing IDRX-42 (also known as GSK6042981) with sunitinib in adults with gastrointestinal stromal tumors (GIST) that have spread or cannot be removed with surgery. Participants must have already received imatinib. The study is evaluating how well the treatment works and how safe it is.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-6", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-7", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-7", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-8", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-7", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('head-neck') && (<div class="lp-trial-section" id="trials-head-neck" data-category="head-neck">
-          <h3 class="lp-category-title">{edit.text("text-7450594475", "Head & Neck")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT06129864') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-e5b5a0ed0a", "https://clinicaltrials.gov/study/NCT06129864"))} target="_blank" rel="noopener">{edit.text("text-05630b5e24", "A Global Study of Volrustomig (MEDI5752) for Participants With Unresected Locally Advanced Head and Neck Squamous Cell Carcinoma Following Definitive Concurrent Chemoradiotherapy (eVOLVE-HNSCC)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-7", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-a0e749be61", "Protocol: NCT06129864")}</div>
-            <p class="lp-trial-desc">{edit.text("text-4526145c9d", "AstraZeneca global study of Volrustomig (MEDI5752) in unresected locally advanced head and neck squamous cell carcinoma following chemoradiotherapy.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-7", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-8", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-8", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-9", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-8", " research@utahcancer.com")}</a><a href={url(edit.text("link-fd3b60f683", "https://utahcancer.com/wp-content/uploads/2025/04/PSG_HeadNeck_AZ-EVOLVE.pdf"))} target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span>{edit.text("text-2c7c54d56d", " View PDF")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('hr-positive-breast') && (<div class="lp-trial-section" id="trials-hr-positive-breast" data-category="hr-positive-breast">
-          <h3 class="lp-category-title">{edit.text("text-053b8f2b5e", "HR+/HER2- Breast Cancer")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT07492641') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-a8ca8d41bb", "https://clinicaltrials.gov/study/NCT07492641"))} target="_blank" rel="noopener">{edit.text("text-186e713a9e", "BGB-43395 Plus Letrozole Versus CDK4/6i Plus Letrozole for Patients With Advanced or Metastatic HR+/HER2- Breast Cancer Who Have Not Received Prior Treatment for Advanced or Metastatic Disease")}</a><span class="lp-status">{edit.text("text-cf9b77061f-8", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-8cbf7afbed", "Protocol: NCT07492641")}</div>
-            <p class="lp-trial-desc">{edit.text("text-125573fb7f", "This phase 3 trial compares BGB-43395 with standard CDK4/6 inhibitors, each combined with letrozole, for advanced or metastatic HR+/HER2- breast cancer. It evaluates effectiveness and safety in participants who have not received systemic treatment for advanced or metastatic disease.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-8", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-9", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-9", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-10", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-9", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('lung-rmc') && (<div class="lp-trial-section" id="trials-lung-rmc" data-category="lung-rmc">
-          <h3 class="lp-category-title">{edit.text("text-99585cb2a6", "Lung – Non-Small Cell")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT06881784') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-ccf8f2a6dc", "https://clinicaltrials.gov/study/NCT06881784"))} target="_blank" rel="noopener">{edit.text("text-aa869a9488", "Study of Daraxonrasib (RMC-6236) in Previously Treated Patients With RAS Mutated NSCLC (RASolve 301)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-9", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-450a2d2806", "Protocol: NCT06881784")}</div>
-            <p class="lp-trial-desc">{edit.text("text-ad55afe0a5", "Revolution Medicine study of Daraxonrasib (RMC-6236) in previously treated patients with RAS mutated metastatic non-small cell lung cancer.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-9", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-10", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-10", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-11", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-10", " research@utahcancer.com")}</a><a href={url(edit.text("link-abb2bbd5a7", "https://utahcancer.com/wp-content/uploads/2025/04/Ad_Lung_Revolution-Medicine-RASolve-17Jan2025.pdf"))} target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span>{edit.text("text-2c7c54d56d-1", " View PDF")}</a></div>
-          </article>)}
-            {showTrial('NCT06767514') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-4e0c46c1cc", "https://clinicaltrials.gov/study/NCT06767514"))} target="_blank" rel="noopener">{edit.text("text-117660d5bd", "Clinical Study of Ivonescimab for First-line Treatment of Metastatic NSCLC Patients With High PD-L1")}</a><span class="lp-status">{edit.text("text-cf9b77061f-10", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-fbbe73e4ec", "Protocol: NCT06767514")}</div>
-              <p class="lp-trial-desc">{edit.text("text-80d39588f5", "This phase 3 study is testing ivonescimab versus pembrolizumab as a first treatment for people with metastatic non-small cell lung cancer whose tumors have high PD-L1 expression. The study is looking at outcomes such as overall survival and progression-free survival. Participants must be adults with stage IV NSCLC and no prior systemic treatment for metastatic disease.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-10", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-11", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-11", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-12", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-11", " research@utahcancer.com")}</a></div>
-            </article>)}
-            {showTrial('NCT06712316') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-e09012335a", "https://clinicaltrials.gov/study/NCT06712316"))} target="_blank" rel="noopener">{edit.text("text-639e52309a", "A Phase II/III, Multisite, Randomized Master Protocol for a Global Trial of BNT327 in Combination With Chemotherapy and Other Investigational Agents in First-line Non-Small Cell Lung Cancer")}</a><span class="lp-status">{edit.text("text-cf9b77061f-11", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-5c749208db", "Protocol: NCT06712316")}</div>
-              <p class="lp-trial-desc">{edit.text("text-44b6c10d5c", "This is a phase 2/3, multicenter study for people with first-line non-small cell lung cancer (NSCLC). Participants are randomized to receive BNT327 (pumitamig) with chemotherapy, and the study includes two substudies based on tumor subtype. The trial is recruiting and is designed to evaluate safety, effectiveness, and pharmacokinetics.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-11", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-12", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-12", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-13", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-12", " research@utahcancer.com")}</a></div>
-            </article>)}
-          </div>
-        </div>)}
-
-        {categoryHasTrials('prostate') && (<div class="lp-trial-section" id="trials-prostate" data-category="prostate">
-          <h3 class="lp-category-title">{edit.text("text-99761ffc6c", "Metastatic castration-resistant prostate cancer")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT07164443') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-1cedc57413", "https://clinicaltrials.gov/study/NCT07164443"))} target="_blank" rel="noopener">{edit.text("text-62d183c03e", "A Study of Pasritamig Versus Placebo in Late Line Metastatic Castration-resistant Prostate Cancer (mCRPC)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-12", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-67ee584d0d", "Protocol: NCT07164443")}</div>
-            <p class="lp-trial-desc">{edit.text("text-1f57264fa6", "This phase 3 study is testing pasritamig (JNJ-78278343) plus best supportive care versus placebo plus best supportive care in people with metastatic castration-resistant prostate cancer. The main goal is to see whether pasritamig helps people live longer. It is recruiting participants at multiple centers in the United States.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-12", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-13", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-13", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-14", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-13", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('metastatic-colorectal') && (<div class="lp-trial-section" id="trials-metastatic-colorectal" data-category="metastatic-colorectal">
-          <h3 class="lp-category-title">{edit.text("text-17898fa0c7", "Metastatic colorectal cancer")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT07228832') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-382c55db1f", "https://clinicaltrials.gov/study/NCT07228832"))} target="_blank" rel="noopener">{edit.text("text-3631cd3ded", "Phase III Study of Ivonescimab or Bevacizumab Combined With FOLFOX in Patients With Metastatic Colorectal Cancer")}</a><span class="lp-status">{edit.text("text-cf9b77061f-13", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-901db6ec14", "Protocol: NCT07228832")}</div>
-            <p class="lp-trial-desc">{edit.text("text-22a9d58863", "This phase 3 study is testing whether ivonescimab plus FOLFOX works better than bevacizumab plus FOLFOX as a first treatment for metastatic colorectal cancer. The trial is randomized, double-blind, and active-controlled, and it includes about 600 participants who have not previously received systemic therapy for metastatic disease. Treatment is given intravenously, followed by maintenance therapy for up to 2 years.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-13", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-14", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-14", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-15", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-14", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('metastatic-pancreatic') && (<div class="lp-trial-section" id="trials-metastatic-pancreatic" data-category="metastatic-pancreatic">
-          <h3 class="lp-category-title">{edit.text("text-957cc32acc", "Metastatic Pancreatic Adenocarcinoma")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT07573215') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-b4322874f5", "https://clinicaltrials.gov/study/NCT07573215"))} target="_blank" rel="noopener">{edit.text("text-5b27a2307c", "Expanded Access Program to Treat Patients With Previously Treated Metastatic Pancreatic Adenocarcinoma With Daraxonrasib")}</a><span class="lp-status">{edit.text("text-cf9b77061f-14", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-412c9d3bc6", "Protocol: NCT07573215")}</div>
-            <p class="lp-trial-desc">{edit.text("text-377e52dba8", "This expanded access program may provide daraxonrasib to adults with previously treated metastatic pancreatic adenocarcinoma who have no comparable or satisfactory alternative treatment options. It is intended for patients who cannot join an ongoing daraxonrasib clinical trial because of ineligibility or lack of access. Daraxonrasib is supplied by the sponsor free of charge during treatment under this program.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-14", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-15", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-15", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-16", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-15", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('myeloma') && (<div class="lp-trial-section" id="trials-myeloma" data-category="myeloma">
-          <h3 class="lp-category-title">{edit.text("text-b9b009176f", "Multiple Myeloma")}</h3>
-          <div class="lp-trial-list">
-            {showTrial('NCT05552222') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-349f8bc96d", "https://www.clinicaltrials.gov/study/NCT05552222"))} target="_blank" rel="noopener">{edit.text("text-293b69083d", "A Study of Teclistamab in Combination With Daratumumab and Lenalidomide (Tec-DR) and Talquetamab in Combination With Daratumumab and Lenalidomide (Tal-DR) in Participants With Newly Diagnosed Multiple Myeloma (MajesTEC-7)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-15", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-e090fdc74c", "Protocol: NCT05552222")}</div>
-              <p class="lp-trial-desc">{edit.text("text-77d3ba7343", "Janssen study of teclistamab-daratumumab-lenalidomide and talquetamab-daratumumab-lenalidomide combinations in newly diagnosed multiple myeloma.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-15", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-16", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-16", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-17", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-16", " research@utahcancer.com")}</a><a href={url(edit.text("link-8afae2deb9", "https://utahcancer.com/wp-content/uploads/2025/07/64007957MMY3005-Recruitment-Brochure-Advertisements-for-Subjec.pdf"))} target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span>{edit.text("text-2c7c54d56d-2", " View PDF")}</a></div>
-            </article>)}
-            {showTrial('NCT07258511') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-5c9397e74d", "https://clinicaltrials.gov/study/NCT07258511"))} target="_blank" rel="noopener">{edit.text("text-4d6d0fa430", "A Phase 3 Randomized Study Comparing JNJ-79635322 and an Anti-BCMAxCD3 Bispecific Antibody in Participants With Relapsed or Refractory Multiple Myeloma Who Have Received At Least 3 Prior Lines of Therapy Including a PI, an IMiD, and an Anti CD38 Antibody")}</a><span class="lp-status">{edit.text("text-cf9b77061f-16", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-09898f562f", "Protocol: NCT07258511")}</div>
-              <p class="lp-trial-desc">{edit.text("text-56bd1890de", "This phase 3 study is comparing JNJ-79635322 with an anti-BCMAxCD3 bispecific antibody in people with relapsed or refractory multiple myeloma. The study is looking at how well the treatments work in participants who have already received at least 3 prior lines of therapy. It is enrolling adults with measurable disease and good enough performance status to take part.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-16", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-17", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-17", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-18", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-17", " research@utahcancer.com")}</a></div>
-            </article>)}
-          </div>
-        </div>)}
-
-        {categoryHasTrials('observational') && (<div class="lp-trial-section" id="trials-observational" data-category="observational">
-          <h3 class="lp-category-title">{edit.text("text-a421799679", "Observational / Lab")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT05059444') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-1a34180fe1", "https://clinicaltrials.gov/ct2/show/NCT05059444"))} target="_blank" rel="noopener">{edit.text("text-dddbd9e27d", "Observation of Residual Cancer With Liquid Biopsy Evaluation (ORACLE)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-17", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-2f19bd9a46", "Protocol: NCT05059444")}</div>
-            <p class="lp-trial-desc">{edit.text("text-7cd486b3bf", "Guardant Health observational study of residual cancer detection using liquid biopsy across multiple cancer types including bladder, NSCLC, breast, melanoma, and others.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-17", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-18", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-18", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-19", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-18", " research@utahcancer.com")}</a><a href={url(edit.text("link-80c2873ec3", "https://utahcancer.com/wp-content/uploads/2025/04/PF_Lab_Guardant-Health.pdf"))} target="_blank" rel="noopener"><span class="material-symbols-rounded">picture_as_pdf</span>{edit.text("text-2c7c54d56d-3", " View PDF")}</a></div>
-          </article>)}</div>
-        </div>)}
-
-        {categoryHasTrials('ovarian') && (<div class="lp-trial-section" id="trials-ovarian" data-category="ovarian">
-          <h3 class="lp-category-title">{edit.text("text-f565d5d621", "Ovarian cancer")}</h3>
-          <div class="lp-trial-list">
-            {showTrial('NCT07023627') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-8c23ae3396", "https://clinicaltrials.gov/study/NCT07023627"))} target="_blank" rel="noopener">{edit.text("text-bc97cd2d64", "A Phase 2, Single-Arm Study of INCB123667 in Participants With Platinum-Resistant Ovarian Cancer With Cyclin E1 Overexpression (MAESTRA 1)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-18", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-4849ed62d2", "Protocol: NCT07023627")}</div>
-              <p class="lp-trial-desc">{edit.text("text-cadff170ac", "This phase 2 study is evaluating INCB123667 in people with platinum-resistant ovarian cancer that overexpresses Cyclin E1. The study is looking at the safety and effectiveness of this treatment in participants who have already received prior therapy. It is a single-arm study, so all participants receive the study drug.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-18", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-19", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-19", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-20", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-19", " research@utahcancer.com")}</a></div>
-            </article>)}
-            {showTrial('NCT06819007') && (<article class="lp-trial-card">
-              <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-b9120b0e1f", "https://clinicaltrials.gov/study/NCT06819007"))} target="_blank" rel="noopener">{edit.text("text-34364172aa", "Study of Trastuzumab Deruxtecan With Bevacizumab Versus Bevacizumab Monotherapy for First-line Maintenance in HER2-Expressing Ovarian Cancer (DESTINY-Ovarian01)")}</a><span class="lp-status">{edit.text("text-cf9b77061f-19", "Open")}</span></div>
-              <div class="lp-protocol">{edit.text("text-84b769517f", "Protocol: NCT06819007")}</div>
-              <p class="lp-trial-desc">{edit.text("text-4c1acabf3a", "This phase 3 trial is evaluating trastuzumab deruxtecan plus bevacizumab versus bevacizumab alone as first-line maintenance treatment for HER2-expressing advanced high-grade ovarian cancer. Participants must have newly diagnosed stage III or IV epithelial ovarian, fallopian tube, or primary peritoneal cancer and have already received standard bevacizumab with platinum-based chemotherapy. A safety run-in phase is planned before randomization.")}</p>
-              <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-19", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-20", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-20", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-21", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-20", " research@utahcancer.com")}</a></div>
-            </article>)}
-          </div>
-        </div>)}
-
-        {categoryHasTrials('pancreatic') && (<div class="lp-trial-section" id="trials-pancreatic" data-category="pancreatic">
-          <h3 class="lp-category-title">{edit.text("text-a5e0f5dbba", "Pancreatic cancer")}</h3>
-          <div class="lp-trial-list">{showTrial('NCT07409272') && (<article class="lp-trial-card">
-            <div class="lp-trial-top"><a class="lp-trial-title" href={url(edit.text("link-f3c58d08a0", "https://clinicaltrials.gov/study/NCT07409272"))} target="_blank" rel="noopener">{edit.text("text-33a0d640be", "A Phase 3 Study of Setidegrasib With mFOLFIRINOX or NALIRIFOX in KRAS G12D Mutated Metastatic Pancreatic Adenocarcinoma")}</a><span class="lp-status">{edit.text("text-cf9b77061f-20", "Open")}</span></div>
-            <div class="lp-protocol">{edit.text("text-e9d3b010c3", "Protocol: NCT07409272")}</div>
-            <p class="lp-trial-desc">{edit.text("text-80f0cf21a9", "This phase 3 study is testing whether setidegrasib, given with standard chemotherapy, can help people with metastatic pancreatic cancer that has a KRAS G12D mutation. Participants are assigned by chance to receive setidegrasib or placebo along with mFOLFIRINOX or NALIRIFOX, which the study doctor selects. The main goal is to see whether the study treatment helps people live longer and to assess safety.")}</p>
-            <div class="lp-trial-footer"><span><span class="material-symbols-rounded">person</span>{edit.text("text-4feb23e289-20", " Johnny Walker")}</span><a href={url(edit.text("link-3277871004-21", "tel:8012816864"))}><span class="material-symbols-rounded">phone</span>{edit.text("text-fcc72d26e9-21", " 801.281.6864")}</a><a href={url(edit.text("link-0567610c7e-22", "mailto:research@utahcancer.com"))}><span class="material-symbols-rounded">mail</span>{edit.text("text-d081793d07-21", " research@utahcancer.com")}</a></div>
-          </article>)}</div>
-        </div>)}
+        ))}
+        {!trialCount && <p>No clinical trials are currently listed. Please contact the research team for information.</p>}
 
         <p class="lp-source-note">{edit.text("text-86caab6cbb", "Trial availability and eligibility can change. Review the linked ClinicalTrials.gov record and contact the UCS research team for the most current enrollment information.")}</p>
       </div>

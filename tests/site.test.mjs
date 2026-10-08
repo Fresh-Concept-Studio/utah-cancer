@@ -32,7 +32,7 @@ test('every content record has a detail page, and every directory card points to
 test('clinical trial count and filters match the rendered studies', () => {
   const $ = pages.get('late-phase-trials/index.html');
   const cards = $('.lp-trial-card');
-  assert.equal($('#trial-count').text().trim(), `${cards.length} trials`);
+  assert.equal($('#trial-count').text().trim(), `${cards.length} ${cards.length === 1 ? 'trial' : 'trials'}`);
   const filters = $('.lp-filter[data-filter]').toArray().map(button => $(button).attr('data-filter')).filter(value => value !== 'all');
   const sections = $('.lp-trial-section').toArray();
   assert.deepEqual(filters, sections.map(section => $(section).attr('data-category')));

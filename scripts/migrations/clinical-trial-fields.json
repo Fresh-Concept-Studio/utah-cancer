@@ -1,0 +1,367 @@
+[
+  {
+    "nctId": "NCT03556228",
+    "categoryKey": "all-comers",
+    "keys": {
+      "cancerType": "text-0579310abc",
+      "title": "text-3265ebe9a5",
+      "studyUrl": "link-0733d0deae",
+      "statusLabel": "text-cf9b77061f",
+      "protocol": "text-d4b8aecd0d",
+      "description": "text-ccc8fccf75",
+      "contactName": "text-4feb23e289",
+      "phone": "text-fcc72d26e9-1",
+      "phoneHref": "link-3277871004-1",
+      "email": "text-d081793d07-1",
+      "emailHref": "link-0567610c7e-2"
+    }
+  },
+  {
+    "nctId": "NCT04657068",
+    "categoryKey": "all-comers",
+    "keys": {
+      "cancerType": "text-0579310abc",
+      "title": "text-f4b9e55c5d",
+      "studyUrl": "link-9338fc8070",
+      "statusLabel": "text-cf9b77061f-1",
+      "protocol": "text-2e09a0e5f9",
+      "description": "text-6eeabf2f70",
+      "contactName": "text-4feb23e289-1",
+      "phone": "text-fcc72d26e9-2",
+      "phoneHref": "link-3277871004-2",
+      "email": "text-d081793d07-2",
+      "emailHref": "link-0567610c7e-3"
+    }
+  },
+  {
+    "nctId": "NCT06492616",
+    "categoryKey": "breast",
+    "keys": {
+      "cancerType": "text-00e2e91ac8",
+      "title": "text-efa4dae06e",
+      "studyUrl": "link-f05845cf85",
+      "statusLabel": "text-cf9b77061f-2",
+      "protocol": "text-fd9e041492",
+      "description": "text-af2e52557a",
+      "contactName": "text-4feb23e289-2",
+      "phone": "text-fcc72d26e9-3",
+      "phoneHref": "link-3277871004-3",
+      "email": "text-d081793d07-3",
+      "emailHref": "link-0567610c7e-4"
+    }
+  },
+  {
+    "nctId": "NCT07085767",
+    "categoryKey": "breast",
+    "keys": {
+      "cancerType": "text-00e2e91ac8",
+      "title": "text-3ef487b517",
+      "studyUrl": "link-79a9ba85e9",
+      "statusLabel": "text-cf9b77061f-3",
+      "protocol": "text-2305a46235",
+      "description": "text-2f9b77265e",
+      "contactName": "text-4feb23e289-3",
+      "phone": "text-fcc72d26e9-4",
+      "phoneHref": "link-3277871004-4",
+      "email": "text-d081793d07-4",
+      "emailHref": "link-0567610c7e-5"
+    }
+  },
+  {
+    "nctId": "NCT03526835",
+    "categoryKey": "colorectal",
+    "keys": {
+      "cancerType": "text-ce13c04588",
+      "title": "text-fc5209be73",
+      "studyUrl": "link-6c64f3fb95",
+      "statusLabel": "text-cf9b77061f-4",
+      "protocol": "text-38926eb1e7",
+      "description": "text-15b2b982ee",
+      "contactName": "text-4feb23e289-4",
+      "phone": "text-fcc72d26e9-5",
+      "phoneHref": "link-3277871004-5",
+      "email": "text-d081793d07-5",
+      "emailHref": "link-0567610c7e-6"
+    }
+  },
+  {
+    "nctId": "NCT06801834",
+    "categoryKey": "es-sclc",
+    "keys": {
+      "cancerType": "text-f3d8454137",
+      "title": "text-53eb77cf8d",
+      "studyUrl": "link-c805272294",
+      "statusLabel": "text-cf9b77061f-5",
+      "protocol": "text-6f30c63edb",
+      "description": "text-a6239e7c83",
+      "contactName": "text-4feb23e289-5",
+      "phone": "text-fcc72d26e9-6",
+      "phoneHref": "link-3277871004-6",
+      "email": "text-d081793d07-6",
+      "emailHref": "link-0567610c7e-7"
+    }
+  },
+  {
+    "nctId": "NCT07218926",
+    "categoryKey": "gist",
+    "keys": {
+      "cancerType": "text-f83bda6291",
+      "title": "text-608c1401b7",
+      "studyUrl": "link-2d209de9d7",
+      "statusLabel": "text-cf9b77061f-6",
+      "protocol": "text-9cc6871976",
+      "description": "text-0db0724f08",
+      "contactName": "text-4feb23e289-6",
+      "phone": "text-fcc72d26e9-7",
+      "phoneHref": "link-3277871004-7",
+      "email": "text-d081793d07-7",
+      "emailHref": "link-0567610c7e-8"
+    }
+  },
+  {
+    "nctId": "NCT06129864",
+    "categoryKey": "head-neck",
+    "keys": {
+      "cancerType": "text-7450594475",
+      "title": "text-05630b5e24",
+      "studyUrl": "link-e5b5a0ed0a",
+      "statusLabel": "text-cf9b77061f-7",
+      "protocol": "text-a0e749be61",
+      "description": "text-4526145c9d",
+      "contactName": "text-4feb23e289-7",
+      "phone": "text-fcc72d26e9-8",
+      "phoneHref": "link-3277871004-8",
+      "email": "text-d081793d07-8",
+      "emailHref": "link-0567610c7e-9",
+      "pdfUrl": "link-fd3b60f683",
+      "pdfLabel": "text-2c7c54d56d"
+    }
+  },
+  {
+    "nctId": "NCT07492641",
+    "categoryKey": "hr-positive-breast",
+    "keys": {
+      "cancerType": "text-053b8f2b5e",
+      "title": "text-186e713a9e",
+      "studyUrl": "link-a8ca8d41bb",
+      "statusLabel": "text-cf9b77061f-8",
+      "protocol": "text-8cbf7afbed",
+      "description": "text-125573fb7f",
+      "contactName": "text-4feb23e289-8",
+      "phone": "text-fcc72d26e9-9",
+      "phoneHref": "link-3277871004-9",
+      "email": "text-d081793d07-9",
+      "emailHref": "link-0567610c7e-10"
+    }
+  },
+  {
+    "nctId": "NCT06881784",
+    "categoryKey": "lung-rmc",
+    "keys": {
+      "cancerType": "text-99585cb2a6",
+      "title": "text-aa869a9488",
+      "studyUrl": "link-ccf8f2a6dc",
+      "statusLabel": "text-cf9b77061f-9",
+      "protocol": "text-450a2d2806",
+      "description": "text-ad55afe0a5",
+      "contactName": "text-4feb23e289-9",
+      "phone": "text-fcc72d26e9-10",
+      "phoneHref": "link-3277871004-10",
+      "email": "text-d081793d07-10",
+      "emailHref": "link-0567610c7e-11",
+      "pdfUrl": "link-abb2bbd5a7",
+      "pdfLabel": "text-2c7c54d56d-1"
+    }
+  },
+  {
+    "nctId": "NCT06767514",
+    "categoryKey": "lung-rmc",
+    "keys": {
+      "cancerType": "text-99585cb2a6",
+      "title": "text-117660d5bd",
+      "studyUrl": "link-4e0c46c1cc",
+      "statusLabel": "text-cf9b77061f-10",
+      "protocol": "text-fbbe73e4ec",
+      "description": "text-80d39588f5",
+      "contactName": "text-4feb23e289-10",
+      "phone": "text-fcc72d26e9-11",
+      "phoneHref": "link-3277871004-11",
+      "email": "text-d081793d07-11",
+      "emailHref": "link-0567610c7e-12"
+    }
+  },
+  {
+    "nctId": "NCT06712316",
+    "categoryKey": "lung-rmc",
+    "keys": {
+      "cancerType": "text-99585cb2a6",
+      "title": "text-639e52309a",
+      "studyUrl": "link-e09012335a",
+      "statusLabel": "text-cf9b77061f-11",
+      "protocol": "text-5c749208db",
+      "description": "text-44b6c10d5c",
+      "contactName": "text-4feb23e289-11",
+      "phone": "text-fcc72d26e9-12",
+      "phoneHref": "link-3277871004-12",
+      "email": "text-d081793d07-12",
+      "emailHref": "link-0567610c7e-13"
+    }
+  },
+  {
+    "nctId": "NCT07164443",
+    "categoryKey": "prostate",
+    "keys": {
+      "cancerType": "text-99761ffc6c",
+      "title": "text-62d183c03e",
+      "studyUrl": "link-1cedc57413",
+      "statusLabel": "text-cf9b77061f-12",
+      "protocol": "text-67ee584d0d",
+      "description": "text-1f57264fa6",
+      "contactName": "text-4feb23e289-12",
+      "phone": "text-fcc72d26e9-13",
+      "phoneHref": "link-3277871004-13",
+      "email": "text-d081793d07-13",
+      "emailHref": "link-0567610c7e-14"
+    }
+  },
+  {
+    "nctId": "NCT07228832",
+    "categoryKey": "metastatic-colorectal",
+    "keys": {
+      "cancerType": "text-17898fa0c7",
+      "title": "text-3631cd3ded",
+      "studyUrl": "link-382c55db1f",
+      "statusLabel": "text-cf9b77061f-13",
+      "protocol": "text-901db6ec14",
+      "description": "text-22a9d58863",
+      "contactName": "text-4feb23e289-13",
+      "phone": "text-fcc72d26e9-14",
+      "phoneHref": "link-3277871004-14",
+      "email": "text-d081793d07-14",
+      "emailHref": "link-0567610c7e-15"
+    }
+  },
+  {
+    "nctId": "NCT07573215",
+    "categoryKey": "metastatic-pancreatic",
+    "keys": {
+      "cancerType": "text-957cc32acc",
+      "title": "text-5b27a2307c",
+      "studyUrl": "link-b4322874f5",
+      "statusLabel": "text-cf9b77061f-14",
+      "protocol": "text-412c9d3bc6",
+      "description": "text-377e52dba8",
+      "contactName": "text-4feb23e289-14",
+      "phone": "text-fcc72d26e9-15",
+      "phoneHref": "link-3277871004-15",
+      "email": "text-d081793d07-15",
+      "emailHref": "link-0567610c7e-16"
+    }
+  },
+  {
+    "nctId": "NCT05552222",
+    "categoryKey": "myeloma",
+    "keys": {
+      "cancerType": "text-b9b009176f",
+      "title": "text-293b69083d",
+      "studyUrl": "link-349f8bc96d",
+      "statusLabel": "text-cf9b77061f-15",
+      "protocol": "text-e090fdc74c",
+      "description": "text-77d3ba7343",
+      "contactName": "text-4feb23e289-15",
+      "phone": "text-fcc72d26e9-16",
+      "phoneHref": "link-3277871004-16",
+      "email": "text-d081793d07-16",
+      "emailHref": "link-0567610c7e-17",
+      "pdfUrl": "link-8afae2deb9",
+      "pdfLabel": "text-2c7c54d56d-2"
+    }
+  },
+  {
+    "nctId": "NCT07258511",
+    "categoryKey": "myeloma",
+    "keys": {
+      "cancerType": "text-b9b009176f",
+      "title": "text-4d6d0fa430",
+      "studyUrl": "link-5c9397e74d",
+      "statusLabel": "text-cf9b77061f-16",
+      "protocol": "text-09898f562f",
+      "description": "text-56bd1890de",
+      "contactName": "text-4feb23e289-16",
+      "phone": "text-fcc72d26e9-17",
+      "phoneHref": "link-3277871004-17",
+      "email": "text-d081793d07-17",
+      "emailHref": "link-0567610c7e-18"
+    }
+  },
+  {
+    "nctId": "NCT05059444",
+    "categoryKey": "observational",
+    "keys": {
+      "cancerType": "text-a421799679",
+      "title": "text-dddbd9e27d",
+      "studyUrl": "link-1a34180fe1",
+      "statusLabel": "text-cf9b77061f-17",
+      "protocol": "text-2f19bd9a46",
+      "description": "text-7cd486b3bf",
+      "contactName": "text-4feb23e289-17",
+      "phone": "text-fcc72d26e9-18",
+      "phoneHref": "link-3277871004-18",
+      "email": "text-d081793d07-18",
+      "emailHref": "link-0567610c7e-19",
+      "pdfUrl": "link-80c2873ec3",
+      "pdfLabel": "text-2c7c54d56d-3"
+    }
+  },
+  {
+    "nctId": "NCT07023627",
+    "categoryKey": "ovarian",
+    "keys": {
+      "cancerType": "text-f565d5d621",
+      "title": "text-bc97cd2d64",
+      "studyUrl": "link-8c23ae3396",
+      "statusLabel": "text-cf9b77061f-18",
+      "protocol": "text-4849ed62d2",
+      "description": "text-cadff170ac",
+      "contactName": "text-4feb23e289-18",
+      "phone": "text-fcc72d26e9-19",
+      "phoneHref": "link-3277871004-19",
+      "email": "text-d081793d07-19",
+      "emailHref": "link-0567610c7e-20"
+    }
+  },
+  {
+    "nctId": "NCT06819007",
+    "categoryKey": "ovarian",
+    "keys": {
+      "cancerType": "text-f565d5d621",
+      "title": "text-34364172aa",
+      "studyUrl": "link-b9120b0e1f",
+      "statusLabel": "text-cf9b77061f-19",
+      "protocol": "text-84b769517f",
+      "description": "text-4c1acabf3a",
+      "contactName": "text-4feb23e289-19",
+      "phone": "text-fcc72d26e9-20",
+      "phoneHref": "link-3277871004-20",
+      "email": "text-d081793d07-20",
+      "emailHref": "link-0567610c7e-21"
+    }
+  },
+  {
+    "nctId": "NCT07409272",
+    "categoryKey": "pancreatic",
+    "keys": {
+      "cancerType": "text-a5e0f5dbba",
+      "title": "text-33a0d640be",
+      "studyUrl": "link-f3c58d08a0",
+      "statusLabel": "text-cf9b77061f-20",
+      "protocol": "text-e9d3b010c3",
+      "description": "text-80f0cf21a9",
+      "contactName": "text-4feb23e289-20",
+      "phone": "text-fcc72d26e9-21",
+      "phoneHref": "link-3277871004-21",
+      "email": "text-d081793d07-21",
+      "emailHref": "link-0567610c7e-22"
+    }
+  }
+]

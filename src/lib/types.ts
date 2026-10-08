@@ -5,7 +5,6 @@ export interface PageData {
   title: string;
   jobs?: {title: string; location: string; schedule: string; status: string; summary: string; responsibilities: string[]; qualifications: string[]}[];
   editorContent?: {key?: string; _key?: string; value: string}[];
-  retiredTrials?: string[];
   editorImages?: {key?: string; _key?: string; image: {src: string; alt: string}}[];
   description?: string;
   bodyClass?: string;

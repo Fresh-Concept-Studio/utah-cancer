@@ -22,12 +22,7 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
     ]),
   ),
   S.divider(),
-  S.listItem().title('Clinical Trials').id('clinical-trials').child(
-    S.document().schemaType('page').documentId('page-late-phase-trials-html').title('Clinical Trials').views([
-      S.view.form().title('Edit trials'),
-      S.view.component(PublishedPage).title('Published website'),
-    ]),
-  ),
+  S.documentTypeListItem('clinicalTrial').title('Clinical Trials').id('clinical-trials'),
   S.listItem().title('Shared content & contact cards').id('shared').child(S.list().title('Shared content').items([
     S.listItem().title('Leadership directory & media').id('shared-settings').child(S.document().schemaType('siteSettings').documentId('siteSettings')),
     S.documentTypeListItem('sharedContent').title('Shared contact panels'),
@@ -38,7 +33,7 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
 ])
 const defaultDocumentNode: DefaultDocumentNodeResolver = (S, {schemaType}) => S.document().views([
   S.view.form().title('Edit'),
-  ...(schemaType !== 'siteSettings' ? [S.view.component(RelatedContent).title('Related content')] : []),
+  ...(!['siteSettings', 'clinicalTrial'].includes(schemaType) ? [S.view.component(RelatedContent).title('Related content')] : []),
   ...(pageTypes.includes(schemaType) ? [S.view.component(PublishedPage).title('Published website')] : []),
 ])
 export default defineConfig({

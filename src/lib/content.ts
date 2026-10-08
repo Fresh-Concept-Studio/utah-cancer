@@ -1,3 +1,5 @@
+import localClinicalTrials from '../data/clinical-trials.json'
+import type {ClinicalTrial} from './clinical-trials'
 import {createClient} from '@sanity/client'
 import {convert} from './cms-records'
 import localProviders from '../data/providers.json'
@@ -23,7 +25,7 @@ export const sanityConfig = {
 
 type AnyRecord = Record<string, any>
 const fallback = {
-  providers: localProviders, locations: localLocations, specialties: localSpecialties, leaders: localLeaders,
+  clinicalTrials: localClinicalTrials, providers: localProviders, locations: localLocations, specialties: localSpecialties, leaders: localLeaders,
   policies: localPolicies, pages: localPages, defaults: localDefaults, sharedContent: localSharedContent,
   providerLocations: localProviderLocations, leadershipGroups: localLeadershipGroups,
   newsPosts: localNewsPosts, resourcePages: localResourcePages, mainPhone: localMainPhone, mediaHighlights: localMedia,
@@ -33,8 +35,9 @@ async function loadContent() {
   if (import.meta.env.SANITY_USE_CMS === 'false') return fallback
   const client = createClient({...sanityConfig, useCdn: false, perspective: 'published'})
   try {
-    const docs = await client.fetch<AnyRecord[]>(`*[_type in ["provider", "location", "specialty", "leader", "policy", "newsArticle", "resourcePage", "page", "sharedContent", "providerLocation", "siteSettings"]]{
+    const docs = await client.fetch<AnyRecord[]>(`*[_type in ["clinicalTrial", "provider", "location", "specialty", "leader", "policy", "newsArticle", "resourcePage", "page", "sharedContent", "providerLocation", "siteSettings"]]{
       ...,
+      "pdfAssetUrl": pdf.asset->url,
       photo{..., "asset": asset{..., "asset": asset->{url}}},
       "image": select(image._type == "legacyImage" => image{..., "asset": asset{..., "asset": asset->{url}}}, image),
       directoryPhoto{..., "asset": asset{..., "asset": asset->{url}}},
@@ -51,10 +54,11 @@ async function loadContent() {
       type(name).map((doc) => [doc[key], valueKey ? doc[valueKey] : Object.fromEntries(Object.entries(doc).filter(([field]) => field !== key))]),
     )
     const pageDocs = type('page')
-    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, retiredTrials, jobs, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, retiredTrials, jobs, ...settings}]))
+    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, jobs, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, jobs, ...settings}]))
     const newsPosts = type('newsArticle').map(({html, featuredPhoto, ...post}) => ({...post, featuredImage: featuredPhoto?.src || post.featuredImage, featuredAlt: featuredPhoto?.alt ?? post.featuredAlt, contentHtml: html}))
     const settings = type('siteSettings')[0]
     return {
+      clinicalTrials: type('clinicalTrial'),
       providers: type('provider').map((p) => ({...p, directory: {...p.directory, ...(p.photo?.src?.startsWith('https://cdn.sanity.io/') ? {photo: p.photo.src, alt: p.photo.alt} : {})}})), locations: type('location'), specialties: type('specialty').map(({heroPhoto, ...s}) => ({...s, image: heroPhoto?.src || s.image})), leaders: type('leader'),
       policies: type('policy'), newsPosts, resourcePages: type('resourcePage'), pages,
       defaults: localDefaults, sharedContent: keyed('sharedContent', 'key', 'html'),
@@ -85,3 +89,5 @@ export const resourcePages = content.resourcePages as typeof localResourcePages
 export const mainPhone = content.mainPhone
 
 export const mediaHighlights = content.mediaHighlights as (typeof localMedia[number] & {photo?: {src: string; alt: string}})[]
+
+export const clinicalTrials = content.clinicalTrials as ClinicalTrial[]
