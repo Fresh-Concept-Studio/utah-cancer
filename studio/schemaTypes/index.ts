@@ -90,6 +90,21 @@ const provider = defineType({
   preview: {select: {title: 'name', subtitle: 'specialty', media: 'photo.asset'}},
 })
 
+const DEPARTMENT_DAYS = [['monday', 'Monday'], ['tuesday', 'Tuesday'], ['wednesday', 'Wednesday'], ['thursday', 'Thursday'], ['friday', 'Friday'], ['saturday', 'Saturday'], ['sunday', 'Sunday']]
+const clinicDepartment = defineType({
+  name: 'clinicDepartment', title: 'Department', type: 'object',
+  fields: [
+    defineField({name: 'name', title: 'Department', type: 'string', options: {list: ['Medical Oncology', 'Radiation Oncology']}, validation: required}),
+    defineField({name: 'location', title: 'Building or campus (optional)', type: 'string', description: 'For example, Holy Cross Davis Hospital.'}),
+    defineField({name: 'street', title: 'Street address and suite', type: 'string', validation: required}),
+    defineField({name: 'city', title: 'City, state and ZIP', type: 'string', validation: required}),
+    defineField({name: 'phone', title: 'Phone', type: 'string'}),
+    defineField({name: 'fax', title: 'Fax', type: 'string'}),
+    defineField({name: 'hours', title: 'Hours', type: 'object', description: 'Enter hours like 9:00 AM – 5:00 PM. Leave a day blank to show it as Closed.', options: {collapsible: true}, fields: DEPARTMENT_DAYS.map(([name, title]) => defineField({name, title, type: 'string'}))}),
+  ],
+  preview: {select: {title: 'name', subtitle: 'street'}},
+})
+
 const location = defineType({
   name: 'location', title: 'Locations', type: 'document', initialValue: {actions: [], sections: [], directory: {order: 100}},
   groups: [{name: 'main', title: 'Clinic', default: true}, {name: 'directory', title: 'Directory & map'}, {name: 'seo', title: 'Search appearance'}],
@@ -102,6 +117,7 @@ const location = defineType({
     defineField({name: 'actions', group: 'main', title: 'Hero buttons', type: 'array', of: [{type: 'contentLink'}]}),
     defineField({name: 'sections', group: 'main', title: 'Clinic sections', type: 'array', of: [{type: 'contentSection'}]}),
     defineField({name: 'sidebarHtml', group: 'main', title: 'Contact details beside clinic description', type: 'text', rows: 14, components: {input: ReadableHtmlInput}}),
+    defineField({name: 'departments', group: 'main', title: 'Departments with their own contact info', type: 'array', of: [{type: 'clinicDepartment'}], description: 'Use when Medical and Radiation Oncology have separate addresses, phones, faxes or hours. When filled in, these replace the Address and Contact cards, and their hours replace the "Hours of operation" section.'}),
     defineField({name: 'mapPlaceholder', title: 'Map placeholder', type: 'boolean', hidden: true}),
     defineField({name: 'cta', group: 'main', title: 'Call to action', type: 'callToAction'}),
     defineField({name: 'directory', title: 'Directory card', type: 'object', group: 'directory', fields: [
@@ -268,6 +284,6 @@ const siteSettings = defineType({
   ],
 })
 
-export const schemaTypes = [clinicalTrial, jobOpening, leadershipMember, leadershipGroup, mediaVideo, pageCopy, pageImage, legacyImage, contentSection, tab, contentLink, cta, pageSettings, provider, location, specialty, leader,
+export const schemaTypes = [clinicalTrial, clinicDepartment, jobOpening, leadershipMember, leadershipGroup, mediaVideo, pageCopy, pageImage, legacyImage, contentSection, tab, contentLink, cta, pageSettings, provider, location, specialty, leader,
   htmlDocument('policy', 'Legal policies'), htmlDocument('newsArticle', 'News articles'), htmlDocument('resourcePage', 'Resource pages'),
   page, keyedHtml, providerLocation, siteSettings]

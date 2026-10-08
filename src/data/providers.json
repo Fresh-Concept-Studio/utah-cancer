@@ -64,7 +64,7 @@
     "slug": "anita-mcdonald",
     "name": "Anita McDonald, FNP",
     "specialty": "Advanced Practitioner",
-    "languages": "English",
+    "languages": "English, Spanish",
     "photo": {
       "src": "/images/provider-expanded/provider-anita-mcdonald.webp",
       "alt": "Anita McDonald",
@@ -94,19 +94,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Anita McDonald, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About McDonald",
-        "html": "<p class=\"provider-bio\">Anita McDonald, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About McDonald"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, UT Master of Science, Nursing, Brigham Young University, Provo, UT</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, UT Master of Science, Nursing, Brigham Young University, Provo, UT</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -118,8 +118,7 @@
       "order": 38
     },
     "locationIds": [
-      "intermountain-medical-center",
-      "timpanogos-regional-hospital"
+      "intermountain-medical-center"
     ]
   },
   {
@@ -394,9 +393,9 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Bridget Thackeray is a Clinical Mental Health Counselor who provides psychological and emotional support for individuals, couples, and families navigating a variety of mental health and life challenges. She personally believes that life’s challenges are not meant to break us but to propel us toward growth and personal fulfillment.</p> <p class=\"provider-bio\">Bridget’s clinical background includes extensive work in grief support, where she facilitated groups for families and children coping with the loss of loved ones. She has also worked in outreach programs supporting children who had experienced the death of a parent. She has spent the last two years in private practice working with a variety of clients and a range of mental health issues, particularly focusing on helping people navigate moments of profound loss and transition.</p> <p class=\"provider-bio\">Her approach to counseling is strongly influenced by existential psychology and Viktor Frankl’s philosophy of logotherapy, which emphasizes the human capacity to find meaning and purpose even in the midst of suffering. Bridget believes that while a cancer diagnosis can profoundly disrupt life, patients and families can still discover sources of strength, meaning, and connection as they move through the experience.</p> <p class=\"provider-bio\">In her role at Utah Cancer Specialists, Bridget hopes to support both patients and the care team by providing space for patients and caregivers to process the emotional impact of cancer, navigate difficult decisions, and face uncertainty with greater clarity and resilience.</p> <p class=\"provider-bio\">Outside of work, Bridget enjoys road biking, playing pickleball, reading, and spending time with her husband and their four children.</p>",
         "id": "about",
-        "title": "About Bridget Thackeray",
-        "html": "<p class=\"provider-bio\">Bridget Thackeray is a Clinical Mental Health Counselor who provides psychological and emotional support for individuals, couples, and families navigating a variety of mental health and life challenges. She personally believes that life’s challenges are not meant to break us but to propel us toward growth and personal fulfillment.</p> <p class=\"provider-bio\">Bridget’s clinical background includes extensive work in grief support, where she facilitated groups for families and children coping with the loss of loved ones. She has also worked in outreach programs supporting children who had experienced the death of a parent. She has spent the last two years in private practice working with a variety of clients and a range of mental health issues, particularly focusing on helping people navigate moments of profound loss and transition.</p> <p class=\"provider-bio\">Her approach to counseling is strongly influenced by existential psychology and Viktor Frankl’s philosophy of logotherapy, which emphasizes the human capacity to find meaning and purpose even in the midst of suffering. Bridget believes that while a cancer diagnosis can profoundly disrupt life, patients and families can still discover sources of strength, meaning, and connection as they move through the experience.</p> <p class=\"provider-bio\">In her role at Utah Cancer Specialists, Bridget hopes to support both patients and the care team by providing space for patients and caregivers to process the emotional impact of cancer, navigate difficult decisions, and face uncertainty with greater clarity and resilience.</p> <p class=\"provider-bio\">Outside of work, Bridget enjoys road biking, playing pickleball, reading, and spending time with her husband and their four children.</p>"
+        "title": "About Bridget Thackeray"
       }
     ],
     "sidebar": "provider-contact-3",
@@ -407,7 +406,11 @@
       "priority": 0,
       "order": 36.1
     },
-    "locationIds": [],
+    "locationIds": [
+      "murray-clinic",
+      "cancer-center",
+      "jordan-valley-cancer-center"
+    ],
     "page": {
       "description": "Bridget Thackeray, ACMHC Counselor, Clinical Mental Health Counselor at Utah Cancer Specialists.",
       "cta": {
@@ -613,7 +616,7 @@
     "slug": "david-warner",
     "name": "David E. Warner, MD",
     "specialty": "Medical Oncology and Hematology",
-    "languages": "English",
+    "languages": "English, Spanish",
     "photo": {
       "src": "/images/provider-expanded/provider-david-warner.webp",
       "alt": "David E. Warner",
@@ -643,19 +646,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Dr. David Warner is a medical oncologist and sarcoma specialist who believes the best cancer care begins with understanding each patient as an individual. A Salt Lake City native, he returned to Utah to join Utah Cancer Specialists, drawn by the opportunity to work alongside a team of physicians he deeply respected and to care for patients in his home community.</p> <p class=\"provider-bio\">Dr. Warner’s interest in medicine and research began at the University of Utah, where he worked in a laboratory studying iron metabolism throughout college. He went on to attend medical school at the University of Utah, completed his residency at Wake Forest University, and completed his oncology fellowship at the University of Michigan.</p> <p class=\"provider-bio\">As a sarcoma specialist, Dr. Warner brings expertise that is uncommon in community oncology. He enjoys both the science of cancer care and the relationships he develops with his patients, particularly the opportunity to learn what matters most to each person.</p> <p class=\"provider-bio\">His approach to care is centered on partnership. He works with patients to establish their goals and determine the best path forward together. He believes his role is ultimately to help people—and recognizes that what “help” looks like can be different for every patient.</p> <p class=\"provider-bio\">Dr. Warner also has a passion for teaching and learning. He takes time to listen, understand his patients’ priorities, and respect their individual goals and autonomy. For him, getting to know the person behind the diagnosis is an important part of providing thoughtful, meaningful care.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Warner enjoys skiing, running, reading, music, and playing tennis.</p>",
         "id": "about",
-        "title": "About Dr. Warner",
-        "html": "<p class=\"provider-bio\">Dr. David Warner is a medical oncologist and sarcoma specialist who believes the best cancer care begins with understanding each patient as an individual. A Salt Lake City native, he returned to Utah to join Utah Cancer Specialists, drawn by the opportunity to work alongside a team of physicians he deeply respected and to care for patients in his home community.</p> <p class=\"provider-bio\">Dr. Warner’s interest in medicine and research began at the University of Utah, where he worked in a laboratory studying iron metabolism throughout college. He went on to attend medical school at the University of Utah, completed his residency at Wake Forest University, and completed his oncology fellowship at the University of Michigan.</p> <p class=\"provider-bio\">As a sarcoma specialist, Dr. Warner brings expertise that is uncommon in community oncology. He enjoys both the science of cancer care and the relationships he develops with his patients, particularly the opportunity to learn what matters most to each person.</p> <p class=\"provider-bio\">His approach to care is centered on partnership. He works with patients to establish their goals and determine the best path forward together. He believes his role is ultimately to help people—and recognizes that what “help” looks like can be different for every patient.</p> <p class=\"provider-bio\">Dr. Warner also has a passion for teaching and learning. He takes time to listen, understand his patients’ priorities, and respect their individual goals and autonomy. For him, getting to know the person behind the diagnosis is an important part of providing thoughtful, meaningful care.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Warner enjoys skiing, running, reading, music, and playing tennis.</p>"
+        "title": "About Dr. Warner"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>Medical Oncology</li> <li>Residency:</li> <li>Wake Forest University in Winston-Salem, NC</li> <li>Fellowship:</li> <li>University of Michigan Medical Center – Ann Arbor, MI</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>Medical Oncology</li> <li>Residency:</li> <li>Wake Forest University in Winston-Salem, NC</li> <li>Fellowship:</li> <li>University of Michigan Medical Center – Ann Arbor, MI</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -736,7 +739,7 @@
     "slug": "disean-kendall",
     "name": "S. DiSean Kendall, MD",
     "specialty": "Medical Oncology and Hematology",
-    "languages": "English",
+    "languages": "English, Spanish",
     "photo": {
       "src": "/images/provider-expanded/provider-disean-kendall.webp",
       "alt": "S. DiSean Kendall",
@@ -766,19 +769,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">S. DiSean Kendall, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About Dr. Kendall",
-        "html": "<p class=\"provider-bio\">S. DiSean Kendall, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Dr. Kendall"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Albany Medical Center, Albany, NY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Duke University Medical Center, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, Duke University Medical Center, Durham, NC</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Albany Medical Center, Albany, NY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Duke University Medical Center, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, Duke University Medical Center, Durham, NC</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -828,19 +831,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Douglas E. Holt, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About Dr. Holt",
-        "html": "<p class=\"provider-bio\">Douglas E. Holt, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Dr. Holt"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Pittsburgh School of Medicine, Pittsburgh, PA Clinical Scientist Training Program – Institute for Clinical Research Education, University of Pittsburgh, Pittsburgh, PA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>University of Utah School of Medicine, Salt Lake, UT Radiation Oncology, Chief Resident, University of Colorado School of Medicine, Aurora, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Brachytherapy, Memorial Sloan Kettering Cancer Center, New York, NY</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Pittsburgh School of Medicine, Pittsburgh, PA Clinical Scientist Training Program – Institute for Clinical Research Education, University of Pittsburgh, Pittsburgh, PA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>University of Utah School of Medicine, Salt Lake, UT Radiation Oncology, Chief Resident, University of Colorado School of Medicine, Aurora, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Brachytherapy, Memorial Sloan Kettering Cancer Center, New York, NY</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -852,9 +855,8 @@
       "order": 24
     },
     "locationIds": [
-      "eastern-idaho-regional-medical-center",
-      "st-mark-s-hospital",
-      "timpanogos-regional-hospital-2"
+      "cancer-center",
+      "st-mark-s-hospital"
     ]
   },
   {
@@ -1038,7 +1040,7 @@
     "slug": "gregory-chipman",
     "name": "Gregory C. Chipman, MD",
     "specialty": "Medical Oncology and Hematology",
-    "languages": "English",
+    "languages": "English, Spanish",
     "photo": {
       "src": "/images/provider-expanded/provider-gregory-chipman.webp",
       "alt": "Gregory C. Chipman",
@@ -1068,19 +1070,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Gregory C. Chipman, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About Dr. Chipman",
-        "html": "<p class=\"provider-bio\">Gregory C. Chipman, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Dr. Chipman"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University Hospitals of Cleveland, Cleveland, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University Hospitals of Cleveland/ Case Medical Center, Cleveland, OH</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, SLC UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University Hospitals of Cleveland, Cleveland, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University Hospitals of Cleveland/ Case Medical Center, Cleveland, OH</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -1314,19 +1316,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">James W. Clarke, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About Dr. Clarke",
-        "html": "<p class=\"provider-bio\">James W. Clarke, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Dr. Clarke"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Ohio State University College of Medicine, Columbus, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Ohio State University College of Medicine, Columbus, OH Location: Orem Clinic 700 W. 800 N., Ste. 140 Orem, UT 84057</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Ohio State University College of Medicine, Columbus, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Ohio State University College of Medicine, Columbus, OH Location: Timpanogos Regional Hospital 700 W. 800 N., Ste. 140 Orem, UT 84057</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -1651,7 +1653,7 @@
     "slug": "jose-pacheco",
     "name": "Jose M. Pacheco, MD",
     "specialty": "Medical Oncology and Hematology",
-    "languages": "English",
+    "languages": "English, Spanish",
     "photo": {
       "src": "/images/provider-expanded/provider-jose-pacheco.webp",
       "alt": "Jose M. Pacheco",
@@ -1681,19 +1683,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Jose M. Pacheco, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About Dr. Pacheco",
-        "html": "<p class=\"provider-bio\">Jose M. Pacheco, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Dr. Pacheco"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Texas Medical Branch, Galveston, TX</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Washington University/Barnes Jewish Hospital, Saint Louis, MO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology, Baylor College of Medicine, Houston, TX</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Texas Medical Branch, Galveston, TX</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Washington University/Barnes Jewish Hospital, Saint Louis, MO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/Oncology, Baylor College of Medicine, Houston, TX</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>Medical Oncology</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>Medical Oncology</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -3221,19 +3223,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Thomas B. Skidmore, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
         "id": "about",
-        "title": "About Dr. Skidmore",
-        "html": "<p class=\"provider-bio\">Thomas B. Skidmore, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>"
+        "title": "About Dr. Skidmore"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Westminster College, Salt Lake City, UT, B.S., Psychology with a Minor in Biology, Magna Cum Laude Hiatus from Jan 98-Jan 00 to serve religious mission in Helsinki, Finland East High School, Salt Lake City, UT Summa Cum Laude</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Westminster College, Salt Lake City, UT, B.S., Psychology with a Minor in Biology, Magna Cum Laude Hiatus from Jan 98-Jan 00 to serve religious mission in Helsinki, Finland East High School, Salt Lake City, UT Summa Cum Laude</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>American Academy of Radiology</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>American Academy of Radiology</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -3245,6 +3247,7 @@
       "order": 33
     },
     "locationIds": [
+      "cancer-center",
       "st-mark-s-hospital"
     ]
   },
@@ -3531,19 +3534,19 @@
     ],
     "sections": [
       {
+        "html": "<p class=\"provider-bio\">Dr. William Stephenson brings more than two decades of experience in hematology and oncology, including 23 years at a large tertiary referral center in downtown Kansas City. He has a particular interest in benign hematology and values the opportunity his specialty provides to develop meaningful relationships with patients while focusing deeply on complex medical conditions.</p> <p class=\"provider-bio\">At the center of Dr. Stephenson’s approach is education. He believes patients and their families should fully understand their diagnosis, treatment options, and what those choices may mean for their lives. He recognizes that the best answer for most patients is not necessarily the best answer for the individual sitting in front of him. By taking the time to explain options and understand each patient’s priorities, he helps patients make informed decisions that are right for them.</p> <p class=\"provider-bio\">Dr. Stephenson appreciates working with colleagues who share his commitment to patient education and thoughtful, individualized care. He moved to Utah in 2018 to be closer to family and is now partially retired. He continues to care for patients while also providing coverage for colleagues when they are away from the office.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Stephenson has a strong interest in musical composition and theory.</p>",
         "id": "about",
-        "title": "About Dr. Stephenson",
-        "html": "<p class=\"provider-bio\">Dr. William Stephenson brings more than two decades of experience in hematology and oncology, including 23 years at a large tertiary referral center in downtown Kansas City. He has a particular interest in benign hematology and values the opportunity his specialty provides to develop meaningful relationships with patients while focusing deeply on complex medical conditions.</p> <p class=\"provider-bio\">At the center of Dr. Stephenson’s approach is education. He believes patients and their families should fully understand their diagnosis, treatment options, and what those choices may mean for their lives. He recognizes that the best answer for most patients is not necessarily the best answer for the individual sitting in front of him. By taking the time to explain options and understand each patient’s priorities, he helps patients make informed decisions that are right for them.</p> <p class=\"provider-bio\">Dr. Stephenson appreciates working with colleagues who share his commitment to patient education and thoughtful, individualized care. He moved to Utah in 2018 to be closer to family and is now partially retired. He continues to care for patients while also providing coverage for colleagues when they are away from the office.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Stephenson has a strong interest in musical composition and theory.</p>"
+        "title": "About Dr. Stephenson"
       },
       {
+        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kansas Medical Center, Kansas City, KS</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine University of Virginia Health Science Center, Charlotte, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology Oncology, Indiana University-Perdue University in Indianapolis, IN Hematology / Oncology, University of Utah, Salt Lake City, UT</p> </div> </div> </div>",
         "id": "education",
-        "title": "Education & Training",
-        "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kansas Medical Center, Kansas City, KS</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine University of Virginia Health Science Center, Charlotte, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology Oncology, Indiana University-Perdue University in Indianapolis, IN Hematology / Oncology, University of Utah, Salt Lake City, UT</p> </div> </div> </div>"
+        "title": "Education & Training"
       },
       {
+        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>",
         "id": "certifications",
-        "title": "Board Certifications",
-        "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>"
+        "title": "Board Certifications"
       }
     ],
     "sidebar": "provider-contact",
@@ -3555,8 +3558,7 @@
       "order": 20
     },
     "locationIds": [
-      "utah-valley-hospital",
-      "timpanogos-regional-hospital"
+      "utah-valley-hospital"
     ]
   },
   {

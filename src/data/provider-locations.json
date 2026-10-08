@@ -23,8 +23,8 @@
     ]
   },
   "timpanogos-regional-hospital": {
-    "name": "Timpanogos Regional Hospital",
-    "sublabel": "",
+    "name": "Orem Clinic",
+    "sublabel": "Medical Oncology",
     "addressHtml": "700 W. 800 N. Ste. 340<br>Orem, UT 84057",
     "actions": [
       {
@@ -161,7 +161,7 @@
     ]
   },
   "timpanogos-clinic": {
-    "name": "Timpanogos Clinic",
+    "name": "Orem Clinic",
     "sublabel": "",
     "addressHtml": "",
     "actions": [
@@ -276,7 +276,7 @@
     ]
   },
   "granger-fairbourne-station-clinic": {
-    "name": "Granger Fairbourne Station Clinic",
+    "name": "West Valley Clinic",
     "sublabel": "",
     "addressHtml": "2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
     "actions": [
@@ -451,8 +451,8 @@
     ]
   },
   "timpanogos-regional-hospital-2": {
-    "name": "Timpanogos Regional Hospital",
-    "sublabel": "",
+    "name": "Orem Clinic",
+    "sublabel": "Radiation Oncology",
     "addressHtml": "700 W. 800 N., Ste. 140<br>Orem, UT 84057",
     "actions": [
       {
