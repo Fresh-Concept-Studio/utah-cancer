@@ -23,7 +23,7 @@ These agent instructions guide behavior; they are not an access-control mechanis
 1. Sign in to the Studio.
 2. Open **Website pages**, search by page name or address, and click the page. **Main pages**, **Providers**, and **Locations** provide shorter lists for common edits.
 3. Make the change and click **Publish**.
-4. Publishing calls a Sanity webhook that dispatches the repository's Pages workflow. GitHub Actions fetches published content, runs validation and regression tests, builds the static site, and deploys it to GitHub Pages.
+4. Publishing calls a Sanity webhook that dispatches the repository's Pages workflow. GitHub Actions fetches published content, type-checks and builds the static site, and deploys it to GitHub Pages. Regression tests also run but only report: a failing test adds a warning to the run and does not block the publish. Code changes are gated by the blocking checks in `.github/workflows/ci.yml`.
 
 Drafts do not affect the public website. A published edit usually appears after the GitHub Pages workflow completes. Use the GitHub Actions run as the deployment audit trail.
 

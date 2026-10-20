@@ -62,7 +62,7 @@ Rich-text fields contain trusted, checked-in HTML. Their legacy source keys may 
 
 ## Validation
 
-`npm run verify` checks types, builds the site, checks content references, checks local links and CSS/image/script assets, verifies shared layout/script inclusion, parses browser scripts, and verifies retired-clinic redirects. It is suitable for ongoing content changes.
+`npm run verify` checks types, builds the site, checks content references, checks local links and CSS/image/script assets, verifies shared layout/script inclusion, parses browser scripts, and verifies retired-clinic redirects. Tests check page structure and behaviour rather than specific CMS content, so Sanity edits should not fail them. `.github/workflows/ci.yml` runs it as a blocking check on pull requests and pushes to `main`; the Pages publish workflow runs the tests as report-only so content publishes are never held back.
 
 `npm run test:migration` is a separate, temporary migration guard. Its compact fingerprints record the published state at commit `e910dc7`, including all page text, metadata, element structure, link/image destinations, image bytes, and global CSS bytes. It intentionally ignores formatting whitespace and shared chrome, and allows the newsletter handler to move from inline HTML into its page script. This check will fail after intentional content or design changes; keep the baseline immutable while reviewing the migration, and retire the migration check after acceptance rather than updating it to hide differences. Browser review covers interactions and appearance that static checks cannot prove.
 
