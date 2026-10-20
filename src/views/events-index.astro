@@ -2,6 +2,117 @@
 import { pageEditor } from '../lib/page-content';
 const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
+import { eventDateKey, formatEventDate, isEventPast, parseWrittenDate, todayKey } from '../lib/event-dates';
+
+// Events move from Upcoming to Recently Past the day after their date in Denver. The build
+// decides with today's date; the script at the bottom re-checks in the visitor's browser, since
+// the static page is only rebuilt when content is published.
+const today = todayKey();
+
+interface EventMeta { icon: string; text: string }
+interface EventCard {
+  slug: string; anchor?: string; cat: string; href: string;
+  month: string; day: string; year: string;
+  image: string; imageAlt: string; width: number; height: number;
+  category: string; categoryClass: string; title: string; desc: string; meta: EventMeta[];
+}
+
+const eventCards: EventCard[] = [
+  {
+    slug: 'pink-bag-event', anchor: 'pink-bag-event', cat: 'support',
+    href: edit.text("link-c975770d3e-1", "https://www.fashionplace.com/en/events/50851/"),
+    month: edit.text("text-492c5f509c-1", "SEP"), day: edit.text("text-887309d048-2", "26"), year: edit.text("text-aee655773d-1", "2026"),
+    image: edit.image("image-8ad26086fb-1", "/images/event-pink-bag-640.webp"), imageAlt: edit.imageAlt("image-8ad26086fb-1", "People receiving pink resource bags at a community event"), width: 640, height: 320,
+    category: edit.text("text-f14e95f52d-1", "Patient Resources"), categoryClass: 'support',
+    title: edit.text("text-108325cf43-1", "Pink Bag Event"),
+    desc: edit.text("text-11f8f8c6ad-1", "A community resource and support event for breast cancer patients and survivors."),
+    meta: [{ icon: 'schedule', text: edit.text("text-a7e8f83583-1", "10:00 AM–1:30 PM · Fashion Place Mall") }],
+  },
+  {
+    slug: 'utah-prostate-cancer-run', cat: 'fundraiser',
+    href: edit.text("link-746a0d23a3", "https://utahprostatecancerrun.com/"),
+    month: edit.text("text-aa58169fd2-1", "OCT"), day: edit.text("text-b1d5781111-1", "10"), year: edit.text("text-aee655773d-2", "2026"),
+    image: edit.image("image-4b73894c12", "/images/event-prostate-run-640.webp"), imageAlt: edit.imageAlt("image-4b73894c12", "Runners gathering at a farm for a community prostate cancer run"), width: 640, height: 338,
+    category: edit.text("text-12bc9a713f", "Fundraiser"), categoryClass: 'fundraiser',
+    title: edit.text("text-3d7e931962", "Utah Prostate Cancer Run & Walk"),
+    desc: edit.text("text-bc6a22e715", "A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection."),
+    meta: [{ icon: 'location_on', text: edit.text("text-d8586c0be0", "Wheeler Historic Farm, Salt Lake City") }],
+  },
+  {
+    slug: 'haunted-salt-lake-city', cat: 'community',
+    href: edit.text("link-4e3c6d529a", "https://runtasticevents.com/races/haunted-salt-lake-city/"),
+    month: edit.text("text-aa58169fd2-2", "OCT"), day: edit.text("text-0716d9708d", "17"), year: edit.text("text-aee655773d-3", "2026"),
+    image: edit.image("image-0d0446a840", "/images/event-haunted-half-640.webp"), imageAlt: edit.imageAlt("image-0d0446a840", "Costumed runners at a fall race in Salt Lake City"), width: 640, height: 320,
+    category: edit.text("text-58988359c8", "Run / Walk"), categoryClass: 'community',
+    title: edit.text("text-df0b58f960", "HAUNTED Salt Lake City"),
+    desc: edit.text("text-d7c56685bd", "A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park."),
+    meta: [
+      { icon: 'schedule', text: edit.text("text-77b1c41b42", "Half starts 8:00 AM") },
+      { icon: 'location_on', text: edit.text("text-5ae38a9069", "Sugar House Park") },
+    ],
+  },
+  {
+    slug: 'making-strides', anchor: 'making-strides', cat: 'fundraiser',
+    href: edit.text("link-6ba352001e", "https://makingstrideswalk.org/saltlakecityut"),
+    month: edit.text("text-aa58169fd2-3", "OCT"), day: edit.text("text-4d134bc072", "24"), year: edit.text("text-aee655773d-4", "2026"),
+    image: edit.image("image-9c9855db85", "/images/event-making-strides-640.webp"), imageAlt: edit.imageAlt("image-9c9855db85", "Breast cancer awareness walk participants gathered outside a stadium"), width: 640, height: 400,
+    category: edit.text("text-12bc9a713f-1", "Fundraiser"), categoryClass: 'fundraiser',
+    title: edit.text("text-deac30791e", "Making Strides Against Breast Cancer Walk"),
+    desc: edit.text("text-95ff303111", "Walk together to honor survivors, remember loved ones, and support the fight against breast cancer."),
+    meta: [
+      { icon: 'schedule', text: edit.text("text-e07c937388", "Time to be announced") },
+      { icon: 'location_on', text: edit.text("text-8a946df913", "America First Field") },
+    ],
+  },
+  {
+    slug: 'pinksync', anchor: 'pinksync', cat: 'support',
+    href: edit.text("link-f9d1dba0f0", "https://www.pinksync.org/registration-pages/register"),
+    month: edit.text("text-aa58169fd2-4", "OCT"), day: edit.text("text-4d134bc072-1", "24"), year: edit.text("text-aee655773d-5", "2026"),
+    image: edit.image("image-2e7ef35aa4", "/images/event-pinksync-640.webp"), imageAlt: edit.imageAlt("image-2e7ef35aa4", "People visiting a pink community resource fair"), width: 640, height: 351,
+    category: edit.text("text-f14e95f52d-2", "Patient Resources"), categoryClass: 'support',
+    title: edit.text("text-4fad3b9ce6", "PinkSync"),
+    desc: edit.text("text-35ee5bdd80", "A patient resource event featuring speakers, practical information, and valuable resources."),
+    meta: [
+      { icon: 'schedule', text: edit.text("text-2c5dbebcfe", "9:00 AM–2:00 PM") },
+      { icon: 'location_on', text: edit.text("text-49b45386ef", "Awardco Headquarters, Lindon") },
+    ],
+  },
+  {
+    slug: 'runtastic-thankful', cat: 'community',
+    href: edit.text("link-82d6199a29", "https://runtasticevents.com/races/thankful/"),
+    month: edit.text("text-f62ce2aaac-1", "NOV"), day: edit.text("text-887309d048-3", "26"), year: edit.text("text-aee655773d-6", "2026"),
+    image: edit.image("image-2b7587dd52", "/images/event-thankful-640.webp"), imageAlt: edit.imageAlt("image-2b7587dd52", "Families running together through an autumn landscape at Thanksgiving Point"), width: 640, height: 427,
+    category: edit.text("text-58988359c8-1", "Run / Walk"), categoryClass: 'community',
+    title: edit.text("text-c3b5295cf5", "Runtastic THANKFUL"),
+    desc: edit.text("text-d39d8a2513", "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail."),
+    meta: [
+      { icon: 'schedule', text: edit.text("text-c569d6528c", "Half starts 7:45 AM") },
+      { icon: 'location_on', text: edit.text("text-1c6fd50226", "Thanksgiving Point, Lehi") },
+    ],
+  },
+];
+
+// A card without a readable month/day/year has no data-event-date and always stays Upcoming.
+const events = eventCards.map(event => {
+  const date = eventDateKey(event.month, event.day, event.year);
+  return { ...event, date, past: isEventPast(date, today) };
+});
+const upcomingEvents = events.filter(event => !event.past);
+// Every dated event also gets a photo card in Recently Past (newest first). Ones that are still
+// upcoming at build time stay hidden there until the browser script reveals them.
+const recentPastEvents = events
+  .filter((event): event is typeof event & { date: string } => Boolean(event.date))
+  .sort((a, b) => b.date.localeCompare(a.date));
+
+// The featured block has its own written date ("Saturday, September 26, 2026"), so read that
+// first; it stays correct if editors feature a different event. If editors write it in a way we
+// can't read, fall back to the event card with the same title. Otherwise the block stays visible.
+const featuredTitle = edit.text("text-108325cf43", "Pink Bag Event");
+const featuredDateText = edit.text("text-aa9721454a", "Saturday, September 26, 2026");
+const featuredDate = parseWrittenDate(featuredDateText)
+  ?? events.find(event => event.date && event.title.trim().toLowerCase() === featuredTitle.trim().toLowerCase())?.date
+  ?? null;
+const featuredPast = isEventPast(featuredDate, today);
 ---
 <!-- Events Hero -->
   <section class="events-hero">
@@ -44,7 +155,7 @@ import { url } from '../lib/urls';
   </section>
 
   <!-- Featured Event -->
-  <section class="featured-event">
+  <section class="featured-event" data-event-date={featuredDate ?? undefined} hidden={featuredPast}>
     <div class="container">
       <div class="featured-event-card">
         <div class="featured-event-img">
@@ -53,12 +164,12 @@ import { url } from '../lib/urls';
         </div>
         <div class="featured-event-body">
           <span class="event-category event-category--support">{edit.text("text-f14e95f52d", "Patient Resources")}</span>
-          <h2 class="featured-event-title">{edit.text("text-108325cf43", "Pink Bag Event")}</h2>
+          <h2 class="featured-event-title">{featuredTitle}</h2>
           <p class="featured-event-tagline">{edit.text("text-11f8f8c6ad", "A community resource and support event for breast cancer patients and survivors.")}</p>
           <div class="featured-event-meta">
             <div class="event-meta-item">
               <span class="material-symbols-rounded">calendar_today</span>
-              <span>{edit.text("text-aa9721454a", "Saturday, September 26, 2026")}</span>
+              <span>{featuredDateText}</span>
             </div>
             <div class="event-meta-item">
               <span class="material-symbols-rounded">schedule</span>
@@ -75,7 +186,7 @@ import { url } from '../lib/urls';
   </section>
 
   <!-- Filters + Events Grid -->
-  <section class="events-list">
+  <section class="events-list" data-events-today={today}>
     <div class="container">
       <div class="events-list-header">
         <div>
@@ -91,130 +202,33 @@ import { url } from '../lib/urls';
       </div>
 
       <div class="events-grid" id="events-grid">
-
-        <a href={url(edit.text("link-c975770d3e-1", "https://www.fashionplace.com/en/events/50851/"))} class="event-card" data-cat="support" id="pink-bag-event" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-492c5f509c-1", "SEP")}</span>
-            <span class="event-card-day">{edit.text("text-887309d048-2", "26")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-1", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-8ad26086fb-1", "/images/event-pink-bag-640.webp"))} width="640" height="320" alt={edit.imageAlt("image-8ad26086fb-1", "People receiving pink resource bags at a community event")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--support">{edit.text("text-f14e95f52d-1", "Patient Resources")}</span>
-            <h3 class="event-card-title">{edit.text("text-108325cf43-1", "Pink Bag Event")}</h3>
-            <p class="event-card-desc">{edit.text("text-11f8f8c6ad-1", "A community resource and support event for breast cancer patients and survivors.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-a7e8f83583-1", "10:00 AM–1:30 PM · Fashion Place Mall")}</span>
+        {upcomingEvents.map(event => (
+          <a href={url(event.href)} class="event-card" data-cat={event.cat} data-event-id={event.slug} data-event-date={event.date ?? undefined} id={event.anchor} target="_blank" rel="noopener">
+            <div class="event-card-date">
+              <span class="event-card-month">{event.month}</span>
+              <span class="event-card-day">{event.day}</span>
+              <span class="event-card-year">{event.year}</span>
             </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-746a0d23a3", "https://utahprostatecancerrun.com/"))} class="event-card" data-cat="fundraiser" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-1", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-b1d5781111-1", "10")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-2", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-4b73894c12", "/images/event-prostate-run-640.webp"))} width="640" height="338" alt={edit.imageAlt("image-4b73894c12", "Runners gathering at a farm for a community prostate cancer run")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--fundraiser">{edit.text("text-12bc9a713f", "Fundraiser")}</span>
-            <h3 class="event-card-title">{edit.text("text-3d7e931962", "Utah Prostate Cancer Run & Walk")}</h3>
-            <p class="event-card-desc">{edit.text("text-bc6a22e715", "A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-d8586c0be0", "Wheeler Historic Farm, Salt Lake City")}</span>
+            <span class="event-card-media"><img src={url(event.image)} width={event.width} height={event.height} alt={event.imageAlt} loading="lazy" decoding="async"></span>
+            <div class="event-card-body">
+              <span class={`event-category event-category--${event.categoryClass}`}>{event.category}</span>
+              <h3 class="event-card-title">{event.title}</h3>
+              <p class="event-card-desc">{event.desc}</p>
+              <div class="event-card-meta">
+                {event.meta.map((item, index) => (
+                  <>
+                    {index > 0 && <span class="event-card-meta-dot">·</span>}
+                    <span class="material-symbols-rounded">{item.icon}</span>
+                    <span>{item.text}</span>
+                  </>
+                ))}
+              </div>
             </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-4e3c6d529a", "https://runtasticevents.com/races/haunted-salt-lake-city/"))} class="event-card" data-cat="community" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-2", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-0716d9708d", "17")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-3", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-0d0446a840", "/images/event-haunted-half-640.webp"))} width="640" height="320" alt={edit.imageAlt("image-0d0446a840", "Costumed runners at a fall race in Salt Lake City")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--community">{edit.text("text-58988359c8", "Run / Walk")}</span>
-            <h3 class="event-card-title">{edit.text("text-df0b58f960", "HAUNTED Salt Lake City")}</h3>
-            <p class="event-card-desc">{edit.text("text-d7c56685bd", "A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-77b1c41b42", "Half starts 8:00 AM")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-5ae38a9069", "Sugar House Park")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-6ba352001e", "https://makingstrideswalk.org/saltlakecityut"))} class="event-card" data-cat="fundraiser" id="making-strides" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-3", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-4d134bc072", "24")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-4", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-9c9855db85", "/images/event-making-strides-640.webp"))} width="640" height="400" alt={edit.imageAlt("image-9c9855db85", "Breast cancer awareness walk participants gathered outside a stadium")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--fundraiser">{edit.text("text-12bc9a713f-1", "Fundraiser")}</span>
-            <h3 class="event-card-title">{edit.text("text-deac30791e", "Making Strides Against Breast Cancer Walk")}</h3>
-            <p class="event-card-desc">{edit.text("text-95ff303111", "Walk together to honor survivors, remember loved ones, and support the fight against breast cancer.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-e07c937388", "Time to be announced")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-8a946df913", "America First Field")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-f9d1dba0f0", "https://www.pinksync.org/registration-pages/register"))} class="event-card" data-cat="support" id="pinksync" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-4", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-4d134bc072-1", "24")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-5", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-2e7ef35aa4", "/images/event-pinksync-640.webp"))} width="640" height="351" alt={edit.imageAlt("image-2e7ef35aa4", "People visiting a pink community resource fair")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--support">{edit.text("text-f14e95f52d-2", "Patient Resources")}</span>
-            <h3 class="event-card-title">{edit.text("text-4fad3b9ce6", "PinkSync")}</h3>
-            <p class="event-card-desc">{edit.text("text-35ee5bdd80", "A patient resource event featuring speakers, practical information, and valuable resources.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-2c5dbebcfe", "9:00 AM–2:00 PM")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-49b45386ef", "Awardco Headquarters, Lindon")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-82d6199a29", "https://runtasticevents.com/races/thankful/"))} class="event-card" data-cat="community" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-f62ce2aaac-1", "NOV")}</span>
-            <span class="event-card-day">{edit.text("text-887309d048-3", "26")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-6", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-2b7587dd52", "/images/event-thankful-640.webp"))} width="640" height="427" alt={edit.imageAlt("image-2b7587dd52", "Families running together through an autumn landscape at Thanksgiving Point")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--community">{edit.text("text-58988359c8-1", "Run / Walk")}</span>
-            <h3 class="event-card-title">{edit.text("text-c3b5295cf5", "Runtastic THANKFUL")}</h3>
-            <p class="event-card-desc">{edit.text("text-d39d8a2513", "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-c569d6528c", "Half starts 7:45 AM")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-1c6fd50226", "Thanksgiving Point, Lehi")}</span>
-            </div>
-          </div>
-        </a>
-
+          </a>
+        ))}
       </div>
 
-      <div class="events-empty" id="events-empty" hidden="">
+      <div class="events-empty" id="events-empty" hidden={upcomingEvents.length > 0}>
         <span class="material-symbols-rounded">event_busy</span>
         <p>{edit.text("text-84fea1204c", "No events match this filter right now. Check back soon.")}</p>
       </div>
@@ -227,6 +241,18 @@ import { url } from '../lib/urls';
       <div class="past-events-header">
         <span class="section-label">{edit.text("text-bf8ad78370", "Recently Past")}</span>
         <h2 class="past-events-title">{edit.text("text-0873c26971", "Catch up on what we've been up to")}</h2>
+      </div>
+      <div class="past-events-grid past-events-grid--recent" id="past-events-recent" hidden={!recentPastEvents.some(event => event.past)}>
+        {recentPastEvents.map(event => (
+          <a href={url(event.href)} class="past-event-card past-event-card--photo" data-event-id={event.slug} data-event-date={event.date} id={event.past ? event.anchor : undefined} hidden={!event.past} target="_blank" rel="noopener">
+            <span class="past-event-media"><img src={url(event.image)} width={event.width} height={event.height} alt={event.imageAlt} loading="lazy" decoding="async"></span>
+            <span class="past-event-body">
+              <span class="past-event-date">{formatEventDate(event.date)}</span>
+              <h3 class="past-event-title">{event.title}</h3>
+              <p class="past-event-desc">{event.desc}</p>
+            </span>
+          </a>
+        ))}
       </div>
       <div class="past-events-grid">
         <article class="past-event-card">
@@ -257,3 +283,55 @@ import { url } from '../lib/urls';
       </div>
     </div>
   </section>
+
+<script>
+  import { isEventPast, todayKey } from '../lib/event-dates';
+
+  // Re-check the build's Upcoming/Past split against the visitor's current Denver date, so an
+  // event moves to Recently Past the day after it happens even before the next site rebuild.
+  // Cards only ever move from Upcoming to Past here; the build stays authoritative for events
+  // it already placed in Past (a visitor's wrong clock can't bring them back).
+  const today = todayKey();
+  const grid = document.getElementById('events-grid');
+  const empty = document.getElementById('events-empty');
+  const recent = document.getElementById('past-events-recent');
+  const featured = document.querySelector<HTMLElement>('.featured-event[data-event-date]');
+
+  if (featured && isEventPast(featured.dataset.eventDate, today)) featured.hidden = true;
+
+  let movedAnchor: HTMLElement | null = null;
+  for (const card of grid?.querySelectorAll<HTMLElement>('.event-card[data-event-date]') ?? []) {
+    if (!isEventPast(card.dataset.eventDate, today)) continue;
+    const pastCard = recent?.querySelector<HTMLElement>(`.past-event-card[data-event-id="${card.dataset.eventId}"]`);
+    if (pastCard) {
+      pastCard.hidden = false;
+      if (card.id) {
+        pastCard.id = card.id;
+        if (location.hash === `#${card.id}`) movedAnchor = pastCard;
+      }
+    }
+    // Removed rather than hidden, so the category filters can never show it again.
+    card.remove();
+  }
+  if (recent) recent.hidden = !recent.querySelector('.past-event-card:not([hidden])');
+  movedAnchor?.scrollIntoView();
+
+  const filters = document.querySelectorAll<HTMLElement>('#events-filters .event-filter');
+  function applyFilter(filter: string) {
+    let visible = 0;
+    grid?.querySelectorAll<HTMLElement>('.event-card').forEach(card => {
+      const match = filter === 'all' || card.dataset.cat === filter;
+      card.hidden = !match;
+      if (match) visible++;
+    });
+    if (empty) empty.hidden = visible > 0;
+  }
+  filters.forEach(button => {
+    button.addEventListener('click', () => {
+      filters.forEach(other => other.classList.remove('active'));
+      button.classList.add('active');
+      applyFilter(button.dataset.filter || 'all');
+    });
+  });
+  applyFilter(document.querySelector<HTMLElement>('#events-filters .event-filter.active')?.dataset.filter || 'all');
+</script>

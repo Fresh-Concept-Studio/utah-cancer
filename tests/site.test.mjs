@@ -288,3 +288,59 @@ test('clinic appointment links call that clinic and event shares use the publish
     }
   }
 });
+
+test('events page keeps every editor field from the CMS page record', () => {
+  const template = fs.readFileSync('src/views/events-index.astro', 'utf8');
+  const used = new Set([...template.matchAll(/edit\.(?:text|image|imageAlt|number)\("([^"]+)"/g)].map(match => match[1]));
+  const record = JSON.parse(fs.readFileSync('src/data/page-content.json', 'utf8'))['events-index'];
+  const stored = [...record.editorContent, ...record.editorImages].map(item => item.key || item._key);
+  assert.deepEqual(stored.filter(key => !used.has(key)), [], 'editor keys no longer read by the template');
+  assert.deepEqual([...used].filter(key => !stored.includes(key)), [], 'template keys missing from the page record');
+});
+
+test('events page splits Upcoming and Recently Past by dated cards with working filter markup', () => {
+  const $ = pages.get('events/index.html');
+  const isoDate = /^\d{4}-\d{2}-\d{2}$/;
+  const today = $('.events-list').attr('data-events-today');
+  assert.match(today, isoDate, 'build date for the Upcoming/Past split');
+
+  const filters = $('#events-filters .event-filter').toArray().map(button => $(button).attr('data-filter'));
+  assert.deepEqual(filters, ['all', 'support', 'community', 'fundraiser']);
+  assert.equal($('#events-filters .event-filter.active').attr('data-filter'), 'all');
+  assert.equal($('#events-grid').length, 1);
+  assert.equal($('#events-empty').length, 1);
+
+  const upcoming = $('#events-grid .event-card').toArray();
+  const recent = $('#past-events-recent .past-event-card--photo').toArray();
+  assert.ok(upcoming.length + recent.length > 0, 'events are rendered');
+  for (const card of upcoming) {
+    const date = $(card).attr('data-event-date');
+    assert.match(date, isoDate, `${$(card).find('.event-card-title').text()}: data-event-date`);
+    assert.ok(date >= today, `${date} is past but still listed as upcoming`);
+    assert.ok(filters.includes($(card).attr('data-cat')), `${date}: filter category`);
+  }
+  assert.equal($('#events-empty').is('[hidden]'), upcoming.length > 0, 'empty state shows only when nothing is upcoming');
+
+  const recentDates = recent.map(card => $(card).attr('data-event-date'));
+  assert.deepEqual([...recentDates].sort().reverse(), recentDates, 'Recently Past is newest first');
+  for (const card of recent) {
+    const date = $(card).attr('data-event-date');
+    assert.match(date, isoDate);
+    assert.ok($(card).find('.past-event-media img[src]').length, `${date}: photo`);
+    assert.ok($(card).find('.past-event-title').text().trim(), `${date}: title`);
+    assert.equal($(card).is('[hidden]'), date >= today, `${date}: shown in Recently Past only once it has passed`);
+  }
+  // Every upcoming card has a hidden past counterpart the browser can reveal after the build.
+  const recentIds = new Set(recent.map(card => $(card).attr('data-event-id')));
+  for (const card of upcoming) assert.ok(recentIds.has($(card).attr('data-event-id')), $(card).attr('data-event-id'));
+  assert.equal($('#past-events-recent').is('[hidden]'), !recent.some(card => !$(card).is('[hidden]')));
+
+  const featured = $('.featured-event');
+  assert.equal(featured.length, 1);
+  const featuredDate = featured.attr('data-event-date');
+  if (featuredDate) {
+    assert.match(featuredDate, isoDate);
+    assert.equal(featured.is('[hidden]'), featuredDate < today, 'featured event hides once its date has passed');
+  }
+  assert.ok($('.past-events-grid:not(.past-events-grid--recent) .past-event-card').length > 0, 'older past events remain');
+});
