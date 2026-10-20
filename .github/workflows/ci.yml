@@ -1,0 +1,27 @@
+name: Verify code changes
+
+# Blocking checks for code. Publishing (pages.yml) only requires a build.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ vars.SITE_URL || 'https://fresh-concept-studio.github.io' }}
+      BASE_PATH: ${{ vars.BASE_PATH || '/utah-cancer' }}
+      SITE_INDEXABLE: ${{ vars.SITE_INDEXABLE || 'false' }}
+      SANITY_REQUIRED: 'true'
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run verify

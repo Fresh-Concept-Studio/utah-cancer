@@ -24,11 +24,23 @@ jobs:
       SANITY_REQUIRED: 'true'
     steps:
       - uses: actions/checkout@v7
-      - name: Install, verify, build, and upload
+      # A publish only needs a clean type check and build. Content edits from Sanity
+      # should never be held back by a regression test; code is gated by ci.yml instead.
+      - name: Install, check, build, and upload
         uses: withastro/action@v6
         with:
           node-version: 24
-          build-cmd: npm run verify
+          build-cmd: npm run check && npm run build
+      - name: Regression tests (report only)
+        id: tests
+        continue-on-error: true
+        run: npm test
+      - name: Flag test failures
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "::warning title=Regression tests failed::The site was published, but some tests failed. Review this run's test step."
+          echo "### Regression tests failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "The site was still published. Review the test step and fix the code or the test." >> "$GITHUB_STEP_SUMMARY"
 
   deploy:
     needs: build
