@@ -21,6 +21,12 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
       S.view.component(PublishedPage).title('Published website'),
     ]),
   ),
+  S.listItem().title('Events').id('event-listings').child(
+    S.document().schemaType('page').documentId('page-events-index-html').title('Events').views([
+      S.view.form().title('Edit events'),
+      S.view.component(PublishedPage).title('Published website'),
+    ]),
+  ),
   S.divider(),
   S.documentTypeListItem('clinicalTrial').title('Clinical Trials').id('clinical-trials'),
   S.listItem().title('Shared content & contact cards').id('shared').child(S.list().title('Shared content').items([

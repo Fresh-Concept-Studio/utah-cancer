@@ -2074,6 +2074,14 @@
         "value": "Upcoming"
       },
       {
+        "_key": "text-events-tab-past",
+        "_type": "pageCopy",
+        "key": "text-events-tab-past",
+        "section": "All Upcoming Events",
+        "label": "Past tab label",
+        "value": "Past"
+      },
+      {
         "_key": "text-88ff9e7707",
         "_type": "pageCopy",
         "key": "text-88ff9e7707",
@@ -2510,6 +2518,22 @@
         "section": "All Upcoming Events",
         "label": "Text",
         "value": "No events match this filter right now. Check back soon."
+      },
+      {
+        "_key": "text-events-empty-upcoming",
+        "_type": "pageCopy",
+        "key": "text-events-empty-upcoming",
+        "section": "All Upcoming Events",
+        "label": "Text when no events are upcoming",
+        "value": "No upcoming events right now — check back soon."
+      },
+      {
+        "_key": "text-events-empty-past",
+        "_type": "pageCopy",
+        "key": "text-events-empty-past",
+        "section": "Recently Past",
+        "label": "Text when there are no past events",
+        "value": "No past events yet."
       },
       {
         "_key": "text-bf8ad78370",
@@ -3128,6 +3152,14 @@
         "section": "Happening Soon",
         "label": "Text",
         "value": "Event details "
+      },
+      {
+        "_key": "text-home-events-empty",
+        "_type": "pageCopy",
+        "key": "text-home-events-empty",
+        "section": "Happening Soon",
+        "label": "Text when no events are upcoming",
+        "value": "No upcoming events right now — check back soon."
       },
       {
         "_key": "link-746a0d23a3",

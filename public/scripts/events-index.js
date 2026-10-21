@@ -1,19 +1,6 @@
-(function() {
-      var filters = document.querySelectorAll('.event-filter');
-      var grid = document.getElementById('events-grid');
-      var empty = document.getElementById('events-empty');
-      filters.forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          filters.forEach(function(b) { b.classList.remove('active'); });
-          btn.classList.add('active');
-          var filter = btn.getAttribute('data-filter');
-          var visible = 0;
-          grid.querySelectorAll('.event-card').forEach(function(card) {
-            var match = filter === 'all' || card.getAttribute('data-cat') === filter;
-            card.style.display = match ? '' : 'none';
-            if (match) visible++;
-          });
-          empty.hidden = visible > 0;
-        });
-      });
-    })();
+// Intentionally empty. The Events page's Upcoming/Recently Past split and category filters
+// now ship as a bundled script from src/views/events-index.astro, so the browser and the build
+// share the date rules in src/lib/event-dates.ts.
+//
+// This file remains because the published Sanity page settings for events/index.html still list
+// /scripts/events-index.js. Remove it from those settings first, then this file can be deleted.
