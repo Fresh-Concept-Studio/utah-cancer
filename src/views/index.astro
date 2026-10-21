@@ -3,6 +3,20 @@ import { pageEditor } from '../lib/page-content';
 const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
 import MediaHighlights from '../components/MediaHighlights.astro';
+import pages from '../lib/pages';
+import { imageVariant } from '../lib/images';
+import { eventDateParts, todayKey } from '../lib/event-dates';
+import { featuredCandidates, resolveEvents, splitEvents } from '../lib/events';
+
+// Homepage events: only upcoming ones from the Events page (src/lib/events.ts), soonest first.
+// The script at the bottom re-checks dates in the visitor's browser between rebuilds.
+const eventsPage = pages['events/index.html'];
+const homeEvents = eventsPage ? resolveEvents(eventsPage) : { events: [], legacyFeatured: undefined };
+const homeToday = todayKey();
+const homeUpcoming = splitEvents(homeEvents.events, homeToday).upcoming;
+const homeFeatureCandidates = featuredCandidates(homeUpcoming);
+const homeMiniIds = new Set(homeUpcoming.filter(event => event !== homeFeatureCandidates[0]).slice(0, 3).map(event => event.id));
+const sizedImage = (src: string, width: number, height?: number) => /^https:\/\/cdn\.sanity\.io\//.test(src) ? imageVariant(src, width, height) : src;
 ---
 <!-- Hero Section -->
   <section class="hero">
@@ -188,47 +202,46 @@ import MediaHighlights from '../components/MediaHighlights.astro';
         <a href={url(edit.text("link-3a81e87470", "/events/index.html"))} class="btn btn--primary btn--compact">
           <span class="material-symbols-rounded">calendar_month</span>{edit.text("text-7391cb9a4e", " See All Events ")}</a>
       </div>
-      <div class="home-events-grid">
-        <a href={url(edit.text("link-9102f2cae1", "/events/index.html#pink-bag-event"))} class="event-feature">
-          <span class="event-feature-media">
-            <img src={url(edit.image("image-8ad26086fb", "/images/event-pink-bag-640.webp"))} width="640" height="320" alt={edit.imageAlt("image-8ad26086fb", "People receiving pink resource bags at a community event")} class="event-feature-img" loading="lazy" decoding="async">
-            <span class="event-feature-chip">{edit.text("text-7fc8527c20", "Featured · Patient Resources")}</span>
-          </span>
-          <span class="event-feature-body">
-            <span class="event-feature-when">{edit.text("text-4aff87fb31", "Saturday, September 26")}</span>
-            <span class="event-feature-title">{edit.text("text-108325cf43", "Pink Bag Event")}</span>
-            <span class="event-feature-desc">{edit.text("text-11f8f8c6ad", "A community resource and support event for breast cancer patients and survivors.")}</span>
-            <span class="event-feature-meta"><span class="material-symbols-rounded">schedule</span>{edit.text("text-9c9b7075b2", " Time and location details forthcoming")}</span>
-            <span class="event-feature-cta">{edit.text("text-d3905ac921", "Event details ")}<span class="material-symbols-rounded">arrow_forward</span></span>
-          </span>
-        </a>
+      <!-- Upcoming events only, from the Events page list. The first that hasn't passed is featured. -->
+      <div class="home-events-grid" id="home-events-grid" hidden={homeUpcoming.length === 0}>
+        {homeFeatureCandidates.map((event, index) => {
+          const image = event.image ?? event.photos[0];
+          const parts = event.date ? eventDateParts(event.date) : null;
+          return (
+            <a href={url(`/events/index.html#${event.id}`)} class="event-feature" data-event-id={event.id} data-event-date={event.date ?? undefined} hidden={index > 0}>
+              <span class="event-feature-media">
+                {image && <img src={url(sizedImage(image.src, 1280, 560))} width="640" height="320" alt={image.alt} class="event-feature-img" loading="lazy" decoding="async">}
+                <span class="event-feature-chip">Featured · {event.categoryLabel}</span>
+              </span>
+              <span class="event-feature-body">
+                <span class="event-feature-when">{parts ? `${parts.weekday}, ${parts.name} ${parts.day}` : event.dateText}</span>
+                <span class="event-feature-title">{event.title}</span>
+                {event.description && <span class="event-feature-desc">{event.description}</span>}
+                {(event.timeText || event.location) && <span class="event-feature-meta"><span class="material-symbols-rounded">schedule</span>{[event.timeText, event.location].filter(Boolean).join(' · ')}</span>}
+                <span class="event-feature-cta">{edit.text("text-d3905ac921", "Event details ")}<span class="material-symbols-rounded">arrow_forward</span></span>
+              </span>
+            </a>
+          );
+        })}
         <div class="event-mini-list">
-          <a href={url(edit.text("link-746a0d23a3", "https://utahprostatecancerrun.com/"))} class="event-mini" target="_blank" rel="noopener">
-            <span class="event-mini-thumb"><img src={url(edit.image("image-27c1d97053", "/images/event-prostate-run-240.webp"))} width="240" height="127" alt={edit.imageAlt("image-27c1d97053", "")} loading="lazy" decoding="async"></span>
-            <span class="event-mini-info">
-              <span class="event-mini-title">{edit.text("text-3d7e931962", "Utah Prostate Cancer Run & Walk")}</span>
-              <span class="event-mini-meta">{edit.text("text-0491ada185", "Oct 10 · Wheeler Historic Farm")}</span>
-            </span>
-            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
-          </a>
-          <a href={url(edit.text("link-4e3c6d529a", "https://runtasticevents.com/races/haunted-salt-lake-city/"))} class="event-mini" target="_blank" rel="noopener">
-            <span class="event-mini-thumb"><img src={url(edit.image("image-b181c0da68", "/images/event-haunted-half-240.webp"))} width="240" height="120" alt={edit.imageAlt("image-b181c0da68", "")} loading="lazy" decoding="async"></span>
-            <span class="event-mini-info">
-              <span class="event-mini-title">{edit.text("text-df0b58f960", "HAUNTED Salt Lake City")}</span>
-              <span class="event-mini-meta">{edit.text("text-00989d61f3", "Oct 17 · Half starts 8:00 AM · Sugar House Park")}</span>
-            </span>
-            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
-          </a>
-          <a href={url(edit.text("link-551fa613f6", "/events/index.html#making-strides"))} class="event-mini">
-            <span class="event-mini-thumb"><img src={url(edit.image("image-60f03e5a67", "/images/event-making-strides-240.webp"))} width="240" height="150" alt={edit.imageAlt("image-60f03e5a67", "")} loading="lazy" decoding="async"></span>
-            <span class="event-mini-info">
-              <span class="event-mini-title">{edit.text("text-deac30791e", "Making Strides Against Breast Cancer Walk")}</span>
-              <span class="event-mini-meta">{edit.text("text-7353e90836", "Oct 24 · America First Field")}</span>
-            </span>
-            <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
-          </a>
+          {homeUpcoming.map(event => {
+            const image = event.image ?? event.photos[0];
+            const parts = event.date ? eventDateParts(event.date) : null;
+            const shown = homeMiniIds.has(event.id);
+            return (
+              <a href={url(`/events/index.html#${event.id}`)} class="event-mini" data-event-id={event.id} data-event-date={event.date ?? undefined} hidden={!shown}>
+                {image && <span class="event-mini-thumb"><img src={url(sizedImage(image.src, 240, 180))} width="240" height="150" alt="" loading="lazy" decoding="async"></span>}
+                <span class="event-mini-info">
+                  <span class="event-mini-title">{event.title}</span>
+                  <span class="event-mini-meta">{[parts ? `${parts.short} ${parts.day}` : event.dateText, event.timeText, event.location].filter(Boolean).join(' · ')}</span>
+                </span>
+                <span class="material-symbols-rounded event-mini-arrow">arrow_forward</span>
+              </a>
+            );
+          })}
         </div>
       </div>
+      <p class="home-events-empty" id="home-events-empty" hidden={homeUpcoming.length > 0}>{edit.text("text-home-events-empty", "No upcoming events right now — check back soon.")}</p>
 
       <!-- Podcast Launch Section -->
       <section class="podcast-section" aria-label="The UCS Podcast">
@@ -425,3 +438,23 @@ import MediaHighlights from '../components/MediaHighlights.astro';
       </div>
     </div>
   </section>
+
+<script>
+  import { isEventPast, todayKey } from '../lib/event-dates';
+
+  // Drop homepage events that have passed since the last build (Denver date), then show the
+  // first remaining featured candidate and the next three events.
+  const today = todayKey();
+  const grid = document.getElementById('home-events-grid');
+  if (grid) {
+    grid.querySelectorAll<HTMLElement>('[data-event-date]').forEach(item => { if (isEventPast(item.dataset.eventDate, today)) item.remove(); });
+    const feature = grid.querySelector<HTMLElement>('.event-feature');
+    grid.querySelectorAll<HTMLElement>('.event-feature').forEach(item => { item.hidden = item !== feature; });
+    const minis = [...grid.querySelectorAll<HTMLElement>('.event-mini')].filter(item => item.dataset.eventId !== feature?.dataset.eventId);
+    grid.querySelectorAll<HTMLElement>('.event-mini').forEach(item => { item.hidden = !minis.slice(0, 3).includes(item); });
+    const empty = !feature && minis.length === 0;
+    grid.hidden = empty;
+    const emptyMessage = document.getElementById('home-events-empty');
+    if (emptyMessage) emptyMessage.hidden = !empty;
+  }
+</script>

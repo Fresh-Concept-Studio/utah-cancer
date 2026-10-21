@@ -3274,3 +3274,24 @@ body.menu-open {
     font-size: 28px;
   }
 }
+
+/* Homepage events: candidates that have passed or aren't shown are [hidden]. */
+.home-events-grid[hidden],
+.event-feature[hidden],
+.event-mini[hidden],
+.home-events-empty[hidden] {
+  display: none;
+}
+
+.home-events-grid:not(:has(.event-mini:not([hidden]))) {
+  grid-template-columns: 1fr;
+}
+
+.home-events-empty {
+  padding: 40px 24px;
+  border-radius: var(--radius-card);
+  background: #fff;
+  text-align: center;
+  font-size: 15px;
+  color: #5a6670;
+}

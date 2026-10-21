@@ -114,7 +114,148 @@
       "/scripts/events-index.js"
     ],
     "marquee": true,
-    "component": "events-index"
+    "component": "events-index",
+    "events": [
+      {
+        "_key": "pink-bag-event",
+        "_type": "eventItem",
+        "title": "Pink Bag Event",
+        "date": "2026-09-26",
+        "timeText": "10:00 AM–1:30 PM",
+        "location": "Fashion Place Mall",
+        "category": "support",
+        "description": "A community resource and support event for breast cancer patients and survivors.",
+        "link": "https://www.fashionplace.com/en/events/50851/",
+        "featured": true,
+        "image": {
+          "_type": "legacyImage",
+          "src": "/images/event-pink-bag-640.webp",
+          "alt": "People receiving pink resource bags at a community event"
+        }
+      },
+      {
+        "_key": "utah-prostate-cancer-run",
+        "_type": "eventItem",
+        "title": "Utah Prostate Cancer Run & Walk",
+        "date": "2026-10-10",
+        "location": "Wheeler Historic Farm, Salt Lake City",
+        "category": "fundraiser",
+        "description": "A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection.",
+        "link": "https://utahprostatecancerrun.com/",
+        "image": {
+          "_type": "legacyImage",
+          "src": "/images/event-prostate-run-640.webp",
+          "alt": "Runners gathering at a farm for a community prostate cancer run"
+        }
+      },
+      {
+        "_key": "haunted-salt-lake-city",
+        "_type": "eventItem",
+        "title": "HAUNTED Salt Lake City",
+        "date": "2026-10-17",
+        "timeText": "Half starts 8:00 AM",
+        "location": "Sugar House Park",
+        "category": "community",
+        "categoryLabel": "Run / Walk",
+        "description": "A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park.",
+        "link": "https://runtasticevents.com/races/haunted-salt-lake-city/",
+        "image": {
+          "_type": "legacyImage",
+          "src": "/images/event-haunted-half-640.webp",
+          "alt": "Costumed runners at a fall race in Salt Lake City"
+        }
+      },
+      {
+        "_key": "making-strides",
+        "_type": "eventItem",
+        "title": "Making Strides Against Breast Cancer Walk",
+        "date": "2026-10-24",
+        "timeText": "Time to be announced",
+        "location": "America First Field",
+        "category": "fundraiser",
+        "description": "Walk together to honor survivors, remember loved ones, and support the fight against breast cancer.",
+        "link": "https://makingstrideswalk.org/saltlakecityut",
+        "image": {
+          "_type": "legacyImage",
+          "src": "/images/event-making-strides-640.webp",
+          "alt": "Breast cancer awareness walk participants gathered outside a stadium"
+        }
+      },
+      {
+        "_key": "pinksync",
+        "_type": "eventItem",
+        "title": "PinkSync",
+        "date": "2026-10-24",
+        "timeText": "9:00 AM–2:00 PM",
+        "location": "Awardco Headquarters, Lindon",
+        "category": "support",
+        "description": "A patient resource event featuring speakers, practical information, and valuable resources.",
+        "link": "https://www.pinksync.org/registration-pages/register",
+        "image": {
+          "_type": "legacyImage",
+          "src": "/images/event-pinksync-640.webp",
+          "alt": "People visiting a pink community resource fair"
+        }
+      },
+      {
+        "_key": "runtastic-thankful",
+        "_type": "eventItem",
+        "title": "Runtastic THANKFUL",
+        "date": "2026-11-26",
+        "timeText": "Half starts 7:45 AM",
+        "location": "Thanksgiving Point, Lehi",
+        "category": "community",
+        "categoryLabel": "Run / Walk",
+        "description": "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.",
+        "link": "https://runtasticevents.com/races/thankful/",
+        "image": {
+          "_type": "legacyImage",
+          "src": "/images/event-thankful-640.webp",
+          "alt": "Families running together through an autumn landscape at Thanksgiving Point"
+        }
+      },
+      {
+        "_key": "runtastic-nebo",
+        "_type": "eventItem",
+        "title": "Runtastic NEBO",
+        "date": "2026-08-29",
+        "category": "community",
+        "categoryLabel": "Run / Walk",
+        "description": "A marathon, half marathon, 10K, and 5K through Payson Canyon, finishing at Memorial Park in Payson."
+      },
+      {
+        "_key": "spring-wellness-fair",
+        "_type": "eventItem",
+        "title": "Spring Wellness Fair",
+        "date": "2026-04-19",
+        "category": "community",
+        "description": "Screenings, demos, and provider Q&A across three campuses."
+      },
+      {
+        "_key": "clinical-trials-open-house",
+        "_type": "eventItem",
+        "title": "Clinical Trials Open House",
+        "date": "2026-03-08",
+        "category": "support",
+        "description": "Learn how clinical trials work and what's currently enrolling at UCS."
+      },
+      {
+        "_key": "heart-to-heart-survivor-brunch",
+        "_type": "eventItem",
+        "title": "Heart-to-Heart Survivor Brunch",
+        "date": "2026-02-14",
+        "category": "community",
+        "description": "A morning of stories, laughter, and brunch with our survivor community."
+      },
+      {
+        "_key": "new-year-new-conversations",
+        "_type": "eventItem",
+        "title": "New Year, New Conversations",
+        "date": "2026-01-25",
+        "category": "support",
+        "description": "A panel discussion on goal-setting through and beyond cancer treatment."
+      }
+    ]
   },
   "index.html": {
     "title": "Utah Cancer Specialists",

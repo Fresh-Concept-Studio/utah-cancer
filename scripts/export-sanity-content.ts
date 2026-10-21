@@ -55,8 +55,8 @@ addRecords('newsArticle', newsPosts.map(({contentHtml, ...item}) => ({...item, h
 addRecords('resourcePage', resourcePages)
 
 for (const [path, value] of Object.entries<any>(pages)) {
-  const {title, description, ...settings} = value
-  docs.push(normalize({_id: `page-${safeId(path)}`, _type: 'page', path, title, description, settings}))
+  const {title, description, events, ...settings} = value
+  docs.push(normalize({_id: `page-${safeId(path)}`, _type: 'page', path, title, description, ...(events ? {events} : {}), settings}))
 }
 for (const [key, html] of Object.entries(sharedContent)) {
   docs.push({_id: `sharedContent-${safeId(key)}`, _type: 'sharedContent', key, title: key.replaceAll('-', ' '), html})

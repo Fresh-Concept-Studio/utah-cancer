@@ -12,5 +12,7 @@ export function convert(value: any): any {
     .filter(([key]) => !key.startsWith('_') && key !== 'asset')
     .map(([key, item]) => [key, convert(item)]))
   if (value._type === 'legacyImage') converted.src = uploadedImageUrl(value.asset) || converted.src
+  // Native image fields (event photos) carry crop and hotspot beside the asset.
+  if (value._type === 'image' && value.asset) converted.src = uploadedImageUrl(value)
   return converted
 }

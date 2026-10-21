@@ -290,57 +290,99 @@ test('clinic appointment links call that clinic and event shares use the publish
 });
 
 test('events page keeps every editor field from the CMS page record', () => {
-  const template = fs.readFileSync('src/views/events-index.astro', 'utf8');
-  const used = new Set([...template.matchAll(/edit\.(?:text|image|imageAlt|number)\("([^"]+)"/g)].map(match => match[1]));
+  // The template and the original-slot mapping in src/lib/events.ts read the page's keys.
+  const source = ['src/views/events-index.astro', 'src/lib/events.ts'].map(file => fs.readFileSync(file, 'utf8')).join('\n');
+  const used = new Set([...source.matchAll(/["']((?:text|link|image)-[a-z0-9-]+)["']/g)].map(match => match[1]));
+  // Hero numbers are now counted from the events themselves; their labels stay editable.
+  const computed = new Set(['text-c1dfd96eea', 'text-1b64538924', 'text-da4b9237ba']);
   const record = JSON.parse(fs.readFileSync('src/data/page-content.json', 'utf8'))['events-index'];
   const stored = [...record.editorContent, ...record.editorImages].map(item => item.key || item._key);
-  assert.deepEqual(stored.filter(key => !used.has(key)), [], 'editor keys no longer read by the template');
-  assert.deepEqual([...used].filter(key => !stored.includes(key)), [], 'template keys missing from the page record');
+  assert.deepEqual(stored.filter(key => !used.has(key) && !computed.has(key)), [], 'editor keys no longer read');
+  const template = fs.readFileSync('src/views/events-index.astro', 'utf8');
+  const templateKeys = [...template.matchAll(/edit\.(?:text|image|imageAlt|number)\("([^"]+)"/g)].map(match => match[1]);
+  assert.deepEqual(templateKeys.filter(key => !stored.includes(key)), [], 'template keys missing from the page record');
 });
 
-test('events page splits Upcoming and Recently Past by dated cards with working filter markup', () => {
+test('events page has Upcoming and Past tabs split by date, with filters and empty states', () => {
   const $ = pages.get('events/index.html');
   const isoDate = /^\d{4}-\d{2}-\d{2}$/;
   const today = $('.events-list').attr('data-events-today');
   assert.match(today, isoDate, 'build date for the Upcoming/Past split');
 
+  const tabs = $('[role="tablist"] [role="tab"]').toArray();
+  assert.deepEqual(tabs.map(tab => $(tab).attr('aria-controls')), ['events-panel-upcoming', 'events-panel-past']);
+  assert.equal($(tabs[0]).attr('aria-selected'), 'true');
+  assert.equal($(tabs[1]).attr('aria-selected'), 'false');
+  for (const tab of tabs) {
+    const panel = $(`#${$(tab).attr('aria-controls')}`);
+    assert.equal(panel.attr('role'), 'tabpanel');
+    assert.equal(panel.attr('aria-labelledby'), $(tab).attr('id'));
+  }
+  assert.equal($('#events-panel-upcoming').is('[hidden]'), false, 'Upcoming is the default tab');
+  assert.equal($('#events-panel-past').is('[hidden]'), true);
+
   const filters = $('#events-filters .event-filter').toArray().map(button => $(button).attr('data-filter'));
   assert.deepEqual(filters, ['all', 'support', 'community', 'fundraiser']);
-  assert.equal($('#events-filters .event-filter.active').attr('data-filter'), 'all');
-  assert.equal($('#events-grid').length, 1);
-  assert.equal($('#events-empty').length, 1);
+  for (const panel of ['#events-panel-upcoming', '#events-panel-past']) {
+    assert.equal($(`${panel} [data-empty="none"]`).length, 1, `${panel}: empty state`);
+    assert.equal($(`${panel} [data-empty="filter"]`).length, 1, `${panel}: no-match state`);
+  }
 
   const upcoming = $('#events-grid .event-card').toArray();
-  const recent = $('#past-events-recent .past-event-card--photo').toArray();
-  assert.ok(upcoming.length + recent.length > 0, 'events are rendered');
+  const upcomingDates = upcoming.map(card => $(card).attr('data-event-date')).filter(Boolean);
+  assert.deepEqual([...upcomingDates].sort(), upcomingDates, 'Upcoming is soonest first');
   for (const card of upcoming) {
     const date = $(card).attr('data-event-date');
-    assert.match(date, isoDate, `${$(card).find('.event-card-title').text()}: data-event-date`);
-    assert.ok(date >= today, `${date} is past but still listed as upcoming`);
+    if (date) {
+      assert.match(date, isoDate);
+      assert.ok(date >= today, `${date} has passed but is listed as upcoming`);
+    }
     assert.ok(filters.includes($(card).attr('data-cat')), `${date}: filter category`);
   }
-  assert.equal($('#events-empty').is('[hidden]'), upcoming.length > 0, 'empty state shows only when nothing is upcoming');
+  assert.equal($('#events-panel-upcoming [data-empty="none"]').is('[hidden]'), upcoming.length > 0);
 
-  const recentDates = recent.map(card => $(card).attr('data-event-date'));
-  assert.deepEqual([...recentDates].sort().reverse(), recentDates, 'Recently Past is newest first');
-  for (const card of recent) {
+  const pastCards = $('#past-events-grid .past-event-card').toArray();
+  const shownPast = pastCards.filter(card => !$(card).is('[hidden]'));
+  const pastDates = shownPast.map(card => $(card).attr('data-event-date')).filter(Boolean);
+  assert.deepEqual([...pastDates].sort().reverse(), pastDates, 'Past is most recent first');
+  for (const card of pastCards) {
     const date = $(card).attr('data-event-date');
-    assert.match(date, isoDate);
-    assert.ok($(card).find('.past-event-media img[src]').length, `${date}: photo`);
-    assert.ok($(card).find('.past-event-title').text().trim(), `${date}: title`);
-    assert.equal($(card).is('[hidden]'), date >= today, `${date}: shown in Recently Past only once it has passed`);
+    if (date) assert.equal($(card).is('[hidden]'), date >= today, `${date}: in Past only once it has passed`);
+    assert.ok($(card).find('.past-event-media').length, 'past card has a photo or date tile');
+    assert.ok($(card).find('.past-event-title').text().trim(), 'past card title');
   }
-  // Every upcoming card has a hidden past counterpart the browser can reveal after the build.
-  const recentIds = new Set(recent.map(card => $(card).attr('data-event-id')));
-  for (const card of upcoming) assert.ok(recentIds.has($(card).attr('data-event-id')), $(card).attr('data-event-id'));
-  assert.equal($('#past-events-recent').is('[hidden]'), !recent.some(card => !$(card).is('[hidden]')));
+  assert.equal($('#events-panel-past [data-empty="none"]').is('[hidden]'), shownPast.length > 0);
+  // Every upcoming card has a hidden Past counterpart the browser can reveal after the build.
+  const pastIds = new Set(pastCards.map(card => $(card).attr('data-event-id')));
+  for (const card of upcoming) assert.ok(pastIds.has($(card).attr('data-event-id')), $(card).attr('data-event-id'));
 
-  const featured = $('.featured-event');
-  assert.equal(featured.length, 1);
-  const featuredDate = featured.attr('data-event-date');
-  if (featuredDate) {
-    assert.match(featuredDate, isoDate);
-    assert.equal(featured.is('[hidden]'), featuredDate < today, 'featured event hides once its date has passed');
+  const featured = $('.featured-event-card').toArray();
+  assert.ok(featured.filter(card => !$(card).is('[hidden]')).length <= 1, 'one featured event at most');
+  assert.equal($('.featured-event').is('[hidden]'), upcoming.length === 0, 'featured block hides when nothing is upcoming');
+  for (const card of featured) {
+    const date = $(card).attr('data-event-date');
+    if (date) assert.ok(date >= today, `featured candidate ${date} has passed`);
   }
-  assert.ok($('.past-events-grid:not(.past-events-grid--recent) .past-event-card').length > 0, 'older past events remain');
+});
+
+test('homepage shows only upcoming events from the Events page', () => {
+  const $ = pages.get('index.html');
+  const events = pages.get('events/index.html');
+  const today = events('.events-list').attr('data-events-today');
+  const upcomingIds = events('#events-grid .event-card').toArray().map(card => events(card).attr('id'));
+  const items = $('#home-events-grid [data-event-id]').toArray();
+  for (const item of items) {
+    const date = $(item).attr('data-event-date');
+    if (date) assert.ok(date >= today, `homepage lists past event ${date}`);
+    assert.ok(upcomingIds.includes($(item).attr('data-event-id')), `${$(item).attr('data-event-id')} is not upcoming on the Events page`);
+    assert.match($(item).attr('href'), new RegExp(`/events/#${$(item).attr('data-event-id')}$`));
+  }
+  const shownFeature = $('#home-events-grid .event-feature').toArray().filter(item => !$(item).is('[hidden]'));
+  const shownMinis = $('#home-events-grid .event-mini').toArray().filter(item => !$(item).is('[hidden]'));
+  assert.ok(shownFeature.length <= 1);
+  assert.ok(shownMinis.length <= 3);
+  assert.equal($('#home-events-grid').is('[hidden]'), upcomingIds.length === 0);
+  assert.equal($('#home-events-empty').is('[hidden]'), upcomingIds.length > 0);
+  const miniDates = shownMinis.map(item => $(item).attr('data-event-date')).filter(Boolean);
+  assert.deepEqual([...miniDates].sort(), miniDates, 'soonest first');
 });

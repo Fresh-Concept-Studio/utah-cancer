@@ -63,3 +63,19 @@ export function formatEventDate(eventKey: string): string {
   const [year, month, day] = eventKey.split('-').map(Number);
   return `${MONTH_NAMES[month - 1]} ${day}, ${year}`;
 }
+
+const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+/** Pieces for calendar tiles and labels: { month: "OCT", short: "Oct", day: "24", year: "2026", weekday: "Saturday" }. */
+export function eventDateParts(eventKey: string) {
+  const [year, month, day] = eventKey.split('-').map(Number);
+  const name = MONTH_NAMES[month - 1];
+  return {
+    month: name.slice(0, 3).toUpperCase(),
+    short: name.slice(0, 3),
+    name,
+    day: String(day),
+    year: String(year),
+    weekday: WEEKDAYS[new Date(Date.UTC(year, month - 1, day)).getUTCDay()],
+  };
+}

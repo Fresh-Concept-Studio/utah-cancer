@@ -45,7 +45,8 @@ async function loadContent() {
       featuredPhoto{..., "asset": asset{..., "asset": asset->{url}}},
       heroPhoto{..., "asset": asset{..., "asset": asset->{url}}},
       leadershipGroups[]{..., cards[]{..., "profile": profile->{"type": _type,slug}, photo{..., "asset": asset{..., "asset": asset->{url}}}}},
-      mediaHighlights[]{..., photo{..., "asset": asset{..., "asset": asset->{url}}}}
+      mediaHighlights[]{..., photo{..., "asset": asset{..., "asset": asset->{url}}}},
+      events[]{..., image{..., "asset": asset{..., "asset": asset->{url}}}, photos[]{..., "asset": asset->{url}}}
     }`)
 
     if (!docs.length) throw new Error('Sanity returned no published content')
@@ -54,7 +55,7 @@ async function loadContent() {
       type(name).map((doc) => [doc[key], valueKey ? doc[valueKey] : Object.fromEntries(Object.entries(doc).filter(([field]) => field !== key))]),
     )
     const pageDocs = type('page')
-    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, jobs, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, jobs, ...settings}]))
+    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, jobs, events, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, jobs, events, ...settings}]))
     const newsPosts = type('newsArticle').map(({html, featuredPhoto, ...post}) => ({...post, featuredImage: featuredPhoto?.src || post.featuredImage, featuredAlt: featuredPhoto?.alt ?? post.featuredAlt, contentHtml: html}))
     const settings = type('siteSettings')[0]
     return {
