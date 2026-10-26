@@ -5,6 +5,8 @@ export interface PageData {
   title: string;
   jobs?: {title: string; location: string; schedule: string; status: string; summary: string; responsibilities: string[]; qualifications: string[]}[];
   editorContent?: {key?: string; _key?: string; value: string}[];
+  /** Events page list (eventItem). See src/lib/events.ts. */
+  events?: import('./events').EventItem[];
   editorImages?: {key?: string; _key?: string; image: {src: string; alt: string}}[];
   description?: string;
   bodyClass?: string;

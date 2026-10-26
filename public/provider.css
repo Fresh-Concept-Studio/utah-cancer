@@ -3417,6 +3417,269 @@
   opacity: 0.7;
 }
 
+/* Upcoming / Past tabs */
+#events,
+.events-list .event-card,
+.events-list .past-event-card {
+  scroll-margin-top: 100px; /* clear the fixed header when opened from a link */
+}
+
+.events-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px 32px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.events-tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #eef2f4;
+}
+
+.events-tab {
+  padding: 10px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: #00476b;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+}
+
+.events-tab:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.events-tab[aria-selected="true"] {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 71, 107, 0.12);
+}
+
+.events-tab:focus-visible,
+.event-filter:focus-visible,
+.past-event-media-btn:focus-visible,
+.event-gallery-close:focus-visible {
+  outline: 2px solid #477080;
+  outline-offset: 2px;
+}
+
+.events-panel:focus-visible {
+  outline: 2px solid #477080;
+  outline-offset: 8px;
+  border-radius: 8px;
+}
+
+.events-panel > .events-list-title {
+  margin: 0 0 24px;
+}
+
+#events-panel-past .past-events-header {
+  margin-bottom: 24px;
+}
+
+/* Past cards: a photo (or a date tile when there is none), then date, title, and summary. */
+.past-events-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.past-event-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.past-event-media {
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #dfe8ec;
+}
+
+.past-event-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.past-event-media--date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #00476b;
+  color: #fff;
+}
+
+.past-event-media--date .event-card-day {
+  font-size: 48px;
+}
+
+.past-event-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 22px 22px;
+}
+
+.past-event-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.past-event-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.past-event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.past-event-media-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid #d6d1cc;
+  border-radius: 999px;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: #00476b;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.past-event-media-btn:hover {
+  border-color: #477080;
+  color: #477080;
+}
+
+.past-event-media-btn .material-symbols-rounded {
+  font-size: 18px;
+}
+
+/* Photo and video viewer */
+.event-gallery {
+  width: min(960px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  margin: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+.event-gallery::backdrop {
+  background: rgba(0, 25, 40, 0.75);
+}
+
+.event-gallery-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #fff;
+  border-bottom: 1px solid #e8e4e0;
+}
+
+.event-gallery-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 22px;
+  color: #00476b;
+}
+
+.event-gallery-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #eef2f4;
+  color: #00476b;
+  cursor: pointer;
+}
+
+.event-gallery-close-mark {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.event-gallery-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  margin: 20px 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+}
+
+.event-gallery-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.event-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 20px;
+}
+
+.event-gallery-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.event-gallery-item figcaption {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #333333;
+}
+
+/* Tabs, filters, and the date check toggle [hidden]; keep it ahead of the cards' display rules. */
+.featured-event[hidden],
+.featured-event-card[hidden],
+.calendar-tile[hidden],
+.event-card[hidden],
+.events-panel[hidden],
+.past-event-card[hidden] {
+  display: none;
+}
+
 /* ============================================
    EVENTS NEWSLETTER STRIP
    ============================================ */

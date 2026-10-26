@@ -2,6 +2,42 @@
 import { pageEditor } from '../lib/page-content';
 const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
+import { imageVariant } from '../lib/images';
+import { eventDateParts, formatEventDate, todayKey } from '../lib/event-dates';
+import { EVENT_CATEGORIES, featuredCandidates, isRunWalk, resolveEvents, splitEvents, videoEmbedUrl, type EventImage, type SiteEvent } from '../lib/events';
+
+// Events come from the page's event list in Sanity, or from the original keyed text slots until
+// that list exists (src/lib/events.ts). Each event's date alone decides Upcoming vs Past: it
+// moves to Past the day after its date in Denver. The build decides with today's date; the
+// script at the bottom re-checks in the visitor's browser between rebuilds.
+const today = todayKey();
+const { events, legacyFeatured } = resolveEvents(Astro.props.page);
+const { upcoming, past } = splitEvents(events, today);
+// Every event gets a Past card. Ones still upcoming at build time stay hidden until they pass.
+const pastCards = splitEvents(events, '9999-12-31').past;
+const pastIds = new Set(past.map(event => event.id));
+const featured = featuredCandidates(upcoming, legacyFeatured ? splitEvents([legacyFeatured], today).upcoming : undefined);
+const nextDates = upcoming.map(event => event.date).filter((date): date is string => Boolean(date)).slice(0, 3);
+
+// Uploaded images use the Sanity CDN's sizing; repository images are already sized files.
+const sized = (src: string, width: number, height?: number) => /^https:\/\/cdn\.sanity\.io\//.test(src) ? imageVariant(src, width, height) : src;
+const mainImage = (event: SiteEvent): EventImage | undefined => event.image ?? event.photos[0];
+const dateLabel = (event: SiteEvent) => event.date ? formatEventDate(event.date) : event.dateText ?? '';
+const meta = (event: SiteEvent) => [
+  event.timeText && { icon: 'schedule', text: event.timeText },
+  event.location && { icon: 'location_on', text: event.location },
+].filter((item): item is { icon: string; text: string } => Boolean(item));
+
+const heroTiles = [
+  { size: 'lg', month: edit.text("text-492c5f509c", "SEP"), day: edit.text("text-887309d048", "26"), year: edit.text("text-aee655773d", "2026") },
+  { size: 'md', month: edit.text("text-aa58169fd2", "OCT"), day: edit.text("text-b1d5781111", "10"), year: '' },
+  { size: 'sm', month: edit.text("text-f62ce2aaac", "NOV"), day: edit.text("text-887309d048-1", "26"), year: '' },
+].map((tile, index) => {
+  const date = nextDates[index];
+  const parts = date ? eventDateParts(date) : null;
+  return { ...tile, date, shown: nextDates.length === 0 || Boolean(date), month: parts?.month ?? tile.month, day: parts?.day ?? tile.day, year: tile.size === 'lg' ? parts?.year ?? tile.year : '' };
+});
+const emptyFilter = edit.text("text-84fea1204c", "No events match this filter right now. Check back soon.");
 ---
 <!-- Events Hero -->
   <section class="events-hero">
@@ -12,248 +48,357 @@ import { url } from '../lib/urls';
         <p class="events-hero-desc">{edit.text("text-02275ce911", "From educational workshops to community walks, our events bring patients, families, providers, and supporters together. Stay connected and find something happening near you.")}</p>
         <div class="events-hero-stats">
           <div class="events-stat">
-            <span class="events-stat-num">{edit.text("text-c1dfd96eea", "6")}</span>
+            <span class="events-stat-num" data-stat="upcoming">{upcoming.length}</span>
             <span class="events-stat-label">{edit.text("text-efb2553f9b", "Upcoming this season")}</span>
           </div>
           <div class="events-stat">
-            <span class="events-stat-num">{edit.text("text-1b64538924", "4")}</span>
+            <span class="events-stat-num" data-stat="runwalk">{upcoming.filter(isRunWalk).length}</span>
             <span class="events-stat-label">{edit.text("text-ad664f59f9", "Run / walk events")}</span>
           </div>
           <div class="events-stat">
-            <span class="events-stat-num">{edit.text("text-da4b9237ba", "2")}</span>
+            <span class="events-stat-num" data-stat="support">{upcoming.filter(event => event.category === 'support').length}</span>
             <span class="events-stat-label">{edit.text("text-9638488943", "Patient resource events")}</span>
           </div>
         </div>
       </div>
-      <div class="events-hero-calendar">
-        <div class="calendar-tile calendar-tile--lg">
-          <span class="calendar-month">{edit.text("text-492c5f509c", "SEP")}</span>
-          <span class="calendar-day">{edit.text("text-887309d048", "26")}</span>
-          <span class="calendar-year">{edit.text("text-aee655773d", "2026")}</span>
-        </div>
-        <div class="calendar-tile calendar-tile--md">
-          <span class="calendar-month">{edit.text("text-aa58169fd2", "OCT")}</span>
-          <span class="calendar-day">{edit.text("text-b1d5781111", "10")}</span>
-        </div>
-        <div class="calendar-tile calendar-tile--sm">
-          <span class="calendar-month">{edit.text("text-f62ce2aaac", "NOV")}</span>
-          <span class="calendar-day">{edit.text("text-887309d048-1", "26")}</span>
-        </div>
+      <div class="events-hero-calendar" aria-hidden="true">
+        {heroTiles.map(tile => (
+          <div class={`calendar-tile calendar-tile--${tile.size}`} data-tile-date={tile.date} hidden={!tile.shown}>
+            <span class="calendar-month">{tile.month}</span>
+            <span class="calendar-day">{tile.day}</span>
+            {tile.size === 'lg' && <span class="calendar-year">{tile.year}</span>}
+          </div>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- Featured Event -->
-  <section class="featured-event">
+  <!-- Featured Event: the first candidate that hasn't passed is shown -->
+  <section class="featured-event" hidden={featured.length === 0}>
     <div class="container">
-      <div class="featured-event-card">
-        <div class="featured-event-img">
-          <img src={url(edit.image("image-8ad26086fb", "/images/event-pink-bag-640.webp"))} width="640" height="320" alt={edit.imageAlt("image-8ad26086fb", "People receiving pink resource bags at a community event")} class="featured-event-photo" loading="lazy" decoding="async">
-          <span class="featured-event-pin">{edit.text("text-ae31ad5d6f", "Featured")}</span>
-        </div>
-        <div class="featured-event-body">
-          <span class="event-category event-category--support">{edit.text("text-f14e95f52d", "Patient Resources")}</span>
-          <h2 class="featured-event-title">{edit.text("text-108325cf43", "Pink Bag Event")}</h2>
-          <p class="featured-event-tagline">{edit.text("text-11f8f8c6ad", "A community resource and support event for breast cancer patients and survivors.")}</p>
-          <div class="featured-event-meta">
-            <div class="event-meta-item">
-              <span class="material-symbols-rounded">calendar_today</span>
-              <span>{edit.text("text-aa9721454a", "Saturday, September 26, 2026")}</span>
+      {featured.map((event, index) => {
+        const image = mainImage(event);
+        return (
+          <div class="featured-event-card" data-event-date={event.date ?? undefined} hidden={index > 0}>
+            <div class="featured-event-img">
+              {image && <img src={url(sized(image.src, 1280, 640))} width="640" height="320" alt={image.alt} class="featured-event-photo" loading="lazy" decoding="async">}
+              <span class="featured-event-pin">{edit.text("text-ae31ad5d6f", "Featured")}</span>
             </div>
-            <div class="event-meta-item">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-a7e8f83583", "10:00 AM–1:30 PM · Fashion Place Mall")}</span>
+            <div class="featured-event-body">
+              <span class={`event-category event-category--${event.category}`}>{event.categoryLabel}</span>
+              <h2 class="featured-event-title">{event.title}</h2>
+              {event.description && <p class="featured-event-tagline">{event.description}</p>}
+              <div class="featured-event-meta">
+                <div class="event-meta-item">
+                  <span class="material-symbols-rounded">calendar_today</span>
+                  <span>{event.date ? `${eventDateParts(event.date).weekday}, ${formatEventDate(event.date)}` : event.dateText}</span>
+                </div>
+                {(event.timeText || event.location) && (
+                  <div class="event-meta-item">
+                    <span class="material-symbols-rounded">schedule</span>
+                    <span>{[event.timeText, event.location].filter(Boolean).join(' · ')}</span>
+                  </div>
+                )}
+              </div>
+              <div class="featured-event-actions">
+                {event.link
+                  ? <a href={url(event.link)} class="btn btn--primary" target="_blank" rel="noopener"><span class="material-symbols-rounded">arrow_forward</span>{event.linkLabel ? ` ${event.linkLabel} ` : edit.text("text-9576cd6159", " Event Details ")}</a>
+                  : <a href={`#${event.id}`} class="btn btn--primary"><span class="material-symbols-rounded">arrow_forward</span>{event.linkLabel ? ` ${event.linkLabel} ` : edit.text("text-9576cd6159", " Event Details ")}</a>}
+              </div>
             </div>
           </div>
-          <div class="featured-event-actions">
-            <a href={url(edit.text("link-c975770d3e", "https://www.fashionplace.com/en/events/50851/"))} class="btn btn--primary" target="_blank" rel="noopener">
-              <span class="material-symbols-rounded">arrow_forward</span>{edit.text("text-9576cd6159", " Event Details ")}</a>
-          </div>
-        </div>
-      </div>
+        );
+      })}
     </div>
   </section>
 
-  <!-- Filters + Events Grid -->
-  <section class="events-list">
+  <!-- Upcoming / Past tabs -->
+  <section class="events-list" id="events" data-events-today={today}>
     <div class="container">
-      <div class="events-list-header">
-        <div>
-          <span class="section-label">{edit.text("text-523baab918", "Upcoming")}</span>
-          <h2 class="events-list-title">{edit.text("text-88ff9e7707", "All Upcoming Events")}</h2>
+      <div class="events-toolbar">
+        <div class="events-tabs" role="tablist" aria-label="Events">
+          <button type="button" class="events-tab" role="tab" id="events-tab-upcoming" aria-controls="events-panel-upcoming" aria-selected="true" tabindex="0" data-tab="upcoming">{edit.text("text-523baab918", "Upcoming")}</button>
+          <button type="button" class="events-tab" role="tab" id="events-tab-past" aria-controls="events-panel-past" aria-selected="false" tabindex="-1" data-tab="past">{edit.text("text-events-tab-past", "Past")}</button>
         </div>
-        <div class="events-filters" id="events-filters">
-          <button class="event-filter active" data-filter="all">All</button>
-          <button class="event-filter" data-filter="support">Patient Resources</button>
-          <button class="event-filter" data-filter="community">Community</button>
-          <button class="event-filter" data-filter="fundraiser">Fundraisers</button>
+        <div class="events-filters" id="events-filters" role="group" aria-label="Filter events by category">
+          <button type="button" class="event-filter active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="event-filter" data-filter="support" aria-pressed="false">{EVENT_CATEGORIES.support}</button>
+          <button type="button" class="event-filter" data-filter="community" aria-pressed="false">{EVENT_CATEGORIES.community}</button>
+          <button type="button" class="event-filter" data-filter="fundraiser" aria-pressed="false">Fundraisers</button>
         </div>
       </div>
 
-      <div class="events-grid" id="events-grid">
-
-        <a href={url(edit.text("link-c975770d3e-1", "https://www.fashionplace.com/en/events/50851/"))} class="event-card" data-cat="support" id="pink-bag-event" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-492c5f509c-1", "SEP")}</span>
-            <span class="event-card-day">{edit.text("text-887309d048-2", "26")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-1", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-8ad26086fb-1", "/images/event-pink-bag-640.webp"))} width="640" height="320" alt={edit.imageAlt("image-8ad26086fb-1", "People receiving pink resource bags at a community event")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--support">{edit.text("text-f14e95f52d-1", "Patient Resources")}</span>
-            <h3 class="event-card-title">{edit.text("text-108325cf43-1", "Pink Bag Event")}</h3>
-            <p class="event-card-desc">{edit.text("text-11f8f8c6ad-1", "A community resource and support event for breast cancer patients and survivors.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-a7e8f83583-1", "10:00 AM–1:30 PM · Fashion Place Mall")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-746a0d23a3", "https://utahprostatecancerrun.com/"))} class="event-card" data-cat="fundraiser" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-1", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-b1d5781111-1", "10")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-2", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-4b73894c12", "/images/event-prostate-run-640.webp"))} width="640" height="338" alt={edit.imageAlt("image-4b73894c12", "Runners gathering at a farm for a community prostate cancer run")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--fundraiser">{edit.text("text-12bc9a713f", "Fundraiser")}</span>
-            <h3 class="event-card-title">{edit.text("text-3d7e931962", "Utah Prostate Cancer Run & Walk")}</h3>
-            <p class="event-card-desc">{edit.text("text-bc6a22e715", "A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-d8586c0be0", "Wheeler Historic Farm, Salt Lake City")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-4e3c6d529a", "https://runtasticevents.com/races/haunted-salt-lake-city/"))} class="event-card" data-cat="community" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-2", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-0716d9708d", "17")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-3", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-0d0446a840", "/images/event-haunted-half-640.webp"))} width="640" height="320" alt={edit.imageAlt("image-0d0446a840", "Costumed runners at a fall race in Salt Lake City")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--community">{edit.text("text-58988359c8", "Run / Walk")}</span>
-            <h3 class="event-card-title">{edit.text("text-df0b58f960", "HAUNTED Salt Lake City")}</h3>
-            <p class="event-card-desc">{edit.text("text-d7c56685bd", "A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-77b1c41b42", "Half starts 8:00 AM")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-5ae38a9069", "Sugar House Park")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-6ba352001e", "https://makingstrideswalk.org/saltlakecityut"))} class="event-card" data-cat="fundraiser" id="making-strides" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-3", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-4d134bc072", "24")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-4", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-9c9855db85", "/images/event-making-strides-640.webp"))} width="640" height="400" alt={edit.imageAlt("image-9c9855db85", "Breast cancer awareness walk participants gathered outside a stadium")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--fundraiser">{edit.text("text-12bc9a713f-1", "Fundraiser")}</span>
-            <h3 class="event-card-title">{edit.text("text-deac30791e", "Making Strides Against Breast Cancer Walk")}</h3>
-            <p class="event-card-desc">{edit.text("text-95ff303111", "Walk together to honor survivors, remember loved ones, and support the fight against breast cancer.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-e07c937388", "Time to be announced")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-8a946df913", "America First Field")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-f9d1dba0f0", "https://www.pinksync.org/registration-pages/register"))} class="event-card" data-cat="support" id="pinksync" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-aa58169fd2-4", "OCT")}</span>
-            <span class="event-card-day">{edit.text("text-4d134bc072-1", "24")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-5", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-2e7ef35aa4", "/images/event-pinksync-640.webp"))} width="640" height="351" alt={edit.imageAlt("image-2e7ef35aa4", "People visiting a pink community resource fair")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--support">{edit.text("text-f14e95f52d-2", "Patient Resources")}</span>
-            <h3 class="event-card-title">{edit.text("text-4fad3b9ce6", "PinkSync")}</h3>
-            <p class="event-card-desc">{edit.text("text-35ee5bdd80", "A patient resource event featuring speakers, practical information, and valuable resources.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-2c5dbebcfe", "9:00 AM–2:00 PM")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-49b45386ef", "Awardco Headquarters, Lindon")}</span>
-            </div>
-          </div>
-        </a>
-
-        <a href={url(edit.text("link-82d6199a29", "https://runtasticevents.com/races/thankful/"))} class="event-card" data-cat="community" target="_blank" rel="noopener">
-          <div class="event-card-date">
-            <span class="event-card-month">{edit.text("text-f62ce2aaac-1", "NOV")}</span>
-            <span class="event-card-day">{edit.text("text-887309d048-3", "26")}</span>
-            <span class="event-card-year">{edit.text("text-aee655773d-6", "2026")}</span>
-          </div>
-          <span class="event-card-media"><img src={url(edit.image("image-2b7587dd52", "/images/event-thankful-640.webp"))} width="640" height="427" alt={edit.imageAlt("image-2b7587dd52", "Families running together through an autumn landscape at Thanksgiving Point")} loading="lazy" decoding="async"></span>
-          <div class="event-card-body">
-            <span class="event-category event-category--community">{edit.text("text-58988359c8-1", "Run / Walk")}</span>
-            <h3 class="event-card-title">{edit.text("text-c3b5295cf5", "Runtastic THANKFUL")}</h3>
-            <p class="event-card-desc">{edit.text("text-d39d8a2513", "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.")}</p>
-            <div class="event-card-meta">
-              <span class="material-symbols-rounded">schedule</span>
-              <span>{edit.text("text-c569d6528c", "Half starts 7:45 AM")}</span>
-              <span class="event-card-meta-dot">·</span>
-              <span class="material-symbols-rounded">location_on</span>
-              <span>{edit.text("text-1c6fd50226", "Thanksgiving Point, Lehi")}</span>
-            </div>
-          </div>
-        </a>
-
+      <div class="events-panel" role="tabpanel" id="events-panel-upcoming" aria-labelledby="events-tab-upcoming" tabindex="0" data-panel="upcoming">
+        <h2 class="events-list-title">{edit.text("text-88ff9e7707", "All Upcoming Events")}</h2>
+        <div class="events-grid" id="events-grid">
+          {upcoming.map(event => {
+            const Card = event.link ? 'a' : 'article';
+            const image = mainImage(event);
+            const parts = event.date ? eventDateParts(event.date) : null;
+            return (
+              <Card href={event.link ? url(event.link) : undefined} target={event.link ? '_blank' : undefined} rel={event.link ? 'noopener' : undefined} class="event-card" data-cat={event.category} data-event-id={event.id} data-event-date={event.date ?? undefined} data-runwalk={isRunWalk(event) ? '' : undefined} id={event.id}>
+                <div class="event-card-date">
+                  <span class="event-card-month">{parts?.month ?? 'DATE'}</span>
+                  <span class="event-card-day">{parts?.day ?? 'TBA'}</span>
+                  {parts && <span class="event-card-year">{parts.year}</span>}
+                </div>
+                {image && <span class="event-card-media"><img src={url(sized(image.src, 640, 400))} width="640" height="400" alt={image.alt} loading="lazy" decoding="async"></span>}
+                <div class="event-card-body">
+                  <span class={`event-category event-category--${event.category}`}>{event.categoryLabel}</span>
+                  <h3 class="event-card-title">{event.title}</h3>
+                  {event.description && <p class="event-card-desc">{event.description}</p>}
+                  {meta(event).length > 0 && (
+                    <div class="event-card-meta">
+                      {meta(event).map((item, index) => (
+                        <>
+                          {index > 0 && <span class="event-card-meta-dot">·</span>}
+                          <span class="material-symbols-rounded">{item.icon}</span>
+                          <span>{item.text}</span>
+                        </>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+        <div class="events-empty" data-empty="none" hidden={upcoming.length > 0}>
+          <span class="material-symbols-rounded">event_busy</span>
+          <p>{edit.text("text-events-empty-upcoming", "No upcoming events right now — check back soon.")}</p>
+        </div>
+        <div class="events-empty" data-empty="filter" hidden>
+          <span class="material-symbols-rounded">event_busy</span>
+          <p>{emptyFilter}</p>
+        </div>
       </div>
 
-      <div class="events-empty" id="events-empty" hidden="">
-        <span class="material-symbols-rounded">event_busy</span>
-        <p>{edit.text("text-84fea1204c", "No events match this filter right now. Check back soon.")}</p>
+      <div class="events-panel" role="tabpanel" id="events-panel-past" aria-labelledby="events-tab-past" tabindex="0" data-panel="past" hidden>
+        <div class="past-events-header">
+          <span class="section-label">{edit.text("text-bf8ad78370", "Recently Past")}</span>
+          <h2 class="past-events-title">{edit.text("text-0873c26971", "Catch up on what we've been up to")}</h2>
+        </div>
+        <div class="past-events-grid" id="past-events-grid">
+          {pastCards.map(event => {
+            const image = mainImage(event);
+            const parts = event.date ? eventDateParts(event.date) : null;
+            const embed = videoEmbedUrl(event.videoUrl);
+            const hasMedia = event.photos.length > 0 || Boolean(event.videoUrl);
+            const isPastNow = pastIds.has(event.id);
+            return (
+              <article class="past-event-card" data-cat={event.category} data-event-id={event.id} data-event-date={event.date ?? undefined} id={isPastNow ? event.id : undefined} hidden={!isPastNow}>
+                {image
+                  ? <span class="past-event-media"><img src={url(sized(image.src, 640, 360))} width="640" height="360" alt={image.alt} loading="lazy" decoding="async"></span>
+                  : <span class="past-event-media past-event-media--date" aria-hidden="true">
+                      <span class="event-card-month">{parts?.month ?? ''}</span>
+                      <span class="event-card-day">{parts?.day ?? ''}</span>
+                      <span class="event-card-year">{parts?.year ?? ''}</span>
+                    </span>}
+                <div class="past-event-body">
+                  <span class="past-event-date">{dateLabel(event)}</span>
+                  <h3 class="past-event-title">{event.link ? <a href={url(event.link)} target="_blank" rel="noopener">{event.title}</a> : event.title}</h3>
+                  {event.description && <p class="past-event-desc">{event.description}</p>}
+                  {hasMedia && (
+                    <div class="past-event-actions">
+                      {event.photos.length > 0 && (
+                        <button type="button" class="past-event-media-btn" data-gallery={`gallery-${event.id}`}>
+                          <span class="material-symbols-rounded" aria-hidden="true">visibility</span>
+                          {event.photos.length === 1 ? 'View photo' : `View ${event.photos.length} photos`}
+                        </button>
+                      )}
+                      {event.videoUrl && (embed
+                        ? <button type="button" class="past-event-media-btn" data-gallery={`gallery-${event.id}`} data-video>
+                            <span class="material-symbols-rounded" aria-hidden="true">play_circle</span>Watch video
+                          </button>
+                        : <a class="past-event-media-btn" href={event.videoUrl} target="_blank" rel="noopener">
+                            <span class="material-symbols-rounded" aria-hidden="true">play_circle</span>Watch video
+                          </a>)}
+                    </div>
+                  )}
+                </div>
+                {hasMedia && (event.photos.length > 0 || embed) && (
+                  <dialog class="event-gallery" id={`gallery-${event.id}`} aria-label={`${event.title}: photos and video`}>
+                    <div class="event-gallery-header">
+                      <h3 class="event-gallery-title">{event.title}</h3>
+                      <button type="button" class="event-gallery-close" data-close aria-label="Close">
+                        <span class="event-gallery-close-mark" aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    {embed && (
+                      <div class="event-gallery-video">
+                        <iframe data-src={embed} title={`${event.title} video`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>
+                      </div>
+                    )}
+                    {event.photos.length > 0 && (
+                      <div class="event-gallery-grid">
+                        {event.photos.map(photo => (
+                          <figure class="event-gallery-item">
+                            <a href={url(sized(photo.src, 1600))} target="_blank" rel="noopener"><img src={url(sized(photo.src, 800))} alt={photo.alt} loading="lazy" decoding="async"></a>
+                            {photo.caption && <figcaption>{photo.caption}</figcaption>}
+                          </figure>
+                        ))}
+                      </div>
+                    )}
+                  </dialog>
+                )}
+              </article>
+            );
+          })}
+        </div>
+        <div class="events-empty" data-empty="none" hidden={past.length > 0}>
+          <span class="material-symbols-rounded">event_busy</span>
+          <p>{edit.text("text-events-empty-past", "No past events yet.")}</p>
+        </div>
+        <div class="events-empty" data-empty="filter" hidden>
+          <span class="material-symbols-rounded">event_busy</span>
+          <p>{emptyFilter}</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Past Events -->
-  <section class="past-events">
-    <div class="container">
-      <div class="past-events-header">
-        <span class="section-label">{edit.text("text-bf8ad78370", "Recently Past")}</span>
-        <h2 class="past-events-title">{edit.text("text-0873c26971", "Catch up on what we've been up to")}</h2>
-      </div>
-      <div class="past-events-grid">
-        <article class="past-event-card">
-          <span class="past-event-date">{edit.text("text-d9fd4d8c32", "August 29, 2026")}</span>
-          <h3 class="past-event-title">{edit.text("text-b48c7fa62c", "Runtastic NEBO")}</h3>
-          <p class="past-event-desc">{edit.text("text-3ddcbbc836", "A marathon, half marathon, 10K, and 5K through Payson Canyon, finishing at Memorial Park in Payson.")}</p>
-        </article>
-        <article class="past-event-card">
-          <span class="past-event-date">{edit.text("text-7e1c4f6044", "April 19, 2026")}</span>
-          <h3 class="past-event-title">{edit.text("text-5e865727e6", "Spring Wellness Fair")}</h3>
-          <p class="past-event-desc">{edit.text("text-9f17e8677c", "Screenings, demos, and provider Q&A across three campuses.")}</p>
-        </article>
-        <article class="past-event-card">
-          <span class="past-event-date">{edit.text("text-796a240905", "March 8, 2026")}</span>
-          <h3 class="past-event-title">{edit.text("text-00c0805001", "Clinical Trials Open House")}</h3>
-          <p class="past-event-desc">{edit.text("text-f9300dddc8", "Learn how clinical trials work and what's currently enrolling at UCS.")}</p>
-        </article>
-        <article class="past-event-card">
-          <span class="past-event-date">{edit.text("text-0b779b3b02", "February 14, 2026")}</span>
-          <h3 class="past-event-title">{edit.text("text-6a7fa596cc", "Heart-to-Heart Survivor Brunch")}</h3>
-          <p class="past-event-desc">{edit.text("text-8482188db2", "A morning of stories, laughter, and brunch with our survivor community.")}</p>
-        </article>
-        <article class="past-event-card">
-          <span class="past-event-date">{edit.text("text-bf1b1913ea", "January 25, 2026")}</span>
-          <h3 class="past-event-title">{edit.text("text-2c3be83480", "New Year, New Conversations")}</h3>
-          <p class="past-event-desc">{edit.text("text-029c48b73f", "A panel discussion on goal-setting through and beyond cancer treatment.")}</p>
-        </article>
-      </div>
-    </div>
-  </section>
+<script>
+  import { eventDateParts, isEventPast, todayKey } from '../lib/event-dates';
+
+  // Re-check the build's Upcoming/Past split against the visitor's current Denver date, so an
+  // event moves to Past the day after it happens even before the next site rebuild. Events only
+  // move from Upcoming to Past here; the build stays authoritative for what is already past.
+  const today = todayKey();
+  const grid = document.getElementById('events-grid');
+  const pastGrid = document.getElementById('past-events-grid');
+
+  for (const card of grid?.querySelectorAll<HTMLElement>('.event-card[data-event-date]') ?? []) {
+    if (!isEventPast(card.dataset.eventDate, today)) continue;
+    const pastCard = pastGrid?.querySelector<HTMLElement>(`.past-event-card[data-event-id="${card.dataset.eventId}"]`);
+    if (pastCard) { pastCard.hidden = false; pastCard.id = card.id; }
+    card.remove(); // removed, not hidden, so filters can never show it again
+  }
+
+  // Featured: the first candidate that hasn't passed.
+  const featuredSection = document.querySelector<HTMLElement>('.featured-event');
+  if (featuredSection) {
+    const candidates = [...featuredSection.querySelectorAll<HTMLElement>('.featured-event-card')];
+    const shown = candidates.find(card => !isEventPast(card.dataset.eventDate, today));
+    candidates.forEach(card => { card.hidden = card !== shown; });
+    featuredSection.hidden = !shown;
+  }
+
+  // Hero numbers and calendar tiles follow the remaining upcoming events.
+  const remaining = [...(grid?.querySelectorAll<HTMLElement>('.event-card') ?? [])];
+  const stats: Record<string, number> = {
+    upcoming: remaining.length,
+    runwalk: remaining.filter(card => card.hasAttribute('data-runwalk')).length,
+    support: remaining.filter(card => card.dataset.cat === 'support').length,
+  };
+  document.querySelectorAll<HTMLElement>('[data-stat]').forEach(stat => { stat.textContent = String(stats[stat.dataset.stat || ''] ?? stat.textContent); });
+  const nextDates = remaining.map(card => card.dataset.eventDate).filter((date): date is string => Boolean(date)).slice(0, 3);
+  const tiles = [...document.querySelectorAll<HTMLElement>('.events-hero-calendar .calendar-tile')];
+  if (nextDates.length && tiles.some(tile => tile.dataset.tileDate && isEventPast(tile.dataset.tileDate, today))) {
+    tiles.forEach((tile, index) => {
+      const date = nextDates[index];
+      tile.hidden = !date;
+      if (!date) return;
+      const parts = eventDateParts(date);
+      tile.dataset.tileDate = date;
+      tile.querySelector('.calendar-month')!.textContent = parts.month;
+      tile.querySelector('.calendar-day')!.textContent = parts.day;
+      const year = tile.querySelector('.calendar-year');
+      if (year) year.textContent = parts.year;
+    });
+  }
+
+  // Tabs (Upcoming / Past) with arrow-key support. #past opens Past.
+  const tabs = [...document.querySelectorAll<HTMLButtonElement>('.events-tab')];
+  const panels = [...document.querySelectorAll<HTMLElement>('.events-panel')];
+  const filters = [...document.querySelectorAll<HTMLButtonElement>('#events-filters .event-filter')];
+  let activeFilter = 'all';
+
+  function applyFilter() {
+    for (const panel of panels) {
+      // Moved and not-yet-past cards were removed above, so every card left belongs to this tab.
+      const eligible = [...panel.querySelectorAll<HTMLElement>('.event-card, .past-event-card')];
+      let visible = 0;
+      for (const card of eligible) {
+        const show = activeFilter === 'all' || card.dataset.cat === activeFilter;
+        card.hidden = !show;
+        if (show) visible++;
+      }
+      panel.querySelector<HTMLElement>('[data-empty="none"]')!.hidden = eligible.length > 0;
+      panel.querySelector<HTMLElement>('[data-empty="filter"]')!.hidden = eligible.length === 0 || visible > 0;
+    }
+  }
+
+  function selectTab(name: string, focus = false) {
+    for (const tab of tabs) {
+      const selected = tab.dataset.tab === name;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      if (selected && focus) tab.focus();
+    }
+    for (const panel of panels) panel.hidden = panel.dataset.panel !== name;
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+      selectTab(tab.dataset.tab!);
+      history.replaceState(null, '', tab.dataset.tab === 'past' ? '#past' : location.pathname + location.search);
+    });
+    tab.addEventListener('keydown', event => {
+      const next = { ArrowRight: index + 1, ArrowLeft: index - 1, Home: 0, End: tabs.length - 1 }[event.key];
+      if (next === undefined) return;
+      event.preventDefault();
+      tabs[(next + tabs.length) % tabs.length].click();
+      tabs[(next + tabs.length) % tabs.length].focus();
+    });
+  });
+
+  filters.forEach(button => {
+    button.addEventListener('click', () => {
+      activeFilter = button.dataset.filter || 'all';
+      filters.forEach(other => {
+        other.classList.toggle('active', other === button);
+        other.setAttribute('aria-pressed', String(other === button));
+      });
+      applyFilter();
+    });
+  });
+
+  // Past cards that are still upcoming stay out of the Past tab entirely.
+  pastGrid?.querySelectorAll<HTMLElement>('.past-event-card').forEach(card => { if (card.hidden) card.remove(); });
+  applyFilter();
+
+  function openFromHash() {
+    const hash = decodeURIComponent(location.hash.slice(1));
+    if (!hash) return;
+    if (hash === 'past' || hash === 'upcoming') {
+      selectTab(hash);
+      if (hash === 'past') document.getElementById('events')?.scrollIntoView();
+      return;
+    }
+    const target = document.getElementById(hash);
+    const panel = target?.closest<HTMLElement>('.events-panel');
+    if (target && panel) {
+      selectTab(panel.dataset.panel!);
+      target.scrollIntoView();
+    }
+  }
+  openFromHash();
+  window.addEventListener('hashchange', openFromHash);
+
+  // Photo and video viewer.
+  document.querySelectorAll<HTMLElement>('[data-gallery]').forEach(button => {
+    button.addEventListener('click', () => {
+      const dialog = document.getElementById(button.dataset.gallery!) as HTMLDialogElement | null;
+      if (!dialog) return;
+      dialog.querySelectorAll<HTMLIFrameElement>('iframe[data-src]').forEach(frame => { frame.src = frame.dataset.src!; });
+      dialog.showModal();
+      dialog.querySelector(button.hasAttribute('data-video') ? '.event-gallery-video' : '.event-gallery-grid')?.scrollIntoView({block: 'nearest'});
+    });
+  });
+  document.querySelectorAll<HTMLDialogElement>('dialog.event-gallery').forEach(dialog => {
+    dialog.querySelector('[data-close]')?.addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    // Stop playback when closed.
+    dialog.addEventListener('close', () => dialog.querySelectorAll('iframe').forEach(frame => frame.removeAttribute('src')));
+  });
+</script>
