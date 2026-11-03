@@ -7,6 +7,8 @@ export interface PageData {
   editorContent?: {key?: string; _key?: string; value: string}[];
   /** Events page list (eventItem). See src/lib/events.ts. */
   events?: import('./events').EventItem[];
+  /** Patient Resources: Sanity file URL for the accepted insurance plans PDF. */
+  insurancePlansPdfUrl?: string;
   editorImages?: {key?: string; _key?: string; image: {src: string; alt: string}}[];
   description?: string;
   bodyClass?: string;

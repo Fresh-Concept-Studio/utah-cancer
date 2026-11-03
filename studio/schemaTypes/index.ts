@@ -245,7 +245,7 @@ const pageImage = defineType({
 const page = defineType({
   name: 'page', title: 'Website page', type: 'document',
   components: {input: EventListingsInput},
-  groups: [{name: 'content', title: 'Page content', default: true}, {name: 'images', title: 'Images'}, {name: 'seo', title: 'Search appearance'}, {name: 'settings', title: 'Page options'}, {name: 'jobs', title: 'Job openings', hidden: ({document}: any) => document?.settings?.component !== 'careers'}, {name: 'events', title: 'Events', hidden: ({document}: any) => document?.settings?.component !== 'events-index'}],
+  groups: [{name: 'content', title: 'Page content', default: true}, {name: 'images', title: 'Images'}, {name: 'seo', title: 'Search appearance'}, {name: 'settings', title: 'Page options'}, {name: 'jobs', title: 'Job openings', hidden: ({document}: any) => document?.settings?.component !== 'careers'}, {name: 'events', title: 'Events', hidden: ({document}: any) => document?.settings?.component !== 'events-index'}, {name: 'insurance', title: 'Accepted insurance', hidden: ({document}: any) => document?.settings?.component !== 'patient-resources'}],
   fields: [
     defineField({name: 'editorNotice', title: 'Editing this page', type: 'string', group: 'content', components: {input: EditorNotice}, readOnly: true}),
     defineField({name: 'path', title: 'Site path', type: 'string', validation: required, hidden: true}),
@@ -255,6 +255,7 @@ const page = defineType({
     defineField({name: 'trialRecordsMigrated', type: 'boolean', hidden: true, readOnly: true}),
     defineField({name: 'jobs', title: 'Current job openings', type: 'array', group: 'jobs', hidden: ({document}: any) => document?.settings?.component !== 'careers', of: [{type: 'jobOpening'}], description: 'Add, edit, reorder, or remove listings here. Changes go live when this page is published.'}),
     defineField({name: 'events', title: 'Events', type: 'array', group: 'events', hidden: ({document}: any) => document?.settings?.component !== 'events-index', of: [{type: 'eventItem'}], description: 'Add, edit, or remove events. Each event’s date decides whether it shows as Upcoming or Past. Changes go live when this page is published.'}),
+    defineField({name: 'insurancePlansPdf', title: 'Accepted insurance plans PDF', type: 'file', group: 'insurance', hidden: ({document}: any) => document?.settings?.component !== 'patient-resources', options: {accept: 'application/pdf'}, description: 'Upload a new PDF to replace the list patients download from the Accepted Insurance Plans section. The section heading, text, button label and “Last updated” note are under Page content. Changes go live when this page is published.'}),
     defineField({name: 'editorImages', title: 'Images on this page', type: 'array', group: 'images', options: {disableActions: ['add','remove','duplicate']}, of: [{type: 'pageImage'}]}),
     defineField({name: 'seoTitle', title: 'Search title', type: 'string', group: 'seo', description: 'Shown in browser tabs and search results.'}),
     defineField({name: 'description', title: 'Search description', type: 'text', rows: 3, group: 'seo', description: 'A short summary for search results.'}),

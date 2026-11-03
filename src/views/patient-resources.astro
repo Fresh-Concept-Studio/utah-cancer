@@ -2,6 +2,8 @@
 import { pageEditor } from '../lib/page-content';
 const edit = pageEditor(Astro.props.page);
 import { url } from '../lib/urls';
+// The CMS upload is authoritative; the repository copy only serves local fallback builds.
+const insurancePdf = Astro.props.page.insurancePlansPdfUrl || (Astro.props.page.editorContent ? '' : url('/documents/ucs-contracted-health-plans.pdf'));
 ---
 <section class="providers-hero">
     <div class="container">
@@ -117,6 +119,25 @@ import { url } from '../lib/urls';
           <p>{edit.text("text-5533289f2d", "Cancer-focused rehabilitation for movement, energy, and recovery.")}</p>
           <span class="pr-card-arrow"><span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span></span>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pr-insurance-section" id="accepted-insurance">
+    <div class="container">
+      <div class="pr-insurance-wrap">
+        <div class="pr-insurance-icon"><span class="material-symbols-rounded" aria-hidden="true">health_and_safety</span></div>
+        <div class="pr-insurance-body">
+          <span class="pr-eyebrow pr-insurance-eyebrow">{edit.text("text-a7109fbad1", "Insurance")}</span>
+          <h2 class="pr-insurance-title">{edit.text("text-768d2dd816", "Accepted Insurance Plans")}</h2>
+          <p class="pr-insurance-desc">{edit.text("text-c75934038b", "We work with a wide range of commercial, Medicare, Medicaid, and Marketplace health plans. Download the full list to see whether your plan is included.")}</p>
+          <p class="pr-insurance-note">{edit.text("text-046acf4e83", "Plans and networks can change. Please confirm your coverage with your insurance company, or talk with our Patient Advocacy team.")}</p>
+        </div>
+        <div class="pr-insurance-actions">
+          {insurancePdf && <a href={insurancePdf} class="pr-insurance-btn" target="_blank" rel="noopener"><span class="material-symbols-rounded" aria-hidden="true">description</span>{edit.text("text-7ed242189e", "View accepted plans (PDF)")}</a>}
+          <a href={url(edit.text("link-e7ebe9dd34", "/programs-and-services.html#patient-advocacy"))} class="pr-insurance-link">{edit.text("text-9887984957", "Talk to Patient Advocacy")}<span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a>
+          <span class="pr-insurance-updated">{edit.text("text-bc19670eec", "Last updated September 10, 2026")}</span>
+        </div>
       </div>
     </div>
   </section>
