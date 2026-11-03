@@ -21,6 +21,8 @@ export const menus = [
     { label: 'Clinical Trials', href: '/clinical-trials.html' },
     { label: 'Programs & Services', href: '/programs-and-services.html' },
     { label: 'Physical Therapy', href: '/physical-therapy.html' },
+    // Header.astro swaps this for the PDF uploaded on the Patient Resources page in Sanity.
+    { label: 'Accepted Insurance', href: '/patient-resources.html#accepted-insurance', insurancePdf: true },
   ] },
 ];
 export const patientLinks = [
