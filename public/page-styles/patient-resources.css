@@ -255,6 +255,55 @@
       z-index: 1;
       border-radius: inherit;
     }
+    /* Accepted Insurance Plans */
+    .pr-insurance-section { padding: 0 0 72px; scroll-margin-top: 120px; }
+    .pr-insurance-wrap {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 32px;
+      align-items: center;
+      background: linear-gradient(135deg, #00476b 0%, #0b5a80 100%);
+      color: #fff;
+      border-radius: 24px;
+      padding: 48px 56px;
+    }
+    .pr-insurance-icon {
+      width: 64px; height: 64px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      align-self: start;
+    }
+    .pr-insurance-icon .material-symbols-rounded { font-size: 34px; color: #fff; }
+    .pr-insurance-eyebrow { color: rgba(255,255,255,0.65); margin-bottom: 10px; }
+    .pr-insurance-title {
+      font-family: var(--font-heading);
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 1.05;
+      letter-spacing: -0.023em;
+      margin-bottom: 14px;
+    }
+    .pr-insurance-desc { font-size: 16px; line-height: 26px; max-width: 560px; color: rgba(255,255,255,0.9); }
+    .pr-insurance-note { font-size: 14px; line-height: 22px; max-width: 560px; margin-top: 10px; color: rgba(255,255,255,0.7); }
+    .pr-insurance-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+    .pr-insurance-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #fff; color: #00476b;
+      font-weight: 600; font-size: 15px;
+      padding: 14px 22px;
+      border-radius: var(--radius-btn);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .pr-insurance-btn:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
+    .pr-insurance-btn .material-symbols-rounded { font-size: 20px; }
+    .pr-insurance-link { display: inline-flex; align-items: center; gap: 6px; color: #fff; font-size: 14px; font-weight: 500; text-decoration: none; }
+    .pr-insurance-link:hover { text-decoration: underline; }
+    .pr-insurance-link .material-symbols-rounded { font-size: 18px; }
+    .pr-insurance-updated { font-size: 12px; color: rgba(255,255,255,0.6); }
+    .pr-insurance-btn:focus-visible, .pr-insurance-link:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
     /* Community Resources */
     .pr-community-section { padding: 0 0 100px; }
     .pr-community-wrap {
@@ -355,6 +404,9 @@
       .pr-community-head { grid-template-columns: 1fr; gap: 14px; align-items: start; margin-bottom: 28px; }
       .pr-community-title { font-size: 28px; }
       .pr-community-list { grid-template-columns: 1fr; }
+      .pr-insurance-wrap { grid-template-columns: auto 1fr; padding: 40px 32px; }
+      .pr-insurance-actions { grid-column: 2; }
+      .pr-insurance-title { font-size: 28px; }
     }
     @media (max-width: 640px) {
       .providers-hero { padding-bottom: 48px; }
@@ -375,4 +427,8 @@
       .pr-community-section { padding-bottom: 70px; }
       .pr-community-wrap { padding: 28px 20px; border-radius: 18px; }
       .pr-community-link { padding: 16px 18px; gap: 14px; }
+      .pr-insurance-section { padding-bottom: 48px; }
+      .pr-insurance-wrap { grid-template-columns: 1fr; gap: 20px; padding: 28px 20px; border-radius: 18px; }
+      .pr-insurance-actions { grid-column: auto; }
+      .pr-insurance-btn { white-space: normal; }
     }

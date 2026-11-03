@@ -38,6 +38,7 @@ async function loadContent() {
     const docs = await client.fetch<AnyRecord[]>(`*[_type in ["clinicalTrial", "provider", "location", "specialty", "leader", "policy", "newsArticle", "resourcePage", "page", "sharedContent", "providerLocation", "siteSettings"]]{
       ...,
       "pdfAssetUrl": pdf.asset->url,
+      "insurancePlansPdfUrl": insurancePlansPdf.asset->url,
       photo{..., "asset": asset{..., "asset": asset->{url}}},
       "image": select(image._type == "legacyImage" => image{..., "asset": asset{..., "asset": asset->{url}}}, image),
       directoryPhoto{..., "asset": asset{..., "asset": asset->{url}}},
@@ -55,7 +56,7 @@ async function loadContent() {
       type(name).map((doc) => [doc[key], valueKey ? doc[valueKey] : Object.fromEntries(Object.entries(doc).filter(([field]) => field !== key))]),
     )
     const pageDocs = type('page')
-    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, jobs, events, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, jobs, events, ...settings}]))
+    const pages = Object.fromEntries(pageDocs.map(({path, title, description, seoTitle, editorContent, editorImages, jobs, events, insurancePlansPdfUrl, settings}) => [path, {title: seoTitle || title, description, editorContent, editorImages, jobs, events, insurancePlansPdfUrl, ...settings}]))
     const newsPosts = type('newsArticle').map(({html, featuredPhoto, ...post}) => ({...post, featuredImage: featuredPhoto?.src || post.featuredImage, featuredAlt: featuredPhoto?.alt ?? post.featuredAlt, contentHtml: html}))
     const settings = type('siteSettings')[0]
     return {

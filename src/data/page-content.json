@@ -5354,6 +5354,71 @@
         "value": "Cancer-focused rehabilitation for movement, energy, and recovery."
       },
       {
+        "_key": "text-a7109fbad1",
+        "_type": "pageCopy",
+        "key": "text-a7109fbad1",
+        "section": "Accepted Insurance Plans",
+        "label": "Small label",
+        "value": "Insurance"
+      },
+      {
+        "_key": "text-768d2dd816",
+        "_type": "pageCopy",
+        "key": "text-768d2dd816",
+        "section": "Accepted Insurance Plans",
+        "label": "Heading",
+        "value": "Accepted Insurance Plans"
+      },
+      {
+        "_key": "text-c75934038b",
+        "_type": "pageCopy",
+        "key": "text-c75934038b",
+        "section": "Accepted Insurance Plans",
+        "label": "Paragraph",
+        "value": "We work with a wide range of commercial, Medicare, Medicaid, and Marketplace health plans. Download the full list to see whether your plan is included."
+      },
+      {
+        "_key": "text-046acf4e83",
+        "_type": "pageCopy",
+        "key": "text-046acf4e83",
+        "section": "Accepted Insurance Plans",
+        "label": "Note",
+        "value": "Plans and networks can change. Please confirm your coverage with your insurance company, or talk with our Patient Advocacy team."
+      },
+      {
+        "_key": "text-7ed242189e",
+        "_type": "pageCopy",
+        "key": "text-7ed242189e",
+        "section": "Accepted Insurance Plans",
+        "label": "PDF button text",
+        "value": "View accepted plans (PDF)"
+      },
+      {
+        "_key": "link-e7ebe9dd34",
+        "_type": "pageCopy",
+        "key": "link-e7ebe9dd34",
+        "section": "Accepted Insurance Plans",
+        "label": "Link destination: Talk to Patient Advocacy",
+        "value": "/programs-and-services.html#patient-advocacy",
+        "kind": "link"
+      },
+      {
+        "_key": "text-9887984957",
+        "_type": "pageCopy",
+        "key": "text-9887984957",
+        "section": "Accepted Insurance Plans",
+        "label": "Link text",
+        "value": "Talk to Patient Advocacy"
+      },
+      {
+        "_key": "text-bc19670eec",
+        "_type": "pageCopy",
+        "key": "text-bc19670eec",
+        "section": "Accepted Insurance Plans",
+        "label": "Last updated note",
+        "value": "Last updated September 10, 2026"
+      },
+      {
         "_key": "text-5863403d25",
         "_type": "pageCopy",
         "key": "text-5863403d25",
