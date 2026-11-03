@@ -2,7 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ComingSoonModal from '../components/ComingSoonModal.astro';
-import { url } from '../lib/urls';
+import { url, stylesheetUrl } from '../lib/urls';
 
 interface Props {
   code: string;
@@ -26,8 +26,8 @@ const { code, title, description } = Astro.props;
     <link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
     <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href={url('/fonts/inter-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="stylesheet" href={url('/styles.css')} />
-    <link rel="stylesheet" href={url('/page-styles/error.css')} />
+    <link rel="stylesheet" href={stylesheetUrl('/styles.css')} />
+    <link rel="stylesheet" href={stylesheetUrl('/page-styles/error.css')} />
   </head>
   <body class={`error-page error-page--${code}`}>
     <Header />

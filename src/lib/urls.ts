@@ -17,6 +17,15 @@ export function url(path: string = ''): string {
   return `${base}/${path.replace(/^\//, '')}`;
 }
 
+/** Changes every release so browsers drop cached stylesheets (the CDN caches them for a day). */
+const assetVersion = (process.env.GITHUB_SHA || String(Date.now())).slice(0, 12);
+
+/** Site URL for a stylesheet, with the release version appended. */
+export function stylesheetUrl(path: string): string {
+  const href = url(path);
+  return /^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(href) ? href : `${href}${href.includes('?') ? '&' : '?'}v=${assetVersion}`;
+}
+
 /** Only use for trusted, checked-in rich text in src/data. No remote/user HTML. */
 export function richHtml(html: string = ''): string {
   return html

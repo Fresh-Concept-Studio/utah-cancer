@@ -6,7 +6,7 @@ import ContactCTA from '../components/ContactCTA.astro';
 import ComingSoonModal from '../components/ComingSoonModal.astro';
 import Analytics from '../components/Analytics.astro';
 import type { PageData } from '../lib/types';
-import { url } from '../lib/urls';
+import { url, stylesheetUrl } from '../lib/urls';
 interface Props { page: PageData }
 const { page } = Astro.props;
 const description = page.description?.trim() || 'Utah Cancer Specialists provides compassionate cancer care, advanced treatments, clinical trials, and patient resources throughout Utah.';
@@ -93,7 +93,7 @@ const structuredData = JSON.stringify([
     <link rel="manifest" href={url('/site.webmanifest')} />
     <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href={url('/fonts/inter-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
-    {page.styles.map(href => <link rel="stylesheet" href={url(href)} />)}
+    {page.styles.map(href => <link rel="stylesheet" href={stylesheetUrl(href)} />)}
   <script id="sitewalk-loader" is:inline data-host="https://siteadjust-utah-editor.vercel.app">(function loader() {
   try {
     var q = new URLSearchParams(location.search);
