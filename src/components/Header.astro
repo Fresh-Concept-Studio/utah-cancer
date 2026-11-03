@@ -1,8 +1,11 @@
 ---
 import { url } from '../lib/urls';
 import { primaryLinks, menus, patientLinks } from '../data/navigation';
+import { pages } from '../lib/content';
 interface Props { activeNav?: string[] }
 const { activeNav = [] } = Astro.props;
+// Falls back to the page section when no PDF is published in Sanity.
+const insurancePdf = (pages as Record<string, { insurancePlansPdfUrl?: string }>)['patient-resources.html']?.insurancePlansPdfUrl;
 ---
 <header class="navbar">
   <div class="container navbar-inner">
@@ -18,6 +21,8 @@ const { activeNav = [] } = Astro.props;
         <div id={`nav-submenu-${index}`} class="nav-dropdown-menu"><div class="nav-dropdown-menu-inner">
           {menu.links.map(link => 'comingSoon' in link && link.comingSoon ?
             <button type="button" class="nav-dropdown-item nav-dropdown-item--button" data-coming-soon aria-haspopup="dialog" aria-controls="coming-soon-modal">{link.label}</button> :
+            'insurancePdf' in link && link.insurancePdf && insurancePdf ?
+            <a href={insurancePdf} target="_blank" rel="noopener" class="nav-dropdown-item">{link.label}</a> :
             <a href={url(link.href)} class="nav-dropdown-item">{link.label}</a>
           )}
         </div></div>
