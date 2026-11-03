@@ -45,6 +45,16 @@ const structuredData = JSON.stringify([
     telephone: '+1-801-262-9494',
     areaServed: { '@type': 'State', name: 'Utah' },
   },
+  // Google reads the site name shown in search results from the homepage's WebSite entry.
+  ...(canonical === siteRoot ? [{
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${siteRoot}#website`,
+    name: 'Utah Cancer Specialists',
+    alternateName: ['UCS', 'utahcancer.com'],
+    url: siteRoot,
+    publisher: { '@id': `${siteRoot}#organization` },
+  }] : []),
   pageSchema,
 ]).replace(/</g, '\\u003c');
 ---
@@ -76,7 +86,11 @@ const structuredData = JSON.stringify([
     <meta name="twitter:image" content={socialImage} />
     {!page.socialImage && <meta name="twitter:image:alt" content={defaultSocialImageAlt} />}
     <script type="application/ld+json" set:html={structuredData} is:inline></script>
-    <link rel="icon" href={url('/images/ucs-logo-color.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('/favicon.ico')} sizes="48x48" />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="icon" href={url('/favicon-96x96.png')} type="image/png" sizes="96x96" />
+    <link rel="apple-touch-icon" href={url('/apple-touch-icon.png')} />
+    <link rel="manifest" href={url('/site.webmanifest')} />
     <link rel="preload" href={url('/fonts/dm-sans-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href={url('/fonts/inter-latin.woff2')} as="font" type="font/woff2" crossorigin="anonymous" />
     {page.styles.map(href => <link rel="stylesheet" href={url(href)} />)}
