@@ -3,6 +3,7 @@ import {PageCopyInput, ReadableHtmlInput, LocationChoicesInput, ExistingImageInp
 import {EditorNotice} from '../components/EditorGuide'
 import {EventListingsInput} from '../components/EventListingsInput'
 import {eventItem} from './eventItem'
+import {podcastEpisode} from './podcastEpisode'
 import {pageAddress} from '../page-address'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
@@ -287,6 +288,6 @@ const siteSettings = defineType({
   ],
 })
 
-export const schemaTypes = [clinicalTrial, clinicDepartment, jobOpening, eventItem, leadershipMember, leadershipGroup, mediaVideo, pageCopy, pageImage, legacyImage, contentSection, tab, contentLink, cta, pageSettings, provider, location, specialty, leader,
+export const schemaTypes = [clinicalTrial, podcastEpisode, clinicDepartment, jobOpening, eventItem, leadershipMember, leadershipGroup, mediaVideo, pageCopy, pageImage, legacyImage, contentSection, tab, contentLink, cta, pageSettings, provider, location, specialty, leader,
   htmlDocument('policy', 'Legal policies'), htmlDocument('newsArticle', 'News articles'), htmlDocument('resourcePage', 'Resource pages'),
   page, keyedHtml, providerLocation, siteSettings]

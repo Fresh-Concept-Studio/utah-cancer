@@ -889,6 +889,53 @@ img {
   margin-top: 20px;
 }
 
+.podcast-episode a {
+  color: inherit;
+}
+
+a.podcast-episode-title:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a.podcast-episode-play {
+  display: inline-flex;
+  line-height: 1;
+}
+
+.podcast-episode-play .material-symbols-rounded {
+  font-size: 28px;
+}
+
+.podcast-episode-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 2px;
+  font-size: 12.5px;
+}
+
+.podcast-episode-links a {
+  color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.podcast-episode-links a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.podcast-listen-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.podcast-actions .podcast-platform-btn {
+  padding: 10px 16px;
+}
+
 .podcast-announce-link {
   display: inline-flex;
   align-items: center;

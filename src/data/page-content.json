@@ -1759,7 +1759,63 @@
         "key": "text-30b7084fdb",
         "section": "Send Us a Message",
         "label": "Heading",
-        "value": "Clinical Support Services"
+        "value": "Administration"
+      },
+      {
+        "_key": "text-cced89a5ce",
+        "_type": "pageCopy",
+        "key": "text-cced89a5ce",
+        "section": "Send Us a Message",
+        "label": "Heading: Find Your Location",
+        "value": "Find Your Location"
+      },
+      {
+        "_key": "text-41f9b2fac2",
+        "_type": "pageCopy",
+        "key": "text-41f9b2fac2",
+        "section": "Send Us a Message",
+        "label": "Text: location picker help",
+        "value": "Choose your clinic to see its phone number and address."
+      },
+      {
+        "_key": "text-8c0e6c31d7",
+        "_type": "pageCopy",
+        "key": "text-8c0e6c31d7",
+        "section": "Send Us a Message",
+        "label": "Text: dropdown placeholder",
+        "value": "Choose a location"
+      },
+      {
+        "_key": "text-1fa6e33c2c",
+        "_type": "pageCopy",
+        "key": "text-1fa6e33c2c",
+        "section": "Send Us a Message",
+        "label": "Text: dropdown group for clinics",
+        "value": "Clinics"
+      },
+      {
+        "_key": "text-05cd78a430",
+        "_type": "pageCopy",
+        "key": "text-05cd78a430",
+        "section": "Send Us a Message",
+        "label": "Text: dropdown group for other offices",
+        "value": "Other"
+      },
+      {
+        "_key": "text-79755e6104",
+        "_type": "pageCopy",
+        "key": "text-79755e6104",
+        "section": "Send Us a Message",
+        "label": "Link label: clinic details",
+        "value": "Clinic details & hours"
+      },
+      {
+        "_key": "text-76184b2b7e",
+        "_type": "pageCopy",
+        "key": "text-76184b2b7e",
+        "section": "Send Us a Message",
+        "label": "Link label: all locations (shown without JavaScript)",
+        "value": "See all locations"
       },
       {
         "_key": "text-0cc14f5ea4",
@@ -1776,14 +1832,6 @@
         "section": "Send Us a Message",
         "label": "Text",
         "value": "South Jordan, UT 84095"
-      },
-      {
-        "_key": "text-77064d5265",
-        "_type": "pageCopy",
-        "key": "text-77064d5265",
-        "section": "Send Us a Message",
-        "label": "Heading",
-        "value": "Phone"
       },
       {
         "_key": "text-970a15791b",
@@ -1817,6 +1865,39 @@
         "section": "Send Us a Message",
         "label": "Link label",
         "value": "info@utcancer.com"
+      },
+      {
+        "_key": "text-f4cb937bc9",
+        "_type": "pageCopy",
+        "key": "text-f4cb937bc9",
+        "section": "Send Us a Message",
+        "label": "Text: general email label",
+        "value": "General inquiries"
+      },
+      {
+        "_key": "text-a7c1e2b904",
+        "_type": "pageCopy",
+        "key": "text-a7c1e2b904",
+        "section": "Send Us a Message",
+        "label": "Text: new patient email label",
+        "value": "New patients & referrals"
+      },
+      {
+        "_key": "link-d3b8f61a27",
+        "_type": "pageCopy",
+        "key": "link-d3b8f61a27",
+        "section": "Send Us a Message",
+        "label": "Link destination: new patient email",
+        "value": "mailto:referrals@utcancer.com",
+        "kind": "link"
+      },
+      {
+        "_key": "text-5e9a04c3d8",
+        "_type": "pageCopy",
+        "key": "text-5e9a04c3d8",
+        "section": "Send Us a Message",
+        "label": "Link label: new patient email",
+        "value": "referrals@utcancer.com"
       },
       {
         "_key": "text-4017ad06a0",
@@ -3285,86 +3366,63 @@
         "value": " podcast brings honest conversations with physicians, patients, care teams, advocates, and voices from across our community—about cancer, care, and everything in between."
       },
       {
-        "_key": "text-0f112f2abc",
+        "_key": "text-a0d5369900",
         "_type": "pageCopy",
-        "key": "text-0f112f2abc",
+        "key": "text-a0d5369900",
         "section": "Here With You.Where good conversations live.",
-        "label": "Text",
-        "value": "What I wish every newly diagnosed patient knew"
+        "label": "Text: Listen on",
+        "value": "Listen on"
       },
       {
-        "_key": "text-ad224d60c7",
+        "_key": "link-150ff55839",
         "_type": "pageCopy",
-        "key": "text-ad224d60c7",
+        "key": "link-150ff55839",
         "section": "Here With You.Where good conversations live.",
-        "label": "Text",
-        "value": "Episode 1"
-      },
-      {
-        "_key": "text-348bf59f04",
-        "_type": "pageCopy",
-        "key": "text-348bf59f04",
-        "section": "Here With You.Where good conversations live.",
-        "label": "Text",
-        "value": "Clinical trials, demystified"
-      },
-      {
-        "_key": "text-508123b9a8",
-        "_type": "pageCopy",
-        "key": "text-508123b9a8",
-        "section": "Here With You.Where good conversations live.",
-        "label": "Text",
-        "value": "Episode 2"
-      },
-      {
-        "_key": "text-286bbd2757",
-        "_type": "pageCopy",
-        "key": "text-286bbd2757",
-        "section": "Here With You.Where good conversations live.",
-        "label": "Text",
-        "value": "Caring for the caregiver"
-      },
-      {
-        "_key": "text-c58f2fd857",
-        "_type": "pageCopy",
-        "key": "text-c58f2fd857",
-        "section": "Here With You.Where good conversations live.",
-        "label": "Text",
-        "value": "Episode 3"
-      },
-      {
-        "_key": "link-3bc9360b95",
-        "_type": "pageCopy",
-        "key": "link-3bc9360b95",
-        "section": "Here With You.Where good conversations live.",
-        "label": "Link destination: notifications Notify Me at Launch",
-        "value": "https://www.facebook.com/utahcancerspecialists",
+        "label": "Link destination: YouTube playlist",
+        "value": "https://youtube.com/playlist?list=PLOpQK53VXFIs",
         "kind": "link"
       },
       {
-        "_key": "text-7a76cb170a",
+        "_key": "text-b30ce22fd7",
         "_type": "pageCopy",
-        "key": "text-7a76cb170a",
+        "key": "text-b30ce22fd7",
         "section": "Here With You.Where good conversations live.",
         "label": "Link label",
-        "value": " Notify Me at Launch "
+        "value": "YouTube"
       },
       {
-        "_key": "link-3bc9360b95-1",
+        "_key": "link-7cd3db41ea",
         "_type": "pageCopy",
-        "key": "link-3bc9360b95-1",
+        "key": "link-7cd3db41ea",
         "section": "Here With You.Where good conversations live.",
-        "label": "Link destination: See the announcement arrow_outward",
-        "value": "https://www.facebook.com/utahcancerspecialists",
+        "label": "Link destination: Spotify show",
+        "value": "https://open.spotify.com/show/6Loxwn1BIYRt51axgGVXJD",
         "kind": "link"
       },
       {
-        "_key": "text-aa714f78d2",
+        "_key": "text-0fa50817ac",
         "_type": "pageCopy",
-        "key": "text-aa714f78d2",
+        "key": "text-0fa50817ac",
         "section": "Here With You.Where good conversations live.",
         "label": "Link label",
-        "value": " See the announcement "
+        "value": "Spotify"
+      },
+      {
+        "_key": "link-7bc6a1e560",
+        "_type": "pageCopy",
+        "key": "link-7bc6a1e560",
+        "section": "Here With You.Where good conversations live.",
+        "label": "Link destination: Apple Podcasts show",
+        "value": "https://podcasts.apple.com/us/podcast/here-with-you/id6815076056",
+        "kind": "link"
+      },
+      {
+        "_key": "text-58e213a8a8",
+        "_type": "pageCopy",
+        "key": "text-58e213a8a8",
+        "section": "Here With You.Where good conversations live.",
+        "label": "Link label",
+        "value": "Apple Podcasts"
       },
       {
         "_key": "text-ecbcb0e424",

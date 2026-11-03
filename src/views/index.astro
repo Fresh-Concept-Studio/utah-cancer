@@ -5,6 +5,7 @@ import { url } from '../lib/urls';
 import MediaHighlights from '../components/MediaHighlights.astro';
 import pages from '../lib/pages';
 import { imageVariant } from '../lib/images';
+import { podcastEpisodes } from '../lib/content';
 import { eventDateParts, todayKey } from '../lib/event-dates';
 import { featuredCandidates, resolveEvents, splitEvents } from '../lib/events';
 
@@ -16,6 +17,9 @@ const homeToday = todayKey();
 const homeUpcoming = splitEvents(homeEvents.events, homeToday).upcoming;
 const homeFeatureCandidates = featuredCandidates(homeUpcoming);
 const homeMiniIds = new Set(homeUpcoming.filter(event => event !== homeFeatureCandidates[0]).slice(0, 3).map(event => event.id));
+// Newest four published episodes; older ones stay on the podcast platforms.
+const latestEpisodes = podcastEpisodes.slice(0, 4);
+const formatEpisodeDate = (date: string) => new Date(`${date}T12:00:00Z`).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/Denver' });
 const sizedImage = (src: string, width: number, height?: number) => /^https:\/\/cdn\.sanity\.io\//.test(src) ? imageVariant(src, width, height) : src;
 ---
 <!-- Hero Section -->
@@ -243,7 +247,7 @@ const sizedImage = (src: string, width: number, height?: number) => /^https:\/\/
       </div>
       <p class="home-events-empty" id="home-events-empty" hidden={homeUpcoming.length > 0}>{edit.text("text-home-events-empty", "No upcoming events right now — check back soon.")}</p>
 
-      <!-- Podcast Launch Section -->
+      <!-- Podcast: latest episodes from Sanity -->
       <section class="podcast-section" aria-label="The UCS Podcast">
         <div class="podcast-inner">
           <div class="podcast-content">
@@ -251,33 +255,24 @@ const sizedImage = (src: string, width: number, height?: number) => /^https:\/\/
             <h2 class="podcast-heading">{edit.text("text-303d25c6fa-1", "Here With You.")}<br>{edit.text("text-d0955a0db3", "Where good conversations live.")}</h2>
             <p class="podcast-desc">{edit.text("text-4abcc77ab1", "Hosted by Scott Jeffrey Miller, the ")}<em>{edit.text("text-07cf876731", "Here With You")}</em>{edit.text("text-b8683881a4", " podcast brings honest conversations with physicians, patients, care teams, advocates, and voices from across our community—about cancer, care, and everything in between.")}</p>
             <ul class="podcast-episodes">
-              <li class="podcast-episode">
-                <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
-                <span class="podcast-episode-info">
-                  <span class="podcast-episode-title">{edit.text("text-0f112f2abc", "What I wish every newly diagnosed patient knew")}</span>
-                  <span class="podcast-episode-meta">{edit.text("text-ad224d60c7", "Episode 1")}</span>
-                </span>
-              </li>
-              <li class="podcast-episode">
-                <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
-                <span class="podcast-episode-info">
-                  <span class="podcast-episode-title">{edit.text("text-348bf59f04", "Clinical trials, demystified")}</span>
-                  <span class="podcast-episode-meta">{edit.text("text-508123b9a8", "Episode 2")}</span>
-                </span>
-              </li>
-              <li class="podcast-episode">
-                <span class="material-symbols-rounded podcast-episode-play">play_circle</span>
-                <span class="podcast-episode-info">
-                  <span class="podcast-episode-title">{edit.text("text-286bbd2757", "Caring for the caregiver")}</span>
-                  <span class="podcast-episode-meta">{edit.text("text-c58f2fd857", "Episode 3")}</span>
-                </span>
-              </li>
+              {latestEpisodes.map(episode => {
+                const primary = episode.youtubeUrl || episode.spotifyUrl || episode.appleUrl;
+                const platforms = [['YouTube', episode.youtubeUrl], ['Spotify', episode.spotifyUrl], ['Apple Podcasts', episode.appleUrl]].filter(([, href]) => href);
+                return <li class="podcast-episode">
+                  {primary ? <a href={primary} target="_blank" rel="noopener" class="podcast-episode-play" aria-label={`Play ${episode.title}`}><span class="material-symbols-rounded" aria-hidden="true">play_circle</span></a> : <span class="material-symbols-rounded podcast-episode-play" aria-hidden="true">play_circle</span>}
+                  <span class="podcast-episode-info">
+                    {primary ? <a href={primary} target="_blank" rel="noopener" class="podcast-episode-title">{episode.title}</a> : <span class="podcast-episode-title">{episode.title}</span>}
+                    <span class="podcast-episode-meta">{[episode.episodeNumber && `Episode ${episode.episodeNumber}`, episode.guest, formatEpisodeDate(episode.publishedDate)].filter(Boolean).join(' · ')}</span>
+                    {platforms.length > 0 && <span class="podcast-episode-links">{platforms.map(([label, href]) => <a href={href} target="_blank" rel="noopener">{label}</a>)}</span>}
+                  </span>
+                </li>;
+              })}
             </ul>
             <div class="podcast-actions">
-              <a href={url(edit.text("link-3bc9360b95", "https://www.facebook.com/utahcancerspecialists"))} target="_blank" rel="noopener" class="btn btn--white">
-                <span class="material-symbols-rounded">notifications</span>{edit.text("text-7a76cb170a", " Notify Me at Launch ")}</a>
-              <a href={url(edit.text("link-3bc9360b95-1", "https://www.facebook.com/utahcancerspecialists"))} target="_blank" rel="noopener" class="podcast-announce-link">{edit.text("text-aa714f78d2", " See the announcement ")}<span class="material-symbols-rounded">arrow_outward</span>
-              </a>
+              <span class="podcast-listen-label">{edit.text("text-a0d5369900", "Listen on")}</span>
+              <a href={url(edit.text("link-150ff55839", "https://youtube.com/playlist?list=PLOpQK53VXFIs"))} target="_blank" rel="noopener" class="btn btn--white podcast-platform-btn">{edit.text("text-b30ce22fd7", "YouTube")}</a>
+              <a href={url(edit.text("link-7cd3db41ea", "https://open.spotify.com/show/6Loxwn1BIYRt51axgGVXJD"))} target="_blank" rel="noopener" class="btn btn--white podcast-platform-btn">{edit.text("text-0fa50817ac", "Spotify")}</a>
+              <a href={url(edit.text("link-7bc6a1e560", "https://podcasts.apple.com/us/podcast/here-with-you/id6815076056"))} target="_blank" rel="noopener" class="btn btn--white podcast-platform-btn">{edit.text("text-58e213a8a8", "Apple Podcasts")}</a>
             </div>
           </div>
           <div class="podcast-art">
