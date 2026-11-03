@@ -1,8 +1,19 @@
 ---
-import { url } from '../lib/urls';
+import { url, richHtml } from '../lib/urls';
 import { pageEditor } from '../lib/page-content';
 const edit = pageEditor(Astro.props.page);
-import { mainPhone } from '../lib/content';
+import { mainPhone, locations } from '../lib/content';
+import { telHref } from '../lib/departments';
+// Clinics in the locations directory, alphabetical, each with its own phone lines.
+const clinics = locations.filter(location => location.directory).map(location => {
+  const departments = ((location as { departments?: { name: string; phone?: string }[] }).departments ?? []).filter(department => department.phone);
+  return {
+    slug: location.slug,
+    name: location.directory!.title || location.title,
+    addressHtml: location.directory!.addressHtml,
+    phones: departments.length ? departments.map(department => ({ label: department.name, phone: department.phone! })) : location.directory!.phone ? [{ label: '', phone: location.directory!.phone }] : [],
+  };
+}).sort((a, b) => a.name.localeCompare(b.name));
 import ContactForm from '../components/ContactForm.astro';
 ---
 <section class="providers-hero">
@@ -22,9 +33,35 @@ import ContactForm from '../components/ContactForm.astro';
         <div>
           <h2 class="about-mission-title" style="margin-bottom:24px;">{edit.text("text-56cddd3405", "Get in Touch")}</h2>
           <div class="provider-credentials">
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">apartment</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-30b7084fdb", "Clinical Support Services")}</h3><p>{edit.text("text-0cc14f5ea4", "10808 S. River Front Pkwy., Ste. 400")}<br>{edit.text("text-793df8ac60", "South Jordan, UT 84095")}</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">phone</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-77064d5265", "Phone")}</h3><p><a href={mainPhone.href} style="color:#477080;">{mainPhone.display}</a><br>{edit.text("text-970a15791b", "Monday–Friday, 9:00 AM – 5:00 PM")}</p></div></div>
-            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">mail</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-84add5b295", "Email")}</h3><p><a href={url(edit.text("link-4546bb4dd0", "mailto:info@utcancer.com"))} style="color:#477080;">{edit.text("text-c5ed8a9d99", "info@utcancer.com")}</a></p></div></div>
+            <div class="credential contact-locations"><div class="credential-icon"><span class="material-symbols-rounded">location_on</span></div><div class="credential-content">
+              <h3 class="credential-label"><label for="contact-location">{edit.text("text-cced89a5ce", "Find Your Location")}</label></h3>
+              <p>{edit.text("text-41f9b2fac2", "Choose your clinic to see its phone number and address.")}</p>
+              <select id="contact-location" class="contact-location-select" hidden>
+                <option value="">{edit.text("text-8c0e6c31d7", "Choose a location")}</option>
+                <optgroup label={edit.text("text-1fa6e33c2c", "Clinics")}>
+                  {clinics.map(clinic => <option value={clinic.slug}>{clinic.name}</option>)}
+                </optgroup>
+                <optgroup label={edit.text("text-05cd78a430", "Other")}>
+                  <option value="administration">{edit.text("text-30b7084fdb", "Administration")}</option>
+                </optgroup>
+              </select>
+              {clinics.map(clinic => <div class="contact-location-panel" data-location-panel={clinic.slug} hidden>
+                <p class="contact-location-name">{clinic.name}</p>
+                <p><Fragment set:html={richHtml(clinic.addressHtml)} /></p>
+                {clinic.phones.map(line => <p><a href={telHref(line.phone)}>{line.phone}</a>{line.label && <span class="contact-location-dept"> · {line.label}</span>}</p>)}
+                <p><a href={url(`/locations/${clinic.slug}.html`)} class="contact-location-more">{edit.text("text-79755e6104", "Clinic details & hours")} <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></p>
+              </div>)}
+              <div class="contact-location-panel" data-location-panel="administration" hidden>
+                <p class="contact-location-name">{edit.text("text-30b7084fdb", "Administration")}</p>
+                <p>{edit.text("text-0cc14f5ea4", "10808 S. River Front Pkwy., Ste. 400")}<br>{edit.text("text-793df8ac60", "South Jordan, UT 84095")}</p>
+                <p><a href={mainPhone.href}>{mainPhone.display}</a><br>{edit.text("text-970a15791b", "Monday–Friday, 9:00 AM – 5:00 PM")}</p>
+              </div>
+              <p class="contact-location-fallback"><a href={url('/locations/index.html')} class="contact-location-more">{edit.text("text-76184b2b7e", "See all locations")} <span class="material-symbols-rounded" aria-hidden="true">arrow_forward</span></a></p>
+            </div></div>
+            <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">mail</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-84add5b295", "Email")}</h3>
+              <p><span class="contact-email-label">{edit.text("text-f4cb937bc9", "General inquiries")}</span><br><a href={url(edit.text("link-4546bb4dd0", "mailto:info@utcancer.com"))} style="color:#477080;">{edit.text("text-c5ed8a9d99", "info@utcancer.com")}</a></p>
+              <p><span class="contact-email-label">{edit.text("text-a7c1e2b904", "New patients & referrals")}</span><br><a href={url(edit.text("link-d3b8f61a27", "mailto:referrals@utcancer.com"))} style="color:#477080;">{edit.text("text-5e9a04c3d8", "referrals@utcancer.com")}</a></p>
+            </div></div>
             <div class="credential"><div class="credential-icon"><span class="material-symbols-rounded">payments</span></div><div class="credential-content"><h3 class="credential-label">{edit.text("text-4017ad06a0", "Billing Questions")}</h3><p><a href={url(edit.text("link-a9f3908618", "tel:8012660878"))} style="color:#477080;">{edit.text("text-a4fe46e220", "801.266.0878")}</a><br>{edit.text("text-b5193210ef", "Monday–Friday, 7:00 AM – 4:00 PM")}</p></div></div>
           </div>
           <div style="margin-top:32px; padding:24px; background:#f0f4f8; border-radius:16px; border:1px solid #e0e9ef;">
@@ -36,7 +73,31 @@ import ContactForm from '../components/ContactForm.astro';
     </div>
   </section>
 
+<script>
+  const select = document.querySelector<HTMLSelectElement>('#contact-location');
+  if (select) {
+    const panels = document.querySelectorAll<HTMLElement>('[data-location-panel]');
+    const show = () => panels.forEach(panel => { panel.hidden = panel.dataset.locationPanel !== select.value; });
+    select.hidden = false;
+    document.querySelector<HTMLElement>('.contact-location-fallback')!.hidden = true;
+    select.addEventListener('change', show);
+    show();
+  }
+</script>
+
 <style>
+  .contact-location-select { width: 100%; margin: 10px 0 4px; padding: 11px 40px 11px 14px; font: 15px var(--font-body); color: #00476b; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2300476b' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 14px center; border: 1px solid #cfdbe3; border-radius: 10px; appearance: none; cursor: pointer; }
+  .contact-location-select:focus-visible { outline: 2px solid #00476b; outline-offset: 2px; }
+  .contact-location-panel { margin-top: 12px; padding: 14px 16px; background: #f4f7f9; border-radius: 12px; }
+  .contact-location-panel p + p { margin-top: 6px; }
+  .contact-location-panel a { color: #477080; }
+  .contact-location-name { font-weight: 600; color: #00476b; }
+  .contact-location-dept { color: #5a6670; }
+  .contact-location-more { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; }
+  .contact-location-more .material-symbols-rounded { font-size: 18px; }
+  .contact-locations .credential-content { flex: 1; min-width: 0; }
+  .contact-email-label { font-size: 13px; color: #5a6670; }
+  .credential-content p + p { margin-top: 10px; }
   .contact-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; align-items: start; }
   @media (max-width: 760px) { .contact-layout { grid-template-columns: 1fr; gap: 48px; } }
 </style>

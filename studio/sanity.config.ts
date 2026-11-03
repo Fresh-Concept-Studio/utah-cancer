@@ -29,6 +29,7 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
   ),
   S.divider(),
   S.documentTypeListItem('clinicalTrial').title('Clinical Trials').id('clinical-trials'),
+  S.documentTypeListItem('podcastEpisode').title('Podcast Episodes').id('podcast-episodes'),
   S.listItem().title('Shared content & contact cards').id('shared').child(S.list().title('Shared content').items([
     S.listItem().title('Leadership directory & media').id('shared-settings').child(S.document().schemaType('siteSettings').documentId('siteSettings')),
     S.documentTypeListItem('sharedContent').title('Shared contact panels'),
@@ -39,7 +40,7 @@ const structure: StructureResolver = S => S.list().title('Website editor').items
 ])
 const defaultDocumentNode: DefaultDocumentNodeResolver = (S, {schemaType}) => S.document().views([
   S.view.form().title('Edit'),
-  ...(!['siteSettings', 'clinicalTrial'].includes(schemaType) ? [S.view.component(RelatedContent).title('Related content')] : []),
+  ...(!['siteSettings', 'clinicalTrial', 'podcastEpisode'].includes(schemaType) ? [S.view.component(RelatedContent).title('Related content')] : []),
   ...(pageTypes.includes(schemaType) ? [S.view.component(PublishedPage).title('Published website')] : []),
 ])
 export default defineConfig({

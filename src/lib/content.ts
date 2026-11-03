@@ -1,4 +1,5 @@
 import localClinicalTrials from '../data/clinical-trials.json'
+import localPodcastEpisodes from '../data/podcast-episodes.json'
 import type {ClinicalTrial} from './clinical-trials'
 import {createClient} from '@sanity/client'
 import {convert} from './cms-records'
@@ -25,7 +26,7 @@ export const sanityConfig = {
 
 type AnyRecord = Record<string, any>
 const fallback = {
-  clinicalTrials: localClinicalTrials, providers: localProviders, locations: localLocations, specialties: localSpecialties, leaders: localLeaders,
+  clinicalTrials: localClinicalTrials, podcastEpisodes: localPodcastEpisodes, providers: localProviders, locations: localLocations, specialties: localSpecialties, leaders: localLeaders,
   policies: localPolicies, pages: localPages, defaults: localDefaults, sharedContent: localSharedContent,
   providerLocations: localProviderLocations, leadershipGroups: localLeadershipGroups,
   newsPosts: localNewsPosts, resourcePages: localResourcePages, mainPhone: localMainPhone, mediaHighlights: localMedia,
@@ -35,7 +36,7 @@ async function loadContent() {
   if (import.meta.env.SANITY_USE_CMS === 'false') return fallback
   const client = createClient({...sanityConfig, useCdn: false, perspective: 'published'})
   try {
-    const docs = await client.fetch<AnyRecord[]>(`*[_type in ["clinicalTrial", "provider", "location", "specialty", "leader", "policy", "newsArticle", "resourcePage", "page", "sharedContent", "providerLocation", "siteSettings"]]{
+    const docs = await client.fetch<AnyRecord[]>(`*[_type in ["clinicalTrial", "podcastEpisode", "provider", "location", "specialty", "leader", "policy", "newsArticle", "resourcePage", "page", "sharedContent", "providerLocation", "siteSettings"]]{
       ...,
       "pdfAssetUrl": pdf.asset->url,
       "insurancePlansPdfUrl": insurancePlansPdf.asset->url,
@@ -61,6 +62,7 @@ async function loadContent() {
     const settings = type('siteSettings')[0]
     return {
       clinicalTrials: type('clinicalTrial'),
+      podcastEpisodes: type('podcastEpisode'),
       providers: type('provider').map((p) => ({...p, directory: {...p.directory, ...(p.photo?.src?.startsWith('https://cdn.sanity.io/') ? {photo: p.photo.src, alt: p.photo.alt} : {})}})), locations: type('location'), specialties: type('specialty').map(({heroPhoto, ...s}) => ({...s, image: heroPhoto?.src || s.image})), leaders: type('leader'),
       policies: type('policy'), newsPosts, resourcePages: type('resourcePage'), pages,
       defaults: localDefaults, sharedContent: keyed('sharedContent', 'key', 'html'),
@@ -93,3 +95,15 @@ export const mainPhone = content.mainPhone
 export const mediaHighlights = content.mediaHighlights as (typeof localMedia[number] & {photo?: {src: string; alt: string}})[]
 
 export const clinicalTrials = content.clinicalTrials as ClinicalTrial[]
+
+export interface PodcastEpisode {
+  title: string;
+  guest?: string;
+  episodeNumber?: number;
+  publishedDate: string;
+  youtubeUrl?: string;
+  spotifyUrl?: string;
+  appleUrl?: string;
+}
+/** Published episodes, newest first. */
+export const podcastEpisodes = [...(content.podcastEpisodes as PodcastEpisode[])].sort((a, b) => b.publishedDate.localeCompare(a.publishedDate))
