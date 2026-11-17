@@ -63,7 +63,8 @@ async function loadContent() {
     return {
       clinicalTrials: type('clinicalTrial'),
       podcastEpisodes: type('podcastEpisode'),
-      providers: type('provider').map((p) => ({...p, directory: {...p.directory, ...(p.photo?.src?.startsWith('https://cdn.sanity.io/') ? {photo: p.photo.src, alt: p.photo.alt} : {})}})), locations: type('location'), specialties: type('specialty').map(({heroPhoto, ...s}) => ({...s, image: heroPhoto?.src || s.image})), leaders: type('leader'),
+      // An uploaded profile photo also becomes the card image, unless the card already has its own uploaded image (e.g. original photo on the card, cutout on the profile).
+      providers: type('provider').map((p) => ({...p, directory: {...p.directory, ...(p.photo?.src?.startsWith('https://cdn.sanity.io/') && !p.directory?.photo?.startsWith('https://cdn.sanity.io/') ? {photo: p.photo.src, alt: p.photo.alt} : {})}})), locations: type('location'), specialties: type('specialty').map(({heroPhoto, ...s}) => ({...s, image: heroPhoto?.src || s.image})), leaders: type('leader'),
       policies: type('policy'), newsPosts, resourcePages: type('resourcePage'), pages,
       defaults: localDefaults, sharedContent: keyed('sharedContent', 'key', 'html'),
       providerLocations: keyed('providerLocation', 'key'), leadershipGroups: settings?.leadershipGroups?.map((group: any) => ({...group, cards: (group.cards || []).map(({profile, ...card}: any) => ({...card, ...(profile ? {provider: profile.slug && profile.type === 'provider' ? profile.slug : undefined, leader: profile.slug && profile.type === 'leader' ? profile.slug : undefined} : {})}))})) || localLeadershipGroups,
