@@ -1,0 +1,31 @@
+{
+  "order": 10,
+  "directoryPhoto": {
+    "alt": "Shannon McRae",
+    "src": "/images/leader-shannon-mcrae.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Shannon McRae",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Shannon McRae",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-shannon-mcrae-clean.png?v=20260910"
+  },
+  "role": "Chief of Staff",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Shannon McRae has spent more than 27 years supporting executives and leadership teams, including more than 20 years with Utah Cancer Specialists. She began her career with UCS in 2004 as an HR Assistant and has since served in a variety of roles across the organization, supporting Human Resources, Clinical Services, Finance, executive leadership, and physicians. Most recently, she was promoted to Chief of Staff.</p> <p class=\"provider-bio\">Throughout her career, Shannon has built a broad understanding of the organization and the people who make it successful. Her experience working alongside employees, nurse managers, finance leaders, physicians, and executives has given her a unique perspective on how each part of Utah Cancer Specialists contributes to the patient experience.</p> <p class=\"provider-bio\">Shannon has always found fulfillment in caregiving and helping others. She originally came to UCS after a friend encouraged her to apply, and what began as a new job quickly became a place where she found purpose and a deep connection to the work.</p> <p class=\"provider-bio\">She is especially passionate about helping the community understand better who Utah Cancer Specialists is, what the organization does, and why its work matters. She also believes strongly in creating an experience where patients feel connected to their care team and know they are heard, seen, and genuinely cared for.</p> <p class=\"provider-bio\">Outside of work, Shannon enjoys trail running, spending time outdoors, traveling to be with family, supporting her children in their many activities, and occasionally finding time for a good nap.</p>",
+      "id": "about",
+      "title": "About Shannon McRae"
+    }
+  ],
+  "slug": "shannon-mcrae"
+}

@@ -1,0 +1,72 @@
+{
+  "order": 12,
+  "directory": {
+    "alt": "David E. Warner",
+    "category": "medical-oncology",
+    "order": 2,
+    "photo": "/images/provider-david-warner.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English, Spanish",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "David E. Warner, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "David E. Warner",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-david-warner.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. David Warner is a medical oncologist and sarcoma specialist who believes the best cancer care begins with understanding each patient as an individual. A Salt Lake City native, he returned to Utah to join Utah Cancer Specialists, drawn by the opportunity to work alongside a team of physicians he deeply respected and to care for patients in his home community.</p> <p class=\"provider-bio\">Dr. Warner’s interest in medicine and research began at the University of Utah, where he worked in a laboratory studying iron metabolism throughout college. He went on to attend medical school at the University of Utah, completed his residency at Wake Forest University, and completed his oncology fellowship at the University of Michigan.</p> <p class=\"provider-bio\">As a sarcoma specialist, Dr. Warner brings expertise that is uncommon in community oncology. He enjoys both the science of cancer care and the relationships he develops with his patients, particularly the opportunity to learn what matters most to each person.</p> <p class=\"provider-bio\">His approach to care is centered on partnership. He works with patients to establish their goals and determine the best path forward together. He believes his role is ultimately to help people—and recognizes that what “help” looks like can be different for every patient.</p> <p class=\"provider-bio\">Dr. Warner also has a passion for teaching and learning. He takes time to listen, understand his patients’ priorities, and respect their individual goals and autonomy. For him, getting to know the person behind the diagnosis is an important part of providing thoughtful, meaningful care.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Warner enjoys skiing, running, reading, music, and playing tennis.</p>",
+      "id": "about",
+      "title": "About Dr. Warner"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>Medical Oncology</li> <li>Residency:</li> <li>Wake Forest University in Winston-Salem, NC</li> <li>Fellowship:</li> <li>University of Michigan Medical Center – Ann Arbor, MI</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "david-warner",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

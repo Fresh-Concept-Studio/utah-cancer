@@ -1,0 +1,302 @@
+{
+  "order": 14,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-b61143de72",
+      "label": "Heading",
+      "section": "Newly Diagnosed",
+      "value": "Newly Diagnosed"
+    },
+    {
+      "key": "text-13cb406946",
+      "label": "Paragraph",
+      "section": "Newly Diagnosed",
+      "value": "You’re not in this alone. Our team is here to guide you from your very first visit through every step of treatment and beyond."
+    },
+    {
+      "key": "text-f3e1da68ad",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Your First Steps"
+    },
+    {
+      "key": "text-7cf8e73969",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "If you’ve just been diagnosed with cancer, you’re likely going through a whirlwind of emotions. We understand that it can be a very difficult time to collect your thoughts and make decisions. As a new patient at Utah Cancer Specialists, we want you to feel comfortable, cared for, and informed."
+    },
+    {
+      "key": "text-638556039c",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "While patients and their families have many decisions to make in a short time, our physicians and support staff are with you every step of this journey — from diagnosis through treatment and into survivorship."
+    },
+    {
+      "key": "text-84fa9a10d5",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "What to Expect"
+    },
+    {
+      "key": "text-d8fb3e31fc",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Meet Your Patient Advocate"
+    },
+    {
+      "key": "text-72086e5a07",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "Your advocate is the first person you’ll meet. They coordinate insurance, financial assistance, and emotional support so you can focus on treatment."
+    },
+    {
+      "key": "text-9203d4a08c",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Physician Consultation"
+    },
+    {
+      "key": "text-a3df15de26",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "Your oncologist will review your diagnosis, discuss treatment options, and answer your questions in a thorough initial consultation."
+    },
+    {
+      "key": "text-08fe3159d7",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Personalized Treatment Plan"
+    },
+    {
+      "key": "text-3e604ff9b8",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "Your care team develops a plan tailored to your specific cancer type, stage, and personal goals — drawing on the latest evidence and technology."
+    },
+    {
+      "key": "text-6b59635d0b",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Ongoing Support"
+    },
+    {
+      "key": "text-ecd6068abf",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "From support groups and educational classes to nutritional guidance and financial counseling, we address every dimension of your well-being."
+    },
+    {
+      "key": "text-6d06feab46",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Resources for New Patients"
+    },
+    {
+      "key": "link-5b9da5af13",
+      "kind": "link",
+      "label": "Link destination: folder_openPatient ResourcesHelpful resources including financial",
+      "section": "Your First Steps",
+      "value": "/patient-resources.html"
+    },
+    {
+      "key": "text-f14e95f52d",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Patient Resources"
+    },
+    {
+      "key": "text-30265a9baf",
+      "label": "Text",
+      "section": "Your First Steps",
+      "value": "Helpful resources including financial assistance, support organizations, and community programs."
+    },
+    {
+      "key": "link-40350aee20",
+      "kind": "link",
+      "label": "Link destination: schoolPatient EducationLearn more about your diagnosis, treatment",
+      "section": "Your First Steps",
+      "value": "/patient-education.html"
+    },
+    {
+      "key": "text-74374531cb",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Patient Education"
+    },
+    {
+      "key": "text-238647dd73",
+      "label": "Text",
+      "section": "Your First Steps",
+      "value": "Learn more about your diagnosis, treatment options, and what to expect during your care."
+    },
+    {
+      "key": "link-6db0994629",
+      "kind": "link",
+      "label": "Link destination: medicationTreatment OptionsUnderstand the therapies available to ",
+      "section": "Your First Steps",
+      "value": "/treatment-options.html"
+    },
+    {
+      "key": "text-84e29a2735",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Treatment Options"
+    },
+    {
+      "key": "text-edce1d38ef",
+      "label": "Paragraph",
+      "section": "Your First Steps",
+      "value": "Understand the therapies available to you, from chemotherapy and radiation to immunotherapy and clinical trials."
+    },
+    {
+      "key": "link-952ff786df",
+      "kind": "link",
+      "label": "Link destination: videocamTelehealthConnect with your care team from home through v",
+      "section": "Your First Steps",
+      "value": "/telehealth.html"
+    },
+    {
+      "key": "text-27581862f6",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": "Telehealth"
+    },
+    {
+      "key": "text-bd420f0530",
+      "label": "Text",
+      "section": "Your First Steps",
+      "value": "Connect with your care team from home through virtual visits on your smartphone or tablet."
+    },
+    {
+      "key": "text-7d9204e485",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": " Contact"
+    },
+    {
+      "key": "text-daeea4d0cc",
+      "label": "Text",
+      "section": "Your First Steps",
+      "value": "Phone:"
+    },
+    {
+      "key": "link-0fc44bd2ab",
+      "kind": "link",
+      "label": "Link destination: 801.269.0231",
+      "section": "Your First Steps",
+      "value": "tel:8012690231"
+    },
+    {
+      "key": "text-282d9159f2",
+      "label": "Link label",
+      "section": "Your First Steps",
+      "value": "801.269.0231"
+    },
+    {
+      "key": "text-4c4e6b2d1d",
+      "label": "Text",
+      "section": "Your First Steps",
+      "value": "Email:"
+    },
+    {
+      "key": "link-4546bb4dd0",
+      "kind": "link",
+      "label": "Link destination: info@utcancer.com",
+      "section": "Your First Steps",
+      "value": "mailto:info@utcancer.com"
+    },
+    {
+      "key": "text-c5ed8a9d99",
+      "label": "Link label",
+      "section": "Your First Steps",
+      "value": "info@utcancer.com"
+    },
+    {
+      "key": "link-686a9a3e68",
+      "kind": "link",
+      "label": "Link destination: mail Contact Us",
+      "section": "Your First Steps",
+      "value": "/contact.html"
+    },
+    {
+      "key": "text-3127f37906",
+      "label": "Link label",
+      "section": "Your First Steps",
+      "value": " Contact Us"
+    },
+    {
+      "key": "text-45135a9af3",
+      "label": "Heading",
+      "section": "Your First Steps",
+      "value": " Schedule a Visit"
+    },
+    {
+      "key": "text-939d476efd",
+      "label": "Text",
+      "section": "Your First Steps",
+      "value": "Request an appointment with one of our specialists."
+    },
+    {
+      "key": "link-6464e105f6",
+      "kind": "link",
+      "label": "Link destination: Request Appointment",
+      "section": "Your First Steps",
+      "value": "tel:8012629494"
+    },
+    {
+      "key": "text-abe5107326",
+      "label": "Link label",
+      "section": "Your First Steps",
+      "value": "Request Appointment"
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "A patient walks alongside a care advocate down a sunlit clinic hallway",
+        "src": "/images/generated/firstSteps-hallway-960.webp"
+      },
+      "key": "image-f2ff9a1bf4",
+      "label": "A patient walks alongside a care advocate down a sunlit clinic hallway",
+      "section": "Your First Steps"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "newly-diagnosed.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Newly Diagnosed - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "newly-diagnosed",
+    "cta": {
+      "heading": "Have questions? We’re here to help.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/newly-diagnosed.css"
+    ]
+  },
+  "title": "Newly Diagnosed - Utah Cancer Specialists"
+}

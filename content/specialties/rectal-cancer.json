@@ -1,0 +1,92 @@
+{
+  "order": 23,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Gastrointestinal",
+  "description": "Specialized treatment with multimodal approaches including radiation, chemotherapy, and surgery.",
+  "directory": {
+    "category": "gi",
+    "description": "Specialized treatment with multimodal approaches including radiation, chemo, and surgery.",
+    "icon": "local_hospital",
+    "order": 18,
+    "searchName": "Rectal Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-colon-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Rectal cancer treatment has evolved significantly, with many patients now receiving neoadjuvant (pre-surgical) chemotherapy and radiation to shrink tumors before surgery. Our team coordinates a multimodal approach that maximizes the chance of organ preservation when possible.</p> <p class=\"provider-bio\">For some patients with complete clinical response to neoadjuvant therapy, a watch-and-wait approach may be considered, avoiding major surgery altogether.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Rectal bleeding or blood in stool</li> <li>Change in bowel habits</li> <li>Narrowing of stools</li> <li>Feeling of incomplete evacuation</li> <li>Pelvic pain or discomfort</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">MRI of Pelvis</h3> <p>High-resolution staging of tumor depth and nodes</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Colonoscopy &amp; Biopsy</h3> <p>Tissue sampling and pathology</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>MSI, KRAS, BRAF</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Neoadjuvant Radiation</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Why is treatment different from colon cancer?</summary> <p>Rectal cancer's proximity to the anal sphincter and other structures requires specialized radiation and surgical techniques to achieve the best cancer control while preserving function.</p> </details> <details class=\"sd-faq-item\"> <summary>What is total neoadjuvant therapy?</summary> <p>TNT delivers all chemotherapy and radiation before surgery, which can improve outcomes and increase the chance of a complete pathologic response.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-5",
+  "slug": "rectal-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Rectal Cancer"
+}

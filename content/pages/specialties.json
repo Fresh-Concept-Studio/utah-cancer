@@ -1,0 +1,100 @@
+{
+  "order": 25,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-9a5f9d6772",
+      "label": "Heading",
+      "section": "Types of Cancer",
+      "value": "Types of Cancer"
+    },
+    {
+      "key": "text-0fe036c95c",
+      "label": "Paragraph",
+      "section": "Types of Cancer",
+      "value": "Comprehensive cancer care across a wide range of cancer types and blood disorders, delivered by board-certified specialists."
+    },
+    {
+      "key": "text-6ccb60071b",
+      "label": "Heading",
+      "section": "Categories",
+      "value": "Categories"
+    },
+    {
+      "key": "text-917bcf00a5",
+      "label": "Heading",
+      "section": "Categories",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text-63de101ba7",
+      "label": "Heading",
+      "section": "Categories",
+      "value": "Not sure where to start?"
+    },
+    {
+      "key": "text-ec35ca7fb9",
+      "label": "Text",
+      "section": "Categories",
+      "value": "Our team can help you find the right specialist for your needs."
+    },
+    {
+      "key": "link-0fc44bd2ab",
+      "kind": "link",
+      "label": "Link destination: phone Call 801.269.0231",
+      "section": "Categories",
+      "value": "tel:8012690231"
+    },
+    {
+      "key": "text-2939f80944",
+      "label": "Link label",
+      "section": "Categories",
+      "value": " Call 801.269.0231 "
+    },
+    {
+      "key": "text-db7de9d3f1",
+      "label": "Text",
+      "section": "Categories",
+      "value": "Showing all 28 cancer types"
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "specialties/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Types of Cancer - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "specialties-index",
+    "cta": {
+      "heading": "Contact us for more information.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us",
+          "attrs": {
+            "href": "/contact.html",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [
+      "/scripts/specialties-index.js"
+    ],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Types of Cancer - Utah Cancer Specialists"
+}

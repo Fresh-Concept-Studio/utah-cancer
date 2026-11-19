@@ -1,0 +1,36 @@
+{
+  "order": 12,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.263.3416",
+      "attrs": {
+        "href": "tel:8012633416",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=5131+S.+Cottonwood+St.%2C+Ste.+200+Murray%2C+UT+84107",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "5131 S. Cottonwood St., Ste. 200<br>Murray, UT 84107",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "intermountain-medical-center-campus",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Intermountain Medical Center Campus",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

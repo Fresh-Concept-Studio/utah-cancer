@@ -79,7 +79,7 @@ const emptyFilter = edit.text("text-84fea1204c", "No events match this filter ri
       {featured.map((event, index) => {
         const image = mainImage(event);
         return (
-          <div class="featured-event-card" data-event-date={event.date ?? undefined} hidden={index > 0}>
+          <div class="featured-event-card" data-sa={event.contentId} data-event-date={event.date ?? undefined} hidden={index > 0}>
             <div class="featured-event-img">
               {image && <img src={url(sized(image.src, 1280, 640))} width="640" height="320" alt={image.alt} class="featured-event-photo" loading="lazy" decoding="async">}
               <span class="featured-event-pin">{edit.text("text-ae31ad5d6f", "Featured")}</span>
@@ -136,7 +136,7 @@ const emptyFilter = edit.text("text-84fea1204c", "No events match this filter ri
             const image = mainImage(event);
             const parts = event.date ? eventDateParts(event.date) : null;
             return (
-              <Card href={event.link ? url(event.link) : undefined} target={event.link ? '_blank' : undefined} rel={event.link ? 'noopener' : undefined} class="event-card" data-cat={event.category} data-event-id={event.id} data-event-date={event.date ?? undefined} data-runwalk={isRunWalk(event) ? '' : undefined} id={event.id}>
+              <Card href={event.link ? url(event.link) : undefined} target={event.link ? '_blank' : undefined} rel={event.link ? 'noopener' : undefined} class="event-card" data-sa={event.contentId} data-cat={event.category} data-event-id={event.id} data-event-date={event.date ?? undefined} data-runwalk={isRunWalk(event) ? '' : undefined} id={event.id}>
                 <div class="event-card-date">
                   <span class="event-card-month">{parts?.month ?? 'DATE'}</span>
                   <span class="event-card-day">{parts?.day ?? 'TBA'}</span>
@@ -186,7 +186,7 @@ const emptyFilter = edit.text("text-84fea1204c", "No events match this filter ri
             const hasMedia = event.photos.length > 0 || Boolean(event.videoUrl);
             const isPastNow = pastIds.has(event.id);
             return (
-              <article class="past-event-card" data-cat={event.category} data-event-id={event.id} data-event-date={event.date ?? undefined} id={isPastNow ? event.id : undefined} hidden={!isPastNow}>
+              <article class="past-event-card" data-sa={event.contentId} data-cat={event.category} data-event-id={event.id} data-event-date={event.date ?? undefined} id={isPastNow ? event.id : undefined} hidden={!isPastNow}>
                 {image
                   ? <span class="past-event-media"><img src={url(sized(image.src, 640, 360))} width="640" height="360" alt={image.alt} loading="lazy" decoding="async"></span>
                   : <span class="past-event-media past-event-media--date" aria-hidden="true">

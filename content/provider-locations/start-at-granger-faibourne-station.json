@@ -1,0 +1,36 @@
+{
+  "order": 26,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.907.4750",
+      "attrs": {
+        "href": "tel:8019074750",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+Fourth+Floor-E.+West+Valley%2C+UT+84119",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "2965 W. 3500 S., Fourth Floor-E.<br>West Valley, UT 84119",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "start-at-granger-faibourne-station",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "START at Granger Fairbourne Station",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

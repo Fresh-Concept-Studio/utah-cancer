@@ -1,0 +1,32 @@
+{
+  "order": 1,
+  "description": "Learn about the monthly virtual SOMA Method Breathwork class for Utah Cancer Specialists patients and caregivers.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Monthly virtual class",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Class details</h2>\n      <div class=\"resource-facts\">\n        <div><span>When</span><strong>Second Thursday of each month at 7 p.m.</strong></div>\n        <div><span>Where</span><strong>Online</strong></div>\n        <div><span>Led by</span><strong>Marie Asay</strong></div>\n        <div><span>Who can attend</span><strong>Patients and caregivers</strong></div>\n      </div>\n      <h2>What to expect</h2>\n      <p>SOMA Method Breathwork combines rhythmic, mindful breathing with guided relaxation. No prior breathwork experience is required. Join from a quiet place where you can sit or lie down comfortably.</p>\n      <p>Call Utah Cancer Specialists at <a href=\"tel:8012690231\">801-269-0231</a> for current class details and the online registration link.</p>",
+  "icon": "favorite",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "A guided breathing practice offers patients and caregivers a simple way to pause, reconnect, and support stress management.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/programs-and-services.html",
+      "label": "All programs and services"
+    },
+    {
+      "href": "/supportivecare/",
+      "label": "Supportive care"
+    }
+  ],
+  "seoTitle": "SOMA Method Breathwork Class | Utah Cancer Specialists",
+  "slug": "breathwork-class",
+  "title": "SOMA Method Breathwork"
+}

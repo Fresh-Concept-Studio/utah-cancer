@@ -1,0 +1,36 @@
+{
+  "order": 15,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.296.6665",
+      "attrs": {
+        "href": "tel:8012966665",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "lakeview-hospital-campus",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Lakeview Hospital Campus",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

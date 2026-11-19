@@ -1,0 +1,36 @@
+{
+  "order": 13,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.562.8732",
+      "attrs": {
+        "href": "tel:8015628732",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%2C+Ste.+200+West+Jordan%2C+UT+84088",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "jordan-valley-cancer-center",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Jordan Valley Cancer Center",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

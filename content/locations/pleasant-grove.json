@@ -1,0 +1,86 @@
+{
+  "order": 8,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=1076+N.+County+Blvd.%2C+Ste.+D+Pleasant+Grove%2C+UT+84062",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8014929934",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "1076 N. County Blvd., Ste. D<br>Pleasant Grove, UT 84062",
+    "badge": "",
+    "county": "utah",
+    "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+    "order": 7,
+    "phone": "801.492.9934"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Pleasant Grove Clinic",
+    "src": "/images/location-pleasant-grove.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.3748,
+    "lng": -111.7688
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 1076 N. County Blvd., Ste. D, Pleasant Grove, UT 84062</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.492.9934</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.492.9934",
+          "attrs": {
+            "href": "tel:8014929934",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Our Pleasant Grove clinic extends UCS cancer care into northern Utah County. Located along County Boulevard, the clinic provides medical oncology, hematology, and infusion therapy services — bringing expert care to the communities of Pleasant Grove, Lindon, American Fork, and Highland.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Free parking is available directly in front of the clinic building.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1076 N. County Blvd., Ste. D<br>Pleasant Grove, UT 84062</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=1076+N.+County+Blvd.%2C+Ste.+D+Pleasant+Grove%2C+UT+84062\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014929934\">801.492.9934</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.270.2223</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8014929934\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "pleasant-grove",
+  "subtitle": "Medical Oncology & Hematology",
+  "tag": "Medical Oncology",
+  "title": "Pleasant Grove Clinic"
+}

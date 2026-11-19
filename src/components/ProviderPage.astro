@@ -14,7 +14,7 @@ if (!provider) throw new Error(`Unknown provider: ${Astro.props.slug}`);
 const locations = provider.locationIds.map(id => clinics[id as keyof typeof clinics]).filter(Boolean);
 const calls = providerCalls(locations);
 ---
-<section class="provider-hero"><div class="container provider-hero-inner">
+<section class="provider-hero" data-sa={provider.contentId}><div class="container provider-hero-inner">
   <div class="provider-hero-text">
     <a href={url('/providers/index.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Providers</a>
     <h1 class="provider-name">{provider.name}</h1>

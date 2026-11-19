@@ -1,0 +1,87 @@
+{
+  "order": 13,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+4th+Floor+E.+West+Valley+City%2C+UT+84119",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8019074750",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "2965 W. 3500 S., 4th Floor E.<br>West Valley City, UT 84119",
+    "badge": "",
+    "county": "salt-lake",
+    "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+    "order": 12,
+    "phone": "801.907.4750",
+    "subtitle": "Clinical Trials"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "START Mountain Region",
+    "src": "/images/location-start.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.6944,
+    "lng": -111.962
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 2965 W. 3500 S., 4th Floor E., West Valley City, UT 84119</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.907.4750</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.907.4750",
+          "attrs": {
+            "href": "tel:8019074750",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Established in 2020, the START Mountain Region center is Utah's only dedicated community-based early-phase clinical trial site. Part of the world's largest Phase I oncology research program, the center is led by Dr. Justin Call and gives patients across the Intermountain West access to cutting-edge investigational therapies. The program expands options for patients who have exhausted standard treatments and wish to explore emerging approaches.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> Phase I Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Phase II Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Investigational Therapies </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">labs</span> Molecular Testing </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">analytics</span> Biomarker Analysis </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Located on the 4th floor east wing of Fairbourne Station. Free parking is available in the building lot.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor E.<br>West Valley City, UT 84119</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=2965+W.+3500+S.%2C+4th+Floor+E.+West+Valley+City%2C+UT+84119\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8019074750\">801.907.4750</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.401.2092</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8019074750\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "start",
+  "subtitle": "Early-Phase Clinical Trials",
+  "tag": "Clinical Trials",
+  "title": "START Mountain Region"
+}

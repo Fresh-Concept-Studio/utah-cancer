@@ -1,0 +1,92 @@
+{
+  "order": 15,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Gastrointestinal",
+  "description": "Expert liver cancer care featuring advanced interventional procedures, systemic therapies, and personalized treatment plans.",
+  "directory": {
+    "category": "gi",
+    "description": "Expert care featuring advanced interventional procedures and systemic therapies.",
+    "icon": "biotech",
+    "order": 23,
+    "searchName": "Liver Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-liver-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Hepatocellular carcinoma (HCC) and other liver cancers require a coordinated approach between medical oncologists, hepatologists, interventional radiologists, and surgeons. Treatment depends on liver function, tumor extent, and overall health.</p> <p class=\"provider-bio\">The introduction of immunotherapy-targeted therapy combinations has significantly improved outcomes in advanced HCC, and our practice offers access to these treatments along with clinical trials.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Abdominal pain or swelling</li> <li>Unexplained weight loss</li> <li>Loss of appetite</li> <li>Nausea or vomiting</li> <li>Jaundice</li> <li>Fatigue</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Triple-phase CT or MRI with contrast</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>When imaging is inconclusive</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">AFP Monitoring</h3> <p>Alpha-fetoprotein tumor marker</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Liver Function</h3> <p>Comprehensive liver panel and Child-Pugh scoring</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Systemic Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (TKIs)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical / Transplant Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What causes liver cancer?</summary> <p>Chronic hepatitis B or C, cirrhosis from any cause, heavy alcohol use, and non-alcoholic fatty liver disease are the leading risk factors.</p> </details> <details class=\"sd-faq-item\"> <summary>Is immunotherapy used for liver cancer?</summary> <p>Yes. Immunotherapy combined with targeted agents is now first-line treatment for advanced HCC, offering significant improvements in survival.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-5",
+  "slug": "liver-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Liver Cancer"
+}

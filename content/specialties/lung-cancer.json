@@ -1,0 +1,92 @@
+{
+  "order": 16,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Comprehensive lung cancer care using the latest diagnostic tools and targeted therapies for the best possible outcomes.",
+  "directory": {
+    "category": "common",
+    "description": "Comprehensive care using the latest diagnostic tools and targeted therapies for optimal outcomes.",
+    "icon": "air",
+    "order": 2,
+    "searchName": "Lung Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-lung-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Lung cancer remains one of the most common and serious cancers, but treatment has been transformed by advances in targeted therapy, immunotherapy, and precision radiation. At Utah Cancer Specialists, we use molecular profiling to identify the specific mutations driving your cancer, then match you with the most effective therapies available.</p> <p class=\"provider-bio\">Whether your diagnosis is non-small cell, small cell, or a rare subtype, our multidisciplinary team develops an individualized treatment plan that combines the latest evidence with compassionate, whole-person care.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Persistent cough that worsens over time</li> <li>Coughing up blood or rust-colored sputum</li> <li>Shortness of breath or wheezing</li> <li>Chest pain that worsens with deep breathing</li> <li>Unexplained weight loss and fatigue</li> <li>Recurrent respiratory infections</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Low-dose CT screening, PET/CT, and brain MRI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Molecular Testing</h3> <p>Tissue biopsy with comprehensive genomic profiling (NGS)</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biomarker Analysis</h3> <p>EGFR, ALK, ROS1, PD-L1, KRAS, and other actionable markers</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Pulmonary Function</h3> <p>Breathing tests to assess lung capacity before treatment</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radar</span> SBRT/SRS</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is lung cancer only caused by smoking?</summary> <p>No. While smoking is the leading risk factor, approximately 20% of lung cancer cases occur in people who have never smoked. Radon exposure, secondhand smoke, occupational chemicals, and genetic factors also play a role.</p> </details> <details class=\"sd-faq-item\"> <summary>What is targeted therapy?</summary> <p>Targeted therapy uses drugs designed to attack specific genetic mutations in cancer cells. Molecular testing of your tumor identifies which mutations are present, allowing us to match you with FDA-approved targeted drugs or clinical trials.</p> </details> <details class=\"sd-faq-item\"> <summary>Do you offer lung cancer screening?</summary> <p>Yes. We follow USPSTF guidelines recommending annual low-dose CT screening for adults aged 50-80 with a 20 pack-year smoking history. Talk to your primary care doctor or call us for a referral.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "lung-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Lung Cancer"
+}

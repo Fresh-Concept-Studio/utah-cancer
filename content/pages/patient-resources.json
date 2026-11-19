@@ -1,0 +1,468 @@
+{
+  "order": 16,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-f14e95f52d",
+      "label": "Heading",
+      "section": "Patient Resources",
+      "value": "Patient Resources"
+    },
+    {
+      "key": "text-222a5e457a",
+      "label": "Paragraph",
+      "section": "Patient Resources",
+      "value": "A collection of resources to support you through every stage of your cancer journey — from diagnosis through treatment and into survivorship."
+    },
+    {
+      "key": "text-716940f105",
+      "label": "Text",
+      "section": "Patient Resources",
+      "value": "Six core resources"
+    },
+    {
+      "key": "text-b3c66bc182",
+      "label": "Text",
+      "section": "Patient Resources",
+      "value": "24/7 portal access"
+    },
+    {
+      "key": "text-205124fd5d",
+      "label": "Text",
+      "section": "Patient Resources",
+      "value": "Patient advocates on call"
+    },
+    {
+      "key": "text-23b72125a0",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Everything you need"
+    },
+    {
+      "key": "text-dce80d2b09",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "A change built around your care."
+    },
+    {
+      "key": "text-d0a9a9a655",
+      "label": "Paragraph",
+      "section": "A change built around your care.",
+      "value": "Resources to help you stay connected, informed, and supported — from secure messaging with your care team to community programs that go beyond the clinic."
+    },
+    {
+      "key": "link-f9e79993d9",
+      "kind": "link",
+      "label": "Link destination: person Most used · 24/7 access Patient Portal Secure access to yo",
+      "section": "A change built around your care.",
+      "value": "https://www.navigatingcare.com/navigatingcare/"
+    },
+    {
+      "key": "text-86a08a20f3",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Most used · 24/7 access"
+    },
+    {
+      "key": "text-01dfb82161",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "Patient Portal"
+    },
+    {
+      "key": "text-9a8d7e3dbe",
+      "label": "Paragraph",
+      "section": "A change built around your care.",
+      "value": "Secure access to your health records, lab results, medications, and direct messaging with your care team — all in one place, any time."
+    },
+    {
+      "key": "text-c6be43241f",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Log in to your portal "
+    },
+    {
+      "key": "link-7fa125168e",
+      "kind": "link",
+      "label": "Link destination: 02 volunteer_activism Patient Advocacy Your personal liaison — in",
+      "section": "A change built around your care.",
+      "value": "/programs-and-services.html#patient-advocacy"
+    },
+    {
+      "key": "text-bcac9d1d8e",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "02"
+    },
+    {
+      "key": "text-4bebaa708b",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "Patient Advocacy"
+    },
+    {
+      "key": "text-56d1e16ad9",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Your personal liaison — insurance, authorizations, and support throughout treatment."
+    },
+    {
+      "key": "link-cd90c25e01",
+      "kind": "link",
+      "label": "Link destination: View page",
+      "section": "A change built around your care.",
+      "value": "https://mypay.poscorp.com/UtahCancer#/account/login?guestPay=v2"
+    },
+    {
+      "key": "text-3ea6c91e24",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "03"
+    },
+    {
+      "key": "text-c4a9e188c6",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "Billing & Quick Pay"
+    },
+    {
+      "key": "text-0c472a5ab3",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "View statements, make secure payments, and set up autopay."
+    },
+    {
+      "key": "link-952ff786df",
+      "kind": "link",
+      "label": "Link destination: 04 videocam Telehealth Virtual visits from home — simple, direct,",
+      "section": "A change built around your care.",
+      "value": "/telehealth.html"
+    },
+    {
+      "key": "text-798f861ee7",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "04"
+    },
+    {
+      "key": "text-27581862f6",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "Telehealth"
+    },
+    {
+      "key": "text-8518247a64",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Virtual visits from home — simple, direct, on any smartphone or tablet."
+    },
+    {
+      "key": "link-40350aee20",
+      "kind": "link",
+      "label": "Link destination: 05 school Education & Videos Resources to help you understand you",
+      "section": "A change built around your care.",
+      "value": "/patient-education.html"
+    },
+    {
+      "key": "text-28a5c28185",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "05"
+    },
+    {
+      "key": "text-3f41f101a8",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "Education & Videos"
+    },
+    {
+      "key": "text-191666c724",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Resources to help you understand your diagnosis, treatment, and what to expect."
+    },
+    {
+      "key": "link-d83833224e",
+      "kind": "link",
+      "label": "Link destination: 06 group Programs & Support Support groups, breathwork, nutrition",
+      "section": "A change built around your care.",
+      "value": "/programs-and-services.html"
+    },
+    {
+      "key": "text-7316b3d5fe",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "06"
+    },
+    {
+      "key": "text-57c94151c7",
+      "label": "Heading",
+      "section": "A change built around your care.",
+      "value": "Programs & Support"
+    },
+    {
+      "key": "text-a55e1da91b",
+      "label": "Text",
+      "section": "A change built around your care.",
+      "value": "Support groups, breathwork, nutrition, and community programs for patients and caregivers."
+    },
+    {
+      "key": "link-fc0a93edd1",
+      "kind": "link",
+      "label": "Link destination: diversity_1 Practical Support Housing, food, transportation, home",
+      "section": "Pr bento section",
+      "value": "/supportive-resources/"
+    },
+    {
+      "key": "text-1b91d547c0",
+      "label": "Heading",
+      "section": "Pr bento section",
+      "value": "Practical Support"
+    },
+    {
+      "key": "text-f96b5b41e1",
+      "label": "Text",
+      "section": "Pr bento section",
+      "value": "Housing, food, transportation, home cleaning, and personal safety resources."
+    },
+    {
+      "key": "link-fdc8e7cdae",
+      "kind": "link",
+      "label": "Link destination: favorite Supportive Care Help managing symptoms, side effects, st",
+      "section": "Pr bento section",
+      "value": "/supportivecare/"
+    },
+    {
+      "key": "text-70c65d21f7",
+      "label": "Heading",
+      "section": "Pr bento section",
+      "value": "Supportive Care"
+    },
+    {
+      "key": "text-739babc25a",
+      "label": "Text",
+      "section": "Pr bento section",
+      "value": "Help managing symptoms, side effects, stress, and quality of life."
+    },
+    {
+      "key": "link-e5e89960c7",
+      "kind": "link",
+      "label": "Link destination: medication Integrated Pharmacy Oral medication coordination, educ",
+      "section": "Pr bento section",
+      "value": "/medically-integrated-pharmacy/"
+    },
+    {
+      "key": "text-919e5c030d",
+      "label": "Heading",
+      "section": "Pr bento section",
+      "value": "Integrated Pharmacy"
+    },
+    {
+      "key": "text-a76bed17cf",
+      "label": "Text",
+      "section": "Pr bento section",
+      "value": "Oral medication coordination, education, authorizations, and assistance."
+    },
+    {
+      "key": "link-d756ed2ef0",
+      "kind": "link",
+      "label": "Link destination: groups Visitor Information Guidance for family members, caregiver",
+      "section": "Pr bento section",
+      "value": "/visitorandguestinfo/"
+    },
+    {
+      "key": "text-d84b674870",
+      "label": "Heading",
+      "section": "Pr bento section",
+      "value": "Visitor Information"
+    },
+    {
+      "key": "text-db6671806b",
+      "label": "Text",
+      "section": "Pr bento section",
+      "value": "Guidance for family members, caregivers, and other clinic visitors."
+    },
+    {
+      "key": "link-6af14cceff",
+      "kind": "link",
+      "label": "Link destination: directions_walk Physical Therapy Cancer-focused rehabilitation fo",
+      "section": "Pr bento section",
+      "value": "/physical-therapy.html"
+    },
+    {
+      "key": "text-889c0b24cd",
+      "label": "Heading",
+      "section": "Pr bento section",
+      "value": "Physical Therapy"
+    },
+    {
+      "key": "text-5533289f2d",
+      "label": "Text",
+      "section": "Pr bento section",
+      "value": "Cancer-focused rehabilitation for movement, energy, and recovery."
+    },
+    {
+      "key": "text-a7109fbad1",
+      "label": "Small label",
+      "section": "Accepted Insurance Plans",
+      "value": "Insurance"
+    },
+    {
+      "key": "text-768d2dd816",
+      "label": "Heading",
+      "section": "Accepted Insurance Plans",
+      "value": "Accepted Insurance Plans"
+    },
+    {
+      "key": "text-c75934038b",
+      "label": "Paragraph",
+      "section": "Accepted Insurance Plans",
+      "value": "We work with a wide range of commercial, Medicare, Medicaid, and Marketplace health plans. Download the full list to see whether your plan is included."
+    },
+    {
+      "key": "text-046acf4e83",
+      "label": "Note",
+      "section": "Accepted Insurance Plans",
+      "value": "Plans and networks can change. Please confirm your coverage with your insurance company, or talk with our Patient Advocacy team."
+    },
+    {
+      "key": "text-7ed242189e",
+      "label": "PDF button text",
+      "section": "Accepted Insurance Plans",
+      "value": "View accepted plans (PDF)"
+    },
+    {
+      "key": "link-e7ebe9dd34",
+      "kind": "link",
+      "label": "Link destination: Talk to Patient Advocacy",
+      "section": "Accepted Insurance Plans",
+      "value": "/programs-and-services.html#patient-advocacy"
+    },
+    {
+      "key": "text-9887984957",
+      "label": "Link text",
+      "section": "Accepted Insurance Plans",
+      "value": "Talk to Patient Advocacy"
+    },
+    {
+      "key": "text-bc19670eec",
+      "label": "Last updated note",
+      "section": "Accepted Insurance Plans",
+      "value": "Last updated September 10, 2026"
+    },
+    {
+      "key": "text-5863403d25",
+      "label": "Text",
+      "section": "Trusted external resources.",
+      "value": "Beyond Utah Cancer"
+    },
+    {
+      "key": "text-76538924fb",
+      "label": "Heading",
+      "section": "Trusted external resources.",
+      "value": "Trusted external resources."
+    },
+    {
+      "key": "text-a8bae193eb",
+      "label": "Paragraph",
+      "section": "Trusted external resources.",
+      "value": "The following external organizations may be helpful. Inclusion does not imply endorsement by Utah Cancer Specialists."
+    },
+    {
+      "key": "link-643a03bf96",
+      "kind": "link",
+      "label": "Link destination: American Cancer Society Information, support, and resources for c",
+      "section": "Trusted external resources.",
+      "value": "https://www.cancer.org/"
+    },
+    {
+      "key": "text-0f7e9aabeb",
+      "label": "Heading",
+      "section": "Trusted external resources.",
+      "value": "American Cancer Society"
+    },
+    {
+      "key": "text-02facc249a",
+      "label": "Text",
+      "section": "Trusted external resources.",
+      "value": "Information, support, and resources for cancer patients and families."
+    },
+    {
+      "key": "link-35313c6221",
+      "kind": "link",
+      "label": "Link destination: National Cancer Institute Comprehensive cancer information from t",
+      "section": "Trusted external resources.",
+      "value": "https://www.cancer.gov/"
+    },
+    {
+      "key": "text-2ca60c923f",
+      "label": "Heading",
+      "section": "Trusted external resources.",
+      "value": "National Cancer Institute"
+    },
+    {
+      "key": "text-65555e498c",
+      "label": "Text",
+      "section": "Trusted external resources.",
+      "value": "Comprehensive cancer information from the U.S. government."
+    },
+    {
+      "key": "link-dc77fa5450",
+      "kind": "link",
+      "label": "Link destination: CancerCare Free professional support including counseling, suppor",
+      "section": "Trusted external resources.",
+      "value": "https://www.cancercare.org/"
+    },
+    {
+      "key": "text-9af6350dc5",
+      "label": "Heading",
+      "section": "Trusted external resources.",
+      "value": "CancerCare"
+    },
+    {
+      "key": "text-6460558b4b",
+      "label": "Text",
+      "section": "Trusted external resources.",
+      "value": "Free professional support including counseling, support groups, and financial assistance."
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdf": {},
+  "insurancePlansPdfUrl": "https://cdn.sanity.io/files/spba0u9p/production/09d3676dab47f759cbf42696af202ca1912d1f48.pdf",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "patient-resources.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Patient Resources - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "patient-resources",
+    "cta": {
+      "heading": "Need help finding the right resource?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/patient-resources.css"
+    ]
+  },
+  "title": "Patient Resources - Utah Cancer Specialists"
+}

@@ -1,0 +1,31 @@
+{
+  "order": 5,
+  "directoryPhoto": {
+    "alt": "Johnny Walker",
+    "src": "/images/leader-johnny-walker.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Johnny Walker",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Johnny Walker",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-johnny-walker.jpg"
+  },
+  "role": "Director of Research",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Johnny has more than 25 years of experience in clinical research and has spent nearly 20 years serving as Director of Clinical Research at Utah Cancer Specialists. Throughout his career, he has been committed to expanding access to innovative treatment options and ensuring patients have opportunities to participate in meaningful clinical trials close to home.</p> <p class=\"provider-bio\">Early in his research career, Johnny authored a paper examining genetic differences in warfarin metabolism and had the opportunity to present his work at the American College of Cardiology. He later joined Utah Cancer Specialists, where he was given the opportunity to lead and grow the organization’s clinical research program in an increasingly complex and rapidly evolving field.</p> <p class=\"provider-bio\">What continues to excite Johnny most about clinical research is the expansion of new therapies and treatment approaches available to patients. He values the role research can play in providing additional options and advancing cancer care for both current and future patients.</p> <p class=\"provider-bio\">Johnny’s focus is on bringing high-quality clinical trials to Utah Cancer Specialists while also considering the practical impact participation may have on patients and their families. He works closely with physicians, research staff, sponsors, and partners to identify trials that offer meaningful opportunities while minimizing unnecessary financial burden whenever possible.</p> <p class=\"provider-bio\">Outside of work, Johnny enjoys spending time outdoors, particularly fishing, hunting, and camping.</p>",
+      "id": "about",
+      "title": "About Johnny Walker"
+    }
+  ],
+  "slug": "johnny-walker"
+}

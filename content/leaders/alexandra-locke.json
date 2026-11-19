@@ -1,0 +1,33 @@
+{
+  "order": 1,
+  "description": "Meet Alexandra Locke, PA-C, Director of Clinical Research and Clinical Operations at Utah Cancer Specialists.",
+  "directoryPhoto": {
+    "alt": "Alexandra Locke, PA-C",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/d98a20663b9252194f0260af2bdf0b18ee89c76c-1180x1333.png?crop=focalpoint&fp-x=0.5&fp-y=0.38"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Alexandra Locke, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Alexandra Locke, PA-C",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/a61d1e44c40fc6bda45c7aea35549079621acb24-1180x1333.webp"
+  },
+  "role": "Director of Clinical Research | Clinical Operations",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Alexandra Locke brings a unique combination of clinical expertise, scientific research, and education to her role in oncology. Her career began as a chemist in Texas before her passion for biomedical research led her to pursue a master’s degree in Oncological Sciences. While studying lung cancer, she discovered a desire to connect more directly with patients and make a meaningful difference in their lives.</p> <p class=\"provider-bio\">That passion led Alexandra to the Clinical Trials team at Huntsman Cancer Hospital, where she witnessed firsthand the impact of innovative treatments and the strength of patients navigating a cancer diagnosis. Inspired by their stories and encouraged by physician mentors, she pursued her Physician Assistant degree at the University of Utah, followed by an Oncology Advanced Practice Clinician Fellowship at Huntsman Cancer Hospital.</p> <p class=\"provider-bio\">Alexandra's clinical experience spans hematology, medical oncology, urologic oncology, acute cancer care, survivorship, and surgical first assist. She is certified by the National Commission on Certification of Physician Assistants (NCCPA) and has contributed to clinical research, peer-reviewed publications, patents, and educational presentations. Her research interests include expanding treatment options through clinical trials, improving management of treatment-related side effects, and using healthcare data to improve patient outcomes.</p> <p class=\"provider-bio\">For Alexandra, oncology is more than a profession. When her father was diagnosed with cholangiocarcinoma, she experienced cancer care from the perspective of a family member. Navigating his diagnosis, along with her family's own genetic cancer risks, gave her an even deeper understanding of the emotional and physical challenges patients and their loved ones face.</p> <p class=\"provider-bio\">These experiences have shaped her philosophy of care: the patient comes first, always. Alexandra believes every patient deserves to feel heard, respected, and empowered to make informed decisions about their treatment. She values a collaborative, team-based approach and is committed to helping patients understand and access the full range of available treatment options, including clinical trials.</p> <p class=\"provider-bio\">A three-time graduate of the University of Utah, Alexandra considers Utah home. She remains passionate about education and serves as adjunct faculty in the University of Utah's Physician Assistant Program, where she lectures on oncology and helps prepare the next generation of healthcare professionals.</p> <p class=\"provider-bio\">Outside of work, Alexandra enjoys spending time in the mountains with her family and their three energetic dogs.</p>",
+      "id": "about",
+      "title": "About Alexandra Locke"
+    }
+  ],
+  "seoTitle": "Alexandra Locke | Utah Cancer Specialists",
+  "slug": "alexandra-locke"
+}

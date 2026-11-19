@@ -1,0 +1,27 @@
+{
+  "order": 1,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 208.785.3800",
+      "attrs": {
+        "href": "tel:2087853800",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "978 Poplar Street, 3rd Floor<br>Blackfoot, ID 83221",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "bingham-healthcare",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Bingham Healthcare",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

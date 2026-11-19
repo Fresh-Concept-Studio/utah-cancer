@@ -1,0 +1,15 @@
+{
+  "order": 5,
+  "category": "support",
+  "date": "2026-10-24",
+  "description": "A patient resource event featuring speakers, practical information, and valuable resources.",
+  "image": {
+    "alt": "People visiting a pink community resource fair",
+    "src": "/images/event-pinksync-640.webp"
+  },
+  "link": "https://www.pinksync.org/registration-pages/register",
+  "location": "Awardco Headquarters, Lindon",
+  "photos": null,
+  "timeText": "9:00 AM–2:00 PM",
+  "title": "PinkSync"
+}

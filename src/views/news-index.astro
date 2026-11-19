@@ -15,7 +15,7 @@ import { url } from '../lib/urls';
 <section class="news-index-section">
   <div class="container news-grid">
     {newsPosts.map((post, index) => (
-      <article class:list={["news-card", index === 0 && "news-card--featured"]}>
+      <article class:list={["news-card", index === 0 && "news-card--featured"]} data-sa={post.contentId}>
         <a class="news-card__image" href={url(`/${post.slug}/`)} aria-label={`Read ${post.title}`}>
           <img src={url(post.featuredImage)} alt={post.featuredAlt} width={index === 0 ? 1200 : 960} height={index === 0 ? 927 : 720} loading={index === 0 ? "eager" : "lazy"} decoding="async" />
         </a>

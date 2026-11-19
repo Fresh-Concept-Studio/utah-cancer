@@ -1,0 +1,36 @@
+{
+  "order": 27,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.907.4750",
+      "attrs": {
+        "href": "tel:8019074750",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+Fourth+Floor+West+Valley+City%2C+UT+84119",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "2965 W. 3500 S., Fourth Floor<br>West Valley City, UT 84119",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "start-mountain-region-clinical-trials",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "START Mountain Region-Clinical Trials",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

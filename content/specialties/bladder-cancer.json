@@ -1,0 +1,92 @@
+{
+  "order": 2,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Comprehensive bladder cancer treatment including immunotherapy, chemotherapy, and surgical interventions.",
+  "directory": {
+    "category": "common",
+    "description": "Comprehensive treatment including immunotherapy, chemotherapy, and surgical interventions.",
+    "icon": "medical_information",
+    "order": 7,
+    "searchName": "Bladder Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-kidney-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Bladder cancer ranges from superficial tumors that can be managed with outpatient procedures to muscle-invasive disease requiring aggressive multimodal treatment. Our medical oncologists work with urologic surgeons to provide a coordinated treatment approach at every stage.</p> <p class=\"provider-bio\">Immunotherapy has transformed the treatment of advanced bladder cancer, and our practice offers access to the latest checkpoint inhibitors and clinical trials.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Blood in the urine (hematuria)</li> <li>Frequent or urgent urination</li> <li>Pain or burning during urination</li> <li>Pelvic pain</li> <li>Back pain on one side</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT urogram, cystoscopy, and MRI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Transurethral resection with pathology</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>PD-L1 and FGFR testing for targeted therapy eligibility</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (FGFR)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What causes bladder cancer?</summary> <p>Smoking is the leading risk factor. Chemical exposures, chronic bladder infections, and certain medications also increase risk.</p> </details> <details class=\"sd-faq-item\"> <summary>What is intravesical therapy?</summary> <p>For non-muscle-invasive bladder cancer, treatment can be delivered directly into the bladder through a catheter — including BCG immunotherapy and chemotherapy.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "bladder-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Bladder Cancer"
+}

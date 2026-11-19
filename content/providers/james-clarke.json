@@ -1,0 +1,72 @@
+{
+  "order": 23,
+  "directory": {
+    "alt": "James W. Clarke",
+    "category": "radiation-oncology",
+    "order": 27,
+    "photo": "/images/provider-james-clarke.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "timpanogos-regional-hospital-2"
+  ],
+  "mediaHighlights": null,
+  "name": "James W. Clarke, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "James W. Clarke",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-james-clarke.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">James W. Clarke, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Clarke"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Ohio State University College of Medicine, Columbus, OH</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Ohio State University College of Medicine, Columbus, OH Location: Orem Clinic 700 W. 800 N., Ste. 140 Orem, UT 84057</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "james-clarke",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

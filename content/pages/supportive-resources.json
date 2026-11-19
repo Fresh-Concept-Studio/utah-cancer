@@ -1,0 +1,210 @@
+{
+  "order": 32,
+  "description": "Find practical Utah resources for housing, nutrition, transportation, home cleaning, personal safety, and cancer treatment support.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "link-5b9da5af13",
+      "kind": "link",
+      "label": "Link destination: Patient Resources",
+      "section": "Practical support for daily life.",
+      "value": "/patient-resources.html"
+    },
+    {
+      "key": "text-f14e95f52d",
+      "label": "Link label",
+      "section": "Practical support for daily life.",
+      "value": "Patient Resources"
+    },
+    {
+      "key": "text-209dce885c",
+      "label": "Text",
+      "section": "Practical support for daily life.",
+      "value": "Supportive Resources"
+    },
+    {
+      "key": "text-cf1c685e16",
+      "label": "Text",
+      "section": "Practical support for daily life.",
+      "value": "Help beyond the clinic"
+    },
+    {
+      "key": "text-727213130d",
+      "label": "Heading",
+      "section": "Practical support for daily life.",
+      "value": "Practical support for daily life."
+    },
+    {
+      "key": "text-cab9706df0",
+      "label": "Paragraph",
+      "section": "Practical support for daily life.",
+      "value": "Trusted starting points for housing, food, transportation, home care, and personal safety during cancer treatment."
+    },
+    {
+      "key": "text-e997ea2a15",
+      "label": "Text",
+      "section": "Your patient advocate can help.",
+      "value": "View resources "
+    },
+    {
+      "key": "text-c52bc38b4c",
+      "label": "Text",
+      "section": "Your patient advocate can help.",
+      "value": "Personal guidance"
+    },
+    {
+      "key": "text-aacc1594e3",
+      "label": "Heading",
+      "section": "Your patient advocate can help.",
+      "value": "Your patient advocate can help."
+    },
+    {
+      "key": "text-83794bcf49",
+      "label": "Paragraph",
+      "section": "Your patient advocate can help.",
+      "value": "Ask about insurance, financial assistance, transportation, and community programs that fit your needs."
+    },
+    {
+      "key": "link-7fa125168e",
+      "kind": "link",
+      "label": "Link destination: Learn about patient advocacy",
+      "section": "Your patient advocate can help.",
+      "value": "/programs-and-services.html#patient-advocacy"
+    },
+    {
+      "key": "text-d731594487",
+      "label": "Link label",
+      "section": "Your patient advocate can help.",
+      "value": "Learn about patient advocacy"
+    },
+    {
+      "key": "resource-card-0",
+      "kind": "link",
+      "label": "Link destination",
+      "section": "Resource cards",
+      "value": "/housing/"
+    },
+    {
+      "key": "resource-card-1",
+      "kind": "text",
+      "label": "Card title",
+      "section": "Resource cards",
+      "value": "Housing & Utilities"
+    },
+    {
+      "key": "resource-card-2",
+      "kind": "text",
+      "label": "Card description",
+      "section": "Resource cards",
+      "value": "Housing, rent, energy, and statewide assistance programs."
+    },
+    {
+      "key": "resource-card-3",
+      "kind": "link",
+      "label": "Link destination",
+      "section": "Resource cards",
+      "value": "/nutrition/"
+    },
+    {
+      "key": "resource-card-4",
+      "kind": "text",
+      "label": "Card title",
+      "section": "Resource cards",
+      "value": "Nutrition & Food"
+    },
+    {
+      "key": "resource-card-5",
+      "kind": "text",
+      "label": "Card description",
+      "section": "Resource cards",
+      "value": "Treatment nutrition guidance and Utah food assistance."
+    },
+    {
+      "key": "resource-card-6",
+      "kind": "link",
+      "label": "Link destination",
+      "section": "Resource cards",
+      "value": "/transportation/"
+    },
+    {
+      "key": "resource-card-7",
+      "kind": "text",
+      "label": "Card title",
+      "section": "Resource cards",
+      "value": "Transportation"
+    },
+    {
+      "key": "resource-card-8",
+      "kind": "text",
+      "label": "Card description",
+      "section": "Resource cards",
+      "value": "Public transit discounts and rides to cancer appointments."
+    },
+    {
+      "key": "resource-card-9",
+      "kind": "link",
+      "label": "Link destination",
+      "section": "Resource cards",
+      "value": "/cleaning/"
+    },
+    {
+      "key": "resource-card-10",
+      "kind": "text",
+      "label": "Card title",
+      "section": "Resource cards",
+      "value": "Home Cleaning"
+    },
+    {
+      "key": "resource-card-11",
+      "kind": "text",
+      "label": "Card description",
+      "section": "Resource cards",
+      "value": "Free cleaning assistance for eligible cancer patients."
+    },
+    {
+      "key": "resource-card-12",
+      "kind": "link",
+      "label": "Link destination",
+      "section": "Resource cards",
+      "value": "/personalsafety/"
+    },
+    {
+      "key": "resource-card-13",
+      "kind": "text",
+      "label": "Card title",
+      "section": "Resource cards",
+      "value": "Personal Safety"
+    },
+    {
+      "key": "resource-card-14",
+      "kind": "text",
+      "label": "Card description",
+      "section": "Resource cards",
+      "value": "Crisis, domestic violence, and immediate safety resources."
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "supportive-resources/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Supportive Resources for Cancer Patients | Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "resource-page",
+    "component": "supportive-resources",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/resource-detail.css"
+    ]
+  },
+  "title": "Supportive Resources for Cancer Patients | Utah Cancer Specialists"
+}

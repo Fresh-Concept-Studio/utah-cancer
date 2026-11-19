@@ -1,0 +1,72 @@
+{
+  "order": 26,
+  "directory": {
+    "alt": "Jason M. Stinnett",
+    "category": "medical-oncology",
+    "order": 6,
+    "photo": "/images/provider-jason-stinnett.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "layton-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Jason M. Stinnett, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Jason M. Stinnett",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-jason-stinnett.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. Stinnett was raised in Arkansas, where he completed medical school before moving to Utah in 1998. He completed his training in internal medicine followed by hematology and oncology. After training, he began his career in Boise, Idaho, where he practiced for nearly three years before returning to Utah.</p> <p class=\"provider-bio\">Cancer has touched Dr. Stinnett’s life personally. The mother of his closest childhood friend, as well as his grandmother, grandfather, and father, were all affected by cancer at different points in his life. Those experiences, along with the stories and relationships he has shared with patients throughout his career, have made oncology much more than a profession to him.</p> <p class=\"provider-bio\">With a background in computer science, Dr. Stinnett has a strong interest in the use of technology in everyday medical practice. His research interests include breast cancer therapeutics as well as approaches to managing the long-term side effects of treatment for patients with breast and prostate cancers.</p> <p class=\"provider-bio\">Dr. Stinnett believes every patient is unique. Each person brings a different background, perspective on their health, goals, and experience with treatment. Understanding those differences is essential to providing truly personalized care.</p> <p class=\"provider-bio\">Communication is central to his approach. He believes meaningful dialogue with patients about their goals, concerns, and priorities should come before developing a treatment plan. Taking the time to listen allows him and his patients to make informed decisions together.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Stinnett enjoys traveling and has a lifelong love of sports. Although he grew up in Arkansas, he has now lived in Utah longer than anywhere else and considers it home. He appreciates Utah’s world-class outdoor recreation, the entertainment and culture of Salt Lake City, and, most of all, the people he has the privilege of caring for each day.</p>",
+      "id": "about",
+      "title": "About Dr. Stinnett"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Arkansas, Little Rock, AR</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Utah, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/ Medical Oncology, Huntsman Cancer Institute, University of Utah, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "jason-stinnett",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

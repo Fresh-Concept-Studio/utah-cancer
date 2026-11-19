@@ -1,0 +1,92 @@
+{
+  "order": 14,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Specialized kidney cancer treatment combining immunotherapy, targeted therapy, and surgical options.",
+  "directory": {
+    "category": "common",
+    "description": "Specialized treatment combining immunotherapy, targeted therapy, and surgical options.",
+    "icon": "water_drop",
+    "order": 8,
+    "searchName": "Kidney Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-kidney-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Kidney cancer, particularly renal cell carcinoma, has seen dramatic advances in treatment with immunotherapy and targeted drug combinations. Our team uses molecular profiling to select the optimal systemic therapy and coordinates closely with urologic surgeons for cases requiring surgical management.</p> <p class=\"provider-bio\">For patients with metastatic disease, novel immunotherapy combinations have significantly improved outcomes, and we offer access to clinical trials testing the next generation of treatments.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Blood in the urine</li> <li>Pain in the side or lower back</li> <li>A mass or lump in the side or abdomen</li> <li>Unexplained weight loss</li> <li>Fatigue and intermittent fever</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT scan, MRI, and ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Core needle biopsy when indicated</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>Histologic subtyping and biomarker analysis</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (TKIs)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Combination Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is kidney cancer curable?</summary> <p>When caught early and confined to the kidney, surgical removal is often curative. Even advanced kidney cancer now has significantly improved survival with modern immunotherapy and targeted therapy combinations.</p> </details> <details class=\"sd-faq-item\"> <summary>What are TKI drugs?</summary> <p>Tyrosine kinase inhibitors (TKIs) are targeted drugs that block specific enzymes cancer cells need to grow. They are a cornerstone of advanced kidney cancer treatment, often combined with immunotherapy.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "kidney-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Kidney Cancer"
+}

@@ -1,0 +1,73 @@
+{
+  "order": 15,
+  "directory": {
+    "alt": "Douglas E. Holt",
+    "category": "radiation-oncology",
+    "order": 24,
+    "photo": "/images/provider-douglas-holt.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center",
+    "st-mark-s-hospital"
+  ],
+  "mediaHighlights": null,
+  "name": "Douglas E. Holt, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Douglas E. Holt",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-douglas-holt.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Douglas E. Holt, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Holt"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Pittsburgh School of Medicine, Pittsburgh, PA Clinical Scientist Training Program – Institute for Clinical Research Education, University of Pittsburgh, Pittsburgh, PA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>University of Utah School of Medicine, Salt Lake, UT Radiation Oncology, Chief Resident, University of Colorado School of Medicine, Aurora, CO</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Brachytherapy, Memorial Sloan Kettering Cancer Center, New York, NY</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "douglas-holt",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

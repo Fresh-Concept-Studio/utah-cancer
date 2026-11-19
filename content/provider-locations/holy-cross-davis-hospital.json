@@ -1,0 +1,36 @@
+{
+  "order": 8,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.807.7777",
+      "attrs": {
+        "href": "tel:8018077777",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2132+N+1700+W%2C+Suite+B-101+Layton%2C+UT+84041",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "2132 N 1700 W, Suite B-101<br>Layton, UT 84041",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "holy-cross-davis-hospital",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Holy Cross Davis Hospital",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

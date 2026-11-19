@@ -1,0 +1,73 @@
+{
+  "order": 13,
+  "directory": {
+    "alt": "Deborah Hatch",
+    "category": "advanced-practitioners",
+    "order": 43,
+    "photo": "/images/provider-deborah-hatch.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center",
+    "bountiful-clinic-2"
+  ],
+  "mediaHighlights": null,
+  "name": "Deborah Hatch, MPAS, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Deborah Hatch",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-deborah-hatch.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Deborah Hatch’s connection to oncology is both professional and deeply personal. Her own experience with cancer and cancer treatment, along with caring for loved ones through their cancer journeys, inspired her to pursue a role where she could support others facing similar challenges.</p> <p class=\"provider-bio\">Those experiences continue to shape the way Deborah cares for patients today. She understands that every person’s experience with cancer is different and believes meaningful care begins with listening. Her approach is centered on empathy, open communication, shared decision-making, and collaboration with the entire care team.</p> <p class=\"provider-bio\">Deborah is BLS certified and is committed to helping patients and their families feel heard, informed, and supported throughout their care.</p> <p class=\"provider-bio\">Born and raised in Utah, Deborah is proud to call it home. Outside of work, she enjoys spending time with her family, cheering on BYU sports, and attending choral and orchestral concerts.</p>",
+      "id": "about",
+      "title": "About Deborah Hatch"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Exercise Science, Brigham Young University, Provo, UT Bachelor of Science, Health Sciences, Butler University, Indianapolis, IN Master of Physician Assistant Studies Degree, Butler University, Indianapolis, IN</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants (NCCPA)</li> <li>American Academy of Physician Assistants</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "deborah-hatch",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

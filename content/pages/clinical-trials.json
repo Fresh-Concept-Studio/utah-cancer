@@ -1,0 +1,532 @@
+{
+  "order": 4,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-b008039132",
+      "label": "Text",
+      "section": "Clinical Trials",
+      "value": "Research & Innovation"
+    },
+    {
+      "key": "text-65221b74ce",
+      "label": "Heading",
+      "section": "Clinical Trials",
+      "value": "Clinical Trials"
+    },
+    {
+      "key": "text-b8d33e22ac",
+      "label": "Paragraph",
+      "section": "Clinical Trials",
+      "value": "For over 25 years, Utah Cancer Specialists has been advancing cancer care through clinical research — managing 50+ active trials and offering Utah’s only community-based early-phase program."
+    },
+    {
+      "key": "link-a1e5839718",
+      "kind": "link",
+      "label": "Link destination: Explore START Trials arrow_forward",
+      "section": "Clinical Trials",
+      "value": "https://startresearch.com/mountain-region/"
+    },
+    {
+      "key": "text-fb7451182f",
+      "label": "Link label",
+      "section": "Clinical Trials",
+      "value": "Explore START Trials "
+    },
+    {
+      "key": "link-edef5333d6",
+      "kind": "link",
+      "label": "Link destination: View UCS Late-Phase Trials arrow_forward",
+      "section": "Clinical Trials",
+      "value": "/late-phase-trials.html"
+    },
+    {
+      "key": "text-4674182d0c",
+      "label": "Link label",
+      "section": "Clinical Trials",
+      "value": "View UCS Late-Phase Trials "
+    },
+    {
+      "key": "text-7ee789218c",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Two research programs"
+    },
+    {
+      "key": "text-a5b1977863",
+      "label": "Heading",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Investigational therapies and standard-of-care advances, side by side."
+    },
+    {
+      "key": "text-d8f047e136",
+      "label": "Paragraph",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "From cutting-edge first-in-human Phase I studies to large-scale Phase II and III trials, our research teams help you understand what’s available and whether a trial fits your situation."
+    },
+    {
+      "key": "text-edad79c23a",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": " Phase I"
+    },
+    {
+      "key": "text-abd4b1069f",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "START Mountain Region"
+    },
+    {
+      "key": "text-2ac9538e7b",
+      "label": "Heading",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Early-Phase Trials"
+    },
+    {
+      "key": "text-f7a84a017b",
+      "label": "Paragraph",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Established in 2020, the START Mountain Region center is Utah’s only dedicated community-based early-phase clinical trial site — part of the world’s largest Phase I medical oncology research program."
+    },
+    {
+      "key": "text-38ce75d58f",
+      "label": "Paragraph",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Led by Dr. Justin Call, the program expands options for patients who have exhausted standard treatments and wish to explore emerging investigational therapies, right here in Utah."
+    },
+    {
+      "key": "text-48dd9c7617",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Established "
+    },
+    {
+      "key": "text-85568b20c3",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "2020"
+    },
+    {
+      "key": "text-d598981eea",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Led by "
+    },
+    {
+      "key": "text-e602db0a6b",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Dr. Justin Call"
+    },
+    {
+      "key": "text-de0fbf7195",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Part of the world’s largest Phase I medical oncology research program"
+    },
+    {
+      "key": "link-a1e5839718-1",
+      "kind": "link",
+      "label": "Link destination: Learn More arrow_outward",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "https://startresearch.com/mountain-region/"
+    },
+    {
+      "key": "text-b05afac5af",
+      "label": "Link label",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Learn More "
+    },
+    {
+      "key": "link-bd512febc2",
+      "kind": "link",
+      "label": "Link destination: phone 801.907.4750",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "tel:8019074750"
+    },
+    {
+      "key": "text-1dbb098ed9",
+      "label": "Link label",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": " 801.907.4750"
+    },
+    {
+      "key": "link-0567610c7e",
+      "kind": "link",
+      "label": "Link destination: mail research@utahcancer.com",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "mailto:research@utahcancer.com"
+    },
+    {
+      "key": "text-d081793d07",
+      "label": "Link label",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": " research@utahcancer.com"
+    },
+    {
+      "key": "text-9ba0591868",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": " Phase II–III"
+    },
+    {
+      "key": "text-e2f6d61a65",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "UCS Clinical Research"
+    },
+    {
+      "key": "text-65cdaaab89",
+      "label": "Heading",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Late-Phase Trials"
+    },
+    {
+      "key": "text-8486e038fa",
+      "label": "Paragraph",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Our clinical research program offers Phase II and Phase III trials focused on bringing the latest therapeutic advancements to patients across the Intermountain West — trials that help establish new standards of care."
+    },
+    {
+      "key": "text-a0557500e3",
+      "label": "Paragraph",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "With trials spanning all cancer types, our research team can help determine whether a clinical trial might be right for you based on your diagnosis, treatment history, and molecular profile."
+    },
+    {
+      "key": "text-f195ab4626",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Trials spanning "
+    },
+    {
+      "key": "text-ab647dbbd3",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "all cancer types"
+    },
+    {
+      "key": "text-5ecce4da1c",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Serving the "
+    },
+    {
+      "key": "text-8c16bbf25c",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Intermountain West"
+    },
+    {
+      "key": "text-4e273213ef",
+      "label": "Text",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Establishes new standard-of-care treatments"
+    },
+    {
+      "key": "link-edef5333d6-1",
+      "kind": "link",
+      "label": "Link destination: Learn More arrow_forward",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "/late-phase-trials.html"
+    },
+    {
+      "key": "text-b05afac5af-1",
+      "label": "Link label",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "Learn More "
+    },
+    {
+      "key": "link-3277871004",
+      "kind": "link",
+      "label": "Link destination: phone 801.281.6864",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "tel:8012816864"
+    },
+    {
+      "key": "text-fcc72d26e9",
+      "label": "Link label",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": " 801.281.6864"
+    },
+    {
+      "key": "link-0567610c7e-1",
+      "kind": "link",
+      "label": "Link destination: mail research@utahcancer.com",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": "mailto:research@utahcancer.com"
+    },
+    {
+      "key": "text-d081793d07-1",
+      "label": "Link label",
+      "section": "Investigational therapies and standard-of-care advances, side by side.",
+      "value": " research@utahcancer.com"
+    },
+    {
+      "key": "text-8adeefd2cf",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Your trial journey"
+    },
+    {
+      "key": "text-b71694809f",
+      "label": "Heading",
+      "section": "What participation actually looks like.",
+      "value": "What participation actually looks like."
+    },
+    {
+      "key": "text-911ef07ed5",
+      "label": "Paragraph",
+      "section": "What participation actually looks like.",
+      "value": "Trials are voluntary at every step — here’s how a typical journey unfolds, from first conversation through follow-up care."
+    },
+    {
+      "key": "text-356a192b79",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "1"
+    },
+    {
+      "key": "text-42cd9f795a",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Step 01"
+    },
+    {
+      "key": "text-54b87b9233",
+      "label": "Heading",
+      "section": "What participation actually looks like.",
+      "value": "Consultation"
+    },
+    {
+      "key": "text-e4c783944e",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Talk with your oncologist about whether a trial fits your diagnosis, treatment history, and goals."
+    },
+    {
+      "key": "text-da4b9237ba",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "2"
+    },
+    {
+      "key": "text-38cff1f8dd",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Step 02"
+    },
+    {
+      "key": "text-50783a7176",
+      "label": "Heading",
+      "section": "What participation actually looks like.",
+      "value": "Screening"
+    },
+    {
+      "key": "text-3696a88f53",
+      "label": "Paragraph",
+      "section": "What participation actually looks like.",
+      "value": "Eligibility review based on labs, imaging, and your molecular profile to match you with the right trial."
+    },
+    {
+      "key": "text-77de68daec",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "3"
+    },
+    {
+      "key": "text-87bd4ea1ec",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Step 03"
+    },
+    {
+      "key": "text-cbffa39fa4",
+      "label": "Heading",
+      "section": "What participation actually looks like.",
+      "value": "Enrollment"
+    },
+    {
+      "key": "text-5afca8f663",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Informed consent, baseline tests, and a clear study schedule before any treatment begins."
+    },
+    {
+      "key": "text-1b64538924",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "4"
+    },
+    {
+      "key": "text-1e82da3050",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Step 04"
+    },
+    {
+      "key": "text-fd1dbf0922",
+      "label": "Heading",
+      "section": "What participation actually looks like.",
+      "value": "Treatment & Follow-up"
+    },
+    {
+      "key": "text-ae905cd0d6",
+      "label": "Text",
+      "section": "What participation actually looks like.",
+      "value": "Receive the trial therapy with close monitoring and continued support from your full care team."
+    },
+    {
+      "key": "text-f07ac22a9e",
+      "label": "Text",
+      "section": "What patients ask most.",
+      "value": "Common questions"
+    },
+    {
+      "key": "text-4c52610e9b",
+      "label": "Heading",
+      "section": "What patients ask most.",
+      "value": "What patients ask most."
+    },
+    {
+      "key": "text-0af36de7d5",
+      "label": "Paragraph",
+      "section": "What patients ask most.",
+      "value": "If you don’t see your question here, our research team is happy to answer it directly — reach out to either program above."
+    },
+    {
+      "key": "text-72361e80ff",
+      "label": "Text",
+      "section": "What patients ask most.",
+      "value": "What is a clinical trial?"
+    },
+    {
+      "key": "text-1b4a19a711",
+      "label": "Paragraph",
+      "section": "What patients ask most.",
+      "value": "A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed and approved by an Institutional Review Board (IRB) to ensure patient safety, and participation is always voluntary."
+    },
+    {
+      "key": "text-c967ef5945",
+      "label": "Text",
+      "section": "What patients ask most.",
+      "value": "Will I receive a placebo?"
+    },
+    {
+      "key": "text-0e8cc30892",
+      "label": "Paragraph",
+      "section": "What patients ask most.",
+      "value": "Most cancer clinical trials do not use placebos alone. When a control arm is included, participants always receive at least the current standard of care in addition to any investigational agent."
+    },
+    {
+      "key": "text-5f68eb3cd9",
+      "label": "Text",
+      "section": "What patients ask most.",
+      "value": "Are there costs to participate?"
+    },
+    {
+      "key": "text-cafcfe55d7",
+      "label": "Paragraph",
+      "section": "What patients ask most.",
+      "value": "Investigational drugs and study-related tests are typically provided at no cost. Standard-of-care costs (like routine blood work) are generally billed to your insurance as they normally would be."
+    },
+    {
+      "key": "text-4cac751184",
+      "label": "Text",
+      "section": "What patients ask most.",
+      "value": "How do I find out if I’m eligible?"
+    },
+    {
+      "key": "text-3f80a8fcbe",
+      "label": "Paragraph",
+      "section": "What patients ask most.",
+      "value": "Ask your oncologist about trial options at your next visit, or contact our research team directly. We’ll review your diagnosis, treatment history, and molecular profile to identify suitable trials."
+    },
+    {
+      "key": "text-270ff4407a",
+      "label": "Text",
+      "section": "What patients ask most.",
+      "value": "Can I leave a trial if I change my mind?"
+    },
+    {
+      "key": "text-d32e1ad09d",
+      "label": "Paragraph",
+      "section": "What patients ask most.",
+      "value": "Yes. Participation is entirely voluntary. You may withdraw from a clinical trial at any time, for any reason, without affecting your ongoing care at Utah Cancer Specialists."
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "",
+        "src": "/images/specialty-lung-clinical-hero.webp"
+      },
+      "key": "image-561ca38b27",
+      "label": "Specialty lung clinical hero",
+      "section": "Clinical Trials"
+    },
+    {
+      "image": {
+        "alt": "START Mountain Region logo",
+        "src": "/images/logo-start-trials.png"
+      },
+      "key": "image-a5d4c453d6",
+      "label": "START Mountain Region logo",
+      "section": "Investigational therapies and standard-of-care advances, side by side."
+    },
+    {
+      "image": {
+        "alt": "Utah Cancer Specialists",
+        "src": "/images/ucs-logo-color.svg"
+      },
+      "key": "image-e880bb9929",
+      "label": "Utah Cancer Specialists",
+      "section": "Investigational therapies and standard-of-care advances, side by side."
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "clinical-trials.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Clinical Trials - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "clinical-trials",
+    "cta": {
+      "actionsClass": "ct-contact-actions",
+      "heading": "Interested in a clinical trial?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.281.6864",
+          "attrs": {
+            "href": "tel:8012816864",
+            "class": "btn btn--white"
+          }
+        },
+        {
+          "html": "research@utahcancer.com",
+          "attrs": {
+            "href": "mailto:research@utahcancer.com",
+            "class": "ct-contact-email"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/clinical-trials.css"
+    ]
+  },
+  "title": "Clinical Trials - Utah Cancer Specialists"
+}

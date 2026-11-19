@@ -1,0 +1,27 @@
+{
+  "order": 17,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 208.359.9848",
+      "attrs": {
+        "href": "tel:2083599848",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "450 East Main Street<br>Rexburg, ID 83440",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "madison-health",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Madison Health",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

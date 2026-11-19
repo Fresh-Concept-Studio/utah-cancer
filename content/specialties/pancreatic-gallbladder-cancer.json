@@ -1,0 +1,93 @@
+{
+  "order": 21,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Gastrointestinal",
+  "description": "Advanced care with multidisciplinary treatment planning for pancreatic and biliary cancers.",
+  "directory": {
+    "category": "gi",
+    "description": "Advanced care with multidisciplinary treatment planning.",
+    "icon": "biotech",
+    "order": 22,
+    "searchName": "Pancreatic Gallbladder Cancer",
+    "title": "Pancreatic/Gallbladder Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-liver-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Pancreatic and gallbladder (biliary tract) cancers are among the most challenging malignancies to treat, but advances in chemotherapy combinations, targeted therapies, and clinical trials are improving outcomes.</p> <p class=\"provider-bio\">Our medical oncologists work closely with surgeons, interventional radiologists, and palliative care specialists to provide comprehensive treatment at every stage of disease.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Jaundice (yellowing of skin and eyes)</li> <li>Abdominal or back pain</li> <li>Unexplained weight loss</li> <li>Loss of appetite</li> <li>New-onset diabetes</li> <li>Dark urine or pale stools</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, MRI/MRCP, and EUS</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>EUS-guided FNA or core biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>BRCA, NTRK, MSI, TMB</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">CA 19-9 Monitoring</h3> <p>Tumor marker tracking</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy (FOLFIRINOX, Gem/Abraxane)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (PARP, NTRK)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is pancreatic cancer treatable?</summary> <p>While pancreatic cancer remains challenging, modern chemotherapy regimens and clinical trials have improved survival. Some patients with resectable tumors achieve long-term remission after surgery and adjuvant therapy.</p> </details> <details class=\"sd-faq-item\"> <summary>What role does genetic testing play?</summary> <p>Up to 10% of pancreatic cancers have actionable mutations like BRCA. Germline and somatic testing can identify patients eligible for PARP inhibitors and other targeted therapies.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-5",
+  "slug": "pancreatic-gallbladder-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Pancreatic & Gallbladder Cancer"
+}

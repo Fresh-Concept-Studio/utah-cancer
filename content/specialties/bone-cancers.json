@@ -1,0 +1,92 @@
+{
+  "order": 4,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Other Cancers & Conditions",
+  "description": "Comprehensive bone cancer care combining chemotherapy, surgery, and emerging treatments.",
+  "directory": {
+    "category": "other",
+    "description": "Comprehensive bone cancer care combining chemotherapy, surgery, and emerging treatments.",
+    "icon": "orthopedics",
+    "order": 26,
+    "searchName": "Bone Cancers Osteosarcomas"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-breast-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Primary bone cancers including osteosarcoma, Ewing sarcoma, and chondrosarcoma are rare but require specialized treatment. Our team coordinates with orthopedic oncology surgeons to deliver neoadjuvant and adjuvant chemotherapy around surgical resection.</p> <p class=\"provider-bio\">For patients with metastatic or recurrent bone cancers, we offer access to clinical trials and emerging therapies.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Bone pain that worsens over time</li> <li>Swelling or a palpable mass near a bone</li> <li>Fracture from weakened bone</li> <li>Limited range of motion</li> <li>Fatigue and weight loss</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>X-ray, MRI, CT, and bone scan</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Core needle or surgical biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Pathology</h3> <p>Histologic subtyping and grading</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Who gets bone cancer?</summary> <p>Osteosarcoma is most common in adolescents and young adults, while chondrosarcoma is more common in middle-aged adults. Ewing sarcoma primarily affects children and young adults.</p> </details> <details class=\"sd-faq-item\"> <summary>Is limb salvage possible?</summary> <p>Yes. Most patients with extremity bone cancers can be treated with limb-salvage surgery rather than amputation, especially when chemotherapy shrinks the tumor before surgery.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-3",
+  "slug": "bone-cancers",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Bone Cancers (Osteosarcomas)"
+}

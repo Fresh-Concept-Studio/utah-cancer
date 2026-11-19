@@ -1,0 +1,32 @@
+{
+  "order": 11,
+  "description": "Review visitor guidance for Utah Cancer Specialists clinics, including check-in, illness precautions, and how to confirm current policies.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Planning your visit",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Bringing someone with you</h2>\n      <p>Patients may bring family members, friends, or caregivers to appointments when space and current clinic guidance allow. Visitors should check in at the front desk and follow instructions from the care team.</p>\n      <h2>Help protect patients and staff</h2>\n      <p>Please do not visit if you have a fever, cough, sore throat, vomiting, diarrhea, or another potentially contagious illness. If a visitor is essential to your care, call the clinic before arriving so the team can help plan safely.</p>\n      <div class=\"resource-note\"><strong>Policies can change.</strong> Call your clinic before your appointment if you need to confirm visitor limits, age requirements, masking, or accessibility accommodations.</div>",
+  "icon": "groups",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "A comfortable, safe visit starts with knowing what to expect before you arrive.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/locations/index.html",
+      "label": "Find your clinic"
+    },
+    {
+      "href": "/contact.html",
+      "label": "Contact Utah Cancer Specialists"
+    }
+  ],
+  "seoTitle": "Visitor & Guest Information | Utah Cancer Specialists",
+  "slug": "visitorandguestinfo",
+  "title": "Visitor & Guest Information"
+}

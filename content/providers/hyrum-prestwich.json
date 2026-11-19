@@ -1,0 +1,72 @@
+{
+  "order": 22,
+  "directory": {
+    "alt": "Hyrum B. Prestwich",
+    "category": "advanced-practitioners",
+    "order": 47,
+    "photo": "/images/provider-hyrum-prestwich.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "eastern-idaho-regional-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Hyrum B. Prestwich, FNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Hyrum B. Prestwich",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-hyrum-prestwich.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Hyrum B. Prestwich, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Prestwich"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Science in Nursing (MSN), Family Nurse Practitioner – Brigham Young University, Provo, UT Bachelor of Science in Nursing (BSN) – Brigham Young University, Provo, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "hyrum-prestwich",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

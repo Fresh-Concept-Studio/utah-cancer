@@ -1,0 +1,72 @@
+{
+  "order": 48,
+  "directory": {
+    "alt": "Samantha L. Gaffney",
+    "category": "advanced-practitioners",
+    "order": 57,
+    "photo": "/images/provider-samantha-gaffney.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Samantha L. Gaffney, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Samantha L. Gaffney",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-samantha-gaffney.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Samantha L. Gaffney, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Gaffney"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Health Promotion, University of Utah, Salt Lake City, UT Master of Science in Physician Assistant Studies, University of Colorado Anschutz Medical Campus</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants. (NCCPA)</li> <li>Professional Affiliations:</li> <li>American Academy of Physician Assistants (AAPA)</li> <li>Association of Physician Assistants in Oncology (APAO)</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "samantha-gaffney",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

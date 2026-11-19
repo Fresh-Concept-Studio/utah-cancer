@@ -6,7 +6,7 @@ import { url } from '../lib/urls';
 
 const applicationUrl = url('/job-application/');
 
-const jobs: typeof defaultJobs = Astro.props.page.jobs ?? defaultJobs;
+const jobs: Array<(typeof defaultJobs)[number] & {contentId?: string}> = Astro.props.page.jobs ?? defaultJobs;
 ---
 
 <section class="careers-hero">
@@ -58,7 +58,7 @@ const jobs: typeof defaultJobs = Astro.props.page.jobs ?? defaultJobs;
 
     <div class="careers-jobs">
       {jobs.map((job, index) => (
-        <details class="career-job">
+        <details class="career-job" data-sa={job.contentId}>
           <summary>
             <span class="career-job-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
             <span class="career-job-heading">

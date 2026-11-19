@@ -1,0 +1,72 @@
+{
+  "order": 1,
+  "directory": {
+    "alt": "Andrew J. Aloia",
+    "category": "advanced-practitioners",
+    "order": 37,
+    "photo": "/images/provider-andrew-aloia.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Andrew J. Aloia, DNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Andrew J. Aloia",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-andrew-aloia.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Andrew Aloia is a board-certified Adult-Gerontology Acute Care Nurse Practitioner who is committed to providing thoughtful, patient-centered care. He believes in listening carefully to each individual, respecting their personal values, and working together to establish clear treatment goals.</p> <p class=\"provider-bio\">His approach to care is grounded in established standards of practice, clear communication, and collaboration. He strives to ensure patients feel heard, informed, and involved in decisions about their care.</p> <p class=\"provider-bio\">Outside of work, Andrew enjoys traveling, football, and hiking.</p>",
+      "id": "about",
+      "title": "About Aloia"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Nursing, University of Utah, Salt Lake City, UT<br>Doctor of Nursing Practice, University of Utah, College of Nursing Adult Care Nurse Practitioner Program, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board certified as an AG-ACNP through the American Association of Critical-Care Nurses</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "andrew-aloia",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

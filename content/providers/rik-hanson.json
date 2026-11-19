@@ -1,0 +1,72 @@
+{
+  "order": 44,
+  "directory": {
+    "alt": "Richard \"Rik\" E. Hanson",
+    "category": "advanced-practitioners",
+    "order": 56,
+    "photo": "/images/provider-rik-hanson.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "tooele-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Richard \"Rik\" E. Hanson, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Richard \"Rik\" E. Hanson",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-rik-hanson.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Richard \"Rik\" E. Hanson, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Hanson"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Utah Physician Assistant Program, Salt Lake City, UT Bachelor of Science, Health Care Management,</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "rik-hanson",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

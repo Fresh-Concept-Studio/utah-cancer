@@ -1,0 +1,84 @@
+{
+  "order": 42,
+  "directory": {
+    "alt": "Nidhi Sharma",
+    "category": "supportive-care",
+    "order": 36,
+    "photo": "/images/provider-nidhi-sharma.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English, Punjabi, Hindi/Urdu",
+  "leadershipGroups": null,
+  "locationIds": [
+    "murray-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Nidhi Sharma, DNP, FNP-C",
+  "page": {
+    "cta": {
+      "heading": "Contact us for more information.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Contact Us",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "description": "Nidhi Sharma, DNP, FNP-C, Supportive and Rehabilitative Care at Utah Cancer Specialists in Murray, Utah."
+  },
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Nidhi Sharma",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-nidhi-sharma.png"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Nidhi Sharma, DNP, FNP-C is a family nurse practitioner on the Supportive and Rehabilitative Care team at Utah Cancer Specialists. She sees patients at the Murray Clinic at Intermountain Medical Center.</p>",
+      "id": "about",
+      "title": "About Nidhi Sharma"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Doctor of Nursing, Family Nurse Practitioner, Idaho State University, Pocatello, ID</p> <p>Bachelor of Science, Nursing, Dixie State University, St. George, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Family Nurse Practitioner — American Academy of Nurse Practitioners Certification Board (AANPCB)</li> <li>Registered Nurse Licensure — Utah, Vermont, Virginia</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact-3",
+  "slug": "nidhi-sharma",
+  "specialty": "Supportive and Rehabilitative Care",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    }
+  ]
+}

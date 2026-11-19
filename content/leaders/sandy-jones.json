@@ -1,0 +1,31 @@
+{
+  "order": 9,
+  "directoryPhoto": {
+    "alt": "Sandy Jones",
+    "src": "/images/leader-sandy-jones-centered.png"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Sandy Jones",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Sandy Jones",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-sandy-jones-updated.png"
+  },
+  "role": "Director of Marketing",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Sandy Jones is an accomplished healthcare marketing leader with experience in brand strategy, organizational growth, communications, culture, and patient engagement. As Director of Marketing for Utah Cancer Specialists, she leads initiatives focused on strengthening the organization’s brand, expanding community relationships, supporting growth, and creating a more connected experience for patients, providers, and employees.</p> <p class=\"provider-bio\">Sandy’s leadership approach is centered on people. She believes the strongest organizations are built from the inside out—through engaged teams, trusted relationships, clear communication, and a genuine understanding of the people they serve. She is passionate about making healthcare more approachable and ensuring that an organization’s brand reflects the quality, expertise, and compassion patients experience firsthand.</p> <p class=\"provider-bio\">She is a Certified High Performance Coach through the High Performance Institute and a certified facilitator of FranklinCovey leadership programs. Her training includes Multipliers®, The 4 Essential Roles of Leadership, The Speed of Trust, and The 6 Critical Practices for Leading a Team, reflecting her ongoing commitment to developing strong leaders and high-performing teams.</p> <p class=\"provider-bio\">Service has also been an important part of Sandy’s life and leadership. She serves as a Team Lead with Youthlinc, leading international humanitarian service teams in Thailand, Peru, Vietnam, Kenya, and Mongolia and mentoring participants throughout a year of local and international service. Her community involvement has also included leadership and volunteer work with Special Olympics, Habitat for Humanity, Make a Difference, and programs supporting women and children affected by domestic violence.</p> <p class=\"provider-bio\">Across both her professional and volunteer work, Sandy is motivated by the opportunity to bring people together, build meaningful connections, and create experiences that make a lasting difference.</p>",
+      "id": "about",
+      "title": "About Sandy Jones"
+    }
+  ],
+  "slug": "sandy-jones"
+}

@@ -1,0 +1,92 @@
+{
+  "order": 12,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Gastrointestinal",
+  "description": "Expert care combining chemotherapy, radiation, and advanced surgical techniques for esophageal cancer.",
+  "directory": {
+    "category": "gi",
+    "description": "Expert care combining chemotherapy, radiation, and advanced surgical techniques.",
+    "icon": "emergency",
+    "order": 20,
+    "searchName": "Esophageal Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-colon-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Esophageal cancer includes squamous cell carcinoma and adenocarcinoma, each with distinct risk factors and treatment approaches. Our team uses a multimodal strategy combining chemotherapy, radiation, and surgery, with immunotherapy now playing an important role in advanced disease.</p> <p class=\"provider-bio\">For locally advanced tumors, neoadjuvant chemoradiation followed by surgery is the standard approach, and our radiation oncologists use advanced techniques to minimize toxicity.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Difficulty swallowing (dysphagia)</li> <li>Unintended weight loss</li> <li>Chest pain or discomfort</li> <li>Persistent heartburn or indigestion</li> <li>Hoarseness or chronic cough</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, PET/CT, and endoscopic ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Endoscopy &amp; Biopsy</h3> <p>EGD with tissue sampling</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>HER2, PD-L1, MSI</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Chemoradiation</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is Barrett's esophagus a risk factor?</summary> <p>Yes. Barrett's esophagus, caused by chronic acid reflux, increases the risk of esophageal adenocarcinoma. Regular surveillance endoscopy is recommended.</p> </details> <details class=\"sd-faq-item\"> <summary>What is the role of immunotherapy?</summary> <p>Checkpoint inhibitors are now part of standard treatment for advanced esophageal cancer and are also being studied as part of neoadjuvant regimens.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-5",
+  "slug": "esophageal-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Esophageal Cancer"
+}

@@ -1,0 +1,73 @@
+{
+  "order": 56,
+  "directory": {
+    "alt": "Wayne D. Ormsby",
+    "category": "medical-oncology",
+    "order": 17,
+    "photo": "/images/provider-wayne-ormsby.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "bountiful-clinic-2",
+    "salt-lake-clinic-2"
+  ],
+  "mediaHighlights": null,
+  "name": "Wayne D. Ormsby, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Wayne D. Ormsby",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-wayne-ormsby.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. Wayne Ormsby is a board-certified hematologist and medical oncologist who values the long-term relationships he develops with patients and their families. A Utah native, he is committed to bringing innovative cancer treatments and clinical trials into the community so patients can receive advanced care closer to home.</p> <p class=\"provider-bio\">Dr. Ormsby completed his undergraduate education at Brigham Young University, followed by an Internal Medicine residency at the University of Rochester, where he also served as Chief Resident. He completed his fellowship in Hematology and Medical Oncology at Mayo Clinic and previously practiced at Willamette Valley Cancer Institute in Eugene, Oregon. He is board certified in Internal Medicine, Medical Oncology, and Hematology.</p> <p class=\"provider-bio\">At Utah Cancer Specialists, Dr. Ormsby serves as Director of the Hematologic Malignancies Clinic and is the site principal investigator for late-phase clinical trials in hematologic malignancies. In December 2024, he founded and began directing the Utah Cancer Specialists T-cell engager program, which provides bispecific antibody therapy and monitoring entirely in the outpatient setting. The program was developed to make these important treatments more accessible to patients who might otherwise need to travel to an academic medical center or be hospitalized for treatment and monitoring.</p> <p class=\"provider-bio\">Dr. Ormsby finds the science of oncology fascinating, particularly the rapid advances that are helping patients live longer and better, often with fewer side effects. He works to bring promising approaches—including immunotherapies and cutting-edge clinical trials—to patients in the community.</p> <p class=\"provider-bio\">His philosophy is simple: cancer care is a partnership. He believes in being honest with patients and their families, listening carefully, and making treatment decisions together. His goal is to ensure each patient understands their options and has access to the best treatment possible.</p> <p class=\"provider-bio\">Dr. Ormsby was born and raised on the west side of the Salt Lake Valley, where much of his extended family still lives. Outside of medicine, he enjoys spending time with family, traveling, reading, hiking, and weightlifting.</p>",
+      "id": "about",
+      "title": "About Dr. Ormsby"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Virginia School of Medicine, Charlottesville, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal medicine, University of Rochester, Rochester, NY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/ Medical Oncology, Mayo Graduate School of Medicine, Rochester, MN</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "wayne-ormsby",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

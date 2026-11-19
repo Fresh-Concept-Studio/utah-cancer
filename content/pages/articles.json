@@ -1,0 +1,54 @@
+{
+  "order": 2,
+  "description": "Read news, announcements, and community stories from Utah Cancer Specialists and its cancer care teams across Utah.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-2c9f84ee93",
+      "label": "Text",
+      "section": "News",
+      "value": "From Utah Cancer Specialists"
+    },
+    {
+      "key": "text-34c808d0a6",
+      "label": "Heading",
+      "section": "News",
+      "value": "News"
+    },
+    {
+      "key": "text-d9eb5d40c1",
+      "label": "Text",
+      "section": "News",
+      "value": "Updates, community stories, and announcements from our care teams."
+    },
+    {
+      "key": "text-9fff03c353",
+      "label": "Link label",
+      "section": "News index section",
+      "value": "Read article "
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "articles/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "News | Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "news-page",
+    "component": "news-index",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/page-styles/news.css"
+    ]
+  },
+  "title": "News | Utah Cancer Specialists"
+}

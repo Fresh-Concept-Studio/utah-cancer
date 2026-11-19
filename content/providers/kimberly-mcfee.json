@@ -1,0 +1,72 @@
+{
+  "order": 33,
+  "directory": {
+    "alt": "Kimberly McFee",
+    "category": "advanced-practitioners",
+    "order": 51,
+    "photo": "/images/provider-kimberly-mcfee.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Kimberly McFee, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Kimberly McFee",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-kimberly-mcfee.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Kim McFee began her career in cardiothoracic surgery before transitioning to inpatient oncology, where she cared for patients in Des Moines, Iowa, for two years. In 2023, she moved to Salt Lake City and continued her career in outpatient oncology.</p> <p class=\"provider-bio\">Kim is passionate about providing patient-centered care and taking the time to truly listen to each patient’s questions and concerns. She uses evidence-based medicine to help manage disease and symptoms while making sure patients understand the reasoning behind her recommendations and the options available to them.</p> <p class=\"provider-bio\">She believes patients should feel informed and involved in decisions about their care. By explaining treatment recommendations clearly and creating space for questions, Kim works to help patients better understand their care and feel confident participating in the process.</p> <p class=\"provider-bio\">Originally from Iowa, Kim moved to Utah for the mountains and the outdoor lifestyle.</p> <p class=\"provider-bio\">Outside of work, she enjoys camping, hiking with her dogs, rock climbing, snowboarding, skiing, and reading.</p>",
+      "id": "about",
+      "title": "About McFee"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Kinesiology, Iowa State University, Ames, IA Bachelor of Science, Genetics, Iowa State University, Ames, IA Master of Science, Physician Assistant Studies, Idaho State University, Boise, ID</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>NCCPA Certification</li> <li>BLS Certified</li> <li>ACLS Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "kimberly-mcfee",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

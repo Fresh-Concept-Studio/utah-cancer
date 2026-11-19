@@ -1,0 +1,117 @@
+{
+  "order": 6,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8015253022",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "departments": [
+    {
+      "city": "Layton, UT 84041",
+      "fax": "801.267.5617",
+      "hours": {
+        "friday": "9:00 AM – 5:00 PM",
+        "monday": "9:00 AM – 5:00 PM",
+        "thursday": "9:00 AM – 5:00 PM",
+        "tuesday": "9:00 AM – 5:00 PM"
+      },
+      "location": "Davis Hospital Campus",
+      "name": "Medical Oncology",
+      "phone": "801.525.3022",
+      "street": "1492 Antelope Dr., Ste. 125"
+    },
+    {
+      "city": "Layton, UT 84041",
+      "fax": "801.807.7778",
+      "hours": {
+        "friday": "9:00 AM – 5:00 PM",
+        "monday": "9:00 AM – 5:00 PM",
+        "thursday": "9:00 AM – 5:00 PM",
+        "tuesday": "9:00 AM – 5:00 PM"
+      },
+      "location": "Holy Cross Davis Hospital",
+      "name": "Radiation Oncology",
+      "phone": "801.807.7777",
+      "street": "2132 N. 1700 W., Ste. B-101"
+    }
+  ],
+  "directory": {
+    "addressHtml": "1492 Antelope Dr., Ste. 125<br>Layton, UT 84041",
+    "badge": "",
+    "county": "davis",
+    "hoursHtml": "Mon, Tue, Thu &amp; Fri, 9:00 am – 5:00 pm",
+    "order": 5,
+    "phone": "801.525.3022",
+    "subtitle": "Davis Hospital Campus — Medical & Radiation Oncology"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Layton Clinic",
+    "src": "/images/location-layton.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 41.0898,
+    "lng": -111.9947
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> Layton, UT 84041</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> Medical 801.525.3022</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> Radiation 801.807.7777</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.525.3022",
+          "attrs": {
+            "href": "tel:8015253022",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Located on the Davis Hospital campus, our Layton clinic provides both medical and radiation oncology services to Davis County and surrounding communities. Patients benefit from the full range of UCS treatment options — including access to clinical trials — without having to travel to Salt Lake City.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Parking is available on the hospital campus. Follow signs to the cancer center entrance.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1492 Antelope Dr., Ste. 125<br>Layton, UT 84041</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015253022\">801.525.3022</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.269.0298</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8015253022\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "layton",
+  "subtitle": "Davis Hospital Campus",
+  "tag": "Medical & Radiation Oncology",
+  "title": "Layton Clinic"
+}

@@ -1,0 +1,72 @@
+{
+  "order": 5,
+  "directory": {
+    "alt": "Benjamin L. Solomon",
+    "category": "medical-oncology",
+    "order": 1,
+    "photo": "/images/provider-benjamin-solomon.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "jordan-valley-cancer-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Benjamin L. Solomon, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Benjamin L. Solomon",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-benjamin-solomon.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. Benjamin Solomon earned his undergraduate degree in chemistry from Emory University before completing medical school at the Medical College of Georgia. He completed his Internal Medicine residency at the University of Vermont and his Hematology/Oncology fellowship at the University of Utah, where he also served as Chief Fellow. His training and research have included a particular focus on gastrointestinal cancers and immunotherapy.</p> <p class=\"provider-bio\">Before joining Utah Cancer Specialists in 2023, he served as a Clinical Track Assistant Professor at the University of Utah, caring for patients in both gastrointestinal oncology and community-based hematology and oncology. He has a special interest in gastrointestinal cancer and has contributed to research and publications in oncology and immunotherapy.</p> <p class=\"provider-bio\">His interest in cancer care began as an undergraduate volunteer at Winship Cancer Institute and continued through medical school, residency, fellowship, and clinical research. He remains passionate about translating complex cancer science and the latest advances in treatment into information patients and families can understand.</p> <p class=\"provider-bio\">Dr. Solomon believes every patient should be treated as an individual, not simply as statistics. He approaches care as a partnership, taking time to understand each patient’s goals, priorities, and life outside of treatment. He values shared decision-making and works to ensure patients understand their options and feel actively involved in their care.</p> <p class=\"provider-bio\">Originally from Atlanta, Dr. Solomon first came to Utah for his fellowship and quickly grew to love the state. He enjoys exploring Utah’s national parks, hiking, skiing, spending time outdoors with his dog, reading novels, and watching films of just about any genre or decade. He and his wife are happy to call Utah home.</p>",
+      "id": "about",
+      "title": "About Dr. Solomon"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Undergraduate</h3> <p>Bachelor’s degree in Chemistry, Emory University, Atlanta, GA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Medical College of Georgia, Augusta University, Augusta, GA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal, Medicine, Robert Larner, M.D. College of Medicine, University of Vermont, Burlington, VT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology/ Oncology, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified in Internal Medicine</li> <li>Board Certified in Hematology</li> <li>Board Certified in Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "benjamin-solomon",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

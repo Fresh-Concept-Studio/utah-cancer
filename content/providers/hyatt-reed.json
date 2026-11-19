@@ -1,0 +1,72 @@
+{
+  "order": 21,
+  "directory": {
+    "alt": "Hyatt W. Reed",
+    "category": "advanced-practitioners",
+    "order": 46,
+    "photo": "/images/provider-hyatt-reed.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "jordan-valley-cancer-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Hyatt W. Reed, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Hyatt W. Reed",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-hyatt-reed.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Hyatt W. Reed, PA-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Reed"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Master of Science, Physician Assistant Studies, Jefferson College of Health Sciences, Roanoke, VA.</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Academy of Physician Assistants</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "hyatt-reed",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

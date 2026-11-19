@@ -1,0 +1,27 @@
+{
+  "order": 29,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 208.354.6354",
+      "attrs": {
+        "href": "tel:2083546354",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "120 East Howard Avenue<br>Driggs, ID 83422",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "teton-valley-health-care",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Teton Valley Health Care",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

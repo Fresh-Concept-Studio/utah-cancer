@@ -1,0 +1,32 @@
+{
+  "order": 7,
+  "description": "Nutrition guidance and Utah food assistance resources for people receiving cancer treatment and their families.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Eating well during treatment",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Talk with your care team</h2>\n      <p>Cancer and treatment can change appetite, taste, digestion, weight, and the nutrients your body needs. Tell your care team about eating problems or unplanned weight loss. A registered dietitian can help create a plan for your diagnosis, treatment, and symptoms.</p>\n      <h2>Trusted nutrition guidance</h2>\n      <ul>\n        <li><a href=\"https://www.cancer.org/cancer/supportive-care/nutrition-activity-with-cancer.html\" target=\"_blank\" rel=\"noopener\">American Cancer Society: nutrition during and after treatment</a></li>\n        <li><a href=\"https://www.cancer.org/cancer/side-effects/eating-problems.html\" target=\"_blank\" rel=\"noopener\">Managing eating and drinking changes</a></li>\n        <li><a href=\"https://www.cancer.org/cancer/side-effects/eating-problems/poor-appetite.html\" target=\"_blank\" rel=\"noopener\">Loss of appetite guidance</a></li>\n      </ul>\n      <h2>Food assistance in Utah</h2>\n      <ul>\n        <li><a href=\"https://jobs.utah.gov/customereducation/services/foodstamps/index.html\" target=\"_blank\" rel=\"noopener\">Utah SNAP food assistance</a></li>\n        <li><a href=\"https://www.utahfoodbank.org/find-a-pantry/\" target=\"_blank\" rel=\"noopener\">Utah Food Bank pantry finder</a></li>\n        <li><a href=\"https://wic.utah.gov/\" target=\"_blank\" rel=\"noopener\">Utah WIC</a> for eligible pregnant, postpartum, and breastfeeding people and children under five</li>\n        <li><a href=\"https://211utah.org/\" target=\"_blank\" rel=\"noopener\">Utah 211 community resource search</a></li>\n      </ul>",
+  "icon": "restaurant",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "Good nutrition can help you maintain strength, manage side effects, and support recovery during treatment.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/supportive-resources/",
+      "label": "All practical support resources"
+    },
+    {
+      "href": "/supportivecare/",
+      "label": "Supportive care"
+    }
+  ],
+  "seoTitle": "Nutrition During Cancer Treatment | Utah Cancer Specialists",
+  "slug": "nutrition",
+  "title": "Nutrition During Cancer Treatment"
+}

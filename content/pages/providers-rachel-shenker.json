@@ -1,0 +1,25 @@
+{
+  "order": 23,
+  "description": "",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "providers/rachel-shenker.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "settings": {
+    "bodyClass": "",
+    "marquee": false,
+    "redirect": "/providers/index.html",
+    "redirectBody": "<p>This provider profile is no longer available. <a href=\"/providers/index.html\">View our current providers.</a></p>",
+    "scripts": [],
+    "styles": []
+  },
+  "title": "Our Providers - Utah Cancer Specialists"
+}

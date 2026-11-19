@@ -1,0 +1,72 @@
+{
+  "order": 50,
+  "directory": {
+    "alt": "Shauna H. Olsen",
+    "category": "advanced-practitioners",
+    "order": 58,
+    "photo": "/images/provider-shauna-olsen.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Shauna H. Olsen, FNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Shauna H. Olsen",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-shauna-olsen.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Shauna H. Olsen, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Olsen"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Westminster College, Salt Lake City, UT Master’s, Nursing, Westminster College, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "shauna-olsen",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

@@ -21,6 +21,8 @@ export interface EventImage { src: string; alt: string; caption?: string }
 /** One event as the website renders it. */
 export interface SiteEvent {
   id: string;
+  /** Content file for the site editor, e.g. "events/2026-10-24-pinksync". */
+  contentId?: string;
   title: string;
   /** "YYYY-MM-DD"; decides Upcoming vs Past. Missing only for old text slots we couldn't read. */
   date: string | null;
@@ -245,6 +247,7 @@ export function toSiteEvents(items: Array<LegacyEventItem<any> | EventItem<any>>
       featured: Boolean(item.featured),
       photos: (item.photos ?? []).map(toImage).filter((photo): photo is EventImage => Boolean(photo)),
       videoUrl: clean(item.videoUrl),
+      ...((item as {contentId?: string}).contentId ? {contentId: (item as {contentId?: string}).contentId} : {}),
     });
   }
   return events;

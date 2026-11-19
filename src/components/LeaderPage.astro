@@ -8,7 +8,7 @@ const leader = leaders.find(p => p.slug === Astro.props.slug);
 if (!leader) throw new Error(`Unknown leader: ${Astro.props.slug}`);
 const portrait = imageVariant(leader.photo.src, 600);
 ---
-<section class="provider-hero"><div class="container provider-hero-inner">
+<section class="provider-hero" data-sa={leader.contentId}><div class="container provider-hero-inner">
   <div class="provider-hero-text">
     <a href={url('/leadership.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Leadership</a>
     <h1 class="provider-name">{leader.name}</h1><p class="provider-specialty">{leader.role}</p>

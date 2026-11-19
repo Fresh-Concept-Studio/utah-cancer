@@ -1,0 +1,92 @@
+{
+  "order": 20,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Advanced ovarian cancer treatment including surgery, chemotherapy, and emerging targeted approaches.",
+  "directory": {
+    "category": "common",
+    "description": "Advanced treatment including surgery, chemotherapy, and emerging targeted approaches.",
+    "icon": "health_and_safety",
+    "order": 4,
+    "searchName": "Ovarian Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-breast-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Ovarian cancer is often called a silent disease because early symptoms can be subtle. At Utah Cancer Specialists, we combine aggressive surgical and medical approaches with the latest targeted therapies and PARP inhibitors to give every patient the best possible outcome.</p> <p class=\"provider-bio\">Our team includes medical oncologists experienced in gynecologic malignancies who work in coordination with surgical specialists and genetic counselors.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Bloating or abdominal swelling</li> <li>Pelvic or abdominal pain</li> <li>Difficulty eating or feeling full quickly</li> <li>Urinary urgency or frequency</li> <li>Unexplained fatigue or weight change</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT, MRI, and transvaginal ultrasound</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Surgical biopsy with histologic subtyping</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">family_history</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Genetic Testing</h3> <p>BRCA1/2 and HRD testing</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">CA-125 Monitoring</h3> <p>Blood marker tracking for treatment response</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgery</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> PARP Inhibitors</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Should I get genetic testing?</summary> <p>We recommend genetic counseling for all ovarian cancer patients, as BRCA mutations and other hereditary factors affect treatment decisions and family screening recommendations.</p> </details> <details class=\"sd-faq-item\"> <summary>What are PARP inhibitors?</summary> <p>PARP inhibitors are targeted drugs that block cancer cells from repairing their DNA, especially effective in patients with BRCA mutations or HRD-positive tumors.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "ovarian-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Ovarian Cancer"
+}

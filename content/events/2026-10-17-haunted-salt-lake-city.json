@@ -1,0 +1,65 @@
+{
+  "order": 3,
+  "category": "community",
+  "categoryLabel": "Run / Walk",
+  "date": "2026-10-17",
+  "description": "A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park.",
+  "image": {
+    "alt": "The Utah Cancer Specialists banner beside the pumpkin arch at HAUNTED Salt Lake City",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/2f62f0273d0df28f377a09ea93ff6145431efff4-2000x1333.jpg?crop=focalpoint&fp-x=0.5&fp-y=0.5"
+  },
+  "link": "https://runtasticevents.com/races/haunted-salt-lake-city/",
+  "location": "Sugar House Park",
+  "photos": [
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/5842f000ed9948399b45abd509b1b70b19a55b2b-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/15661c18de20a85ae1a2da122c7b73df0c1d37fb-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/2f62f0273d0df28f377a09ea93ff6145431efff4-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/43d8f6433ddbd4112de03afb02bc2cc39a53d0d9-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/b5d88d648a8dffbb37d5dd7a9354ef14a3ed2136-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/521454b9b40790b3a4f6d2f49d0ef49962bb5b34-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/3923dfc0ddd2ba95401cde2fe27fab4d4223604b-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/e29aeb2bdc32a100fa2ee8c0e6ceeb836b20bb73-2000x1569.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/2cff78076da4738b44e551a0869d8b72f9eceb96-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/7b2f2b4583c58207615d62e8afe8c3839d8a00bb-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/4ef06b14a3c0914875ebdf83f50aefa767808db1-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the HAUNTED Salt Lake City",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/9b13671229d74c2b2d70ca20cdf6148600dc60a8-1333x2000.jpg"
+    }
+  ],
+  "timeText": "Half starts 8:00 AM",
+  "title": "HAUNTED Salt Lake City"
+}

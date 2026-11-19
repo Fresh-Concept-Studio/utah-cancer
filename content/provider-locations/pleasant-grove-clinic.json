@@ -1,0 +1,36 @@
+{
+  "order": 20,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.492.9934",
+      "attrs": {
+        "href": "tel:8014929934",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=1076+N+County+Blvd%2C+Suite+D+Pleasant+Grove%2C+UT+84062",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "1076 N County Blvd, Suite D<br>Pleasant Grove, UT 84062",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "pleasant-grove-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Pleasant Grove Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

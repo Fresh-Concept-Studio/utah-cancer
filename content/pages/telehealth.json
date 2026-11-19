@@ -1,0 +1,210 @@
+{
+  "order": 33,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-27581862f6",
+      "label": "Heading",
+      "section": "Telehealth",
+      "value": "Telehealth"
+    },
+    {
+      "key": "text-2e6a79cafa",
+      "label": "Paragraph",
+      "section": "Telehealth",
+      "value": "Connecting with your physician through technology — virtual, home-based care without a disruption in treatment."
+    },
+    {
+      "key": "text-1dd6a17cb4",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "How it works"
+    },
+    {
+      "key": "text-56998b62bb",
+      "label": "Heading",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Care that meets you at home, in three simple steps."
+    },
+    {
+      "key": "text-d4842a1d15",
+      "label": "Paragraph",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Telehealth lets you connect with your physician or advanced care practitioner from your smartphone, tablet, or computer — no downloads, no special software, no disruption to your treatment."
+    },
+    {
+      "key": "text-356a192b79",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "1"
+    },
+    {
+      "key": "text-42cd9f795a",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Step 01"
+    },
+    {
+      "key": "text-049377ee15",
+      "label": "Heading",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Receive Your Link"
+    },
+    {
+      "key": "text-a053e5d180",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Your clinic sends a clickable link to your smartphone, tablet, or email before your appointment."
+    },
+    {
+      "key": "text-da4b9237ba",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "2"
+    },
+    {
+      "key": "text-38cff1f8dd",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Step 02"
+    },
+    {
+      "key": "text-b65463cb6a",
+      "label": "Heading",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Connect"
+    },
+    {
+      "key": "text-cd5f2cff09",
+      "label": "Paragraph",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Click the link at your scheduled time. No downloads or special software required — just one tap to join."
+    },
+    {
+      "key": "text-77de68daec",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "3"
+    },
+    {
+      "key": "text-87bd4ea1ec",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Step 03"
+    },
+    {
+      "key": "text-e75c7cfecc",
+      "label": "Heading",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Your Visit"
+    },
+    {
+      "key": "text-a40780caf7",
+      "label": "Text",
+      "section": "Care that meets you at home, in three simple steps.",
+      "value": "Meet face-to-face with your provider, discuss your care, and ask questions from the comfort of home."
+    },
+    {
+      "key": "text-1f955b144e",
+      "label": "Heading",
+      "section": "Common Questions",
+      "value": "Common Questions"
+    },
+    {
+      "key": "text-0c174e4d28",
+      "label": "Text",
+      "section": "Common Questions",
+      "value": "What equipment do I need?"
+    },
+    {
+      "key": "text-d72ca26a8b",
+      "label": "Paragraph",
+      "section": "Common Questions",
+      "value": "A smartphone, tablet, or computer with a camera and microphone. Most modern devices have everything you need built in."
+    },
+    {
+      "key": "text-6e241cacbd",
+      "label": "Text",
+      "section": "Common Questions",
+      "value": "Is telehealth covered by insurance?"
+    },
+    {
+      "key": "text-ce52ec164c",
+      "label": "Paragraph",
+      "section": "Common Questions",
+      "value": "Most insurance plans cover telehealth visits. Our patient advocates can verify your coverage before your appointment."
+    },
+    {
+      "key": "text-78103f72c0",
+      "label": "Text",
+      "section": "Common Questions",
+      "value": "What types of visits can be done via telehealth?"
+    },
+    {
+      "key": "text-04884fa441",
+      "label": "Paragraph",
+      "section": "Common Questions",
+      "value": "Follow-up consultations, treatment discussions, symptom checks, lab result reviews, and survivorship visits are all well-suited for telehealth. Your care team will let you know if an in-person visit is needed."
+    },
+    {
+      "key": "text-bffa39e48a",
+      "label": "Text",
+      "section": "Common Questions",
+      "value": "Is my telehealth visit private and secure?"
+    },
+    {
+      "key": "text-211bfb33dd",
+      "label": "Text",
+      "section": "Common Questions",
+      "value": "Yes. All telehealth visits use HIPAA-compliant, encrypted video connections to protect your privacy."
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "A laptop on a sunlit kitchen table set up for a virtual care visit at home",
+        "src": "/images/generated/telehealth-hero-960.webp"
+      },
+      "key": "image-164af3d6ae",
+      "label": "A laptop on a sunlit kitchen table set up for a virtual care visit at home",
+      "section": "Container"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "telehealth.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Telehealth - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "telehealth",
+    "cta": {
+      "heading": "Ready to schedule a telehealth visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/telehealth.css"
+    ]
+  },
+  "title": "Telehealth - Utah Cancer Specialists"
+}

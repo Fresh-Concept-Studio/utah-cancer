@@ -1,0 +1,72 @@
+{
+  "order": 55,
+  "directory": {
+    "alt": "Tylan Magnusson",
+    "category": "medical-oncology",
+    "order": 16,
+    "photo": "/images/provider-tylan-magnusson.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "eastern-idaho-regional-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Tylan Magnusson, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Tylan Magnusson",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-tylan-magnusson.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Tylan Magnusson, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Magnusson"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Doctor of Medicine (MD), Medical College of Wisconsin, Green Bay, WI</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine Residency, Tinsley Harrison Internal Medicine Residency Program, University of Alabama at Birmingham (UAB), Birmingham, AL</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology and Medical Oncology Fellowship, University of Alabama at Birmingham (UAB), Birmingham, AL</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>The American Board of Internal Medicine</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "tylan-magnusson",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

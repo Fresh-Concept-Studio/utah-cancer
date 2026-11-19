@@ -1,4 +1,6 @@
 export interface ClinicalTrial {
+  /** Content file for the site editor, e.g. "clinical-trials/nct03526835". */
+  contentId?: string;
   nctId: string;
   title: string;
   cancerType: string;

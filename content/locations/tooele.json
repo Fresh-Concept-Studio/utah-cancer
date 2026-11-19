@@ -1,0 +1,86 @@
+{
+  "order": 15,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2326+N.+400+E.%2C+Building+C%2C+Ste.+204+Tooele%2C+UT+84074",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:4358822365",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
+    "badge": "",
+    "county": "tooele",
+    "hoursHtml": "Mondays &amp; Tuesdays — call for hours",
+    "order": 14,
+    "phone": "435.882.2365"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Exterior of NorthPointe Medical Park Building C in Tooele",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/39430667e6783d0591898dbda2021bf4ade0b112-1020x1020.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.5718679,
+    "lng": -112.2924096
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 2326 N. 400 E., Building C, Ste. 204, Tooele, UT 84074</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 435.882.2365</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 435.882.2365",
+          "attrs": {
+            "href": "tel:4358822365",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">The Tooele Clinic at NorthPointe Medical Park brings Utah Cancer Specialists care to patients in Tooele County. The clinic is located in Building C, Suite 204.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Open Mondays and Tuesdays. Please call 435.882.2365 to confirm appointment hours before visiting.</p>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Find us at NorthPointe Medical Park, 2326 N. 400 E., Building C, Suite 204, Tooele, UT 84074.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">NorthPointe Medical Park<br>2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=2326+N.+400+E.%2C+Building+C%2C+Ste.+204+Tooele%2C+UT+84074\" class=\"btn btn--primary btn--full\" target=\"_blank\" rel=\"noopener\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:4358822365\">435.882.2365</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5614</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">Call to confirm clinic hours or request an appointment.</p> <a href=\"tel:4358822365\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "tooele",
+  "subtitle": "NorthPointe Medical Park",
+  "tag": "Medical Oncology & Hematology",
+  "title": "Tooele Clinic"
+}

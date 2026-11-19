@@ -1,0 +1,92 @@
+{
+  "order": 5,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Blood & Bone Marrow",
+  "description": "Expert care for aplastic anemia, MDS, and other bone marrow failure conditions.",
+  "directory": {
+    "category": "blood",
+    "description": "Expert care for aplastic anemia, MDS, and other bone marrow failure conditions.",
+    "icon": "healing",
+    "order": 15,
+    "searchName": "Bone Marrow Failure Syndromes"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-blood-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Bone marrow failure syndromes include myelodysplastic syndromes (MDS), aplastic anemia, and related conditions where the bone marrow cannot produce enough healthy blood cells.</p> <p class=\"provider-bio\">Our hematologists use advanced molecular diagnostics to classify these conditions and offer treatments including growth factors, immunosuppressive therapy, hypomethylating agents, and transplant coordination.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Severe fatigue and weakness</li> <li>Frequent or serious infections</li> <li>Easy bruising and prolonged bleeding</li> <li>Shortness of breath</li> <li>Recurrent fevers</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Cellularity assessment with cytogenetics</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>Next-generation sequencing for prognostic mutations</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC, reticulocyte count, EPO level</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Hypomethylating Agents</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunosuppressive Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">bloodtype</span> Growth Factors &amp; Transfusions</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Transplant Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is MDS?</summary> <p>Myelodysplastic syndromes are conditions where bone marrow produces abnormal blood cells. MDS can range from mild to severe and may progress to acute leukemia in some cases.</p> </details> <details class=\"sd-faq-item\"> <summary>Is bone marrow transplant the only cure?</summary> <p>Stem cell transplant is the only curative option for many bone marrow failure syndromes, but not all patients are candidates. Other treatments can effectively manage the disease for years.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar",
+  "slug": "bone-marrow-failure",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Bone Marrow Failure Syndromes"
+}

@@ -1,0 +1,72 @@
+{
+  "order": 37,
+  "directory": {
+    "alt": "Louise K. Tobey",
+    "category": "advanced-practitioners",
+    "order": 53,
+    "photo": "/images/provider-louise-tobey.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Louise K. Tobey, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Louise K. Tobey",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-louise-tobey.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Louise Tobey began working in healthcare at age 18, with a career that has taken her through clinical laboratory science, internal medicine, and ultimately oncology at Utah Cancer Specialists.</p> <p class=\"provider-bio\">Her interest in oncology became personal when a family member was diagnosed with cancer. She was deeply grateful for the compassionate care they received and was drawn to oncology because of the meaningful, long-term relationships providers can build with patients and families.</p> <p class=\"provider-bio\">She believes every patient has a unique journey and deserves individualized care. Louise approaches her patients with the same compassion and attention she would want for her own family, taking time to understand their needs and support them throughout their care.</p> <p class=\"provider-bio\">Louise grew up in Brigham City and raised her family in Cache Valley before moving to the Salt Lake area to join Utah Cancer Specialists. Outside of work, her family and grandchildren are her greatest priority. She also enjoys spending time with friends, golfing, bicycling, and reading.</p>",
+      "id": "about",
+      "title": "About Tobey"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Clinical Laboratory Science, Weber State University, Ogden, UT<br>Master of Science in Physician Assistant Studies, University of Utah, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>National Commission on Certification of Physician Assistants</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "louise-tobey",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "order": 11,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Other Cancers & Conditions",
+  "description": "Specialized treatment for adrenal, pituitary, and neuroendocrine tumors.",
+  "directory": {
+    "category": "other",
+    "description": "Specialized treatment for adrenal, pituitary, and neuroendocrine tumors.",
+    "icon": "settings_accessibility",
+    "order": 24,
+    "searchName": "Endocrine Tumors"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-breast-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Endocrine tumors arise from hormone-producing tissues and include neuroendocrine tumors (NETs), adrenal cancers, pituitary tumors, and carcinoid tumors. These cancers often require specialized knowledge of both oncology and endocrinology.</p> <p class=\"provider-bio\">Our team uses somatostatin receptor imaging (Gallium 68 DOTATATE PET) and targeted radionuclide therapy (Lutathera) alongside standard systemic treatments.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Hormonal symptoms (flushing, diarrhea, wheezing)</li> <li>Abdominal pain</li> <li>Unexplained weight changes</li> <li>Fatigue</li> <li>Skin changes</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Specialized Imaging</h3> <p>Ga68 DOTATATE PET/CT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Tissue sampling with Ki-67 grading</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biochemical Markers</h3> <p>Chromogranin A, 5-HIAA, and hormone levels</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Somatostatin Analogs</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> PRRT (Lutathera)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is a neuroendocrine tumor?</summary> <p>NETs arise from neuroendocrine cells found throughout the body. They can be slow-growing (low-grade) or aggressive (high-grade) and may produce excess hormones.</p> </details> <details class=\"sd-faq-item\"> <summary>What is Lutathera?</summary> <p>Lutathera (Lu-177 DOTATATE) is a targeted radionuclide therapy that delivers radiation directly to NET cells expressing somatostatin receptors.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-3",
+  "slug": "endocrine-tumors",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Endocrine Tumors"
+}

@@ -1,0 +1,73 @@
+{
+  "order": 54,
+  "directory": {
+    "alt": "Thomas B. Skidmore",
+    "category": "radiation-oncology",
+    "order": 33,
+    "photo": "/images/provider-thomas-skidmore.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center",
+    "st-mark-s-hospital"
+  ],
+  "mediaHighlights": null,
+  "name": "Thomas B. Skidmore, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Thomas B. Skidmore",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-thomas-skidmore.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Thomas B. Skidmore, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Skidmore"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Westminster College, Salt Lake City, UT, B.S., Psychology with a Minor in Biology, Magna Cum Laude Hiatus from Jan 98-Jan 00 to serve religious mission in Helsinki, Finland East High School, Salt Lake City, UT Summa Cum Laude</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Academy of Radiology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "thomas-skidmore",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

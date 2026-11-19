@@ -1,0 +1,133 @@
+{
+  "order": 27,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "link-b4ae4f4939",
+      "kind": "link",
+      "label": "Link destination: arrow_back All Patient Stories",
+      "section": "“The river was waiting for me. So was the rest of my life.”",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-ea662bbb0e",
+      "label": "Link label",
+      "section": "“The river was waiting for me. So was the rest of my life.”",
+      "value": " All Patient Stories"
+    },
+    {
+      "key": "text-349ed8ba4d",
+      "label": "Text",
+      "section": "“The river was waiting for me. So was the rest of my life.”",
+      "value": "Lymphoma · Three Years Cancer-Free"
+    },
+    {
+      "key": "text-338f0626b7",
+      "label": "Heading",
+      "section": "“The river was waiting for me. So was the rest of my life.”",
+      "value": "“The river was waiting for me. So was the rest of my life.”"
+    },
+    {
+      "key": "text-e948134347",
+      "label": "Text",
+      "section": "“The river was waiting for me. So was the rest of my life.”",
+      "value": "Dale R. · Ogden"
+    },
+    {
+      "key": "text-81cb0118c6",
+      "label": "Text",
+      "section": "Story detail media",
+      "value": "Video coming soon"
+    },
+    {
+      "key": "text-35cbe2202a",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "Dale measures his life in rivers. Forty years of early mornings, waders, and the particular quiet of moving water. So when persistent night sweats and a swollen lymph node turned out to be non-Hodgkin lymphoma, his first question wasn’t about survival rates. It was: “Will I fish again?”"
+    },
+    {
+      "key": "text-7ca3c421f7",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "“My oncologist didn’t laugh,” Dale says. “He said, ‘That’s the goal. Let’s build the treatment around getting you back on the water.’ That was the moment I trusted him.”"
+    },
+    {
+      "key": "text-a9a668af44",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "Treatment was hard — six cycles of chemotherapy through a Utah winter. The care team at the Ogden clinic scheduled his infusions so his strongest days landed on weekends, when his son could drive him to the Weber River just to watch it run. By spring, watching had turned back into wading."
+    },
+    {
+      "key": "text-29b4dca938",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "Three years cancer-free, Dale ties his own flies again and has taught both grandsons to cast. “People ask me what beating cancer feels like,” he says. “It feels like cold water around your knees at sunrise. It feels like being exactly where you belong.”"
+    },
+    {
+      "key": "text-03a7ccbd43",
+      "label": "Heading",
+      "section": "Every story starts with a first appointment.",
+      "value": "Every story starts with a first appointment."
+    },
+    {
+      "key": "link-686a9a3e68",
+      "kind": "link",
+      "label": "Link destination: phone Contact Us",
+      "section": "Every story starts with a first appointment.",
+      "value": "/contact.html"
+    },
+    {
+      "key": "text-3127f37906",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": " Contact Us"
+    },
+    {
+      "key": "link-b4ae4f4939-1",
+      "kind": "link",
+      "label": "Link destination: More patient stories arrow_forward",
+      "section": "Every story starts with a first appointment.",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-b8cf626149",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": "More patient stories "
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Dale R. fly fishing at sunrise on a Utah river",
+        "src": "/images/story-dale-1200.webp"
+      },
+      "key": "image-37687d1cd5",
+      "label": "Dale R. fly fishing at sunrise on a Utah river",
+      "section": "Story detail media"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "stories/dale.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Dale’s Story - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "stories-dale",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Dale’s Story - Utah Cancer Specialists"
+}

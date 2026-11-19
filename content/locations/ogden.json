@@ -1,0 +1,87 @@
+{
+  "order": 7,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=425+E.+5350+S.%2C+Ste.+101+Ogden%2C+UT+84405",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:3854232855",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "425 E. 5350 S., Ste. 101<br>Ogden, UT 84405",
+    "badge": "",
+    "county": "weber",
+    "hoursHtml": "Mon–Wed, 9:00 am – 5:00 pm",
+    "order": 6,
+    "phone": "385.423.2855",
+    "title": "Ogden Clinic"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Ogden Medical Plaza",
+    "src": "/images/location-ogden.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 41.1661,
+    "lng": -111.9701
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 425 E. 5350 S., Ste. 101, Ogden, UT 84405</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 385.423.2855</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.423.2855",
+          "attrs": {
+            "href": "tel:3854232855",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Our Ogden Medical Plaza clinic serves the Weber County community with medical oncology and hematology care. Conveniently located along the 5300 S. corridor, this clinic provides infusion therapy, on-site laboratory services, and the full support of the Utah Cancer Specialists care team — so patients in northern Utah can receive expert cancer care close to home.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Friday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Free parking is available in the medical plaza lot. Accessible spaces are located near the building entrance.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">425 E. 5350 S., Ste. 101<br>Ogden, UT 84405</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=425+E.+5350+S.%2C+Ste.+101+Ogden%2C+UT+84405\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3854232855\">385.423.2855</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 385.347.5488</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3854232855\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "ogden",
+  "subtitle": "Medical Oncology & Hematology",
+  "tag": "Medical Oncology",
+  "title": "Ogden Medical Plaza"
+}

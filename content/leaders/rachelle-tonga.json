@@ -1,0 +1,46 @@
+{
+  "order": 7,
+  "directoryPhoto": {
+    "alt": "Rachelle Tonga",
+    "src": "/images/leader-rachelle-tonga.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Rachelle Tonga",
+  "page": {
+    "cta": {
+      "heading": "Ready to learn more about your care options?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span>Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Rachelle Tonga",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-rachelle-tonga.webp"
+  },
+  "role": "Director of Administrative Services",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Rachelle Tonga brings more than 25 years of leadership experience with Utah Cancer Specialists, along with a deep understanding of oncology practice operations, employee development, and patient-centered care. She began her career with UCS as a Patient Service Representative and has advanced through a variety of leadership roles, including Office Manager, Associate Director and Company Trainer, and ultimately Director.</p> <p class=\"provider-bio\">Throughout her tenure, Rachelle has had the opportunity to grow alongside UCS and witness its evolution into one of Utah’s leading community oncology practices. She has played an important role in mentoring, training, and developing staff members and leaders across the organization. Prior to joining UCS, Rachelle spent seven years as an Office Manager for a gynecologic oncology practice at LDS Hospital.</p> <p class=\"provider-bio\">Rachelle was drawn to healthcare because of her genuine interest in people and her desire to support others during some of life’s most difficult moments. She values the relationships she has built with both patients and employees and believes that compassion, empathy, and personal connection are essential to creating an exceptional healthcare experience.</p> <p class=\"provider-bio\">As UCS continues to grow, Rachelle is excited about the advancements in cancer treatment, technology, and personalized care that will further improve the patient experience. She is equally passionate about building a workplace where employees feel valued, supported, and connected to the organization’s purpose. For Rachelle, maintaining the human touch that has always defined UCS is just as important as embracing innovation and growth.</p> <p class=\"provider-bio\">To Rachelle, exceptional patient care means truly listening, understanding what each patient needs, and ensuring they feel heard, respected, and supported throughout their care. She believes every interaction matters, particularly in oncology, where kindness, understanding, and exceptional service can make a meaningful difference for patients and their families.</p> <p class=\"provider-bio\">Outside of work, Rachelle enjoys traveling, reading, crafting, photography, and spending time outdoors. Most of all, she treasures time with her family and grandchildren and loves hosting gatherings that bring the people she cares about together and create lasting memories.</p>",
+      "id": "about",
+      "title": "About Rachelle Tonga"
+    }
+  ],
+  "slug": "rachelle-tonga"
+}

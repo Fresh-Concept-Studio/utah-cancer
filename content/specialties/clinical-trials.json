@@ -1,0 +1,83 @@
+{
+  "order": 9,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Other Cancers & Conditions",
+  "description": "Access to cutting-edge clinical trials and investigational treatments through the START Mountain Region program.",
+  "directory": {
+    "category": "other",
+    "description": "Access to cutting-edge clinical trials and investigational treatments.",
+    "icon": "science",
+    "order": 27,
+    "searchName": "Clinical Trials START Program"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-prostate-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Utah Cancer Specialists has been committed to advancing cancer care through clinical research for more than 25 years. We manage over 50 active clinical trials at any given time, spanning all phases of development from early Phase I through Phase III.</p> <p class=\"provider-bio\">Through the START Mountain Region program — established in 2020 and led by Dr. Justin Call — we offer Utah's only dedicated community-based early-phase clinical trial site, part of the world's largest Phase I medical oncology research program. Patients who have exhausted standard options or want access to the most novel therapies can explore trials right here in Utah.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>Comprehensive genomic testing to match patients with appropriate trials</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biomarker Analysis</h3> <p>Specific biomarker requirements vary by trial</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Eligibility Assessment</h3> <p>Complete medical evaluation for trial enrollment</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Phase I Trials (START)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Phase II-III Trials</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">biotech</span> Novel Drug Combinations</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Agent Studies</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radar</span> Radiation Studies</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is a clinical trial?</summary> <p>A clinical trial is a carefully designed research study that tests new treatments in patients. All trials are reviewed by an Institutional Review Board (IRB) and participation is always voluntary.</p> </details> <details class=\"sd-faq-item\"> <summary>Will I receive a placebo?</summary> <p>Most cancer clinical trials do not use placebos. When a placebo arm is included, patients always receive at least the current standard of care.</p> </details> <details class=\"sd-faq-item\"> <summary>How do I find out if I'm eligible?</summary> <p>Contact our clinical research team at 801.907.4750 (START) or 801.281.6864 (UCS Trials), or ask your oncologist about trial options at your next visit.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-3",
+  "slug": "clinical-trials",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Clinical Trials (START Program)"
+}

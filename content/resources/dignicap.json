@@ -1,0 +1,32 @@
+{
+  "order": 3,
+  "description": "Learn how DigniCap scalp cooling may reduce chemotherapy-related hair loss for eligible patients with solid tumors.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Support during chemotherapy",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>How scalp cooling works</h2>\n      <p>DigniCap cools the scalp before, during, and after chemotherapy. Lowering the scalp temperature reduces blood flow and slows activity in hair follicle cells, which may reduce the amount of chemotherapy reaching those cells.</p>\n      <h2>Is DigniCap right for you?</h2>\n      <p>DigniCap is FDA cleared to reduce the likelihood of chemotherapy-induced hair loss in patients with solid tumors. Results vary, some shedding is expected, and scalp cooling is not appropriate for every diagnosis or chemotherapy regimen.</p>\n      <p>Ask your oncology team about eligibility, availability, added treatment time, possible discomfort, hair-care guidance, and cost before deciding.</p>\n      <p><a class=\"resource-button\" href=\"https://dignicap.com/scalp-cooling/\" target=\"_blank\" rel=\"noopener\">Learn more from DigniCap <span aria-hidden=\"true\">↗</span></a></p>",
+  "icon": "healing",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "Scalp cooling may reduce the likelihood of chemotherapy-related hair loss for some patients and treatment plans.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/treatment-options.html",
+      "label": "Treatment options"
+    },
+    {
+      "href": "/stories/amy-jensen.html",
+      "label": "Read Amy Jensen’s story"
+    }
+  ],
+  "seoTitle": "DigniCap Scalp Cooling | Utah Cancer Specialists",
+  "slug": "dignicap",
+  "title": "DigniCap Scalp Cooling"
+}

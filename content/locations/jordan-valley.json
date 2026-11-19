@@ -1,0 +1,120 @@
+{
+  "order": 5,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%2C+Ste.+200+West+Jordan%2C+UT+84088",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8015628732",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "departments": [
+    {
+      "city": "West Jordan, UT 84088",
+      "fax": "801.267.5633",
+      "hours": {
+        "friday": "9:00 AM – 5:00 PM",
+        "monday": "9:00 AM – 5:00 PM",
+        "thursday": "9:00 AM – 5:00 PM",
+        "tuesday": "9:00 AM – 5:00 PM",
+        "wednesday": "9:00 AM – 5:00 PM"
+      },
+      "location": "Holy Cross Hospital",
+      "name": "Medical Oncology",
+      "phone": "801.562.8732",
+      "street": "3592 W. 9000 S., Ste. 200"
+    },
+    {
+      "city": "West Jordan, UT 84088",
+      "fax": "801.601.2255",
+      "hours": {
+        "friday": "7:30 AM – 12:00 PM",
+        "monday": "7:30 AM – 4:00 PM",
+        "thursday": "7:30 AM – 4:00 PM",
+        "tuesday": "7:30 AM – 4:00 PM",
+        "wednesday": "7:30 AM – 4:00 PM"
+      },
+      "location": "Holy Cross Hospital",
+      "name": "Radiation Oncology",
+      "phone": "801.601.2260",
+      "street": "3592 W. 9000 S., Ste. 100"
+    }
+  ],
+  "directory": {
+    "addressHtml": "3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088",
+    "badge": "",
+    "county": "salt-lake",
+    "hoursHtml": "Medical Mon–Fri · Radiation Mon–Fri (Fri until noon)",
+    "order": 4,
+    "phone": "801.562.8732",
+    "subtitle": "Holy Cross Hospital — Medical & Radiation Oncology",
+    "title": "Jordan Valley Clinic"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Jordan Valley Cancer Center",
+    "src": "/images/location-jordan-valley.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.5879,
+    "lng": -111.9768
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 3592 W. 9000 S., West Jordan, UT 84088</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> Medical 801.562.8732</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> Radiation 801.601.2260</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.562.8732",
+          "attrs": {
+            "href": "tel:8015628732",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">The Jordan Valley Cancer Center is a purpose-built, two-story facility opened in 2016 and designed around patient comfort. The hospitality-inspired environment replaces the sterile feel of a traditional medical office with natural healing elements of earth, water, and wood. A dual-level fireplace greets patients upon entry, serving as both a comfort and a wayfinding landmark. The clinic houses medical oncology, radiation oncology, infusion therapy, and clinical research under one roof.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Free patient parking is available in the lot directly adjacent to the building. Accessible parking spaces are located near the main entrance on the ground level.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">3592 W. 9000 S., Ste. 200<br>West Jordan, UT 84088</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=3592+W.+9000+S.%2C+Ste.+200+West+Jordan%2C+UT+84088\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015628732\">801.562.8732</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.562.8733</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8015628732\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "jordan-valley",
+  "subtitle": "Holy Cross Hospital",
+  "tag": "Medical & Radiation Oncology",
+  "title": "Jordan Valley Cancer Center"
+}

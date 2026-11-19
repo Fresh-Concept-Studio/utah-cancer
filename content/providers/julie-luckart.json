@@ -1,0 +1,72 @@
+{
+  "order": 31,
+  "directory": {
+    "alt": "Julie B. Luckart",
+    "category": "advanced-practitioners",
+    "order": 50,
+    "photo": "/images/provider-julie-luckart.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "start-mountain-region-clinical-trials"
+  ],
+  "mediaHighlights": null,
+  "name": "Julie B. Luckart, DNP, AOCNP, FNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Julie B. Luckart",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-julie-luckart.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Julie B. Luckart, DNP, AOCNP, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Luckart"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Psychology, University of Utah, Salt Lake City, UT Bachelor of Science, Nursing, Johns Hopkins University, Baltimore, MD Master of Nursing, Family Practice, University of Utah, Salt Lake City, UT Doctorate of Nursing Practice, University of Utah, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Oncology Nursing Certification Corporation</li> <li>American Nursing Credentialing Center</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "julie-luckart",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

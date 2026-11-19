@@ -1,0 +1,92 @@
+{
+  "order": 18,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Blood & Bone Marrow",
+  "description": "Specialized treatment including novel immunotherapies and stem cell transplant support for multiple myeloma.",
+  "directory": {
+    "category": "blood",
+    "description": "Specialized treatment including novel immunotherapies and stem cell transplant support.",
+    "icon": "accessibility_new",
+    "order": 12,
+    "searchName": "Multiple Myeloma"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-blood-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Multiple myeloma is a cancer of plasma cells in the bone marrow. Treatment has advanced dramatically in recent years with the introduction of proteasome inhibitors, immunomodulatory drugs, monoclonal antibodies, and bispecific antibodies.</p> <p class=\"provider-bio\">Our team manages the full continuum of myeloma care — from smoldering myeloma surveillance through frontline treatment, transplant coordination, and management of relapsed disease.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Bone pain, especially in the spine or ribs</li> <li>Fatigue and weakness</li> <li>Frequent infections</li> <li>Kidney problems or elevated calcium</li> <li>Numbness or tingling in extremities</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood &amp; Urine Tests</h3> <p>SPEP, UPEP, free light chains, beta-2 microglobulin</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Plasma cell quantification with FISH cytogenetics</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>PET/CT, whole-body low-dose CT, or MRI for bone lesions</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Proteasome Inhibitors</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy (Monoclonal Antibodies)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Stem Cell Transplant Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Is myeloma curable?</summary> <p>While myeloma is not yet considered curable for most patients, modern treatments have significantly extended survival. Many patients achieve deep remissions and live for years with good quality of life.</p> </details> <details class=\"sd-faq-item\"> <summary>What is a stem cell transplant?</summary> <p>Autologous stem cell transplant uses your own stem cells collected before high-dose chemotherapy, then returned to rebuild your bone marrow. It remains a key treatment for eligible myeloma patients.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar",
+  "slug": "multiple-myeloma",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Multiple Myeloma"
+}

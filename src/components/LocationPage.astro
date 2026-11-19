@@ -13,7 +13,7 @@ const departments: ClinicDepartment[] = (location as { departments?: ClinicDepar
 const departmentHours = departments.some(hasHours) ? departmentHoursHtml(departments) : '';
 const sections = departmentHours ? location.sections.map(section => section.title === 'Hours of operation' ? { ...section, html: departmentHours } : section) : location.sections;
 ---
-<section class="loc-hero">
+<section class="loc-hero" data-sa={location.contentId}>
   <div class="loc-hero-bg"><img src={url(heroImage)} width="1280" height="800" alt={location.image.alt} fetchpriority="high" decoding="async" /><div class="loc-hero-overlay"></div></div>
   <div class="container loc-hero-inner">
     <a href={url('/locations/index.html')} class="provider-breadcrumb"><span class="material-symbols-rounded">arrow_back</span> All Locations</a>

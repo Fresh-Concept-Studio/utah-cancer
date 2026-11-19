@@ -1,0 +1,36 @@
+{
+  "order": 25,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.456.8401",
+      "attrs": {
+        "href": "tel:8014568401",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=1250+E.+3900+S.%2C+Ste.+B-10+Salt+Lake+City%2C+UT+84124",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "st-mark-s-hospital",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "St. Mark’s Hospital",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

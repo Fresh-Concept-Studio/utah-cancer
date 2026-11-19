@@ -1,0 +1,696 @@
+{
+  "order": 6,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-a80277c157",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "What's Happening"
+    },
+    {
+      "key": "text-f0bd46a6cc",
+      "label": "Heading",
+      "section": "Events & Gatherings",
+      "value": "Events & Gatherings"
+    },
+    {
+      "key": "text-02275ce911",
+      "label": "Paragraph",
+      "section": "Events & Gatherings",
+      "value": "From educational workshops to community walks, our events bring patients, families, providers, and supporters together. Stay connected and find something happening near you."
+    },
+    {
+      "key": "text-c1dfd96eea",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "6"
+    },
+    {
+      "key": "text-efb2553f9b",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "Upcoming this season"
+    },
+    {
+      "key": "text-1b64538924",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "4"
+    },
+    {
+      "key": "text-ad664f59f9",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "Run / walk events"
+    },
+    {
+      "key": "text-da4b9237ba",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "2"
+    },
+    {
+      "key": "text-9638488943",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "Patient resource events"
+    },
+    {
+      "key": "text-492c5f509c",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "SEP"
+    },
+    {
+      "key": "text-887309d048",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "26"
+    },
+    {
+      "key": "text-aee655773d",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "2026"
+    },
+    {
+      "key": "text-aa58169fd2",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "OCT"
+    },
+    {
+      "key": "text-b1d5781111",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "10"
+    },
+    {
+      "key": "text-f62ce2aaac",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "NOV"
+    },
+    {
+      "key": "text-887309d048-1",
+      "label": "Text",
+      "section": "Events & Gatherings",
+      "value": "26"
+    },
+    {
+      "key": "text-ae31ad5d6f",
+      "label": "Text",
+      "section": "Pink Bag Event",
+      "value": "Featured"
+    },
+    {
+      "key": "text-f14e95f52d",
+      "label": "Text",
+      "section": "Pink Bag Event",
+      "value": "Patient Resources"
+    },
+    {
+      "key": "text-108325cf43",
+      "label": "Heading",
+      "section": "Pink Bag Event",
+      "value": "Pink Bag Event"
+    },
+    {
+      "key": "text-11f8f8c6ad",
+      "label": "Text",
+      "section": "Pink Bag Event",
+      "value": "A community resource and support event for breast cancer patients and survivors."
+    },
+    {
+      "key": "text-aa9721454a",
+      "label": "Text",
+      "section": "Pink Bag Event",
+      "value": "Saturday, September 26, 2026"
+    },
+    {
+      "key": "text-a7e8f83583",
+      "label": "Text",
+      "section": "Pink Bag Event",
+      "value": "10:00 AM–1:30 PM · Fashion Place Mall"
+    },
+    {
+      "key": "link-c975770d3e",
+      "kind": "link",
+      "label": "Link destination: arrow_forward Event Details",
+      "section": "Pink Bag Event",
+      "value": "https://www.fashionplace.com/en/events/50851/"
+    },
+    {
+      "key": "text-9576cd6159",
+      "label": "Link label",
+      "section": "Pink Bag Event",
+      "value": " Event Details "
+    },
+    {
+      "key": "text-523baab918",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Upcoming"
+    },
+    {
+      "key": "text-88ff9e7707",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "All Upcoming Events"
+    },
+    {
+      "key": "link-c975770d3e-1",
+      "kind": "link",
+      "label": "Link destination: SEP 26 2026 Patient Resources Pink Bag Event A community resource",
+      "section": "All Upcoming Events",
+      "value": "https://www.fashionplace.com/en/events/50851/"
+    },
+    {
+      "key": "text-492c5f509c-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "SEP"
+    },
+    {
+      "key": "text-887309d048-2",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "26"
+    },
+    {
+      "key": "text-aee655773d-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "2026"
+    },
+    {
+      "key": "text-f14e95f52d-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Patient Resources"
+    },
+    {
+      "key": "text-108325cf43-1",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "Pink Bag Event"
+    },
+    {
+      "key": "text-11f8f8c6ad-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "A community resource and support event for breast cancer patients and survivors."
+    },
+    {
+      "key": "text-a7e8f83583-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "10:00 AM–1:30 PM · Fashion Place Mall"
+    },
+    {
+      "key": "link-746a0d23a3",
+      "kind": "link",
+      "label": "Link destination: OCT 10 2026 Fundraiser Utah Prostate Cancer Run & Walk A 5K run/w",
+      "section": "All Upcoming Events",
+      "value": "https://utahprostatecancerrun.com/"
+    },
+    {
+      "key": "text-aa58169fd2-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "OCT"
+    },
+    {
+      "key": "text-b1d5781111-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "10"
+    },
+    {
+      "key": "text-aee655773d-2",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "2026"
+    },
+    {
+      "key": "text-12bc9a713f",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Fundraiser"
+    },
+    {
+      "key": "text-3d7e931962",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "Utah Prostate Cancer Run & Walk"
+    },
+    {
+      "key": "text-bc6a22e715",
+      "label": "Paragraph",
+      "section": "All Upcoming Events",
+      "value": "A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection."
+    },
+    {
+      "key": "text-d8586c0be0",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Wheeler Historic Farm, Salt Lake City"
+    },
+    {
+      "key": "link-4e3c6d529a",
+      "kind": "link",
+      "label": "Link destination: OCT 17 2026 Run / Walk HAUNTED Salt Lake City A costume-ready hal",
+      "section": "All Upcoming Events",
+      "value": "https://runtasticevents.com/races/haunted-salt-lake-city/"
+    },
+    {
+      "key": "text-aa58169fd2-2",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "OCT"
+    },
+    {
+      "key": "text-0716d9708d",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "17"
+    },
+    {
+      "key": "text-aee655773d-3",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "2026"
+    },
+    {
+      "key": "text-58988359c8",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Run / Walk"
+    },
+    {
+      "key": "text-df0b58f960",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "HAUNTED Salt Lake City"
+    },
+    {
+      "key": "text-d7c56685bd",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "A costume-ready half marathon, 5K, and kids run from Emigration Canyon to Sugar House Park."
+    },
+    {
+      "key": "text-77b1c41b42",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Half starts 8:00 AM"
+    },
+    {
+      "key": "text-5ae38a9069",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Sugar House Park"
+    },
+    {
+      "key": "link-6ba352001e",
+      "kind": "link",
+      "label": "Link destination: OCT 24 2026 Fundraiser Making Strides Against Breast Cancer Walk ",
+      "section": "All Upcoming Events",
+      "value": "https://makingstrideswalk.org/saltlakecityut"
+    },
+    {
+      "key": "text-aa58169fd2-3",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "OCT"
+    },
+    {
+      "key": "text-4d134bc072",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "24"
+    },
+    {
+      "key": "text-aee655773d-4",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "2026"
+    },
+    {
+      "key": "text-12bc9a713f-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Fundraiser"
+    },
+    {
+      "key": "text-deac30791e",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "Making Strides Against Breast Cancer Walk"
+    },
+    {
+      "key": "text-95ff303111",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Walk together to honor survivors, remember loved ones, and support the fight against breast cancer."
+    },
+    {
+      "key": "text-e07c937388",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Time to be announced"
+    },
+    {
+      "key": "text-8a946df913",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "America First Field"
+    },
+    {
+      "key": "link-f9d1dba0f0",
+      "kind": "link",
+      "label": "Link destination: OCT 24 2026 Patient Resources PinkSync A patient resource event f",
+      "section": "All Upcoming Events",
+      "value": "https://www.pinksync.org/registration-pages/register"
+    },
+    {
+      "key": "text-aa58169fd2-4",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "OCT"
+    },
+    {
+      "key": "text-4d134bc072-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "24"
+    },
+    {
+      "key": "text-aee655773d-5",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "2026"
+    },
+    {
+      "key": "text-f14e95f52d-2",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Patient Resources"
+    },
+    {
+      "key": "text-4fad3b9ce6",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "PinkSync"
+    },
+    {
+      "key": "text-35ee5bdd80",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "A patient resource event featuring speakers, practical information, and valuable resources."
+    },
+    {
+      "key": "text-2c5dbebcfe",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "9:00 AM–2:00 PM"
+    },
+    {
+      "key": "text-49b45386ef",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Awardco Headquarters, Lindon"
+    },
+    {
+      "key": "link-82d6199a29",
+      "kind": "link",
+      "label": "Link destination: NOV 26 2026 Run / Walk Runtastic THANKFUL A Thanksgiving Day half",
+      "section": "All Upcoming Events",
+      "value": "https://runtasticevents.com/races/thankful/"
+    },
+    {
+      "key": "text-f62ce2aaac-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "NOV"
+    },
+    {
+      "key": "text-887309d048-3",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "26"
+    },
+    {
+      "key": "text-aee655773d-6",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "2026"
+    },
+    {
+      "key": "text-58988359c8-1",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Run / Walk"
+    },
+    {
+      "key": "text-c3b5295cf5",
+      "label": "Heading",
+      "section": "All Upcoming Events",
+      "value": "Runtastic THANKFUL"
+    },
+    {
+      "key": "text-d39d8a2513",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail."
+    },
+    {
+      "key": "text-c569d6528c",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Half starts 7:45 AM"
+    },
+    {
+      "key": "text-1c6fd50226",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "Thanksgiving Point, Lehi"
+    },
+    {
+      "key": "text-84fea1204c",
+      "label": "Text",
+      "section": "All Upcoming Events",
+      "value": "No events match this filter right now. Check back soon."
+    },
+    {
+      "key": "text-bf8ad78370",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "Recently Past"
+    },
+    {
+      "key": "text-0873c26971",
+      "label": "Heading",
+      "section": "Catch up on what we've been up to",
+      "value": "Catch up on what we've been up to"
+    },
+    {
+      "key": "text-d9fd4d8c32",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "August 29, 2026"
+    },
+    {
+      "key": "text-b48c7fa62c",
+      "label": "Heading",
+      "section": "Catch up on what we've been up to",
+      "value": "Runtastic NEBO"
+    },
+    {
+      "key": "text-3ddcbbc836",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "A marathon, half marathon, 10K, and 5K through Payson Canyon, finishing at Memorial Park in Payson."
+    },
+    {
+      "key": "text-7e1c4f6044",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "April 19, 2026"
+    },
+    {
+      "key": "text-5e865727e6",
+      "label": "Heading",
+      "section": "Catch up on what we've been up to",
+      "value": "Spring Wellness Fair"
+    },
+    {
+      "key": "text-9f17e8677c",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "Screenings, demos, and provider Q&A across three campuses."
+    },
+    {
+      "key": "text-796a240905",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "March 8, 2026"
+    },
+    {
+      "key": "text-00c0805001",
+      "label": "Heading",
+      "section": "Catch up on what we've been up to",
+      "value": "Clinical Trials Open House"
+    },
+    {
+      "key": "text-f9300dddc8",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "Learn how clinical trials work and what's currently enrolling at UCS."
+    },
+    {
+      "key": "text-0b779b3b02",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "February 14, 2026"
+    },
+    {
+      "key": "text-6a7fa596cc",
+      "label": "Heading",
+      "section": "Catch up on what we've been up to",
+      "value": "Heart-to-Heart Survivor Brunch"
+    },
+    {
+      "key": "text-8482188db2",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "A morning of stories, laughter, and brunch with our survivor community."
+    },
+    {
+      "key": "text-bf1b1913ea",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "January 25, 2026"
+    },
+    {
+      "key": "text-2c3be83480",
+      "label": "Heading",
+      "section": "Catch up on what we've been up to",
+      "value": "New Year, New Conversations"
+    },
+    {
+      "key": "text-029c48b73f",
+      "label": "Text",
+      "section": "Catch up on what we've been up to",
+      "value": "A panel discussion on goal-setting through and beyond cancer treatment."
+    },
+    {
+      "key": "text-events-tab-past",
+      "label": "Past tab label",
+      "section": "All Upcoming Events",
+      "value": "Past"
+    },
+    {
+      "key": "text-events-empty-upcoming",
+      "label": "Text when no events are upcoming",
+      "section": "All Upcoming Events",
+      "value": "No upcoming events right now — check back soon."
+    },
+    {
+      "key": "text-events-empty-past",
+      "label": "Text when there are no past events",
+      "section": "Recently Past",
+      "value": "No past events yet."
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "People receiving pink resource bags at a community event",
+        "src": "/images/event-pink-bag-640.webp"
+      },
+      "key": "image-8ad26086fb",
+      "label": "People receiving pink resource bags at a community event",
+      "section": "Pink Bag Event"
+    },
+    {
+      "image": {
+        "alt": "People receiving pink resource bags at a community event",
+        "src": "/images/event-pink-bag-640.webp"
+      },
+      "key": "image-8ad26086fb-1",
+      "label": "People receiving pink resource bags at a community event",
+      "section": "All Upcoming Events"
+    },
+    {
+      "image": {
+        "alt": "Runners gathering at a farm for a community prostate cancer run",
+        "src": "/images/event-prostate-run-640.webp"
+      },
+      "key": "image-4b73894c12",
+      "label": "Runners gathering at a farm for a community prostate cancer run",
+      "section": "All Upcoming Events"
+    },
+    {
+      "image": {
+        "alt": "Costumed runners at a fall race in Salt Lake City",
+        "src": "/images/event-haunted-half-640.webp"
+      },
+      "key": "image-0d0446a840",
+      "label": "Costumed runners at a fall race in Salt Lake City",
+      "section": "All Upcoming Events"
+    },
+    {
+      "image": {
+        "alt": "Breast cancer awareness walk participants gathered outside a stadium",
+        "src": "/images/event-making-strides-640.webp"
+      },
+      "key": "image-9c9855db85",
+      "label": "Breast cancer awareness walk participants gathered outside a stadium",
+      "section": "All Upcoming Events"
+    },
+    {
+      "image": {
+        "alt": "People visiting a pink community resource fair",
+        "src": "/images/event-pinksync-640.webp"
+      },
+      "key": "image-2e7ef35aa4",
+      "label": "People visiting a pink community resource fair",
+      "section": "All Upcoming Events"
+    },
+    {
+      "image": {
+        "alt": "Families running together through an autumn landscape at Thanksgiving Point",
+        "src": "/images/event-thankful-640.webp"
+      },
+      "key": "image-2b7587dd52",
+      "label": "Families running together through an autumn landscape at Thanksgiving Point",
+      "section": "All Upcoming Events"
+    }
+  ],
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "events/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Events - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "events-index",
+    "marquee": true,
+    "scripts": [
+      "/scripts/events-index.js"
+    ],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Events - Utah Cancer Specialists"
+}

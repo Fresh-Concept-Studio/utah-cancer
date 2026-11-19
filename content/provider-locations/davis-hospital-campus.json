@@ -1,0 +1,36 @@
+{
+  "order": 5,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.525.3022",
+      "attrs": {
+        "href": "tel:8015253022",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=1492+Antelope+Dr.%2C+Ste.+125+Layton%2C+UT+84041",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "1492 Antelope Dr., Ste. 125<br>Layton, UT 84041",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "davis-hospital-campus",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Davis Hospital Campus",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

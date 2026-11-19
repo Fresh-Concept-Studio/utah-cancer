@@ -65,7 +65,7 @@ const ordered = [...specialties].sort((a,b) => a.directory.order - b.directory.o
         <!-- Common Cancers -->
         {specialtyCategories.map(category => <div class="spec-category" data-category={category.id} id={category.id}>
   <h2 class="spec-category-title">{category.label}</h2>
-  <div class="spec-grid">{ordered.filter(p => p.directory.category === category.id).map(specialty => <a href={url(`/specialties/${specialty.slug}.html`)} class="spec-card" data-name={specialty.directory.searchName}>
+  <div class="spec-grid">{ordered.filter(p => p.directory.category === category.id).map(specialty => <a href={url(`/specialties/${specialty.slug}.html`)} class="spec-card" data-sa={specialty.contentId} data-name={specialty.directory.searchName}>
     <div class="spec-card-icon"><span class="material-symbols-rounded">{specialty.directory.icon}</span></div>
     <div class="spec-card-text"><h3>{specialty.directory.title || specialty.title}</h3><p>{specialty.directory.description}</p></div>
   </a>)}</div>

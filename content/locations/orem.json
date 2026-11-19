@@ -1,0 +1,115 @@
+{
+  "order": 14,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:3852412293",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "departments": [
+    {
+      "city": "Orem, UT 84057",
+      "fax": "801.267.5621",
+      "hours": {
+        "wednesday": "9:00 AM – 5:00 PM"
+      },
+      "location": "Timpanogos Regional Hospital",
+      "name": "Medical Oncology",
+      "phone": "385.241.2293",
+      "street": "700 W. 800 N., Ste. 340"
+    },
+    {
+      "city": "Orem, UT 84057",
+      "fax": "801.852.0215",
+      "hours": {
+        "friday": "9:00 AM – 5:00 PM",
+        "monday": "9:00 AM – 5:00 PM",
+        "thursday": "9:00 AM – 5:00 PM",
+        "tuesday": "9:00 AM – 5:00 PM",
+        "wednesday": "9:00 AM – 5:00 PM"
+      },
+      "location": "Timpanogos Regional Hospital",
+      "name": "Radiation Oncology",
+      "phone": "801.852.0210",
+      "street": "700 W. 800 N., Ste. 140"
+    }
+  ],
+  "directory": {
+    "addressHtml": "700 W. 800 N., Ste. 140<br>Orem, UT 84057",
+    "badge": "",
+    "county": "utah",
+    "hoursHtml": "Medical Wed · Radiation Mon–Fri",
+    "order": 13,
+    "phone": "385.241.2293",
+    "title": "Orem Clinic"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Orem Clinic at Timpanogos Regional Hospital",
+    "src": "/images/location-timpanogos.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.3139,
+    "lng": -111.7137
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 700 W. 800 N., Orem, UT 84057</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> Medical 385.241.2293</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> Radiation 801.852.0210</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.241.2293",
+          "attrs": {
+            "href": "tel:3852412293",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Located at Timpanogos Regional Hospital in Orem, this clinic serves Utah County with both medical and radiation oncology services. The hospital campus setting gives patients access to the full range of treatment options, and our team coordinates care closely with the hospital's surgical and diagnostic departments.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Parking is available on the Timpanogos Regional Hospital campus. Follow signage to the cancer center at Suite 140.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">700 W. 800 N., Ste. 140<br>Orem, UT 84057</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3852412293\">385.241.2293</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5621</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3852412293\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "orem",
+  "subtitle": "Medical & Radiation Oncology",
+  "tag": "Medical & Radiation Oncology",
+  "title": "Orem Clinic"
+}

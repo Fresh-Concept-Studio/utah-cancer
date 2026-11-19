@@ -1,0 +1,76 @@
+{
+  "order": 58,
+  "directory": {
+    "alt": "William E. Nibley",
+    "category": "medical-oncology",
+    "order": 19,
+    "photo": "/images/provider-william-nibley.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "bingham-healthcare",
+    "madison-health",
+    "teton-valley-health-care",
+    "steel-memorial",
+    "eastern-idaho-regional-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "William E. Nibley, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "William E. Nibley",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-william-nibley.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">William E. Nibley, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Nibley"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, George Washington University School of Medicine, Washington, DC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Society of Clinical Oncology</li> <li>National Clinical Practice Committee</li> <li>Board Certified in Medical Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "william-nibley",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

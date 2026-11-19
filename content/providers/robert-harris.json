@@ -1,0 +1,72 @@
+{
+  "order": 45,
+  "directory": {
+    "alt": "Robert A. Harris",
+    "category": "radiation-oncology",
+    "order": 31,
+    "photo": "/images/provider-robert-harris.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "holy-cross-davis-hospital"
+  ],
+  "mediaHighlights": null,
+  "name": "Robert A. Harris, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Robert A. Harris",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-robert-harris.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. Harris brings decades of experience in radiation oncology and a deep commitment to providing thoughtful, patient-centered cancer care.</p> <p class=\"provider-bio\">He earned his undergraduate degree in Chemical Engineering from Brigham Young University in 1988 and his medical degree from the Uniformed Services University in 1992. He completed his internship at Naval Hospital San Diego in 1993 and then served as a Navy Undersea Medical Officer from 1993 to 1996. He completed his radiation oncology residency at the National Cancer Institute in 2000.</p> <p class=\"provider-bio\">Following residency, Dr. Harris served as an attending physician and service manager at the National Naval Medical Center from 2000 to 2004. He then practiced with Gammawest Cancer Services for 20 years before joining Utah Cancer Specialists in 2024.</p> <p class=\"provider-bio\">Dr. Harris was drawn to radiation oncology because of the complexity of cancer treatment, the rapid advancement of medical science, and the opportunity to collaborate closely with physicians across multiple specialties. He also values the meaningful relationships that develop through the time spent with patients throughout their treatment.</p> <p class=\"provider-bio\">He believes excellent radiation therapy requires a highly coordinated team of specialists. Dr. Harris emphasizes that every member of the care team should prioritize the patient experience, helping make each patient's cancer journey as comfortable and positive as possible.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Harris enjoys traveling, skiing, scuba diving, snorkeling, home improvement projects, and spending time with his children and grandchildren. After completing his service in the Navy, he and his family moved to Utah to be closer to their parents and to give their children the opportunity to build strong relationships with their grandparents.</p>",
+      "id": "about",
+      "title": "About Dr. Harris"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Uniformed Services University of the Health Sciences Bethesda, MD</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, National Cancer Institute, Bethesda, MD Location: Holy Cross Davis Hospital 2132 N 1700 W, Suite B-101 Layton, UT 84041</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "robert-harris",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}
