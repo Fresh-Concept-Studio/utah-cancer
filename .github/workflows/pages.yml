@@ -57,6 +57,9 @@ jobs:
             fi
           fi
           echo "build_cmd=$build_cmd" >> "$GITHUB_OUTPUT"
+      # The site editor confirms a release is live by reading this receipt.
+      - name: Write deployment receipt
+        run: printf '{"revision":"%s","runId":"%s"}\n' "$GITHUB_SHA" "$GITHUB_RUN_ID" > public/siteadjust-deployment.json
       # A publish only needs a clean build (and a type check when code changed).
       # Regression tests run in their own job so they never delay or block a release;
       # code is gated by ci.yml instead.

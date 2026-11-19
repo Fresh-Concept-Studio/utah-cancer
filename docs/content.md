@@ -44,6 +44,7 @@ kept. New uploads from the site editor will be stored elsewhere.
 - Change only the fields you mean to change and keep the JSON formatting (2-space indent, trailing newline).
 - Page text is addressed by its key in `editorContent` (for example `text-cb5b69a9d7`); the same keys appear in `src/views/*.astro` as `edit.text("key", "default")`.
 - To add a job or event, copy an existing file, give it a new file name and `order`.
+- A job with `"closed": true` stays in `content/jobs/` but is not listed or counted on the Careers page.
 - Run `npm run verify` before releasing.
 
 Templates render each record's file as a `data-sa` attribute (for example
@@ -77,6 +78,9 @@ The site editor dispatches it with `content_only=true` after committing content.
 If nothing outside `content/` changed since the commit that is live, the workflow
 skips the type check. Regression tests run in a separate job that never delays the
 release.
+
+Each build writes `siteadjust-deployment.json` (the commit SHA and run id) to the
+site root. The editor reads it to confirm that a saved change is live.
 
 GitHub Pages sends `cache-control: max-age=600`, which would let browsers show a page
 up to 10 minutes old after a release. A Cloudflare Response Header Transform Rule

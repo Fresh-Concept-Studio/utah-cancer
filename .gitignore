@@ -11,3 +11,4 @@ dist/
 .sanity/
 studio/dist/
 studio/node_modules/
+public/siteadjust-deployment.json
