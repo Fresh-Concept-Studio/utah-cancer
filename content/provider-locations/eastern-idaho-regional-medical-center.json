@@ -1,0 +1,27 @@
+{
+  "order": 6,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 208.227.2790",
+      "attrs": {
+        "href": "tel:2082272790",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "3245 Channing Way<br>Idaho Falls, ID 83404",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "eastern-idaho-regional-medical-center",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Eastern Idaho Regional Medical Center",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

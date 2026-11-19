@@ -1,0 +1,87 @@
+{
+  "order": 4,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=5131+S.+Cottonwood+St.%2C+Bldg.+3%2C+Level+2+Murray%2C+UT+84107",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8012633416",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "5131 S. Cottonwood St., Bldg. 3, Level 2<br>Murray, UT 84107",
+    "badge": "",
+    "county": "salt-lake",
+    "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+    "order": 3,
+    "phone": "801.263.3416",
+    "title": "Murray Clinic"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Intermountain Medical Center",
+    "src": "/images/location-imc-new.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.6592,
+    "lng": -111.8941
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 5131 S. Cottonwood St., Bldg. 3, Level 2, Murray, UT 84107</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.263.3416</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.263.3416",
+          "attrs": {
+            "href": "tel:8012633416",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Our clinic within the Intermountain Medical Center campus in Murray provides medical oncology and hematology care within one of Utah's largest and most advanced hospital systems. Patients benefit from the seamless coordination between UCS physicians and the broader hospital resources, including imaging, surgical services, and emergency care.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">vaccines</span> Clinical Trials </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Parking is available in the IMC campus garages. Follow signs to Building 3, then take the elevator to Level 2.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">5131 S. Cottonwood St., Bldg. 3, Level 2<br>Murray, UT 84107</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=5131+S.+Cottonwood+St.%2C+Bldg.+3%2C+Level+2+Murray%2C+UT+84107\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012633416\">801.263.3416</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.263.3428</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8012633416\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "imc",
+  "subtitle": "Medical Oncology & Hematology",
+  "tag": "Medical Oncology",
+  "title": "Intermountain Medical Center"
+}

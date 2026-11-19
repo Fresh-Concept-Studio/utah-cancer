@@ -1,0 +1,32 @@
+{
+  "order": 5,
+  "description": "Learn about low-dose radiation therapy for selected painful inflammatory and degenerative joint conditions at Utah Cancer Specialists.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Low-dose radiation therapy",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Relief without an injection or incision</h2>\n      <p>Low-dose radiation therapy (LDRT) uses a much lower radiation dose than cancer treatment to reduce inflammation in selected benign conditions. Treatment is painless and noninvasive. A typical course may include six short visits over two to three weeks.</p>\n      <h2>Conditions that may be evaluated</h2>\n      <ul>\n        <li>Osteoarthritis affecting the hands, wrists, knees, hips, feet, or ankles</li>\n        <li>Selected tendon and soft-tissue conditions</li>\n        <li>Dupuytren disease and other qualifying benign conditions</li>\n      </ul>\n      <p>Eligibility, expected benefit, and potential risks depend on the condition, prior treatment, age, and individual health history. A radiation oncologist will review whether LDRT is appropriate for you.</p>\n      <h2>Radiation oncology team</h2>\n      <div class=\"resource-link-cards\">\n        <a href=\"/providers/douglas-holt.html\"><strong>Douglas Holt, MD</strong><span>View provider profile</span></a>\n        <a href=\"/providers/leland-rogers.html\"><strong>C. Leland Rogers, MD</strong><span>View provider profile</span></a>\n      </div>\n      <p>Treatment consultations are available at <a href=\"/locations/jordan-valley.html\">Jordan Valley Cancer Center</a>.</p>",
+  "icon": "radiology",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "For selected patients, low-dose radiation therapy may offer a noninvasive option for persistent pain from certain inflammatory or degenerative conditions.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/radiation-oncology.html",
+      "label": "Radiation oncology"
+    },
+    {
+      "href": "/locations/jordan-valley.html",
+      "label": "Jordan Valley Cancer Center"
+    }
+  ],
+  "seoTitle": "Low-Dose Radiation Therapy for Joint Pain | UCS",
+  "slug": "low-dose-radiation-therapy-ldrt",
+  "title": "Low-Dose Radiation Therapy for Joint Pain"
+}

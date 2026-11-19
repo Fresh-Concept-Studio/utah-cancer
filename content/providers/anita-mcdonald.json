@@ -1,0 +1,72 @@
+{
+  "order": 2,
+  "directory": {
+    "alt": "Anita McDonald",
+    "category": "advanced-practitioners",
+    "order": 38,
+    "photo": "/images/provider-anita-mcdonald.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English, Spanish",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Anita McDonald, FNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Anita McDonald",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-anita-mcdonald.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Anita McDonald, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About McDonald"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, UT Master of Science, Nursing, Brigham Young University, Provo, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "anita-mcdonald",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

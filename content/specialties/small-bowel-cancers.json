@@ -1,0 +1,92 @@
+{
+  "order": 24,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Gastrointestinal",
+  "description": "Specialized treatment for rare cancers of the small intestine.",
+  "directory": {
+    "category": "gi",
+    "description": "Specialized treatment for rare cancers of the small intestine.",
+    "icon": "vaccines",
+    "order": 21,
+    "searchName": "Small Bowel Cancers"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-colon-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Small bowel cancers are rare and include adenocarcinomas, neuroendocrine tumors, lymphomas, and sarcomas. Due to their rarity, these cancers benefit from the expertise of an experienced oncology team familiar with the nuances of each subtype.</p> <p class=\"provider-bio\">Our team tailors treatment based on tumor type and location, coordinating surgery, systemic therapy, and supportive care.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Abdominal pain or cramping</li> <li>Nausea or vomiting</li> <li>Unexplained weight loss</li> <li>Blood in the stool</li> <li>Bowel obstruction symptoms</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT enterography, capsule endoscopy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Endoscopic or surgical biopsy</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Pathology</h3> <p>Subtype classification and molecular profiling</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>How are small bowel cancers diagnosed?</summary> <p>Due to their location, small bowel cancers can be challenging to diagnose. CT enterography and capsule endoscopy are important diagnostic tools.</p> </details> <details class=\"sd-faq-item\"> <summary>Are treatment options different from colon cancer?</summary> <p>Yes. Treatment depends on the specific subtype — adenocarcinoma, neuroendocrine, lymphoma, or sarcoma — each requiring a different approach.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-5",
+  "slug": "small-bowel-cancers",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Small Bowel Cancers"
+}

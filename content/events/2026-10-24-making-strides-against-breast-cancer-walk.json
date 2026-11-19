@@ -1,0 +1,64 @@
+{
+  "order": 4,
+  "category": "fundraiser",
+  "date": "2026-10-24",
+  "description": "Walk together to honor survivors, remember loved ones, and support the fight against breast cancer.",
+  "image": {
+    "alt": "Walkers dressed in pink at the Making Strides Against Breast Cancer Walk",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/1565811e64051fc44a458b66e1e5fafd4e7f03f4-2000x1500.jpg?crop=focalpoint&fp-x=0.45&fp-y=0.55"
+  },
+  "link": "https://makingstrideswalk.org/saltlakecityut",
+  "location": "America First Field",
+  "photos": [
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/de36afb33d3984ad97333cd2dc2f04b424f05e84-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/db8e676268f099b48074a418786a25d2be295be7-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/997b5172eb211c271681fe8cdd8a02e4fb59ec6e-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/5c37c09d34e7deb251709ccb35215c45dd766463-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/a7ea71b2c7cebb00268ee9e8581205cd60d2941b-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/c582490e89ddeeb59f2e35fa0d1c52b124a74fab-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/565dc44a14df087d52ca8457b97c8a1a3a9269a9-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/8365fd0a170abf6d1c6443a3a92ec21010ecc2cf-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/1565811e64051fc44a458b66e1e5fafd4e7f03f4-2000x1500.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/884ede1f043de3024c04552ae7c9c38205b5d33f-1500x2000.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/5217a96e32ec3afef0c889158463c532412db96e-1500x2000.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Making Strides Against Breast Cancer Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/68244ff0a0858ecdd9ac66474e21fed4b3bf4e14-1500x2000.jpg"
+    }
+  ],
+  "timeText": "Time to be announced",
+  "title": "Making Strides Against Breast Cancer Walk"
+}

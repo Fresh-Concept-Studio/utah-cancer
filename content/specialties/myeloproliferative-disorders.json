@@ -1,0 +1,92 @@
+{
+  "order": 19,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Blood & Bone Marrow",
+  "description": "Diagnosis and management of conditions where bone marrow produces too many blood cells.",
+  "directory": {
+    "category": "blood",
+    "description": "Diagnosis and management of conditions where bone marrow produces too many blood cells.",
+    "icon": "labs",
+    "order": 13,
+    "searchName": "Myeloproliferative Disorders"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-blood-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Myeloproliferative neoplasms (MPNs) are a group of blood disorders in which the bone marrow overproduces red blood cells, white blood cells, or platelets. Conditions include polycythemia vera, essential thrombocythemia, and myelofibrosis.</p> <p class=\"provider-bio\">Our hematologists have extensive experience managing these chronic conditions, using targeted therapies like JAK inhibitors alongside careful monitoring to reduce complications and maintain quality of life.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Fatigue and weakness</li> <li>Headaches or dizziness</li> <li>Enlarged spleen (abdominal fullness)</li> <li>Night sweats</li> <li>Itching, especially after bathing</li> <li>Blood clots or unusual bleeding</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC with differential, peripheral smear</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>JAK2, CALR, and MPL mutation analysis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Reticulin and collagen fibrosis assessment</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> JAK Inhibitors</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Hydroxyurea</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">bloodtype</span> Phlebotomy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Symptom Management</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Are MPNs a type of cancer?</summary> <p>MPNs are classified as blood neoplasms (cancers), but many behave as chronic conditions that can be managed for years with appropriate treatment.</p> </details> <details class=\"sd-faq-item\"> <summary>Can MPNs transform into leukemia?</summary> <p>There is a small risk of transformation to acute myeloid leukemia over time. Regular monitoring helps detect any changes early.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar",
+  "slug": "myeloproliferative-disorders",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Myeloproliferative Disorders"
+}

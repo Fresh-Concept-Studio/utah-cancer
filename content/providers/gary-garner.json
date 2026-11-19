@@ -1,0 +1,73 @@
+{
+  "order": 17,
+  "directory": {
+    "alt": "Gary M. Garner",
+    "category": "supportive-care",
+    "order": 34,
+    "photo": "/images/provider-gary-garner.jpg",
+    "priority": 1
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "ucs-cancer-center",
+    "intermountain-medical-center-bldg-3"
+  ],
+  "mediaHighlights": null,
+  "name": "Gary M. Garner, MD, RPh, FAAHPM",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Gary M. Garner",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-gary-garner.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. Gary Garner has spent more than 25 years caring for patients with cancer, with a particular focus on supportive oncology and symptom management. Together with the Supportive Oncology team, he provides both in-person and telehealth care to patients across Utah Cancer Specialists locations.</p> <p class=\"provider-bio\">Dr. Garner is certified in Palliative Medicine and is a Fellow of the American Academy of Hospice and Palliative Medicine, an honor recognizing his professional contributions and publications in the field. His background as both a physician and pharmacist gives him a unique perspective in managing cancer-related symptoms and tailoring treatments to each patient’s changing needs.</p> <p class=\"provider-bio\">He believes the best care begins with curiosity and listening. By taking time to understand each patient’s symptoms, concerns, and perspective, Dr. Garner works to meet patients wherever they are in their cancer journey. He is also passionate about education and helping develop excellence in supportive oncology care across the Utah Cancer Specialists team.</p> <p class=\"provider-bio\">Dr. Garner grew up working on a Holstein dairy farm and cattle ranch before living in several areas across the country, including the East Coast, Chicago, Texas, and Colorado, eventually returning home to Utah.</p> <p class=\"provider-bio\">Outside of work, he enjoys reading and discussing literature with his wife, exploring Utah’s outdoors, and acting on recommendations from patients for books, movies, and restaurants. He deeply values the care provided at Utah Cancer Specialists and has trusted the organization with the care of many of his own family members and close friends.</p>",
+      "id": "about",
+      "title": "About Dr. Garner"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Poudre Valley Hospital, Fort Collins, Colorado Fellow of American Academy of Hospice and Palliative Medicine</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Certified in Palliative Medicine</li> <li>Fellow of the American Academy of Hospice and Palliative Medicine (FAAHPM)</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "gary-garner",
+  "specialty": "Supportive and Rehabilitative Care",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

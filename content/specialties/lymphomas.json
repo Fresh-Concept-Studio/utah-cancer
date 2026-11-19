@@ -1,0 +1,92 @@
+{
+  "order": 17,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Blood & Bone Marrow",
+  "description": "Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas using the latest immunotherapy and targeted approaches.",
+  "directory": {
+    "category": "blood",
+    "description": "Expert diagnosis and treatment for Hodgkin and non-Hodgkin lymphomas.",
+    "icon": "shield",
+    "order": 11,
+    "searchName": "Lymphomas"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-lymphoma-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Lymphomas are cancers of the lymphatic system and represent one of the most treatable forms of cancer. Our hematology-oncology team specializes in both Hodgkin lymphoma and the many subtypes of non-Hodgkin lymphoma, using molecular classification to guide treatment selection.</p> <p class=\"provider-bio\">Advances in immunotherapy, CAR-T cell coordination, and targeted agents have dramatically improved outcomes, and our practice offers access to the latest therapies through clinical trials and standard-of-care treatment.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Painless swollen lymph nodes in neck, armpit, or groin</li> <li>Persistent fatigue</li> <li>Unexplained fever and night sweats</li> <li>Unintended weight loss</li> <li>Itching without apparent cause</li> <li>Cough or shortness of breath</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy</h3> <p>Excisional lymph node biopsy with immunohistochemistry</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">PET/CT Imaging</h3> <p>Whole-body staging and treatment response assessment</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>Flow cytometry, FISH, and next-generation sequencing</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>LDH, beta-2 microglobulin, and CBC</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is the difference between Hodgkin and non-Hodgkin lymphoma?</summary> <p>Hodgkin lymphoma is characterized by the presence of Reed-Sternberg cells and typically follows a predictable pattern of spread. Non-Hodgkin lymphoma is more diverse with over 60 subtypes, each with different behavior and treatment approaches.</p> </details> <details class=\"sd-faq-item\"> <summary>Is lymphoma curable?</summary> <p>Many lymphomas are curable, especially Hodgkin lymphoma and certain aggressive non-Hodgkin lymphomas. Even indolent (slow-growing) lymphomas that may not be curable can often be managed effectively for many years.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar",
+  "slug": "lymphomas",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Lymphomas"
+}

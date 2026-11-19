@@ -1,0 +1,17 @@
+{
+  "order": 4,
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<aside class=\"provider-sidebar\"> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">quick_reference</span> At a Glance</h3> <p class=\"sidebar-contact-item\"><strong>Category:</strong> Blood &amp; Bone Marrow</p> <p class=\"sidebar-contact-item\"><strong>Clinical Trials:</strong> Available</p> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012690231\">801.269.0231</a></p> <a href=\"/contact.html\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">mail</span> Message Us</a> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Ready to Start?</h3> <p class=\"sidebar-card-desc\">Request a consultation with a specialist today.</p> <a href=\"tel:8012629494\" class=\"btn btn--white btn--full\">Request Appointment</a> </div> </aside>",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "specialty-sidebar",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "title": "specialty sidebar"
+}

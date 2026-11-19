@@ -1,0 +1,36 @@
+{
+  "order": 23,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 385.347.5500",
+      "attrs": {
+        "href": "tel:3853475500",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=389+S.+900+E.+Ste.+100+Salt+Lake+City%2C+UT+84102",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "389 S. 900 E. Ste. 100<br>Salt Lake City, UT 84102",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "salt-lake-clinic-2",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Salt Lake Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

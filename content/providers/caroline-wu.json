@@ -1,0 +1,51 @@
+{
+  "order": 10,
+  "directory": {
+    "alt": "Caroline Wu",
+    "category": "advanced-practitioners",
+    "order": 42.5,
+    "photo": "https://cdn.sanity.io/images/spba0u9p/production/4da4e545af0b3acd75ce593d0fae227a9d5f808d-1080x1350.png?w=600&h=900&fit=crop&crop=top&auto=format",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "",
+  "leadershipGroups": null,
+  "locationIds": [],
+  "mediaHighlights": null,
+  "name": "Caroline Wu, FNP-BC",
+  "page": {
+    "description": "Caroline Wu, FNP-BC, is a nurse practitioner on the Advanced Practitioner team at Utah Cancer Specialists."
+  },
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Caroline Wu",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/a8c4eecf1996653ba5aeae8f058a6bc623bae481-1182x1297.png"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Caroline Wu’s journey in healthcare began as a Certified Nursing Assistant (CNA), working in assisted living and later on a hospital oncology floor. Inspired by the nurses she worked alongside, she pursued her nursing degree at the University of Utah College of Nursing. She began her nursing career at Huntsman Cancer Institute before joining Utah Cancer Specialists, where she spent three years as an infusion nurse. Her passion for patient care and desire to make an even greater difference led her back to the University of Utah to become a Nurse Practitioner.</p> <p class=\"provider-bio\">Interestingly, oncology was not Caroline’s original career plan. She initially dreamed of becoming a midwife, but that changed during nursing school when two oncology nurses delivered a presentation that left a lasting impression. Their passion for the field inspired her to pursue oncology, a decision that has shaped her career ever since.</p> <p class=\"provider-bio\">Caroline considers it a privilege to care for patients navigating a cancer diagnosis. She recognizes the courage, strength, and resilience of those she serves and feels fortunate to work alongside a team of dedicated and compassionate healthcare professionals.</p> <p class=\"provider-bio\">Her approach to care is rooted in compassion, connection, and treating each patient as an individual. She believes everyone has a unique story and deserves to feel heard, supported, and valued. Caroline makes a special effort to remember the little details about her patients, building meaningful relationships that go beyond their medical care.</p> <p class=\"provider-bio\">“Every person matters, and every person has their own story and journey. My goal is to help patients feel encouraged, comforted, heard, and genuinely cared for. We are all part of the same team.”</p> <p class=\"provider-bio\">Caroline is grateful to continue her career at Utah Cancer Specialists, surrounded by colleagues and patients who make oncology such a meaningful and rewarding field.</p> <p class=\"provider-bio\">Outside of work, Caroline enjoys playing the violin in a community orchestra, baking, hiking, running, traveling, and learning Chinese. Most of all, she treasures spending time with family and loved ones.</p>",
+      "id": "about",
+      "title": "About Caroline Wu"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "caroline-wu",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    }
+  ]
+}

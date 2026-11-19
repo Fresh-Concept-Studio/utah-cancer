@@ -1,0 +1,88 @@
+{
+  "order": 12,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=1250+E.+3900+S.%2C+Ste.+B-10+Salt+Lake+City%2C+UT+84124",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8014568401",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124",
+    "badge": "",
+    "county": "salt-lake",
+    "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+    "order": 11,
+    "phone": "801.456.8401",
+    "title": "St. Mark’s Hospital"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "St. Mark's Hospital",
+    "src": "/images/location-st-marks.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.6862,
+    "lng": -111.8568,
+    "name": "St. Mark's Hospital"
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 1250 E. 3900 S., Ste. B-10, Salt Lake City, UT 84124</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.456.8401</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.456.8401",
+          "attrs": {
+            "href": "tel:8014568401",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Our radiation oncology team at St. Mark's Hospital provides advanced radiation treatment using state-of-the-art technology including the TrueBeam Linear Accelerator. The clinic specializes in precise, image-guided radiation therapy for a wide range of cancer types, with treatment plans coordinated closely with your medical oncology team.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radiology</span> Radiation Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">blur_circular</span> IMRT </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">radar</span> Stereotactic Radiosurgery </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">target</span> IGRT </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">visibility</span> Image-Guided Therapy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Patient parking is available on the hospital campus. Follow signs to the cancer center entrance at Suite B-10.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">1250 E. 3900 S., Ste. B-10<br>Salt Lake City, UT 84124</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=1250+E.+3900+S.%2C+Ste.+B-10+Salt+Lake+City%2C+UT+84124\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8014568401\">801.456.8401</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.456.8408</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8014568401\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "st-marks",
+  "subtitle": "Radiation Oncology",
+  "tag": "Radiation Oncology",
+  "title": "St. Mark's Hospital"
+}

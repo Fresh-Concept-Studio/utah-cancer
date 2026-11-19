@@ -1,0 +1,72 @@
+{
+  "order": 40,
+  "directory": {
+    "alt": "Nancy W. Mortensen",
+    "category": "advanced-practitioners",
+    "order": 55,
+    "photo": "/images/provider-nancy-mortensen.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "pleasant-grove-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Nancy W. Mortensen, FNP, ANP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Nancy W. Mortensen",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-nancy-mortensen.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Nancy W. Mortensen, FNP, ANP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Mortensen"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Eastern Kentucky University, Richmond, KY Master’s Degree, Adult Nurse Practitioner and Oncology Clinical Nurse Specialists Program, University of Utah, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Nurses Association Adult Nurse Practitioner</li> <li>American Nurses Association, Family Nurse Practitioner</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "nancy-mortensen",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

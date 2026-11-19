@@ -1,0 +1,36 @@
+{
+  "order": 32,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.852.0210",
+      "attrs": {
+        "href": "tel:8018520210",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "700 W. 800 N., Ste. 140<br>Orem, UT 84057",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "timpanogos-regional-hospital-2",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Orem Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": "Radiation Oncology"
+}

@@ -1,0 +1,36 @@
+{
+  "order": 7,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.590.9900",
+      "attrs": {
+        "href": "tel:8015909900",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+4th+Floor+West+Valley+City%2C+UT+84119",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "granger-fairbourne-station-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "West Valley Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

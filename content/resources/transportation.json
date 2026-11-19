@@ -1,0 +1,32 @@
+{
+  "order": 10,
+  "description": "Explore transportation options for cancer appointments, including UTA reduced fares, UTA On Demand, and American Cancer Society rides.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Getting to care",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Utah Transit Authority</h2>\n      <ul>\n        <li><a href=\"https://uta.rideuta.com/Fares-And-Passes/Individual-Fares/Reduced-Fare\" target=\"_blank\" rel=\"noopener\">UTA Reduced Fare</a> offers discounted fares to qualifying riders.</li>\n        <li><a href=\"https://www.rideuta.com/Services/UTA-On-Demand\" target=\"_blank\" rel=\"noopener\">UTA On Demand</a> provides curb-to-curb service in designated service zones.</li>\n      </ul>\n      <h2>American Cancer Society rides</h2>\n      <p>The American Cancer Society Road To Recovery program may provide free rides to cancer-related medical appointments when volunteer drivers are available. Call <a href=\"tel:18002272345\">1-800-227-2345</a> or <a href=\"https://www.cancer.org/support-programs-and-services/road-to-recovery.html\" target=\"_blank\" rel=\"noopener\">review the program online</a>. Advance notice is recommended.</p>\n      <div class=\"resource-note\">Availability varies by location and date. Ask a patient advocate if you need help exploring transportation options.</div>",
+  "icon": "location_on",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "Transportation should not stand between you and an appointment. These programs may help you plan a ride.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/supportive-resources/",
+      "label": "All practical support resources"
+    },
+    {
+      "href": "/locations/index.html",
+      "label": "Clinic locations"
+    }
+  ],
+  "seoTitle": "Transportation Help for Cancer Patients in Utah | UCS",
+  "slug": "transportation",
+  "title": "Transportation Resources"
+}

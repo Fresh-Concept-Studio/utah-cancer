@@ -1,0 +1,498 @@
+{
+  "order": 34,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-84e29a2735",
+      "label": "Heading",
+      "section": "Treatment Options",
+      "value": "Treatment Options"
+    },
+    {
+      "key": "text-4f302f17b0",
+      "label": "Paragraph",
+      "section": "Treatment Options",
+      "value": "Advanced, evidence-based therapies tailored to your specific cancer type, stage, and goals — with a focus on effectiveness and quality of life."
+    },
+    {
+      "key": "text-f09011b0e8",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "Our approach"
+    },
+    {
+      "key": "text-009dc3db7a",
+      "label": "Heading",
+      "section": "Take an active role in your care.",
+      "value": "Take an active role in your care."
+    },
+    {
+      "key": "text-a5227c9bc2",
+      "label": "Paragraph",
+      "section": "Take an active role in your care.",
+      "value": "As a cancer patient, you are urged to take an active role in your care and make treatment decisions that are best for you and your loved ones."
+    },
+    {
+      "key": "text-447dcced56",
+      "label": "Paragraph",
+      "section": "Take an active role in your care.",
+      "value": "Our mission is to deliver compassionate, comprehensive, and patient-focused care using the latest treatment modalities — with proactive symptom management built into every plan."
+    },
+    {
+      "key": "text-0ade7c2cf9",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "9"
+    },
+    {
+      "key": "text-603a3f0fcb",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "Treatment modalities under one practice"
+    },
+    {
+      "key": "text-a53653ec06",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "50+"
+    },
+    {
+      "key": "text-6f867b721c",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "Active clinical trials in progress"
+    },
+    {
+      "key": "text-368ace5e66",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "25+"
+    },
+    {
+      "key": "text-f9f2c98e47",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "Years of community-based research"
+    },
+    {
+      "key": "text-fae31ecec0",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "100%"
+    },
+    {
+      "key": "text-193bea0d52",
+      "label": "Text",
+      "section": "Take an active role in your care.",
+      "value": "Personalized, multidisciplinary plans"
+    },
+    {
+      "key": "text-99b9b64956",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "Systemic therapies"
+    },
+    {
+      "key": "text-50957a4dcf",
+      "label": "Heading",
+      "section": "Treating cancer throughout the body.",
+      "value": "Treating cancer throughout the body."
+    },
+    {
+      "key": "text-6228d071a7",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "Drug-based modalities that travel through the bloodstream to reach cancer cells wherever they exist."
+    },
+    {
+      "key": "text-b01b7e812f",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "04 modalities"
+    },
+    {
+      "key": "text-ddfe163345",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "01"
+    },
+    {
+      "key": "text-08ba4b09bb",
+      "label": "Heading",
+      "section": "Treating cancer throughout the body.",
+      "value": "Chemotherapy"
+    },
+    {
+      "key": "text-10a070ab90",
+      "label": "Paragraph",
+      "section": "Treating cancer throughout the body.",
+      "value": "Systemic drug therapy that targets rapidly dividing cancer cells. Modern regimens are more effective and better tolerated than ever, with proactive side-effect management built into every plan."
+    },
+    {
+      "key": "text-bcac9d1d8e",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "02"
+    },
+    {
+      "key": "text-f99d76e2a8",
+      "label": "Heading",
+      "section": "Treating cancer throughout the body.",
+      "value": "Immunotherapy"
+    },
+    {
+      "key": "text-0d618543f8",
+      "label": "Paragraph",
+      "section": "Treating cancer throughout the body.",
+      "value": "Therapies that harness your own immune system to recognize and attack cancer cells. Checkpoint inhibitors and other agents have transformed outcomes in many cancer types."
+    },
+    {
+      "key": "text-3ea6c91e24",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "03"
+    },
+    {
+      "key": "text-9cc205729a",
+      "label": "Heading",
+      "section": "Treating cancer throughout the body.",
+      "value": "Targeted Therapy"
+    },
+    {
+      "key": "text-7a28a35454",
+      "label": "Paragraph",
+      "section": "Treating cancer throughout the body.",
+      "value": "Drugs designed to attack specific genetic mutations or proteins in cancer cells while sparing healthy tissue. Molecular profiling identifies which targets your cancer expresses."
+    },
+    {
+      "key": "text-798f861ee7",
+      "label": "Text",
+      "section": "Treating cancer throughout the body.",
+      "value": "04"
+    },
+    {
+      "key": "text-7cd9f3a474",
+      "label": "Heading",
+      "section": "Treating cancer throughout the body.",
+      "value": "Hormone Therapy"
+    },
+    {
+      "key": "text-000e1fa3d6",
+      "label": "Paragraph",
+      "section": "Treating cancer throughout the body.",
+      "value": "Treatment that blocks or lowers hormones that fuel certain cancers, commonly used in breast and prostate cancer to slow or stop tumor growth."
+    },
+    {
+      "key": "text-ad375cb78f",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Imaging & precision radiation"
+    },
+    {
+      "key": "text-d802926348",
+      "label": "Heading",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Pinpoint accuracy. Maximum precision."
+    },
+    {
+      "key": "text-e826ac4b18",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Image-guided technology that sees more, exposes less, and treats with millimeter accuracy."
+    },
+    {
+      "key": "text-9a1c155562",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "02 platforms"
+    },
+    {
+      "key": "text-ae5945f942",
+      "label": "Heading",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Radiation Therapy"
+    },
+    {
+      "key": "text-a8a3a420e1",
+      "label": "Paragraph",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Precise, image-guided radiation using the TrueBeam Linear Accelerator — delivered with millimeter accuracy and gated respiration synchronization for motion-sensitive tumors."
+    },
+    {
+      "key": "text-cbfdd31311",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " IMRT"
+    },
+    {
+      "key": "text-4167562736",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " SBRT & SRS"
+    },
+    {
+      "key": "text-bb7d7bae3b",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " IGRT"
+    },
+    {
+      "key": "text-6d74bd75cd",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Brachytherapy"
+    },
+    {
+      "key": "text-fb25747d5b",
+      "label": "Heading",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Diagnostic Imaging"
+    },
+    {
+      "key": "text-14d361c327",
+      "label": "Paragraph",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "The Omni Legend Digital PET/CT scanner delivers AI-powered, low-dose imaging with industry-leading sensitivity for precise diagnosis, staging, and treatment monitoring."
+    },
+    {
+      "key": "text-507296094e",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " FDG"
+    },
+    {
+      "key": "text-490f0e03e7",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Ga68 PSMA"
+    },
+    {
+      "key": "text-48ec8c94ca",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " F18 PSMA"
+    },
+    {
+      "key": "text-79595ce582",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Axumin"
+    },
+    {
+      "key": "text-8a16e5412a",
+      "label": "Text",
+      "section": "Beyond the standard of care.",
+      "value": "Research & comprehensive care"
+    },
+    {
+      "key": "text-5465dbfc97",
+      "label": "Heading",
+      "section": "Beyond the standard of care.",
+      "value": "Beyond the standard of care."
+    },
+    {
+      "key": "text-c5ff6c5c9f",
+      "label": "Paragraph",
+      "section": "Beyond the standard of care.",
+      "value": "Access to investigational therapies, expert hematology, and whole-person support throughout your journey."
+    },
+    {
+      "key": "text-97598b8f50",
+      "label": "Text",
+      "section": "Beyond the standard of care.",
+      "value": "03 programs"
+    },
+    {
+      "key": "text-39f193cfd7",
+      "label": "Text",
+      "section": "Beyond the standard of care.",
+      "value": "07"
+    },
+    {
+      "key": "text-65221b74ce",
+      "label": "Heading",
+      "section": "Beyond the standard of care.",
+      "value": "Clinical Trials"
+    },
+    {
+      "key": "text-90710d0283",
+      "label": "Paragraph",
+      "section": "Beyond the standard of care.",
+      "value": "Access to investigational treatments through 50+ active trials, including Utah’s only community-based early-phase program (START Mountain Region)."
+    },
+    {
+      "key": "text-1ea51bf324",
+      "label": "Text",
+      "section": "Beyond the standard of care.",
+      "value": "08"
+    },
+    {
+      "key": "text-70c65d21f7",
+      "label": "Heading",
+      "section": "Beyond the standard of care.",
+      "value": "Supportive Care"
+    },
+    {
+      "key": "text-9ebc284b15",
+      "label": "Paragraph",
+      "section": "Beyond the standard of care.",
+      "value": "Symptom management, pain control, nutrition counseling, and rehabilitative care — addressing the physical and emotional side effects of treatment."
+    },
+    {
+      "key": "text-4b581cdce6",
+      "label": "Text",
+      "section": "Beyond the standard of care.",
+      "value": "09"
+    },
+    {
+      "key": "text-e9bac92969",
+      "label": "Heading",
+      "section": "Beyond the standard of care.",
+      "value": "Hematology"
+    },
+    {
+      "key": "text-ba9096f137",
+      "label": "Paragraph",
+      "section": "Beyond the standard of care.",
+      "value": "Expert diagnosis and treatment of blood cancers and benign blood disorders including anemia, clotting disorders, and bone marrow conditions."
+    },
+    {
+      "key": "text-d7caa375d0",
+      "label": "Text",
+      "section": "Your treatment is as unique as you are.",
+      "value": "How we build your plan"
+    },
+    {
+      "key": "text-003ae90f99",
+      "label": "Heading",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Your treatment is as unique as you are."
+    },
+    {
+      "key": "text-f2baff850c",
+      "label": "Paragraph",
+      "section": "Your treatment is as unique as you are.",
+      "value": "No two cancers — or patients — are alike. Your plan is shaped by your diagnosis, biology, history, and personal goals, then continually refined as your care progresses."
+    },
+    {
+      "key": "text-356a192b79",
+      "label": "Text",
+      "section": "Your treatment is as unique as you are.",
+      "value": "1"
+    },
+    {
+      "key": "text-264e0cc221",
+      "label": "Heading",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Confirm the diagnosis"
+    },
+    {
+      "key": "text-3d45775b8c",
+      "label": "Paragraph",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Pathology, imaging, and molecular profiling establish cancer type, stage, and the genetic markers that guide treatment."
+    },
+    {
+      "key": "text-da4b9237ba",
+      "label": "Text",
+      "section": "Your treatment is as unique as you are.",
+      "value": "2"
+    },
+    {
+      "key": "text-594390fa11",
+      "label": "Heading",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Multidisciplinary review"
+    },
+    {
+      "key": "text-f20a15bff5",
+      "label": "Paragraph",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Medical oncologists, radiation oncologists, and specialists discuss your case together to recommend the strongest options."
+    },
+    {
+      "key": "text-77de68daec",
+      "label": "Text",
+      "section": "Your treatment is as unique as you are.",
+      "value": "3"
+    },
+    {
+      "key": "text-6d56179a83",
+      "label": "Heading",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Tailor the modalities"
+    },
+    {
+      "key": "text-91d4c61d26",
+      "label": "Paragraph",
+      "section": "Your treatment is as unique as you are.",
+      "value": "The right combination — chemotherapy, radiation, immunotherapy, targeted drugs, or trial enrollment — chosen for you."
+    },
+    {
+      "key": "text-1b64538924",
+      "label": "Text",
+      "section": "Your treatment is as unique as you are.",
+      "value": "4"
+    },
+    {
+      "key": "text-b30f899314",
+      "label": "Heading",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Treat & support"
+    },
+    {
+      "key": "text-046eba6dbf",
+      "label": "Paragraph",
+      "section": "Your treatment is as unique as you are.",
+      "value": "Side-effect management, nutrition, and emotional support are built into your plan from day one and adjusted as you go."
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Two people review a treatment plan together at a sunlit clinic table",
+        "src": "/images/generated/treatment-options-hero-960.webp"
+      },
+      "key": "image-619d28cc0b",
+      "label": "Two people review a treatment plan together at a sunlit clinic table",
+      "section": "Container"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "treatment-options.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Treatment Options - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "treatment-options",
+    "cta": {
+      "heading": "Ready to discuss your treatment options?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/treatment-options.css"
+    ]
+  },
+  "title": "Treatment Options - Utah Cancer Specialists"
+}

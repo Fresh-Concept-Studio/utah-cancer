@@ -1,0 +1,31 @@
+{
+  "order": 6,
+  "directoryPhoto": {
+    "alt": "Kyle Kitchen",
+    "src": "/images/leader-kyle-kitchen.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Kyle Kitchen",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Kyle Kitchen",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-kyle-kitchen-clean.png?v=20260910"
+  },
+  "role": "Chief Clinical Officer",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Kyle Kitchen brings more than 25 years of pharmacy and healthcare leadership experience to Utah Cancer Specialists. He earned his Doctor of Pharmacy from the University of Utah and later completed his MBA at Weber State University. Before joining UCS, Kyle spent 19 years with Intermountain Health in a variety of pharmacy leadership roles. He has now been with Utah Cancer Specialists for nearly eight years.</p> <p class=\"provider-bio\">Kyle was drawn to healthcare by a desire to help others live healthier, happier lives. Joining Utah Cancer Specialists offered an opportunity to take his career in a new direction, and he has valued the chance to be part of an organization so focused on advancing cancer care.</p> <p class=\"provider-bio\">One of the things he appreciates most about UCS is the commitment of its physicians and staff to bringing new and advanced therapies to patients. He has seen tremendous growth in treatment options and is proud to work alongside teams dedicated to making those therapies available to as many patients as possible.</p> <p class=\"provider-bio\">Kyle believes strongly in partnering with patients and their care teams to improve care in ways that are most meaningful to each individual. For him, the best healthcare decisions are those that combine clinical expertise with an understanding of what matters most to the patient.</p> <p class=\"provider-bio\">Outside of work, Kyle enjoys spending time outdoors, traveling, and working in the yard.</p>",
+      "id": "about",
+      "title": "About Kyle Kitchen"
+    }
+  ],
+  "slug": "kyle-kitchen"
+}

@@ -1,0 +1,73 @@
+{
+  "order": 34,
+  "directory": {
+    "alt": "Kylee R. Maliwauki",
+    "category": "advanced-practitioners",
+    "order": 52,
+    "photo": "/images/provider-kylee-maliwauki.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "pleasant-grove-clinic",
+    "utah-valley-hospital"
+  ],
+  "mediaHighlights": null,
+  "name": "Kylee R. Maliwauki, DNP, FNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Kylee R. Maliwauki",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-kylee-maliwauki.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Kylee R. Maliwauki, DNP, FNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Maliwauki"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Utah Valley University, Orem, UT Master of Science, Nursing, Rocky Mountain University of Health Professions, Provo, UT Certifications: Kylee has extensive experience in Hospice and Palliative Care</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "kylee-maliwauki",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

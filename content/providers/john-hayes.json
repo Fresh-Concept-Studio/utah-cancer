@@ -1,0 +1,73 @@
+{
+  "order": 27,
+  "directory": {
+    "alt": "John K. Hayes",
+    "category": "radiation-oncology",
+    "order": 28,
+    "photo": "/images/provider-john-hayes.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "st-mark-s-hospital",
+    "holy-cross-davis-hospital"
+  ],
+  "mediaHighlights": null,
+  "name": "John K. Hayes, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "John K. Hayes",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-john-hayes.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">John K. Hayes, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Hayes"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University Of Utah School Of Medicine, Salt Lake City, UT 1980-1983</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, University Of Utah School Of Medicine, Salt Lake City, UT 1984-1988</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "john-hayes",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

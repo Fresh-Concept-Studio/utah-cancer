@@ -1,0 +1,31 @@
+{
+  "order": 8,
+  "directoryPhoto": {
+    "alt": "Ravin Bisla",
+    "src": "/images/leader-ravin-bisla.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Ravin Bisla",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Ravin Bisla",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-ravin-bisla-clean.png?v=20260910"
+  },
+  "role": "Chief Executive Officer",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Ravin Bisla earned a Bachelor of Science in Economics from Duke University and an MBA in Finance from the UCLA Anderson School of Management. With both of his parents working as physicians, medicine and the importance of putting patients first were part of his life from an early age and continue to shape the way he approaches healthcare leadership today.</p> <p class=\"provider-bio\">Ravin is a strong believer in the value of community oncology and the difference it can make for patients and families. As healthcare has become increasingly complex and consolidated, he believes organizations like Utah Cancer Specialists offer something especially important: high-quality, specialized care delivered with greater accessibility, personal attention, and a focus on the individual rather than the system.</p> <p class=\"provider-bio\">In his leadership, Ravin works to ensure that the organization never loses sight of what patients may be experiencing. What can feel like a routine day of work for a healthcare team may coincide with one of the most difficult chapters in a patient’s life. That perspective drives his commitment to going above and beyond, both clinically and personally, for patients and their families.</p> <p class=\"provider-bio\">Outside of work, Ravin enjoys spending time outdoors, especially skiing, hiking, camping, off-roading, and shooting. He is happiest in the mountains.</p>",
+      "id": "about",
+      "title": "About Ravin Bisla"
+    }
+  ],
+  "slug": "ravin-bisla"
+}

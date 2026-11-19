@@ -1,0 +1,64 @@
+{
+  "order": 16,
+  "directory": {
+    "alt": "Emma Hanson",
+    "category": "supportive-care",
+    "order": 36.2,
+    "photo": "/images/provider-emma-hanson.png",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "",
+  "leadershipGroups": null,
+  "locationIds": [],
+  "mediaHighlights": null,
+  "name": "Emma Hanson, FNP-C",
+  "page": {
+    "cta": {
+      "heading": "Contact us for more information.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.262.9494",
+          "attrs": {
+            "href": "tel:8012629494",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "description": "Emma Hanson, FNP-C, Supportive & Rehabilitative Care at Utah Cancer Specialists."
+  },
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Emma Hanson",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-emma-hanson.png"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Emma has worked in healthcare in a variety of roles since graduating from high school, including dental assisting, phlebotomy, and working as a CNA. Although she explored several different healthcare paths, she ultimately followed her lifelong goal of becoming a nurse.</p> <p class=\"provider-bio\">Before joining Utah Cancer Specialists, Emma spent three years at Huntsman Cancer Hospital on the medical oncology unit, where she provided inpatient chemotherapy, symptom management, and end-of-life care.</p> <p class=\"provider-bio\">Emma’s connection to oncology is also deeply personal. After losing her best friend to cancer in 2023, she reflected on how profoundly cancer had affected the lives of people she loved. Those experiences strengthened her passion for palliative and supportive care and her belief that people living with cancer should be able to suffer less and live more, including during the most difficult stages of their illness.</p> <p class=\"provider-bio\">Her approach to care begins with meeting each patient where they are. Emma believes trust is built through consistency, kindness, and taking the time to listen. She strives to be a strong advocate for her patients and to create a space where they feel comfortable sharing their concerns, goals, and needs.</p> <p class=\"provider-bio\">Emma also values the ability to sit alongside patients and families during difficult moments with compassion and an open heart. She believes those relationships are an important part of helping patients feel supported throughout their cancer journey.</p> <p class=\"provider-bio\">Outside of work, Emma is a mom to three boys and enjoys spending time outdoors with them and attending their many sporting events. She also loves traveling when she can and trying new foods.</p> <p class=\"provider-bio\">Emma grew up in Sandy, Utah, before moving to Texas, where her two oldest sons were born. Her family later returned to Utah, which she is happy to once again call home.</p> <p class=\"provider-bio\">She is excited to be part of Dr. Garner’s Supportive Oncology team at Utah Cancer Specialists and to help patients live as fully and comfortably as possible throughout their care.</p>",
+      "id": "about",
+      "title": "About Emma"
+    }
+  ],
+  "sidebar": "provider-contact-3",
+  "slug": "emma-hanson",
+  "specialty": "Supportive & Rehabilitative Care",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "order": 30,
+  "directory": {
+    "alt": "Julie A. Balk",
+    "category": "advanced-practitioners",
+    "order": 49,
+    "photo": "/images/provider-julie-balk.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center-campus"
+  ],
+  "mediaHighlights": null,
+  "name": "Julie A. Balk, DNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Julie A. Balk",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-julie-balk.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Julie brings more than 30 years of nurse practitioner experience across internal medicine, family practice, cardiology, infectious disease, and endocrinology. Her broad clinical background provides a valuable perspective in caring for patients with complex and diverse healthcare needs.</p> <p class=\"provider-bio\">Julie was drawn to healthcare by both the science of medicine and compassion at the heart of patient care. She believes the best care comes from a true team approach—combining rapidly evolving medical knowledge and therapies with the expertise of the clinical care team and, most importantly, the voice of each patient and their support system.</p> <p class=\"provider-bio\">She values the extensive experience she has gained outside of oncology and the unique perspective it brings to her work with patients at Utah Cancer Specialists.</p> <p class=\"provider-bio\">Born and raised in Salt Lake City, Julie enjoys traveling, golfing, and spending time with her grandchildren.</p>",
+      "id": "about",
+      "title": "About Julie"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Nursing, Westminster College, SLC UT Master of Science, University of Utah, SLC UT Doctorate of Nursing, University of Utah, SLC UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "julie-balk",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

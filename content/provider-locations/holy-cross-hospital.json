@@ -1,0 +1,36 @@
+{
+  "order": 9,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.562.8732",
+      "attrs": {
+        "href": "tel:8015628732",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=3592+W.+9000+S.%3B+Ste.+200+West+Jordan%2C+UT+84088",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "3592 W. 9000 S.; Ste. 200<br>West Jordan, UT 84088",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "holy-cross-hospital",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Holy Cross Hospital",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

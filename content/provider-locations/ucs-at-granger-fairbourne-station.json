@@ -1,0 +1,36 @@
+{
+  "order": 34,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.907.4750",
+      "attrs": {
+        "href": "tel:8019074750",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=Fourth+floor-East+2965+W.+3500+S.+West+Valley%2C+UT+84119",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "2965 W. 3500 S.<br>Fourth floor-East<br>West Valley, UT 84119",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "ucs-at-granger-fairbourne-station",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "UCS at Granger Fairbourne Station",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": "START"
+}

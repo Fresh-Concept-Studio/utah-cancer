@@ -1,0 +1,29 @@
+{
+  "order": 1,
+  "category": "support",
+  "date": "2026-09-26",
+  "description": "A community resource and support event for breast cancer patients and survivors.",
+  "featured": true,
+  "image": {
+    "alt": "A Utah Cancer Specialists team member in a pink ribbon scarf at the Pink Bag Event photo backdrop",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/3cd3a9ff0828a49bdd8ba910e2587f601d2be291-1598x2000.jpg?crop=focalpoint&fp-x=0.5&fp-y=0.44"
+  },
+  "link": "https://www.fashionplace.com/en/events/50851/",
+  "location": "Fashion Place Mall",
+  "photos": [
+    {
+      "alt": "Utah Cancer Specialists at the Pink Bag Event",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/39bafe2a5b342fb4e605dfd2fd2c27542cea4d7a-1500x2000.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Pink Bag Event",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/8c202c4933aee19b34982d8361d70d0e6224c2d5-2000x1500.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Pink Bag Event",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/ad4972b0f92e57babc59a7a956edc2870c4e3eeb-1500x2000.jpg"
+    }
+  ],
+  "timeText": "10:00 AM–1:30 PM",
+  "title": "Pink Bag Event"
+}

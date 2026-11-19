@@ -1,0 +1,46 @@
+{
+  "order": 12,
+  "directoryPhoto": {
+    "alt": "Teresa Leavitt",
+    "src": "/images/leader-hr-director.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Teresa Leavitt",
+  "page": {
+    "cta": {
+      "heading": "Ready to learn more about your care options?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span>Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Teresa Leavitt",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-hr-director.webp"
+  },
+  "role": "Director of Human Resources",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Teresa Leavitt has built her career around healthcare, human resources, and supporting the people who care for patients. She began her professional journey working in physician offices and later served as Vice President of Volunteer and Talent Relations for Mountain West Ballet before joining Utah Cancer Specialists in 2007.</p> <p class=\"provider-bio\">Teresa holds a bachelor’s degree in human resource management and has earned the PPMC designation through the American College of Medical Practice Executives. She is also an active member of both the national and local chapters of the Society for Human Resource Management.</p> <p class=\"provider-bio\">Throughout her time at Utah Cancer Specialists, Teresa has especially enjoyed helping employees navigate onboarding, benefits, and the many day-to-day questions that come with being part of a growing organization. She has also played an important role in strengthening the UCS culture through employee events, recognition, and opportunities that help people feel connected and appreciated.</p> <p class=\"provider-bio\">Having spent much of her HR career in healthcare, joining UCS felt like a natural return to work she knew and enjoyed. Teresa has always been drawn to the people side of healthcare and values knowing that, while she is not providing direct patient care, her work supports the employees who are.</p> <p class=\"provider-bio\">What excites Teresa most about the future of Utah Cancer Specialists is seeing the organization continue to grow and evolve while remaining focused on the people it serves. Over the years, she has watched UCS expand its services, technology, and opportunities for both patients and employees, and she is proud to be part of an organization that continues to improve while staying true to its values.</p> <p class=\"provider-bio\">Teresa believes exceptional patient care starts with exceptional people. From an HR perspective, that means making sure employees feel supported, valued, and equipped to do their best work so they can provide patients with the compassion, respect, and care they deserve.</p> <p class=\"provider-bio\">Outside of work, Teresa enjoys spending time with family, reading, cooking, volunteering, and traveling.</p>",
+      "id": "about",
+      "title": "About Teresa Leavitt"
+    }
+  ],
+  "slug": "teresa-leavitt"
+}

@@ -1,0 +1,27 @@
+{
+  "order": 28,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 208.756.5762",
+      "attrs": {
+        "href": "tel:2087565762",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "805 Main St<br>Salmon, ID 83467",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "steel-memorial",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Steele Memorial Medical Center",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

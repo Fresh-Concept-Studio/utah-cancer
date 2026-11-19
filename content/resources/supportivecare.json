@@ -1,0 +1,32 @@
+{
+  "order": 9,
+  "description": "Supportive and palliative care helps Utah Cancer Specialists patients manage symptoms, side effects, emotional needs, and quality of life.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Care for the whole person",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>What supportive care can address</h2>\n      <ul>\n        <li>Pain, fatigue, nausea, appetite changes, sleep problems, and other symptoms</li>\n        <li>Side effects related to cancer treatment</li>\n        <li>Stress, anxiety, and emotional support for patients and families</li>\n        <li>Care goals, priorities, and communication across your care team</li>\n        <li>Referrals to insurance, financial, and community resources</li>\n      </ul>\n      <p>Supportive care is appropriate alongside treatment and does not require stopping cancer-directed care. Ask your oncologist or patient advocate whether a supportive care visit may help.</p>\n      <h2>Meet the supportive care team</h2>\n      <div class=\"resource-link-cards\">\n        <a href=\"/providers/gary-garner.html\"><strong>Gary Garner, MD</strong><span>View provider profile</span></a>\n        <a href=\"/providers/stephanie-ellis.html\"><strong>Stephanie Ellis</strong><span>View provider profile</span></a>\n      </div>",
+  "icon": "favorite",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "Supportive care can be part of cancer treatment at any stage, helping patients and families manage symptoms and focus on what matters most.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/programs-and-services.html",
+      "label": "Programs and services"
+    },
+    {
+      "href": "/nutrition/",
+      "label": "Nutrition resources"
+    }
+  ],
+  "seoTitle": "Supportive & Palliative Care | Utah Cancer Specialists",
+  "slug": "supportivecare",
+  "title": "Supportive & Palliative Care"
+}

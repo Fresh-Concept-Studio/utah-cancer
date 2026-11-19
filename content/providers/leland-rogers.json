@@ -1,0 +1,72 @@
+{
+  "order": 35,
+  "directory": {
+    "alt": "C. Leland Rogers",
+    "category": "radiation-oncology",
+    "order": 22,
+    "photo": "/images/provider-leland-rogers.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "jordan-valley-cancer-center-2"
+  ],
+  "mediaHighlights": null,
+  "name": "C. Leland Rogers, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "C. Leland Rogers",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-leland-rogers.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. C. Leland Rogers is a board-certified radiation oncologist with more than 40 years of experience in academic medicine, Veterans Affairs, and private practice. He earned his Doctor of Medicine with honors from the University of Kentucky College of Medicine and completed his radiation oncology training at the University of North Carolina at Chapel Hill, where he served as an American Cancer Society Clinical Fellow.</p> <p class=\"provider-bio\">Throughout his career, Dr. Rogers has practiced at several respected institutions, including Mayo Clinic, Barrow Neurological Institute, GammaWest Brachytherapy, Virginia Commonwealth University, and the Richmond VA Medical Center. His clinical and academic interests have included central nervous system tumors, prostate cancer, brachytherapy, and innovative applications of radiation therapy. He has also contributed extensively to medical research, with approximately 100 peer-reviewed publications, book chapters, editorials, and other scholarly works.</p> <p class=\"provider-bio\">Dr. Rogers originally planned to pursue a career in anesthesiology, but his path changed after several close family members were diagnosed with cancer. Seeing the impact radiation therapy had on their care inspired him to explore radiation oncology. He was drawn to the specialty because of the opportunity to build meaningful relationships with patients while using rapidly advancing technology to improve outcomes and quality of life.</p> <p class=\"provider-bio\">His connection to cancer care became even more personal during his final year of residency, when he was diagnosed with an aggressive cancer himself. After successfully completing treatment, the experience profoundly influenced the way he practices medicine. He strives to provide patients with the same combination of expertise, compassion, and personal connection that made such a difference during his own cancer journey.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Rogers enjoys tennis, skiing, and music. He is also a published songwriter, with music available under “Leland Rogers” on several streaming platforms. He and his wife, Juliana, have four grown sons and four grandchildren. After living in Utah at several points throughout their lives, they returned in 2020 and are grateful to once again call Utah home.</p>",
+      "id": "about",
+      "title": "About Dr. Rogers"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kentucky College of Medicine, Louisville, KY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, University of N. Carolina, Chapel Hill, NC Location: Jordan Valley Cancer Center 3592 W. 9000 S., Ste. 100 West Jordan, UT 84088</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "leland-rogers",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

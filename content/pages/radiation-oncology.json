@@ -1,0 +1,302 @@
+{
+  "order": 24,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-71165c2e52",
+      "label": "Text",
+      "section": "Radiation Oncology",
+      "value": "Advanced Technology"
+    },
+    {
+      "key": "text-042a35360e",
+      "label": "Heading",
+      "section": "Radiation Oncology",
+      "value": "Radiation Oncology"
+    },
+    {
+      "key": "text-c23b72dbf4",
+      "label": "Paragraph",
+      "section": "Radiation Oncology",
+      "value": "Precise, image-guided radiation therapy using the latest technology — delivered by board-certified radiation oncologists at locations throughout Utah."
+    },
+    {
+      "key": "link-6464e105f6",
+      "kind": "link",
+      "label": "Link destination: calendar_today Request Appointment",
+      "section": "Radiation Oncology",
+      "value": "tel:8012629494"
+    },
+    {
+      "key": "text-b37cd7fed3",
+      "label": "Link label",
+      "section": "Radiation Oncology",
+      "value": " Request Appointment"
+    },
+    {
+      "key": "link-fc55c827ec",
+      "kind": "link",
+      "label": "Link destination: group Our Radiation Oncologists",
+      "section": "Radiation Oncology",
+      "value": "/providers/index.html"
+    },
+    {
+      "key": "text-3fa7717147",
+      "label": "Link label",
+      "section": "Radiation Oncology",
+      "value": " Our Radiation Oncologists"
+    },
+    {
+      "key": "text-fcde961543",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "TrueBeam™ Linear Accelerator"
+    },
+    {
+      "key": "text-d802926348",
+      "label": "Heading",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Pinpoint accuracy. Maximum precision."
+    },
+    {
+      "key": "text-040354e852",
+      "label": "Paragraph",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "The TrueBeam system enables a radically different approach to cancer treatment with image-guided radiotherapy. Developed from the ground up to deliver powerful cancer treatments with pinpoint accuracy, the system features a 120-leaf multileaf collimator that shapes the radiation beam to match the three-dimensional shape of each tumor."
+    },
+    {
+      "key": "text-fbe53305c6",
+      "label": "Paragraph",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Cone-beam CT capability reduces radiation exposure during imaging, while real-time imaging ensures targeting accuracy measured in millimeters. Gated respiration synchronization allows precise treatment of lung cancer and other motion-sensitive tumors."
+    },
+    {
+      "key": "text-f7c54bc5e2",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " RapidArc (IMRT)"
+    },
+    {
+      "key": "text-4167562736",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " SBRT & SRS"
+    },
+    {
+      "key": "text-bb7d7bae3b",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " IGRT"
+    },
+    {
+      "key": "text-4a0d44d00e",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " 3D External Beam"
+    },
+    {
+      "key": "text-e0a984158f",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Hypofractionated RT"
+    },
+    {
+      "key": "text-30ce476472",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Omni Legend Digital PET/CT"
+    },
+    {
+      "key": "text-74072dd358",
+      "label": "Heading",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "See more. Expose less."
+    },
+    {
+      "key": "text-046aed87c8",
+      "label": "Paragraph",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "The Omni Legend PET/CT scanner uses Precision DL (deep learning) image processing and an AI-based Auto Positioning Camera for ultra-fast scanning at lower radiation doses. Its industry-leading sensitivity per centimeter enables advanced small-lesion detection and low-contrast detectability."
+    },
+    {
+      "key": "text-97ee3d72e0",
+      "label": "Paragraph",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": "Q-Clear image reconstruction with motion-free technology provides precise tumor measurement for confident diagnosis and treatment response monitoring."
+    },
+    {
+      "key": "text-507296094e",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " FDG"
+    },
+    {
+      "key": "text-490f0e03e7",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Ga68 PSMA"
+    },
+    {
+      "key": "text-48ec8c94ca",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " F18 PSMA"
+    },
+    {
+      "key": "text-79595ce582",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Axumin"
+    },
+    {
+      "key": "text-d6a704a212",
+      "label": "Text",
+      "section": "Pinpoint accuracy. Maximum precision.",
+      "value": " Gallium 68"
+    },
+    {
+      "key": "text-ee9e5a72f3",
+      "label": "Text",
+      "section": "Low-dose radiation therapy for joint pain.",
+      "value": "Care for benign conditions"
+    },
+    {
+      "key": "text-33ae0d1d60",
+      "label": "Heading",
+      "section": "Low-dose radiation therapy for joint pain.",
+      "value": "Low-dose radiation therapy for joint pain."
+    },
+    {
+      "key": "text-80bed40549",
+      "label": "Paragraph",
+      "section": "Low-dose radiation therapy for joint pain.",
+      "value": "For selected patients, low-dose radiation therapy may offer a painless, noninvasive option for persistent pain from certain inflammatory and degenerative conditions."
+    },
+    {
+      "key": "link-31dacfbef4",
+      "kind": "link",
+      "label": "Link destination: Learn about LDRT arrow_forward",
+      "section": "Low-dose radiation therapy for joint pain.",
+      "value": "/low-dose-radiation-therapy-ldrt/"
+    },
+    {
+      "key": "text-87d0fd5049",
+      "label": "Link label",
+      "section": "Low-dose radiation therapy for joint pain.",
+      "value": "Learn about LDRT "
+    },
+    {
+      "key": "text-1eb643d2d3",
+      "label": "Heading",
+      "section": "Radiotheranostics",
+      "value": "Radiotheranostics"
+    },
+    {
+      "key": "text-22032258b1",
+      "label": "Paragraph",
+      "section": "Radiotheranostics",
+      "value": "Our practice also offers targeted radionuclide therapies that deliver radiation directly to cancer cells expressing specific receptors — precision treatment at the molecular level."
+    },
+    {
+      "key": "text-a0a4c71011",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "Lutathera "
+    },
+    {
+      "key": "text-9470afb91e",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "(Lu-177 DOTATATE)"
+    },
+    {
+      "key": "text-39e5c8ab96",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "For neuroendocrine tumors expressing somatostatin receptors"
+    },
+    {
+      "key": "text-3a9a55c0ea",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "Pluvicto "
+    },
+    {
+      "key": "text-83c0baf0a5",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "(Lu-177 PSMA)"
+    },
+    {
+      "key": "text-c5dfb01331",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "For PSMA-positive metastatic prostate cancer"
+    },
+    {
+      "key": "text-7c2406f101",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "Xofigo "
+    },
+    {
+      "key": "text-67589e094f",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "(Ra-223)"
+    },
+    {
+      "key": "text-7187c1c319",
+      "label": "Text",
+      "section": "Radiotheranostics",
+      "value": "For prostate cancer that has spread to bone"
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "",
+        "src": "/images/specialty-headneck-clinical-hero.jpg"
+      },
+      "key": "image-cedb2a48f4",
+      "label": "Specialty headneck clinical hero",
+      "section": "Radiation Oncology"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "radiation-oncology.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Radiation Oncology - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "radiation-oncology",
+    "cta": {
+      "heading": "Questions about radiation therapy?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Radiation Oncology - Utah Cancer Specialists"
+}

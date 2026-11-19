@@ -258,7 +258,7 @@ const sizedImage = (src: string, width: number, height?: number) => /^https:\/\/
               {latestEpisodes.map(episode => {
                 const primary = episode.youtubeUrl || episode.spotifyUrl || episode.appleUrl;
                 const platforms = [['YouTube', episode.youtubeUrl], ['Spotify', episode.spotifyUrl], ['Apple Podcasts', episode.appleUrl]].filter(([, href]) => href);
-                return <li class="podcast-episode">
+                return <li class="podcast-episode" data-sa={episode.contentId}>
                   {primary ? <a href={primary} target="_blank" rel="noopener" class="podcast-episode-play" aria-label={`Play ${episode.title}`}><span class="material-symbols-rounded" aria-hidden="true">play_circle</span></a> : <span class="material-symbols-rounded podcast-episode-play" aria-hidden="true">play_circle</span>}
                   <span class="podcast-episode-info">
                     {primary ? <a href={primary} target="_blank" rel="noopener" class="podcast-episode-title">{episode.title}</a> : <span class="podcast-episode-title">{episode.title}</span>}

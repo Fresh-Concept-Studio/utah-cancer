@@ -1,0 +1,92 @@
+{
+  "order": 22,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Expert, evidence-based prostate cancer treatment focused on preserving quality of life and long-term health.",
+  "directory": {
+    "category": "common",
+    "description": "Expert, evidence-based treatment focused on preserving quality of life and long-term health.",
+    "icon": "male",
+    "order": 1,
+    "searchName": "Prostate Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-prostate-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Prostate cancer is the most common cancer in men, but when caught early, it is also one of the most treatable. At Utah Cancer Specialists, our team uses a personalized approach that considers the stage and grade of your cancer, your age, overall health, and personal preferences to develop a treatment plan tailored specifically to you.</p> <p class=\"provider-bio\">From active surveillance for low-risk disease to advanced radiation and systemic therapies for aggressive cancers, we provide the full spectrum of prostate cancer care — always with an emphasis on preserving quality of life.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Difficulty urinating or weak urine flow</li> <li>Frequent urination, especially at night</li> <li>Blood in urine or semen</li> <li>Pain or discomfort in the pelvic area</li> <li>Bone pain (in advanced stages)</li> <li>Erectile dysfunction</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Multiparametric MRI, bone scan, and CT for staging</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Transrectal or MRI-fusion biopsy with Gleason scoring</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Genomic Testing</h3> <p>Decipher, Oncotype DX, and Prolaris for risk stratification</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">PSA Monitoring</h3> <p>Serial PSA testing to guide treatment decisions</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Hormone Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">monitor_heart</span> Active Surveillance</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>When should I start screening?</summary> <p>Most guidelines recommend discussing PSA screening with your doctor starting at age 50, or at 40-45 if you have risk factors such as family history or African American heritage.</p> </details> <details class=\"sd-faq-item\"> <summary>What is active surveillance?</summary> <p>For low-risk prostate cancer, active surveillance means closely monitoring the cancer with regular PSA tests, imaging, and biopsies rather than treating immediately — avoiding side effects while ensuring the cancer doesn't progress.</p> </details> <details class=\"sd-faq-item\"> <summary>Will treatment affect my quality of life?</summary> <p>Modern treatment approaches are designed to minimize side effects. Our team discusses potential impacts on urinary, bowel, and sexual function and works with you to choose the approach that best balances cancer control with quality of life.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "prostate-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Prostate Cancer"
+}

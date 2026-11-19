@@ -1,0 +1,72 @@
+{
+  "order": 59,
+  "directory": {
+    "alt": "William T. Stephenson",
+    "category": "medical-oncology",
+    "order": 20,
+    "photo": "/images/provider-william-stephenson.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "utah-valley-hospital"
+  ],
+  "mediaHighlights": null,
+  "name": "William T. Stephenson, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "William T. Stephenson",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-william-stephenson.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. William Stephenson brings more than two decades of experience in hematology and oncology, including 23 years at a large tertiary referral center in downtown Kansas City. He has a particular interest in benign hematology and values the opportunity his specialty provides to develop meaningful relationships with patients while focusing deeply on complex medical conditions.</p> <p class=\"provider-bio\">At the center of Dr. Stephenson’s approach is education. He believes patients and their families should fully understand their diagnosis, treatment options, and what those choices may mean for their lives. He recognizes that the best answer for most patients is not necessarily the best answer for the individual sitting in front of him. By taking the time to explain options and understand each patient’s priorities, he helps patients make informed decisions that are right for them.</p> <p class=\"provider-bio\">Dr. Stephenson appreciates working with colleagues who share his commitment to patient education and thoughtful, individualized care. He moved to Utah in 2018 to be closer to family and is now partially retired. He continues to care for patients while also providing coverage for colleagues when they are away from the office.</p> <p class=\"provider-bio\">Outside of medicine, Dr. Stephenson has a strong interest in musical composition and theory.</p>",
+      "id": "about",
+      "title": "About Dr. Stephenson"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Kansas Medical Center, Kansas City, KS</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine University of Virginia Health Science Center, Charlotte, VA</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology Oncology, Indiana University-Perdue University in Indianapolis, IN Hematology / Oncology, University of Utah, Salt Lake City, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "william-stephenson",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "order": 27,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Expert care with specialized surgical, radioactive iodine, and targeted therapy options for thyroid cancer.",
+  "directory": {
+    "category": "common",
+    "description": "Expert care with specialized surgical, radioactive iodine, and targeted therapy options.",
+    "icon": "medical_services",
+    "order": 6,
+    "searchName": "Thyroid Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-breast-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Thyroid cancer is one of the most curable cancers when detected early. Our team works closely with endocrinologists and surgeons to provide a complete treatment pathway from diagnosis through long-term surveillance.</p> <p class=\"provider-bio\">For more advanced or aggressive thyroid cancers, we offer targeted therapies, radioactive iodine treatment coordination, and access to clinical trials with novel agents.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>A lump or swelling in the neck</li> <li>Difficulty swallowing or breathing</li> <li>Persistent hoarseness or voice changes</li> <li>Neck or throat pain</li> <li>Swollen lymph nodes in the neck</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Thyroid ultrasound and radioiodine scans</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fine Needle Aspiration</h3> <p>FNA biopsy with cytology and molecular markers</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>BRAF, RAS, and RET mutation analysis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Thyroglobulin Monitoring</h3> <p>Blood marker for surveillance after treatment</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radioactive Iodine</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">balance</span> TSH Suppression</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is the prognosis for thyroid cancer?</summary> <p>Most thyroid cancers have an excellent prognosis. The 5-year survival rate for localized papillary and follicular thyroid cancer is over 99%.</p> </details> <details class=\"sd-faq-item\"> <summary>Will I need to take medication after treatment?</summary> <p>Most patients require lifelong thyroid hormone replacement after surgery, which also helps suppress any remaining cancer cells.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "thyroid-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Thyroid Cancer"
+}

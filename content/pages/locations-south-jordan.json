@@ -1,0 +1,25 @@
+{
+  "order": 13,
+  "description": "",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "locations/south-jordan.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "settings": {
+    "bodyClass": "",
+    "marquee": false,
+    "redirect": "/locations/index.html",
+    "redirectBody": "<p>This page is no longer available. <a href=\"/locations/index.html\">View our clinic locations.</a></p>",
+    "scripts": [],
+    "styles": []
+  },
+  "title": "Locations - Utah Cancer Specialists"
+}

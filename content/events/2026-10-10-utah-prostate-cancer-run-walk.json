@@ -1,0 +1,63 @@
+{
+  "order": 2,
+  "category": "fundraiser",
+  "date": "2026-10-10",
+  "description": "A 5K run/walk and family-friendly 1-mile stroll supporting prostate cancer patients and early detection.",
+  "image": {
+    "alt": "The Utah Cancer Specialists booth at the Utah Prostate Cancer Run & Walk",
+    "src": "https://cdn.sanity.io/images/spba0u9p/production/9af3d280b77c2d67b9dfe147546d236a4360e5cd-2000x1333.jpg?crop=focalpoint&fp-x=0.45&fp-y=0.5"
+  },
+  "link": "https://utahprostatecancerrun.com/",
+  "location": "Wheeler Historic Farm, Salt Lake City",
+  "photos": [
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/65082a9f3e8766a216549c520792206e971298c8-2000x997.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/9af3d280b77c2d67b9dfe147546d236a4360e5cd-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/118b39c61294ff68b2b8cb26a728adfedf1bcdb1-2000x1938.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/4aea5685555fd84a165e79cf1b8af6dbaa9be62f-2000x1309.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/d9aca3b70079bb160345410ac8d995a1790c18bf-2000x1470.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/70b058028d39663a57573617f4985428a565d139-2000x1475.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/ca222edef482d96d69299321d708d9ecbcaff8db-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/c9ca120dd0bb60822dae37b83ebc1e6248cce1db-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/c506f4c6f2063d69252e529e442d3e5efc7e440a-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/6987c9bb7b171237ac0e9954a10d3986d5636656-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/90fd1c2256eb130e280916730fc1a9bf0fb29cc8-2000x1333.jpg"
+    },
+    {
+      "alt": "Utah Cancer Specialists at the Utah Prostate Cancer Run & Walk",
+      "src": "https://cdn.sanity.io/images/spba0u9p/production/a279663406fc7bcbc12dedeaa7cf0ebc4d0948f6-2000x1333.jpg"
+    }
+  ],
+  "title": "Utah Prostate Cancer Run & Walk"
+}

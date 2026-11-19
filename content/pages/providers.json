@@ -1,0 +1,93 @@
+{
+  "order": 21,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-85be06b797",
+      "label": "Heading",
+      "section": "Our Providers",
+      "value": "Our Providers"
+    },
+    {
+      "key": "text-afc2f54941",
+      "label": "Paragraph",
+      "section": "Our Providers",
+      "value": "Board-certified oncologists, radiation specialists, advanced practitioners, and supportive and rehabilitative care professionals dedicated to every aspect of your care."
+    },
+    {
+      "key": "text-6ccb60071b",
+      "label": "Heading",
+      "section": "Categories",
+      "value": "Categories"
+    },
+    {
+      "key": "text-917bcf00a5",
+      "label": "Heading",
+      "section": "Categories",
+      "value": "Quick Links"
+    },
+    {
+      "key": "text-11b1663be0",
+      "label": "Heading",
+      "section": "Categories",
+      "value": "Need help finding a provider?"
+    },
+    {
+      "key": "text-99c004fc9a",
+      "label": "Text",
+      "section": "Categories",
+      "value": "Our team can help match you with the right specialist for your needs."
+    },
+    {
+      "key": "link-0fc44bd2ab",
+      "kind": "link",
+      "label": "Link destination: phone Call 801.269.0231",
+      "section": "Categories",
+      "value": "tel:8012690231"
+    },
+    {
+      "key": "text-2939f80944",
+      "label": "Link label",
+      "section": "Categories",
+      "value": " Call 801.269.0231 "
+    },
+    {
+      "key": "text-cf9e6df097",
+      "label": "Text",
+      "section": "Categories",
+      "value": "Showing all "
+    },
+    {
+      "key": "text-4dc1cf56c6",
+      "label": "Text",
+      "section": "Categories",
+      "value": " providers"
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "providers/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Our Providers - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "providers-index",
+    "marquee": true,
+    "scripts": [
+      "/scripts/providers-index.js"
+    ],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Our Providers - Utah Cancer Specialists"
+}

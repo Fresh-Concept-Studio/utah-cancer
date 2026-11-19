@@ -1,0 +1,32 @@
+{
+  "order": 6,
+  "description": "Learn how the Utah Cancer Specialists pharmacy team supports oral cancer medications, authorizations, education, and financial assistance.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Prescriptions to go",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Pharmacy support within your care team</h2>\n      <p>A medically integrated pharmacy coordinates directly with your oncology team. This helps keep medication information, treatment changes, and questions close to the people managing your care.</p>\n      <h2>How the pharmacy team can help</h2>\n      <ul>\n        <li>Coordinate insurance authorizations for oral cancer medications</li>\n        <li>Explore eligible copay and financial assistance programs</li>\n        <li>Explain how and when to take your medication</li>\n        <li>Review side effects, interactions, storage, and safe handling</li>\n        <li>Coordinate refills and communicate treatment changes with your care team</li>\n      </ul>\n      <div class=\"resource-note\">Medication services and coverage vary by prescription and insurance plan. Ask your care team whether the integrated pharmacy can support your treatment.</div>",
+  "icon": "medication",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "Our pharmacy team works alongside your cancer care team to make oral medications easier to obtain, understand, and manage.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/programs-and-services.html",
+      "label": "Programs and services"
+    },
+    {
+      "href": "/patient-resources.html",
+      "label": "Patient resources"
+    }
+  ],
+  "seoTitle": "Medically Integrated Pharmacy | Utah Cancer Specialists",
+  "slug": "medically-integrated-pharmacy",
+  "title": "Medically Integrated Pharmacy"
+}

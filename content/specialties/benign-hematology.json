@@ -1,0 +1,92 @@
+{
+  "order": 1,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Blood & Bone Marrow",
+  "description": "Diagnosis and treatment of non-cancerous blood disorders including anemia and clotting disorders.",
+  "directory": {
+    "category": "blood",
+    "description": "Diagnosis and treatment of non-cancerous blood disorders including anemia and clotting disorders.",
+    "icon": "monitor_heart",
+    "order": 16,
+    "searchName": "Benign Hematology"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-blood-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Not all blood disorders are cancer. Our hematologists also diagnose and manage benign conditions such as iron deficiency anemia, vitamin B12 deficiency, inherited and acquired clotting disorders, immune thrombocytopenia, and other non-malignant hematologic conditions.</p> <p class=\"provider-bio\">We provide thorough diagnostic workups and evidence-based management to help patients understand and treat their blood disorder effectively.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Persistent fatigue or pallor</li> <li>Easy bruising or prolonged bleeding</li> <li>Blood clots (DVT or PE)</li> <li>Heavy menstrual periods</li> <li>Recurrent nosebleeds</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>CBC, iron studies, coagulation panels</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Specialized Testing</h3> <p>Thrombophilia panels, hemoglobin electrophoresis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>When indicated for unexplained cytopenias</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Iron or B12 Supplementation</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">bloodtype</span> Blood Transfusions</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Anticoagulation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Monitoring &amp; Management</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>Do I need to see an oncologist for anemia?</summary> <p>A hematologist-oncologist can help when anemia is persistent, unexplained, or requires specialized evaluation. Many of our physicians are trained in both benign and malignant hematology.</p> </details> <details class=\"sd-faq-item\"> <summary>What is a thrombophilia workup?</summary> <p>A series of blood tests to evaluate inherited or acquired conditions that increase your risk of blood clots, which helps guide treatment with blood thinners.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar",
+  "slug": "benign-hematology",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Benign Hematology"
+}

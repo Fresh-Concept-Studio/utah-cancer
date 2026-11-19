@@ -1,46 +1,70 @@
 name: Publish Astro to GitHub Pages
 
 # Deliberate manual release. No deployment is triggered by a push.
+# The site editor dispatches this workflow with content_only=true after it commits
+# changes under content/. The type check is skipped only when nothing outside
+# content/ changed since the commit that is live now.
 on:
   workflow_dispatch:
+    inputs:
+      content_only:
+        description: Content-only release (skips the type check if only content/ changed since the live deploy)
+        type: boolean
+        default: false
 
 permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: read
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  SITE_URL: ${{ vars.SITE_URL || 'https://fresh-concept-studio.github.io' }}
+  BASE_PATH: ${{ vars.BASE_PATH || '/utah-cancer' }}
+  SITE_INDEXABLE: ${{ vars.SITE_INDEXABLE || 'false' }}
+  # repo (default): content/ files. Set the CONTENT_SOURCE repository variable to
+  # "sanity" to build from the read-only Sanity copy instead.
+  CONTENT_SOURCE: ${{ vars.CONTENT_SOURCE || 'repo' }}
+  SANITY_REQUIRED: 'true'
+
 jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    env:
-      SITE_URL: ${{ vars.SITE_URL || 'https://fresh-concept-studio.github.io' }}
-      BASE_PATH: ${{ vars.BASE_PATH || '/utah-cancer' }}
-      SITE_INDEXABLE: ${{ vars.SITE_INDEXABLE || 'false' }}
-      SANITY_REQUIRED: 'true'
     steps:
       - uses: actions/checkout@v7
-      # A publish only needs a clean type check and build. Content edits from Sanity
-      # should never be held back by a regression test; code is gated by ci.yml instead.
-      - name: Install, check, build, and upload
+        with:
+          fetch-depth: 0
+      - name: Choose checks
+        id: checks
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CONTENT_ONLY: ${{ inputs.content_only }}
+        run: |
+          build_cmd='npm run check && npm run build'
+          if [ "$CONTENT_ONLY" = "true" ]; then
+            live=$(gh api "repos/$GITHUB_REPOSITORY/deployments?environment=github-pages&per_page=1" --jq '.[0].sha // empty' || true)
+            if [ -n "$live" ] && git cat-file -e "$live^{commit}" 2>/dev/null \
+              && [ -z "$(git diff --name-only "$live" HEAD -- . ':!content/')" ]; then
+              build_cmd='npm run build'
+              echo "Only content/ changed since the live commit $live; skipping the type check."
+            else
+              echo "Code changed since the live deploy, or the live commit is unknown; running the full check."
+            fi
+          fi
+          echo "build_cmd=$build_cmd" >> "$GITHUB_OUTPUT"
+      # A publish only needs a clean build (and a type check when code changed).
+      # Regression tests run in their own job so they never delay or block a release;
+      # code is gated by ci.yml instead.
+      - name: Install, build, and upload
         uses: withastro/action@v6
         with:
           node-version: 24
-          build-cmd: npm run check && npm run build
-      - name: Regression tests (report only)
-        id: tests
-        continue-on-error: true
-        run: npm test
-      - name: Flag test failures
-        if: steps.tests.outcome == 'failure'
-        run: |
-          echo "::warning title=Regression tests failed::The site was published, but some tests failed. Review this run's test step."
-          echo "### Regression tests failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "The site was still published. Review the test step and fix the code or the test." >> "$GITHUB_STEP_SUMMARY"
+          build-cmd: ${{ steps.checks.outputs.build_cmd }}
 
   deploy:
     needs: build
@@ -55,3 +79,24 @@ jobs:
       - name: Publish verified artifact
         id: deployment
         uses: actions/deploy-pages@v5
+
+  tests:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Regression tests (report only)
+        id: tests
+        continue-on-error: true
+        run: npm run build && npm test
+      - name: Flag test failures
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "::warning title=Regression tests failed::The site was published, but some tests failed. Review this run's test step."
+          echo "### Regression tests failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "The site was still published. Review the test step and fix the code or the test." >> "$GITHUB_STEP_SUMMARY"

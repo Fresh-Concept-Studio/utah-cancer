@@ -1,0 +1,36 @@
+{
+  "order": 30,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 385.241.2293",
+      "attrs": {
+        "href": "tel:3852412293",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=700+W.+800+N.%2C+Ste.+140+Orem%2C+UT+84057",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "timpanogos-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Orem Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

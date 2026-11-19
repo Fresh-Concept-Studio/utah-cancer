@@ -1,0 +1,133 @@
+{
+  "order": 31,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "link-b4ae4f4939",
+      "kind": "link",
+      "label": "Link destination: arrow_back All Patient Stories",
+      "section": "“I walked in terrified. I walked out with a team that never let go of my hand.”",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-ea662bbb0e",
+      "label": "Link label",
+      "section": "“I walked in terrified. I walked out with a team that never let go of my hand.”",
+      "value": " All Patient Stories"
+    },
+    {
+      "key": "text-08bb4eaf1e",
+      "label": "Text",
+      "section": "“I walked in terrified. I walked out with a team that never let go of my hand.”",
+      "value": "Breast Cancer · In Remission"
+    },
+    {
+      "key": "text-8b09732996",
+      "label": "Heading",
+      "section": "“I walked in terrified. I walked out with a team that never let go of my hand.”",
+      "value": "“I walked in terrified. I walked out with a team that never let go of my hand.”"
+    },
+    {
+      "key": "text-eed3e68dba",
+      "label": "Text",
+      "section": "“I walked in terrified. I walked out with a team that never let go of my hand.”",
+      "value": "Maria S. · Salt Lake City"
+    },
+    {
+      "key": "text-81cb0118c6",
+      "label": "Text",
+      "section": "Story detail media",
+      "value": "Video coming soon"
+    },
+    {
+      "key": "text-ac28f7fd54",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "When Maria found the lump, she did what so many of us do: she waited. Two weeks of telling herself it was nothing, two weeks of not sleeping. When the diagnosis came back — invasive ductal carcinoma, stage II — the world she knew narrowed to a single word she could not stop hearing."
+    },
+    {
+      "key": "text-7ba4f23093",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "Her first appointment at Utah Cancer Specialists changed the shape of that word. “They drew it for me,” she remembers. “The doctor took out a piece of paper and drew what was happening in my body, and then drew what we were going to do about it. Nobody had done that. Suddenly there was a plan, and I was part of it.”"
+    },
+    {
+      "key": "text-9513690e8b",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "Over fourteen months of treatment — surgery, chemotherapy, radiation — Maria’s care team became a second family. Her patient advocate handled the insurance calls she dreaded. A nurse learned the names of her grandchildren. On her hardest day, someone simply sat with her and held her hand."
+    },
+    {
+      "key": "text-27c47b0858",
+      "label": "Paragraph",
+      "section": "Story article",
+      "value": "Today Maria is in remission and back in her garden, where the roses she planted the spring of her diagnosis have bloomed three times over. “Cancer took a year from me,” she says. “But this team gave me all the years after it back.”"
+    },
+    {
+      "key": "text-03a7ccbd43",
+      "label": "Heading",
+      "section": "Every story starts with a first appointment.",
+      "value": "Every story starts with a first appointment."
+    },
+    {
+      "key": "link-686a9a3e68",
+      "kind": "link",
+      "label": "Link destination: phone Contact Us",
+      "section": "Every story starts with a first appointment.",
+      "value": "/contact.html"
+    },
+    {
+      "key": "text-3127f37906",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": " Contact Us"
+    },
+    {
+      "key": "link-b4ae4f4939-1",
+      "kind": "link",
+      "label": "Link destination: More patient stories arrow_forward",
+      "section": "Every story starts with a first appointment.",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-b8cf626149",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": "More patient stories "
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Maria S. in her garden at golden hour",
+        "src": "/images/story-maria-1200.webp"
+      },
+      "key": "image-8f4268efd9",
+      "label": "Maria S. in her garden at golden hour",
+      "section": "Story detail media"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "stories/maria.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Maria’s Story - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "stories-maria",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Maria’s Story - Utah Cancer Specialists"
+}

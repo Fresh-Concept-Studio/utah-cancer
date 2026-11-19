@@ -1,0 +1,34 @@
+{
+  "order": 21,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.281.6860",
+      "attrs": {
+        "href": "tel:8012816860",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "/locations/index.html",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "radiation-oncology",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Radiation Oncology",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

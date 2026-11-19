@@ -1,0 +1,186 @@
+{
+  "order": 3,
+  "description": "Explore current career opportunities at Utah Cancer Specialists and apply to join a team dedicated to compassionate, community-based cancer care.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-986d6ff8e1",
+      "label": "Text",
+      "section": "Make a difference where care feels personal.",
+      "value": "Careers at Utah Cancer Specialists"
+    },
+    {
+      "key": "text-cb5b69a9d7",
+      "label": "Heading",
+      "section": "Make a difference where care feels personal.",
+      "value": "Make a difference where care feels personal."
+    },
+    {
+      "key": "text-652f034b3f",
+      "label": "Paragraph",
+      "section": "Make a difference where care feels personal.",
+      "value": "Join a team committed to helping patients and families find a clear path through cancer treatment, close to home."
+    },
+    {
+      "key": "text-780e706b16",
+      "label": "Link label",
+      "section": "Make a difference where care feels personal.",
+      "value": "View open positions "
+    },
+    {
+      "key": "text-5089c2f24f",
+      "label": "Link label",
+      "section": "Make a difference where care feels personal.",
+      "value": "Start an application "
+    },
+    {
+      "key": "text-0732259d24",
+      "label": "Text",
+      "section": "Make a difference where care feels personal.",
+      "value": "One team."
+    },
+    {
+      "key": "text-5193a030af",
+      "label": "Text",
+      "section": "Make a difference where care feels personal.",
+      "value": " Many ways to make care better."
+    },
+    {
+      "key": "text-eb9dd4b628",
+      "label": "Text",
+      "section": "Your work becomes part of someone’s care story.",
+      "value": "Work with purpose"
+    },
+    {
+      "key": "text-725ced202d",
+      "label": "Heading",
+      "section": "Your work becomes part of someone’s care story.",
+      "value": "Your work becomes part of someone’s care story."
+    },
+    {
+      "key": "text-e786482ecc",
+      "label": "Paragraph",
+      "section": "Your work becomes part of someone’s care story.",
+      "value": "Every UCS role contributes to the patient experience. Our nurses, pharmacy teams, patient advocates, records staff, outreach specialists, and front-office teams work together to make expert cancer care easier to reach and navigate."
+    },
+    {
+      "key": "text-bfcc1703c8",
+      "label": "Paragraph",
+      "section": "Your work becomes part of someone’s care story.",
+      "value": "Explore the current openings below. Each listing includes the role’s core responsibilities and qualifications."
+    },
+    {
+      "key": "text-4fc0e2bc80",
+      "label": "Text",
+      "section": "Your work becomes part of someone’s care story.",
+      "value": "Current"
+    },
+    {
+      "key": "text-89107bc05d",
+      "label": "Text",
+      "section": "Your work becomes part of someone’s care story.",
+      "value": "openings"
+    },
+    {
+      "key": "text-4de966a2be",
+      "label": "Text",
+      "section": "Find your place on the team.",
+      "value": "Open positions"
+    },
+    {
+      "key": "text-c3090d04f6",
+      "label": "Heading",
+      "section": "Find your place on the team.",
+      "value": "Find your place on the team."
+    },
+    {
+      "key": "text-56e7ba78ef",
+      "label": "Text",
+      "section": "Find your place on the team.",
+      "value": "Select a position to review its responsibilities and qualifications."
+    },
+    {
+      "key": "text-e770e6935a",
+      "label": "Text",
+      "section": "Find your place on the team.",
+      "value": "Utah Cancer Specialists is an equal opportunity employer."
+    },
+    {
+      "key": "text-337d9698e1",
+      "label": "Heading",
+      "section": "Find your place on the team.",
+      "value": "What you’ll do"
+    },
+    {
+      "key": "text-58a0ce009d",
+      "label": "Heading",
+      "section": "Find your place on the team.",
+      "value": "What you’ll bring"
+    },
+    {
+      "key": "text-a33297fa6c",
+      "label": "Link label",
+      "section": "Find your place on the team.",
+      "value": "Apply for this role "
+    },
+    {
+      "key": "text-ffdf59064d",
+      "label": "Text",
+      "section": "Take the next step with UCS.",
+      "value": "Ready to apply?"
+    },
+    {
+      "key": "text-380b4b7c43",
+      "label": "Heading",
+      "section": "Take the next step with UCS.",
+      "value": "Take the next step with UCS."
+    },
+    {
+      "key": "text-de1662d592",
+      "label": "Paragraph",
+      "section": "Take the next step with UCS.",
+      "value": "Use the secure employment application to share your experience and the position that interests you. Openings can change as roles are filled."
+    },
+    {
+      "key": "text-790f88c503",
+      "label": "Link label",
+      "section": "Take the next step with UCS.",
+      "value": "Open employment application "
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Utah Cancer Specialists team members together outdoors",
+        "src": "/images/team-ucs-group-960.webp"
+      },
+      "key": "image-0c89bb1083",
+      "label": "Utah Cancer Specialists team members together outdoors",
+      "section": "Make a difference where care feels personal."
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "careers.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Careers - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "careers-page",
+    "component": "careers",
+    "mainLandmark": true,
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/careers.css"
+    ]
+  },
+  "title": "Careers - Utah Cancer Specialists"
+}

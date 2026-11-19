@@ -1,0 +1,475 @@
+{
+  "order": 17,
+  "description": "Cancer-focused physical therapy at Utah Cancer Specialists Sandy Clinic. Personalized rehabilitation, exercise, and support during treatment and recovery.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-be504f616f",
+      "label": "Link label",
+      "section": "Pt skip",
+      "value": "Skip to main content"
+    },
+    {
+      "key": "link-5b9da5af13",
+      "kind": "link",
+      "label": "Link destination: Patient Resources /",
+      "section": "Physical Therapy",
+      "value": "/patient-resources.html"
+    },
+    {
+      "key": "text-ad047dab99",
+      "label": "Link label",
+      "section": "Physical Therapy",
+      "value": "Patient Resources "
+    },
+    {
+      "key": "text-889c0b24cd",
+      "label": "Heading",
+      "section": "Physical Therapy",
+      "value": "Physical Therapy"
+    },
+    {
+      "key": "text-01676726f5",
+      "label": "Text",
+      "section": "Physical Therapy",
+      "value": "Support for movement, strength, and everyday life."
+    },
+    {
+      "key": "text-c1238f6a16",
+      "label": "Paragraph",
+      "section": "Physical Therapy",
+      "value": "Cancer and its treatment can change how you feel and move. Our cancer-focused physical therapy program offers personalized support during treatment and recovery, with your everyday goals at the center of care."
+    },
+    {
+      "key": "link-c93aa885e3",
+      "kind": "link",
+      "label": "Link destination: phone Call 801.456.9898",
+      "section": "Physical Therapy",
+      "value": "tel:8014569898"
+    },
+    {
+      "key": "text-1ed531b166",
+      "label": "Link label",
+      "section": "Physical Therapy",
+      "value": " Call 801.456.9898"
+    },
+    {
+      "key": "text-8a04d23ec9",
+      "label": "Text",
+      "section": "Physical Therapy",
+      "value": "Physical therapy at Sandy Clinic"
+    },
+    {
+      "key": "text-27c64c7845",
+      "label": "Link label",
+      "section": "Physical Therapy",
+      "value": "How we help"
+    },
+    {
+      "key": "text-ed29ed2d38",
+      "label": "Link label",
+      "section": "Physical Therapy",
+      "value": "Your care"
+    },
+    {
+      "key": "text-ed26e3f4cf",
+      "label": "Link label",
+      "section": "Physical Therapy",
+      "value": "Location & appointments"
+    },
+    {
+      "key": "text-f07ac22a9e",
+      "label": "Link label",
+      "section": "Physical Therapy",
+      "value": "Common questions"
+    },
+    {
+      "key": "text-6df3b24210",
+      "label": "Text",
+      "section": "Care that supports your daily life.",
+      "value": "Cancer rehabilitation"
+    },
+    {
+      "key": "text-bef0b15e2f",
+      "label": "Heading",
+      "section": "Care that supports your daily life.",
+      "value": "Care that supports your daily life."
+    },
+    {
+      "key": "text-36b82abca3",
+      "label": "Paragraph",
+      "section": "Care that supports your daily life.",
+      "value": "The services of Cancer Rehabilitation Centers (CRC) are now part of Utah Cancer Specialists. This specialized program brings physical therapy and individualized exercise together to support people affected by cancer. We work to develop a plan of care as part of your oncology team."
+    },
+    {
+      "key": "text-7a63924368",
+      "label": "Heading",
+      "section": "Care that supports your daily life.",
+      "value": "Movement & mobility"
+    },
+    {
+      "key": "text-835c2d13bb",
+      "label": "Text",
+      "section": "Care that supports your daily life.",
+      "value": "Work on range of motion, balance, and the physical abilities that help you move through your day."
+    },
+    {
+      "key": "text-c56074ce67",
+      "label": "Heading",
+      "section": "Care that supports your daily life.",
+      "value": "Energy & endurance"
+    },
+    {
+      "key": "text-1bd785e865",
+      "label": "Paragraph",
+      "section": "Care that supports your daily life.",
+      "value": "Explore exercise and energy-conservation strategies to help manage fatigue and support daily activities."
+    },
+    {
+      "key": "text-1e153a3abe",
+      "label": "Heading",
+      "section": "Care that supports your daily life.",
+      "value": "Symptoms & function"
+    },
+    {
+      "key": "text-78d95d7c68",
+      "label": "Paragraph",
+      "section": "Care that supports your daily life.",
+      "value": "Receive support for pain, neuropathy, lymphedema, and other treatment-related challenges that affect everyday tasks."
+    },
+    {
+      "key": "text-3446799bc7",
+      "label": "Text",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "A plan built around you"
+    },
+    {
+      "key": "text-f2906cfecb",
+      "label": "Heading",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Your starting point."
+    },
+    {
+      "key": "text-522e32ed4e",
+      "label": "Heading",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Your goals. Your pace."
+    },
+    {
+      "key": "text-47b138bb81",
+      "label": "Paragraph",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Physical therapy can be part of care from diagnosis. Your therapist works with your oncology team to shape an individualized approach around your needs."
+    },
+    {
+      "key": "text-182cdb46f9",
+      "label": "Paragraph",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Whether your goal is returning to a familiar routine or feeling more confident with daily activities, care begins with understanding what matters to you and your specific needs. Our physical therapy is centered around individuals receiving and recovering from cancer treatments."
+    },
+    {
+      "key": "text-add532bf62",
+      "label": "Heading",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Start with an assessment"
+    },
+    {
+      "key": "text-a27aa85eda",
+      "label": "Paragraph",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Talk through your health history, previous activity, current abilities, and personal goals with a physical therapist."
+    },
+    {
+      "key": "text-793c5e69af",
+      "label": "Heading",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Build your care plan"
+    },
+    {
+      "key": "text-7aeca5cee3",
+      "label": "Text",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Your assessment guides a personalized program of physical therapy and exercise."
+    },
+    {
+      "key": "text-cc2f40d5c7",
+      "label": "Heading",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Move forward with support"
+    },
+    {
+      "key": "text-10987d6fa1",
+      "label": "Paragraph",
+      "section": "Your starting point.Your goals. Your pace.",
+      "value": "Recovery is different for everyone. Your care focuses on function and quality of life, without a one-size-fits-all timeline."
+    },
+    {
+      "key": "text-ed26e3f4cf-1",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Location & appointments"
+    },
+    {
+      "key": "text-d7c8b48e68",
+      "label": "Heading",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Visit us at Sandy Clinic."
+    },
+    {
+      "key": "text-4476e1d24a",
+      "label": "Paragraph",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Call to schedule a physical therapy assessment or ask about insurance."
+    },
+    {
+      "key": "text-90fcb67379",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "7390 Creek Rd., Ste. 104"
+    },
+    {
+      "key": "text-01ecc0df3f",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Sandy, UT 84093"
+    },
+    {
+      "key": "link-c93aa885e3-1",
+      "kind": "link",
+      "label": "Link destination: 801.456.9898",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "tel:8014569898"
+    },
+    {
+      "key": "text-58ef8bcadb",
+      "label": "Link label",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "801.456.9898"
+    },
+    {
+      "key": "text-5bfe84983e",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Monday"
+    },
+    {
+      "key": "text-642be2dff3",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "7:00 am – 3:00 pm"
+    },
+    {
+      "key": "text-0592070d28",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Tuesday – Thursday"
+    },
+    {
+      "key": "text-b6f96d6724",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "7:00 am – 6:00 pm"
+    },
+    {
+      "key": "text-4bd04b3d23",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Friday"
+    },
+    {
+      "key": "text-88d86b7721",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "By appointment only"
+    },
+    {
+      "key": "text-f434c5660c",
+      "label": "Text",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Hours are Mountain Time. Please call to confirm availability."
+    },
+    {
+      "key": "link-08b39556f5",
+      "kind": "link",
+      "label": "Link destination: Get directions arrow_outward",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "https://www.google.com/maps/search/?api=1&query=7390+Creek+Rd+Ste+104+Sandy+UT+84093"
+    },
+    {
+      "key": "text-9ecb740617",
+      "label": "Link label",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Get directions "
+    },
+    {
+      "key": "link-4f57e54c1f",
+      "kind": "link",
+      "label": "Link destination: Sandy Clinic details →",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "/locations/sandy-physical-therapy.html"
+    },
+    {
+      "key": "text-e7a3eef8ee",
+      "label": "Link label",
+      "section": "Visit us at Sandy Clinic.",
+      "value": "Sandy Clinic details "
+    },
+    {
+      "key": "text-0b72a20b94",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Before your visit"
+    },
+    {
+      "key": "text-6b3c8df317",
+      "label": "Heading",
+      "section": "A few common questions.",
+      "value": "A few common questions."
+    },
+    {
+      "key": "text-38a9c1ffe7",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Have another question?"
+    },
+    {
+      "key": "link-c93aa885e3-2",
+      "kind": "link",
+      "label": "Link destination: Talk with our team at 801.456.9898.",
+      "section": "A few common questions.",
+      "value": "tel:8014569898"
+    },
+    {
+      "key": "text-82b29230d5",
+      "label": "Link label",
+      "section": "A few common questions.",
+      "value": "Talk with our team at 801.456.9898."
+    },
+    {
+      "key": "text-9d0f24e6ac",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Do I need to finish cancer treatment first?"
+    },
+    {
+      "key": "text-bb6eb88fd0",
+      "label": "Paragraph",
+      "section": "A few common questions.",
+      "value": "No. The program supports patients during treatment as well as recovery. Talk with your care team about when physical therapy may be appropriate for you."
+    },
+    {
+      "key": "text-39ecd4677b",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "What happens at my first visit?"
+    },
+    {
+      "key": "text-7138a34e2e",
+      "label": "Paragraph",
+      "section": "A few common questions.",
+      "value": "A physical therapist assesses your current function and discusses your activity history and goals. This helps establish a care plan tailored to you."
+    },
+    {
+      "key": "text-4fd74340d8",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Will my insurance cover physical therapy?"
+    },
+    {
+      "key": "text-4f8c518562",
+      "label": "Paragraph",
+      "section": "A few common questions.",
+      "value": "The clinic works with a variety of insurance plans. Coverage and benefits vary, so call before your visit to confirm your plan and any requirements."
+    },
+    {
+      "key": "text-cb34f46269",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Can I see the facility before getting started?"
+    },
+    {
+      "key": "text-4b0a91da33",
+      "label": "Paragraph",
+      "section": "A few common questions.",
+      "value": "Yes. Call the clinic to arrange a tour and learn more about the cancer-focused rehabilitation setting."
+    },
+    {
+      "key": "text-b293cb36c5",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Is physical therapy beneficial for all cancer types?"
+    },
+    {
+      "key": "text-f356229c01",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Yes. All cancer types can benefit from a structured exercise program. Research shows that specific exercise can reduce the risk of recurrence."
+    },
+    {
+      "key": "text-a12227e920",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Do you see any patients under the age of 18?"
+    },
+    {
+      "key": "text-ac2667c555",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Yes."
+    },
+    {
+      "key": "text-ec950380d6",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "How long is a typical session?"
+    },
+    {
+      "key": "text-88107a37c5",
+      "label": "Text",
+      "section": "A few common questions.",
+      "value": "Typically, each session is scheduled for one hour. Length of session will be determined by level of energy."
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "A therapist supports a patient practicing a step exercise at Cancer Rehabilitation Centers",
+        "src": "/images/physical-therapy-care-960.webp"
+      },
+      "key": "image-9d4ac3403a",
+      "label": "A therapist supports a patient practicing a step exercise at Cancer Rehabilitation Centers",
+      "section": "Physical Therapy"
+    },
+    {
+      "image": {
+        "alt": "Exterior of the building that houses Sandy Clinic",
+        "src": "/images/location-sandy-clinic-640.webp"
+      },
+      "key": "image-e05d6fdf6b",
+      "label": "Exterior of the building that houses Sandy Clinic",
+      "section": "Visit us at Sandy Clinic."
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "physical-therapy.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Physical Therapy - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "physical-therapy",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/physical-therapy.css"
+    ]
+  },
+  "title": "Physical Therapy - Utah Cancer Specialists"
+}

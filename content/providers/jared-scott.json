@@ -1,0 +1,72 @@
+{
+  "order": 25,
+  "directory": {
+    "alt": "Jared E. Scott",
+    "category": "advanced-practitioners",
+    "order": 48,
+    "photo": "/images/provider-jared-scott.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Jared E. Scott, AG-ACNP, AG-ACCNS",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Jared E. Scott",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-jared-scott.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Jared Scott is a nurse practitioner with more than two decades of healthcare experience, including 22 years of service in the U.S. Navy as a Registered Nurse and Nurse Practitioner. His career has been primarily focused on emergency medicine, most recently serving as Department Head of the Emergency Department at U.S. Naval Hospital Okinawa in Japan.</p> <p class=\"provider-bio\">After years of caring for patients in emergency settings, Jared was drawn to oncology by the opportunity to build lasting relationships with patients. He values being able to support people over time, helping them navigate difficult diagnoses and the challenges that can come with treatment.</p> <p class=\"provider-bio\">Jared maintains national certifications as an Acute Care Nurse Practitioner and an Emergency Room/Trauma Clinical Nurse Specialist. His approach to care is centered on listening and collaboration. He takes the time to understand each patient’s concerns, assess their individual needs, and work together to develop a plan that is right for them.</p> <p class=\"provider-bio\">Born in Salt Lake City, Jared left Utah after graduate school when he joined the Navy. After completing his military service, he returned home to continue his healthcare career and serve patients in the community where he grew up.</p> <p class=\"provider-bio\">Outside of work, Jared enjoys staying active, spending time outdoors, and playing guitar. He is also a strong believer in the benefits of regular exercise and stretching for maintaining health and quality of life.</p>",
+      "id": "about",
+      "title": "About Jared Scott"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Brigham Young University, Provo, UT Master of Science, Nursing, University of Maryland, Baltimore, MD Master of Public Administration, Brigham Young University, Provo, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Adult-Gerontology Acute Care</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "jared-scott",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

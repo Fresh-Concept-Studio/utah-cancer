@@ -1,0 +1,86 @@
+{
+  "order": 1,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8012966665",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010",
+    "badge": "",
+    "county": "davis",
+    "hoursHtml": "Tue–Thu, 9:00 am – 5:00 pm",
+    "order": 0,
+    "phone": "801.296.6665"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Bountiful Clinic",
+    "src": "/images/location-bountiful-new.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.8862,
+    "lng": -111.8707
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 520 E. Medical Dr., Ste. 100, Bountiful, UT 84010</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.296.6665</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.296.6665",
+          "attrs": {
+            "href": "tel:8012966665",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Our Bountiful clinic is located on the Lakeview Hospital campus, bringing comprehensive medical oncology and hematology care to South Davis County. The clinic offers infusion therapy, laboratory services, and patient advocacy support in a comfortable, community-centered environment.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Free parking is available on the Lakeview Hospital campus. The cancer center entrance is accessible from the main parking area.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">520 E. Medical Dr., Ste. 100<br>Bountiful, UT 84010</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=520+E.+Medical+Dr.%2C+Ste.+100+Bountiful%2C+UT+84010\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8012966665\">801.296.6665</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5620</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8012966665\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "bountiful",
+  "subtitle": "Lakeview Hospital Campus",
+  "tag": "Medical Oncology",
+  "title": "Bountiful Clinic"
+}

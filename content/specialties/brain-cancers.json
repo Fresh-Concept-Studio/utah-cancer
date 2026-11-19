@@ -1,0 +1,92 @@
+{
+  "order": 6,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Common Cancers",
+  "description": "Advanced treatment for primary and metastatic brain tumors using radiation and systemic therapies.",
+  "directory": {
+    "category": "common",
+    "description": "Advanced treatment for primary and metastatic brain tumors using radiation and systemic therapies.",
+    "icon": "psychology",
+    "order": 9,
+    "searchName": "Brain Cancers"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-headneck-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Brain tumors — whether primary malignancies like gliomas or metastases from other cancers — require specialized, precise treatment. Our radiation oncologists offer stereotactic radiosurgery (SRS) and whole-brain radiation, while our medical oncologists manage systemic therapies tailored to the specific tumor type.</p> <p class=\"provider-bio\">We coordinate closely with neurosurgeons and neuro-oncology specialists to develop comprehensive treatment plans that address both the tumor and quality of life.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Persistent or worsening headaches</li> <li>Seizures (new onset)</li> <li>Vision or speech changes</li> <li>Balance or coordination problems</li> <li>Personality or cognitive changes</li> <li>Nausea or vomiting</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>Brain MRI with contrast, CT, and PET</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Biopsy &amp; Pathology</h3> <p>Surgical biopsy with molecular markers (IDH, MGMT, 1p/19q)</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Profiling</h3> <p>Genomic testing to guide targeted therapy options</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radar</span> Stereotactic Radiosurgery</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy (Temozolomide)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is stereotactic radiosurgery?</summary> <p>SRS delivers highly focused radiation beams to a precise target in the brain, often completing treatment in a single session. Despite the name, it does not involve incisions — it is a non-invasive radiation technique.</p> </details> <details class=\"sd-faq-item\"> <summary>Can brain metastases be treated?</summary> <p>Yes. Many patients with brain metastases from other cancers can be effectively treated with SRS, whole-brain radiation, or systemic therapies that cross the blood-brain barrier.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-2",
+  "slug": "brain-cancers",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Brain Cancers"
+}

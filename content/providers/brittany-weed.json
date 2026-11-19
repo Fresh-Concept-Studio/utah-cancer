@@ -1,0 +1,72 @@
+{
+  "order": 9,
+  "directory": {
+    "alt": "Brittany Weed",
+    "category": "advanced-practitioners",
+    "order": 42,
+    "photo": "/images/provider-brittany-weed.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "layton-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Brittany Weed, PA-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Brittany Weed",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-brittany-weed.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Brittany Weed’s interest in hematology and oncology began before PA school, while training and working in a medical laboratory setting. Through her undergraduate studies and laboratory experience, she became fascinated by the science of hematology and began looking for opportunities to learn more. Shadowing a physician assistant at Utah Cancer Specialists ultimately confirmed her decision to pursue advanced training as a PA and a career in oncology.</p> <p class=\"provider-bio\">What Brittany values most about her work are the relationships she builds with patients and the opportunity to provide support and comfort during challenging times. She finds purpose in knowing that the effort she puts into continually learning and growing as a provider directly impacts the care her patients receive.</p> <p class=\"provider-bio\">Brittany believes good patient care begins with listening. Taking the time to truly understand a patient’s questions, concerns, and individual experience allows her to provide thoughtful care while helping patients feel heard and supported.</p> <p class=\"provider-bio\">A Utah native, Brittany spent several years living outside the state before realizing how much she missed home—and the mountains. She eventually returned to Utah and is happy to be back where she grew up.</p> <p class=\"provider-bio\">Outside of work, Brittany enjoys ballet, reading, brunch, spending time in the mountains, and walking her dog.</p>",
+      "id": "about",
+      "title": "About Brittany Weed"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Medical Laboratory Science, Brigham Young University, Provo, UT Master of Health Science, Physician Assistant studies, Duke University Medical Center, Durham, North Carolina</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>The American Academy of Physicians Assistants</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "brittany-weed",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "order": 20,
+  "directory": {
+    "alt": "Heather A. McGivern",
+    "category": "advanced-practitioners",
+    "order": 44,
+    "photo": "/images/provider-heather-mcgivern.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "bountiful-clinic-2",
+    "ogden-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Heather A. McGivern, DNP, FNP-BC",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Heather A. McGivern",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-heather-mcgivern.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Heather Anne McGivern is a board-certified Family Nurse Practitioner with nearly 20 years of healthcare experience and a passion for caring for patients and families affected by cancer. As a lymphoma patient herself, Heather brings a personal understanding of the challenges that can come with a cancer diagnosis and the importance of feeling heard and supported throughout treatment.</p> <p class=\"provider-bio\">Heather began her healthcare career in 2006 and progressed from CNA and LPN to Registered Nurse, earning her nursing degree from Weber State University with high honors. She later earned her Bachelor of Science in Nursing from the University of Washington, graduating with faculty honors. In 2024, she completed her Doctor of Nursing Practice at Weber State University and became board-certified through the American Nurses Credentialing Center as a Family Nurse Practitioner.</p> <p class=\"provider-bio\">Her clinical background includes obstetrics, pre- and postoperative care, PACU, emergency medicine, and chronic pain management. Her approach to patient care combines evidence-based medicine with compassion, open communication, and collaboration across specialties.</p> <p class=\"provider-bio\">Heather’s own experience with lymphoma has strengthened her desire to care for people facing cancer. She believes that being a patient herself has made her a better listener and given her a deeper appreciation for the questions, concerns, and emotions patients and their families may experience.</p> <p class=\"provider-bio\">Born and raised in Utah, Heather has also lived in Pennsylvania, Virginia, and Washington before returning home to be closer to family. She and her husband have three children and a small farm filled with horses, chickens, cats, a dog, and a gecko.</p> <p class=\"provider-bio\">Outside of work, Heather enjoys running, kayaking, horseback riding, rodeos, concerts, and traveling. She especially enjoys running 5Ks and half marathons with her children and, as a former triathlete, hopes to return to triathlons in the future.</p>",
+      "id": "about",
+      "title": "About Heather McGivern"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Associate of Science in Nursing, Weber State University, Ogden, Utah<br>Bachelor of Science in Nursing, University of Washington, Tacoma, Washington<br>Doctor of Nursing Practice–Family Nurse Practitioner, Weber State University, Ogden, Utah</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Nurses Credentialing Center (ANCC)</li> <li>Family Nurse Practitioner–Board Certified (FNP-BC)</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "heather-mcgivern",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

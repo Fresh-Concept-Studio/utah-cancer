@@ -1,0 +1,32 @@
+{
+  "order": 8,
+  "description": "Find immediate safety, mental health crisis, domestic violence, and Utah community support resources.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Immediate and confidential help",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<div class=\"resource-emergency\"><strong>In immediate danger?</strong><span>Call <a href=\"tel:911\">911</a> now.</span></div>\n      <h2>Mental health crisis support</h2>\n      <p>Call or text <a href=\"tel:988\">988</a> to reach the 988 Suicide &amp; Crisis Lifeline. It is free, confidential, and available 24 hours a day. You may also <a href=\"https://988lifeline.org/\" target=\"_blank\" rel=\"noopener\">chat online with 988</a>.</p>\n      <h2>Domestic violence support</h2>\n      <p>Call the Utah Domestic Violence LINKLine at <a href=\"tel:18008975465\">1-800-897-LINK (5465)</a>. The statewide line is available 24/7 and can connect you with shelter, counseling, transportation, advocacy, and other support.</p>\n      <h2>Other community help</h2>\n      <p>Dial <a href=\"tel:211\">211</a> or visit <a href=\"https://211utah.org/\" target=\"_blank\" rel=\"noopener\">211 Utah</a> for local housing, food, legal, medical, transportation, and mental health resources.</p>",
+  "icon": "support_agent",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "If you or someone you care about feels unsafe, confidential help is available now.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/supportive-resources/",
+      "label": "All practical support resources"
+    },
+    {
+      "href": "/supportivecare/",
+      "label": "Supportive care"
+    }
+  ],
+  "seoTitle": "Personal Safety & Crisis Resources in Utah | UCS",
+  "slug": "personalsafety",
+  "title": "Personal Safety & Crisis Resources"
+}

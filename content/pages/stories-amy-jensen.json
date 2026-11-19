@@ -1,0 +1,184 @@
+{
+  "order": 26,
+  "description": "Amy navigated a breast cancer diagnosis during pregnancy with support from her family and care team.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "link-b4ae4f4939",
+      "kind": "link",
+      "label": "Link destination: arrow_back All Patient Stories",
+      "section": "Facing cancer while growing a family",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-ea662bbb0e",
+      "label": "Link label",
+      "section": "Facing cancer while growing a family",
+      "value": " All Patient Stories"
+    },
+    {
+      "key": "text-00e2e91ac8",
+      "label": "Text",
+      "section": "Facing cancer while growing a family",
+      "value": "Breast cancer"
+    },
+    {
+      "key": "text-3fa8f059d4",
+      "label": "Heading",
+      "section": "Facing cancer while growing a family",
+      "value": "Facing cancer while growing a family"
+    },
+    {
+      "key": "text-04db637ad5",
+      "label": "Text",
+      "section": "Facing cancer while growing a family",
+      "value": "Amy Jensen · Originally published "
+    },
+    {
+      "key": "text-c3520208c5",
+      "label": "Text",
+      "section": "Facing cancer while growing a family",
+      "value": "July 1, 2019"
+    },
+    {
+      "key": "text-13697216ec",
+      "label": "Paragraph",
+      "section": "Facing cancer while growing a family",
+      "value": "Amy Jensen was hoping for another baby when persistent changes in her breast led her to seek further testing. On the morning of a planned biopsy, she learned she was pregnant. She later pursued the biopsy at around thirteen weeks of pregnancy and was diagnosed with HER2-positive invasive ductal carcinoma."
+    },
+    {
+      "key": "text-e273da0cf1",
+      "label": "Paragraph",
+      "section": "Facing cancer while growing a family",
+      "value": "Amy and her husband, Chad, shared the news with their daughters. Alongside concerns about treatment, Amy worried about how losing her hair might affect her children."
+    },
+    {
+      "key": "text-f15b090c8d",
+      "label": "Paragraph",
+      "section": "Facing cancer while growing a family",
+      "value": "At eighteen weeks pregnant, Amy underwent surgery with Dr. Teresa Reading at IMC Hospital, including a mastectomy and reconstruction. Her subsequent care at Utah Cancer Specialists included chemotherapy and Herceptin."
+    },
+    {
+      "key": "text-bcf1cc2bd9",
+      "label": "Text",
+      "section": "Facing cancer while growing a family",
+      "value": "Chad researched scalp cooling and connected with Dr. Gregory Litton. Amy used the "
+    },
+    {
+      "key": "link-62e00f868a",
+      "kind": "link",
+      "label": "Link destination: DigniCap system",
+      "section": "Facing cancer while growing a family",
+      "value": "/dignicap/"
+    },
+    {
+      "key": "text-61aeb63231",
+      "label": "Link label",
+      "section": "Facing cancer while growing a family",
+      "value": "DigniCap system"
+    },
+    {
+      "key": "text-82389512aa",
+      "label": "Paragraph",
+      "section": "Facing cancer while growing a family",
+      "value": " during treatment. Although initially anxious about discomfort, she found it more tolerable than expected, and Dr. Litton observed that she was retaining her hair."
+    },
+    {
+      "key": "text-e8459f52dc",
+      "label": "Paragraph",
+      "section": "Facing cancer while growing a family",
+      "value": "The July 2019 account reported that Amy was cancer-free. Her family had also welcomed Jacob, born in December 2018."
+    },
+    {
+      "key": "text-8f71efb1ef",
+      "label": "Text",
+      "section": "Facing cancer while growing a family",
+      "value": "Adapted from the original Utah Cancer Specialists article. Photo from Utah Cancer Specialists."
+    },
+    {
+      "key": "text-951656865c",
+      "label": "Paragraph",
+      "section": "Facing cancer while growing a family",
+      "value": "This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome."
+    },
+    {
+      "key": "link-9ca77d9084",
+      "kind": "link",
+      "label": "Link destination: Read Dukhi’s story arrow_forward",
+      "section": "Facing cancer while growing a family",
+      "value": "/stories/dukhi-hong.html"
+    },
+    {
+      "key": "text-f1fbaf6214",
+      "label": "Link label",
+      "section": "Facing cancer while growing a family",
+      "value": "Read Dukhi’s story "
+    },
+    {
+      "key": "text-03a7ccbd43",
+      "label": "Heading",
+      "section": "Every story starts with a first appointment.",
+      "value": "Every story starts with a first appointment."
+    },
+    {
+      "key": "link-686a9a3e68",
+      "kind": "link",
+      "label": "Link destination: phone Contact Us",
+      "section": "Every story starts with a first appointment.",
+      "value": "/contact.html"
+    },
+    {
+      "key": "text-3127f37906",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": " Contact Us"
+    },
+    {
+      "key": "link-b4ae4f4939-1",
+      "kind": "link",
+      "label": "Link destination: More patient stories arrow_forward",
+      "section": "Every story starts with a first appointment.",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-b8cf626149",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": "More patient stories "
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Amy Jensen with her husband Chad and their son Jacob",
+        "src": "/images/story-amy-jensen.jpg"
+      },
+      "key": "image-ce45fd460b",
+      "label": "Amy Jensen with her husband Chad and their son Jacob",
+      "section": "Story detail media"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "stories/amy-jensen.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Amy’s Story - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "stories-amy-jensen",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/stories-written.css"
+    ]
+  },
+  "title": "Amy’s Story - Utah Cancer Specialists"
+}

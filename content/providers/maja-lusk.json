@@ -1,0 +1,72 @@
+{
+  "order": 38,
+  "directory": {
+    "alt": "Maja L. Lusk",
+    "category": "advanced-practitioners",
+    "order": 54,
+    "photo": "/images/provider-maja-lusk.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Maja L. Lusk, FNP, DNP",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Maja L. Lusk",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-maja-lusk.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Maja L. Lusk, FNP, DNP is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Lusk"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, University of Utah College of Nursing, SLC UT Doctorate of Nursing, Weber State University, Ogden, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Academy of Nurse Practitioners</li> <li>American Nurse Practitioners Association</li> <li>Utah Nurse Practitioner Association</li> <li>Sigma Theta Tau, International Honors Society of Nursing</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "maja-lusk",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

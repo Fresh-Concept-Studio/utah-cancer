@@ -1,0 +1,92 @@
+{
+  "order": 3,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Blood & Bone Marrow",
+  "description": "Comprehensive care for leukemia, lymphoma, and other blood disorders with advanced treatment options.",
+  "directory": {
+    "category": "blood",
+    "description": "Comprehensive care for leukemia, lymphoma, and other blood disorders.",
+    "icon": "bloodtype",
+    "order": 10,
+    "searchName": "Blood Cancers"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-blood-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Blood cancers encompass a broad group of malignancies including leukemias, lymphomas, and plasma cell disorders. Our hematology-oncology team has deep expertise in diagnosing and treating the full spectrum of blood cancers, from common conditions to rare subtypes.</p> <p class=\"provider-bio\">We use advanced molecular diagnostics to precisely classify each patient's disease and match them with the most effective treatment — including novel immunotherapies, targeted agents, and clinical trials.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Persistent fatigue and weakness</li> <li>Frequent or severe infections</li> <li>Unexplained bruising or bleeding</li> <li>Swollen lymph nodes</li> <li>Night sweats and fevers</li> <li>Unintended weight loss</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Blood Work</h3> <p>Complete blood count, peripheral smear, and flow cytometry</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Bone Marrow Biopsy</h3> <p>Aspirate and core biopsy with molecular studies</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>PET/CT for staging</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">labs</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Cytogenetics</h3> <p>Chromosome analysis and FISH testing</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">self_improvement</span> Supportive Care</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>What is the difference between leukemia and lymphoma?</summary> <p>Leukemia originates in the bone marrow and blood, while lymphoma begins in the lymphatic system. Both are blood cancers but require different treatment approaches.</p> </details> <details class=\"sd-faq-item\"> <summary>Do you coordinate stem cell transplants?</summary> <p>Yes. For patients who need stem cell transplantation, we coordinate referrals to transplant centers and manage pre- and post-transplant care locally.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar",
+  "slug": "blood-cancers",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Blood Cancers"
+}

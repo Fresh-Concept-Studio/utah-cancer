@@ -1,0 +1,72 @@
+{
+  "order": 49,
+  "directory": {
+    "alt": "Scott J. Samuelson",
+    "category": "medical-oncology",
+    "order": 15,
+    "photo": "/images/provider-scott-samuelson.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "salt-lake-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "Scott J. Samuelson, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Scott J. Samuelson",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-scott-samuelson.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Dr. Scott Samuelson earned his medical degree from the University of Utah, completed his Internal Medicine residency at Duke University, and went on to complete fellowship training at Huntsman Cancer Institute, where he also spent a year on faculty. He joined Utah Cancer Specialists in 2009.</p> <p class=\"provider-bio\">His interest in oncology began during residency, when he discovered how much he valued working with cancer patients and their families. He considers it a privilege to help patients navigate one of the most difficult times in their lives.</p> <p class=\"provider-bio\">Dr. Samuelson treats a wide range of cancers and blood disorders, with particular expertise in genitourinary cancers, including advanced prostate, bladder, kidney, and testicular cancers. He also has significant experience caring for women with gynecologic cancers and maintains strong relationships with local and national experts in these areas.</p> <p class=\"provider-bio\">His approach to care centers on education, honesty, and shared decision-making. Dr. Samuelson believes patients should fully understand their diagnosis and treatment options so they can make informed decisions about their care. While he believes in treating cancer aggressively when appropriate, he also recognizes that sometimes a less intensive approach may best support a patient’s goals and quality of life.</p> <p class=\"provider-bio\">He is especially grateful for the team he works alongside at Utah Cancer Specialists and the way they make patients feel cared for and supported.</p> <p class=\"provider-bio\">A lifelong Utahn, Dr. Samuelson grew up in Holladay and has lived in Davis County with his family since 2006. Outside of work, he enjoys spending time with his family, especially his granddaughter—his dogs, his faith, and following sports.</p>",
+      "id": "about",
+      "title": "About Dr. Samuelson"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, University of Utah School of Medicine, Salt Lake City, UT</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Duke University School of Medicine, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Hematology / Oncology, Huntsman Cancer Institute, University of Utah School of Medicine. SLC, UT</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> <li>American Board of Hematology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "scott-samuelson",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

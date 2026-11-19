@@ -1,0 +1,36 @@
+{
+  "order": 36,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 385.375.2700",
+      "attrs": {
+        "href": "tel:3853752700",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=395+W.+Cougar+Blvd.%2C+Ste.+104+Sorenson+Legacy+Tower%2C+Bldg.+4+Provo%2C+UT+84604",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "Sorenson Legacy Tower, Bldg. 4<br>395 W. Cougar Blvd., Ste. 104<br>Provo, UT 84604",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "utah-valley-hospital",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Provo Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": "Utah Valley Hospital"
+}

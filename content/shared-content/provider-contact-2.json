@@ -1,0 +1,17 @@
+{
+  "order": 2,
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:2087853800\">208.785.3800</a></p> <a href=\"/contact.html\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">mail</span> Send a Message</a> </div>",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "provider-contact-2",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "title": "provider contact 2"
+}

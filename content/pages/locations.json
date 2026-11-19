@@ -1,0 +1,93 @@
+{
+  "order": 12,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-9f076f54d0",
+      "label": "Heading",
+      "section": "Our Locations",
+      "value": "Our Locations"
+    },
+    {
+      "key": "text-6b8ff54ff2",
+      "label": "Text",
+      "section": "Loc grid section",
+      "value": "No clinics match your search. Try a different keyword or county."
+    },
+    {
+      "key": "text-9264b0fa3e",
+      "label": "Text",
+      "section": "Loc grid section",
+      "value": "View details "
+    },
+    {
+      "key": "text-2104dd5591",
+      "label": "Text",
+      "section": "Loc map band",
+      "value": "Add a Google Maps API key to "
+    },
+    {
+      "key": "text-4814aef610",
+      "label": "Text",
+      "section": "Loc map band",
+      "value": "window.UCS_GOOGLE_MAPS_KEY"
+    },
+    {
+      "key": "text-64d2f058b2",
+      "label": "Text",
+      "section": "Loc map band",
+      "value": " in "
+    },
+    {
+      "key": "text-a0b16ec9af",
+      "label": "Text",
+      "section": "Loc map band",
+      "value": "locations/index.html"
+    },
+    {
+      "key": "text-7e3f7ac771",
+      "label": "Text",
+      "section": "Loc map band",
+      "value": " to display the interactive map."
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "locations/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Our Locations - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "locations-index",
+    "cta": {
+      "heading": "Not sure which clinic to visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [
+      "/scripts/locations.js"
+    ],
+    "styles": [
+      "/styles.css",
+      "/provider.css"
+    ]
+  },
+  "title": "Our Locations - Utah Cancer Specialists"
+}

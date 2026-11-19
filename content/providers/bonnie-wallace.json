@@ -1,0 +1,72 @@
+{
+  "order": 6,
+  "directory": {
+    "alt": "Bonnie L. Wallace",
+    "category": "advanced-practitioners",
+    "order": 40,
+    "photo": "/images/provider-bonnie-wallace.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "intermountain-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Bonnie L. Wallace, FNP-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Bonnie L. Wallace",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-bonnie-wallace.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Bonnie L. Wallace, FNP-C is a member of the Advanced Practitioner team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Wallace"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science, Nursing, Auburn University Family Nurse Practitioner, Rocky Mountain University of Health Professions</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Board Certified</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "bonnie-wallace",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

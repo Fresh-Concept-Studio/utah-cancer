@@ -1,0 +1,36 @@
+{
+  "order": 19,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 385.423.2855",
+      "attrs": {
+        "href": "tel:3854232855",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=425+E.+5350+S.%2C+Ste.+101+Ogden%2C+UT+84405",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "425 E. 5350 S., Ste. 101<br>Ogden, UT 84405",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "ogden-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Ogden Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

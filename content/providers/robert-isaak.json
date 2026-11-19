@@ -1,0 +1,72 @@
+{
+  "order": 47,
+  "directory": {
+    "alt": "Robert J. Isaak",
+    "category": "radiation-oncology",
+    "order": 32,
+    "photo": "/images/provider-robert-isaak.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "eastern-idaho-regional-medical-center"
+  ],
+  "mediaHighlights": null,
+  "name": "Robert J. Isaak, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Robert J. Isaak",
+    "class": "provider-hero-photo",
+    "src": "/images/provider-cutouts/provider-robert-isaak.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Robert J. Isaak, MD is a member of the Radiation Oncology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Isaak"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Idaho State University, Pocatello, ID Doctor of medicine, University of Nevada, Reno, NV</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Radiation Oncology, Wayne State University, Detroit MI</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>ABR Radiation Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "robert-isaak",
+  "specialty": "Radiation Oncology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

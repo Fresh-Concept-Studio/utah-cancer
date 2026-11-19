@@ -1,0 +1,247 @@
+{
+  "order": 9,
+  "description": "Explore current Phase II and Phase III clinical trials available through Utah Cancer Specialists.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-e2f6d61a65",
+      "label": "Text",
+      "section": "Late-Phase Clinical Trials",
+      "value": "UCS Clinical Research"
+    },
+    {
+      "key": "text-fc2f60cdf5",
+      "label": "Heading",
+      "section": "Late-Phase Clinical Trials",
+      "value": "Late-Phase Clinical Trials"
+    },
+    {
+      "key": "text-5c24775a49",
+      "label": "Paragraph",
+      "section": "Late-Phase Clinical Trials",
+      "value": "Phase II and III research bringing the latest therapeutic advances directly to patients and communities across the Intermountain West."
+    },
+    {
+      "key": "text-d3e4690de2",
+      "label": "Link label",
+      "section": "Late-Phase Clinical Trials",
+      "value": "Explore Active Trials "
+    },
+    {
+      "key": "link-0567610c7e",
+      "kind": "link",
+      "label": "Link destination: mail Contact Research",
+      "section": "Late-Phase Clinical Trials",
+      "value": "mailto:research@utahcancer.com"
+    },
+    {
+      "key": "text-4a79cd388b",
+      "label": "Link label",
+      "section": "Late-Phase Clinical Trials",
+      "value": " Contact Research"
+    },
+    {
+      "key": "link-ac92c0ebdf",
+      "kind": "link",
+      "label": "Link destination: Clinical Trials",
+      "section": "Lp breadcrumbs",
+      "value": "/clinical-trials.html"
+    },
+    {
+      "key": "text-65221b74ce",
+      "label": "Link label",
+      "section": "Lp breadcrumbs",
+      "value": "Clinical Trials"
+    },
+    {
+      "key": "text-65cdaaab89",
+      "label": "Text",
+      "section": "Lp breadcrumbs",
+      "value": "Late-Phase Trials"
+    },
+    {
+      "key": "text-047bdcb1fd",
+      "label": "Text",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "Phase II–III Research Program"
+    },
+    {
+      "key": "text-c3a8994e60",
+      "label": "Heading",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "Making clinical trials more accessible to every community we serve."
+    },
+    {
+      "key": "text-fb5d8663f5",
+      "label": "Paragraph",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "Our Utah Cancer Specialists Clinical Research Program travels throughout our many locations in Utah to bring pioneering and impactful health care research directly to our communities and patients. We know a diagnosis of cancer can be a stressful time for you and your family. Let us assist you in enrolling in a clinical trial and guide you through every step of the process."
+    },
+    {
+      "key": "text-e21e95bec2",
+      "label": "Heading",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "About the UCS Cancer Research Program"
+    },
+    {
+      "key": "text-5066453385",
+      "label": "Paragraph",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "We are committed to bringing the latest breakthrough cancer treatments to our patients. We manage more than 50 active clinical trials on an ongoing basis, with access across our clinics, including rural communities."
+    },
+    {
+      "key": "link-3277871004",
+      "kind": "link",
+      "label": "Link destination: phone 801.281.6864",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "tel:8012816864"
+    },
+    {
+      "key": "text-fcc72d26e9",
+      "label": "Link label",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": " 801.281.6864"
+    },
+    {
+      "key": "link-0567610c7e-1",
+      "kind": "link",
+      "label": "Link destination: mail research@utahcancer.com",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": "mailto:research@utahcancer.com"
+    },
+    {
+      "key": "text-d081793d07",
+      "label": "Link label",
+      "section": "Making clinical trials more accessible to every community we serve.",
+      "value": " research@utahcancer.com"
+    },
+    {
+      "key": "text-f74d2ae87d",
+      "label": "Text",
+      "section": "Research capabilities built around patient access.",
+      "value": "Our clinical trial offerings"
+    },
+    {
+      "key": "text-8476ab1d93",
+      "label": "Heading",
+      "section": "Research capabilities built around patient access.",
+      "value": "Research capabilities built around patient access."
+    },
+    {
+      "key": "text-1018610888",
+      "label": "Heading",
+      "section": "Research capabilities built around patient access.",
+      "value": "Biologics / Immuno-Oncology"
+    },
+    {
+      "key": "text-9437fb57d7",
+      "label": "Text",
+      "section": "Research capabilities built around patient access.",
+      "value": "Utilizing the latest technologies in precision medicine to target cancer."
+    },
+    {
+      "key": "text-ae33d37c5f",
+      "label": "Heading",
+      "section": "Research capabilities built around patient access.",
+      "value": "Theranostics / PET / CT"
+    },
+    {
+      "key": "text-26e6334703",
+      "label": "Text",
+      "section": "Research capabilities built around patient access.",
+      "value": "Antibody- and antigen-targeted therapy used to deliver a radioactive payload to cancer cells."
+    },
+    {
+      "key": "text-118babcc2c",
+      "label": "Heading",
+      "section": "Research capabilities built around patient access.",
+      "value": "Inpatient Capabilities"
+    },
+    {
+      "key": "text-eabda1a024",
+      "label": "Text",
+      "section": "Research capabilities built around patient access.",
+      "value": "Partnering with hospitals in our community to make promising research more accessible."
+    },
+    {
+      "key": "text-9c1c6f7afa",
+      "label": "Text",
+      "section": "Active Clinical Trials",
+      "value": "Phase II / III Research Program"
+    },
+    {
+      "key": "text-8ab1c2475e",
+      "label": "Heading",
+      "section": "Active Clinical Trials",
+      "value": "Active Clinical Trials"
+    },
+    {
+      "key": "text-37d2ef4a28",
+      "label": "Text",
+      "section": "Active Clinical Trials",
+      "value": " are currently listed. Select a cancer type to narrow the results."
+    },
+    {
+      "key": "text-7bc90c8f72",
+      "label": "Text",
+      "section": "Active Clinical Trials",
+      "value": "Filter by cancer type"
+    },
+    {
+      "key": "text-86caab6cbb",
+      "label": "Paragraph",
+      "section": "Active Clinical Trials",
+      "value": "Trial availability and eligibility can change. Review the linked ClinicalTrials.gov record and contact the UCS research team for the most current enrollment information."
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "",
+        "src": "/images/specialty-lung-clinical-hero.webp"
+      },
+      "key": "image-561ca38b27",
+      "label": "Specialty lung clinical hero",
+      "section": "Late-Phase Clinical Trials"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "late-phase-trials.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Late-Phase Clinical Trials - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "late-phase-trials",
+    "cta": {
+      "heading": "Could a clinical trial be right for you?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">mail</span> Contact the Research Team",
+          "attrs": {
+            "href": "mailto:research@utahcancer.com",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [
+      "/scripts/late-phase-trials.js"
+    ],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/late-phase-trials.css"
+    ]
+  },
+  "title": "Late-Phase Clinical Trials - Utah Cancer Specialists",
+  "trialRecordsMigrated": true
+}

@@ -1,0 +1,221 @@
+{
+  "order": 15,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-74374531cb",
+      "label": "Heading",
+      "section": "Patient Education",
+      "value": "Patient Education"
+    },
+    {
+      "key": "text-98937754c7",
+      "label": "Paragraph",
+      "section": "Patient Education",
+      "value": "Knowledge is power. Understanding your diagnosis and treatment options can ease uncertainty and help you make confident decisions about your care."
+    },
+    {
+      "key": "text-8446e741a6",
+      "label": "Heading",
+      "section": "Learn About Your Cancer",
+      "value": "Learn About Your Cancer"
+    },
+    {
+      "key": "text-4bf434383e",
+      "label": "Paragraph",
+      "section": "Learn About Your Cancer",
+      "value": "Our specialists have curated educational resources to help you and your loved ones understand your cancer type, available treatments, potential side effects, and what to expect at each stage of your care."
+    },
+    {
+      "key": "text-2e337d5616",
+      "label": "Paragraph",
+      "section": "Learn About Your Cancer",
+      "value": "We believe informed patients are empowered patients. Whether you’re researching a new diagnosis or preparing for a specific treatment, the resources below can help guide your understanding."
+    },
+    {
+      "key": "link-f5e6f072f6",
+      "kind": "link",
+      "label": "Link destination: biotechTypes of Cancer We TreatDetailed information on 28+ cancer",
+      "section": "Learn About Your Cancer",
+      "value": "/specialties/index.html"
+    },
+    {
+      "key": "text-5760993e13",
+      "label": "Heading",
+      "section": "Learn About Your Cancer",
+      "value": "Types of Cancer We Treat"
+    },
+    {
+      "key": "text-3fcd4fed2b",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Detailed information on 28+ cancer types and blood disorders."
+    },
+    {
+      "key": "link-6db0994629",
+      "kind": "link",
+      "label": "Link destination: medicationTreatment OptionsChemotherapy, radiation, immunotherapy",
+      "section": "Learn About Your Cancer",
+      "value": "/treatment-options.html"
+    },
+    {
+      "key": "text-84e29a2735",
+      "label": "Heading",
+      "section": "Learn About Your Cancer",
+      "value": "Treatment Options"
+    },
+    {
+      "key": "text-8cbe12a81c",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Chemotherapy, radiation, immunotherapy, targeted therapy, and more."
+    },
+    {
+      "key": "link-165c983968",
+      "kind": "link",
+      "label": "Link destination: radiologyRadiation OncologyTrueBeam technology, PET/CT imaging, a",
+      "section": "Learn About Your Cancer",
+      "value": "/radiation-oncology.html"
+    },
+    {
+      "key": "text-042a35360e",
+      "label": "Heading",
+      "section": "Learn About Your Cancer",
+      "value": "Radiation Oncology"
+    },
+    {
+      "key": "text-065f29089a",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "TrueBeam technology, PET/CT imaging, and treatment techniques."
+    },
+    {
+      "key": "link-ac92c0ebdf",
+      "kind": "link",
+      "label": "Link destination: scienceClinical TrialsHow trials work, what to expect, and how to",
+      "section": "Learn About Your Cancer",
+      "value": "/clinical-trials.html"
+    },
+    {
+      "key": "text-65221b74ce",
+      "label": "Heading",
+      "section": "Learn About Your Cancer",
+      "value": "Clinical Trials"
+    },
+    {
+      "key": "text-8d6aa373d3",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "How trials work, what to expect, and how to determine eligibility."
+    },
+    {
+      "key": "text-01dfb82161",
+      "label": "Heading",
+      "section": "Learn About Your Cancer",
+      "value": "Patient Portal"
+    },
+    {
+      "key": "text-6fde40628a",
+      "label": "Paragraph",
+      "section": "Learn About Your Cancer",
+      "value": "Utah Cancer Specialists offers secure, instant access to your Personal Health Record (PHR) through our Patient Portal. Your portal includes:"
+    },
+    {
+      "key": "text-21dc3d50df",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Your diagnosis and treatment information"
+    },
+    {
+      "key": "text-029fa7464f",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Current medications and dosages"
+    },
+    {
+      "key": "text-fa35a043b5",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Lab results and imaging reports"
+    },
+    {
+      "key": "text-172a1f605c",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Educational resources about your condition"
+    },
+    {
+      "key": "text-44d7541901",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Online support and discussion groups"
+    },
+    {
+      "key": "text-e7d43587c0",
+      "label": "Text",
+      "section": "Learn About Your Cancer",
+      "value": "Secure messaging with your care team"
+    },
+    {
+      "key": "link-f9e79993d9",
+      "kind": "link",
+      "label": "Link destination: login Log In to Patient Portal",
+      "section": "Learn About Your Cancer",
+      "value": "https://www.navigatingcare.com/navigatingcare/"
+    },
+    {
+      "key": "text-9e7f02d46d",
+      "label": "Link label",
+      "section": "Learn About Your Cancer",
+      "value": " Log In to Patient Portal"
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Hands at a sunlit desk with a tablet, notebook, and study materials",
+        "src": "/images/generated/patient-education-hero-960.webp"
+      },
+      "key": "image-1480ddbcd1",
+      "label": "Hands at a sunlit desk with a tablet, notebook, and study materials",
+      "section": "Learn About Your Cancer"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "patient-education.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Patient Education - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "patient-education",
+    "cta": {
+      "heading": "Questions about your care? We’re here to help.",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/patient-education.css"
+    ]
+  },
+  "title": "Patient Education - Utah Cancer Specialists"
+}

@@ -1,0 +1,184 @@
+{
+  "order": 28,
+  "description": "At 84, Dukhi marked her 100th immunotherapy treatment with the people who had supported her along the way.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "link-b4ae4f4939",
+      "kind": "link",
+      "label": "Link destination: arrow_back All Patient Stories",
+      "section": "A milestone of hope",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-ea662bbb0e",
+      "label": "Link label",
+      "section": "A milestone of hope",
+      "value": " All Patient Stories"
+    },
+    {
+      "key": "text-c2c63e8777",
+      "label": "Text",
+      "section": "A milestone of hope",
+      "value": "Small cell lung cancer"
+    },
+    {
+      "key": "text-0a698fa025",
+      "label": "Heading",
+      "section": "A milestone of hope",
+      "value": "A milestone of hope"
+    },
+    {
+      "key": "text-4d6517c881",
+      "label": "Text",
+      "section": "A milestone of hope",
+      "value": "Dukhi Hong · Originally published "
+    },
+    {
+      "key": "text-4e6263d5aa",
+      "label": "Text",
+      "section": "A milestone of hope",
+      "value": "March 31, 2025"
+    },
+    {
+      "key": "text-b28ecdb79e",
+      "label": "Paragraph",
+      "section": "A milestone of hope",
+      "value": "In June 2019, a seizure brought Dukhi Hong to the emergency room. Doctors diagnosed small cell lung cancer that had spread to her brain, and estimated that she had six to nine months to live."
+    },
+    {
+      "key": "text-a965119214",
+      "label": "Paragraph",
+      "section": "A milestone of hope",
+      "value": "Six years later, at age 84, she reached her 100th immunotherapy treatment at Utah Cancer Specialists. Visits every three to four weeks had become occasions for her family to gather and celebrate time together."
+    },
+    {
+      "key": "text-419e03de45",
+      "label": "Paragraph",
+      "section": "A milestone of hope",
+      "value": "Her oncologist, Dr. Stephan Kendall, described the milestone as extraordinary. The March 2025 account reported no signs of cancer in her lungs and minimal activity in her brain. Her response was unusual, not a prediction of how others would respond."
+    },
+    {
+      "key": "text-0d14fb0b14",
+      "label": "Paragraph",
+      "section": "A milestone of hope",
+      "value": "Dukhi moved from South Korea to Utah in 1965 and later raised four children as a single mother. Her daughter, Mitzi Maughan, described her as a source of strength and inspiration."
+    },
+    {
+      "key": "text-c1fab70d22",
+      "label": "Paragraph",
+      "section": "A milestone of hope",
+      "value": "For the family, the hundredth treatment meant more than a number: it marked years of shared memories, and the chance for more time with someone they loved."
+    },
+    {
+      "key": "text-db54b09b61",
+      "label": "Text",
+      "section": "A milestone of hope",
+      "value": "Adapted from the original Utah Cancer Specialists article. Original reporting credited to "
+    },
+    {
+      "key": "link-73a1f6b647",
+      "kind": "link",
+      "label": "Link destination: ABC4",
+      "section": "A milestone of hope",
+      "value": "https://www.abc4.com/news/wasatch-front/utah-woman-100-cancer-treatments/"
+    },
+    {
+      "key": "text-4a2875a455",
+      "label": "Link label",
+      "section": "A milestone of hope",
+      "value": "ABC4"
+    },
+    {
+      "key": "text-1fdd80798f",
+      "label": "Text",
+      "section": "A milestone of hope",
+      "value": ". Photo from Utah Cancer Specialists."
+    },
+    {
+      "key": "text-951656865c",
+      "label": "Paragraph",
+      "section": "A milestone of hope",
+      "value": "This account reflects the original publication date. Each patient’s experience is different; individual results do not predict another person’s outcome."
+    },
+    {
+      "key": "link-cf52a071c3",
+      "kind": "link",
+      "label": "Link destination: Read Amy’s story arrow_forward",
+      "section": "A milestone of hope",
+      "value": "/stories/amy-jensen.html"
+    },
+    {
+      "key": "text-217b252d14",
+      "label": "Link label",
+      "section": "A milestone of hope",
+      "value": "Read Amy’s story "
+    },
+    {
+      "key": "text-03a7ccbd43",
+      "label": "Heading",
+      "section": "Every story starts with a first appointment.",
+      "value": "Every story starts with a first appointment."
+    },
+    {
+      "key": "link-686a9a3e68",
+      "kind": "link",
+      "label": "Link destination: phone Contact Us",
+      "section": "Every story starts with a first appointment.",
+      "value": "/contact.html"
+    },
+    {
+      "key": "text-3127f37906",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": " Contact Us"
+    },
+    {
+      "key": "link-b4ae4f4939-1",
+      "kind": "link",
+      "label": "Link destination: More patient stories arrow_forward",
+      "section": "Every story starts with a first appointment.",
+      "value": "/stories/index.html"
+    },
+    {
+      "key": "text-b8cf626149",
+      "label": "Link label",
+      "section": "Every story starts with a first appointment.",
+      "value": "More patient stories "
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Dukhi Hong pictured with two loved ones",
+        "src": "/images/story-dukhi-hong.jpg"
+      },
+      "key": "image-741de34811",
+      "label": "Dukhi Hong pictured with two loved ones",
+      "section": "Story detail media"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "stories/dukhi-hong.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Dukhi’s Story - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "stories-dukhi-hong",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/stories-written.css"
+    ]
+  },
+  "title": "Dukhi’s Story - Utah Cancer Specialists"
+}

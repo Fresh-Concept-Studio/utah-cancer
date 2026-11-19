@@ -1,0 +1,92 @@
+{
+  "order": 10,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">calendar_today</span> Request an Appointment",
+      "attrs": {
+        "href": "tel:8012629494",
+        "class": "btn btn--white"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">medication</span> Treatment Options",
+      "attrs": {
+        "href": "#treatments",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "category": "Gastrointestinal",
+  "description": "Advanced colon cancer care with individualized treatment plans including surgery, chemotherapy, and targeted therapies.",
+  "directory": {
+    "category": "gi",
+    "description": "Advanced care with individualized treatment plans including surgery, chemo, and targeted therapies.",
+    "icon": "local_hospital",
+    "order": 17,
+    "searchName": "Colon Cancer"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": "/images/specialty-colon-clinical-hero.jpg",
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedHtml": "",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Colorectal cancer is the third most common cancer in the United States, but outcomes have improved significantly with modern screening, surgical techniques, and systemic therapies. Our team manages all stages from early-stage resectable disease through advanced metastatic colorectal cancer.</p> <p class=\"provider-bio\">Molecular profiling — including MSI, RAS, BRAF, and HER2 testing — guides our treatment decisions, ensuring each patient receives the most effective targeted therapy or immunotherapy available.</p>",
+      "id": "overview",
+      "title": "Overview"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Change in bowel habits (diarrhea or constipation)</li> <li>Blood in the stool or rectal bleeding</li> <li>Persistent abdominal discomfort or cramping</li> <li>Unexplained weight loss</li> <li>Fatigue and weakness</li> <li>Feeling that the bowel does not empty completely</li> </ul>",
+      "id": "symptoms",
+      "title": "Symptoms & Warning Signs"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">radiology</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Imaging</h3> <p>CT scan, PET/CT, and MRI of pelvis</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">biotech</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Colonoscopy &amp; Biopsy</h3> <p>Tissue sampling with histopathology</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">science</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Molecular Testing</h3> <p>MSI/MMR, KRAS, NRAS, BRAF, HER2</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"><span class=\"material-symbols-rounded\">monitor_heart</span></div> <div class=\"credential-content\"> <h3 class=\"credential-label\">CEA Monitoring</h3> <p>Tumor marker tracking</p> </div> </div> </div>",
+      "id": "diagnosis",
+      "title": "Diagnosis & Evaluation"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">cut</span> Surgical Coordination</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">medication</span> Chemotherapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">target</span> Targeted Therapy (Anti-EGFR, Anti-VEGF)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">vaccines</span> Immunotherapy (for MSI-H)</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">radiology</span> Radiation Therapy</div> <div class=\"specialty-tag\"><span class=\"material-symbols-rounded\">science</span> Clinical Trials</div> </div>",
+      "id": "treatments",
+      "title": "Treatment Options"
+    },
+    {
+      "html": "<div class=\"sd-faq\"> <details class=\"sd-faq-item\"> <summary>When should I start colon cancer screening?</summary> <p>Current guidelines recommend screening colonoscopy beginning at age 45. If you have a family history of colorectal cancer or polyps, screening may need to start earlier.</p> </details> <details class=\"sd-faq-item\"> <summary>What does MSI-high mean for my treatment?</summary> <p>MSI-high (microsatellite instability-high) tumors respond exceptionally well to immunotherapy, sometimes achieving durable remissions even in advanced disease.</p> </details> </div>",
+      "id": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ],
+  "sidebar": "specialty-sidebar-5",
+  "slug": "colon-cancer",
+  "tabs": [
+    {
+      "href": "#overview",
+      "label": "Overview"
+    },
+    {
+      "href": "#symptoms",
+      "label": "Symptoms"
+    },
+    {
+      "href": "#diagnosis",
+      "label": "Diagnosis"
+    },
+    {
+      "href": "#treatments",
+      "label": "Treatments"
+    },
+    {
+      "href": "#faq",
+      "label": "FAQ"
+    }
+  ],
+  "title": "Colon Cancer"
+}

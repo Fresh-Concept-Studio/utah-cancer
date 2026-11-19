@@ -1,0 +1,86 @@
+{
+  "order": 9,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=395+W.+Cougar+Blvd.%2C+Ste.+104+Sorenson+Legacy+Tower%2C+Bldg.+4+Provo%2C+UT+84604",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:3853752700",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "395 W. Cougar Blvd., Ste. 104<br>Provo, UT 84604",
+    "badge": "",
+    "county": "utah",
+    "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+    "order": 8,
+    "phone": "385.375.2700"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Sorenson Legacy Tower at Utah Valley Hospital",
+    "src": "/images/location-provo.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.2505064,
+    "lng": -111.665678
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> Sorenson Legacy Tower, Bldg. 4, 395 W. Cougar Blvd., Ste. 104, Provo, UT 84604</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 385.375.2700</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.375.2700",
+          "attrs": {
+            "href": "tel:3853752700",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">The Provo Clinic is located in the Sorenson Legacy Tower on the Utah Valley Hospital campus. The clinic brings Utah Cancer Specialists care to patients and families in central Utah County.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">The clinic is in Suite 104 of Building 4, the Sorenson Legacy Tower, on the Utah Valley Hospital campus.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">Sorenson Legacy Tower, Bldg. 4<br>395 W. Cougar Blvd., Ste. 104<br>Provo, UT 84604</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=395+W.+Cougar+Blvd.%2C+Ste.+104+Sorenson+Legacy+Tower%2C+Bldg.+4+Provo%2C+UT+84604\" class=\"btn btn--primary btn--full\" target=\"_blank\" rel=\"noopener\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3853752700\">385.375.2700</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5612</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3853752700\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "provo",
+  "subtitle": "Utah Valley Hospital",
+  "tag": "Medical Oncology",
+  "title": "Provo Clinic"
+}

@@ -1,4 +1,6 @@
-# Sanity CMS
+# Sanity CMS (read-only fallback)
+
+> **Retired as the content source (November 2026).** Site content now lives in `content/` in this repository; see [content.md](content.md). The Sanity project and all its data are kept as a read-only fallback. Edits made in Sanity no longer reach the website unless the build is switched with `CONTENT_SOURCE=sanity`. The rest of this page describes the setup as it was before the migration.
 
 The Utah Cancer Specialists marketing site uses Sanity project `spba0u9p`, production dataset `production`, and the Studio at <https://utah-cancer-specialists.sanity.studio/>. The project belongs to the Fresh Concept organization.
 

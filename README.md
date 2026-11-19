@@ -29,21 +29,26 @@ For browser-based edits with an approval step before live publication, see the
 [SiteAdjust editing guide](docs/siteadjust.md). Its dedicated workflow rebuilds
 and publishes the exact approved source revision to GitHub Pages.
 
+Content is stored in `content/` (see [content guide](docs/content.md)); Sanity is a read-only fallback.
+
 | Change | Source |
 | --- | --- |
 | Navigation and category labels | `src/data/navigation.ts` |
 | Header, footer, marquee, shared contact layout | `src/components/` |
 | Shared page head, fonts, assets, body layout | `src/layouts/SiteLayout.astro` |
-| Provider biography, portrait, directory category/order | `src/data/providers.json` |
-| Provider clinic cards, including published address variants | `src/data/provider-locations.json` |
-| Leadership biographies and portraits | `src/data/leaders.json` |
-| Leadership groups and memberships | `src/data/leadership-groups.json` |
-| Cancer-type detail content and directory cards | `src/data/specialties.json` |
-| Clinic detail pages, directory cards, and map coordinates | `src/data/locations.json` |
-| Repeated sidebars and media cards | `src/data/shared-content.json` |
+| Provider biography, portrait, directory category/order | `content/providers/*.json` |
+| Provider clinic cards, including published address variants | `content/provider-locations/*.json` |
+| Leadership biographies and portraits | `content/leaders/*.json` |
+| Leadership groups, memberships, media highlights, main phone | `content/settings.json` |
+| Cancer-type detail content and directory cards | `content/specialties/*.json` |
+| Clinic detail pages, directory cards, and map coordinates | `content/locations/*.json` |
+| Repeated sidebars and media cards | `content/shared-content/*.json` |
 | Default assets and calls to action for page families | `src/data/page-defaults.json` |
 | Unique pages, event details, stories, resource pages | `src/views/*.astro` |
-| Unique-page titles, descriptions, assets, redirects | `src/data/pages.json` |
+| Page text, titles, descriptions, page images | `content/pages/*.json` |
+| Job openings and events | `content/jobs/*.json`, `content/events/*.json` |
+| Clinical trials, podcast episodes, news | `content/clinical-trials/`, `content/podcast-episodes/`, `content/news/` |
+| Page registration, redirects (code) | `src/data/pages.json` |
 | Global and page-specific styles | `public/*.css`, `public/page-styles/` |
 | Browser interactions | `public/scripts/` |
 | Contact form delivery and main appointment phone | `src/data/contact.ts` (see [setup guide](docs/contact-form.md)) |
@@ -62,7 +67,7 @@ Rich-text fields contain trusted, checked-in HTML. Their legacy source keys may 
 
 ## Validation
 
-`npm run verify` checks types, builds the site, checks content references, checks local links and CSS/image/script assets, verifies shared layout/script inclusion, parses browser scripts, and verifies retired-clinic redirects. Tests check page structure and behaviour rather than specific CMS content, so Sanity edits should not fail them. `.github/workflows/ci.yml` runs it as a blocking check on pull requests and pushes to `main`; the Pages publish workflow runs the tests as report-only so content publishes are never held back.
+`npm run verify` checks types, builds the site, checks content references, checks local links and CSS/image/script assets, verifies shared layout/script inclusion, parses browser scripts, and verifies retired-clinic redirects. Tests check page structure and behaviour rather than specific CMS content, so content edits should not fail them. `.github/workflows/ci.yml` runs it as a blocking check on pull requests and pushes to `main`; the Pages publish workflow runs the tests as report-only so content publishes are never held back.
 
 `npm run test:migration` is a separate, temporary migration guard. Its compact fingerprints record the published state at commit `e910dc7`, including all page text, metadata, element structure, link/image destinations, image bytes, and global CSS bytes. It intentionally ignores formatting whitespace and shared chrome, and allows the newsletter handler to move from inline HTML into its page script. This check will fail after intentional content or design changes; keep the baseline immutable while reviewing the migration, and retire the migration check after acceptance rather than updating it to hide differences. Browser review covers interactions and appearance that static checks cannot prove.
 

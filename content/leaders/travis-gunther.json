@@ -1,0 +1,31 @@
+{
+  "order": 13,
+  "directoryPhoto": {
+    "alt": "Travis Gunther",
+    "src": "/images/leader-travis-gunther.jpg"
+  },
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Travis Gunther",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Travis Gunther",
+    "class": "provider-hero-photo provider-hero-photo--leader",
+    "src": "/images/leader-cutouts/leader-travis-gunther.webp?v=20260902"
+  },
+  "role": "Director of Laboratory & Radiation Services",
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">With a background in molecular biology and healthcare leadership, Travis has spent much of his career helping advance diagnostic and treatment options for patients. He earned his bachelor’s degree in molecular biology from Brigham Young University and later completed his Master of Business Administration at the University of Utah.</p> <p class=\"provider-bio\">Travis began his career at Myriad Genetics, where he performed BRCA genetic testing before moving into the company’s forensic laboratory. During that time, he contributed to efforts to identify victims of the September 11 attacks on the World Trade Center.</p> <p class=\"provider-bio\">He later joined Utah Cancer Specialists as Laboratory Manager and was promoted to Director of Laboratory Services. In 2018, he expanded his leadership responsibilities to include UCS’s radiation and imaging services. Since then, he has helped grow the organization’s nuclear medicine program, including the development of UCS’s theragnostic program.</p> <p class=\"provider-bio\">His interest in healthcare comes from a love of medicine and a desire to help people affected by cancer. He believes strongly in Utah Cancer Specialists’ vision and values the opportunity to help bring innovative treatments and technologies to patients in the community.</p> <p class=\"provider-bio\">He is particularly excited about the continued advancement of theranostics and its potential to transform cancer care. Looking ahead, he hopes to help expand UCS’s involvement in Phase I–III clinical trials and provide patients greater access to emerging therapies.</p> <p class=\"provider-bio\">Although his role does not involve daily patient interaction, he believes exceptional care begins with understanding each patient’s individual needs. For him, that means creating the best possible experience while ensuring patients have access to the latest and most effective treatment options available.</p> <p class=\"provider-bio\">Outside of work, he enjoys spending time with his family and pursuing wildlife photography, a passion that combines his appreciation for the outdoors with creativity.</p>",
+      "id": "about",
+      "title": "About Travis Gunther"
+    }
+  ],
+  "slug": "travis-gunther"
+}

@@ -1,0 +1,73 @@
+{
+  "order": 14,
+  "directory": {
+    "alt": "S. DiSean Kendall",
+    "category": "medical-oncology",
+    "order": 14,
+    "photo": "/images/provider-disean-kendall.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English, Spanish",
+  "leadershipGroups": null,
+  "locationIds": [
+    "cancer-center",
+    "granger-fairbourne-station-clinic"
+  ],
+  "mediaHighlights": null,
+  "name": "S. DiSean Kendall, MD",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "S. DiSean Kendall",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-disean-kendall.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">S. DiSean Kendall, MD is a member of the Medical Oncology and Hematology team at Utah Cancer Specialists, providing compassionate, evidence-based care tailored to each patient's unique needs.</p>",
+      "id": "about",
+      "title": "About Dr. Kendall"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Medical School</h3> <p>Doctor of Medicine, Albany Medical Center, Albany, NY</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">local_hospital</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Residency</h3> <p>Internal Medicine, Duke University Medical Center, Durham, NC</p> </div> </div> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">biotech</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Fellowship</h3> <p>Medical Oncology, Duke University Medical Center, Durham, NC</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>American Board of Internal Medicine</li> <li>American Board of Medical Oncology</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact",
+  "slug": "disean-kendall",
+  "specialty": "Medical Oncology and Hematology",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

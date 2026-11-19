@@ -1,0 +1,72 @@
+{
+  "order": 39,
+  "directory": {
+    "alt": "Makaylie S. Crowther",
+    "category": "advanced-practitioners",
+    "order": 45,
+    "photo": "/images/provider-makaylie-crowther.jpg",
+    "priority": 0
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "languages": "English",
+  "leadershipGroups": null,
+  "locationIds": [
+    "bingham-healthcare"
+  ],
+  "mediaHighlights": null,
+  "name": "Makaylie S. Crowther, DNP, FNP-C",
+  "pdfAssetUrl": null,
+  "photo": {
+    "alt": "Makaylie S. Crowther",
+    "class": "provider-hero-photo provider-hero-photo--expanded",
+    "src": "/images/provider-expanded/provider-makaylie-crowther.webp"
+  },
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Makaylie Crowther is a nurse practitioner with experience in oncology, family practice, and urgent care. Her interest in oncology began while working as an infusion nurse, where she cared for patients receiving chemotherapy and immunotherapy. The relationships she developed with patients during treatment inspired her to continue her career in cancer care.</p> <p class=\"provider-bio\">Makaylie has a particular interest in cancer survivorship and providing care that extends beyond active treatment. Her passion for survivorship is also personal. After watching a family member face cancer, she saw firsthand that finishing treatment does not necessarily mean a patient is finished with the effects of cancer. That experience shaped her commitment to supporting patients throughout their entire journey—from diagnosis and treatment to recovery and long-term survivorship.</p> <p class=\"provider-bio\">Her approach focuses on compassionate, comprehensive care that considers the whole person. She works to help patients navigate the physical and emotional challenges of cancer while connecting them with the education, support, and resources they need to maintain their health and quality of life.</p> <p class=\"provider-bio\">In addition to oncology, Makaylie has provided comprehensive care in family practice and urgent care, including diagnosis, treatment planning, preventive care, and patient education. Her background also includes teaching nursing students as an adjunct clinical instructor and serving in leadership roles in behavioral health and long-term care.</p> <p class=\"provider-bio\">Makaylie has called southeast Idaho home for nearly five years. Outside of work, she enjoys reading and baking, as well as camping, mountain biking, and skiing with her husband.</p>",
+      "id": "about",
+      "title": "About Makaylie Crowther"
+    },
+    {
+      "html": "<div class=\"provider-credentials\"> <div class=\"credential\"> <div class=\"credential-icon\"> <span class=\"material-symbols-rounded\">school</span> </div> <div class=\"credential-content\"> <h3 class=\"credential-label\">Education</h3> <p>Bachelor of Science in Nursing, Weber State University, Ogden, Utah<br>Doctor of Nursing, Family Nurse Practitioner, Idaho State University, Pocatello, Idaho</p> </div> </div> </div>",
+      "id": "education",
+      "title": "Education & Training"
+    },
+    {
+      "html": "<ul class=\"provider-list\"> <li>Family Nurse Practitioner–Certified (FNP-C)</li> </ul>",
+      "id": "certifications",
+      "title": "Board Certifications"
+    }
+  ],
+  "sidebar": "provider-contact-2",
+  "slug": "makaylie-crowther",
+  "specialty": "Advanced Practitioner",
+  "tabs": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#certifications",
+      "label": "Certifications"
+    },
+    {
+      "href": "#locations",
+      "label": "Locations"
+    },
+    {
+      "href": "#media",
+      "label": "Media"
+    }
+  ]
+}

@@ -56,7 +56,7 @@ const markers = directory.filter(location => location.map).map(location => ({
     const card = location.directory!;
     const image = location.image;
     const cardImage = imageVariant(image.src, 640, 480);
-    return <a href={url(`/locations/${location.slug}.html`)} class:list={['loc-card', {'loc-card--featured': card.badge}]} data-county={card.county}>
+    return <a href={url(`/locations/${location.slug}.html`)} class:list={['loc-card', {'loc-card--featured': card.badge}]} data-sa={location.contentId} data-county={card.county}>
       <div class="loc-card-image"><img src={url(cardImage)} width="640" height="480" alt={image.alt} loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : 'auto'} decoding="async" />{card.badge && <span class="loc-card-badge">{card.badge}</span>}</div>
       <div class="loc-card-body">
         <h2 class="loc-card-name">{card.title || location.title}</h2>

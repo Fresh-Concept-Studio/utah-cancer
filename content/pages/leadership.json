@@ -1,0 +1,62 @@
+{
+  "order": 10,
+  "description": "Meet the executive team and directors who lead Utah Cancer Specialists, Utah's largest community-based oncology practice.",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-a1655bc88c",
+      "label": "Text",
+      "section": "Leadership",
+      "value": "Utah Cancer Specialists"
+    },
+    {
+      "key": "text-f5427e8f6f",
+      "label": "Heading",
+      "section": "Leadership",
+      "value": "Leadership"
+    },
+    {
+      "key": "text-80718a2954",
+      "label": "Paragraph",
+      "section": "Leadership",
+      "value": "The executives and directors guiding our practice — supporting the providers and staff who care for patients across Utah."
+    }
+  ],
+  "editorImages": [],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "leadership.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Leadership - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "leadership",
+    "cta": {
+      "heading": "Learn More About Your Care Options",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.269.0231",
+          "attrs": {
+            "href": "tel:8012690231",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    },
+    "marquee": true,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/page-styles/leadership.css"
+    ]
+  },
+  "title": "Leadership - Utah Cancer Specialists"
+}

@@ -1,0 +1,29 @@
+{
+  "order": 24,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=10808+S.+River+Front+Pkwy.%2C+Ste.+400+South+Jordan%2C+UT+84095",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "10808 S. River Front Pkwy., Ste. 400<br>South Jordan, UT 84095",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "south-jordan-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "South Jordan Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": "Main Office"
+}

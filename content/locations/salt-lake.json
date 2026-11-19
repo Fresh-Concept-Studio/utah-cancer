@@ -1,0 +1,86 @@
+{
+  "order": 10,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=389+S.+900+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84102",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:3853475500",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102",
+    "badge": "",
+    "county": "salt-lake",
+    "hoursHtml": "Mon–Fri, 9:00 am – 5:00 pm",
+    "order": 9,
+    "phone": "385.347.5500"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "Salt Lake Clinic",
+    "src": "/images/location-salt-lake-highres.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.7612,
+    "lng": -111.8649
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 389 S. 900 E., Ste. 100, Salt Lake City, UT 84102</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 385.347.5500</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 385.347.5500",
+          "attrs": {
+            "href": "tel:3853475500",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Centrally located near downtown Salt Lake City, this clinic provides medical oncology and hematology services in the heart of the city. Patients have convenient access to infusion therapy, genetic counseling, laboratory services, and the dedicated support of UCS patient advocates.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">family_history</span> Genetic Counseling </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Tuesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Wednesday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Patient parking is available in the lot behind the building. Street parking is very limited. The building entrance is ADA accessible from the main sidewalk.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">389 S. 900 E., Ste. 100<br>Salt Lake City, UT 84102</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=389+S.+900+E.%2C+Ste.+100+Salt+Lake+City%2C+UT+84102\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:3853475500\">385.347.5500</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5616</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:3853475500\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "salt-lake",
+  "subtitle": "Medical Oncology & Hematology",
+  "tag": "Medical Oncology",
+  "title": "Salt Lake Clinic"
+}

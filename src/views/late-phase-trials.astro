@@ -96,7 +96,7 @@ const trialCountLabel = `${trialCount} ${trialCount === 1 ? 'trial' : 'trials'}`
             <h3 class="lp-category-title">{category.title}</h3>
             <div class="lp-trial-list">
               {category.trials.map(trial => (
-                <article class="lp-trial-card">
+                <article class="lp-trial-card" data-sa={trial.contentId}>
                   <div class="lp-trial-top">
                     <a class="lp-trial-title" href={trial.studyUrl || `https://clinicaltrials.gov/study/${trial.nctId}`} target="_blank" rel="noopener">{trial.title}</a>
                     <span class="lp-status">{trial.statusLabel}</span>

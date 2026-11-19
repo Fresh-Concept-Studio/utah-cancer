@@ -1,0 +1,149 @@
+{
+  "order": 29,
+  "description": "",
+  "directoryPhoto": null,
+  "editorContent": [
+    {
+      "key": "text-19e93c72e0",
+      "label": "Text",
+      "section": "Every journey deserves to be told.",
+      "value": "Patient Stories"
+    },
+    {
+      "key": "text-85a09fbd84",
+      "label": "Heading",
+      "section": "Every journey deserves to be told.",
+      "value": "Every journey deserves to be told."
+    },
+    {
+      "key": "text-d21e0ddc86",
+      "label": "Paragraph",
+      "section": "Every journey deserves to be told.",
+      "value": "Personal experiences from the Utah Cancer Specialists community, shared in their original published context."
+    },
+    {
+      "key": "link-cf52a071c3",
+      "kind": "link",
+      "label": "Link destination: Breast cancerFacing cancer while growing a family Amy JensenRead ",
+      "section": "Stories index",
+      "value": "/stories/amy-jensen.html"
+    },
+    {
+      "key": "text-00e2e91ac8",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Breast cancer"
+    },
+    {
+      "key": "text-3fa8f059d4",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Facing cancer while growing a family"
+    },
+    {
+      "key": "text-9c3b94c3aa",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Amy Jensen"
+    },
+    {
+      "key": "text-217b252d14",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Read Amy’s story "
+    },
+    {
+      "key": "link-9ca77d9084",
+      "kind": "link",
+      "label": "Link destination: Small cell lung cancerA milestone of hope Dukhi HongRead Dukhi’s ",
+      "section": "Stories index",
+      "value": "/stories/dukhi-hong.html"
+    },
+    {
+      "key": "text-c2c63e8777",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Small cell lung cancer"
+    },
+    {
+      "key": "text-0a698fa025",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "A milestone of hope"
+    },
+    {
+      "key": "text-807f154e96",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Dukhi Hong"
+    },
+    {
+      "key": "text-f1fbaf6214",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "Read Dukhi’s story "
+    },
+    {
+      "key": "text-2e4d5426a3",
+      "label": "Text",
+      "section": "Stories index",
+      "value": "More stories are on the way. If you’d like to share yours, "
+    },
+    {
+      "key": "link-686a9a3e68",
+      "kind": "link",
+      "label": "Link destination: we’d be honored to listen",
+      "section": "Stories index",
+      "value": "/contact.html"
+    },
+    {
+      "key": "text-7d64799327",
+      "label": "Link label",
+      "section": "Stories index",
+      "value": "we’d be honored to listen"
+    }
+  ],
+  "editorImages": [
+    {
+      "image": {
+        "alt": "Amy Jensen with her husband Chad and their son Jacob",
+        "src": "/images/story-amy-jensen.jpg"
+      },
+      "key": "image-ce45fd460b",
+      "label": "Amy Jensen with her husband Chad and their son Jacob",
+      "section": "Stories index"
+    },
+    {
+      "image": {
+        "alt": "Dukhi Hong pictured with two loved ones",
+        "src": "/images/story-dukhi-hong.jpg"
+      },
+      "key": "image-741de34811",
+      "label": "Dukhi Hong pictured with two loved ones",
+      "section": "Stories index"
+    }
+  ],
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "path": "stories/index.html",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "seoTitle": "Patient Stories - Utah Cancer Specialists",
+  "settings": {
+    "bodyClass": "",
+    "component": "stories-index",
+    "marquee": false,
+    "scripts": [],
+    "styles": [
+      "/styles.css",
+      "/provider.css",
+      "/stories-written.css"
+    ]
+  },
+  "title": "Patient Stories - Utah Cancer Specialists"
+}

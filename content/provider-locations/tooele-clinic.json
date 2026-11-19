@@ -1,0 +1,36 @@
+{
+  "order": 33,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 435.882.2365",
+      "attrs": {
+        "href": "tel:4358822365",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2326+N.+400+E.%2C+Building+C%2C+Ste.+204+Tooele%2C+UT+84074",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "2326 N. 400 E., Building C, Ste. 204<br>Tooele, UT 84074",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "tooele-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Tooele Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": "NorthPointe Medical Park"
+}

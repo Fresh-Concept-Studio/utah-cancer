@@ -1,0 +1,34 @@
+{
+  "order": 18,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.263.3416",
+      "attrs": {
+        "href": "tel:8012633416",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">location_on</span>View Clinic",
+      "attrs": {
+        "href": "/locations/imc.html",
+        "class": "location-card-link"
+      }
+    }
+  ],
+  "addressHtml": "Intermountain Medical Center<br>5131 S. Cottonwood St., Building 3, Level 2<br>Murray, UT 84107",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "murray-clinic",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "Murray Clinic",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}

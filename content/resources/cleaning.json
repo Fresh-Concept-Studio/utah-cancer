@@ -1,0 +1,32 @@
+{
+  "order": 2,
+  "description": "Learn about free home cleaning assistance available to eligible cancer patients through Cleaning for a Reason.",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "eyebrow": "Help at home",
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "html": "<h2>Cleaning for a Reason</h2>\n      <p>Cleaning for a Reason partners with local residential cleaning companies to provide free general house cleaning to eligible cancer patients in the United States and Canada.</p>\n      <p>Patients in active treatment, recovering from cancer surgery or treatment, or receiving hospice care may apply. Service depends on participating cleaning companies in your area.</p>\n      <p><a class=\"resource-button\" href=\"https://cleaningforareason.org/patients/learn-more-apply-now/\" target=\"_blank\" rel=\"noopener\">Learn more and apply <span aria-hidden=\"true\">↗</span></a></p>\n      <div class=\"resource-note\">This is an independent community program. Utah Cancer Specialists does not determine eligibility or availability.</div>",
+  "icon": "volunteer_activism",
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "intro": "A national nonprofit may be able to help with home cleaning while you are in treatment or recovering.",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "pdfAssetUrl": null,
+  "photo": null,
+  "relatedLinks": [
+    {
+      "href": "/supportive-resources/",
+      "label": "All practical support resources"
+    },
+    {
+      "href": "/programs-and-services.html#patient-advocacy",
+      "label": "Patient advocacy"
+    }
+  ],
+  "seoTitle": "Home Cleaning Help for Cancer Patients | UCS",
+  "slug": "cleaning",
+  "title": "Home Cleaning Assistance"
+}

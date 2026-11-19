@@ -1,0 +1,87 @@
+{
+  "order": 3,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=2965+W.+3500+S.%2C+4th+Floor+West+Valley+City%2C+UT+84119",
+        "class": "btn btn--white",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> Call This Clinic",
+      "attrs": {
+        "href": "tel:8015909900",
+        "class": "btn btn--outline-dark"
+      }
+    }
+  ],
+  "directory": {
+    "addressHtml": "2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119",
+    "badge": "",
+    "county": "salt-lake",
+    "hoursHtml": "Thursdays, 9:00 am – 5:00 pm",
+    "order": 15,
+    "phone": "801.590.9900",
+    "title": "West Valley Clinic"
+  },
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": {
+    "alt": "West Valley Clinic at Fairbourne Station",
+    "src": "/images/location-start.jpg"
+  },
+  "insurancePlansPdfUrl": null,
+  "leadershipGroups": null,
+  "map": {
+    "lat": 40.6941,
+    "lng": -111.9623
+  },
+  "mediaHighlights": null,
+  "metaHtml": "<span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">location_on</span> 2965 W. 3500 S., 4th Floor, West Valley City, UT 84119</span> <span class=\"loc-hero-meta-item\"><span class=\"material-symbols-rounded\">phone</span> 801.590.9900</span>",
+  "page": {
+    "cta": {
+      "heading": "Questions about your visit?",
+      "image": "/images/contact-bg.jpg",
+      "links": [
+        {
+          "html": "<span class=\"material-symbols-rounded\">phone</span> Call 801.590.9900",
+          "attrs": {
+            "href": "tel:8015909900",
+            "class": "btn btn--white"
+          }
+        }
+      ]
+    }
+  },
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sections": [
+    {
+      "html": "<p class=\"provider-bio\">Located in the Fairbourne Station medical building in West Valley City, this clinic brings medical oncology and hematology care to Utah's west side. The fourth-floor clinic offers infusion therapy, laboratory services, and access to UCS patient advocates — making expert cancer care accessible to the communities of West Valley, Kearns, Magna, and Taylorsville.</p>",
+      "title": "About this clinic"
+    },
+    {
+      "html": "<div class=\"provider-specialties-grid\"> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">biotech</span> Medical Oncology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">bloodtype</span> Hematology </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">medication</span> Infusion Therapy </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">science</span> On-site Laboratory </div> <div class=\"specialty-tag\"> <span class=\"material-symbols-rounded\">volunteer_activism</span> Patient Advocacy </div> </div>",
+      "title": "Services at this location"
+    },
+    {
+      "html": "<ul class=\"loc-hours-list\"> <li><span>Monday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Tuesday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Wednesday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Thursday</span><span>9:00 AM – 5:00 PM</span></li> <li><span>Friday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Saturday</span><span class=\"loc-hours-closed\">Closed</span></li> <li><span>Sunday</span><span class=\"loc-hours-closed\">Closed</span></li> </ul>",
+      "title": "Hours of operation"
+    },
+    {
+      "html": "<p class=\"provider-bio\">Free parking is available at Fairbourne Station. The building is accessible via elevator to the 4th floor.</p>",
+      "title": "Parking & directions"
+    }
+  ],
+  "sidebarHtml": "<div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">location_on</span> Address</h3> <p class=\"sidebar-contact-item\">2965 W. 3500 S., 4th Floor<br>West Valley City, UT 84119</p> <a href=\"https://www.google.com/maps/dir/?api=1&amp;destination=2965+W.+3500+S.%2C+4th+Floor+West+Valley+City%2C+UT+84119\" class=\"btn btn--primary btn--full\"><span class=\"material-symbols-rounded\">directions</span> Get Directions</a> </div> <div class=\"sidebar-card\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">phone</span> Contact</h3> <p class=\"sidebar-contact-item\"><strong>Phone:</strong> <a href=\"tel:8015909900\">801.590.9900</a></p> <p class=\"sidebar-contact-item\"><strong>Fax:</strong> 801.267.5626</p> </div> <div class=\"sidebar-card sidebar-card--dark\"> <h3 class=\"sidebar-card-title\"><span class=\"material-symbols-rounded\">calendar_today</span> Schedule a Visit</h3> <p class=\"sidebar-card-desc\">New and existing patients can request an appointment at this clinic.</p> <a href=\"tel:8015909900\" class=\"btn btn--white btn--full\">Request Appointment</a> </div>",
+  "slug": "west-valley",
+  "subtitle": "Medical Oncology & Hematology",
+  "tag": "Medical Oncology",
+  "title": "West Valley Clinic"
+}

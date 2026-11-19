@@ -1,0 +1,36 @@
+{
+  "order": 35,
+  "actions": [
+    {
+      "html": "<span class=\"material-symbols-rounded\">phone</span> 801.269.0231",
+      "attrs": {
+        "href": "tel:8012690231",
+        "class": "location-card-link"
+      }
+    },
+    {
+      "html": "<span class=\"material-symbols-rounded\">directions</span> Get Directions",
+      "attrs": {
+        "href": "https://www.google.com/maps/dir/?api=1&destination=3838+S.+700+E.%2C+Ste.+100+Salt+Lake+City%2C+Utah+84106",
+        "class": "location-card-link",
+        "target": "_blank",
+        "rel": "noopener"
+      }
+    }
+  ],
+  "addressHtml": "3838 S. 700 E., Ste. 100<br>Salt Lake City, Utah 84106",
+  "directoryPhoto": null,
+  "editorImages": null,
+  "events": null,
+  "featuredPhoto": null,
+  "heroPhoto": null,
+  "image": null,
+  "insurancePlansPdfUrl": null,
+  "key": "ucs-cancer-center",
+  "leadershipGroups": null,
+  "mediaHighlights": null,
+  "name": "UCS Cancer Center",
+  "pdfAssetUrl": null,
+  "photo": null,
+  "sublabel": ""
+}
