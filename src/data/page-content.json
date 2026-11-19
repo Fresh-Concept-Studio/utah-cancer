@@ -5708,7 +5708,7 @@
         "key": "text-36b82abca3",
         "section": "Care that supports your daily life.",
         "label": "Paragraph",
-        "value": "The services of Cancer Rehabilitation Centers (CRC) are now part of Utah Cancer Specialists. This specialized program brings physical therapy and individualized exercise together to support people affected by cancer."
+        "value": "The services of Cancer Rehabilitation Centers (CRC) are now part of Utah Cancer Specialists. This specialized program brings physical therapy and individualized exercise together to support people affected by cancer. We work to develop a plan of care as part of your oncology team."
       },
       {
         "_key": "text-7a63924368",
@@ -5740,7 +5740,7 @@
         "key": "text-1bd785e865",
         "section": "Care that supports your daily life.",
         "label": "Paragraph",
-        "value": "Explore exercise and energy-conservation strategies to help manage fatigue and support daily activity."
+        "value": "Explore exercise and energy-conservation strategies to help manage fatigue and support daily activities."
       },
       {
         "_key": "text-1e153a3abe",
@@ -5756,7 +5756,7 @@
         "key": "text-78d95d7c68",
         "section": "Care that supports your daily life.",
         "label": "Paragraph",
-        "value": "Receive support for pain, neuropathy, and other treatment-related challenges that affect everyday tasks."
+        "value": "Receive support for pain, neuropathy, lymphedema, and other treatment-related challenges that affect everyday tasks."
       },
       {
         "_key": "text-3446799bc7",
@@ -5788,7 +5788,7 @@
         "key": "text-47b138bb81",
         "section": "Your starting point.Your goals. Your pace.",
         "label": "Paragraph",
-        "value": "Physical therapy can be part of care from diagnosis through treatment and into recovery. Your therapist works with your oncology team to shape an individualized approach around your needs."
+        "value": "Physical therapy can be part of care from diagnosis. Your therapist works with your oncology team to shape an individualized approach around your needs."
       },
       {
         "_key": "text-182cdb46f9",
@@ -5796,7 +5796,7 @@
         "key": "text-182cdb46f9",
         "section": "Your starting point.Your goals. Your pace.",
         "label": "Paragraph",
-        "value": "Whether your goal is returning to a familiar routine or feeling more confident with daily activities, care begins with understanding what matters to you."
+        "value": "Whether your goal is returning to a familiar routine or feeling more confident with daily activities, care begins with understanding what matters to you and your specific needs. Our physical therapy is centered around individuals receiving and recovering from cancer treatments."
       },
       {
         "_key": "text-add532bf62",
@@ -5868,7 +5868,7 @@
         "key": "text-4476e1d24a",
         "section": "Visit us at Sandy Clinic.",
         "label": "Paragraph",
-        "value": "Call to schedule a physical therapy assessment, ask about insurance, or arrange a tour of the cancer rehabilitation facility."
+        "value": "Call to schedule a physical therapy assessment or ask about insurance."
       },
       {
         "_key": "text-90fcb67379",
@@ -5909,7 +5909,7 @@
         "key": "text-5bfe84983e",
         "section": "Visit us at Sandy Clinic.",
         "label": "Text",
-        "value": "Monday & Wednesday"
+        "value": "Monday"
       },
       {
         "_key": "text-642be2dff3",
@@ -5917,7 +5917,7 @@
         "key": "text-642be2dff3",
         "section": "Visit us at Sandy Clinic.",
         "label": "Text",
-        "value": "9:30 am – 2:00 pm"
+        "value": "7:00 am – 3:00 pm"
       },
       {
         "_key": "text-0592070d28",
@@ -5925,7 +5925,7 @@
         "key": "text-0592070d28",
         "section": "Visit us at Sandy Clinic.",
         "label": "Text",
-        "value": "Tuesday & Thursday"
+        "value": "Tuesday – Thursday"
       },
       {
         "_key": "text-b6f96d6724",
@@ -5933,7 +5933,7 @@
         "key": "text-b6f96d6724",
         "section": "Visit us at Sandy Clinic.",
         "label": "Text",
-        "value": "9:30 am – 7:30 pm"
+        "value": "7:00 am – 6:00 pm"
       },
       {
         "_key": "text-4bd04b3d23",
@@ -5941,7 +5941,7 @@
         "key": "text-4bd04b3d23",
         "section": "Visit us at Sandy Clinic.",
         "label": "Text",
-        "value": "Friday – Sunday"
+        "value": "Friday"
       },
       {
         "_key": "text-88d86b7721",
@@ -5949,7 +5949,7 @@
         "key": "text-88d86b7721",
         "section": "Visit us at Sandy Clinic.",
         "label": "Text",
-        "value": "Closed"
+        "value": "By appointment only"
       },
       {
         "_key": "text-f434c5660c",
@@ -6097,6 +6097,54 @@
         "section": "A few common questions.",
         "label": "Paragraph",
         "value": "Yes. Call the clinic to arrange a tour and learn more about the cancer-focused rehabilitation setting."
+      },
+      {
+        "_key": "text-b293cb36c5",
+        "_type": "pageCopy",
+        "key": "text-b293cb36c5",
+        "label": "Text",
+        "section": "A few common questions.",
+        "value": "Is physical therapy beneficial for all cancer types?"
+      },
+      {
+        "_key": "text-f356229c01",
+        "_type": "pageCopy",
+        "key": "text-f356229c01",
+        "label": "Text",
+        "section": "A few common questions.",
+        "value": "Yes. All cancer types can benefit from a structured exercise program. Research shows that specific exercise can reduce the risk of recurrence."
+      },
+      {
+        "_key": "text-a12227e920",
+        "_type": "pageCopy",
+        "key": "text-a12227e920",
+        "label": "Text",
+        "section": "A few common questions.",
+        "value": "Do you see any patients under the age of 18?"
+      },
+      {
+        "_key": "text-ac2667c555",
+        "_type": "pageCopy",
+        "key": "text-ac2667c555",
+        "label": "Text",
+        "section": "A few common questions.",
+        "value": "Yes."
+      },
+      {
+        "_key": "text-ec950380d6",
+        "_type": "pageCopy",
+        "key": "text-ec950380d6",
+        "label": "Text",
+        "section": "A few common questions.",
+        "value": "How long is a typical session?"
+      },
+      {
+        "_key": "text-88107a37c5",
+        "_type": "pageCopy",
+        "key": "text-88107a37c5",
+        "label": "Text",
+        "section": "A few common questions.",
+        "value": "Typically, each session is scheduled for one hour. Length of session will be determined by level of energy."
       }
     ],
     "editorImages": [

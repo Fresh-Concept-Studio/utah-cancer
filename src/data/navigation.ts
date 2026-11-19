@@ -11,7 +11,7 @@ export const menus = [
     { label: 'Careers', href: '/careers.html' },
     { label: 'Events', href: '/events/index.html' },
     { label: 'News', href: '/articles/' },
-    { label: 'Our Foundation', href: '/index.html#foundation', comingSoon: true },
+    { label: 'Utah Cancer Foundation', href: '/index.html#foundation', comingSoon: true },
   ] },
   { label: 'Patient Resources', href: '/patient-resources.html', links: [
     { label: 'Newly Diagnosed', href: '/newly-diagnosed.html' },
