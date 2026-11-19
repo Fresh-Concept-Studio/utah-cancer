@@ -6,7 +6,9 @@ import { url } from '../lib/urls';
 
 const applicationUrl = url('/job-application/');
 
-const jobs: Array<(typeof defaultJobs)[number] & {contentId?: string}> = Astro.props.page.jobs ?? defaultJobs;
+type Job = (typeof defaultJobs)[number] & {contentId?: string; closed?: boolean};
+// Closed jobs stay in content/jobs (so HR can reopen them) but are not listed or counted.
+const jobs: Job[] = ((Astro.props.page.jobs ?? defaultJobs) as Job[]).filter((job) => !job.closed);
 ---
 
 <section class="careers-hero">
