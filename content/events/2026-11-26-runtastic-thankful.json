@@ -1,17 +1,16 @@
 {
   "order": 6,
+  "category": "community",
+  "categoryLabel": "Run / Walk",
   "date": "2026-11-26",
-  "link": "https://runtasticevents.com/races/thankful/",
+  "description": "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.",
   "image": {
     "alt": "Families running together through an autumn landscape at Thanksgiving Point",
-    "src": "/images/event-thankful.jpg"
+    "src": "/images/event-thankful-640.webp"
   },
-  "title": "Runtastic THANKFUL",
-  "photos": null,
-  "category": "community",
+  "link": "https://runtasticevents.com/races/thankful/",
   "location": "Thanksgiving Point, Lehi",
+  "photos": null,
   "timeText": "Half starts 7:45 AM",
-  "description": "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.",
-  "categoryLabel": "Run / Walk",
-  "featured": false
+  "title": "Runtastic THANKFUL"
 }
