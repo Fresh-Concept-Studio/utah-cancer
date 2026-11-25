@@ -4,7 +4,7 @@
   "link": "https://runtasticevents.com/races/thankful/",
   "image": {
     "alt": "Families running together through an autumn landscape at Thanksgiving Point",
-    "src": "/images/event-thankful-640.webp"
+    "src": "https://bg6ffayngcsls3jc.public.blob.vercel-storage.com/utah-cancer/uploads/alex-locke-headshot-1-17tAIp2DErdi3mkmFQGhG6rE9CX4DX.webp"
   },
   "title": "Runtastic THANKFUL",
   "photos": null,
@@ -12,5 +12,6 @@
   "location": "Thanksgiving Point, Lehi",
   "timeText": "Half starts 7:45 AM",
   "description": "A Thanksgiving Day half marathon, 10K, 5K, and kids run along the Jordan River Trail.",
-  "categoryLabel": "Run / Walk"
+  "categoryLabel": "Run / Walk",
+  "featured": false
 }
