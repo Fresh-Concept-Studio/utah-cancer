@@ -3334,6 +3334,44 @@ body.menu-open {
   grid-template-columns: 1fr;
 }
 
+/* One upcoming event: a side-by-side card instead of a full-width banner, so the photo keeps
+   its natural 3:2 shape rather than being cropped to a thin strip. */
+.home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature {
+  flex-direction: row;
+}
+
+.home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature-media {
+  width: 52%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature-body {
+  justify-content: center;
+  padding: 40px 48px;
+}
+
+@media (max-width: 1024px) {
+  .home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature-body {
+    padding: 28px 32px;
+  }
+}
+
+/* Phones: photo on top at full width, still 3:2. */
+@media (max-width: 768px) {
+  .home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature {
+    flex-direction: column;
+  }
+
+  .home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature-media {
+    width: 100%;
+  }
+
+  .home-events-grid:not(:has(.event-mini:not([hidden]))) .event-feature-body {
+    padding: 22px 24px 26px;
+  }
+}
+
 .home-events-empty {
   padding: 40px 24px;
   border-radius: var(--radius-card);
